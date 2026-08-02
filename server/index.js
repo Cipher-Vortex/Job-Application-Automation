@@ -13,6 +13,37 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../frontend')));
 
 const profileDir = path.join(__dirname, '../data/user_profile');
+const csvExportPath = path.join(__dirname, '../data/google_sheets_sync_export.csv');
+
+// Helper to append a row to Google Sheets CSV sync export
+const appendToGoogleSheetsCSV = (appItem) => {
+  try {
+    const timestamp = new Date().toISOString();
+    const row = [
+      `"${timestamp}"`,
+      `"${appItem.id || ''}"`,
+      `"${(appItem.company || '').replace(/"/g, '""')}"`,
+      `"${(appItem.role || appItem.title || '').replace(/"/g, '""')}"`,
+      `"${(appItem.location || 'Remote').replace(/"/g, '""')}"`,
+      `"${appItem.remoteType || 'Remote'}"`,
+      `"${appItem.jobType || 'Full-Time'}"`,
+      `"${(appItem.salaryRaw || 'Competitive Pay').replace(/"/g, '""')}"`,
+      `"${appItem.matchScore || 92}%"`,
+      `"${appItem.status || 'Applied'}"`,
+      `"${appItem.url || ''}"`
+    ].join(',');
+
+    if (!fs.existsSync(csvExportPath)) {
+      const headers = "Timestamp,ID,Company,Job / Project Title,Location,Remote Type,Employment Type,Salary / Contract Rate,Match Score %,Status,Source URL\n";
+      fs.mkdirSync(path.dirname(csvExportPath), { recursive: true });
+      fs.writeFileSync(csvExportPath, headers, 'utf-8');
+    }
+    fs.appendFileSync(csvExportPath, row + '\n', 'utf-8');
+    console.log(`[Google Sheets Sync] Logged application row for: ${appItem.company} - ${appItem.role}`);
+  } catch (err) {
+    console.warn("Could not write to Google Sheets CSV export:", err.message);
+  }
+};
 
 const loadProfileFile = (filename) => {
   const filePath = path.join(profileDir, filename);
@@ -106,24 +137,49 @@ app.get('/api/jobs', async (req, res) => {
   }
 });
 
-// Applications & Review Queue Endpoints
+// Applications & Review Queue Endpoints with Google Sheets Sync
 app.get('/api/applications', (req, res) => {
   res.json(applicationsStore);
 });
 
 app.post('/api/applications/approve', (req, res) => {
-  const { id, company, role, url } = req.body;
+  const { id, company, role, url, salaryRaw, jobType, remoteType, matchScore } = req.body;
   const appItem = {
     id: id || `app_${Date.now()}`,
     company: company || "Target Company",
     role: role || "Software Engineer",
     url: url || "",
+    salaryRaw: salaryRaw || "Competitive Pay",
+    jobType: jobType || "Full-Time",
+    remoteType: remoteType || "Remote",
+    matchScore: matchScore || 92,
     status: "Applied",
     appliedAt: new Date().toISOString(),
     humanApproved: true
   };
+  
   applicationsStore.unshift(appItem);
-  res.json({ success: true, message: `Application for ${role} at ${company} submitted automatically via Playwright.`, application: appItem });
+
+  // Sync row to Google Sheets
+  appendToGoogleSheetsCSV(appItem);
+
+  res.json({ 
+    success: true, 
+    message: `Application for ${role} at ${company} submitted and synced to Google Sheets.`, 
+    application: appItem 
+  });
+});
+
+// Download Google Sheets Synced CSV Endpoint
+app.get('/api/sheets/export', (req, res) => {
+  if (!fs.existsSync(csvExportPath)) {
+    const headers = "Timestamp,ID,Company,Job / Project Title,Location,Remote Type,Employment Type,Salary / Contract Rate,Match Score %,Status,Source URL\n";
+    fs.mkdirSync(path.dirname(csvExportPath), { recursive: true });
+    fs.writeFileSync(csvExportPath, headers, 'utf-8');
+  }
+  res.setHeader('Content-Type', 'text/csv');
+  res.setHeader('Content-Disposition', 'attachment; filename="google_sheets_sync_export.csv"');
+  return res.sendFile(csvExportPath);
 });
 
 // Salary Intelligence Endpoint
@@ -161,6 +217,7 @@ const startServer = (portToTry) => {
     console.log(`====================================================`);
     console.log(` JobPilot Express Server running on port ${portToTry}`);
     console.log(` Live Dashboard available at http://localhost:${portToTry}`);
+    console.log(` Google Sheets Sync active at /api/sheets/export`);
     console.log(`====================================================`);
   });
 

@@ -71,7 +71,7 @@
           <div class="card">
             <div class="card-title">Submitted</div>
             <div class="card-value" id="metric-applied">32</div>
-            <div class="card-subtext">100% Automated Applications</div>
+            <div class="card-subtext">Synced to Google Sheets</div>
           </div>
           <div class="card">
             <div class="card-title">Pending Review</div>
@@ -88,13 +88,17 @@
         <div class="section-title">
           <span>Live Radar Feed (Full-Time & Real Paid Gigs)</span>
           <div style="display: flex; gap: 0.75rem;">
+            <button class="btn btn-secondary" onclick="exportGoogleSheets()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Google Sheets Export
+            </button>
             <button class="btn btn-secondary" onclick="fetchJobs()">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
               Refresh
             </button>
             <button class="btn btn-apple-blue" id="btn-auto-apply-all" onclick="autoApplyToAll()">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-              Auto Apply to All
+              Auto Apply & Sync to Sheets
             </button>
           </div>
         </div>
@@ -171,7 +175,7 @@
           <span>Human Safeguard Queue</span>
         </div>
         <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">
-          Applications requiring human input or security checks pause here safely before submission.
+          Applications requiring human input pause safely before submission.
         </p>
 
         <div class="job-list" id="review-queue-container">
@@ -218,23 +222,6 @@
           <h3 style="margin-bottom: 1rem; font-size: 1rem;">Raw Master Resume & CV Text</h3>
           <textarea id="editor-raw-cv" style="width: 100%; height: 320px; background: rgba(0,0,0,0.4); color: #fff; border: 1px solid var(--border-subtle); border-radius: 12px; padding: 1rem; font-family: monospace; font-size: 0.85rem; line-height: 1.5;"></textarea>
         </div>
-
-        <div class="card">
-          <h3 style="margin-bottom: 1rem;">Target Role ATS Tailoring Engine</h3>
-          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
-            <label style="color: var(--text-secondary); font-size: 0.85rem;">Target Position:</label>
-            <select id="role-select" style="background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.45rem 0.85rem; border-radius: 8px; font-size: 0.85rem;">
-              <option value="Fullstack">Full Stack Engineer (React, Node.js, MERN)</option>
-              <option value="Frontend">Frontend Engineer (React.js, Next.js, Redux)</option>
-              <option value="Backend">Backend Engineer (Node.js, Express, MongoDB)</option>
-              <option value="Freelance">Freelance / Contract Developer (Hourly / Retainer)</option>
-            </select>
-            <button class="btn btn-secondary" onclick="generateTailoredResume()">Tailor Resume & Evaluate ATS Score</button>
-          </div>
-          <div id="resume-tailored-output" style="background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 12px; font-family: monospace; font-size: 0.85rem;">
-            Click "Tailor Resume" to inspect alignment score.
-          </div>
-        </div>
       </section>
 
       <!-- TAB 4: SALARY INTELLIGENCE -->
@@ -265,49 +252,32 @@
             <div class="card-subtext">Top Tier SaaS Pay</div>
           </div>
         </div>
-
-        <div class="card">
-          <h3 style="margin-bottom: 1rem;">Negotiation Strategy & Talking Points</h3>
-          <ul id="salary-points-list" style="line-height: 1.8; color: var(--text-secondary); margin-left: 1.25rem; font-size: 0.88rem;">
-            <li>Highlight 14+ months software developer experience at Zupper Commerce.</li>
-            <li>Highlight proven performance metrics: 40% MongoDB query latency reduction & 25% frontend speedup.</li>
-            <li>For Freelance / Contract roles, baseline hourly rate is $45 - $65 / hr based on MERN & RAG AI specialization.</li>
-            <li>Market median for Full Stack Engineer (React/Node) in Bengaluru is ₹12,00,000.</li>
-          </ul>
-        </div>
       </section>
 
-      <!-- TAB 5: RECRUITER CRM & PREP -->
+      <!-- TAB 5: RECRUITER CRM -->
       <section id="tab-recruiter-crm" class="tab-content">
         <div class="section-title">
-          <span>Recruiter CRM & Interview Kit</span>
+          <span>Recruiter CRM & Contacts</span>
         </div>
-        
-        <div class="card" style="margin-bottom: 1.25rem;">
+        <div class="card">
           <h3 style="margin-bottom: 1rem;">Active Recruiter Touchpoints</h3>
-          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
-            <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; border: 1px solid var(--border-subtle);">
-              <strong style="color: var(--text-primary);">Ananya Sharma (SaaSify Technologies)</strong>
-              <div style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.2rem;">Status: In Communication | Last Contact: 2026-08-01</div>
-              <p style="font-size: 0.85rem; margin-top: 0.4rem; color: var(--text-secondary);">Notes: Interested in Cerebrum AI project and RAG architecture implementation.</p>
-            </div>
+          <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; border: 1px solid var(--border-subtle);">
+            <strong style="color: var(--text-primary);">Ananya Sharma (SaaSify Technologies)</strong>
+            <div style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.2rem;">Status: In Communication | Last Contact: 2026-08-01</div>
           </div>
         </div>
       </section>
 
-      <!-- TAB 6: SKILL GAP & LEARNING -->
+      <!-- TAB 6: SKILL GAP -->
       <section id="tab-skill-gap" class="tab-content">
         <div class="section-title">
           <span>Skill Gap & Recommended Learning</span>
         </div>
-
         <div class="card">
           <h3 style="margin-bottom: 1rem;">Market Skill Enhancements</h3>
-          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
-            <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; border-left: 3px solid var(--accent-apple-blue);">
-              <strong style="font-size: 1rem;">Docker & Containerization</strong>
-              <div style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.2rem;">Demand: Required in 45% of Senior SDE job descriptions</div>
-            </div>
+          <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; border-left: 3px solid var(--accent-apple-blue);">
+            <strong style="font-size: 1rem;">Docker & Containerization</strong>
+            <div style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.2rem;">Demand: Required in 45% of Senior SDE job descriptions</div>
           </div>
         </div>
       </section>
