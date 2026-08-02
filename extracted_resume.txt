@@ -1,0 +1,78 @@
+--- PAGE 1 ---
+Kiran S R
+Full Stack Engineer  |  React · Node.js · MERN · REST APIs · AI Integration
+Bengaluru, India+91 81247 85632 skkiran1258@gmail.com LinkedIn ↗ GitHub ↗ Portfolio ↗
+PROFESSIONAL SUMMARY
+Full Stack Engineer with 10+ months of internship experience building and shipping production-grade MERN
+stack applications. Proven record of delivering measurable performance gains — including a 40% reduction in
+database query latency and 25% improvement in frontend load times. Hands-on experience integrating AI
+features using Grok API (xAI), implementing RAG architectures, and building real-time, full-stack systems.
+Strong foundation in REST API design, React performance optimization, JWT/OAuth authentication, and
+MongoDB query optimization.
+TECHNICAL SKILLS
+Frontend: React.js, Next.js, TypeScript, Redux Toolkit, Tailwind CSS, Framer Motion, HTML5, CSS3
+Backend: Node.js, Express.js, REST API Design, JWT Authentication, OAuth 2.0, Session Management,
+Middleware Architecture
+Database: MongoDB (Indexing, Schema Design), Mongoose ODM
+AI / LLM: Grok API (xAI), LLM-powered feature integration
+DevOps / Tools: Git, GitHub, Postman, APIdog, Vercel, Cloudinary CDN, Agile / Scrum
+Testing: Manual API testing (Postman), Edge-case validation, Contract testing
+PROFESSIONAL EXPERIENCE
+Frontend Developer Intern  | Zupper Mar 2025 – Dec 2025 · Bengaluru
+React.js · Redux Toolkit · REST APIs · Git · Agile
+Engineered a reusable component library of 20+ React components, standardizing UI patterns across the
+product and reducing duplicate development effort by an estimated 30%.
+Reduced frontend page load time by ~25% by implementing memoization (useMemo/useCallback), code splitting
+with React.lazy, and eliminating unnecessary state re-renders.
+Integrated REST APIs to power real-time inventory tracking and analytics dashboards, handling edge cases and
+loading/error state management.
+Participated in Agile sprint cycles (planning, standups, retrospectives), contributing to production deployments
+with Git branching and PR review workflows.
+React Developer Intern  | Jozzby Bazar Sep 2023 – Jan 2024
+React.js · JavaScript · REST APIs · Responsive Design
+Built and maintained responsive, cross-device UI components ensuring consistent rendering across mobile,
+tablet, and desktop breakpoints.
+Validated REST API contracts and handled edge cases (null states, error boundaries, async race conditions)
+during frontend integration.
+Contributed to a modular, scalable frontend architecture using reusable component patterns and consistent
+prop interfaces.
+PROJECTS
+Cerebrum — AI-Powered Note-Taking Platform 2026
+Node.js · React · Grok API (xAI) · RAG · Framer Motion · OAuth 2.0 · MongoDB · Vercel
+Live Demo ↗GitHub ↗
+AI Integration: Integrated Grok API (xAI) to enable real-time note summarization, writing improvement
+suggestions, and auto-generated smart tags — reducing manual tagging effort to zero.
+RAG Architecture: Implemented retrieval-augmented generation pipeline to surface contextually relevant notes
+during AI-assisted queries, improving response precision.
+UX Engineering: Built a 5-second debounced auto-save system and fast note creation flow; implemented smart
+search across titles and content, cutting time-to-note by ~60%.
+--- PAGE 2 ---
+Frontend: Delivered dark-mode UI with Framer Motion animations and shimmering skeleton loading states; fully
+responsive layout with mobile-optimized sidebar.
+Auth & Security: Implemented OAuth 2.0 authentication with Google secure login/registration flows.
+Full-Stack Travel Booking Platform 2025
+MERN Stack · Redux Toolkit · MongoDB · Cloudinary · Vercel
+System Design: Architected end-to-end system including MongoDB schema modeling, REST API route structure,
+and scalable booking flow logic from ground up.
+Performance: Reduced MongoDB query latency by ~40% by applying compound indexes on high-frequency
+search fields (destination, date range, price tier).
+Asset Delivery: Integrated Cloudinary CDN for image upload and delivery, replacing local storage and improving
+media load performance.
+Deployment: Deployed via Vercel serverless functions with automated email notifications on booking
+confirmation.
+Multi-Vendor E-Commerce Platform 2024
+Node.js · React · Redux Toolkit · RBAC · JWT · MongoDB
+Designed a Role-Based Access Control (RBAC) system supporting Admin, Vendor, and Customer roles with
+granular route-level protection middleware.
+Implemented JWT authentication with token expiry, refresh logic, and secure API architecture ensuring
+protected endpoints across all vendor operations.
+Built global state management with Redux Toolkit to handle cart state, auth state, and real-time product inventory
+across multi-vendor storefronts.
+PUBLICATIONS
+Decentralized Content Creation and Distribution in Web 3.0
+Postgraduate Research Paper · 2025
+Analyzed decentralized content platforms, smart contract governance, and DAO incentive models; performed
+comparative evaluation of Web 3.0 adoption and scalability trade-offs.
+EDUCATION
+Master of Computer Applications (MCA) | REVA University 2024 – 2025
+CGPA: 8.2 / 10

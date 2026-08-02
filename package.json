@@ -1,0 +1,36 @@
+{
+  "name": "jobpilot-ai",
+  "version": "1.0.0",
+  "description": "Autonomous 24/7 AI Job Search, Application & Career Intelligence Platform",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "python start_all.py",
+    "server": "node server/index.js",
+    "ai": "uvicorn backend.main:app --port 8000",
+    "dev": "python start_all.py",
+    "test": "python -m unittest tests/test_agents.py"
+  },
+  "keywords": [
+    "ai",
+    "job-search",
+    "career-agent",
+    "playwright",
+    "resume-builder",
+    "salary-intelligence"
+  ],
+  "author": "Kiran S R",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "axios": "^1.7.2",
+    "multer": "^1.4.5-lts.1",
+    "googleapis": "^140.0.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

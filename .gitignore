@@ -1,0 +1,73 @@
+# Environment and Secret Key Files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Database and SQLite Storage
+*.db
+*.sqlite
+*.sqlite3
+jobpilot.db
+
+# Node.js Dependencies and Logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.bak
+
+# Python Bytecode and Environment Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Playwright Artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# OS and IDE Specific Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary Files and Logs
+*.log
+logs/
+.tmp/
+/tmp/

@@ -1,0 +1,43 @@
+{
+  "basics": {
+    "name": "Kiran S R",
+    "label": "Full Stack Engineer / Junior Software Developer",
+    "email": "skkiran1258@gmail.com",
+    "phone": "+91 81247 85632",
+    "location": "Bengaluru, India",
+    "profiles": [
+      { "network": "LinkedIn", "url": "https://linkedin.com/in/kiran-s-r" },
+      { "network": "GitHub", "url": "https://github.com/kiran-s-r" },
+      { "network": "Portfolio", "url": "https://kiran-portfolio.dev" }
+    ]
+  },
+  "work": [
+    {
+      "company": "Zupper Commerce Pvt. Ltd.",
+      "position": "Junior Software Developer",
+      "startDate": "Oct 2024",
+      "endDate": "Dec 2025",
+      "summary": "Design, development, and maintenance of web/mobile application features. Verified via Official Experience Letter (Date: Jan 10, 2026, Signed by CEO Mohammed Irfan Shaik).",
+      "highlights": [
+        "Engineered a reusable component library of 20+ React components, cutting duplicate work by 30%.",
+        "Optimized frontend load times by 25% via memoization and lazy loading.",
+        "Integrated REST APIs to power real-time inventory tracking and analytics dashboards."
+      ]
+    },
+    {
+      "company": "Jozzby Bazar",
+      "position": "React Developer Intern",
+      "startDate": "Sep 2023",
+      "endDate": "Jan 2024",
+      "summary": "Built and maintained responsive UI components across mobile, tablet, and desktop breakpoints."
+    }
+  ],
+  "publications": [
+    {
+      "title": "Decentralized Content Creation and Distribution in Web 3.0",
+      "publisher": "Postgraduate Research Paper",
+      "year": "2025",
+      "summary": "Analyzed decentralized content platforms, smart contract governance, and DAO incentive models; performed comparative evaluation of Web 3.0 adoption and scalability trade-offs."
+    }
+  ]
+}

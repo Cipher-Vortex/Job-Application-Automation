@@ -1,0 +1,31 @@
+[
+  {
+    "id": "exp_1",
+    "role": "Junior Software Developer",
+    "company": "Zupper Commerce Pvt. Ltd.",
+    "period": "Oct 2024 – Dec 2025",
+    "location": "Bengaluru, India",
+    "verification_letter": "Verified via Official Experience Letter (Date: Jan 10, 2026, Signed by Founder & CEO Mohammed Irfan Shaik)",
+    "skills": ["React.js", "Node.js", "Redux Toolkit", "REST APIs", "Git", "Agile", "Web/Mobile App Development"],
+    "highlights": [
+      "Actively involved in design, development, and maintenance of core web/mobile application features for Zupper Commerce storefront and backend services.",
+      "Engineered a reusable component library of 20+ React components, standardizing UI patterns across the product and reducing duplicate development effort by an estimated 30%.",
+      "Reduced frontend page load time by ~25% by implementing memoization (useMemo/useCallback), code splitting with React.lazy, and eliminating unnecessary state re-renders.",
+      "Integrated REST APIs to power real-time inventory tracking and analytics dashboards, handling edge cases and loading/error state management.",
+      "Participated in Agile sprint cycles (planning, standups, retrospectives), contributing to production deployments with Git branching and PR review workflows."
+    ]
+  },
+  {
+    "id": "exp_2",
+    "role": "React Developer Intern",
+    "company": "Jozzby Bazar",
+    "period": "Sep 2023 – Jan 2024",
+    "location": "Bengaluru, India",
+    "skills": ["React.js", "JavaScript", "REST APIs", "Responsive Design"],
+    "highlights": [
+      "Built and maintained responsive, cross-device UI components ensuring consistent rendering across mobile, tablet, and desktop breakpoints.",
+      "Validated REST API contracts and handled edge cases (null states, error boundaries, async race conditions) during frontend integration.",
+      "Contributed to a modular, scalable frontend architecture using reusable component patterns and consistent prop interfaces."
+    ]
+  }
+]

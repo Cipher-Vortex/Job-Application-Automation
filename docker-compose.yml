@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  jobpilot-app:
+    build: .
+    container_name: jobpilot_ai
+    ports:
+      - "3000:3000"
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - NODE_PORT=3000
+      - DATABASE_URL=sqlite:///./jobpilot.db
+      - PLAYWRIGHT_HEADLESS=true
+      - HUMAN_IN_THE_LOOP_MODE=true
+    volumes:
+      - .:/app
+    restart: always

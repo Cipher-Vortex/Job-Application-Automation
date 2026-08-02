@@ -1,0 +1,43 @@
+[
+  {
+    "id": "proj_1",
+    "title": "Cerebrum — AI-Powered Note-Taking Platform",
+    "year": "2026",
+    "tech_stack": ["Node.js", "React", "Grok API (xAI)", "RAG", "Framer Motion", "OAuth 2.0", "MongoDB", "Vercel"],
+    "live_demo": "https://cerebrum-ai.vercel.app",
+    "github": "https://github.com/kiran-s-r/cerebrum-ai",
+    "bullets": [
+      "AI Integration: Integrated Grok API (xAI) to enable real-time note summarization, writing improvement suggestions, and auto-generated smart tags — reducing manual tagging effort to zero.",
+      "RAG Architecture: Implemented retrieval-augmented generation pipeline to surface contextually relevant notes during AI-assisted queries, improving response precision.",
+      "UX Engineering: Built a 5-second debounced auto-save system and fast note creation flow; implemented smart search across titles and content, cutting time-to-note by ~60%.",
+      "Frontend: Delivered dark-mode UI with Framer Motion animations and shimmering skeleton loading states; fully responsive layout with mobile-optimized sidebar.",
+      "Auth & Security: Implemented OAuth 2.0 authentication with Google secure login/registration flows."
+    ]
+  },
+  {
+    "id": "proj_2",
+    "title": "Full-Stack Travel Booking Platform",
+    "year": "2025",
+    "tech_stack": ["MERN Stack", "Redux Toolkit", "MongoDB", "Cloudinary", "Vercel"],
+    "live_demo": "https://travel-booking-app.vercel.app",
+    "github": "https://github.com/kiran-s-r/travel-booking",
+    "bullets": [
+      "System Design: Architected end-to-end system including MongoDB schema modeling, REST API route structure, and scalable booking flow logic from ground up.",
+      "Performance: Reduced MongoDB query latency by ~40% by applying compound indexes on high-frequency search fields (destination, date range, price tier).",
+      "Asset Delivery: Integrated Cloudinary CDN for image upload and delivery, replacing local storage and improving media load performance.",
+      "Deployment: Deployed via Vercel serverless functions with automated email notifications on booking confirmation."
+    ]
+  },
+  {
+    "id": "proj_3",
+    "title": "Multi-Vendor E-Commerce Platform",
+    "year": "2024",
+    "tech_stack": ["Node.js", "React", "Redux Toolkit", "RBAC", "JWT", "MongoDB"],
+    "github": "https://github.com/kiran-s-r/multivendor-ecommerce",
+    "bullets": [
+      "Designed a Role-Based Access Control (RBAC) system supporting Admin, Vendor, and Customer roles with granular route-level protection middleware.",
+      "Implemented JWT authentication with token expiry, refresh logic, and secure API architecture ensuring protected endpoints across all vendor operations.",
+      "Built global state management with Redux Toolkit to handle cart state, auth state, and real-time product inventory across multi-vendor storefronts."
+    ]
+  }
+]

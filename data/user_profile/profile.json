@@ -1,0 +1,18 @@
+{
+  "name": "Kiran S R",
+  "headline": "Full Stack Engineer | Junior Software Developer | React · Node.js · MERN · REST APIs · AI Integration",
+  "location": "Bengaluru, India",
+  "phone": "+91 81247 85632",
+  "email": "skkiran1258@gmail.com",
+  "linkedin": "https://linkedin.com/in/kiran-s-r",
+  "github": "https://github.com/kiran-s-r",
+  "portfolio": "https://kiran-portfolio.dev",
+  "summary": "Full Stack Engineer / Junior Software Developer with 14+ months experience at Zupper Commerce Pvt. Ltd. building and shipping production-grade MERN stack applications. Proven record of delivering measurable performance gains — including a 40% reduction in database query latency and 25% improvement in frontend load times. Hands-on experience integrating AI features using Grok API (xAI), implementing RAG architectures, and building real-time, full-stack systems. Strong foundation in REST API design, React performance optimization, JWT/OAuth authentication, and MongoDB query optimization. Verified by official Experience Letter from Zupper Commerce.",
+  "experience_years": "1.2+ Years",
+  "notice_period": "Immediate / 15 Days",
+  "expected_salary_inr": 800000,
+  "expected_salary_usd": 30000,
+  "preferred_locations": ["Bengaluru", "Remote", "Hybrid"],
+  "relocation_willing": true,
+  "work_authorization": "India (Citizen)"
+}

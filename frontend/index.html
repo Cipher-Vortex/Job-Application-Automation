@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobPilot — Autonomous Career Intelligence</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Apple Translucent Header -->
+  <header class="navbar">
+    <div class="logo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      <span>JobPilot</span>
+      <span class="logo-badge">Autonomous Agent v1.0</span>
+    </div>
+    <div class="user-status">
+      <div class="status-indicator">
+        <div class="status-dot"></div>
+        <span>24/7 Agent Active (Kiran S R)</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- App Layout Container -->
+  <div class="app-container">
+    
+    <!-- Sidebar Nav -->
+    <aside class="sidebar">
+      <div class="nav-item active" onclick="switchTab('dashboard')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <span>Radar Feed</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('review-queue')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>Review Queue</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('resume-studio')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <span>Resume & CV Editor</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('salary-intel')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <span>Compensation</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('recruiter-crm')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        <span>Recruiter CRM</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('skill-gap')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        <span>Skill Analysis</span>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- TAB 1: DASHBOARD & RADAR -->
+      <section id="tab-dashboard" class="tab-content active">
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-title">Positions Discovered</div>
+            <div class="card-value" id="metric-discovered">48</div>
+            <div class="card-subtext">Freelancer.com, RemoteOK, Greenhouse & Lever</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Submitted</div>
+            <div class="card-value" id="metric-applied">32</div>
+            <div class="card-subtext">100% Automated Applications</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Pending Review</div>
+            <div class="card-value" style="color: var(--accent-apple-amber);" id="metric-review">2</div>
+            <div class="card-subtext">Human Safeguard Queue</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Average Alignment</div>
+            <div class="card-value" style="color: var(--accent-apple-green);" id="metric-match">91.8%</div>
+            <div class="card-subtext">8-Dimension Vector Score</div>
+          </div>
+        </div>
+
+        <div class="section-title">
+          <span>Live Radar Feed (Full-Time & Real Paid Gigs)</span>
+          <div style="display: flex; gap: 0.75rem;">
+            <button class="btn btn-secondary" onclick="fetchJobs()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+              Refresh
+            </button>
+            <button class="btn btn-apple-blue" id="btn-auto-apply-all" onclick="autoApplyToAll()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              Auto Apply to All
+            </button>
+          </div>
+        </div>
+
+        <!-- Sleek Filter Bar -->
+        <div class="filter-bar">
+          <div style="font-size: 0.85rem; font-weight: 500; margin-bottom: 1rem; color: var(--text-secondary); display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 0.4rem;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/></svg>
+              <span>Preferences & Filter Controls</span>
+            </div>
+            <span id="job-count-badge" style="font-size: 0.75rem; color: var(--text-tertiary);">Showing All Positions</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; align-items: end;">
+            
+            <!-- Work Mode -->
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Work Mode:</label>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                <label class="filter-chip">
+                  <input type="checkbox" id="filter-remote" checked onchange="applyFilters()"> Remote
+                </label>
+                <label class="filter-chip">
+                  <input type="checkbox" id="filter-hybrid" checked onchange="applyFilters()"> Hybrid
+                </label>
+                <label class="filter-chip">
+                  <input type="checkbox" id="filter-onsite" onchange="applyFilters()"> Onsite
+                </label>
+              </div>
+            </div>
+
+            <!-- Employment Type -->
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Type:</label>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                <label class="filter-chip">
+                  <input type="checkbox" id="filter-fulltime" checked onchange="applyFilters()"> Full-Time
+                </label>
+                <label class="filter-chip">
+                  <input type="checkbox" id="filter-freelance" checked onchange="applyFilters()"> Freelance / Contract
+                </label>
+              </div>
+            </div>
+
+            <!-- Minimum Salary -->
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Salary Floor:</label>
+              <select id="filter-salary" onchange="applyFilters()" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.4rem 0.6rem; border-radius: 8px; font-size: 0.8rem;">
+                <option value="0">All Ranges</option>
+                <option value="800000">₹8L+ / $80k+ USD</option>
+                <option value="1200000">₹12L+ / $120k+ USD</option>
+                <option value="1500000">₹15L+ / $150k+ USD</option>
+              </select>
+            </div>
+
+            <!-- Search -->
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Search:</label>
+              <input type="text" id="filter-search" placeholder="Search title or skill..." oninput="applyFilters()" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.4rem 0.6rem; border-radius: 8px; font-size: 0.8rem;">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="job-list" id="job-feed-container">
+          <!-- Job items populated dynamically -->
+        </div>
+      </section>
+
+      <!-- TAB 2: REVIEW QUEUE (HUMAN IN THE LOOP) -->
+      <section id="tab-review-queue" class="tab-content">
+        <div class="section-title">
+          <span>Human Safeguard Queue</span>
+        </div>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">
+          Applications requiring human input or security checks pause here safely before submission.
+        </p>
+
+        <div class="job-list" id="review-queue-container">
+          <!-- Review Queue items populated dynamically -->
+        </div>
+      </section>
+
+      <!-- TAB 3: RESUME & CV EDITOR ROUTE -->
+      <section id="tab-resume-studio" class="tab-content">
+        <div class="section-title">
+          <span>Master Resume & CV Profile Editor</span>
+          <button class="btn btn-apple-blue" onclick="saveResumeProfile()">Save Resume Updates</button>
+        </div>
+
+        <div class="card" style="margin-bottom: 1.25rem;">
+          <h3 style="margin-bottom: 1rem; font-size: 1rem;">Candidate Master Profile</h3>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.3rem;">Full Name:</label>
+              <input type="text" id="editor-name" value="Kiran S R" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem; border-radius: 8px;">
+            </div>
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.3rem;">Professional Title:</label>
+              <input type="text" id="editor-title" value="Full Stack Engineer / Software Developer" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem; border-radius: 8px;">
+            </div>
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.3rem;">Email Address:</label>
+              <input type="email" id="editor-email" value="skkiran1258@gmail.com" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem; border-radius: 8px;">
+            </div>
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.3rem;">Phone Number:</label>
+              <input type="text" id="editor-phone" value="+91 81247 85632" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem; border-radius: 8px;">
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.3rem;">Master Skills (Comma Separated):</label>
+            <input type="text" id="editor-skills" value="React.js, Node.js, Express.js, JavaScript, TypeScript, MongoDB, REST APIs, Python, HTML/CSS, Git, Redux" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem; border-radius: 8px;">
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 1.25rem;">
+          <h3 style="margin-bottom: 1rem; font-size: 1rem;">Raw Master Resume & CV Text</h3>
+          <textarea id="editor-raw-cv" style="width: 100%; height: 320px; background: rgba(0,0,0,0.4); color: #fff; border: 1px solid var(--border-subtle); border-radius: 12px; padding: 1rem; font-family: monospace; font-size: 0.85rem; line-height: 1.5;"></textarea>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom: 1rem;">Target Role ATS Tailoring Engine</h3>
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+            <label style="color: var(--text-secondary); font-size: 0.85rem;">Target Position:</label>
+            <select id="role-select" style="background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.45rem 0.85rem; border-radius: 8px; font-size: 0.85rem;">
+              <option value="Fullstack">Full Stack Engineer (React, Node.js, MERN)</option>
+              <option value="Frontend">Frontend Engineer (React.js, Next.js, Redux)</option>
+              <option value="Backend">Backend Engineer (Node.js, Express, MongoDB)</option>
+              <option value="Freelance">Freelance / Contract Developer (Hourly / Retainer)</option>
+            </select>
+            <button class="btn btn-secondary" onclick="generateTailoredResume()">Tailor Resume & Evaluate ATS Score</button>
+          </div>
+          <div id="resume-tailored-output" style="background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 12px; font-family: monospace; font-size: 0.85rem;">
+            Click "Tailor Resume" to inspect alignment score.
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: SALARY INTELLIGENCE -->
+      <section id="tab-salary-intel" class="tab-content">
+        <div class="section-title">
+          <span>Compensation & Freelance Rates</span>
+        </div>
+
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-title">Expected Salary / Rate</div>
+            <div class="card-value">₹8,00,000 / $45 hr</div>
+            <div class="card-subtext">Baseline Salary / Contract</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Freelance Project Min</div>
+            <div class="card-value">$400 - $1,500</div>
+            <div class="card-subtext">Freelancer.com Project Budget</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Freelance Hourly Median</div>
+            <div class="card-value" style="color: var(--accent-apple-blue);">$65 / hr</div>
+            <div class="card-subtext">Global Remote Client Rates</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Market Maximum</div>
+            <div class="card-value" style="color: var(--accent-apple-green);">₹18,00,000</div>
+            <div class="card-subtext">Top Tier SaaS Pay</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom: 1rem;">Negotiation Strategy & Talking Points</h3>
+          <ul id="salary-points-list" style="line-height: 1.8; color: var(--text-secondary); margin-left: 1.25rem; font-size: 0.88rem;">
+            <li>Highlight 14+ months software developer experience at Zupper Commerce.</li>
+            <li>Highlight proven performance metrics: 40% MongoDB query latency reduction & 25% frontend speedup.</li>
+            <li>For Freelance / Contract roles, baseline hourly rate is $45 - $65 / hr based on MERN & RAG AI specialization.</li>
+            <li>Market median for Full Stack Engineer (React/Node) in Bengaluru is ₹12,00,000.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TAB 5: RECRUITER CRM & PREP -->
+      <section id="tab-recruiter-crm" class="tab-content">
+        <div class="section-title">
+          <span>Recruiter CRM & Interview Kit</span>
+        </div>
+        
+        <div class="card" style="margin-bottom: 1.25rem;">
+          <h3 style="margin-bottom: 1rem;">Active Recruiter Touchpoints</h3>
+          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; border: 1px solid var(--border-subtle);">
+              <strong style="color: var(--text-primary);">Ananya Sharma (SaaSify Technologies)</strong>
+              <div style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.2rem;">Status: In Communication | Last Contact: 2026-08-01</div>
+              <p style="font-size: 0.85rem; margin-top: 0.4rem; color: var(--text-secondary);">Notes: Interested in Cerebrum AI project and RAG architecture implementation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 6: SKILL GAP & LEARNING -->
+      <section id="tab-skill-gap" class="tab-content">
+        <div class="section-title">
+          <span>Skill Gap & Recommended Learning</span>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom: 1rem;">Market Skill Enhancements</h3>
+          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; border-left: 3px solid var(--accent-apple-blue);">
+              <strong style="font-size: 1rem;">Docker & Containerization</strong>
+              <div style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.2rem;">Demand: Required in 45% of Senior SDE job descriptions</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
