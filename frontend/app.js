@@ -77,6 +77,43 @@ function updateMetricsDisplay() {
   if (metricJobs) metricJobs.textContent = rawFetchedJobs.length || '90';
 }
 
+async function triggerScraper() {
+  const btn = document.getElementById('btn-run-scraper');
+  const container = document.getElementById('job-feed-container');
+  if(btn) {
+      btn.disabled = true;
+      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg> Booting Headless Agents (30s)...`;
+  }
+  if(container) {
+      container.innerHTML = `<div style="background: var(--bg-card); padding: 3rem; text-align: center; border-radius: 18px; border: 1px solid var(--border-subtle);"><h3 style="color: var(--text-primary); font-size: 1rem; margin-bottom:0.5rem;">Running Deep Scan...</h3><p style="color: var(--text-secondary); font-size: 0.85rem;">Python AI is stealthily scraping job boards right now.</p></div>`;
+  }
+  
+  try {
+     // 1. Trigger python scraper directly
+     const res = await fetch('/api/ai/jobs/live');
+     const jobs = await res.json();
+     
+     // 2. Push scraped hits seamlessly into Node.js DB Queue Endpoint
+     let inserted = 0;
+     if(Array.isArray(jobs)) {
+         for(const j of jobs) {
+            const pushData = { url: j.url, company: j.company, title: j.title, location: j.location, source: j.source, description: j.description || (j.techStack ? j.techStack.join(", ") : ""), salary: j.salaryRaw };
+            await fetch('/api/jobs/seed', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(pushData) });
+            inserted++;
+         }
+     }
+     
+     // 3. Reload Native Feed
+     if(btn) btn.innerHTML = `✅ Deep Scan Finished (${inserted} Injected)`;
+     setTimeout(() => { if(btn) { btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg> Run Discovery Engine`; btn.disabled = false; } }, 4000);
+     
+     fetchJobs();
+  } catch(e) {
+     alert("Error triggering agents! Make sure Python Engine is online.");
+     if(btn) { btn.disabled = false; btn.innerHTML = "Retry Discovery"; }
+  }
+}
+
 async function fetchJobs() {
   const container = document.getElementById('job-feed-container');
   if (container) {
