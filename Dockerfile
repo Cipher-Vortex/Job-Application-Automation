@@ -32,5 +32,5 @@ COPY --from=frontend-build /app/dist ./dist
 
 # The Node frontend serves the UI/Dashboard and needs to be exposed to the public internet.
 # Render automatically injects $PORT (usually 10000), which Node listens to by default.
-# We bind Uvicorn (Python API) to a private internal port (8000) so Node can talk to it secretly.
-CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port 8000 & npm start"]
+# We bind Uvicorn (Python API) to a private internal port (8001) so Node can talk to it secretly.
+CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port 8001 & npm start"]

@@ -3,11 +3,18 @@ import { Redis } from 'ioredis';
 const REDIS_HOST = process.env.REDIS_HOST || '127.0.0.1';
 const REDIS_PORT = parseInt(process.env.REDIS_PORT || '6379', 10);
 
-export const redisConnection = new Redis({
+// If the user pastes the entire URL (e.g., redis://...) into REDIS_HOST, feed it directly into Redis instead of splitting it.
+let redisConfig: any = {
   host: REDIS_HOST,
   port: REDIS_PORT,
   maxRetriesPerRequest: null
-});
+};
+
+if (REDIS_HOST.startsWith('redis://') || REDIS_HOST.startsWith('rediss://')) {
+  redisConfig = REDIS_HOST;
+}
+
+export const redisConnection = new Redis(redisConfig);
 
 redisConnection.on('connect', () => {
   console.log('Redis connected successfully');
