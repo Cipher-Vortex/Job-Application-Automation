@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "build": "tsc",
-    "start": "tsc && node dist/index.js",
+    "start": "node dist/index.js",
     "dev": "tsc && node dist/index.js",
     "legacy": "python start_all.py",
     "test": "python -m unittest tests/test_agents.py"
