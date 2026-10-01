@@ -22,7 +22,7 @@ app.use(cors());
 
 // Universal Routing: Transparently tunnel any /api/ai requests internally to the hidden Python Engine
 app.use('/api/ai', createProxyMiddleware({
-  target: 'http://127.0.0.1:8001',
+  target: 'http://127.0.0.1:8001/api/ai',
   changeOrigin: true,
 }));
 
