@@ -3,18 +3,13 @@ import { Redis } from 'ioredis';
 const REDIS_HOST = process.env.REDIS_HOST || '127.0.0.1';
 const REDIS_PORT = parseInt(process.env.REDIS_PORT || '6379', 10);
 
-// If the user pastes the entire URL (e.g., redis://...) into REDIS_HOST, feed it directly into Redis instead of splitting it.
-let redisConfig: any = {
-  host: REDIS_HOST,
-  port: REDIS_PORT,
-  maxRetriesPerRequest: null
-};
+const bullMqOptions = { maxRetriesPerRequest: null };
 
-if (REDIS_HOST.startsWith('redis://') || REDIS_HOST.startsWith('rediss://')) {
-  redisConfig = REDIS_HOST;
-}
-
-export const redisConnection = new Redis(redisConfig);
+// Check if user provided a full URL (redis://) or just a hostname
+export const redisConnection = 
+  (REDIS_HOST.startsWith('redis://') || REDIS_HOST.startsWith('rediss://'))
+    ? new Redis(REDIS_HOST, bullMqOptions)
+    : new Redis({ host: REDIS_HOST, port: REDIS_PORT, ...bullMqOptions });
 
 redisConnection.on('connect', () => {
   console.log('Redis connected successfully');
