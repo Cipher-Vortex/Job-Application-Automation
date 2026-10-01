@@ -6,8 +6,7 @@ RUN npm install --legacy-peer-deps
 COPY . .
 # Pre-compile the app to avoid RAM spikes on server boot
 RUN npm run build
-# Strip out all heavy dev tools so the final image is extremely tiny
-RUN npm prune --production --legacy-peer-deps
+# Keep all modules since playwright is required for Node workers
 
 FROM python:3.12-slim
 WORKDIR /app
