@@ -7,7 +7,7 @@ COPY . .
 # Pre-compile the app to avoid RAM spikes on server boot
 RUN npm run build
 # Strip out all heavy dev tools so the final image is extremely tiny
-RUN npm prune --production
+RUN npm prune --production --legacy-peer-deps
 
 FROM python:3.12-slim
 WORKDIR /app
