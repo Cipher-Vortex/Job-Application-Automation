@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.git/
+__pycache__/
+*.pyc
+.env
+data/browser_profile/
+*.png
+*.exe
+jobpilot.db
+.pytest_cache/

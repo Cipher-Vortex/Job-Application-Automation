@@ -17,10 +17,14 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt ./
+# Force torch CPU-only wheels first to prevent 2GB+ CUDA package blob downloads from sentence-transformers
+RUN pip install torch --index-url https://download.pytorch.org/whl/cpu
 RUN pip install --no-cache-dir -r requirements.txt
 RUN playwright install --with-deps chromium
 
 COPY . .
+# Copy the built node_modules from the first stage
+COPY --from=frontend-build /app/node_modules ./node_modules
 
 EXPOSE 3000 8000
 
