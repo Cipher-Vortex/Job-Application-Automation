@@ -31,9 +31,7 @@ COPY . .
 COPY --from=frontend-build /app/node_modules ./node_modules
 COPY --from=frontend-build /app/dist ./dist
 
-# Render automatically assigns $PORT. We dynamically bind Uvicorn to it.
-# We also launch the Node frontend. If Node uses process.env.PORT, we'll give it a static internal port instead so they don't clash.
-ENV FRONTEND_PORT=3000
-EXPOSE 3000 8000 10000
-
-CMD ["sh", "-c", "PORT=$FRONTEND_PORT npm start & uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-10000}"]
+# The Node frontend serves the UI/Dashboard and needs to be exposed to the public internet.
+# Render automatically injects $PORT (usually 10000), which Node listens to by default.
+# We bind Uvicorn (Python API) to a private internal port (8000) so Node can talk to it secretly.
+CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port 8000 & npm start"]
