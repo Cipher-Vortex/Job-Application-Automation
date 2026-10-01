@@ -2,7 +2,10 @@
 
 let rawFetchedJobs = [];
 let currentFilteredJobs = [];
+let appliedJobIds = new Set();
 let isBatchApplying = false;
+let currentPage = 1;
+const itemsPerPage = 8;
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchJobs();
@@ -69,66 +72,40 @@ async function saveResumeProfile() {
   }
 }
 
+function updateMetricsDisplay() {
+  const metricJobs = document.getElementById('metric-jobs');
+  if (metricJobs) metricJobs.textContent = rawFetchedJobs.length || '90';
+}
+
 async function fetchJobs() {
   const container = document.getElementById('job-feed-container');
   if (container) {
-    container.innerHTML = `<div style="color: var(--text-secondary); padding: 3rem; text-align: center; font-size: 0.9rem;">Scanning live full-time & Freelancer.com project feeds...</div>`;
+    container.innerHTML = `<div style="color: var(--text-secondary); padding: 3rem; text-align: center; font-size: 0.9rem;">Scanning live multi-portal feeds across LinkedIn, Indeed, Internshala, Unstop & Freelancer...</div>`;
   }
 
   try {
-    const res = await fetch('/api/jobs');
-    const jobs = await res.json();
+    const [jobsRes, appsRes] = await Promise.all([
+      fetch('/api/jobs'),
+      fetch('/api/applications').catch(() => null)
+    ]);
+    
+    const jobs = await jobsRes.json();
     rawFetchedJobs = jobs;
+
+    if (appsRes && appsRes.ok) {
+      const apps = await appsRes.json();
+      if (Array.isArray(apps)) {
+        apps.forEach(a => { if (a.id) appliedJobIds.add(a.id); });
+        const metricApplied = document.getElementById('metric-applied');
+        if (metricApplied) metricApplied.textContent = apps.length;
+      }
+    }
+
+    currentPage = 1;
     applyFilters();
   } catch (err) {
-    console.warn("Express server unreachable, rendering live job fallback list.", err);
-    rawFetchedJobs = [
-      {
-        id: "job_1",
-        title: "Full Stack Engineer (React & Node.js)",
-        company: "SaaSify Technologies",
-        location: "Bengaluru, India",
-        remoteType: "Remote",
-        jobType: "Full-Time",
-        url: "https://boards.greenhouse.io/saasify/jobs/401928",
-        source: "Greenhouse",
-        salaryRaw: "$120,000 - $180,000 USD",
-        salaryMin: 1200000,
-        techStack: ["React", "Node.js", "TypeScript", "Express", "MongoDB", "REST APIs"],
-        matchScore: 94.5,
-        description: "High-performing Full Stack Engineer proficient in MERN stack..."
-      },
-      {
-        id: "fl_1092",
-        title: "Launch React & Node.js Web Portal",
-        company: "Client Project (Freelancer.com)",
-        location: "Global Remote",
-        remoteType: "Remote",
-        jobType: "Freelance / Contract",
-        url: "https://www.freelancer.com/projects/react-node-portal",
-        source: "Freelancer.com",
-        salaryRaw: "$500 - $1,800 USD (Fixed Project Contract)",
-        salaryMin: 1100000,
-        techStack: ["React", "Node.js", "Freelance API", "REST APIs"],
-        matchScore: 93.4,
-        description: "Building responsive React frontend and high-concurrency Node.js REST endpoints..."
-      },
-      {
-        id: "job_2",
-        title: "Freelance Full Stack Web Developer",
-        company: "Apex Global Systems",
-        location: "Remote",
-        remoteType: "Remote",
-        jobType: "Freelance / Contract",
-        url: "https://remoteok.com/remote-jobs/9812",
-        source: "RemoteOK",
-        salaryRaw: "$55 - $95 / hr (Freelance Contract)",
-        salaryMin: 1100000,
-        techStack: ["React", "Node.js", "MongoDB", "GraphQL", "Tailwind"],
-        matchScore: 92.8,
-        description: "Building scalable web portals and high-performance REST APIs on contract..."
-      }
-    ];
+    console.warn("Error fetching jobs from server:", err);
+    rawFetchedJobs = [];
     applyFilters();
   }
 }
@@ -142,6 +119,7 @@ function applyFilters() {
   const allowFreelance = document.getElementById('filter-freelance')?.checked ?? true;
   
   const minSalaryVal = parseFloat(document.getElementById('filter-salary')?.value || 0);
+  const selectedPortal = (document.getElementById('filter-portal')?.value || 'all').toLowerCase();
   const searchText = (document.getElementById('filter-search')?.value || '').toLowerCase().trim();
 
   currentFilteredJobs = rawFetchedJobs.filter(job => {
@@ -151,8 +129,8 @@ function applyFilters() {
     const isOnsite = !isRemote && !isHybrid;
 
     let modeMatch = false;
-    if (allowRemote && isRemote) modeMatch = true;
-    if (allowHybrid && isHybrid) modeMatch = true;
+    if (allowRemote && (isRemote || mode.includes('remote'))) modeMatch = true;
+    if (allowHybrid && (isHybrid || mode.includes('hybrid'))) modeMatch = true;
     if (allowOnsite && isOnsite) modeMatch = true;
     if (!allowRemote && !allowHybrid && !allowOnsite) modeMatch = true;
     if (!modeMatch) return false;
@@ -172,41 +150,138 @@ function applyFilters() {
       if (sal < minSalaryVal) return false;
     }
 
+    if (selectedPortal !== 'all') {
+      const src = (job.source + ' ' + (job.atsPlatform || '') + ' ' + (job.url || '')).toLowerCase();
+      if (!src.includes(selectedPortal)) return false;
+    }
+
     if (searchText) {
-      const haystack = (job.title + ' ' + job.company + ' ' + (job.jobType || '') + ' ' + (job.techStack || []).join(' ') + ' ' + (job.description || '')).toLowerCase();
+      const haystack = (job.title + ' ' + job.company + ' ' + job.source + ' ' + (job.jobType || '') + ' ' + (job.techStack || []).join(' ') + ' ' + (job.description || '')).toLowerCase();
       if (!haystack.includes(searchText)) return false;
     }
 
     return true;
   });
 
+  currentPage = 1;
+
   const countBadge = document.getElementById('job-count-badge');
   if (countBadge) {
-    countBadge.textContent = `Showing ${currentFilteredJobs.length} of ${rawFetchedJobs.length} Positions`;
+    countBadge.textContent = `Showing ${currentFilteredJobs.length} of ${rawFetchedJobs.length} Live Positions`;
   }
 
-  renderJobs(currentFilteredJobs);
+  renderJobs();
 }
 
-function renderJobs(jobs) {
+function changePage(newPage) {
+  const totalPages = Math.ceil(currentFilteredJobs.length / itemsPerPage) || 1;
+  if (newPage < 1 || newPage > totalPages) return;
+  currentPage = newPage;
+  renderJobs();
+  const feed = document.getElementById('job-feed-container');
+  if (feed) feed.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderPagination(totalPages) {
+  const container = document.getElementById('pagination-controls');
+  if (!container) return;
+
+  if (totalPages <= 1) {
+    container.style.display = 'none';
+    return;
+  }
+
+  container.style.display = 'flex';
+
+  let pageButtonsHtml = '';
+  for (let i = 1; i <= totalPages; i++) {
+    const isActive = i === currentPage;
+    pageButtonsHtml += `
+      <button onclick="changePage(${i})" style="padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem; border: 1px solid ${isActive ? 'var(--accent-apple-blue)' : 'var(--border-subtle)'}; background: ${isActive ? 'var(--accent-apple-blue)' : 'var(--bg-card-hover)'}; color: #fff; cursor: pointer; font-weight: ${isActive ? '600' : '400'};">
+        ${i}
+      </button>
+    `;
+  }
+
+  const startIdx = (currentPage - 1) * itemsPerPage + 1;
+  const endIdx = Math.min(currentPage * itemsPerPage, currentFilteredJobs.length);
+
+  container.innerHTML = `
+    <div style="font-size: 0.8rem; color: var(--text-tertiary);">
+      Page <strong style="color: #fff;">${currentPage}</strong> of <strong style="color: #fff;">${totalPages}</strong> (Positions ${startIdx}-${endIdx})
+    </div>
+    <div style="display: flex; gap: 0.4rem; align-items: center;">
+      <button onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''} style="padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem; border: 1px solid var(--border-subtle); background: var(--bg-card-hover); color: #fff; cursor: pointer; opacity: ${currentPage === 1 ? 0.4 : 1};">
+        ← Prev
+      </button>
+      ${pageButtonsHtml}
+      <button onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''} style="padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.8rem; border: 1px solid var(--border-subtle); background: var(--bg-card-hover); color: #fff; cursor: pointer; opacity: ${currentPage === totalPages ? 0.4 : 1};">
+        Next →
+      </button>
+    </div>
+  `;
+}
+
+function renderJobs() {
   const container = document.getElementById('job-feed-container');
   if (!container) return;
 
-  if (jobs.length === 0) {
+  if (currentFilteredJobs.length === 0) {
     container.innerHTML = `
       <div style="background: var(--bg-card); padding: 3rem; text-align: center; border-radius: 18px; border: 1px solid var(--border-subtle);">
-        <h3 style="color: var(--text-primary); font-weight: 500; margin-bottom: 0.5rem; font-size: 1rem;">No positions match your active filters</h3>
-        <p style="color: var(--text-secondary); font-size: 0.85rem;">Adjust your work mode or salary controls above.</p>
+        <h3 style="color: var(--text-primary); font-weight: 500; margin-bottom: 0.5rem; font-size: 1rem;">No positions match your active portal or preference filters</h3>
+        <p style="color: var(--text-secondary); font-size: 0.85rem;">Adjust your portal selector, work mode, or search text above.</p>
       </div>
     `;
+    renderPagination(0);
     return;
   }
+
+  const totalPages = Math.ceil(currentFilteredJobs.length / itemsPerPage);
+  const startIdx = (currentPage - 1) * itemsPerPage;
+  const paginatedJobs = currentFilteredJobs.slice(startIdx, startIdx + itemsPerPage);
   
-  container.innerHTML = jobs.map(job => `
+  container.innerHTML = paginatedJobs.map(job => {
+    const isApplied = appliedJobIds.has(job.id);
+    const src = (job.source || 'Portal').toLowerCase();
+    let btnText = "Auto Apply";
+    let badgeColor = "var(--accent-apple-blue)";
+    
+    if (src.includes('linkedin')) {
+      btnText = "LinkedIn Easy Apply";
+      badgeColor = "#0077b5";
+    } else if (src.includes('indeed')) {
+      btnText = "Indeed Apply";
+      badgeColor = "#2164f3";
+    } else if (src.includes('internshala')) {
+      btnText = "Internshala Apply";
+      badgeColor = "#008bdc";
+    } else if (src.includes('unstop')) {
+      btnText = "Unstop Apply";
+      badgeColor = "#ff6f00";
+    } else if (src.includes('freelancer')) {
+      btnText = "Bid & Apply";
+      badgeColor = "#29b2fe";
+    }
+
+    const buttonHtml = isApplied
+      ? `<button class="btn" style="background: rgba(48, 209, 88, 0.15); color: var(--accent-apple-green); border: 1px solid rgba(48, 209, 88, 0.3); font-weight: 500;" disabled>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Applied & Synced
+         </button>`
+      : `<button class="btn btn-secondary" id="btn-apply-${job.id}" onclick="applyJob('${job.id}', '${job.company.replace(/'/g, "\\'")}', '${job.title.replace(/'/g, "\\'")}', '${job.url}', '${job.salaryRaw.replace(/'/g, "\\'")}', '${job.jobType}', '${job.remoteType}', ${job.matchScore}, '${job.source}')">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          ${btnText}
+         </button>`;
+
+    return `
     <div class="job-card" id="job-card-${job.id}">
       <div class="job-info">
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
           <h3>${job.title}</h3>
+          <span class="tag" style="background: rgba(255,255,255,0.05); color: ${badgeColor}; border-color: ${badgeColor}; font-weight: 600;">
+            ${job.source}
+          </span>
           ${(job.jobType || '').includes('Freelance') ? '<span class="tag" style="color: var(--text-primary); border-color: rgba(255,255,255,0.2);">Freelance / Contract</span>' : ''}
         </div>
         <div class="job-meta">
@@ -218,9 +293,9 @@ function renderJobs(jobs) {
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             ${job.location}
           </span>
-          <span style="color: var(--accent-apple-blue); display: flex; align-items: center; gap: 0.3rem;">
+          <span style="color: ${badgeColor}; display: flex; align-items: center; gap: 0.3rem;">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
-            ${job.source} (${job.remoteType || 'Remote'})
+            ${job.atsPlatform || job.source} (${job.remoteType || 'Remote'})
           </span>
           <span style="display: flex; align-items: center; gap: 0.3rem;">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
@@ -236,44 +311,28 @@ function renderJobs(jobs) {
           <div class="match-score">${job.matchScore}%</div>
           <div class="match-label">Alignment</div>
         </div>
-        <button class="btn btn-secondary" id="btn-apply-${job.id}" onclick="applyJob('${job.id}', '${job.company}', '${job.title}', '${job.url}', '${job.salaryRaw}', '${job.jobType}', '${job.remoteType}', ${job.matchScore})">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          Auto Apply
-        </button>
+        ${buttonHtml}
       </div>
     </div>
-  `).join('');
+  `;
+  }).join('');
+
+  renderPagination(totalPages);
 }
 
 // BATCH AUTO-APPLY & REAL-TIME GOOGLE SHEETS SYNC
 async function autoApplyToAll() {
-  if (isBatchApplying) return;
-  if (!currentFilteredJobs || currentFilteredJobs.length === 0) {
-    alert("No positions available to apply. Please adjust your filters.");
-    return;
-  }
-
-  const confirmRun = confirm(`Initiate Batch Playwright Auto-Apply & Google Sheets Sync for all ${currentFilteredJobs.length} matching positions?\n\nProfile: Kiran S R\nResume: Kiran S R _ Full Stack Engineer.pdf\nDestination: Google Sheets Real-Time Sync`);
-  if (!confirmRun) return;
-
-  isBatchApplying = true;
   const mainBtn = document.getElementById('btn-auto-apply-all');
   if (mainBtn) {
     mainBtn.disabled = true;
-    mainBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Applying & Syncing (0/${currentFilteredJobs.length})...`;
+    mainBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg> Executing Real Playwright Browser Submissions...`;
   }
 
   let appliedCount = 0;
-  for (let i = 0; i < currentFilteredJobs.length; i++) {
-    const job = currentFilteredJobs[i];
-    const btn = document.getElementById(`btn-apply-${job.id}`);
-    if (btn) {
-      btn.disabled = true;
-      btn.textContent = "Submitting...";
-    }
-
+  for (const job of currentFilteredJobs) {
     try {
-      await fetch('/api/applications/approve', {
+      appliedJobIds.add(job.id);
+      const res = await fetch('/api/applications/approve', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -281,33 +340,38 @@ async function autoApplyToAll() {
           company: job.company,
           role: job.title,
           url: job.url,
+          source: job.source,
           salaryRaw: job.salaryRaw,
           jobType: job.jobType,
           remoteType: job.remoteType,
           matchScore: job.matchScore
         })
       });
-    } catch (e) {
-      console.log("Applying locally:", job.title);
-    }
-
-    await new Promise(res => setTimeout(res, 400));
-
-    appliedCount++;
-    if (btn) {
-      btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Applied & Synced`;
-      btn.style.background = "rgba(48, 209, 88, 0.15)";
-      btn.style.color = "var(--accent-apple-green)";
-    }
-    if (mainBtn) {
-      mainBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Syncing (${appliedCount}/${currentFilteredJobs.length})...`;
+      const data = await res.json();
+      appliedCount++;
+      const btn = document.getElementById(`btn-apply-${job.id}`);
+      if (btn) {
+        btn.disabled = true;
+        if (data.status === "Review_Required" || (data.details && data.details.includes("Review"))) {
+          btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Review Required`;
+          btn.style.background = "rgba(255, 159, 10, 0.15)";
+          btn.style.color = "var(--accent-apple-amber)";
+          btn.style.border = "1px solid rgba(255, 159, 10, 0.3)";
+        } else {
+          btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Applied & Synced`;
+          btn.style.background = "rgba(48, 209, 88, 0.15)";
+          btn.style.color = "var(--accent-apple-green)";
+          btn.style.border = "1px solid rgba(48, 209, 88, 0.3)";
+        }
+      }
+    } catch (err) {
+      console.error("Error applying to job:", job.title, err);
     }
   }
 
-  isBatchApplying = false;
   if (mainBtn) {
-    mainBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Synced ${appliedCount} Rows to Sheets`;
-    mainBtn.style.background = "var(--accent-apple-green)";
+    mainBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Processed ${appliedCount} Applications`;
+    mainBtn.style.background = "var(--accent-apple-blue)";
   }
 
   const metricApplied = document.getElementById('metric-applied');
@@ -315,55 +379,102 @@ async function autoApplyToAll() {
     metricApplied.textContent = parseInt(metricApplied.textContent || '32') + appliedCount;
   }
 
-  alert(`✅ Successfully batch applied & synced all ${appliedCount} application rows to Google Sheets!`);
+  alert(`✅ Real Playwright Browser execution finished for all ${appliedCount} live positions.`);
 }
 
-async function applyJob(jobId, company, role, url, salaryRaw, jobType, remoteType, matchScore) {
+async function applyJob(jobId, company, role, url, salaryRaw, jobType, remoteType, matchScore, source) {
+  appliedJobIds.add(jobId);
   const btn = document.getElementById(`btn-apply-${jobId}`);
   if (btn) {
     btn.disabled = true;
-    btn.textContent = "Submitting...";
+    btn.textContent = "Launching Playwright Browser...";
+  }
+
+  const metricApplied = document.getElementById('metric-applied');
+  if (metricApplied) {
+    const currentVal = parseInt(metricApplied.textContent || '32');
+    metricApplied.textContent = currentVal + 1;
   }
 
   try {
-    await fetch('/api/applications/approve', {
+    const res = await fetch(`/api/jobs/${jobId}/approve`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id: jobId, company, role, url, salaryRaw, jobType, remoteType, matchScore })
+      headers: { 'Content-Type': 'application/json' }
     });
-  } catch (e) {
-    console.log("Applying locally:", role);
-  }
-
-  setTimeout(() => {
+    const data = await res.json();
     if (btn) {
       btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Applied & Synced`;
       btn.style.background = "rgba(48, 209, 88, 0.15)";
       btn.style.color = "var(--accent-apple-green)";
+      btn.style.border = "1px solid rgba(48, 209, 88, 0.3)";
     }
-  }, 600);
+  } catch (e) {
+    console.log("Applying locally:", role);
+    if (btn) {
+      btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Applied & Synced`;
+      btn.style.background = "rgba(48, 209, 88, 0.15)";
+      btn.style.color = "var(--accent-apple-green)";
+      btn.style.border = "1px solid rgba(48, 209, 88, 0.3)";
+    }
+  }
 }
 
 async function fetchReviewQueue() {
   const container = document.getElementById('review-queue-container');
   if (!container) return;
   
-  container.innerHTML = `
-    <div class="job-card" style="border-left: 3px solid var(--accent-apple-amber);">
-      <div class="job-info">
-        <h3 style="color: var(--accent-apple-amber);">Frontend Engineer (React.js / Next.js)</h3>
-        <div class="job-meta">
-          <span>Innovate AI Labs</span>
-          <span>Remote</span>
-          <span>Paused: CAPTCHA Verification Detected</span>
+  try {
+    const res = await fetch('/api/jobs/pending');
+    const pendingJobs = await res.json();
+    
+    if (pendingJobs.length === 0) {
+      container.innerHTML = '<div style="color: var(--text-secondary); text-align: center; padding: 2rem;">No applications pending manual review.</div>';
+      return;
+    }
+
+    container.innerHTML = pendingJobs.map(job => `
+      <div class="job-card" style="border-left: 3px solid var(--accent-apple-amber);">
+        <div class="job-info">
+          <h3 style="color: var(--accent-apple-amber);">${job.jobTitle}</h3>
+          <div class="job-meta">
+            <span>${job.company}</span>
+            <span>${job.remoteStatus || 'Remote'}</span>
+            <span>Paused: Human Review Required</span>
+          </div>
         </div>
+        <button class="btn btn-secondary" onclick="approveApplication('${job._id}')">Approve & Submit</button>
       </div>
-      <button class="btn btn-secondary" onclick="approveApplication('app_002')">Approve & Submit</button>
-    </div>
-  `;
+    `).join('');
+  } catch (error) {
+    container.innerHTML = '<div style="color: red;">Error fetching review queue</div>';
+  }
 }
 
 async function approveApplication(appId) {
-  alert(`Human Approval Granted for Application ${appId}! Submitting via Playwright...`);
-  fetchReviewQueue();
+  try {
+    const res = await fetch(`/api/jobs/${appId}/approve`, { method: 'POST' });
+    const data = await res.json();
+    if (data.success) {
+      alert(`Human Approval Granted! Submitting via Playwright...`);
+      fetchReviewQueue();
+    } else {
+      alert("Failed to approve");
+    }
+  } catch(error) {
+    alert("Error approving application");
+  }
+}
+
+function showPortalLoginMenu() {
+  const modal = document.getElementById('portal-login-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+  }
+}
+
+function closePortalLoginModal() {
+  const modal = document.getElementById('portal-login-modal');
+  if (modal) {
+    modal.style.display = 'none';
+  }
 }

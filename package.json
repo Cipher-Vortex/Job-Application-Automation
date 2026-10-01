@@ -5,10 +5,10 @@
   "main": "server/index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "python start_all.py",
-    "server": "node server/index.js",
-    "ai": "uvicorn backend.main:app --port 8000",
-    "dev": "python start_all.py",
+    "build": "tsc",
+    "start": "tsc && node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "legacy": "python start_all.py",
     "test": "python -m unittest tests/test_agents.py"
   },
   "keywords": [
@@ -22,15 +22,32 @@
   "author": "Kiran S R",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.19.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
     "axios": "^1.7.2",
-    "multer": "^1.4.5-lts.1",
+    "bullmq": "^6.3.10",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
     "googleapis": "^140.0.0",
+    "ioredis": "^6.0.0",
+    "mongoose": "^9.10.3",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^7.25.0",
+    "redis": "^6.3.0",
     "winston": "^3.13.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/ioredis": "^4.28.10",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.3",
+    "@types/supertest": "^7.2.1",
+    "jest": "^30.5.2",
+    "nodemon": "^3.1.4",
+    "playwright": "^1.63.0",
+    "supertest": "^7.3.0",
+    "ts-jest": "^29.4.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
   }
 }

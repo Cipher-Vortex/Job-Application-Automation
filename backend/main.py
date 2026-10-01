@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from typing import Dict, Any, List, Optional
 import json
 import os
+from config.logger import logger
 
 from agents.discovery_agent import discovery_agent
 from agents.job_parser_agent import job_parser_agent
@@ -88,7 +89,7 @@ async def get_live_jobs():
         candidate_profile_data = load_candidate_profile()
         raw_jobs = await discovery_agent.discover_jobs()
         evaluated_jobs = []
-        for raw_j in raw_jobs[:20]:
+        for raw_j in raw_jobs:
             pj = job_parser_agent.parse_job(raw_j)
             eval_res = semantic_matcher.evaluate(candidate_profile_data, pj)
             evaluated_jobs.append({
@@ -108,6 +109,15 @@ async def get_live_jobs():
     except Exception as e:
         logger.error(f"Error serving live jobs: {e}")
         return []
+
+@app.get("/api/ai/portals/login-urls")
+def get_portal_login_urls():
+    """Return Playwright direct login URLs for LinkedIn, Indeed, Internshala, and Unstop."""
+    return {
+        "login_urls": browser_agent.PORTAL_LOGIN_URLS,
+        "persistent_session_dir": browser_agent.user_data_dir,
+        "cookies_file": browser_agent.cookies_file
+    }
 
 @app.post("/api/ai/apply")
 async def execute_application(req: ApplicationRequest):

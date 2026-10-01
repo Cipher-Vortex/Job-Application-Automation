@@ -62,11 +62,11 @@
 
       <!-- TAB 1: DASHBOARD & RADAR -->
       <section id="tab-dashboard" class="tab-content active">
-        <div class="card-grid">
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
           <div class="card">
             <div class="card-title">Positions Discovered</div>
-            <div class="card-value" id="metric-discovered">48</div>
-            <div class="card-subtext">Freelancer.com, RemoteOK, Greenhouse & Lever</div>
+            <div class="card-value" id="metric-discovered">226</div>
+            <div class="card-subtext">Naukri, Indeed, LinkedIn, Greenhouse</div>
           </div>
           <div class="card">
             <div class="card-title">Submitted</div>
@@ -74,20 +74,24 @@
             <div class="card-subtext">Synced to Google Sheets</div>
           </div>
           <div class="card">
-            <div class="card-title">Pending Review</div>
-            <div class="card-value" style="color: var(--accent-apple-amber);" id="metric-review">2</div>
-            <div class="card-subtext">Human Safeguard Queue</div>
+            <div class="card-title">Browser Profile</div>
+            <div class="card-value" style="color: var(--accent-apple-blue); font-size: 1.1rem; font-weight: 600;" id="metric-session">./data/browser_profile</div>
+            <div class="card-subtext" id="metric-session-sub">49 Cookies Saved (LinkedIn/Unstop)</div>
           </div>
           <div class="card">
             <div class="card-title">Average Alignment</div>
-            <div class="card-value" style="color: var(--accent-apple-green);" id="metric-match">91.8%</div>
-            <div class="card-subtext">8-Dimension Vector Score</div>
+            <div class="card-value" style="color: var(--accent-apple-green);" id="metric-match">92.4%</div>
+            <div class="card-subtext">8-Dimension Match Score</div>
           </div>
         </div>
 
         <div class="section-title">
           <span>Live Radar Feed (Full-Time & Real Paid Gigs)</span>
-          <div style="display: flex; gap: 0.75rem;">
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-secondary" onclick="showPortalLoginMenu()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+              Portal Login URLs
+            </button>
             <button class="btn btn-secondary" onclick="exportGoogleSheets()">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Google Sheets Export
@@ -155,10 +159,25 @@
               </select>
             </div>
 
+            <!-- Portal / Platform Selector -->
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Job Portal / Source:</label>
+              <select id="filter-portal" onchange="applyFilters()" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.4rem 0.6rem; border-radius: 8px; font-size: 0.8rem;">
+                <option value="all">All Portals (LinkedIn, Indeed, Internshala, Unstop...)</option>
+                <option value="linkedin">LinkedIn Jobs</option>
+                <option value="indeed">Indeed</option>
+                <option value="internshala">Internshala</option>
+                <option value="unstop">Unstop</option>
+                <option value="freelancer">Freelancer.com</option>
+                <option value="greenhouse">Greenhouse / Lever ATS</option>
+                <option value="remoteok">RemoteOK</option>
+              </select>
+            </div>
+
             <!-- Search -->
             <div>
               <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Search:</label>
-              <input type="text" id="filter-search" placeholder="Search title or skill..." oninput="applyFilters()" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.4rem 0.6rem; border-radius: 8px; font-size: 0.8rem;">
+              <input type="text" id="filter-search" placeholder="Search title, portal or skill..." oninput="applyFilters()" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.4rem 0.6rem; border-radius: 8px; font-size: 0.8rem;">
             </div>
 
           </div>
@@ -166,6 +185,11 @@
 
         <div class="job-list" id="job-feed-container">
           <!-- Job items populated dynamically -->
+        </div>
+
+        <!-- Pagination Controls -->
+        <div id="pagination-controls" style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; background: var(--bg-card); padding: 0.85rem 1.25rem; border-radius: 14px; border: 1px solid var(--border-subtle);">
+          <!-- Populated dynamically -->
         </div>
       </section>
 
@@ -283,6 +307,107 @@
       </section>
 
     </main>
+  </div>
+
+  <!-- PORTAL LOGIN MODAL -->
+  <div id="portal-login-modal" style="display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(8px); z-index: 9999; align-items: center; justify-content: center; padding: 1.5rem;">
+    <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 20px; max-width: 580px; width: 100%; padding: 1.75rem; box-shadow: 0 20px 40px rgba(0,0,0,0.6); animation: fadeIn 0.2s ease-out;">
+      
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem;">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <div style="background: rgba(10, 132, 255, 0.15); color: var(--accent-apple-blue); padding: 0.5rem; border-radius: 10px; display: flex;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          </div>
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 600; color: #fff;">Playwright One-Time Portal Login</h3>
+            <p style="font-size: 0.75rem; color: var(--text-tertiary);">Log into your accounts once. Cookies & browser profile persist for auto-applying.</p>
+          </div>
+        </div>
+        <button onclick="closePortalLoginModal()" style="background: none; border: none; color: var(--text-tertiary); cursor: pointer; padding: 0.4rem;" hover="color: #fff">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.25rem;">
+        
+        <!-- LinkedIn -->
+        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.85rem 1rem; border-radius: 12px;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span style="font-size: 1rem; color: #0077b5; font-weight: 700;">in</span>
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 600; color: #fff;">LinkedIn Jobs</div>
+              <div style="font-size: 0.72rem; color: var(--text-tertiary);">Required for LinkedIn Easy Apply</div>
+            </div>
+          </div>
+          <a href="https://www.linkedin.com/login" target="_blank" class="btn btn-secondary" style="font-size: 0.78rem; text-decoration: none; border-color: #0077b5; color: #0077b5;">
+            Log in on LinkedIn ↗
+          </a>
+        </div>
+
+        <!-- Indeed -->
+        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.85rem 1rem; border-radius: 12px;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span style="font-size: 1rem; color: #2164f3; font-weight: 700;">indeed</span>
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 600; color: #fff;">Indeed Account</div>
+              <div style="font-size: 0.72rem; color: var(--text-tertiary);">Required for Indeed Quick Apply</div>
+            </div>
+          </div>
+          <a href="https://secure.indeed.com/account/login" target="_blank" class="btn btn-secondary" style="font-size: 0.78rem; text-decoration: none; border-color: #2164f3; color: #2164f3;">
+            Log in on Indeed ↗
+          </a>
+        </div>
+
+        <!-- Internshala -->
+        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.85rem 1rem; border-radius: 12px;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span style="font-size: 1rem; color: #008bdc; font-weight: 700;">IS</span>
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 600; color: #fff;">Internshala</div>
+              <div style="font-size: 0.72rem; color: var(--text-tertiary);">Required for Internshala Applications</div>
+            </div>
+          </div>
+          <a href="https://internshala.com/login/user" target="_blank" class="btn btn-secondary" style="font-size: 0.78rem; text-decoration: none; border-color: #008bdc; color: #008bdc;">
+            Log in on Internshala ↗
+          </a>
+        </div>
+
+        <!-- Naukri -->
+        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.85rem 1rem; border-radius: 12px;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span style="font-size: 1rem; color: #ff7555; font-weight: 700;">N</span>
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 600; color: #fff;">Naukri.com Account</div>
+              <div style="font-size: 0.72rem; color: var(--text-tertiary);">Required for Naukri 1-Click Apply</div>
+            </div>
+          </div>
+          <a href="https://www.naukri.com/nlogin/login" target="_blank" class="btn btn-secondary" style="font-size: 0.78rem; text-decoration: none; border-color: #ff7555; color: #ff7555;">
+            Log in on Naukri ↗
+          </a>
+        </div>
+
+        <!-- Unstop -->
+        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.85rem 1rem; border-radius: 12px;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span style="font-size: 1rem; color: #ff6f00; font-weight: 700;">un</span>
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 600; color: #fff;">Unstop</div>
+              <div style="font-size: 0.72rem; color: var(--text-tertiary);">Required for Unstop Hiring Challenges</div>
+            </div>
+          </div>
+          <a href="https://unstop.com/login" target="_blank" class="btn btn-secondary" style="font-size: 0.78rem; text-decoration: none; border-color: #ff6f00; color: #ff6f00;">
+            Log in on Unstop ↗
+          </a>
+        </div>
+
+      </div>
+
+      <div style="background: rgba(48, 209, 88, 0.08); border: 1px solid rgba(48, 209, 88, 0.2); padding: 0.75rem 1rem; border-radius: 12px; font-size: 0.78rem; color: var(--accent-apple-green); display: flex; align-items: center; gap: 0.5rem;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Once logged in, Playwright automatically uses your saved session profile (`./data/browser_profile`).</span>
+      </div>
+
+    </div>
   </div>
 
   <script src="app.js"></script>

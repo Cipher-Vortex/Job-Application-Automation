@@ -10,9 +10,33 @@ services:
     environment:
       - PORT=8000
       - NODE_PORT=3000
-      - DATABASE_URL=sqlite:///./jobpilot.db
+      - MONGODB_URI=mongodb://mongodb:27017/jobpilot
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
       - PLAYWRIGHT_HEADLESS=true
       - HUMAN_IN_THE_LOOP_MODE=true
     volumes:
       - .:/app
+    depends_on:
+      - mongodb
+      - redis
     restart: always
+
+  mongodb:
+    image: mongo:latest
+    container_name: jobpilot_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: unless-stopped
+
+  redis:
+    image: redis:alpine
+    container_name: jobpilot_redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+volumes:
+  mongo_data:

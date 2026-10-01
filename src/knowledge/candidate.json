@@ -1,0 +1,87 @@
+{
+  "candidate": {
+    "name": "Kiran S R",
+    "location": "Bengaluru, India",
+    "contact": {
+      "email": "skkiran1258@gmail.com",
+      "phone": "+91 81247 85632"
+    },
+    "roles": [
+      "Full Stack Engineer",
+      "Frontend Developer",
+      "React Developer",
+      "MERN Stack Developer"
+    ]
+  },
+  "skills": {
+    "frontend": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Framer Motion",
+      "HTML5",
+      "CSS3"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "JWT Authentication",
+      "OAuth 2.0",
+      "Middleware Architecture"
+    ],
+    "database_and_infra": [
+      "MongoDB",
+      "Mongoose ODM",
+      "Redis"
+    ],
+    "ai_and_tools": [
+      "Grok API (xAI)",
+      "RAG Architecture",
+      "Git",
+      "GitHub",
+      "Vercel",
+      "Cloudinary CDN",
+      "Postman",
+      "Agile/Scrum"
+    ]
+  },
+  "highlight_projects": [
+    {
+      "name": "Zupper (Frontend Intern - Mar 2025-Dec 2025)",
+      "description": "Engineered a reusable component library of 20+ React components, reducing duplicate development effort by 30%. Reduced frontend page load time by ~25% by implementing memoization (useMemo/useCallback) and React.lazy code splitting. Integrated REST APIs for real-time inventory tracking."
+    },
+    {
+      "name": "Cerebrum (AI-Powered Note-Taking Platform - 2026)",
+      "description": "Built using Node.js, React, Grok API (xAI), Framer Motion, and MongoDB. Integrated Grok API for real-time note summarization, writing improvement suggestions, and auto-generated smart tags. Implemented RAG architecture to surface contextually relevant notes during queries. Engineered a 5-second debounced auto-save system."
+    },
+    {
+      "name": "Full-Stack Travel Booking Platform (2025)",
+      "description": "MERN Stack application with Redux Toolkit and Cloudinary. Architected the end-to-end system including MongoDB schema modeling. Reduced MongoDB query latency by 40% with compound indexes on high-frequency search fields. Deployed via Vercel."
+    },
+    {
+      "name": "Multi-Vendor E-Commerce Platform (2024)",
+      "description": "Node.js, React, Redux Toolkit, MongoDB. Designed a Role-Based Access Control (RBAC) system supporting Admin, Vendor, and Customer roles. Implemented robust JWT authentication."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Frontend Developer Intern",
+      "company": "Zupper",
+      "dates": "Mar 2025 – Dec 2025"
+    },
+    {
+      "role": "React Developer Intern",
+      "company": "Jozzby Bazar",
+      "dates": "Sep 2023 – Jan 2024"
+    }
+  ],
+  "education": {
+    "degree": "Master of Computer Applications (MCA)",
+    "university": "REVA University",
+    "timeline": "2024 – 2025",
+    "cgpa": "8.2 / 10"
+  }
+}

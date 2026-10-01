@@ -73,3 +73,21 @@ logs/
 /tmp/
 
 integrations/
+# Custom Artifacts & Local Data
+*.png
+*.exe
+implementation_plan*.md
+output.txt
+debug_log.txt
+data/*.csv
+data/browser_profile/
+data/portal_login_status.json
+
+*.csv
+data/user_profile/profile.json
+*_clean.txt
+*_letter.txt
+data/google_sheets_sync_export*
+
+config/candidate_profile.py
+extracted_*.txt
