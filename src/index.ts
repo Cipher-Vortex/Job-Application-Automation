@@ -28,8 +28,8 @@ app.use('/api/ai', createProxyMiddleware({
 
 app.use(express.json());
 
-// Serve static frontend - Assumes running from dist/src or root depending on tsx/tsc
-app.use(express.static(path.join(__dirname, '../../frontend')));
+// Serve static frontend - Path dynamically resolves from dist/index.js -> /app/frontend
+app.use(express.static(path.join(__dirname, '../frontend')));
 
 // API: Get pending jobs (Human Review Queue)
 app.get('/api/jobs/pending', async (req, res) => {
