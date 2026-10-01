@@ -4,6 +4,7 @@ import cors from 'cors';
 import { connectDB } from './config/db';
 import JobModel from './models/Job';
 import path from 'path';
+import { createProxyMiddleware } from 'http-proxy-middleware';
 
 import './queues/discovery.worker';
 import './queues/analysis.worker';
@@ -18,6 +19,13 @@ console.log("=================================================");
 
 const app = express();
 app.use(cors());
+
+// Universal Routing: Transparently tunnel any /api/ai requests internally to the hidden Python Engine
+app.use('/api/ai', createProxyMiddleware({
+  target: 'http://127.0.0.1:8000',
+  changeOrigin: true,
+}));
+
 app.use(express.json());
 
 // Serve static frontend - Assumes running from dist/src or root depending on tsx/tsc
