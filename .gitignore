@@ -84,7 +84,7 @@ data/browser_profile/
 data/portal_login_status.json
 
 *.csv
-data/user_profile/profile.json
+# data/user_profile/profile.json (removed so it can deploy to Render)
 *_clean.txt
 *_letter.txt
 data/google_sheets_sync_export*

@@ -211,7 +211,7 @@ class JobDiscoveryAgent:
                 continue
             
             jobs = data.get("jobs", [])
-            for j in jobs[:4]:
+            for j in jobs:
                 title = self._clean_text(j.get("title", ""))
                 if any(k in title.lower() for k in ["engineer", "developer", "software", "full stack", "frontend", "backend"]):
                     loc = self._clean_text(j.get("location", {}).get("name", "Remote"))
@@ -245,7 +245,7 @@ class JobDiscoveryAgent:
             if not data or not isinstance(data, list):
                 continue
             
-            for j in data[:5]:
+            for j in data:
                 title = self._clean_text(j.get("text", ""))
                 categories = j.get("categories", {})
                 loc = self._clean_text(categories.get("location", "Remote"))

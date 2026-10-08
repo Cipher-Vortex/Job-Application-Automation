@@ -32,8 +32,14 @@ app.add_middleware(
 def load_candidate_profile():
     base_dir = os.path.join(os.path.dirname(__file__), "../data/user_profile")
     def read_json(fname):
-        with open(os.path.join(base_dir, fname), "r", encoding="utf-8") as f:
-            return json.load(f)
+        filepath = os.path.join(base_dir, fname)
+        if os.path.exists(filepath):
+            try:
+                with open(filepath, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception:
+                pass
+        return {}
     return {
         "profile": read_json("profile.json"),
         "experience": read_json("experience.json"),
