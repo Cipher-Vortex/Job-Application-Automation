@@ -18,7 +18,7 @@ export class ApplicationPrepAgent {
 
     try {
       const response = await openai.chat.completions.create({
-        model: "grok-beta", // Update model name if using Grok
+        model: process.env.GROK_API_KEY ? "grok-beta" : "gpt-4o-mini",
         messages: [
           { role: "system", content: PREP_AGENT_PROMPT },
           { role: "user", content: userMessage }

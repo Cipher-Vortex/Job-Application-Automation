@@ -15,7 +15,7 @@ export class MatcherAgent {
 
     try {
       const response = await openai.chat.completions.create({
-        model: "grok-beta", // Using grok-beta/grok-2 based on Grok API
+        model: process.env.GROK_API_KEY ? "grok-beta" : "gpt-4o-mini",
         messages: [
           { role: "system", content: MATCHER_PROMPT },
           { role: "user", content: userMessage }
