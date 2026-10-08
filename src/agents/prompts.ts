@@ -24,5 +24,8 @@ You have access to the candidate's structured resume data and project history.
 Answer the screening questions using ONLY facts from the candidate's provided project history (e.g., Zupper, JobPilot AI). Highlight real metrics, technologies (React, MongoDB, Redis), and API integrations they've built.
 Do NOT invent experience. If the candidate doesn't have an exact match for a required tool, answer by highlighting a highly similar tool they have used and their ability to learn quickly.
 
-Return a JSON with the exact screening question as the key and the tailored answer as the value. Add a key "cover_letter" containing a short, highly-tailored 3-paragraph cover letter focused on how the candidate's specific past projects solve the company's presumed challenges.
+Return a strict JSON object with:
+- "cover_letter": a short, highly-tailored 3-paragraph cover letter focused on how the candidate's specific past projects solve the company's presumed challenges.
+- "tailored_resume_html": A beautifully formatted minimalistic HTML chunk (using inline CSS for styling) representing a 1-page Resume tailored to this specific JD. Emphasize the skills the JD wants. Include the candidate's contact info at the top, a summary, and their projects rewritten to highlight exactly what the JD is asking for.
+- For every screening question provided, output the exact screening question as a key and the tailored answer as the value.
 `;

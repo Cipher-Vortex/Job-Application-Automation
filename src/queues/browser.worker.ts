@@ -51,9 +51,27 @@ export const browserWorker = new Worker('browser-apply', async job => {
     const fileInp = await page.$("input[type='file']");
     if (fileInp) {
         try {
-            const resumeFile = path.resolve(__dirname, '../../documents/Kiran S R _ Full Stack Engineer.pdf');
-            await fileInp.setInputFiles(resumeFile);
-            console.log("Uploaded Resume PDF!");
+            let resumeToUpload = path.resolve(__dirname, '../../documents/Kiran S R _ Full Stack Engineer.pdf');
+            
+            // Dynamic Resume Generation Engine
+            if (job.data.prepData && job.data.prepData.tailored_resume_html) {
+                console.log("[Agent 4] Generating dynamic tailored Resume PDF on the fly...");
+                const pdfPage = await browserContext.newPage();
+                await pdfPage.setContent(job.data.prepData.tailored_resume_html, { waitUntil: 'networkidle' });
+                const dynamicPdfPath = path.resolve(__dirname, `../../documents/Tailored_Resume_${job.data._id}.pdf`);
+                
+                await pdfPage.pdf({ 
+                    path: dynamicPdfPath, 
+                    format: 'A4', 
+                    margin: { top: '0.6in', bottom: '0.6in', left: '0.5in', right: '0.5in' } 
+                });
+                await pdfPage.close();
+                resumeToUpload = dynamicPdfPath;
+                console.log(`[Agent 4] Tailored Resume PDF created successfully at: ${dynamicPdfPath}`);
+            }
+
+            await fileInp.setInputFiles(resumeToUpload);
+            console.log("Uploaded Resume PDF (Tailored or Default)!");
         } catch(e) {
             try {
                 const fallback = path.resolve(__dirname, '../../extracted_resume.txt');

@@ -14,7 +14,7 @@ export interface IJob extends Document {
   matchScore: number;
   skillsMatched: string[];
   missingSkills: string[];
-  status: 'Discovered' | 'Analyzed' | 'Prepared' | 'Pending Approval' | 'Approved' | 'Applied' | 'Rejected' | 'Skipped';
+  status: 'Discovered' | 'Analyzed' | 'Prepared' | 'Pending Approval' | 'Approved' | 'Applied' | 'Rejected' | 'Skipped' | 'Review_Required' | 'Failed';
 }
 
 const JobSchema: Schema = new Schema({
