@@ -37,23 +37,7 @@
       </div>
       <div class="nav-item" onclick="switchTab('review-queue')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <span>Review Queue</span>
-      </div>
-      <div class="nav-item" onclick="switchTab('resume-studio')">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-        <span>Resume & CV Editor</span>
-      </div>
-      <div class="nav-item" onclick="switchTab('salary-intel')">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        <span>Compensation</span>
-      </div>
-      <div class="nav-item" onclick="switchTab('recruiter-crm')">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-        <span>Recruiter CRM</span>
-      </div>
-      <div class="nav-item" onclick="switchTab('skill-gap')">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-        <span>Skill Analysis</span>
+        <span>Application Tracker</span>
       </div>
     </aside>
 
@@ -71,7 +55,7 @@
           <div class="card">
             <div class="card-title">Submitted</div>
             <div class="card-value" id="metric-applied">32</div>
-            <div class="card-subtext">Synced to Google Sheets</div>
+            <div class="card-subtext">Synced & Processed globally</div>
           </div>
           <div class="card">
             <div class="card-title">Browser Profile</div>
@@ -92,17 +76,9 @@
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
               Portal Login URLs
             </button>
-            <button class="btn btn-secondary" onclick="exportGoogleSheets()">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Google Sheets Export
-            </button>
             <button class="btn btn-secondary" onclick="triggerScraper()" id="btn-run-scraper">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
               Run Discovery Engine
-            </button>
-            <button class="btn btn-apple-blue" id="btn-auto-apply-all" onclick="autoApplyToAll()">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-              Auto Apply & Sync to Sheets
             </button>
           </div>
         </div>
@@ -193,116 +169,17 @@
         </div>
       </section>
 
-      <!-- TAB 2: REVIEW QUEUE (HUMAN IN THE LOOP) -->
+      <!-- TAB 2: APPLICATION TRACKER -->
       <section id="tab-review-queue" class="tab-content">
         <div class="section-title">
-          <span>Human Safeguard Queue</span>
+          <span>Application Tracker</span>
         </div>
         <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">
-          Applications requiring human input pause safely before submission.
+          Live Automatic Pipeline Tracker
         </p>
 
         <div class="job-list" id="review-queue-container">
           <!-- Review Queue items populated dynamically -->
-        </div>
-      </section>
-
-      <!-- TAB 3: RESUME & CV EDITOR ROUTE -->
-      <section id="tab-resume-studio" class="tab-content">
-        <div class="section-title">
-          <span>Master Resume & CV Profile Editor</span>
-          <button class="btn btn-apple-blue" onclick="saveResumeProfile()">Save Resume Updates</button>
-        </div>
-
-        <div class="card" style="margin-bottom: 1.25rem;">
-          <h3 style="margin-bottom: 1rem; font-size: 1rem;">Candidate Master Profile</h3>
-          
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
-            <div>
-              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.3rem;">Full Name:</label>
-              <input type="text" id="editor-name" value="Kiran S R" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem; border-radius: 8px;">
-            </div>
-            <div>
-              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.3rem;">Professional Title:</label>
-              <input type="text" id="editor-title" value="Full Stack Engineer / Software Developer" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem; border-radius: 8px;">
-            </div>
-            <div>
-              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.3rem;">Email Address:</label>
-              <input type="email" id="editor-email" value="skkiran1258@gmail.com" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem; border-radius: 8px;">
-            </div>
-            <div>
-              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.3rem;">Phone Number:</label>
-              <input type="text" id="editor-phone" value="+91 81247 85632" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem; border-radius: 8px;">
-            </div>
-          </div>
-
-          <div style="margin-bottom: 1rem;">
-            <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.3rem;">Master Skills (Comma Separated):</label>
-            <input type="text" id="editor-skills" value="React.js, Node.js, Express.js, JavaScript, TypeScript, MongoDB, REST APIs, Python, HTML/CSS, Git, Redux" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem; border-radius: 8px;">
-          </div>
-        </div>
-
-        <div class="card" style="margin-bottom: 1.25rem;">
-          <h3 style="margin-bottom: 1rem; font-size: 1rem;">Raw Master Resume & CV Text</h3>
-          <textarea id="editor-raw-cv" style="width: 100%; height: 320px; background: rgba(0,0,0,0.4); color: #fff; border: 1px solid var(--border-subtle); border-radius: 12px; padding: 1rem; font-family: monospace; font-size: 0.85rem; line-height: 1.5;"></textarea>
-        </div>
-      </section>
-
-      <!-- TAB 4: SALARY INTELLIGENCE -->
-      <section id="tab-salary-intel" class="tab-content">
-        <div class="section-title">
-          <span>Compensation & Freelance Rates</span>
-        </div>
-
-        <div class="card-grid">
-          <div class="card">
-            <div class="card-title">Expected Salary / Rate</div>
-            <div class="card-value">₹8,00,000 / $45 hr</div>
-            <div class="card-subtext">Baseline Salary / Contract</div>
-          </div>
-          <div class="card">
-            <div class="card-title">Freelance Project Min</div>
-            <div class="card-value">$400 - $1,500</div>
-            <div class="card-subtext">Freelancer.com Project Budget</div>
-          </div>
-          <div class="card">
-            <div class="card-title">Freelance Hourly Median</div>
-            <div class="card-value" style="color: var(--accent-apple-blue);">$65 / hr</div>
-            <div class="card-subtext">Global Remote Client Rates</div>
-          </div>
-          <div class="card">
-            <div class="card-title">Market Maximum</div>
-            <div class="card-value" style="color: var(--accent-apple-green);">₹18,00,000</div>
-            <div class="card-subtext">Top Tier SaaS Pay</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TAB 5: RECRUITER CRM -->
-      <section id="tab-recruiter-crm" class="tab-content">
-        <div class="section-title">
-          <span>Recruiter CRM & Contacts</span>
-        </div>
-        <div class="card">
-          <h3 style="margin-bottom: 1rem;">Active Recruiter Touchpoints</h3>
-          <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; border: 1px solid var(--border-subtle);">
-            <strong style="color: var(--text-primary);">Ananya Sharma (SaaSify Technologies)</strong>
-            <div style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.2rem;">Status: In Communication | Last Contact: 2026-08-01</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TAB 6: SKILL GAP -->
-      <section id="tab-skill-gap" class="tab-content">
-        <div class="section-title">
-          <span>Skill Gap & Recommended Learning</span>
-        </div>
-        <div class="card">
-          <h3 style="margin-bottom: 1rem;">Market Skill Enhancements</h3>
-          <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; border-left: 3px solid var(--accent-apple-blue);">
-            <strong style="font-size: 1rem;">Docker & Containerization</strong>
-            <div style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.2rem;">Demand: Required in 45% of Senior SDE job descriptions</div>
-          </div>
         </div>
       </section>
 

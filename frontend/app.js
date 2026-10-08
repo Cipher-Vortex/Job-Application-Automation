@@ -10,7 +10,6 @@ const itemsPerPage = 8;
 document.addEventListener('DOMContentLoaded', () => {
   fetchJobs();
   fetchReviewQueue();
-  loadResumeProfile();
 });
 
 function switchTab(tabId) {
@@ -22,54 +21,6 @@ function switchTab(tabId) {
   
   const targetTab = document.getElementById(`tab-${tabId}`);
   if (targetTab) targetTab.classList.add('active');
-}
-
-function exportGoogleSheets() {
-  window.open('/api/sheets/export', '_blank');
-}
-
-async function loadResumeProfile() {
-  try {
-    const res = await fetch('/api/resume/raw');
-    const data = await res.json();
-    if (data.profile) {
-      if (document.getElementById('editor-name')) document.getElementById('editor-name').value = data.profile.full_name || 'Kiran S R';
-      if (document.getElementById('editor-title')) document.getElementById('editor-title').value = data.profile.headline || 'Full Stack Engineer';
-      if (document.getElementById('editor-email')) document.getElementById('editor-email').value = data.profile.email || 'skkiran1258@gmail.com';
-      if (document.getElementById('editor-phone')) document.getElementById('editor-phone').value = data.profile.phone || '+91 81247 85632';
-      if (document.getElementById('editor-skills') && data.profile.skills) {
-        document.getElementById('editor-skills').value = Array.isArray(data.profile.skills) ? data.profile.skills.join(', ') : data.profile.skills;
-      }
-    }
-    if (data.rawTxt && document.getElementById('editor-raw-cv')) {
-      document.getElementById('editor-raw-cv').value = data.rawTxt;
-    }
-  } catch (err) {
-    console.warn("Could not fetch raw resume:", err);
-  }
-}
-
-async function saveResumeProfile() {
-  const profile = {
-    full_name: document.getElementById('editor-name')?.value || 'Kiran S R',
-    headline: document.getElementById('editor-title')?.value || 'Full Stack Engineer',
-    email: document.getElementById('editor-email')?.value || 'skkiran1258@gmail.com',
-    phone: document.getElementById('editor-phone')?.value || '+91 81247 85632',
-    skills: (document.getElementById('editor-skills')?.value || '').split(',').map(s => s.trim())
-  };
-  const rawTxt = document.getElementById('editor-raw-cv')?.value || '';
-
-  try {
-    const res = await fetch('/api/resume/save', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ profile, rawTxt })
-    });
-    const result = await res.json();
-    alert("✅ " + (result.message || "Resume & CV profile saved successfully!"));
-  } catch (err) {
-    alert("Saved resume updates locally.");
-  }
 }
 
 function updateMetricsDisplay() {
@@ -301,15 +252,10 @@ function renderJobs() {
       badgeColor = "#29b2fe";
     }
 
-    const buttonHtml = isApplied
-      ? `<button class="btn" style="background: rgba(48, 209, 88, 0.15); color: var(--accent-apple-green); border: 1px solid rgba(48, 209, 88, 0.3); font-weight: 500;" disabled>
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          Applied & Synced
-         </button>`
-      : `<button class="btn btn-secondary" id="btn-apply-${job.id}" onclick="applyJob('${job.id}', '${job.company.replace(/'/g, "\\'")}', '${job.title.replace(/'/g, "\\'")}', '${job.url}', '${job.salaryRaw.replace(/'/g, "\\'")}', '${job.jobType}', '${job.remoteType}', ${job.matchScore}, '${job.source}')">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          ${btnText}
-         </button>`;
+    const buttonHtml = `<div style="background: rgba(10, 132, 255, 0.15); color: var(--accent-apple-blue); border: 1px solid rgba(10, 132, 255, 0.3); font-weight: 500; font-size: 0.75rem; padding: 0.4rem 0.8rem; border-radius: 8px; display: flex; align-items: center; gap: 0.4rem;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Auto-Pilot: Queued
+         </div>`;
 
     return `
     <div class="job-card" id="job-card-${job.id}">
@@ -357,148 +303,50 @@ function renderJobs() {
   renderPagination(totalPages);
 }
 
-// BATCH AUTO-APPLY & REAL-TIME GOOGLE SHEETS SYNC
-async function autoApplyToAll() {
-  const mainBtn = document.getElementById('btn-auto-apply-all');
-  if (mainBtn) {
-    mainBtn.disabled = true;
-    mainBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg> Executing Real Playwright Browser Submissions...`;
-  }
-
-  let appliedCount = 0;
-  for (const job of currentFilteredJobs) {
-    try {
-      appliedJobIds.add(job.id);
-      const res = await fetch('/api/applications/approve', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          id: job.id,
-          company: job.company,
-          role: job.title,
-          url: job.url,
-          source: job.source,
-          salaryRaw: job.salaryRaw,
-          jobType: job.jobType,
-          remoteType: job.remoteType,
-          matchScore: job.matchScore
-        })
-      });
-      const data = await res.json();
-      appliedCount++;
-      const btn = document.getElementById(`btn-apply-${job.id}`);
-      if (btn) {
-        btn.disabled = true;
-        if (data.status === "Review_Required" || (data.details && data.details.includes("Review"))) {
-          btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Review Required`;
-          btn.style.background = "rgba(255, 159, 10, 0.15)";
-          btn.style.color = "var(--accent-apple-amber)";
-          btn.style.border = "1px solid rgba(255, 159, 10, 0.3)";
-        } else {
-          btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Applied & Synced`;
-          btn.style.background = "rgba(48, 209, 88, 0.15)";
-          btn.style.color = "var(--accent-apple-green)";
-          btn.style.border = "1px solid rgba(48, 209, 88, 0.3)";
-        }
-      }
-    } catch (err) {
-      console.error("Error applying to job:", job.title, err);
-    }
-  }
-
-  if (mainBtn) {
-    mainBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Processed ${appliedCount} Applications`;
-    mainBtn.style.background = "var(--accent-apple-blue)";
-  }
-
-  const metricApplied = document.getElementById('metric-applied');
-  if (metricApplied) {
-    metricApplied.textContent = parseInt(metricApplied.textContent || '32') + appliedCount;
-  }
-
-  alert(`✅ Real Playwright Browser execution finished for all ${appliedCount} live positions.`);
-}
-
-async function applyJob(jobId, company, role, url, salaryRaw, jobType, remoteType, matchScore, source) {
-  appliedJobIds.add(jobId);
-  const btn = document.getElementById(`btn-apply-${jobId}`);
-  if (btn) {
-    btn.disabled = true;
-    btn.textContent = "Launching Playwright Browser...";
-  }
-
-  const metricApplied = document.getElementById('metric-applied');
-  if (metricApplied) {
-    const currentVal = parseInt(metricApplied.textContent || '32');
-    metricApplied.textContent = currentVal + 1;
-  }
-
-  try {
-    const res = await fetch(`/api/jobs/${jobId}/approve`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' }
-    });
-    const data = await res.json();
-    if (btn) {
-      btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Applied & Synced`;
-      btn.style.background = "rgba(48, 209, 88, 0.15)";
-      btn.style.color = "var(--accent-apple-green)";
-      btn.style.border = "1px solid rgba(48, 209, 88, 0.3)";
-    }
-  } catch (e) {
-    console.log("Applying locally:", role);
-    if (btn) {
-      btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Applied & Synced`;
-      btn.style.background = "rgba(48, 209, 88, 0.15)";
-      btn.style.color = "var(--accent-apple-green)";
-      btn.style.border = "1px solid rgba(48, 209, 88, 0.3)";
-    }
-  }
-}
-
 async function fetchReviewQueue() {
   const container = document.getElementById('review-queue-container');
   if (!container) return;
   
   try {
-    const res = await fetch('/api/jobs/pending');
-    const pendingJobs = await res.json();
+    const res = await fetch('/api/applications');
+    const trackers = await res.json();
     
-    if (pendingJobs.length === 0) {
-      container.innerHTML = '<div style="color: var(--text-secondary); text-align: center; padding: 2rem;">No applications pending manual review.</div>';
+    if (trackers.length === 0) {
+      container.innerHTML = '<div style="color: var(--text-secondary); text-align: center; padding: 2rem;">No applications tracked yet. Run the Discovery Engine to initiate the pipeline.</div>';
       return;
     }
 
-    container.innerHTML = pendingJobs.map(job => `
-      <div class="job-card" style="border-left: 3px solid var(--accent-apple-amber);">
+    container.innerHTML = trackers.map(job => {
+      let statusColor = "var(--text-secondary)";
+      let statusIcon = "";
+      if (job.status === 'Applied') {
+          statusColor = "var(--accent-apple-green)";
+          statusIcon = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>`;
+      } else if (job.status === 'Failed') {
+          statusColor = "var(--accent-apple-amber)";
+          statusIcon = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`;
+      } else {
+          statusColor = "var(--accent-apple-blue)";
+          statusIcon = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`;
+      }
+
+      return `
+      <div class="job-card" style="border-left: 3px solid ${statusColor};">
         <div class="job-info">
-          <h3 style="color: var(--accent-apple-amber);">${job.jobTitle}</h3>
+          <h3 style="color: #fff;">${job.title}</h3>
           <div class="job-meta">
             <span>${job.company}</span>
-            <span>${job.remoteStatus || 'Remote'}</span>
-            <span>Paused: Human Review Required</span>
+            <span>Match: ${job.matchScore || '--'}%</span>
           </div>
         </div>
-        <button class="btn btn-secondary" onclick="approveApplication('${job._id}')">Approve & Submit</button>
+        <div style="background: rgba(255,255,255,0.05); color: ${statusColor}; border: 1px solid rgba(255,255,255,0.1); font-weight: 500; font-size: 0.75rem; padding: 0.4rem 0.8rem; border-radius: 8px; display: flex; align-items: center; gap: 0.4rem;">
+          ${statusIcon}
+          ${job.status}
+        </div>
       </div>
-    `).join('');
+    `}).join('');
   } catch (error) {
-    container.innerHTML = '<div style="color: red;">Error fetching review queue</div>';
-  }
-}
-
-async function approveApplication(appId) {
-  try {
-    const res = await fetch(`/api/jobs/${appId}/approve`, { method: 'POST' });
-    const data = await res.json();
-    if (data.success) {
-      alert(`Human Approval Granted! Submitting via Playwright...`);
-      fetchReviewQueue();
-    } else {
-      alert("Failed to approve");
-    }
-  } catch(error) {
-    alert("Error approving application");
+    container.innerHTML = '<div style="color: red;">Error fetching application tracker endpoint.</div>';
   }
 }
 
