@@ -10,6 +10,13 @@ const itemsPerPage = 8;
 document.addEventListener('DOMContentLoaded', () => {
   fetchJobs();
   fetchReviewQueue();
+  
+  // LIVE POLLING LOOP
+  // Refresh the UI every 10 seconds to show background queue progression
+  setInterval(() => {
+     fetchJobs(true);
+     fetchReviewQueue();
+  }, 10000);
 });
 
 function switchTab(tabId) {
@@ -65,9 +72,9 @@ async function triggerScraper() {
   }
 }
 
-async function fetchJobs() {
+async function fetchJobs(silent = false) {
   const container = document.getElementById('job-feed-container');
-  if (container) {
+  if (container && !silent) {
     container.innerHTML = `<div style="color: var(--text-secondary); padding: 3rem; text-align: center; font-size: 0.9rem;">Scanning live multi-portal feeds across LinkedIn, Indeed, Internshala, Unstop & Freelancer...</div>`;
   }
 
@@ -89,12 +96,14 @@ async function fetchJobs() {
       }
     }
 
-    currentPage = 1;
+    if (!silent) currentPage = 1;
     applyFilters();
   } catch (err) {
     console.warn("Error fetching jobs from server:", err);
-    rawFetchedJobs = [];
-    applyFilters();
+    if (!silent) {
+        rawFetchedJobs = [];
+        applyFilters();
+    }
   }
 }
 
@@ -252,9 +261,14 @@ function renderJobs() {
       badgeColor = "#29b2fe";
     }
 
-    const buttonHtml = `<div style="background: rgba(10, 132, 255, 0.15); color: var(--accent-apple-blue); border: 1px solid rgba(10, 132, 255, 0.3); font-weight: 500; font-size: 0.75rem; padding: 0.4rem 0.8rem; border-radius: 8px; display: flex; align-items: center; gap: 0.4rem;">
+    const buttonHtml = isApplied ? 
+        `<div style="background: rgba(48, 209, 88, 0.15); color: var(--accent-apple-green); border: 1px solid rgba(48, 209, 88, 0.3); font-weight: 500; font-size: 0.75rem; padding: 0.4rem 0.8rem; border-radius: 8px; display: flex; align-items: center; gap: 0.4rem;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Applied
+         </div>` :
+        `<div style="background: rgba(10, 132, 255, 0.15); color: var(--accent-apple-blue); border: 1px solid rgba(10, 132, 255, 0.3); font-weight: 500; font-size: 0.75rem; padding: 0.4rem 0.8rem; border-radius: 8px; display: flex; align-items: center; gap: 0.4rem;">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Auto-Pilot: Queued
+          Processing...
          </div>`;
 
     return `
