@@ -567,9 +567,12 @@ class JobDiscoveryAgent:
         for res in results:
             if isinstance(res, list):
                 all_jobs.extend(res)
+                
+        # Strictly enforce 100% Remote / Work From Home filter
+        remote_only_jobs = [job for job in all_jobs if job.get("remote_type", "").lower() == "remote"]
         
-        logger.info(f"Discovered {len(all_jobs)} cleaned live full-time and real freelance project postings across 10 job portals & ATS engines.")
-        return all_jobs
+        logger.info(f"Discovered {len(remote_only_jobs)} strictly remote live full-time and freelance project postings across 10 job portals & ATS engines.")
+        return remote_only_jobs
 
 discovery_agent = JobDiscoveryAgent()
 
