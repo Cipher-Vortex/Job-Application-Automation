@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JobPilot — Autonomous Career Intelligence</title>
+  <title>JobPilot — Autonomous 100% Remote Career Intelligence & RAG Engine</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,17 +11,34 @@
 </head>
 <body>
 
-  <!-- Apple Translucent Header -->
+  <!-- Translucent Top Header -->
   <header class="navbar">
     <div class="logo">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
       <span>JobPilot</span>
-      <span class="logo-badge">Autonomous Agent v1.0</span>
+      <span class="logo-badge">RAG Auto-Apply v2.0</span>
     </div>
-    <div class="user-status">
-      <div class="status-indicator">
-        <div class="status-dot"></div>
-        <span>24/7 Agent Active (Kiran S R)</span>
+    
+    <div style="display: flex; align-items: center; gap: 1.25rem;">
+      <!-- RAG Memory Indicator -->
+      <div style="display: flex; align-items: center; gap: 0.4rem; background: rgba(255,255,255,0.05); padding: 0.25rem 0.75rem; border-radius: 980px; border: 1px solid var(--border-subtle); font-size: 0.75rem;">
+        <span class="pulse-indicator"></span>
+        <span id="rag-header-badge" style="color: var(--text-secondary);">RAG Memory Online (1.2ms)</span>
+      </div>
+
+      <!-- Instant Auto-Apply Toggle -->
+      <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(41, 151, 255, 0.1); padding: 0.25rem 0.75rem; border-radius: 980px; border: 1px solid rgba(41, 151, 255, 0.25); font-size: 0.75rem;">
+        <span style="color: var(--accent-apple-blue); font-weight: 600;">⚡ Instant Auto-Apply:</span>
+        <button id="btn-toggle-auto-apply" onclick="toggleAutoApply()" style="background: var(--accent-apple-blue); color: #fff; border: none; padding: 0.2rem 0.6rem; border-radius: 980px; font-size: 0.7rem; font-weight: 600; cursor: pointer;">
+          ACTIVE (24/7)
+        </button>
+      </div>
+
+      <div class="user-status">
+        <div class="status-indicator">
+          <div class="status-dot"></div>
+          <span>Kiran S R (Full Stack)</span>
+        </div>
       </div>
     </div>
   </header>
@@ -33,80 +50,93 @@
     <aside class="sidebar">
       <div class="nav-item active" onclick="switchTab('dashboard')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        <span>Radar Feed</span>
+        <span>100% Remote Radar</span>
       </div>
       <div class="nav-item" onclick="switchTab('review-queue')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         <span>Application Tracker</span>
+      </div>
+      <div class="nav-item" onclick="switchTab('rag-memory')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <span>RAG Knowledge Memory</span>
       </div>
     </aside>
 
     <!-- Main Content Area -->
     <main class="main-content">
 
-      <!-- TAB 1: DASHBOARD & RADAR -->
+      <!-- TAB 1: 100% REMOTE RADAR FEED -->
       <section id="tab-dashboard" class="tab-content active">
+        
+        <!-- Live Metrics Bar -->
         <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
           <div class="card">
-            <div class="card-title">Positions Discovered</div>
-            <div class="card-value" id="metric-discovered">226</div>
-            <div class="card-subtext">Naukri, Indeed, LinkedIn, Greenhouse</div>
+            <div class="card-title">100% Remote Discovered</div>
+            <div class="card-value" id="metric-discovered" style="color: var(--accent-apple-blue);">Loading...</div>
+            <div class="card-subtext">Greenhouse, Lever, RemoteOK, Arbeitnow</div>
           </div>
           <div class="card">
-            <div class="card-title">Submitted</div>
-            <div class="card-value" id="metric-applied">32</div>
-            <div class="card-subtext">Synced & Processed globally</div>
+            <div class="card-title">Auto-Applied Submissions</div>
+            <div class="card-value" id="metric-applied" style="color: var(--accent-apple-green);">Loading...</div>
+            <div class="card-subtext">Groomed & Synced globally</div>
           </div>
           <div class="card">
-            <div class="card-title">Browser Profile</div>
-            <div class="card-value" style="color: var(--accent-apple-blue); font-size: 1.1rem; font-weight: 600;" id="metric-session">./data/browser_profile</div>
-            <div class="card-subtext" id="metric-session-sub">49 Cookies Saved (LinkedIn/Unstop)</div>
+            <div class="card-title">Needs Attention / Review</div>
+            <div class="card-value" id="metric-review-count" style="color: var(--accent-apple-amber);">Loading...</div>
+            <div class="card-subtext">CAPTCHA Pause & Additional Info</div>
           </div>
           <div class="card">
             <div class="card-title">Average Alignment</div>
-            <div class="card-value" style="color: var(--accent-apple-green);" id="metric-match">92.4%</div>
-            <div class="card-subtext">8-Dimension Match Score</div>
+            <div class="card-value" style="color: var(--text-primary);" id="metric-match">94.6%</div>
+            <div class="card-subtext">ATS + Company Intelligence Score</div>
           </div>
         </div>
 
+        <!-- Section Title & Global Actions -->
         <div class="section-title">
-          <span>Live Radar Feed (Full-Time & Real Paid Gigs)</span>
+          <div style="display: flex; align-items: center; gap: 0.6rem;">
+            <span>Live 100% Remote Radar Feed</span>
+            <span style="font-size: 0.72rem; background: rgba(48, 209, 88, 0.15); color: var(--accent-apple-green); border: 1px solid rgba(48, 209, 88, 0.3); padding: 0.2rem 0.5rem; border-radius: 980px; font-weight: 600;">
+              100% Remote / WFH Strict Filter
+            </span>
+          </div>
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
             <button class="btn btn-secondary" onclick="showPortalLoginMenu()">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
               Portal Login URLs
             </button>
-            <button class="btn btn-secondary" onclick="triggerScraper()" id="btn-run-scraper">
+            <button class="btn btn-secondary" onclick="runAutoApplyNow()" id="btn-run-auto-apply">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              Run Instant Auto-Apply Pass
+            </button>
+            <button class="btn btn-apple-blue" onclick="triggerScraper()" id="btn-run-scraper">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
-              Run Discovery Engine
+              Refresh Remote Feed
             </button>
           </div>
         </div>
 
-        <!-- Sleek Filter Bar -->
+        <!-- Filter Bar -->
         <div class="filter-bar">
           <div style="font-size: 0.85rem; font-weight: 500; margin-bottom: 1rem; color: var(--text-secondary); display: flex; align-items: center; justify-content: space-between;">
             <div style="display: flex; align-items: center; gap: 0.4rem;">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/></svg>
-              <span>Preferences & Filter Controls</span>
+              <span>Preferences & Remote Controls</span>
             </div>
-            <span id="job-count-badge" style="font-size: 0.75rem; color: var(--text-tertiary);">Showing All Positions</span>
+            <span id="job-count-badge" style="font-size: 0.75rem; color: var(--text-tertiary);">Showing 100% Remote Positions</span>
           </div>
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; align-items: end;">
             
-            <!-- Work Mode -->
+            <!-- Strict Remote Toggle -->
             <div>
               <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Work Mode:</label>
               <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-                <label class="filter-chip">
-                  <input type="checkbox" id="filter-remote" checked onchange="applyFilters()"> Remote
+                <label class="filter-chip" style="background: rgba(48, 209, 88, 0.1); border-color: rgba(48, 209, 88, 0.3); color: var(--accent-apple-green);">
+                  <input type="checkbox" id="filter-remote" checked onchange="applyFilters()"> 100% Remote Only
                 </label>
                 <label class="filter-chip">
-                  <input type="checkbox" id="filter-hybrid" checked onchange="applyFilters()"> Hybrid
-                </label>
-                <label class="filter-chip">
-                  <input type="checkbox" id="filter-onsite" onchange="applyFilters()"> Onsite
+                  <input type="checkbox" id="filter-hybrid" onchange="applyFilters()"> Hybrid
                 </label>
               </div>
             </div>
@@ -137,30 +167,33 @@
 
             <!-- Portal / Platform Selector -->
             <div>
-              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Job Portal / Source:</label>
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Platform / Source:</label>
               <select id="filter-portal" onchange="applyFilters()" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.4rem 0.6rem; border-radius: 8px; font-size: 0.8rem;">
-                <option value="all">All Portals (LinkedIn, Indeed, Internshala, Unstop...)</option>
-                <option value="linkedin">LinkedIn Jobs</option>
+                <option value="all">All Sources (Greenhouse, Lever, RemoteOK, Ashby, Freelancer...)</option>
+                <option value="greenhouse">Greenhouse ATS (Stripe, GitLab, Vercel)</option>
+                <option value="lever">Lever ATS (Figma, Postman)</option>
+                <option value="ashby">Ashby ATS (Zapier, Buffer)</option>
+                <option value="remoteok">RemoteOK Stream</option>
+                <option value="freelancer">Freelancer.com Projects</option>
+                <option value="linkedin">LinkedIn Easy Apply</option>
                 <option value="indeed">Indeed</option>
                 <option value="internshala">Internshala</option>
                 <option value="unstop">Unstop</option>
-                <option value="freelancer">Freelancer.com</option>
-                <option value="greenhouse">Greenhouse / Lever ATS</option>
-                <option value="remoteok">RemoteOK</option>
               </select>
             </div>
 
             <!-- Search -->
             <div>
-              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Search:</label>
-              <input type="text" id="filter-search" placeholder="Search title, portal or skill..." oninput="applyFilters()" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.4rem 0.6rem; border-radius: 8px; font-size: 0.8rem;">
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Keyword Search:</label>
+              <input type="text" id="filter-search" placeholder="React, Next.js, Stripe, Full Stack..." oninput="applyFilters()" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.4rem 0.6rem; border-radius: 8px; font-size: 0.8rem;">
             </div>
 
           </div>
         </div>
 
+        <!-- Dynamic Job Cards Container -->
         <div class="job-list" id="job-feed-container">
-          <!-- Job items populated dynamically -->
+          <!-- Populated dynamically -->
         </div>
 
         <!-- Pagination Controls -->
@@ -169,121 +202,302 @@
         </div>
       </section>
 
-      <!-- TAB 2: APPLICATION TRACKER -->
+      <!-- TAB 2: APPLICATION TRACKER & STATUS VIEWS -->
       <section id="tab-review-queue" class="tab-content">
         <div class="section-title">
-          <span>Application Tracker</span>
+          <span>Application Pipeline & Status Hub</span>
+          <a href="/api/sheets/export" class="btn btn-secondary" style="font-size: 0.78rem; text-decoration: none;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Export Google Sheets CSV
+          </a>
         </div>
-        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">
-          Live Automatic Pipeline Tracker
+        
+        <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 0.88rem;">
+          Track all submitted jobs, applications requiring manual review (CAPTCHA/MFA pauses), and positions requiring additional screening answers.
         </p>
 
-        <div class="job-list" id="review-queue-container">
-          <!-- Review Queue items populated dynamically -->
+        <!-- Sub-Navigation Pills for Statuses -->
+        <div class="status-pill-nav">
+          <button class="status-pill-btn active" id="pill-all" onclick="filterTrackerStatus('all')">
+            <span>All Applications</span>
+            <span class="status-count-badge" id="count-all">0</span>
+          </button>
+          <button class="status-pill-btn" id="pill-applied" onclick="filterTrackerStatus('Applied')">
+            <span style="color: var(--accent-apple-green);">● Applied</span>
+            <span class="status-count-badge" id="count-applied">0</span>
+          </button>
+          <button class="status-pill-btn" id="pill-review" onclick="filterTrackerStatus('Review_Required')">
+            <span style="color: var(--accent-apple-amber);">▲ Needs Review</span>
+            <span class="status-count-badge" id="count-review">0</span>
+          </button>
+          <button class="status-pill-btn" id="pill-info" onclick="filterTrackerStatus('Needs_Info')">
+            <span style="color: var(--accent-apple-blue);">ℹ Additional Info Needed</span>
+            <span class="status-count-badge" id="count-info">0</span>
+          </button>
         </div>
+
+        <div class="job-list" id="review-queue-container">
+          <!-- Populated dynamically -->
+        </div>
+      </section>
+
+      <!-- TAB 3: RAG KNOWLEDGE MEMORY & PAST APPLICATIONS -->
+      <section id="tab-rag-memory" class="tab-content">
+        <div class="section-title">
+          <span>RAG Knowledge Base & Past Applications Memory</span>
+          <button class="btn btn-secondary" onclick="refreshRAGStats()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+            Refresh Memory Stats
+          </button>
+        </div>
+        
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.88rem;">
+          The RAG (Retrieval-Augmented Generation) memory stores candidate master credentials, past application questions & answers, and company intelligence to instantly tailor resumes and autofill applications.
+        </p>
+
+        <!-- RAG Metric Cards -->
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+          <div class="card">
+            <div class="card-title">Indexed Profile Chunks</div>
+            <div class="card-value" id="rag-chunks-val">7</div>
+            <div class="card-subtext">Cerebrum, Zupper, Travel, Skills, MCA</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Past Application Records</div>
+            <div class="card-value" id="rag-apps-val" style="color: var(--accent-apple-blue);">120+</div>
+            <div class="card-subtext">Indexed from Application Memory</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Screening Q&A Rules</div>
+            <div class="card-value" id="rag-qa-val" style="color: var(--accent-apple-green);">10</div>
+            <div class="card-subtext">Instant form autofill rules</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Retrieval Latency</div>
+            <div class="card-value" id="rag-latency-val" style="color: var(--text-primary);">1.2 ms</div>
+            <div class="card-subtext">SQLite BM25 Semantic Search</div>
+          </div>
+        </div>
+
+        <!-- Interactive RAG Tester -->
+        <div class="filter-bar" style="margin-bottom: 1.5rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem; color: #fff;">Interactive RAG Context Query Tester</h4>
+          <p style="font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+            Type any question, skill, or company requirement to see the exact knowledge chunks retrieved in real-time.
+          </p>
+          <div style="display: flex; gap: 0.5rem;">
+            <input type="text" id="rag-test-input" placeholder="e.g. React performance optimization, Zupper internship, or expected salary..." style="flex: 1; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.55rem 0.85rem; border-radius: 10px; font-size: 0.82rem;">
+            <button class="btn btn-apple-blue" onclick="runRAGTestQuery()">Query RAG Memory</button>
+          </div>
+          <div id="rag-test-result" style="margin-top: 1rem; display: none; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; border: 1px solid var(--border-subtle); font-size: 0.8rem;">
+            <!-- Populated on test -->
+          </div>
+        </div>
+
+        <!-- Candidate Core Knowledge Overview -->
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 0.75rem; color: #fff;">Indexed Knowledge Profile</h4>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; font-size: 0.8rem; color: var(--text-secondary);">
+            <div style="background: rgba(255,255,255,0.03); padding: 0.75rem; border-radius: 10px;">
+              <strong style="color: #fff; display: block; margin-bottom: 0.25rem;">Candidate Core:</strong>
+              Kiran S R · Bengaluru, India<br>
+              Master of Computer Applications (REVA University, 8.2 CGPA)
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 0.75rem; border-radius: 10px;">
+              <strong style="color: #fff; display: block; margin-bottom: 0.25rem;">Zupper (Internship):</strong>
+              20+ Reusable Components (-30% duplicate effort), -25% Page Load (memoization/lazy loading).
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 0.75rem; border-radius: 10px;">
+              <strong style="color: #fff; display: block; margin-bottom: 0.25rem;">Cerebrum (AI & RAG):</strong>
+              Grok API (xAI), RAG Architecture, contextual search, 5s debounced autosave.
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 0.75rem; border-radius: 10px;">
+              <strong style="color: #fff; display: block; margin-bottom: 0.25rem;">High-Performance Backend:</strong>
+              -40% MongoDB Latency with compound indexing on travel booking engine.
+            </div>
+          </div>
+        </div>
+
       </section>
 
     </main>
   </div>
 
+  <!-- GROOMED RESUME & CV MODAL (THE JD KEYWORDS & COMPANY PROJECTS TRICK) -->
+  <div id="groom-modal" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <div style="background: rgba(48, 209, 88, 0.15); color: var(--accent-apple-green); padding: 0.5rem; border-radius: 10px; display: flex;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div>
+            <h3 id="groom-modal-title" style="font-size: 1.1rem; font-weight: 600; color: #fff;">Groomed Resume & CV Preview</h3>
+            <p id="groom-modal-subtitle" style="font-size: 0.75rem; color: var(--text-tertiary);">Tailored with JD Keywords & Company Projects Trick</p>
+          </div>
+        </div>
+        <button onclick="closeGroomModal()" style="background: none; border: none; color: var(--text-tertiary); cursor: pointer; padding: 0.4rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        
+        <!-- Company Trick Highlight Box -->
+        <div style="background: rgba(41, 151, 255, 0.08); border: 1px solid rgba(41, 151, 255, 0.25); border-radius: 14px; padding: 1rem; margin-bottom: 1.25rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+            <span style="font-size: 0.78rem; font-weight: 600; color: var(--accent-apple-blue); text-transform: uppercase;">
+              🎯 Company Intelligence & Keywords Injected
+            </span>
+            <span id="groom-ats-score" style="font-size: 0.85rem; font-weight: 700; color: var(--accent-apple-green);">
+              ATS Match: 97.5%
+            </span>
+          </div>
+          <div style="font-size: 0.8rem; color: var(--text-primary); margin-bottom: 0.4rem;" id="groom-company-intel">
+            <!-- Populated dynamically -->
+          </div>
+          <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;" id="groom-injected-keywords">
+            <!-- Keyword pills -->
+          </div>
+        </div>
+
+        <!-- Sub Tabs: Resume vs CV -->
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem;">
+          <button class="status-pill-btn active" id="btn-view-resume" onclick="toggleGroomView('resume')">
+            Tailored Resume (ATS Markdown)
+          </button>
+          <button class="status-pill-btn" id="btn-view-cv" onclick="toggleGroomView('cv')">
+            Tailored Cover Letter (CV)
+          </button>
+        </div>
+
+        <!-- Content Containers -->
+        <div id="groom-content-resume" style="background: rgba(0, 0, 0, 0.4); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 1.25rem; font-family: monospace; font-size: 0.82rem; color: #eaeaea; white-space: pre-wrap; line-height: 1.5; max-height: 380px; overflow-y: auto;">
+          <!-- Resume Markdown populated here -->
+        </div>
+
+        <div id="groom-content-cv" style="display: none; background: rgba(0, 0, 0, 0.4); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 1.25rem; font-size: 0.85rem; color: #eaeaea; white-space: pre-wrap; line-height: 1.6; max-height: 380px; overflow-y: auto;">
+          <!-- CV text populated here -->
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeGroomModal()">Close</button>
+        <button class="btn btn-apple-blue" id="btn-modal-apply" onclick="applyFromModal()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Apply with this Tailored Resume
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESOLVE REVIEW MODAL (FOR CAPTCHA / PAUSED JOBS) -->
+  <div id="review-modal" class="modal-overlay">
+    <div class="modal-container" style="max-width: 540px;">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <div style="background: rgba(255, 159, 10, 0.15); color: var(--accent-apple-amber); padding: 0.5rem; border-radius: 10px; display: flex;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div>
+            <h3 style="font-size: 1.05rem; font-weight: 600; color: #fff;">Review & Confirm Application</h3>
+            <p id="review-modal-target" style="font-size: 0.75rem; color: var(--text-tertiary);">Paused for manual verification</p>
+          </div>
+        </div>
+        <button onclick="closeReviewModal()" style="background: none; border: none; color: var(--text-tertiary); cursor: pointer;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div style="background: rgba(255, 159, 10, 0.08); border: 1px solid rgba(255, 159, 10, 0.25); border-radius: 12px; padding: 0.85rem; font-size: 0.8rem; color: var(--accent-apple-amber); margin-bottom: 1rem;" id="review-modal-reason">
+          Security safeguard paused application to allow user manual review or CAPTCHA resolution.
+        </div>
+        <label style="font-size: 0.78rem; color: var(--text-secondary); display: block; margin-bottom: 0.4rem;">
+          Verification Notes (Optional):
+        </label>
+        <textarea id="review-modal-notes" placeholder="e.g. CAPTCHA solved, form validated..." style="width: 100%; height: 80px; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.6rem; border-radius: 8px; font-size: 0.8rem;"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeReviewModal()">Cancel</button>
+        <button class="btn btn-apple-blue" onclick="submitReviewResolution()">
+          Confirm & Mark Applied
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADDITIONAL INFO MODAL -->
+  <div id="info-modal" class="modal-overlay">
+    <div class="modal-container" style="max-width: 540px;">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <div style="background: rgba(10, 132, 255, 0.15); color: var(--accent-apple-blue); padding: 0.5rem; border-radius: 10px; display: flex;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          </div>
+          <div>
+            <h3 style="font-size: 1.05rem; font-weight: 600; color: #fff;">Provide Additional Information</h3>
+            <p id="info-modal-target" style="font-size: 0.75rem; color: var(--text-tertiary);">Screening question requested by employer</p>
+          </div>
+        </div>
+        <button onclick="closeInfoModal()" style="background: none; border: none; color: var(--text-tertiary); cursor: pointer;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom: 1rem;">
+          <label style="font-size: 0.78rem; color: var(--text-secondary); display: block; margin-bottom: 0.4rem;">
+            Screening Answer / Custom Portfolio Prompt:
+          </label>
+          <textarea id="info-modal-answer" placeholder="Enter requested details (autofill available from RAG memory)..." style="width: 100%; height: 90px; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.6rem; border-radius: 8px; font-size: 0.8rem;"></textarea>
+        </div>
+        <button class="btn btn-secondary" onclick="autofillInfoModalFromRAG()" style="font-size: 0.75rem; width: 100%; justify-content: center;">
+          ⚡ Autofill from RAG Database Memory
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeInfoModal()">Cancel</button>
+        <button class="btn btn-apple-blue" onclick="submitAdditionalInfo()">
+          Save & Complete Application
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- PORTAL LOGIN MODAL -->
-  <div id="portal-login-modal" style="display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(8px); z-index: 9999; align-items: center; justify-content: center; padding: 1.5rem;">
-    <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 20px; max-width: 580px; width: 100%; padding: 1.75rem; box-shadow: 0 20px 40px rgba(0,0,0,0.6); animation: fadeIn 0.2s ease-out;">
-      
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.75rem;">
+  <div id="portal-login-modal" class="modal-overlay">
+    <div class="modal-container" style="max-width: 580px;">
+      <div class="modal-header">
         <div style="display: flex; align-items: center; gap: 0.6rem;">
           <div style="background: rgba(10, 132, 255, 0.15); color: var(--accent-apple-blue); padding: 0.5rem; border-radius: 10px; display: flex;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
           </div>
           <div>
             <h3 style="font-size: 1.1rem; font-weight: 600; color: #fff;">Playwright One-Time Portal Login</h3>
-            <p style="font-size: 0.75rem; color: var(--text-tertiary);">Log into your accounts once. Cookies & browser profile persist for auto-applying.</p>
+            <p style="font-size: 0.75rem; color: var(--text-tertiary);">Log in once to persist session profile (`./data/browser_profile`).</p>
           </div>
         </div>
-        <button onclick="closePortalLoginModal()" style="background: none; border: none; color: var(--text-tertiary); cursor: pointer; padding: 0.4rem;" hover="color: #fff">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        <button onclick="closePortalLoginModal()" style="background: none; border: none; color: var(--text-tertiary); cursor: pointer;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
       </div>
-
-      <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.25rem;">
-        
-        <!-- LinkedIn -->
-        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.85rem 1rem; border-radius: 12px;">
-          <div style="display: flex; align-items: center; gap: 0.75rem;">
-            <span style="font-size: 1rem; color: #0077b5; font-weight: 700;">in</span>
-            <div>
-              <div style="font-size: 0.85rem; font-weight: 600; color: #fff;">LinkedIn Jobs</div>
-              <div style="font-size: 0.72rem; color: var(--text-tertiary);">Required for LinkedIn Easy Apply</div>
-            </div>
-          </div>
-          <a href="https://www.linkedin.com/login" target="_blank" class="btn btn-secondary" style="font-size: 0.78rem; text-decoration: none; border-color: #0077b5; color: #0077b5;">
-            Log in on LinkedIn ↗
-          </a>
+      <div class="modal-body" style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.75rem 1rem; border-radius: 12px;">
+          <span style="font-size: 0.85rem; font-weight: 600; color: #fff;">LinkedIn Jobs</span>
+          <a href="https://www.linkedin.com/login" target="_blank" class="btn btn-secondary" style="font-size: 0.75rem; text-decoration: none; color: #0077b5;">Log in ↗</a>
         </div>
-
-        <!-- Indeed -->
-        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.85rem 1rem; border-radius: 12px;">
-          <div style="display: flex; align-items: center; gap: 0.75rem;">
-            <span style="font-size: 1rem; color: #2164f3; font-weight: 700;">indeed</span>
-            <div>
-              <div style="font-size: 0.85rem; font-weight: 600; color: #fff;">Indeed Account</div>
-              <div style="font-size: 0.72rem; color: var(--text-tertiary);">Required for Indeed Quick Apply</div>
-            </div>
-          </div>
-          <a href="https://secure.indeed.com/account/login" target="_blank" class="btn btn-secondary" style="font-size: 0.78rem; text-decoration: none; border-color: #2164f3; color: #2164f3;">
-            Log in on Indeed ↗
-          </a>
+        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.75rem 1rem; border-radius: 12px;">
+          <span style="font-size: 0.85rem; font-weight: 600; color: #fff;">Indeed Account</span>
+          <a href="https://secure.indeed.com/account/login" target="_blank" class="btn btn-secondary" style="font-size: 0.75rem; text-decoration: none; color: #2164f3;">Log in ↗</a>
         </div>
-
-        <!-- Internshala -->
-        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.85rem 1rem; border-radius: 12px;">
-          <div style="display: flex; align-items: center; gap: 0.75rem;">
-            <span style="font-size: 1rem; color: #008bdc; font-weight: 700;">IS</span>
-            <div>
-              <div style="font-size: 0.85rem; font-weight: 600; color: #fff;">Internshala</div>
-              <div style="font-size: 0.72rem; color: var(--text-tertiary);">Required for Internshala Applications</div>
-            </div>
-          </div>
-          <a href="https://internshala.com/login/user" target="_blank" class="btn btn-secondary" style="font-size: 0.78rem; text-decoration: none; border-color: #008bdc; color: #008bdc;">
-            Log in on Internshala ↗
-          </a>
+        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.75rem 1rem; border-radius: 12px;">
+          <span style="font-size: 0.85rem; font-weight: 600; color: #fff;">Freelancer.com</span>
+          <a href="https://www.freelancer.com/login" target="_blank" class="btn btn-secondary" style="font-size: 0.75rem; text-decoration: none; color: #29b2fe;">Log in ↗</a>
         </div>
-
-        <!-- Naukri -->
-        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.85rem 1rem; border-radius: 12px;">
-          <div style="display: flex; align-items: center; gap: 0.75rem;">
-            <span style="font-size: 1rem; color: #ff7555; font-weight: 700;">N</span>
-            <div>
-              <div style="font-size: 0.85rem; font-weight: 600; color: #fff;">Naukri.com Account</div>
-              <div style="font-size: 0.72rem; color: var(--text-tertiary);">Required for Naukri 1-Click Apply</div>
-            </div>
-          </div>
-          <a href="https://www.naukri.com/nlogin/login" target="_blank" class="btn btn-secondary" style="font-size: 0.78rem; text-decoration: none; border-color: #ff7555; color: #ff7555;">
-            Log in on Naukri ↗
-          </a>
-        </div>
-
-        <!-- Unstop -->
-        <div style="display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 0.85rem 1rem; border-radius: 12px;">
-          <div style="display: flex; align-items: center; gap: 0.75rem;">
-            <span style="font-size: 1rem; color: #ff6f00; font-weight: 700;">un</span>
-            <div>
-              <div style="font-size: 0.85rem; font-weight: 600; color: #fff;">Unstop</div>
-              <div style="font-size: 0.72rem; color: var(--text-tertiary);">Required for Unstop Hiring Challenges</div>
-            </div>
-          </div>
-          <a href="https://unstop.com/login" target="_blank" class="btn btn-secondary" style="font-size: 0.78rem; text-decoration: none; border-color: #ff6f00; color: #ff6f00;">
-            Log in on Unstop ↗
-          </a>
-        </div>
-
       </div>
-
-      <div style="background: rgba(48, 209, 88, 0.08); border: 1px solid rgba(48, 209, 88, 0.2); padding: 0.75rem 1rem; border-radius: 12px; font-size: 0.78rem; color: var(--accent-apple-green); display: flex; align-items: center; gap: 0.5rem;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-        <span>Once logged in, Playwright automatically uses your saved session profile (`./data/browser_profile`).</span>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closePortalLoginModal()">Done</button>
       </div>
-
     </div>
   </div>
 

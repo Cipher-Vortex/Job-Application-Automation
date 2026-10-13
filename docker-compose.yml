@@ -8,11 +8,9 @@ services:
       - "3000:3000"
       - "8000:8000"
     environment:
-      - PORT=8000
       - NODE_PORT=3000
-      - MONGODB_URI=mongodb://mongodb:27017/jobpilot
-      - REDIS_HOST=redis
-      - REDIS_PORT=6379
+      - FASTAPI_PORT=8000
+      - FASTAPI_URL=http://localhost:8000
       - PLAYWRIGHT_HEADLESS=true
       - HUMAN_IN_THE_LOOP_MODE=true
     volumes:

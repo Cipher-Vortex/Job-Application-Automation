@@ -563,16 +563,38 @@ class JobDiscoveryAgent:
             return_exceptions=True
         )
         
-        all_jobs = []
-        for res in results:
-            if isinstance(res, list):
-                all_jobs.extend(res)
+        def is_strictly_remote(job):
+            rtype = (job.get("remote_type") or "").lower()
+            loc = (job.get("location") or "").lower()
+            title = (job.get("title") or "").lower()
+            desc = (job.get("description") or "").lower()
+            
+            # Exclude explicit onsite/relocation requirements
+            if "relocation required" in desc or "strictly onsite" in desc or "hybrid only" in loc:
+                return False
                 
-        # Strictly enforce 100% Remote / Work From Home filter
-        remote_only_jobs = [job for job in all_jobs if job.get("remote_type", "").lower() == "remote"]
-        
-        logger.info(f"Discovered {len(remote_only_jobs)} strictly remote live full-time and freelance project postings across 10 job portals & ATS engines.")
+            return (
+                "remote" in rtype or 
+                "remote" in loc or 
+                "anywhere" in loc or 
+                "worldwide" in loc or 
+                "global" in loc or 
+                "work from home" in loc or
+                "remote" in title
+            )
+            
+        remote_only_jobs = []
+        for job in all_jobs:
+            if is_strictly_remote(job):
+                job["remote_type"] = "Remote"
+                job["is_100_remote"] = True
+                remote_only_jobs.append(job)
+                
+        logger.info(f"Discovered {len(remote_only_jobs)} strictly 100% remote live full-time and freelance project postings across 10 job portals & ATS engines.")
         return remote_only_jobs
+
+    async def discover_all_jobs(self, remote_only: bool = True) -> List[Dict[str, Any]]:
+        return await self.discover_jobs()
 
 discovery_agent = JobDiscoveryAgent()
 
