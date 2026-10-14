@@ -3,10 +3,16 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
+const dns = require('dns');
+
+// Force IPv4 first to prevent IPv6 localhost connection blackholing in Docker/Node
+if (dns.setDefaultResultOrder) {
+  dns.setDefaultResultOrder('ipv4first');
+}
 
 const app = express();
 const PORT = process.env.PORT || process.env.NODE_PORT || 3000;
-const FASTAPI_URL = process.env.FASTAPI_URL || 'http://localhost:8000';
+const FASTAPI_URL = process.env.FASTAPI_URL || 'http://127.0.0.1:8000';
 
 app.use(cors());
 app.use(express.json());
@@ -106,7 +112,7 @@ app.post('/api/resume/save', (req, res) => {
 // Jobs Radar Endpoint - Queries Live Discovery Service
 app.get('/api/ai/jobs/live', async (req, res) => {
   try {
-    const response = await axios.get(`${FASTAPI_URL}/api/ai/jobs/live`, { timeout: 60000 });
+    const response = await axios.get(`${FASTAPI_URL}/api/ai/jobs/live`, { timeout: 8000 });
     return res.json(response.data);
   } catch (err) {
     return res.status(500).json({ error: "Failed to connect to FastAPI microservice", details: err.message });
@@ -115,7 +121,7 @@ app.get('/api/ai/jobs/live', async (req, res) => {
 
 app.get('/api/jobs', async (req, res) => {
   try {
-    const response = await axios.get(`${FASTAPI_URL}/api/ai/jobs/live`, { timeout: 60000 });
+    const response = await axios.get(`${FASTAPI_URL}/api/ai/jobs/live`, { timeout: 8000 });
     if (Array.isArray(response.data) && response.data.length > 0) {
       return res.json(response.data);
     }
@@ -319,7 +325,7 @@ app.post('/api/ai/auto-apply/run-now', async (req, res) => {
 app.post('/api/ai/resume/groom', async (req, res) => {
   const startTime = Date.now();
   try {
-    const aiResp = await axios.post(`${FASTAPI_URL}/api/ai/resume/groom`, req.body, { timeout: 45000 });
+    const aiResp = await axios.post(`${FASTAPI_URL}/api/ai/resume/groom`, req.body, { timeout: 6000 });
     return res.json(aiResp.data);
   } catch (err) {
     const elapsed = Date.now() - startTime;
