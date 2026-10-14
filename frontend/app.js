@@ -1202,3 +1202,21 @@ function redirectToGoogleSheets() {
   window.open(GOOGLE_SHEETS_EDIT_URL, '_blank', 'noopener,noreferrer');
 }
 
+async function triggerSheetsSyncNow() {
+  showToast("Synchronizing applications to Google Sheets Hub...", "info", "Google Sheets Sync");
+  try {
+    const res = await fetch('/api/sheets/sync-all', { method: 'POST' });
+    const data = await res.json();
+    if (data.success) {
+      showToast(data.message || `Synchronized applications to Google Sheets!`, "success", "Google Sheets Synced");
+      setTimeout(() => {
+        refreshSheetsIframe();
+      }, 1200);
+    } else {
+      showToast(data.error || "Sync completed with warnings.", "warning", "Sheets Sync");
+    }
+  } catch (err) {
+    showToast("Error triggering sheets sync: " + err.message, "error", "Sync Error");
+  }
+}
+

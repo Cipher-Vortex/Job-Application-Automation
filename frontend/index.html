@@ -593,9 +593,15 @@
         <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-secondary);">
           <span><strong>Spreadsheet ID:</strong> <code style="color: var(--accent-apple-green); background: rgba(48,209,88,0.1); padding: 0.15rem 0.4rem; border-radius: 4px;">1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0</code></span>
           <span>•</span>
-          <span style="color: var(--accent-apple-green);">● Active Webhook & Service Account Sync</span>
+          <span style="color: var(--accent-apple-green); display: flex; align-items: center; gap: 0.35rem;">
+            <span style="display: inline-block; width: 7px; height: 7px; background: #30d158; border-radius: 50%; box-shadow: 0 0 8px #30d158;"></span>
+            Active Sync
+          </span>
         </div>
-        <div style="display: flex; gap: 0.5rem;">
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <button class="btn btn-primary" onclick="triggerSheetsSyncNow()" style="font-size: 0.72rem; padding: 0.35rem 0.75rem; background: #30d158; color: #000; font-weight: 600; border: none; display: flex; align-items: center; gap: 0.35rem; border-radius: 6px;">
+            <span>⚡ Sync Applications Now</span>
+          </button>
           <button class="btn btn-secondary" onclick="refreshSheetsIframe()" style="font-size: 0.72rem; padding: 0.3rem 0.65rem;">
             🔄 Reload Preview
           </button>
@@ -603,6 +609,15 @@
             📥 Download CSV
           </a>
         </div>
+      </div>
+
+      <!-- Quick Setup Tip Banner -->
+      <div style="background: rgba(10, 132, 255, 0.07); border-bottom: 1px solid rgba(10, 132, 255, 0.2); padding: 0.5rem 1.5rem; font-size: 0.72rem; color: var(--text-secondary); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.4rem;">
+          <span style="color: var(--accent-apple-blue); font-weight: 700;">💡 Pro-Tip:</span>
+          <span>For 100% automated direct formatting, share your sheet with: <code style="color: #60a5fa; user-select: all; background: rgba(0,0,0,0.3); padding: 0.1rem 0.3rem; border-radius: 3px;">sheets-robot-job-application-a@job-apply-sheets-automation.iam.gserviceaccount.com</code> as <strong>Editor</strong>.</span>
+        </div>
+        <a href="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/edit" target="_blank" rel="noopener noreferrer" style="color: var(--accent-apple-blue); font-weight: 600; text-decoration: none;">Open Sheet ↗</a>
       </div>
 
       <!-- Embedded Iframe -->
