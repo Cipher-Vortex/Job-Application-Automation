@@ -19,23 +19,23 @@
       <span class="logo-badge">RAG Auto-Apply v2.0</span>
     </div>
     
-    <div style="display: flex; align-items: center; gap: 1.25rem;">
+    <div class="navbar-actions">
       <!-- RAG Memory Indicator -->
-      <div style="display: flex; align-items: center; gap: 0.4rem; background: rgba(255,255,255,0.05); padding: 0.25rem 0.75rem; border-radius: 980px; border: 1px solid var(--border-subtle); font-size: 0.75rem;">
+      <div class="rag-header-badge-container">
         <span class="pulse-indicator"></span>
         <span id="rag-header-badge" style="color: var(--text-secondary);">RAG Memory Online (1.2ms)</span>
       </div>
 
       <!-- Google Sheets Live Sync Link -->
-      <a href="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/edit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.72rem; padding: 0.25rem 0.65rem; border-color: rgba(48, 209, 88, 0.35); color: #fff; display: flex; align-items: center; gap: 0.4rem; text-decoration: none; border-radius: 980px;" title="Open live synchronized Google Sheet">
+      <a href="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/edit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary sheets-nav-link" title="Open live synchronized Google Sheet">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent-apple-green)" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
-        <span style="font-weight: 500;">Google Sheets ↗</span>
+        <span class="sheets-nav-text">Google Sheets ↗</span>
       </a>
 
       <!-- Instant Auto-Apply Toggle -->
-      <div style="display: flex; align-items: center; gap: 0.5rem; background: rgba(41, 151, 255, 0.1); padding: 0.25rem 0.75rem; border-radius: 980px; border: 1px solid rgba(41, 151, 255, 0.25); font-size: 0.75rem;">
-        <span style="color: var(--accent-apple-blue); font-weight: 600;">⚡ Instant Auto-Apply:</span>
-        <button id="btn-toggle-auto-apply" onclick="toggleAutoApply()" style="background: var(--accent-apple-blue); color: #fff; border: none; padding: 0.2rem 0.6rem; border-radius: 980px; font-size: 0.7rem; font-weight: 600; cursor: pointer;">
+      <div class="auto-apply-header-container">
+        <span class="auto-apply-label" style="color: var(--accent-apple-blue); font-weight: 600;">⚡ Instant Auto-Apply:</span>
+        <button id="btn-toggle-auto-apply" onclick="toggleAutoApply()" class="auto-apply-btn">
           ACTIVE (24/7)
         </button>
       </div>
@@ -43,7 +43,7 @@
       <div class="user-status">
         <div class="status-indicator">
           <div class="status-dot"></div>
-          <span>Kiran S R (Full Stack)</span>
+          <span class="user-status-name">Kiran S R</span>
         </div>
       </div>
     </div>
@@ -56,21 +56,21 @@
     <aside class="sidebar">
       <div class="nav-item active" onclick="switchTab('dashboard')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        <span>100% Remote Radar</span>
+        <span>Remote Radar</span>
       </div>
       <div class="nav-item" onclick="switchTab('review-queue')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <span>Application Tracker</span>
+        <span>Tracker</span>
       </div>
       <div class="nav-item" onclick="switchTab('rag-memory')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        <span>RAG Knowledge Memory</span>
+        <span>RAG Memory</span>
       </div>
       <div class="nav-item" onclick="openSheetsModal()">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
-        <span style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
-          <span>Google Sheets</span>
-          <span style="font-size: 0.65rem; color: var(--accent-apple-green); background: rgba(48,209,88,0.15); padding: 0.1rem 0.35rem; border-radius: 4px; font-weight: 600;">SYNC</span>
+        <span class="nav-sheets-label" style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+          <span>Sheets Hub</span>
+          <span class="sheets-badge-pill" style="font-size: 0.65rem; color: var(--accent-apple-green); background: rgba(48,209,88,0.15); padding: 0.1rem 0.35rem; border-radius: 4px; font-weight: 600;">SYNC</span>
         </span>
       </div>
     </aside>
@@ -139,7 +139,7 @@
             <span id="job-count-badge" style="font-size: 0.75rem; color: var(--text-tertiary);">Showing 100% Remote Positions</span>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; align-items: end;">
+          <div class="filter-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; align-items: end;">
             
             <!-- Strict Remote Toggle -->
             <div>

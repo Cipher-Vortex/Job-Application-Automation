@@ -295,7 +295,7 @@ function renderJobs() {
 
     return `
       <div class="job-card" id="job-card-${job.id}">
-        <div class="job-info" style="flex: 1; margin-right: 1.5rem;">
+        <div class="job-info">
           <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.35rem;">
             <h3>${job.title}</h3>
             <span class="tag" style="background: rgba(48, 209, 88, 0.1); color: var(--accent-apple-green); border-color: rgba(48, 209, 88, 0.25); font-weight: 600;">
@@ -335,7 +335,7 @@ function renderJobs() {
           </div>
         </div>
 
-        <div style="display: flex; align-items: center; gap: 1.25rem;">
+        <div class="job-card-actions">
           <div class="match-badge">
             <div class="match-score">${job.matchScore || 94}%</div>
             <div class="match-label">ATS Alignment</div>
@@ -488,7 +488,7 @@ function renderTrackerQueue() {
 
     return `
       <div class="job-card" style="border-left: 3px solid ${isReview ? 'var(--accent-apple-amber)' : (isInfo ? 'var(--accent-apple-blue)' : 'var(--accent-apple-green)')};">
-        <div class="job-info" style="flex: 1; margin-right: 1.5rem;">
+        <div class="job-info">
           <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.25rem;">
             <h3>${app.role || app.title}</h3>
             <span class="${badgeClass}" style="font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 980px;">
@@ -508,7 +508,7 @@ function renderTrackerQueue() {
           </div>
         </div>
 
-        <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div class="job-card-actions">
           ${actionBtnHtml}
         </div>
       </div>
