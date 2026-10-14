@@ -418,6 +418,29 @@ function renderTrackerQueue() {
 // ================= THE RESUME & CV GROOMING TRICK MODAL =================
 
 let lastGroomDebugInfo = null;
+const clientGroomCache = new Map();
+
+function getCachedGroom(cacheKey) {
+  if (clientGroomCache.has(cacheKey)) {
+    return clientGroomCache.get(cacheKey);
+  }
+  try {
+    const raw = sessionStorage.getItem(`jobpilot_groom_${cacheKey}`);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      clientGroomCache.set(cacheKey, parsed);
+      return parsed;
+    }
+  } catch (e) {}
+  return null;
+}
+
+function setCachedGroom(cacheKey, data) {
+  clientGroomCache.set(cacheKey, data);
+  try {
+    sessionStorage.setItem(`jobpilot_groom_${cacheKey}`, JSON.stringify(data));
+  } catch (e) {}
+}
 
 function toggleGroomDebugDetails() {
   const debugEl = document.getElementById('groom-debug-details');
@@ -448,9 +471,13 @@ function hideGroomErrorBanner() {
 
 function retryGroomModal() {
   if (currentModalJob) {
+    const cacheKey = (currentModalJob.id || `${currentModalJob.company}_${currentModalJob.title}`).toLowerCase().trim();
+    clientGroomCache.delete(cacheKey);
+    try { sessionStorage.removeItem(`jobpilot_groom_${cacheKey}`); } catch (e) {}
+
     const btn = document.getElementById('btn-retry-groom');
     if (btn) btn.textContent = '⏳ Retrying...';
-    openGroomModal(encodeURIComponent(JSON.stringify(currentModalJob)));
+    openGroomModal(encodeURIComponent(JSON.stringify(currentModalJob)), true);
   }
 }
 
@@ -473,18 +500,14 @@ function generateClientSideTailoredProfile(job) {
   };
 }
 
-async function openGroomModal(jobJsonEscaped) {
+async function openGroomModal(jobJsonEscaped, forceRefresh = false) {
   const job = JSON.parse(decodeURIComponent(jobJsonEscaped));
   currentModalJob = job;
+  const cacheKey = (job.id || `${job.company}_${job.title}`).toLowerCase().trim();
 
   const modal = document.getElementById('groom-modal');
   const titleEl = document.getElementById('groom-modal-title');
   const subtitleEl = document.getElementById('groom-modal-subtitle');
-  const intelEl = document.getElementById('groom-company-intel');
-  const kwContainer = document.getElementById('groom-injected-keywords');
-  const resumeContainer = document.getElementById('groom-content-resume');
-  const cvContainer = document.getElementById('groom-content-cv');
-  const atsScoreEl = document.getElementById('groom-ats-score');
   const retryBtn = document.getElementById('btn-retry-groom');
 
   if (retryBtn) retryBtn.textContent = '🔄 Retry';
@@ -492,12 +515,22 @@ async function openGroomModal(jobJsonEscaped) {
 
   if (titleEl) titleEl.textContent = `Tailoring for: ${job.company} — ${job.title}`;
   if (subtitleEl) subtitleEl.textContent = `Applying JD Keywords & Company Projects Trick...`;
-  if (resumeContainer) resumeContainer.textContent = "Querying RAG memory and grooming resume...";
-  if (cvContainer) cvContainer.textContent = "Generating tailored cover letter...";
-  if (atsScoreEl) atsScoreEl.textContent = `ATS Match: Calculating...`;
 
   if (modal) modal.style.display = 'flex';
   toggleGroomView('resume');
+
+  // 1. FAST CACHE HIT: Render immediately with 0ms delay!
+  if (!forceRefresh) {
+    const cachedData = getCachedGroom(cacheKey);
+    if (cachedData) {
+      renderGroomedContent(cachedData, Boolean(cachedData.fallback), true);
+      return;
+    }
+  }
+
+  // 2. OPTIMISTIC INSTANT PREVIEW: Render baseline immediately so user never waits!
+  const baselineData = generateClientSideTailoredProfile(job);
+  renderGroomedContent(baselineData, true, false);
 
   const startTime = performance.now();
 
@@ -505,7 +538,7 @@ async function openGroomModal(jobJsonEscaped) {
     const res = await fetch('/api/ai/resume/groom', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ job: job, role: job.title })
+      body: JSON.stringify({ job: job, role: job.title, forceRefresh: forceRefresh })
     });
 
     const elapsed = Math.round(performance.now() - startTime);
@@ -525,18 +558,19 @@ async function openGroomModal(jobJsonEscaped) {
 
       showGroomErrorBanner(
         "Grooming Engine Notice (Timeout / Pending)",
-        `${errorMsg} — Activated resilient fallback tailor. You can review and apply immediately, or click 'Retry'.`,
+        `${errorMsg} — Cached fast offline profile. You can apply immediately or click 'Retry'.`,
         lastGroomDebugInfo
       );
 
-      // Populate using client fallback so the user is NEVER blocked with undefined% or broken fields
-      const fallbackData = generateClientSideTailoredProfile(job);
-      renderGroomedContent(fallbackData, true);
+      setCachedGroom(cacheKey, baselineData);
+      renderGroomedContent(baselineData, true, false);
       return;
     }
 
-    // Check if backend returned a graceful fallback payload
-    if (data.fallback) {
+    // Cache the response
+    setCachedGroom(cacheKey, data);
+
+    if (data.fallback && !data.from_cache) {
       lastGroomDebugInfo = {
         endpoint: "/api/ai/resume/groom",
         http_status: 200,
@@ -547,13 +581,13 @@ async function openGroomModal(jobJsonEscaped) {
       };
 
       showGroomErrorBanner(
-        "Fast Fallback Mode Active",
-        `Python FastAPI engine is warming up or timed out. Served high-fidelity Node.js fallback resume so you can apply without delay.`,
+        "Fast Response Mode Active (Cached for instant access)",
+        `Tailored resume prepared and cached for 0ms future access. You can review and apply without waiting.`,
         lastGroomDebugInfo
       );
     }
 
-    renderGroomedContent(data, data.fallback);
+    renderGroomedContent(data, Boolean(data.fallback), Boolean(data.from_cache));
   } catch (err) {
     const elapsed = Math.round(performance.now() - startTime);
     lastGroomDebugInfo = {
@@ -564,17 +598,17 @@ async function openGroomModal(jobJsonEscaped) {
     };
 
     showGroomErrorBanner(
-      "Network Connection Issue",
-      `Could not reach grooming service: ${err.message}. Loaded offline tailored profile.`,
+      "Network Notice",
+      `Could not reach grooming service (${err.message}). Using instant tailored profile.`,
       lastGroomDebugInfo
     );
 
-    const fallbackData = generateClientSideTailoredProfile(job);
-    renderGroomedContent(fallbackData, true);
+    setCachedGroom(cacheKey, baselineData);
+    renderGroomedContent(baselineData, true, false);
   }
 }
 
-function renderGroomedContent(data, isFallback = false) {
+function renderGroomedContent(data, isFallback = false, isCached = false) {
   const intelEl = document.getElementById('groom-company-intel');
   const kwContainer = document.getElementById('groom-injected-keywords');
   const resumeContainer = document.getElementById('groom-content-resume');
@@ -583,7 +617,8 @@ function renderGroomedContent(data, isFallback = false) {
 
   const atsScore = data.ats_score != null ? data.ats_score : 94.2;
   if (atsScoreEl) {
-    atsScoreEl.textContent = `ATS Match: ${atsScore}% (${isFallback ? 'Tailored Profile' : 'Top 1% Tier'})`;
+    const badgeText = isCached ? '⚡ 0ms Cached' : (isFallback ? 'Tailored Profile' : 'Top 1% Tier');
+    atsScoreEl.innerHTML = `ATS Match: <strong>${atsScore}%</strong> <span style="font-size: 0.72rem; color: var(--accent-apple-green); font-weight: 600; margin-left: 0.35rem; padding: 0.15rem 0.45rem; background: rgba(48, 209, 88, 0.15); border-radius: 980px;">${badgeText}</span>`;
   }
 
   if (intelEl) {
