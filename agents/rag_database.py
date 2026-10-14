@@ -139,14 +139,14 @@ class RAGDatabase:
                 (
                     "candidate_core",
                     "Master Profile - Kiran S R",
-                    "Kiran S R is a Full Stack Software Engineer based in Bengaluru, India. Contact: skkiran1258@gmail.com, +91 81247 85632. Currently Software Engineer at Onemodo Technologies (Apr 2026 – Present), previously Junior Software Developer at Zupper Commerce (Sep 2024 – Dec 2024) and React Developer at Jozzby Bazar (Sep 2023 – Aug 2024, 1 Year). Experienced in building high-performance MERN, Next.js, and cloud systems with AI/RAG architectures. Delivered 40% reduction in database query latency and 25% improvement in frontend load times.",
-                    "Full Stack Engineer, Software Engineer, Onemodo Technologies, Zupper, React, Node.js, MERN, Grok API, RAG, Next.js, Bengaluru, Kiran S R"
+                    "Kiran S R is a Full Stack Software Engineer based in Bengaluru, India. Contact: skkiran1258@gmail.com, +91 81247 85632. Currently Software Engineer at Onemodo Technologies (Apr 2026 – Present), engineering enterprise ERP software for Ready-Mix Concrete (RMC) plants using Laravel (PHP) and Vue.js. Previously Junior Software Developer at Zupper Commerce (Sep 2024 – Dec 2024) and React Developer at Jozzby Bazar (Sep 2023 – Aug 2024, 1 Year). Experienced in building high-performance MERN, Next.js, Laravel/Vue ERP, and cloud systems with AI/RAG architectures. Delivered 40% reduction in database query latency and 25% improvement in frontend load times.",
+                    "Full Stack Engineer, Software Engineer, Onemodo Technologies, Zupper, React, Node.js, Laravel, Vue.js, PHP, MySQL, ERP, RMC, MERN, Grok API, RAG, Next.js, Bengaluru, Kiran S R"
                 ),
                 (
                     "experience",
                     "Onemodo Technologies - Software Engineer",
-                    "Software Engineer at Onemodo Technologies (Apr 2026 – Present, Bengaluru). Architecting high-concurrency cloud services, responsive React interfaces, and scalable REST API middleware. Developing modular full-stack solutions and optimizing microservice latencies.",
-                    "Onemodo Technologies, Software Engineer, React, Node.js, REST APIs, Microservices, Cloud Architecture"
+                    "Software Engineer at Onemodo Technologies (Apr 2026 – Present, Bengaluru). Engineering enterprise ERP software for Ready-Mix Concrete (RMC) plants utilizing Laravel (PHP) and Vue.js. Architecting reactive Vue.js SPA interfaces for plant dispatching, batch tracking, raw material inventory, and analytics dashboards. Designing robust Laravel RESTful APIs, MySQL relational schemas, background queue jobs, and high-concurrency microservices.",
+                    "Onemodo Technologies, Software Engineer, Laravel, Vue.js, PHP, MySQL, ERP Software, RMC, Ready Mix Concrete, REST APIs, Microservices, Cloud Architecture"
                 ),
                 (
                     "experience",
@@ -175,8 +175,8 @@ class RAGDatabase:
                 (
                     "skills",
                     "Core Technical Skills Matrix",
-                    "Frontend: React.js, Next.js, TypeScript, Redux Toolkit, Tailwind CSS, Framer Motion, HTML5, CSS3, JavaScript ES6+. Backend: Node.js, Express.js, REST API Design, JWT Authentication, OAuth 2.0, Middleware Architecture. Databases: MongoDB, Mongoose ODM, Redis caching, SQLite. AI & Tools: Grok API (xAI), RAG Pipelines, Vector Search, Git, GitHub, Postman, Vercel, Cloudinary, Agile/Scrum.",
-                    "React, Next.js, TypeScript, Node.js, Express, MongoDB, Redis, Grok API, RAG, Tailwind CSS, REST APIs"
+                    "Frontend: React.js, Next.js, Vue.js, TypeScript, Redux Toolkit, Tailwind CSS, Framer Motion, HTML5, CSS3, JavaScript ES6+. Backend: Node.js, Express.js, Laravel (PHP), REST API Design, JWT Authentication, OAuth 2.0, Middleware Architecture, Queues. Databases: MongoDB, MySQL (Relational ERP schemas), Redis caching, SQLite. Domains: ERP Systems (Ready-Mix Concrete / RMC operations), MERN, AI & Tools: Grok API (xAI), RAG Pipelines, Vector Search, Git, GitHub, Postman, Vercel, Cloudinary, Agile/Scrum.",
+                    "React, Next.js, Vue.js, Laravel, PHP, MySQL, ERP, RMC, TypeScript, Node.js, Express, MongoDB, Redis, Grok API, RAG, Tailwind CSS, REST APIs"
                 ),
                 (
                     "education",

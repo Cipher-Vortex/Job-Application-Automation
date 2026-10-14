@@ -70,8 +70,9 @@ class ResumeOptimizationAgent:
         # Strategic summary tailored to company's current projects & services
         tailored_summary = (
             f"Results-driven {job_title} with hands-on production experience developing high-concurrency cloud services, "
-            f"responsive React frontends, and AI/RAG architectures. Currently Software Engineer at Onemodo Technologies, "
-            f"with prior tenure as Junior Software Developer at Zupper and React Developer at Jozzby Bazar (1 Year). "
+            f"responsive React/Vue frontends, and AI/RAG architectures. Currently Software Engineer at Onemodo Technologies "
+            f"(engineering enterprise ERP software for RMC using Laravel and Vue.js), with prior tenure as Junior Software "
+            f"Developer at Zupper and React Developer at Jozzby Bazar (1 Year). "
             f"Tailored specifically for {company_name}'s focus on {comp_services} and key initiatives in {comp_projects}. "
             f"Proven track record delivering a 40% reduction in database query latency and 25% improvement in frontend load times. "
             f"Deeply proficient in {top_keywords_str}, REST API architecture, and scalable microservices designed to accelerate "
@@ -92,7 +93,7 @@ class ResumeOptimizationAgent:
             f"Having followed {company_name}'s impactful work in {comp_domain}—specifically your current initiatives in "
             f"{comp_projects} and your dedication to {comp_services}—I am confident that my technical background and "
             f"performance-focused engineering approach will deliver immediate value to your team.\n\n"
-            f"Currently a Software Engineer at Onemodo Technologies, I architect high-concurrency cloud web services and responsive React applications. "
+            f"Currently a Software Engineer at Onemodo Technologies, I engineer enterprise ERP software for Ready-Mix Concrete (RMC) plants using Laravel (PHP) and Vue.js, alongside scalable cloud architectures and microservices. "
             f"At Zupper as a Junior Software Developer, I authored a modular library of 20+ React components that cut duplicate effort by 30% and "
             f"boosted frontend load speeds by 25% through lazy loading and memoization. In building Cerebrum, I engineered a production RAG pipeline "
             f"integrated with Grok API for real-time contextual semantic search. Over 1 full year at Jozzby Bazar, I validated complex REST contracts "
@@ -122,19 +123,19 @@ Bengaluru, India | +91 81247 85632 | skkiran1258@gmail.com
 
 ### CORE TECHNICAL COMPETENCIES (TARGETED TO {company_name.upper()} & JD)
 - **Target Role Alignment ({company_name} JD)**: {', '.join(jd_keywords[:8])}
-- **Frontend Architecture**: React.js, Next.js (App Router/SSR), TypeScript, Redux Toolkit, Tailwind CSS, Framer Motion, Component Libraries, Core Web Vitals Optimization
-- **Backend & Distributed Systems**: Node.js, Express.js, REST API Design, Microservices, JWT Authentication, OAuth 2.0, Middleware Architecture, WebSockets
-- **Databases & Caching**: MongoDB (Compound Indexing), Redis (Sub-ms caching), SQLite, PostgreSQL, Vector Databases
-- **AI & Intelligent Systems**: RAG Pipelines, Semantic Vector Search, Grok API (xAI), Prompt Engineering, Context Augmentation
+- **Frontend Architecture**: React.js, Next.js (App Router/SSR), Vue.js, TypeScript, Redux Toolkit, Tailwind CSS, Framer Motion, Component Libraries, Core Web Vitals Optimization
+- **Backend & Distributed Systems**: Node.js, Express.js, Laravel (PHP), REST API Design, Microservices, JWT Authentication, OAuth 2.0, Middleware Architecture, WebSockets, Queue Pipelines
+- **Databases & Caching**: MongoDB (Compound Indexing), MySQL (Relational ERP Schemas), Redis (Sub-ms caching), SQLite, PostgreSQL, Vector Databases
+- **Domains & Systems**: ERP Software (Ready-Mix Concrete / RMC Plant Operations), MERN Stack, AI & Intelligent Systems (RAG Pipelines, Vector Search, Grok API)
 - **DevOps, Tooling & Quality**: Git, GitHub Actions, Docker, Postman, Vercel, Cloudinary CDN, Agile / Scrum, Unit & Integration Testing
 
 ---
 
 ### PROFESSIONAL EXPERIENCE
 **Software Engineer** | Onemodo Technologies | Apr 2026 – Present
-- Architecting high-concurrency cloud services, responsive React frontend interfaces, and scalable REST API middleware.
-- Developing modular full-stack solutions and optimizing microservice response latencies across distributed production environments.
-- Establishing reusable API design standards and automated Git CI/CD workflows, accelerating sprint delivery cycles by 20%.
+- Engineering enterprise ERP software for Ready-Mix Concrete (RMC) plant operations utilizing Laravel (PHP) and Vue.js.
+- Architecting reactive Vue.js SPA interfaces for plant dispatching, batch tracking, raw material inventory, and analytics dashboards.
+- Designing robust Laravel RESTful APIs, MySQL relational schemas, background queue jobs, and high-concurrency microservices.
 
 **Junior Software Developer** | Zupper | Sep 2024 – Dec 2024
 - Engineered a modular library of 20+ reusable React UI components, standardizing UI design patterns and cutting duplicate development effort by 30%.

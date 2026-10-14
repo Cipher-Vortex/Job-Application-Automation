@@ -17,7 +17,12 @@
       "position": "Software Engineer",
       "startDate": "Apr 2026",
       "endDate": "Present",
-      "summary": "Architecting high-concurrency cloud services, responsive React frontend interfaces, and scalable REST API middleware."
+      "summary": "Developing enterprise ERP software for Ready-Mix Concrete (RMC) plant operations utilizing Laravel and Vue.js.",
+      "highlights": [
+        "Engineering enterprise ERP software for Ready-Mix Concrete (RMC) plants using Laravel (PHP) and Vue.js.",
+        "Architecting reactive Vue.js SPA interfaces for plant dispatching, batch tracking, material inventory, and analytics dashboards.",
+        "Designing robust Laravel RESTful APIs, MySQL relational schemas, background queue jobs, and high-concurrency microservices."
+      ]
     },
     {
       "company": "Zupper Commerce Pvt. Ltd.",

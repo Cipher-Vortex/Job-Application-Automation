@@ -6,11 +6,11 @@
     "period": "Apr 2026 – Present",
     "location": "Bengaluru, India",
     "is_current": true,
-    "skills": ["React.js", "Node.js", "TypeScript", "REST APIs", "Microservices", "Cloud Architectures", "Git"],
+    "skills": ["Laravel", "Vue.js", "PHP", "MySQL", "ERP Systems", "RMC Software", "React.js", "Node.js", "REST APIs", "Microservices", "Git"],
     "highlights": [
-      "Architecting and shipping high-concurrency cloud web services and responsive React frontend interfaces.",
-      "Developing scalable REST API microservices, enhancing middleware throughput and reducing query execution latencies.",
-      "Leading feature development, component modularization, and production code deployment across cross-functional engineering teams."
+      "Engineering enterprise ERP software for Ready-Mix Concrete (RMC) plants utilizing Laravel (PHP) and Vue.js.",
+      "Architecting reactive Vue.js SPA interfaces for plant dispatching, batch tracking, raw material inventory, and analytics dashboards.",
+      "Designing robust Laravel RESTful APIs, MySQL relational schemas, background queue jobs, and high-concurrency microservices."
     ]
   },
   {
