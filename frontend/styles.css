@@ -22,7 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
   background-color: var(--bg-dark);
   color: var(--text-primary);
   min-height: 100vh;
