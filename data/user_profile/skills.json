@@ -1,8 +1,9 @@
 {
-  "frontend": ["React.js", "Next.js", "TypeScript", "Redux Toolkit", "Tailwind CSS", "Framer Motion", "HTML5", "CSS3", "JavaScript (ES6+)"],
-  "backend": ["Node.js", "Express.js", "REST API Design", "JWT Authentication", "OAuth 2.0", "Session Management", "Middleware Architecture"],
-  "database": ["MongoDB", "Indexing & Query Optimization", "Mongoose ODM", "Schema Design"],
+  "frontend": ["React.js", "Next.js", "Vue.js", "TypeScript", "Redux Toolkit", "Tailwind CSS", "Framer Motion", "HTML5", "CSS3", "JavaScript (ES6+)"],
+  "backend": ["Node.js", "Express.js", "Laravel", "PHP", "REST API Design", "JWT Authentication", "OAuth 2.0", "Session Management", "Middleware Architecture", "Queues"],
+  "database": ["MySQL", "MongoDB", "Indexing & Query Optimization", "Mongoose ODM", "Relational Schema Design", "Redis"],
   "ai_llm": ["Grok API (xAI)", "RAG (Retrieval-Augmented Generation)", "LLM Feature Integration", "Vector Embeddings", "Prompt Engineering"],
+  "domain_systems": ["ERP Software", "RMC (Ready-Mix Concrete) Operations", "MERN Stack", "Distributed Systems"],
   "devops_tools": ["Git", "GitHub", "Postman", "APIdog", "Vercel", "Cloudinary CDN", "Agile / Scrum"],
   "testing": ["Manual API Testing", "Postman", "Edge-Case Validation", "Contract Testing"]
 }

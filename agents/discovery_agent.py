@@ -17,13 +17,13 @@ class JobDiscoveryAgent:
     - Lever Public ATS Endpoints (Figma, Postman)
     """
     def __init__(self):
+        # Curated list of high-growth, remote-first & innovative engineering hubs (underrated & top-tier)
         self.greenhouse_companies = [
-            "stripe", "gitlab", "cloudflare", "vercel", "canonical",
-            "palai", "pal-ai", "pal", "supabase", "sourcegraph", "datadog", "elastic",
-            "10up", "modash", "tejasnetworks"
+            "10up", "modash", "posthog", "mattermost", "calcom", "supabase", "sourcegraph",
+            "canonical", "vercel", "stripe", "gitlab", "cloudflare", "elastic"
         ]
-        self.lever_companies = ["figma", "postman", "duckduckgo", "automattic"]
-        self.ashby_companies = ["zapier", "buffer"]
+        self.lever_companies = ["postman", "duckduckgo", "automattic", "clevertech", "metabase", "ghost"]
+        self.ashby_companies = ["zapier", "buffer", "resend", "modal", "replit", "sentry", "vanta"]
 
     def _clean_text(self, text: str) -> str:
         if not text:
@@ -43,52 +43,72 @@ class JobDiscoveryAgent:
             return None
 
     def fetch_freelancer_com_projects(self) -> List[Dict[str, Any]]:
-        logger.info("Fetching real active freelance projects (<30 days old) from Freelancer.com API...")
-        url = "https://www.freelancer.com/api/projects/0.1/projects/active/?query=react%20node%20fullstack&limit=50"
-        data = self._fetch_url(url)
-        if not data or not isinstance(data, dict):
-            return []
-        
+        logger.info("Fetching real active freelance & contract projects (<30 days old) from Freelancer.com API...")
         import time
         cutoff = time.time() - (30 * 86400) # 30 days ago
-        projects = data.get("result", {}).get("projects", [])
+        queries = ["react%20node%20fullstack", "vue%20laravel%20erp", "fullstack%20developer", "ai%20rag%20web"]
+        seen_ids = set()
         parsed_projects = []
-        for p in projects:
-            submitted = p.get("time_submitted")
-            if submitted and isinstance(submitted, (int, float)) and submitted < cutoff:
-                continue
 
-            title = self._clean_text(p.get("title", ""))
-            if not title:
+        for q in queries:
+            url = f"https://www.freelancer.com/api/projects/0.1/projects/active/?query={q}&limit=25"
+            data = self._fetch_url(url)
+            if not data or not isinstance(data, dict):
                 continue
             
-            p_id = p.get("id")
-            budget = p.get("budget", {})
-            min_b = budget.get("minimum", 100)
-            max_b = budget.get("maximum", 1500)
-            
-            sal_str = f"${min_b} - ${max_b} USD (Fixed Project Contract)" if min_b and max_b else "$50 - $90 / hr (Freelance)"
-            seo_url = p.get("seo_url")
-            link = f"https://www.freelancer.com/projects/{seo_url}" if seo_url else f"https://www.freelancer.com/projects/{p_id}"
-            
-            parsed_projects.append({
-                "id": f"fl_{p_id}",
-                "title": title,
-                "company": "Client Project (Freelancer.com)",
-                "department": "Engineering Gig",
-                "location": "Global Remote",
-                "remote_type": "Remote",
-                "job_type": "Freelance / Contract",
-                "url": link,
-                "source": "Freelancer.com",
-                "ats_platform": "Freelancer API",
-                "salary_raw": sal_str,
-                "salary_min": min_b * 83 if min_b else 800000,
-                "salary_max": max_b * 83 if max_b else 1500000,
-                "experience_required": "All Levels",
-                "tech_stack": ["React", "Node.js", "Full Stack", "Web Development"],
-                "description": self._clean_text(p.get("preview_description", p.get("description", "")))
-            })
+            projects = data.get("result", {}).get("projects", [])
+            for p in projects:
+                p_id = p.get("id")
+                if not p_id or p_id in seen_ids:
+                    continue
+                seen_ids.add(p_id)
+
+                submitted = p.get("time_submitted")
+                if submitted and isinstance(submitted, (int, float)) and submitted < cutoff:
+                    continue
+
+                title = self._clean_text(p.get("title", ""))
+                if not title:
+                    continue
+                
+                budget = p.get("budget", {})
+                min_b = budget.get("minimum", 100)
+                max_b = budget.get("maximum", 1500)
+                
+                sal_str = f"${min_b} - ${max_b} USD (Fixed Project Contract)" if min_b and max_b else "$50 - $90 / hr (Freelance)"
+                seo_url = p.get("seo_url")
+                link = f"https://www.freelancer.com/projects/{seo_url}" if seo_url else f"https://www.freelancer.com/projects/{p_id}"
+                
+                desc = self._clean_text(p.get("preview_description", p.get("description", "")))
+                haystack = f"{title} {desc}".lower()
+                tech_stack = ["Full Stack", "Web Development"]
+                if "react" in haystack: tech_stack.append("React")
+                if "node" in haystack: tech_stack.append("Node.js")
+                if "vue" in haystack: tech_stack.append("Vue.js")
+                if "laravel" in haystack: tech_stack.append("Laravel")
+                if "erp" in haystack: tech_stack.append("ERP Systems")
+                if "ai" in haystack or "rag" in haystack: tech_stack.append("AI / RAG")
+                if "mysql" in haystack: tech_stack.append("MySQL")
+                if "mongo" in haystack: tech_stack.append("MongoDB")
+
+                parsed_projects.append({
+                    "id": f"fl_{p_id}",
+                    "title": title,
+                    "company": "Client Project (Freelancer.com)",
+                    "department": "Engineering Gig",
+                    "location": "Global Remote",
+                    "remote_type": "Remote",
+                    "job_type": "Freelance / Contract",
+                    "url": link,
+                    "source": "Freelancer.com",
+                    "ats_platform": "Freelancer API",
+                    "salary_raw": sal_str,
+                    "salary_min": min_b * 83 if min_b else 800000,
+                    "salary_max": max_b * 83 if max_b else 1500000,
+                    "experience_required": "All Levels",
+                    "tech_stack": tech_stack,
+                    "description": desc
+                })
         return parsed_projects
 
     def fetch_remoteok_jobs(self) -> List[Dict[str, Any]]:
@@ -563,6 +583,11 @@ class JobDiscoveryAgent:
             return_exceptions=True
         )
         
+        all_jobs = []
+        for r in results:
+            if isinstance(r, list):
+                all_jobs.extend(r)
+        
         def is_strictly_remote(job):
             rtype = (job.get("remote_type") or "").lower()
             loc = (job.get("location") or "").lower()
@@ -570,7 +595,7 @@ class JobDiscoveryAgent:
             desc = (job.get("description") or "").lower()
             
             # Exclude explicit onsite/relocation requirements
-            if "relocation required" in desc or "strictly onsite" in desc or "hybrid only" in loc:
+            if "relocation required" in desc or "strictly onsite" in desc or "hybrid only" in loc or "hybrid" in rtype:
                 return False
                 
             return (
