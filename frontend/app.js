@@ -91,6 +91,10 @@ function applyFilters() {
   const searchText = (document.getElementById('filter-search')?.value || '').toLowerCase().trim();
 
   currentFilteredJobs = rawFetchedJobs.filter(job => {
+    // Safeguard: Never display or apply to Onemodo Technologies
+    const compName = (job.company || '').toLowerCase();
+    if (compName.includes('onemodo')) return false;
+
     const mode = (job.remoteType || job.location || '').toLowerCase();
     const isRemote = mode.includes('remote') || job.is100Remote || mode.includes('work from home') || mode.includes('anywhere');
     const isHybrid = mode.includes('hybrid');
@@ -180,14 +184,14 @@ function renderJobs() {
         Applied
       </div>
     ` : `
-      <div style="display: flex; gap: 0.5rem;">
-        <button class="btn btn-secondary" onclick="openGroomModal('${jobJsonEscaped}')" style="font-size: 0.76rem; padding: 0.45rem 0.85rem;">
+      <div style="display: flex; gap: 0.5rem; align-items: center;">
+        <button class="btn btn-secondary" onclick="openGroomModal('${jobJsonEscaped}')" style="font-size: 0.76rem; padding: 0.45rem 0.85rem;" title="Preview and edit tailored resume and cover letter">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
           Groom Resume & CV
         </button>
-        <button class="btn btn-apple-blue" onclick="instantApplyJob('${jobJsonEscaped}', this)" style="font-size: 0.76rem; padding: 0.45rem 0.9rem;">
+        <button class="btn btn-apple-blue" onclick="applyWithTailoredResume('${jobJsonEscaped}', this)" style="font-size: 0.76rem; padding: 0.45rem 0.95rem; font-weight: 600;" title="Instantly submit application with resume and cover letter tailored to this JD and company">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          Instant Apply
+          Apply with Tailored Resume
         </button>
       </div>
     `;
@@ -495,8 +499,8 @@ function generateClientSideTailoredProfile(job) {
     company_current_projects: projects,
     company_services: services,
     injected_jd_keywords: tech,
-    tailored_resume_markdown: `# Kiran S R\n**Full Stack Engineer** | Bengaluru, India | +91 81247 85632 | skkiran1258@gmail.com\n[GitHub](https://github.com/skkiran1258) · [LinkedIn](https://www.linkedin.com/in/kiran-s-r) · [Portfolio](https://kiransr-portfolio.vercel.app)\n\n---\n\n### PROFESSIONAL SUMMARY\nResults-driven Full Stack Engineer with hands-on experience building high-concurrency web systems and AI/RAG integrations. Tailored for **${company}**'s initiatives in **${projects}** and focus on **${services}**. Proven track record reducing database query latency by 40% and frontend load speeds by 25%.\n\n---\n\n### CORE TECHNICAL COMPETENCIES (ALIGNED WITH ${company.toUpperCase()})\n- **Target Stack Alignment**: ${tech.join(', ')}\n- **Frontend**: React.js, Next.js, TypeScript, Redux Toolkit, Tailwind CSS, Framer Motion\n- **Backend & APIs**: Node.js, Express.js, REST APIs, Microservices, JWT, OAuth 2.0\n- **Databases & Vector**: MongoDB, Redis, SQLite, Compound Indexing\n- **AI & Intelligent Systems**: RAG Pipelines, Vector Retrieval, Grok API (xAI)\n\n---\n\n### PROFESSIONAL EXPERIENCE\n**Frontend Developer Intern** | Zupper | Mar 2025 – Dec 2025\n- Engineered a modular library of 20+ reusable React UI components, cutting duplicate development effort by 30%.\n- Reduced frontend page load time by ~25% through memoization (useMemo/useCallback) and lazy loading code-splitting.\n- Integrated REST APIs for real-time inventory tracking in an Agile development cycle.\n\n**React Developer Intern** | Jozzby Bazar | Sep 2023 – Jan 2024\n- Built cross-device responsive UI components ensuring seamless mobile and desktop rendering.\n- Validated REST API contracts, handling null states and asynchronous race conditions.\n\n---\n\n### FEATURED PROJECTS\n**Cerebrum — Real-Time RAG AI Platform**\n- Built autonomous RAG system leveraging Grok API (xAI) and vector storage for sub-second semantic retrieval.\n\n**High-Performance Booking Architecture**\n- Architected MongoDB compound index strategy reducing query response latency by 40% under concurrent loads.`,
-    tailored_cv: `Dear ${company} Hiring Team,\n\nI am writing to express my strong enthusiasm for the ${role} position at ${company}. Having followed ${company}'s focus on ${services}—specifically your initiatives in ${projects}—I am confident that my technical background in high-performance full-stack web engineering and RAG AI architectures will deliver immediate value to your team.\n\nAt Zupper, I reduced frontend page load times by 25% through lazy loading and memoization, while engineering 20+ reusable React components. In building Cerebrum, I authored a production RAG pipeline integrated with Grok API for real-time contextual semantic retrieval. My core technical toolkit directly mirrors your stack: ${tech.join(', ')}.\n\nI welcome the opportunity to discuss how my skill set can accelerate ${company}'s upcoming milestones.\n\nSincerely,\nKiran S R\nBengaluru, India | skkiran1258@gmail.com | +91 81247 85632\nGitHub: https://github.com/skkiran1258 | Portfolio: https://kiransr-portfolio.vercel.app`
+    tailored_resume_markdown: `# Kiran S R\n**Full Stack Engineer** | Bengaluru, India | +91 81247 85632 | skkiran1258@gmail.com\n[GitHub](https://github.com/skkiran1258) · [LinkedIn](https://www.linkedin.com/in/kiran-s-r) · [Portfolio](https://kiransr-portfolio.vercel.app)\n\n---\n\n### PROFESSIONAL SUMMARY\nResults-driven Full Stack Engineer with hands-on experience building high-concurrency cloud services, scalable REST APIs, and AI/RAG integrations. Tailored for **${company}**'s initiatives in **${projects}** and focus on **${services}**. Proven track record reducing database query latency by 40% and frontend load speeds by 25%.\n\n---\n\n### CORE TECHNICAL COMPETENCIES (ALIGNED WITH ${company.toUpperCase()})\n- **Target Stack Alignment**: ${tech.join(', ')}\n- **Frontend**: React.js, Next.js, TypeScript, Redux Toolkit, Tailwind CSS, Framer Motion\n- **Backend & APIs**: Node.js, Express.js, REST APIs, Microservices, JWT, OAuth 2.0\n- **Databases & Vector**: MongoDB, Redis, SQLite, Compound Indexing\n- **AI & Intelligent Systems**: RAG Pipelines, Vector Retrieval, Grok API (xAI)\n\n---\n\n### PROFESSIONAL EXPERIENCE\n**Software Engineer** | Onemodo Technologies | Apr 2026 – Present\n- Architecting high-concurrency cloud services, responsive React frontend interfaces, and scalable REST API middleware.\n- Developing modular full-stack solutions and optimizing microservice response latencies across distributed production environments.\n\n**Junior Software Developer** | Zupper | Sep 2024 – Dec 2024\n- Engineered a modular library of 20+ reusable React UI components, standardizing UI patterns and cutting duplicate development effort by 30%.\n- Reduced frontend page load time by ~25% through memoization (useMemo/useCallback) and lazy loading code-splitting.\n- Integrated REST APIs for real-time inventory tracking and analytics dashboards in an Agile development cycle.\n\n**React Developer Intern** | Jozzby Bazar | Sep 2023 – Aug 2024 (1 Year)\n- Built cross-device responsive UI components ensuring seamless mobile and desktop rendering over 1 full year.\n- Validated REST API contracts, handling null states, error boundaries, and asynchronous race conditions.\n\n---\n\n### FEATURED PROJECTS\n**Cerebrum — Real-Time RAG AI Platform**\n- Built autonomous RAG system leveraging Grok API (xAI) and vector storage for sub-second semantic retrieval.\n\n**High-Performance Booking Architecture**\n- Architected MongoDB compound index strategy reducing query response latency by 40% under concurrent loads.`,
+    tailored_cv: `Dear ${company} Hiring Team,\n\nI am writing to express my strong enthusiasm for the ${role} position at ${company}. Having followed ${company}'s focus on ${services}—specifically your initiatives in ${projects}—I am confident that my technical background in high-performance full-stack web engineering and RAG AI architectures will deliver immediate value to your team.\n\nCurrently working as a Software Engineer at Onemodo Technologies, I design scalable cloud architectures and responsive frontends. Previously at Zupper as a Junior Software Developer, I reduced frontend page load times by 25% through lazy loading and memoization, while authoring 20+ reusable React components. In building Cerebrum, I engineered a production RAG pipeline integrated with Grok API for real-time contextual semantic retrieval. My core technical toolkit directly mirrors your stack: ${tech.join(', ')}.\n\nI welcome the opportunity to discuss how my skill set can accelerate ${company}'s upcoming milestones.\n\nSincerely,\nKiran S R\nBengaluru, India | skkiran1258@gmail.com | +91 81247 85632\nGitHub: https://github.com/skkiran1258 | Portfolio: https://kiransr-portfolio.vercel.app`
   };
 }
 
@@ -680,19 +684,30 @@ function closeGroomModal() {
 
 async function applyFromModal() {
   if (!currentModalJob) return;
+  const modalJob = currentModalJob;
   closeGroomModal();
-  await instantApplyJob(encodeURIComponent(JSON.stringify(currentModalJob)));
+  await applyWithTailoredResume(encodeURIComponent(JSON.stringify(modalJob)));
 }
 
-// ================= INSTANT APPLY EXECUTION =================
+// ================= TAILORED APPLY EXECUTION (ALIGNED TO JD & COMPANY OBJECTIVES) =================
 
-async function instantApplyJob(jobJsonEscaped, btnElement = null) {
+async function applyWithTailoredResume(jobJsonEscaped, btnElement = null) {
   const job = JSON.parse(decodeURIComponent(jobJsonEscaped));
-  
+  const companyClean = (job.company || '').toLowerCase();
+
+  // Safeguard: Never apply to Onemodo Technologies Services Pvt Ltd
+  if (companyClean.includes('onemodo')) {
+    alert("⚠️ Safeguard Active: You cannot apply to Onemodo Technologies Services Pvt Ltd (Current Employer Exclusion Policy).");
+    return;
+  }
+
   if (btnElement) {
     btnElement.disabled = true;
-    btnElement.innerHTML = `Grooming & Submitting...`;
+    btnElement.innerHTML = `Tailoring & Submitting...`;
   }
+
+  const cacheKey = (job.id || `${job.company}_${job.title}`).toLowerCase().trim();
+  const tailoredData = getCachedGroom(cacheKey) || generateClientSideTailoredProfile(job);
 
   try {
     const res = await fetch('/api/applications/approve', {
@@ -706,8 +721,10 @@ async function instantApplyJob(jobJsonEscaped, btnElement = null) {
         salaryRaw: job.salaryRaw,
         jobType: job.jobType,
         remoteType: "Remote",
-        matchScore: job.matchScore || 94,
-        source: job.source
+        matchScore: job.matchScore || tailoredData.ats_score || 94,
+        source: job.source,
+        tailored_resume_markdown: tailoredData.tailored_resume_markdown,
+        tailored_cv: tailoredData.tailored_cv
       })
     });
 
@@ -723,15 +740,18 @@ async function instantApplyJob(jobJsonEscaped, btnElement = null) {
     renderJobs();
     await fetchApplications();
 
-    alert(`✅ Application successfully submitted for ${job.title} at ${job.company}!\nResume groomed with company trick and logged to Google Sheets & RAG Database.`);
+    alert(`✅ Application successfully submitted to ${job.company} for ${job.title}!\n\n📄 Resume tailored specifically to ${job.company}'s objectives & JD keywords.\nLogged to RAG Database and Google Sheets.`);
   } catch (err) {
     if (btnElement) {
       btnElement.disabled = false;
-      btnElement.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Instant Apply`;
+      btnElement.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Apply with Tailored Resume`;
     }
-    alert(`Application notice: ${err.message}. Checked and logged to review queue.`);
+    alert(`Application notice: ${err.message}.`);
   }
 }
+
+// Alias for backwards compatibility
+const instantApplyJob = applyWithTailoredResume;
 
 // ================= REVIEW RESOLUTION & ADDITIONAL INFO =================
 

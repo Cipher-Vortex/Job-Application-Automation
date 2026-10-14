@@ -139,20 +139,26 @@ class RAGDatabase:
                 (
                     "candidate_core",
                     "Master Profile - Kiran S R",
-                    "Kiran S R is a Full Stack Engineer based in Bengaluru, India. Contact: skkiran1258@gmail.com, +91 81247 85632. 10+ months internship experience building high-performance MERN and Next.js applications with AI/LLM integration (Grok API, RAG architectures). Delivered 40% reduction in database query latency and 25% improvement in frontend load times.",
-                    "Full Stack Engineer, React, Node.js, MERN, Grok API, RAG, Next.js, Bengaluru, Kiran S R"
+                    "Kiran S R is a Full Stack Software Engineer based in Bengaluru, India. Contact: skkiran1258@gmail.com, +91 81247 85632. Currently Software Engineer at Onemodo Technologies (Apr 2026 – Present), previously Junior Software Developer at Zupper Commerce (Sep 2024 – Dec 2024) and React Developer at Jozzby Bazar (Sep 2023 – Aug 2024, 1 Year). Experienced in building high-performance MERN, Next.js, and cloud systems with AI/RAG architectures. Delivered 40% reduction in database query latency and 25% improvement in frontend load times.",
+                    "Full Stack Engineer, Software Engineer, Onemodo Technologies, Zupper, React, Node.js, MERN, Grok API, RAG, Next.js, Bengaluru, Kiran S R"
                 ),
                 (
                     "experience",
-                    "Zupper Commerce - Frontend Developer Intern",
-                    "Frontend Developer Intern at Zupper (Mar 2025 – Dec 2025, Bengaluru). Engineered a reusable component library of 20+ React components standardizing UI patterns and cutting duplicate development effort by 30%. Reduced frontend page load time by ~25% using memoization (useMemo/useCallback) and React.lazy code splitting. Integrated REST APIs for real-time inventory tracking and analytics dashboards in Agile sprints.",
-                    "Zupper, React.js, Redux Toolkit, REST APIs, component library, memoization, code splitting, performance optimization"
+                    "Onemodo Technologies - Software Engineer",
+                    "Software Engineer at Onemodo Technologies (Apr 2026 – Present, Bengaluru). Architecting high-concurrency cloud services, responsive React interfaces, and scalable REST API middleware. Developing modular full-stack solutions and optimizing microservice latencies.",
+                    "Onemodo Technologies, Software Engineer, React, Node.js, REST APIs, Microservices, Cloud Architecture"
                 ),
                 (
                     "experience",
-                    "Jozzby Bazar - React Developer Intern",
-                    "React Developer Intern at Jozzby Bazar (Sep 2023 – Jan 2024). Built cross-device responsive UI components with consistent rendering across mobile, tablet, and desktop breakpoints. Validated REST API contracts, handled error boundaries, null states, and async race conditions. Contributed to modular, reusable component patterns.",
-                    "Jozzby Bazar, React.js, JavaScript, Responsive Design, REST APIs, UI components"
+                    "Zupper Commerce - Junior Software Developer",
+                    "Junior Software Developer at Zupper Commerce (Sep 2024 – Dec 2024, Bengaluru). Engineered a reusable component library of 20+ React components standardizing UI patterns and cutting duplicate development effort by 30%. Reduced frontend page load time by ~25% using memoization (useMemo/useCallback) and React.lazy code splitting. Integrated REST APIs for real-time inventory tracking and analytics dashboards in Agile sprints.",
+                    "Zupper, Junior Software Developer, React.js, Redux Toolkit, REST APIs, component library, memoization, code splitting, performance optimization"
+                ),
+                (
+                    "experience",
+                    "Jozzby Bazar - React Developer Intern (1 Year)",
+                    "React Developer Intern at Jozzby Bazar (Sep 2023 – Aug 2024, 1 Year). Built cross-device responsive UI components with consistent rendering across mobile, tablet, and desktop breakpoints over 1 full year. Validated REST API contracts, handled error boundaries, null states, and async race conditions. Contributed to modular, reusable component patterns.",
+                    "Jozzby Bazar, React.js, JavaScript, Responsive Design, REST APIs, UI components, 1 Year Experience"
                 ),
                 (
                     "project",

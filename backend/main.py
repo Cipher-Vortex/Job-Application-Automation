@@ -198,6 +198,17 @@ async def get_live_jobs(remote_only: bool = True):
 
 # ================= APPLICATION PIPELINE & RAG MEMORY =================
 
+BLACKLISTED_EMPLOYERS = [
+    "onemodo", "onemodo technologies", "onemodo technologies services", 
+    "onemodo technologies services pvt ltd", "onemodo technologies services private limited"
+]
+
+def is_blacklisted_employer(company_name: str) -> bool:
+    if not company_name:
+        return False
+    c = company_name.lower().strip()
+    return any(b in c for b in BLACKLISTED_EMPLOYERS)
+
 @app.post("/api/ai/apply")
 async def execute_application(req: ApplicationRequest):
     """
@@ -206,6 +217,13 @@ async def execute_application(req: ApplicationRequest):
     2. Submits via Playwright or safe API fallback
     3. Persists to RAG Database memory and Google Sheets CSV
     """
+    if is_blacklisted_employer(req.company):
+        logger.warning(f"BLOCKED application attempt to excluded employer: {req.company}")
+        raise HTTPException(
+            status_code=400,
+            detail="Safeguard Active: Cannot apply to Onemodo Technologies Services Pvt Ltd (Current Employer Exclusion Policy)."
+        )
+
     candidate = load_candidate_profile()
     
     # 1. Groom resume specifically for this company & JD
@@ -351,6 +369,10 @@ async def _run_autonomous_batch_apply():
         for job in remote_jobs:
             job_url = job.get("url")
             if not job_url or job_url in applied_urls:
+                continue
+
+            if is_blacklisted_employer(job.get("company", "")):
+                logger.info(f"Safeguard: Skipped blacklisted employer {job.get('company')}")
                 continue
                 
             # Evaluate match score

@@ -127,14 +127,18 @@ class ResumeOptimizationAgent:
 ---
 
 ### PROFESSIONAL EXPERIENCE
-**Frontend Developer Intern** | Zupper | Mar 2025 – Dec 2025
-- Engineered a reusable component library of 20+ React components, standardizing UI patterns and cutting duplicate development effort by 30%.
-- Reduced frontend page load time by ~25% by implementing memoization (useMemo/useCallback) and React.lazy code splitting.
-- Integrated REST APIs for real-time inventory tracking and analytics dashboards in an Agile sprint environment.
+**Software Engineer** | Onemodo Technologies | Apr 2026 – Present
+- Architecting high-concurrency cloud services, responsive React frontend interfaces, and scalable REST API middleware.
+- Developing modular full-stack solutions and optimizing microservice response latencies across distributed production environments.
 
-**React Developer Intern** | Jozzby Bazar | Sep 2023 – Jan 2024
-- Built and maintained responsive, cross-device UI components ensuring consistent rendering across mobile, tablet, and desktop breakpoints.
-- Validated REST API contracts, handling null states, error boundaries, and async race conditions.
+**Junior Software Developer** | Zupper | Sep 2024 – Dec 2024
+- Engineered a modular library of 20+ reusable React UI components, standardizing UI patterns and cutting duplicate development effort by 30%.
+- Reduced frontend page load time by ~25% by implementing memoization (useMemo/useCallback) and React.lazy code splitting.
+- Integrated REST APIs for real-time inventory tracking and analytics dashboards in an Agile development cycle.
+
+**React Developer Intern** | Jozzby Bazar | Sep 2023 – Aug 2024 (1 Year)
+- Built and maintained responsive, cross-device UI components ensuring seamless mobile and desktop rendering over 1 full year.
+- Validated REST API contracts, handling null states, error boundaries, and asynchronous race conditions.
 
 ---
 

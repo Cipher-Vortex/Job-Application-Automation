@@ -583,8 +583,19 @@ class JobDiscoveryAgent:
                 "remote" in title
             )
             
+        BLACKLISTED_EMPLOYERS = [
+            "onemodo", "onemodo technologies", "onemodo technologies services", "onemodo technologies services pvt ltd"
+        ]
+
+        def is_blacklisted_employer(job):
+            comp = (job.get("company") or "").lower()
+            return any(b in comp for b in BLACKLISTED_EMPLOYERS)
+
         remote_only_jobs = []
         for job in all_jobs:
+            if is_blacklisted_employer(job):
+                logger.info(f"Safeguard: Excluded blacklisted current employer job posting from {job.get('company')}")
+                continue
             if is_strictly_remote(job):
                 job["remote_type"] = "Remote"
                 job["is_100_remote"] = True

@@ -1,9 +1,23 @@
 [
   {
+    "id": "exp_0",
+    "role": "Software Engineer",
+    "company": "Onemodo Technologies",
+    "period": "Apr 2026 – Present",
+    "location": "Bengaluru, India",
+    "is_current": true,
+    "skills": ["React.js", "Node.js", "TypeScript", "REST APIs", "Microservices", "Cloud Architectures", "Git"],
+    "highlights": [
+      "Architecting and shipping high-concurrency cloud web services and responsive React frontend interfaces.",
+      "Developing scalable REST API microservices, enhancing middleware throughput and reducing query execution latencies.",
+      "Leading feature development, component modularization, and production code deployment across cross-functional engineering teams."
+    ]
+  },
+  {
     "id": "exp_1",
     "role": "Junior Software Developer",
     "company": "Zupper Commerce Pvt. Ltd.",
-    "period": "Oct 2024 – Dec 2025",
+    "period": "Sep 2024 – Dec 2024",
     "location": "Bengaluru, India",
     "verification_letter": "Verified via Official Experience Letter (Date: Jan 10, 2026, Signed by Founder & CEO Mohammed Irfan Shaik)",
     "skills": ["React.js", "Node.js", "Redux Toolkit", "REST APIs", "Git", "Agile", "Web/Mobile App Development"],
@@ -19,11 +33,12 @@
     "id": "exp_2",
     "role": "React Developer Intern",
     "company": "Jozzby Bazar",
-    "period": "Sep 2023 – Jan 2024",
+    "period": "Sep 2023 – Aug 2024",
+    "duration": "1 Year",
     "location": "Bengaluru, India",
-    "skills": ["React.js", "JavaScript", "REST APIs", "Responsive Design"],
+    "skills": ["React.js", "JavaScript", "REST APIs", "Responsive Design", "Component Lifecycle"],
     "highlights": [
-      "Built and maintained responsive, cross-device UI components ensuring consistent rendering across mobile, tablet, and desktop breakpoints.",
+      "Built and maintained responsive, cross-device UI components ensuring seamless mobile, tablet, and desktop rendering over 1 full year.",
       "Validated REST API contracts and handled edge cases (null states, error boundaries, async race conditions) during frontend integration.",
       "Contributed to a modular, scalable frontend architecture using reusable component patterns and consistent prop interfaces."
     ]
