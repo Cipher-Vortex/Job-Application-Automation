@@ -594,6 +594,20 @@ app.get('/api/sheets/export', (req, res) => {
   return res.sendFile(csvExportPath);
 });
 
+// Google Sheets Sync Info & Redirect Endpoint
+app.get('/api/sheets/info', (req, res) => {
+  const sheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID || "1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0";
+  const editUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/edit`;
+  const previewUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/preview`;
+  res.json({
+    spreadsheet_id: sheetId,
+    sheets_url: editUrl,
+    preview_url: previewUrl,
+    export_csv_url: "/api/sheets/export",
+    sync_status: "Active (Webhook & CSV Log)"
+  });
+});
+
 // Salary Intelligence Endpoint
 app.get('/api/salary', (req, res) => {
   res.json({

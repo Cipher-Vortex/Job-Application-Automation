@@ -1,5 +1,102 @@
 // JobPilot AI — Autonomous 100% Remote Career Intelligence & RAG Engine
 
+// ================= FLOATING GLASSMORPHIC TOAST NOTIFICATION ENGINE =================
+
+function showToast(message, type = 'info', title = null, duration = 4500) {
+  let container = document.getElementById('toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.id = 'toast-container';
+    container.className = 'toast-container';
+    document.body.appendChild(container);
+  }
+
+  // Icons for toast types
+  const icons = {
+    success: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>`,
+    error: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`,
+    warning: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>`,
+    info: `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>`
+  };
+
+  const defaultTitles = {
+    success: 'Success',
+    error: 'Notice / Error',
+    warning: 'Attention',
+    info: 'Update'
+  };
+
+  const toast = document.createElement('div');
+  toast.className = `toast toast-${type}`;
+  toast.innerHTML = `
+    <div class="toast-icon">
+      ${icons[type] || icons.info}
+    </div>
+    <div class="toast-content">
+      <div class="toast-title">${title || defaultTitles[type] || 'Notice'}</div>
+      <div class="toast-message">${message}</div>
+    </div>
+    <button class="toast-close" title="Dismiss" aria-label="Dismiss">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="toast-progress" style="animation-duration: ${duration}ms;"></div>
+  `;
+
+  let isDismissed = false;
+  const dismiss = () => {
+    if (isDismissed) return;
+    isDismissed = true;
+    toast.classList.add('toast-hiding');
+    setTimeout(() => {
+      if (toast.parentNode) toast.parentNode.removeChild(toast);
+    }, 280);
+  };
+
+  toast.querySelector('.toast-close').addEventListener('click', (e) => {
+    e.stopPropagation();
+    dismiss();
+  });
+
+  toast.addEventListener('click', dismiss);
+
+  const timeoutId = setTimeout(dismiss, duration);
+
+  // Pause on hover
+  toast.addEventListener('mouseenter', () => {
+    clearTimeout(timeoutId);
+    const progress = toast.querySelector('.toast-progress');
+    if (progress) progress.style.animationPlayState = 'paused';
+  });
+
+  toast.addEventListener('mouseleave', () => {
+    setTimeout(dismiss, 1500);
+  });
+
+  container.appendChild(toast);
+}
+
+// Global Toast helper
+window.toast = {
+  success: (msg, title, duration) => showToast(msg, 'success', title, duration),
+  error: (msg, title, duration) => showToast(msg, 'error', title, duration),
+  warning: (msg, title, duration) => showToast(msg, 'warning', title, duration),
+  info: (msg, title, duration) => showToast(msg, 'info', title, duration)
+};
+
+// Automatic override: convert all native alert calls to floating toast notifications
+window.alert = function(msg) {
+  const text = String(msg || '');
+  if (text.includes('✅') || text.toLowerCase().includes('success') || text.toLowerCase().includes('approved') || text.toLowerCase().includes('saved')) {
+    showToast(text, 'success', 'Success');
+  } else if (text.includes('⚠️') || text.toLowerCase().includes('warning') || text.toLowerCase().includes('safeguard') || text.toLowerCase().includes('please provide')) {
+    showToast(text, 'warning', 'Safeguard Notice');
+  } else if (text.toLowerCase().includes('error') || text.toLowerCase().includes('failed') || text.toLowerCase().includes('could not')) {
+    showToast(text, 'error', 'Notice');
+  } else {
+    showToast(text, 'info', 'JobPilot Intelligence');
+  }
+};
+
 let rawFetchedJobs = [];
 let currentFilteredJobs = [];
 let appliedJobIds = new Set();
@@ -760,7 +857,7 @@ async function applyWithTailoredResume(jobJsonEscaped, btnElement = null) {
 
   // Safeguard: Never apply to Onemodo Technologies Services Pvt Ltd
   if (companyClean.includes('onemodo')) {
-    alert("⚠️ Safeguard Active: You cannot apply to Onemodo Technologies Services Pvt Ltd (Current Employer Exclusion Policy).");
+    showToast("You cannot apply to Onemodo Technologies Services Pvt Ltd (Current Employer Exclusion Policy).", "warning", "⚠️ Safeguard Active");
     return;
   }
 
@@ -803,13 +900,18 @@ async function applyWithTailoredResume(jobJsonEscaped, btnElement = null) {
     renderJobs();
     await fetchApplications();
 
-    alert(`✅ Application successfully submitted to ${job.company} for ${job.title}!\n\n📄 Resume tailored specifically to ${job.company}'s objectives & JD keywords.\nLogged to RAG Database and Google Sheets.`);
+    showToast(
+      `Application successfully submitted to ${job.company} for ${job.title}!\n\n📄 Resume tailored to ${job.company}'s objectives & JD keywords.\nLogged to RAG Database and Google Sheets.`,
+      "success",
+      `✅ Applied: ${job.company}`,
+      6500
+    );
   } catch (err) {
     if (btnElement) {
       btnElement.disabled = false;
       btnElement.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Apply with Tailored Resume`;
     }
-    alert(`Application notice: ${err.message}.`);
+    showToast(`Application notice: ${err.message}.`, "error", "Application Notice");
   }
 }
 
@@ -849,9 +951,9 @@ async function submitReviewResolution() {
     await res.json();
     closeReviewModal();
     await fetchApplications();
-    alert("Application review resolved and approved!");
+    showToast("Application review resolved and approved!", "success", "Review Approved");
   } catch (err) {
-    alert("Could not update review status: " + err.message);
+    showToast("Could not update review status: " + err.message, "error", "Review Error");
   }
 }
 
@@ -881,7 +983,7 @@ async function submitAdditionalInfo() {
   if (!currentInfoApp) return;
   const answer = document.getElementById('info-modal-answer')?.value;
   if (!answer) {
-    alert("Please provide the answer before submitting.");
+    showToast("Please provide the answer before submitting.", "warning", "Input Required");
     return;
   }
 
@@ -894,9 +996,9 @@ async function submitAdditionalInfo() {
     await res.json();
     closeInfoModal();
     await fetchApplications();
-    alert("Additional information saved! Application marked Applied.");
+    showToast("Additional information saved! Application marked Applied.", "success", "Information Saved");
   } catch (err) {
-    alert("Could not save additional info: " + err.message);
+    showToast("Could not save additional info: " + err.message, "error", "Submission Notice");
   }
 }
 
@@ -974,9 +1076,13 @@ async function toggleAutoApply() {
     const data = await res.json();
     isAutoApplyEnabled = data.enabled;
     updateAutoApplyButtonUI();
-    alert(`Instant 24/7 Auto-Apply is now ${isAutoApplyEnabled ? 'ACTIVATED' : 'PAUSED'}.`);
+    showToast(
+      `Instant 24/7 Auto-Apply is now ${isAutoApplyEnabled ? 'ACTIVATED' : 'PAUSED'}.`,
+      isAutoApplyEnabled ? 'success' : 'info',
+      '⚡ Auto-Apply Mode'
+    );
   } catch (err) {
-    alert("Could not toggle auto-apply: " + err.message);
+    showToast("Could not toggle auto-apply: " + err.message, "error", "Toggle Notice");
   }
 }
 
@@ -1002,7 +1108,7 @@ async function runAutoApplyNow() {
   try {
     const res = await fetch('/api/ai/auto-apply/run-now', { method: 'POST' });
     const data = await res.json();
-    alert("⚡ Instant Auto-Apply triggered! Processing top 100% remote jobs in the background.");
+    showToast("Instant Auto-Apply triggered! Processing top 100% remote jobs in the background.", "info", "⚡ Auto-Apply Pass", 5000);
     setTimeout(async () => {
       await fetchJobs();
       await fetchApplications();
@@ -1012,7 +1118,7 @@ async function runAutoApplyNow() {
       }
     }, 4000);
   } catch (err) {
-    alert("Auto-apply error: " + err.message);
+    showToast("Auto-apply notice: " + err.message, "error", "Auto-Apply Notice");
     if (btn) {
       btn.disabled = false;
       btn.innerHTML = "Run Instant Auto-Apply Pass";
@@ -1033,13 +1139,14 @@ async function triggerScraper() {
     await fetchJobs();
     if (btn) {
       btn.innerHTML = `✅ Remote Feed Refreshed`;
+      showToast("Remote feed successfully refreshed with active job openings.", "success", "Feed Updated");
       setTimeout(() => {
         btn.disabled = false;
         btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg> Refresh Remote Feed`;
       }, 3000);
     }
   } catch (err) {
-    alert("Could not refresh feed: " + err.message);
+    showToast("Could not refresh feed: " + err.message, "error", "Refresh Notice");
     if (btn) {
       btn.disabled = false;
       btn.innerHTML = "Refresh Remote Feed";
@@ -1056,3 +1163,42 @@ function closePortalLoginModal() {
   const modal = document.getElementById('portal-login-modal');
   if (modal) modal.style.display = 'none';
 }
+
+// ================= GOOGLE SHEETS LIVE SYNC VIEWER & REDIRECT =================
+
+const GOOGLE_SHEETS_EDIT_URL = "https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/edit";
+const GOOGLE_SHEETS_PREVIEW_URL = "https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/preview";
+
+function openSheetsModal() {
+  const modal = document.getElementById('sheets-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    const iframe = document.getElementById('sheets-iframe');
+    if (iframe && (!iframe.src || iframe.src === 'about:blank')) {
+      iframe.src = GOOGLE_SHEETS_PREVIEW_URL;
+    }
+    showToast("Google Sheets Sync Tracker opened.", "info", "Google Sheets Hub");
+  }
+}
+
+function closeSheetsModal() {
+  const modal = document.getElementById('sheets-modal');
+  if (modal) modal.style.display = 'none';
+}
+
+function refreshSheetsIframe() {
+  const iframe = document.getElementById('sheets-iframe');
+  if (iframe) {
+    const current = iframe.src;
+    iframe.src = 'about:blank';
+    setTimeout(() => {
+      iframe.src = current || GOOGLE_SHEETS_PREVIEW_URL;
+      showToast("Google Sheets preview reloaded.", "success", "Spreadsheet Reloaded");
+    }, 150);
+  }
+}
+
+function redirectToGoogleSheets() {
+  window.open(GOOGLE_SHEETS_EDIT_URL, '_blank', 'noopener,noreferrer');
+}
+
