@@ -160,6 +160,16 @@ async def get_live_jobs(remote_only: bool = True):
     - LinkedIn, Indeed, Internshala, Unstop
     """
     try:
+        cache_path = os.path.join(os.path.dirname(__file__), "../data/live_scraped_jobs.json")
+        if os.path.exists(cache_path):
+            try:
+                with open(cache_path, "r", encoding="utf-8") as f:
+                    cdata = json.load(f)
+                    if isinstance(cdata, dict) and "jobs" in cdata and len(cdata["jobs"]) > 0:
+                        return cdata["jobs"]
+            except Exception as ce:
+                logger.warning(f"Cache read note: {ce}")
+
         candidate_profile_data = load_candidate_profile()
         raw_jobs = await discovery_agent.discover_jobs()
         evaluated_jobs = []
