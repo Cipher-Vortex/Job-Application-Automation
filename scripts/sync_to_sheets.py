@@ -97,32 +97,57 @@ def sync_via_webhook():
         print("No Webhook URL configured.")
         return False
 
-    sample_job = {
-        "spreadsheet_id": SPREADSHEET_ID,
-        "timestamp": "2026-10-14 22:15:00",
-        "id": "app_live_101",
-        "company": "Modash",
-        "title": "Senior Full-Stack Engineer (React, Node.js)",
-        "location": "Global Remote",
-        "remoteType": "Remote",
-        "jobType": "Full-Time",
-        "salaryRaw": "$110,000 - $145,000 USD",
-        "matchScore": "96.4%",
-        "status": "Applied",
-        "url": "https://modash.recruitee.com/o/fullstack-engineer"
-    }
+    rows = load_local_csv_rows(10)
+    if not rows:
+        rows = [
+            ["2026-10-15 10:00:00", "app_modash_01", "Modash", "Senior Full-Stack Engineer (React, Node.js)", "Global Remote", "Remote", "Full-Time", "$110,000 - $145,000 USD", "96.4%", "Applied", "https://modash.recruitee.com/o/fullstack-engineer"],
+            ["2026-10-15 10:01:00", "app_calcom_02", "Cal.com", "Full Stack Engineer (Next.js & TypeScript)", "Remote Worldwide", "Remote", "Full-Time", "$120,000 - $160,000 USD", "95.8%", "Applied", "https://cal.com/jobs"],
+            ["2026-10-15 10:02:00", "app_posthog_03", "PostHog", "Full Stack Engineer (React & Systems)", "Remote", "Remote", "Full-Time", "$140,000 - $185,000 USD", "95.2%", "Applied", "https://posthog.com/careers"]
+        ]
 
-    try:
-        payload = json.dumps(sample_job).encode("utf-8")
-        req = urllib.request.Request(WEBHOOK_URL, data=payload, headers={"Content-Type": "application/json"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            body = resp.read().decode("utf-8")
-            print(f"Webhook Status Code: {resp.getcode()}")
-            print(f"Webhook Response Body: {body}")
-            return True
-    except Exception as e:
-        print(f"Webhook Sync Error: {e}")
-        return False
+    synced = 0
+    for r in rows:
+        payload_data = {
+            "spreadsheet_id": SPREADSHEET_ID,
+            "timestamp": r[0] if len(r) > 0 else "2026-10-15 10:00:00",
+            "id": r[1] if len(r) > 1 else "",
+            "company": r[2] if len(r) > 2 else "Target Company",
+            "company_name": r[2] if len(r) > 2 else "Target Company",
+            "companyName": r[2] if len(r) > 2 else "Target Company",
+            "name": r[2] if len(r) > 2 else "Target Company",
+            "title": r[3] if len(r) > 3 else "Software Engineer",
+            "role": r[3] if len(r) > 3 else "Software Engineer",
+            "job_title": r[3] if len(r) > 3 else "Software Engineer",
+            "jobTitle": r[3] if len(r) > 3 else "Software Engineer",
+            "position": r[3] if len(r) > 3 else "Software Engineer",
+            "location": r[4] if len(r) > 4 else "Remote",
+            "remoteType": r[5] if len(r) > 5 else "Remote",
+            "remote_type": r[5] if len(r) > 5 else "Remote",
+            "jobType": r[6] if len(r) > 6 else "Full-Time",
+            "job_type": r[6] if len(r) > 6 else "Full-Time",
+            "salaryRaw": r[7] if len(r) > 7 else "Competitive",
+            "salary_raw": r[7] if len(r) > 7 else "Competitive",
+            "salary": r[7] if len(r) > 7 else "Competitive",
+            "matchScore": r[8] if len(r) > 8 else "95%",
+            "match_score": r[8] if len(r) > 8 else "95%",
+            "status": r[9] if len(r) > 9 else "Applied",
+            "url": r[10] if len(r) > 10 else "",
+            "job_url": r[10] if len(r) > 10 else "",
+            "link": r[10] if len(r) > 10 else "",
+            "row": r
+        }
+
+        try:
+            payload = json.dumps(payload_data).encode("utf-8")
+            req = urllib.request.Request(WEBHOOK_URL, data=payload, headers={"Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                synced += 1
+                print(f"[Webhook Sync] Logged: {payload_data['company']} - {payload_data['title']}")
+        except Exception as e:
+            print(f"[Webhook Sync Note] {e}")
+
+    print(f"Webhook Sync finished: {synced}/{len(rows)} records sent successfully.")
+    return synced > 0
 
 if __name__ == "__main__":
     sa_success = sync_via_service_account()

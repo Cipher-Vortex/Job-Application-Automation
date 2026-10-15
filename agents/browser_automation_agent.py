@@ -24,9 +24,26 @@ class PlaywrightBrowserAgent:
     }
 
     def __init__(self):
-        self.headless = os.getenv("PLAYWRIGHT_HEADLESS", "false").lower() == "true" # Default to headful for live user visibility
+        # Auto-detect headless mode: Default to True in container/cloud or when DISPLAY is missing
+        headless_env = os.getenv("PLAYWRIGHT_HEADLESS", "")
+        if headless_env != "":
+            self.headless = headless_env.lower() == "true"
+        else:
+            is_headless_env = (os.name != "nt" and not os.environ.get("DISPLAY")) or os.environ.get("RENDER") is not None
+            self.headless = True if is_headless_env else False
+
         self.user_data_dir = os.getenv("PLAYWRIGHT_USER_DATA_DIR", "./data/browser_profile")
         self.cookies_file = os.getenv("PLAYWRIGHT_COOKIES_FILE", "./data/cookies.json")
+
+    def get_resume_path(self) -> str:
+        """Prefers genuine PDF resume file over raw text dumps for ATS compliance."""
+        pdf_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../documents/Kiran S R _ Full Stack Engineer.pdf"))
+        if os.path.exists(pdf_path):
+            return pdf_path
+        txt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../extracted_resume.txt"))
+        if os.path.exists(txt_path):
+            return txt_path
+        return ""
 
     def get_portal_login_url(self, portal_key: str) -> str:
         key = (portal_key or "").lower().strip()
@@ -341,11 +358,12 @@ class PlaywrightBrowserAgent:
                             await s.select_option(val)
                             break
 
-            # 5. Attach Resume file
+            # 5. Attach Resume file (prefer genuine PDF)
+            resume_path = self.get_resume_path()
             file_input = await page.query_selector("input[type='file']")
-            if file_input and os.path.exists(resume_path):
+            if file_input and resume_path and os.path.exists(resume_path):
                 await file_input.set_input_files(resume_path)
-                logger.info(f"Attached resume file {resume_path} to web form.")
+                logger.info(f"Attached resume file ({os.path.basename(resume_path)}) to web form.")
 
             # 6. Fill All Custom Questions, Textareas, and Inputs
             all_fields = await page.query_selector_all("input[type='text'], textarea")
@@ -482,16 +500,58 @@ class PlaywrightBrowserAgent:
                 await page.query_selector("button:has-text('Apply')")
             )
             
+            submitted = False
             if submit_btn:
                 await submit_btn.click()
+                submitted = True
                 await asyncio.sleep(4)
                 logger.info(f"Clicked Submit Application button for {role} at {company}.")
 
+            # 9. Verify Post-Submit Status
+            try:
+                body_text = (await page.inner_text("body")).lower()
+                success_keywords = ["thank you", "application submitted", "received your application", "successfully submitted", "application received", "we will review", "we'll be in touch"]
+                has_success = any(kw in body_text for kw in success_keywords)
+
+                error_elements = await page.query_selector_all(".field-error, .error, [class*='error-message'], [role='alert'], .has-error")
+                visible_errors = []
+                for err_el in error_elements:
+                    try:
+                        if await err_el.is_visible():
+                            err_txt = (await err_el.inner_text()).strip()
+                            if err_txt and "cookie" not in err_txt.lower() and len(err_txt) < 160:
+                                visible_errors.append(err_txt)
+                    except Exception:
+                        pass
+
+                if visible_errors and not has_success:
+                    logger.warning(f"Form submission validation errors detected for {role} at {company}: {visible_errors}")
+                    return {
+                        "status": "Review_Required",
+                        "success": False,
+                        "human_review_needed": True,
+                        "reason": f"Form validation required: {'; '.join(visible_errors[:2])}",
+                        "url": url,
+                        "portal": "ATS Web Form"
+                    }
+
+                if has_success:
+                    return {
+                        "status": "Applied",
+                        "success": True,
+                        "human_review_needed": False,
+                        "confirmation_message": f"Successfully verified application submission for {role} at {company} (Confirmation displayed).",
+                        "url": url,
+                        "portal": "ATS Web Form"
+                    }
+            except Exception as v_err:
+                logger.warning(f"Submission verification note: {v_err}")
+
             return {
-                "status": "Applied",
-                "success": True,
-                "human_review_needed": False,
-                "confirmation_message": f"Auto-filled details ({full_name}, {email}, {phone}, Resume) & submitted application form for {role} at {company}.",
+                "status": "Applied" if submitted else "Review_Required",
+                "success": submitted,
+                "human_review_needed": not submitted,
+                "confirmation_message": f"Auto-filled details ({full_name}, {email}, {phone}, Resume: {os.path.basename(resume_path)}) & submitted application form for {role} at {company}." if submitted else "Submit button not found; paused for user review.",
                 "url": url,
                 "portal": "ATS Web Form"
             }

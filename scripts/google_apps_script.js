@@ -112,6 +112,22 @@ function doPost(e) {
   }
 }
 
+function cleanBadRows() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var lastRow = sheet.getLastRow();
+  if (lastRow <= 1) return;
+  
+  // Delete legacy rows containing 'N/A' in Company or Role
+  for (var i = lastRow; i >= 2; i--) {
+    var colB = (sheet.getRange(i, 2).getValue() || "").toString().trim().toUpperCase();
+    var colC = (sheet.getRange(i, 3).getValue() || "").toString().trim().toUpperCase();
+    if (colB === "N/A" || colC === "N/A" || (colB === "" && colC === "")) {
+      sheet.deleteRow(i);
+    }
+  }
+  Logger.log("Cleaned all legacy N/A rows from sheet.");
+}
+
 function appendSingleRecord(sheet, data) {
   var rowValues = [];
   if (data.row && Array.isArray(data.row)) {
@@ -119,15 +135,16 @@ function appendSingleRecord(sheet, data) {
   } else {
     var timestamp = data.timestamp || Utilities.formatDate(new Date(), Session.getScriptTimeZone(), "yyyy-MM-dd HH:mm:ss");
     var id = data.id || "APP_" + Utilities.formatDate(new Date(), Session.getScriptTimeZone(), "yyyyMMdd_HHmmss");
-    var company = data.company || "Target Company";
-    var title = data.title || data.role || "Software Engineer";
+    var company = data.company || data.company_name || data.companyName || data.name || "Target Company";
+    var title = data.title || data.role || data.job_title || data.jobTitle || data.position || "Software Engineer";
     var location = data.location || "Remote";
-    var remoteType = data.remoteType || "Remote";
-    var jobType = data.jobType || "Full-Time";
-    var salary = data.salaryRaw || data.salary || "Competitive Pay";
-    var matchScore = data.matchScore ? (data.matchScore.toString().includes("%") ? data.matchScore : data.matchScore + "%") : "93%";
+    var remoteType = data.remoteType || data.remote_type || "Remote";
+    var jobType = data.jobType || data.job_type || "Full-Time";
+    var salary = data.salaryRaw || data.salary_raw || data.salary || "Competitive Pay";
+    var rawScore = data.matchScore || data.match_score || "94%";
+    var matchScore = rawScore.toString().includes("%") ? rawScore : rawScore + "%";
     var status = data.status || "Applied";
-    var url = data.url || "";
+    var url = data.url || data.job_url || data.link || "";
     
     rowValues = [timestamp, id, company, title, location, remoteType, jobType, salary, matchScore, status, url];
   }

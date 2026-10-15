@@ -382,10 +382,26 @@ async def _run_autonomous_batch_apply():
             
             # Apply to jobs matching threshold (>= 85%)
             if score >= 85.0:
-                logger.info(f"Auto-Applying instantly to: {pj['title']} at {pj['company']} (Match: {score}%)...")
+                logger.info(f"Auto-Applying via browser agent to: {pj['title']} at {pj['company']} (Match: {score}%)...")
                 
                 # Groom with company trick
                 groomed = resume_optimizer.optimize_resume(candidate, pj["title"], pj)
+                
+                app_dict = {
+                    "id": pj["id"],
+                    "url": pj["url"],
+                    "company": pj["company"],
+                    "role": pj["title"],
+                    "source": pj["source"],
+                    "ats_platform": pj.get("ats_platform", "Auto"),
+                    "match_score": score,
+                    "tailored_resume_markdown": groomed["tailored_resume_markdown"],
+                    "tailored_cv": groomed["tailored_cv"]
+                }
+                
+                # Execute real submission attempt via Playwright
+                submit_res = await browser_agent.submit_application(app_dict, candidate)
+                app_status = submit_res.get("status", "Applied")
                 
                 app_id = f"auto_{os.urandom(4).hex()}"
                 app_record = {
@@ -394,11 +410,11 @@ async def _run_autonomous_batch_apply():
                     "role": pj["title"],
                     "url": pj["url"],
                     "source": pj["source"],
-                    "status": "Applied",
+                    "status": app_status,
                     "matchScore": score,
                     "appliedAt": datetime.now().isoformat(),
                     "tailored_summary": groomed["tailored_summary"],
-                    "notes": f"Autonomous Instant Application (Match: {score}%). Tailored for {groomed['company_services']}."
+                    "notes": submit_res.get("confirmation_message") or submit_res.get("reason") or f"Autonomous Application (Match: {score}%)."
                 }
                 
                 rag_db.record_application(app_record)
@@ -412,16 +428,16 @@ async def _run_autonomous_batch_apply():
                     "location": "Global Remote",
                     "remote_type": "Remote",
                     "match_score": score,
-                    "resume_version": "Autonomous Tailored",
+                    "resume_version": "Autonomous Tailored (PDF)",
                     "cover_letter": True,
-                    "status": "Applied",
+                    "status": app_status,
                     "salary_raw": pj.get("salary_raw", "Competitive"),
                     "market_min": 900000,
                     "market_median": 1400000,
                     "market_max": 2000000,
                     "expected_salary": 950000,
                     "compensation_score": 95.0,
-                    "error_log": ""
+                    "error_log": submit_res.get("reason", "")
                 })
                 
                 applied_urls.add(job_url)

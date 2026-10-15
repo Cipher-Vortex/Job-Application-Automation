@@ -71,18 +71,43 @@ class GoogleSheetsSyncService:
         # 2. Post to Google Apps Script Webhook API (Direct live Google Sheet append)
         if self.webhook_url:
             try:
+                company_val = app_data.get("company", "Target Company")
+                title_val = app_data.get("title", app_data.get("role", "Software Engineer"))
+                location_val = app_data.get("location", "Remote")
+                remote_val = app_data.get("remoteType", app_data.get("remote_type", "Remote"))
+                job_type_val = app_data.get("jobType", app_data.get("job_type", "Full-Time"))
+                salary_val = app_data.get("salaryRaw", app_data.get("salary_raw", app_data.get("salary", "Competitive Pay")))
+                match_val = app_data.get("matchScore", app_data.get("match_score", 92))
+                match_str = f"{match_val}%" if not str(match_val).endswith("%") else str(match_val)
+                status_val = app_data.get("status", "Applied")
+                url_val = app_data.get("url", app_data.get("job_url", ""))
+
                 payload_dict = {
                     "timestamp": timestamp,
                     "id": app_data.get("id", ""),
-                    "company": app_data.get("company", "Target Company"),
-                    "title": app_data.get("title", app_data.get("role", "Software Engineer")),
-                    "location": app_data.get("location", "Remote"),
-                    "remoteType": app_data.get("remoteType", "Remote"),
-                    "jobType": app_data.get("jobType", "Full-Time"),
-                    "salaryRaw": app_data.get("salaryRaw", "Competitive Pay"),
-                    "matchScore": app_data.get("matchScore", 92),
-                    "status": app_data.get("status", "Applied"),
-                    "url": app_data.get("url", ""),
+                    "company": company_val,
+                    "company_name": company_val,
+                    "companyName": company_val,
+                    "name": company_val,
+                    "title": title_val,
+                    "role": title_val,
+                    "job_title": title_val,
+                    "jobTitle": title_val,
+                    "position": title_val,
+                    "location": location_val,
+                    "remoteType": remote_val,
+                    "remote_type": remote_val,
+                    "jobType": job_type_val,
+                    "job_type": job_type_val,
+                    "salaryRaw": salary_val,
+                    "salary_raw": salary_val,
+                    "salary": salary_val,
+                    "matchScore": match_str,
+                    "match_score": match_str,
+                    "status": status_val,
+                    "url": url_val,
+                    "job_url": url_val,
+                    "link": url_val,
                     "row": row
                 }
                 payload = json.dumps(payload_dict).encode("utf-8")

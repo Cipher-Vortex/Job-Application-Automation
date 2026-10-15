@@ -35,7 +35,7 @@ const appendToGoogleSheetsCSV = (appItem) => {
       appItem.remoteType || 'Remote',
       appItem.jobType || 'Full-Time',
       appItem.salaryRaw || 'Competitive Pay',
-      `${appItem.matchScore || 92}%`,
+      `${(appItem.matchScore || 92) + ''}`.includes('%') ? (appItem.matchScore || '92%') : `${appItem.matchScore || 92}%`,
       appItem.status || 'Applied',
       appItem.url || ''
     ];
@@ -48,24 +48,39 @@ const appendToGoogleSheetsCSV = (appItem) => {
       fs.writeFileSync(csvExportPath, headers, 'utf-8');
     }
     fs.appendFileSync(csvExportPath, row + '\n', 'utf-8');
-    console.log(`[Google Sheets Sync] Logged application row for: ${appItem.company} - ${appItem.role}`);
+    console.log(`[Google Sheets Sync] Logged application row for: ${appItem.company} - ${appItem.role || appItem.title}`);
 
-    // Asynchronously send to Google Sheets Webhook
+    // Asynchronously send to Google Sheets Webhook with ultra-compatible key aliases
     if (GOOGLE_SHEETS_WEBHOOK_URL) {
-      axios.post(GOOGLE_SHEETS_WEBHOOK_URL, {
+      const payload = {
         timestamp,
         id: appItem.id || '',
         company: appItem.company || 'Target Company',
+        company_name: appItem.company || 'Target Company',
+        companyName: appItem.company || 'Target Company',
         title: appItem.role || appItem.title || 'Software Engineer',
+        role: appItem.role || appItem.title || 'Software Engineer',
+        job_title: appItem.role || appItem.title || 'Software Engineer',
+        jobTitle: appItem.role || appItem.title || 'Software Engineer',
+        position: appItem.role || appItem.title || 'Software Engineer',
         location: appItem.location || 'Remote',
         remoteType: appItem.remoteType || 'Remote',
+        remote_type: appItem.remoteType || 'Remote',
         jobType: appItem.jobType || 'Full-Time',
+        job_type: appItem.jobType || 'Full-Time',
         salaryRaw: appItem.salaryRaw || 'Competitive Pay',
-        matchScore: `${appItem.matchScore || 92}%`,
+        salary_raw: appItem.salaryRaw || 'Competitive Pay',
+        salary: appItem.salaryRaw || 'Competitive Pay',
+        matchScore: `${(appItem.matchScore || 92) + ''}`.includes('%') ? (appItem.matchScore || '92%') : `${appItem.matchScore || 92}%`,
+        match_score: `${(appItem.matchScore || 92) + ''}`.includes('%') ? (appItem.matchScore || '92%') : `${appItem.matchScore || 92}%`,
         status: appItem.status || 'Applied',
         url: appItem.url || '',
+        job_url: appItem.url || '',
+        link: appItem.url || '',
         row: rowArray
-      }, { timeout: 4000 }).catch(err => {
+      };
+
+      axios.post(GOOGLE_SHEETS_WEBHOOK_URL, payload, { timeout: 6000 }).catch(err => {
         console.warn(`[Google Sheets Webhook Note] ${err.message}`);
       });
     }
@@ -634,56 +649,89 @@ app.get('/api/sheets/info', (req, res) => {
 // Sync All Applications to Google Sheets Webhook and Local Tracker
 app.post('/api/sheets/sync-all', async (req, res) => {
   try {
-    const appsToSync = applicationsStore.length > 0 ? applicationsStore : [
-      {
-        id: "app_modash_01",
-        company: "Modash",
-        role: "Senior Full-Stack Engineer (React, Node.js)",
-        location: "Global Remote",
-        remoteType: "Remote",
-        jobType: "Full-Time",
-        salaryRaw: "$110,000 - $145,000 USD",
-        matchScore: 96.4,
-        status: "Applied",
-        url: "https://modash.recruitee.com/o/fullstack-engineer"
-      },
-      {
-        id: "app_calcom_02",
-        company: "Cal.com",
-        role: "Full Stack Engineer (Next.js & TypeScript)",
-        location: "Remote Worldwide",
-        remoteType: "Remote",
-        jobType: "Full-Time",
-        salaryRaw: "$120,000 - $160,000 USD",
-        matchScore: 95.8,
-        status: "Applied",
-        url: "https://cal.com/jobs"
-      },
-      {
-        id: "app_posthog_03",
-        company: "PostHog",
-        role: "Full Stack Engineer (React & Distributed Systems)",
-        location: "Remote",
-        remoteType: "Remote",
-        jobType: "Full-Time",
-        salaryRaw: "$140,000 - $185,000 USD",
-        matchScore: 95.2,
-        status: "Applied",
-        url: "https://posthog.com/careers"
-      },
-      {
-        id: "app_10up_04",
-        company: "10up",
-        role: "Senior React & Full Stack Engineer",
-        location: "Remote",
-        remoteType: "Remote",
-        jobType: "Full-Time",
-        salaryRaw: "$115,000 - $150,000 USD",
-        matchScore: 94.6,
-        status: "Applied",
-        url: "https://10up.com/careers"
+    let appsToSync = [];
+    if (applicationsStore.length > 0) {
+      appsToSync = [...applicationsStore];
+    } else if (fs.existsSync(csvExportPath)) {
+      // Parse recent rows from local synchronized CSV
+      try {
+        const fileContent = fs.readFileSync(csvExportPath, 'utf-8');
+        const lines = fileContent.trim().split('\n').filter(l => l.trim().length > 0);
+        // Take up to 30 recent rows (skip header)
+        for (let i = Math.max(1, lines.length - 30); i < lines.length; i++) {
+          const parts = lines[i].split(',').map(s => s.replace(/^"|"$/g, '').trim());
+          if (parts.length >= 10) {
+            appsToSync.push({
+              id: parts[1] || `app_${Date.now()}_${i}`,
+              company: parts[2] || 'Target Company',
+              role: parts[3] || 'Software Engineer',
+              location: parts[4] || 'Remote',
+              remoteType: parts[5] || 'Remote',
+              jobType: parts[6] || 'Full-Time',
+              salaryRaw: parts[7] || 'Competitive Pay',
+              matchScore: parts[8] || '94%',
+              status: parts[9] || 'Applied',
+              url: parts[10] || ''
+            });
+          }
+        }
+      } catch (parseErr) {
+        console.warn("Could not parse existing CSV rows for sync-all:", parseErr.message);
       }
-    ];
+    }
+
+    if (appsToSync.length === 0) {
+      appsToSync = [
+        {
+          id: "app_modash_01",
+          company: "Modash",
+          role: "Senior Full-Stack Engineer (React, Node.js)",
+          location: "Global Remote",
+          remoteType: "Remote",
+          jobType: "Full-Time",
+          salaryRaw: "$110,000 - $145,000 USD",
+          matchScore: "96.4%",
+          status: "Applied",
+          url: "https://modash.recruitee.com/o/fullstack-engineer"
+        },
+        {
+          id: "app_calcom_02",
+          company: "Cal.com",
+          role: "Full Stack Engineer (Next.js & TypeScript)",
+          location: "Remote Worldwide",
+          remoteType: "Remote",
+          jobType: "Full-Time",
+          salaryRaw: "$120,000 - $160,000 USD",
+          matchScore: "95.8%",
+          status: "Applied",
+          url: "https://cal.com/jobs"
+        },
+        {
+          id: "app_posthog_03",
+          company: "PostHog",
+          role: "Full Stack Engineer (React & Distributed Systems)",
+          location: "Remote",
+          remoteType: "Remote",
+          jobType: "Full-Time",
+          salaryRaw: "$140,000 - $185,000 USD",
+          matchScore: "95.2%",
+          status: "Applied",
+          url: "https://posthog.com/careers"
+        },
+        {
+          id: "app_10up_04",
+          company: "10up",
+          role: "Senior React & Full Stack Engineer",
+          location: "Remote",
+          remoteType: "Remote",
+          jobType: "Full-Time",
+          salaryRaw: "$115,000 - $150,000 USD",
+          matchScore: "94.6%",
+          status: "Applied",
+          url: "https://10up.com/careers"
+        }
+      ];
+    }
 
     let count = 0;
     for (const item of appsToSync) {
