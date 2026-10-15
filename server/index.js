@@ -4,12 +4,25 @@ const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 const dns = require('dns');
-const { scrapeLiveJobs, cacheFilePath } = require('./live_scraper');
+const { scrapeLiveJobs, cacheFilePath, getInMemoryJobs } = require('./live_scraper');
 
 // Force IPv4 first to prevent IPv6 localhost connection blackholing in Docker/Node
 if (dns.setDefaultResultOrder) {
   dns.setDefaultResultOrder('ipv4first');
 }
+
+let isScrapingInFlight = null;
+
+const runProductionLiveScrape = async () => {
+  if (isScrapingInFlight) {
+    return isScrapingInFlight;
+  }
+  isScrapingInFlight = scrapeLiveJobs()
+    .finally(() => {
+      isScrapingInFlight = null;
+    });
+  return isScrapingInFlight;
+};
 
 const app = express();
 const PORT = process.env.PORT || process.env.NODE_PORT || 3000;
@@ -186,28 +199,28 @@ app.post('/api/resume/save', (req, res) => {
   }
 });
 
-// Jobs Radar Endpoint - Queries Live Discovery Service or Local Scraped Cache
+// Jobs Radar Endpoint - Queries Live Production Scraper
 app.get('/api/ai/jobs/live', async (req, res) => {
-  const cached = getLiveJobsFromCache();
-  if (cached && cached.jobs && cached.jobs.length > 0) {
-    return res.json(cached.jobs);
-  }
   try {
-    const jobs = await scrapeLiveJobs();
+    const mem = getInMemoryJobs();
+    if (mem && mem.jobs && mem.jobs.length > 0) {
+      return res.json(mem.jobs);
+    }
+    const jobs = await runProductionLiveScrape();
     return res.json(jobs);
   } catch (err) {
-    return res.status(500).json({ error: "Failed to scrape live jobs", details: err.message });
+    return res.status(500).json({ error: "Failed to scrape live jobs in production", details: err.message });
   }
 });
 
-// Trigger Live Scraping on demand (both GET and POST supported)
+// Trigger Live Scraping on demand in production (both GET and POST supported)
 app.all('/api/scrape/trigger', async (req, res) => {
   try {
-    console.log('[Scraper Trigger] Autonomous live scrape initiated on demand...');
-    const jobs = await scrapeLiveJobs();
+    console.log('[Scraper Trigger] Autonomous live scrape initiated on demand in live production...');
+    const jobs = await runProductionLiveScrape();
     return res.json({
       success: true,
-      message: `Autonomous live scrape completed successfully. Discovered ${jobs.length} verified live 100% remote jobs.`,
+      message: `Autonomous live production scrape completed. Captured ${jobs.length} verified live 100% remote jobs.`,
       total: jobs.length,
       timestamp: new Date().toISOString(),
       jobs
@@ -215,7 +228,7 @@ app.all('/api/scrape/trigger', async (req, res) => {
   } catch (err) {
     return res.status(500).json({
       success: false,
-      error: "Scraping failed: " + err.message
+      error: "Live production scraping failed: " + err.message
     });
   }
 });
@@ -224,58 +237,40 @@ app.get('/api/jobs', async (req, res) => {
   const forceRefresh = req.query.forceRefresh === 'true';
   const roleFilter = req.query.role;
 
-  // 1. Force refresh requested by user
-  if (forceRefresh) {
+  const mem = getInMemoryJobs();
+  const cachedData = (mem && mem.jobs && mem.jobs.length > 0) ? mem : getLiveJobsFromCache();
+  const cacheAgeMs = cachedData && cachedData.lastScraped 
+    ? Date.now() - new Date(cachedData.lastScraped).getTime()
+    : Infinity;
+
+  // Active Live Production Scraping:
+  // Trigger real web scraping if user forces refresh OR cache is older than 20 minutes OR empty
+  if (forceRefresh || !cachedData || !cachedData.jobs || cachedData.jobs.length === 0 || cacheAgeMs > 20 * 60 * 1000) {
     try {
-      console.log('[Jobs Endpoint] Force refresh requested. Running live scraper...');
-      const freshJobs = await scrapeLiveJobs();
-      let result = freshJobs;
+      console.log('[Live Production Scraper] Scraping fresh live jobs from web streams in production...');
+      const freshJobs = await runProductionLiveScrape();
+      let result = (freshJobs && freshJobs.length > 0) ? freshJobs : (cachedData ? cachedData.jobs : []);
       if (roleFilter && roleFilter !== 'all') {
         result = result.filter(j => (j.roleCategory || '').toLowerCase().includes(roleFilter.toLowerCase()));
       }
       return res.json(result);
     } catch (err) {
-      console.warn('[Jobs Endpoint] Force refresh scrape error:', err.message);
+      console.warn('[Live Production Scraper] Scrape note:', err.message);
     }
   }
 
-  // 2. Serve from real live scraped cache (instant <10ms response)
-  const cachedData = getLiveJobsFromCache();
-  if (cachedData && cachedData.jobs && cachedData.jobs.length > 0) {
-    const ageMs = Date.now() - new Date(cachedData.lastScraped).getTime();
-    // Refresh in background if older than 2 hours to keep data fresh everyday
-    if (ageMs > 2 * 60 * 60 * 1000) {
-      console.log('[LiveScraper] Cache older than 2 hours. Launching background scrape...');
-      scrapeLiveJobs().catch(e => console.warn('[Background Scrape] Error:', e.message));
-    }
-    let jobs = cachedData.jobs;
-    if (roleFilter && roleFilter !== 'all') {
-      jobs = jobs.filter(j => (j.roleCategory || '').toLowerCase().includes(roleFilter.toLowerCase()));
-    }
-    return res.json(jobs);
+  let jobs = (cachedData && cachedData.jobs) ? cachedData.jobs : [];
+  if (roleFilter && roleFilter !== 'all') {
+    jobs = jobs.filter(j => (j.roleCategory || '').toLowerCase().includes(roleFilter.toLowerCase()));
   }
-
-  // 3. If cache does not exist yet, scrape right now
-  try {
-    const freshJobs = await scrapeLiveJobs();
-    if (freshJobs && freshJobs.length > 0) {
-      return res.json(freshJobs);
-    }
-  } catch (err) {
-    console.warn('[Jobs Endpoint] Live scrape error:', err.message);
+  if (!jobs || jobs.length === 0) {
+    jobs = emergencyFallbackJobs;
   }
+  return res.json(jobs);
+});
 
-  // 4. FastAPI microservice fallback
-  try {
-    const response = await axios.get(`${FASTAPI_URL}/api/ai/jobs/live`, { timeout: 3000 });
-    if (Array.isArray(response.data) && response.data.length > 0) {
-      return res.json(response.data);
-    }
-  } catch (e) {}
-
-  // 5. Ultimate fallback if all network APIs fail
-  console.warn("Serving multi-portal catalog fallback...");
-  const multiPortalJobs = [
+// Emergency fallback catalog (only used if all live internet connections fail)
+const emergencyFallbackJobs = [
       {
         id: "gh_posthog_01",
         title: "Full Stack Engineer (React, Node.js & Product)",
@@ -613,8 +608,6 @@ app.get('/api/jobs', async (req, res) => {
         companyServices: "Scalable Web & Distributed Architectures"
       }
     ];
-    return res.json(multiPortalJobs);
-});
 
 // Playwright Portal Login URLs Endpoint
 app.get('/api/portals/login-urls', (req, res) => {
@@ -1085,20 +1078,15 @@ const startServer = (portToTry) => {
     console.log(` Live Dashboard available at http://localhost:${portToTry}`);
     console.log(` Google Sheets Sync active at /api/sheets/export`);
     console.log(`====================================================`);
+    // Immediate autonomous live scrape on production boot!
+    console.log('[LiveScraper Boot] Starting immediate live scrape in production environment...');
+    runProductionLiveScrape().catch(e => console.warn('[LiveScraper Boot] Live scrape error:', e.message));
 
-    // Daily & periodic live scraper schedule: scrape fresh jobs every 2 hours
+    // Daily & periodic live scraper schedule: scrape fresh jobs every 30 minutes in production
     setInterval(() => {
-      console.log('[LiveScraper Cron] Scheduled 2-hour multi-portal scrape starting...');
-      scrapeLiveJobs().catch(e => console.warn('[LiveScraper Cron] Error:', e.message));
-    }, 2 * 60 * 60 * 1000);
-
-    // Initial check: if cache doesn't exist or is empty, scrape after 3 seconds
-    if (!fs.existsSync(cacheFilePath)) {
-      setTimeout(() => {
-        console.log('[LiveScraper Boot] Initializing first live jobs scrape...');
-        scrapeLiveJobs().catch(e => console.warn('[LiveScraper Boot] Error:', e.message));
-      }, 3000);
-    }
+      console.log('[LiveScraper Cron] Scheduled 30-minute live production scrape starting...');
+      runProductionLiveScrape().catch(e => console.warn('[LiveScraper Cron] Error:', e.message));
+    }, 30 * 60 * 1000);
   });
 
   server.on('error', (err) => {

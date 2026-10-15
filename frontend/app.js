@@ -1202,22 +1202,23 @@ async function triggerScraper() {
   const btn = document.getElementById('btn-run-scraper');
   if (btn) {
     btn.disabled = true;
-    btn.innerHTML = `Scanning Remote Boards (15s)...`;
+    btn.innerHTML = `Scraping Live Web Streams...`;
   }
 
   try {
-    await fetch('/api/ai/jobs/live');
-    await fetchJobs();
+    const res = await fetch('/api/scrape/trigger', { method: 'POST' });
+    const data = await res.json();
+    await fetchJobs(false, true);
     if (btn) {
-      btn.innerHTML = `✅ Remote Feed Refreshed`;
-      showToast("Remote feed successfully refreshed with active job openings.", "success", "Feed Updated");
+      btn.innerHTML = `✅ Scraped ${data.total || ''} Live Jobs`;
+      showToast(`Live scrape completed directly on production! Captured ${data.total || 0} verified 100% remote positions.`, "success", "Live Scraper Finished");
       setTimeout(() => {
         btn.disabled = false;
         btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg> Refresh Remote Feed`;
       }, 3000);
     }
   } catch (err) {
-    showToast("Could not refresh feed: " + err.message, "error", "Refresh Notice");
+    showToast("Live scrape note: " + err.message, "error", "Refresh Notice");
     if (btn) {
       btn.disabled = false;
       btn.innerHTML = "Refresh Remote Feed";
