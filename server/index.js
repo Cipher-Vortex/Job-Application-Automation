@@ -80,7 +80,24 @@ const appendToGoogleSheetsCSV = (appItem) => {
         row: rowArray
       };
 
-      axios.post(GOOGLE_SHEETS_WEBHOOK_URL, payload, { timeout: 6000 }).catch(err => {
+      const queryParams = new URLSearchParams({
+        company: appItem.company || 'Target Company',
+        company_name: appItem.company || 'Target Company',
+        companyName: appItem.company || 'Target Company',
+        role: appItem.role || appItem.title || 'Software Engineer',
+        title: appItem.role || appItem.title || 'Software Engineer',
+        job_title: appItem.role || appItem.title || 'Software Engineer',
+        location: appItem.location || 'Remote',
+        salary: appItem.salaryRaw || 'Competitive Pay',
+        matchScore: `${(appItem.matchScore || 92) + ''}`.includes('%') ? (appItem.matchScore || '92%') : `${appItem.matchScore || 92}%`,
+        status: appItem.status || 'Applied',
+        url: appItem.url || ''
+      }).toString();
+      const targetUrl = GOOGLE_SHEETS_WEBHOOK_URL.includes('?') 
+        ? `${GOOGLE_SHEETS_WEBHOOK_URL}&${queryParams}`
+        : `${GOOGLE_SHEETS_WEBHOOK_URL}?${queryParams}`;
+
+      axios.post(targetUrl, payload, { timeout: 6000 }).catch(err => {
         console.warn(`[Google Sheets Webhook Note] ${err.message}`);
       });
     }

@@ -111,7 +111,21 @@ class GoogleSheetsSyncService:
                     "row": row
                 }
                 payload = json.dumps(payload_dict).encode("utf-8")
-                req = urllib.request.Request(self.webhook_url, data=payload, headers={"Content-Type": "application/json"})
+                query_params = urllib.parse.urlencode({
+                    "company": company_val,
+                    "company_name": company_val,
+                    "companyName": company_val,
+                    "role": title_val,
+                    "title": title_val,
+                    "job_title": title_val,
+                    "location": location_val,
+                    "salary": salary_val,
+                    "matchScore": match_str,
+                    "status": status_val,
+                    "url": url_val
+                })
+                target_url = f"{self.webhook_url}&{query_params}" if "?" in self.webhook_url else f"{self.webhook_url}?{query_params}"
+                req = urllib.request.Request(target_url, data=payload, headers={"Content-Type": "application/json"})
                 with urllib.request.urlopen(req, timeout=10) as resp:
                     logger.info("Successfully posted application row to Google Sheets Webhook API!")
                     return True
