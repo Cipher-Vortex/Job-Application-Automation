@@ -608,12 +608,20 @@
             Active Sync
           </span>
         </div>
-        <div style="display: flex; gap: 0.5rem; align-items: center;">
+        <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+          <div style="display: flex; background: rgba(255,255,255,0.06); border-radius: 6px; padding: 2px;">
+            <button id="btn-view-native" class="btn btn-primary" onclick="switchSheetsModalView('native')" style="font-size: 0.7rem; padding: 0.25rem 0.6rem; border-radius: 4px; border: none;">
+              📋 Clean Grid View
+            </button>
+            <button id="btn-view-iframe" class="btn btn-secondary" onclick="switchSheetsModalView('iframe')" style="font-size: 0.7rem; padding: 0.25rem 0.6rem; border-radius: 4px; border: none; background: transparent;">
+              🌐 Google Docs Embed
+            </button>
+          </div>
           <button class="btn btn-primary" onclick="triggerSheetsSyncNow()" style="font-size: 0.72rem; padding: 0.35rem 0.75rem; background: #30d158; color: #000; font-weight: 600; border: none; display: flex; align-items: center; gap: 0.35rem; border-radius: 6px;">
             <span>⚡ Sync Applications Now</span>
           </button>
-          <button class="btn btn-secondary" onclick="refreshSheetsIframe()" style="font-size: 0.72rem; padding: 0.3rem 0.65rem;">
-            🔄 Reload Preview
+          <button class="btn btn-secondary" onclick="reloadCurrentSheetsView()" style="font-size: 0.72rem; padding: 0.3rem 0.65rem;">
+            🔄 Refresh
           </button>
           <a href="/api/sheets/export" class="btn btn-secondary" style="font-size: 0.72rem; padding: 0.3rem 0.65rem; text-decoration: none;">
             📥 Download CSV
@@ -630,12 +638,46 @@
         <a href="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/edit" target="_blank" rel="noopener noreferrer" style="color: var(--accent-apple-blue); font-weight: 600; text-decoration: none;">Open Sheet ↗</a>
       </div>
 
-      <!-- Embedded Iframe -->
-      <div class="modal-body" style="padding: 0; flex: 1; position: relative; background: #111;">
-        <iframe id="sheets-iframe" src="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/preview" style="width: 100%; height: 100%; border: none; background: #fff;" title="Google Sheets Live Preview"></iframe>
-        <div id="sheets-iframe-notice" style="position: absolute; bottom: 1rem; right: 1.5rem; background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); border: 1px solid var(--border-subtle); padding: 0.5rem 0.85rem; border-radius: 8px; font-size: 0.75rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.5rem;">
-          <span>Need full editing access or formulas?</span>
-          <a href="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/edit" target="_blank" rel="noopener noreferrer" style="color: var(--accent-apple-blue); font-weight: 600; text-decoration: none;">Open Full Spreadsheet ↗</a>
+      <!-- Modal Body (Dual Native Grid & Google Docs Iframe) -->
+      <div class="modal-body" style="padding: 0; flex: 1; position: relative; background: #0c0d0e; overflow: hidden; display: flex; flex-direction: column;">
+        
+        <!-- View 1: Native High-Performance Spreadsheet Table (Zero console errors, instant load) -->
+        <div id="sheets-native-view" style="display: flex; flex-direction: column; width: 100%; height: 100%; overflow: hidden;">
+          <div style="padding: 0.6rem 1.25rem; background: rgba(255,255,255,0.02); border-bottom: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; gap: 0.5rem;">
+            <input type="text" id="sheets-native-search" placeholder="Search applications in sheet (Company, role, salary, status)..." oninput="filterNativeSheetsTable()" style="background: rgba(0,0,0,0.4); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 0.35rem 0.75rem; color: #fff; font-size: 0.76rem; width: 320px; max-width: 100%;">
+            <span id="sheets-native-row-count" style="font-size: 0.74rem; color: var(--text-tertiary);">Loading synced records...</span>
+          </div>
+          <div style="flex: 1; overflow: auto; width: 100%;">
+            <table id="sheets-native-table" style="width: 100%; border-collapse: collapse; font-size: 0.76rem; text-align: left; white-space: nowrap;">
+              <thead style="position: sticky; top: 0; background: #0f172a; color: #38bdf8; z-index: 10; font-weight: 600; text-transform: uppercase; font-size: 0.68rem; letter-spacing: 0.04em;">
+                <tr id="sheets-native-thead-tr">
+                  <th style="padding: 0.65rem 1rem; border-bottom: 1px solid #1e293b;">Timestamp</th>
+                  <th style="padding: 0.65rem 1rem; border-bottom: 1px solid #1e293b;">ID</th>
+                  <th style="padding: 0.65rem 1rem; border-bottom: 1px solid #1e293b;">Company</th>
+                  <th style="padding: 0.65rem 1rem; border-bottom: 1px solid #1e293b;">Job Title</th>
+                  <th style="padding: 0.65rem 1rem; border-bottom: 1px solid #1e293b;">Location</th>
+                  <th style="padding: 0.65rem 1rem; border-bottom: 1px solid #1e293b;">Remote Type</th>
+                  <th style="padding: 0.65rem 1rem; border-bottom: 1px solid #1e293b;">Employment Type</th>
+                  <th style="padding: 0.65rem 1rem; border-bottom: 1px solid #1e293b;">Salary / Rate</th>
+                  <th style="padding: 0.65rem 1rem; border-bottom: 1px solid #1e293b;">Match Score</th>
+                  <th style="padding: 0.65rem 1rem; border-bottom: 1px solid #1e293b;">Status</th>
+                  <th style="padding: 0.65rem 1rem; border-bottom: 1px solid #1e293b;">Source URL</th>
+                </tr>
+              </thead>
+              <tbody id="sheets-native-tbody">
+                <tr><td colspan="11" style="padding: 2.5rem; text-align: center; color: var(--text-tertiary);">Connecting to spreadsheet database...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- View 2: Google Docs Iframe Embed -->
+        <div id="sheets-iframe-view" style="display: none; width: 100%; height: 100%; position: relative;">
+          <iframe id="sheets-iframe" src="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/preview" style="width: 100%; height: 100%; border: none; background: #fff;" title="Google Sheets Live Preview"></iframe>
+          <div id="sheets-iframe-notice" style="position: absolute; bottom: 1rem; right: 1.5rem; background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); border: 1px solid var(--border-subtle); padding: 0.5rem 0.85rem; border-radius: 8px; font-size: 0.75rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.5rem;">
+            <span>Need full editing access or formulas?</span>
+            <a href="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/edit" target="_blank" rel="noopener noreferrer" style="color: var(--accent-apple-blue); font-weight: 600; text-decoration: none;">Open Full Spreadsheet ↗</a>
+          </div>
         </div>
       </div>
       

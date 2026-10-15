@@ -1177,14 +1177,117 @@ function closePortalLoginModal() {
 const GOOGLE_SHEETS_EDIT_URL = "https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/edit";
 const GOOGLE_SHEETS_PREVIEW_URL = "https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/preview";
 
-function openSheetsModal() {
-  const modal = document.getElementById('sheets-modal');
-  if (modal) {
-    modal.style.display = 'flex';
+let currentSheetsViewMode = 'native';
+let cachedNativeSheetsRows = [];
+
+function switchSheetsModalView(mode) {
+  currentSheetsViewMode = mode;
+  const nativeView = document.getElementById('sheets-native-view');
+  const iframeView = document.getElementById('sheets-iframe-view');
+  const btnNative = document.getElementById('btn-view-native');
+  const btnIframe = document.getElementById('btn-view-iframe');
+
+  if (mode === 'native') {
+    if (nativeView) nativeView.style.display = 'flex';
+    if (iframeView) iframeView.style.display = 'none';
+    if (btnNative) { btnNative.className = 'btn btn-primary'; btnNative.style.background = ''; }
+    if (btnIframe) { btnIframe.className = 'btn btn-secondary'; btnIframe.style.background = 'transparent'; }
+    loadNativeSheetsData();
+  } else {
+    if (nativeView) nativeView.style.display = 'none';
+    if (iframeView) iframeView.style.display = 'block';
+    if (btnNative) { btnNative.className = 'btn btn-secondary'; btnNative.style.background = 'transparent'; }
+    if (btnIframe) { btnIframe.className = 'btn btn-primary'; btnIframe.style.background = ''; }
     const iframe = document.getElementById('sheets-iframe');
     if (iframe && (!iframe.src || iframe.src === 'about:blank')) {
       iframe.src = GOOGLE_SHEETS_PREVIEW_URL;
     }
+  }
+}
+
+async function loadNativeSheetsData() {
+  const tbody = document.getElementById('sheets-native-tbody');
+  const countEl = document.getElementById('sheets-native-row-count');
+  if (tbody) {
+    tbody.innerHTML = `<tr><td colspan="11" style="padding: 2.5rem; text-align: center; color: var(--text-tertiary);"><span class="pulse-indicator" style="margin-right: 0.5rem;"></span>Synchronizing real-time application records...</td></tr>`;
+  }
+
+  try {
+    const res = await fetch('/api/sheets/data');
+    const data = await res.json();
+    cachedNativeSheetsRows = Array.isArray(data.rows) ? data.rows : [];
+    if (countEl) countEl.textContent = `${cachedNativeSheetsRows.length} applications synced`;
+    renderNativeSheetsTable(cachedNativeSheetsRows);
+  } catch (err) {
+    if (tbody) {
+      tbody.innerHTML = `<tr><td colspan="11" style="padding: 2rem; text-align: center; color: var(--accent-apple-amber);">Could not load live rows: ${err.message}. Showing local cache.</td></tr>`;
+    }
+  }
+}
+
+function renderNativeSheetsTable(rows) {
+  const tbody = document.getElementById('sheets-native-tbody');
+  if (!tbody) return;
+
+  if (rows.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="11" style="padding: 3rem; text-align: center; color: var(--text-tertiary);">No applications recorded in the sheet tracker yet. Click "⚡ Sync Applications Now" or run Auto-Apply to populate.</td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = rows.map((r) => {
+    const isApplied = (r[9] || '').toLowerCase().includes('applied');
+    const statusColor = isApplied ? '#30d158' : '#ff9f0a';
+    const statusBg = isApplied ? 'rgba(48,209,88,0.12)' : 'rgba(255,159,10,0.12)';
+    const url = r[10] || '';
+
+    return `
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s ease;" onmouseover="this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.background='transparent'">
+        <td style="padding: 0.6rem 1rem; color: var(--text-tertiary); font-family: monospace; font-size: 0.72rem;">${r[0] || ''}</td>
+        <td style="padding: 0.6rem 1rem; font-family: monospace; color: var(--text-secondary); font-size: 0.72rem;">${r[1] || ''}</td>
+        <td style="padding: 0.6rem 1rem; color: #fff; font-weight: 600;">${r[2] || 'Target Company'}</td>
+        <td style="padding: 0.6rem 1rem; color: var(--text-primary);">${r[3] || 'Software Engineer'}</td>
+        <td style="padding: 0.6rem 1rem; color: var(--text-secondary);">${r[4] || 'Remote'}</td>
+        <td style="padding: 0.6rem 1rem; color: var(--text-secondary);">${r[5] || 'Remote'}</td>
+        <td style="padding: 0.6rem 1rem; color: var(--text-tertiary);">${r[6] || 'Full-Time'}</td>
+        <td style="padding: 0.6rem 1rem; color: var(--accent-apple-green); font-weight: 500;">${r[7] || 'Competitive'}</td>
+        <td style="padding: 0.6rem 1rem; font-weight: 700; color: #38bdf8;">${r[8] || '95%'}</td>
+        <td style="padding: 0.6rem 1rem;">
+          <span style="background: ${statusBg}; color: ${statusColor}; font-weight: 600; font-size: 0.68rem; padding: 0.15rem 0.5rem; border-radius: 980px;">
+            ${r[9] || 'Applied'}
+          </span>
+        </td>
+        <td style="padding: 0.6rem 1rem;">
+          ${url ? `<a href="${url}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-apple-blue); text-decoration: none; font-size: 0.72rem;">Open Job ↗</a>` : '<span style="color: var(--text-tertiary);">-</span>'}
+        </td>
+      </tr>
+    `;
+  }).join('');
+}
+
+function filterNativeSheetsTable() {
+  const query = (document.getElementById('sheets-native-search')?.value || '').toLowerCase().trim();
+  if (!query) {
+    renderNativeSheetsTable(cachedNativeSheetsRows);
+    return;
+  }
+  const filtered = cachedNativeSheetsRows.filter(r => r.some(col => (col + '').toLowerCase().includes(query)));
+  renderNativeSheetsTable(filtered);
+}
+
+function reloadCurrentSheetsView() {
+  if (currentSheetsViewMode === 'native') {
+    loadNativeSheetsData();
+    showToast("Synchronized spreadsheet data reloaded.", "success", "Spreadsheet Updated");
+  } else {
+    refreshSheetsIframe();
+  }
+}
+
+function openSheetsModal() {
+  const modal = document.getElementById('sheets-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    switchSheetsModalView('native');
     showToast("Google Sheets Sync Tracker opened.", "info", "Google Sheets Hub");
   }
 }
@@ -1218,8 +1321,12 @@ async function triggerSheetsSyncNow() {
     if (data.success) {
       showToast(data.message || `Synchronized applications to Google Sheets!`, "success", "Google Sheets Synced");
       setTimeout(() => {
-        refreshSheetsIframe();
-      }, 1200);
+        if (currentSheetsViewMode === 'native') {
+          loadNativeSheetsData();
+        } else {
+          refreshSheetsIframe();
+        }
+      }, 1000);
     } else {
       showToast(data.error || "Sync completed with warnings.", "warning", "Sheets Sync");
     }

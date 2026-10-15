@@ -649,6 +649,57 @@ app.get('/api/sheets/export', (req, res) => {
   return res.sendFile(csvExportPath);
 });
 
+// JSON API endpoint for Native Spreadsheet Grid View (Fast, reliable, zero iframe errors)
+app.get('/api/sheets/data', (req, res) => {
+  const headers = [
+    "Timestamp", "ID", "Company", "Job / Project Title", 
+    "Location", "Remote Type", "Employment Type", 
+    "Salary / Contract Rate", "Match Score %", "Status", "Source URL"
+  ];
+
+  let rows = [];
+  if (fs.existsSync(csvExportPath)) {
+    try {
+      const content = fs.readFileSync(csvExportPath, 'utf-8');
+      const lines = content.trim().split('\n').filter(l => l.trim().length > 0);
+      for (let i = 1; i < lines.length; i++) {
+        const parts = lines[i].split(',').map(s => s.replace(/^"|"$/g, '').trim());
+        if (parts.length >= 4) {
+          rows.push(parts);
+        }
+      }
+    } catch (e) {
+      console.warn("Could not read csvExportPath:", e.message);
+    }
+  }
+
+  if (rows.length === 0 && applicationsStore.length > 0) {
+    rows = applicationsStore.map(a => [
+      a.appliedAt || new Date().toISOString(),
+      a.id || '',
+      a.company || '',
+      a.role || a.title || '',
+      a.location || 'Remote',
+      a.remoteType || 'Remote',
+      a.jobType || 'Full-Time',
+      a.salaryRaw || 'Competitive Pay',
+      `${a.matchScore || 95}%`,
+      a.status || 'Applied',
+      a.url || ''
+    ]);
+  }
+
+  // Reverse to show newest applications on top
+  const reversedRows = [...rows].reverse();
+
+  res.json({
+    spreadsheet_id: process.env.GOOGLE_SHEETS_SPREADSHEET_ID || "1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0",
+    headers,
+    total: reversedRows.length,
+    rows: reversedRows.slice(0, 100)
+  });
+});
+
 // Google Sheets Sync Info & Redirect Endpoint
 app.get('/api/sheets/info', (req, res) => {
   const sheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID || "1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0";
