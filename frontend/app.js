@@ -98,9 +98,13 @@ window.alert = function(msg) {
 };
 
 let rawFetchedJobs = [];
+window.rawFetchedJobs = rawFetchedJobs;
 let currentFilteredJobs = [];
+window.currentFilteredJobs = currentFilteredJobs;
 let appliedJobIds = new Set();
+window.appliedJobIds = appliedJobIds;
 let allApplications = [];
+window.allApplications = allApplications;
 let activeTrackerStatus = 'all';
 let currentPage = 1;
 const itemsPerPage = 8;
@@ -157,6 +161,10 @@ async function fetchJobs(silent = false) {
     const res = await fetch('/api/jobs');
     const jobs = await res.json();
     rawFetchedJobs = Array.isArray(jobs) ? jobs : [];
+    window.rawFetchedJobs = rawFetchedJobs;
+    window.renderJobs = renderJobs;
+    window.fetchApplications = fetchApplications;
+    window.generateClientSideTailoredProfile = generateClientSideTailoredProfile;
 
     const metricDiscovered = document.getElementById('metric-discovered');
     if (metricDiscovered) {

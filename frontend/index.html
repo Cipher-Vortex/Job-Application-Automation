@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- React 18 Production UMD Bundles for High Performance Reactive Architecture -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 </head>
 <body>
 
@@ -114,20 +117,27 @@
             </span>
           </div>
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="window.triggerReactAutoApplyAll && window.triggerReactAutoApplyAll()" id="btn-react-auto-apply-hero" style="background: linear-gradient(135deg, #0071e3 0%, #38bdf8 100%); border: none; font-weight: 600; box-shadow: 0 4px 14px rgba(0, 113, 227, 0.4); display: flex; align-items: center; gap: 0.4rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span>⚡ 1-Click Auto-Apply to All (Tailored)</span>
+            </button>
             <button class="btn btn-secondary" onclick="showPortalLoginMenu()">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
               Portal Login URLs
             </button>
             <button class="btn btn-secondary" onclick="runAutoApplyNow()" id="btn-run-auto-apply">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-              Run Instant Auto-Apply Pass
+              Run Pass
             </button>
             <button class="btn btn-apple-blue" onclick="triggerScraper()" id="btn-run-scraper">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
-              Refresh Remote Feed
+              Refresh Feed
             </button>
           </div>
         </div>
+
+        <!-- React 18 Auto-Apply Pipeline Console (useState & useEffect Queue Engine) -->
+        <div id="react-auto-apply-root"></div>
 
         <!-- Filter Bar -->
         <div class="filter-bar">
@@ -640,5 +650,6 @@
   <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
 
   <script src="app.js"></script>
+  <script src="react_auto_apply.js"></script>
 </body>
 </html>
