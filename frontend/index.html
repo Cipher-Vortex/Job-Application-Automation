@@ -141,6 +141,28 @@
 
         <!-- Filter Bar -->
         <div class="filter-bar">
+          
+          <!-- Target Role & Domain Selector Pills (All Roles Explorer) -->
+          <div style="margin-bottom: 1.25rem; background: rgba(255, 255, 255, 0.02); padding: 0.85rem 1rem; border-radius: 12px; border: 1px solid var(--border-subtle);">
+            <div style="font-size: 0.75rem; color: var(--text-tertiary); margin-bottom: 0.6rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+              <div style="display: flex; align-items: center; gap: 0.4rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span style="font-weight: 600; color: var(--text-primary);">Explore All Roles (Auto-Tailored Resume & Pitch):</span>
+              </div>
+              <span style="color: var(--accent-apple-blue); font-size: 0.72rem; font-weight: 500;">⚡ Switch role with 1-click to filter & tailor</span>
+            </div>
+            <div id="role-category-pills" style="display: flex; gap: 0.45rem; flex-wrap: wrap; align-items: center;">
+              <button type="button" class="role-pill active" data-role="all" onclick="selectRoleCategory('all')">✨ All Roles</button>
+              <button type="button" class="role-pill" data-role="ai" onclick="selectRoleCategory('ai')">🤖 AI & LLM</button>
+              <button type="button" class="role-pill" data-role="frontend" onclick="selectRoleCategory('frontend')">🎨 Frontend (React/Vue)</button>
+              <button type="button" class="role-pill" data-role="backend" onclick="selectRoleCategory('backend')">⚙️ Backend (Node/APIs)</button>
+              <button type="button" class="role-pill" data-role="fullstack" onclick="selectRoleCategory('fullstack')">⚡ Full Stack</button>
+              <button type="button" class="role-pill" data-role="product" onclick="selectRoleCategory('product')">🚀 Product Engineer</button>
+              <button type="button" class="role-pill" data-role="erp" onclick="selectRoleCategory('erp')">🏢 ERP & Enterprise</button>
+              <button type="button" class="role-pill" data-role="cloud" onclick="selectRoleCategory('cloud')">☁️ Cloud & DevOps</button>
+            </div>
+          </div>
+
           <div style="font-size: 0.85rem; font-weight: 500; margin-bottom: 1rem; color: var(--text-secondary); display: flex; align-items: center; justify-content: space-between;">
             <div style="display: flex; align-items: center; gap: 0.4rem;">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/></svg>
@@ -175,6 +197,21 @@
                   <input type="checkbox" id="filter-freelance" checked onchange="applyFilters()"> Freelance / Contract
                 </label>
               </div>
+            </div>
+
+            <!-- Role Domain Dropdown -->
+            <div>
+              <label style="font-size: 0.75rem; color: var(--text-tertiary); display: block; margin-bottom: 0.4rem;">Role Category:</label>
+              <select id="filter-role-domain" onchange="syncRoleDropdownToPills(this.value)" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.4rem 0.6rem; border-radius: 8px; font-size: 0.8rem;">
+                <option value="all">All Technical Roles</option>
+                <option value="ai">AI / LLM & RAG Application Engineer</option>
+                <option value="frontend">Frontend Engineer (React 18, Next.js, Vue)</option>
+                <option value="backend">Backend Engineer (Node.js, REST, Microservices)</option>
+                <option value="fullstack">Full Stack Engineer (MERN / Next / Web)</option>
+                <option value="product">Product Engineer (Full Stack & UX)</option>
+                <option value="erp">ERP & Enterprise Solutions (Laravel / Vue / RMC)</option>
+                <option value="cloud">Cloud & Platform Web Systems</option>
+              </select>
             </div>
 
             <!-- Minimum Salary -->
@@ -671,9 +708,9 @@
           </div>
         </div>
 
-        <!-- View 2: Google Docs Iframe Embed -->
+        <!-- View 2: Google Docs Iframe Embed (Lazy-loaded on demand only) -->
         <div id="sheets-iframe-view" style="display: none; width: 100%; height: 100%; position: relative;">
-          <iframe id="sheets-iframe" src="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/preview" style="width: 100%; height: 100%; border: none; background: #fff;" title="Google Sheets Live Preview"></iframe>
+          <iframe id="sheets-iframe" data-src="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/preview" src="about:blank" style="width: 100%; height: 100%; border: none; background: #fff;" title="Google Sheets Live Preview"></iframe>
           <div id="sheets-iframe-notice" style="position: absolute; bottom: 1rem; right: 1.5rem; background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); border: 1px solid var(--border-subtle); padding: 0.5rem 0.85rem; border-radius: 8px; font-size: 0.75rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.5rem;">
             <span>Need full editing access or formulas?</span>
             <a href="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/edit" target="_blank" rel="noopener noreferrer" style="color: var(--accent-apple-blue); font-weight: 600; text-decoration: none;">Open Full Spreadsheet ↗</a>

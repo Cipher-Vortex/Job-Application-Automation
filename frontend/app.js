@@ -112,6 +112,31 @@ let currentModalJob = null;
 let currentReviewApp = null;
 let currentInfoApp = null;
 let isAutoApplyEnabled = true;
+let selectedRoleCategory = 'all';
+
+function selectRoleCategory(roleKey) {
+  selectedRoleCategory = roleKey || 'all';
+  // Update role pill active classes
+  document.querySelectorAll('#role-category-pills .role-pill').forEach(btn => {
+    if (btn.getAttribute('data-role') === selectedRoleCategory) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+  // Sync the role dropdown
+  const dropdown = document.getElementById('filter-role-domain');
+  if (dropdown) {
+    dropdown.value = selectedRoleCategory;
+  }
+  applyFilters();
+}
+window.selectRoleCategory = selectRoleCategory;
+
+function syncRoleDropdownToPills(roleKey) {
+  selectRoleCategory(roleKey);
+}
+window.syncRoleDropdownToPills = syncRoleDropdownToPills;
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchJobs();
@@ -148,7 +173,7 @@ function switchTab(tabId) {
 
 // ================= 100% REMOTE JOBS FEED =================
 
-async function fetchJobs(silent = false) {
+async function fetchJobs(silent = false, forceRefresh = false) {
   const container = document.getElementById('job-feed-container');
   if (container && !silent) {
     container.innerHTML = `<div style="color: var(--text-secondary); padding: 3rem; text-align: center; font-size: 0.9rem;">
@@ -158,7 +183,8 @@ async function fetchJobs(silent = false) {
   }
 
   try {
-    const res = await fetch('/api/jobs');
+    const url = forceRefresh ? '/api/jobs?forceRefresh=true' : '/api/jobs';
+    const res = await fetch(url);
     const jobs = await res.json();
     rawFetchedJobs = Array.isArray(jobs) ? jobs : [];
     window.rawFetchedJobs = rawFetchedJobs;
@@ -207,6 +233,30 @@ function applyFilters() {
     // Strict 100% remote filtering
     if (allowRemoteOnly && !isRemote) return false;
     if (!allowRemoteOnly && !allowHybrid && !isRemote) return false;
+
+    // Role Category / Domain Filter
+    if (selectedRoleCategory && selectedRoleCategory !== 'all') {
+      const rCat = (job.roleCategory || '').toLowerCase();
+      const title = (job.title || '').toLowerCase();
+      const desc = (job.description || '').toLowerCase();
+      const text = `${title} ${desc} ${rCat}`;
+
+      if (selectedRoleCategory === 'ai') {
+        if (!rCat.includes('ai') && !text.includes('ai ') && !text.includes('rag') && !text.includes('llm') && !text.includes('grok') && !text.includes('machine learning')) return false;
+      } else if (selectedRoleCategory === 'frontend') {
+        if (!rCat.includes('frontend') && !text.includes('front') && !text.includes('react') && !text.includes('vue') && !text.includes('next')) return false;
+      } else if (selectedRoleCategory === 'backend') {
+        if (!rCat.includes('backend') && !text.includes('back') && !text.includes('node') && !text.includes('api') && !text.includes('microservice') && !text.includes('golang') && !text.includes('python')) return false;
+      } else if (selectedRoleCategory === 'fullstack') {
+        if (!rCat.includes('full stack') && !rCat.includes('fullstack') && !text.includes('full stack') && !text.includes('fullstack')) return false;
+      } else if (selectedRoleCategory === 'product') {
+        if (!rCat.includes('product') && !text.includes('product')) return false;
+      } else if (selectedRoleCategory === 'erp') {
+        if (!rCat.includes('erp') && !text.includes('erp') && !text.includes('laravel') && !text.includes('enterprise')) return false;
+      } else if (selectedRoleCategory === 'cloud') {
+        if (!rCat.includes('cloud') && !rCat.includes('devops') && !text.includes('cloud') && !text.includes('devops') && !text.includes('docker') && !text.includes('infrastructure')) return false;
+      }
+    }
 
     // Employment type
     const jType = (job.jobType || '').toLowerCase();
@@ -258,7 +308,7 @@ function renderJobs() {
     container.innerHTML = `
       <div style="background: var(--bg-card); padding: 3rem; text-align: center; border-radius: 18px; border: 1px solid var(--border-subtle);">
         <h3 style="color: var(--text-primary); font-weight: 500; margin-bottom: 0.5rem; font-size: 1rem;">No 100% remote positions match your active preferences</h3>
-        <p style="color: var(--text-secondary); font-size: 0.85rem;">Try relaxing the salary floor or search query, or click 'Refresh Remote Feed'.</p>
+        <p style="color: var(--text-secondary); font-size: 0.85rem;">Try selecting '✨ All Roles' or click 'Refresh Remote Feed'.</p>
       </div>
     `;
     renderPagination(0);
@@ -280,6 +330,16 @@ function renderJobs() {
     else if (src.includes('remoteok')) badgeColor = "#f59e0b";
     else if (src.includes('freelancer')) badgeColor = "#29b2fe";
     else if (src.includes('linkedin')) badgeColor = "#0077b5";
+
+    const roleCat = job.roleCategory || 'Full Stack';
+    let roleEmoji = '⚡';
+    let roleClass = 'role-badge-fullstack';
+    if (roleCat.includes('AI')) { roleEmoji = '🤖'; roleClass = 'role-badge-ai'; }
+    else if (roleCat.includes('Frontend')) { roleEmoji = '🎨'; roleClass = 'role-badge-frontend'; }
+    else if (roleCat.includes('Backend')) { roleEmoji = '⚙️'; roleClass = 'role-badge-backend'; }
+    else if (roleCat.includes('Product')) { roleEmoji = '🚀'; roleClass = 'role-badge-product'; }
+    else if (roleCat.includes('ERP')) { roleEmoji = '🏢'; roleClass = 'role-badge-erp'; }
+    else if (roleCat.includes('Cloud')) { roleEmoji = '☁️'; roleClass = 'role-badge-cloud'; }
 
     const jobJsonEscaped = encodeURIComponent(JSON.stringify(job));
 
@@ -308,6 +368,9 @@ function renderJobs() {
             <h3>${job.title}</h3>
             <span class="tag" style="background: rgba(48, 209, 88, 0.1); color: var(--accent-apple-green); border-color: rgba(48, 209, 88, 0.25); font-weight: 600;">
               100% Remote
+            </span>
+            <span class="tag role-tag ${roleClass}" style="font-weight: 600;">
+              ${roleEmoji} ${roleCat}
             </span>
             <span class="tag" style="color: ${badgeColor}; border-color: ${badgeColor}; font-weight: 600;">
               ${job.source}

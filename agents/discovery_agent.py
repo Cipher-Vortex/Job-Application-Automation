@@ -33,6 +33,23 @@ class JobDiscoveryAgent:
         text = re.sub(r'[^\x00-\x7F]+', ' ', text)
         return re.sub(r'\s+', ' ', text).strip()
 
+    def _categorize_role(self, title: str, description: str = "") -> str:
+        """Categorize job into specific technical role domain for intelligent multi-role matching."""
+        text = f"{title} {description}".lower()
+        if any(k in text for k in ["ai ", "ai/", "artificial intelligence", "rag", "llm", "machine learning", "nlp", "grok", "deep learning", "langchain", "prompt"]):
+            return "AI / LLM"
+        if any(k in text for k in ["frontend", "front-end", "react", "vue", "next.js", "nextjs", "angular", "ui/ux", "ui developer", "web designer"]):
+            return "Frontend"
+        if any(k in text for k in ["backend", "back-end", "node", "express", "api engineer", "fastapi", "django", "laravel", "golang", "java ", "microservice"]):
+            return "Backend"
+        if any(k in text for k in ["product engineer", "product developer", "growth engineer", "founding engineer"]):
+            return "Product"
+        if any(k in text for k in ["devops", "cloud", "sre", "site reliability", "infrastructure", "platform engineer", "kubernetes", "aws", "docker"]):
+            return "Cloud & DevOps"
+        if any(k in text for k in ["erp", "sap", "crm", "netsuite", "odoo", "enterprise solutions"]):
+            return "ERP & Enterprise"
+        return "Full Stack"
+
     def _fetch_url(self, url: str) -> Any:
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"})
@@ -43,10 +60,14 @@ class JobDiscoveryAgent:
             return None
 
     def fetch_freelancer_com_projects(self) -> List[Dict[str, Any]]:
-        logger.info("Fetching real active freelance & contract projects (<30 days old) from Freelancer.com API...")
+        logger.info("Fetching real active freelance & contract projects (<30 days old) from Freelancer.com API across multiple roles...")
         import time
         cutoff = time.time() - (30 * 86400) # 30 days ago
-        queries = ["react%20node%20fullstack", "vue%20laravel%20erp", "fullstack%20developer", "ai%20rag%20web"]
+        queries = [
+            "react%20node%20fullstack", "vue%20laravel%20erp", "fullstack%20developer", 
+            "ai%20rag%20web", "frontend%20engineer", "backend%20developer", 
+            "product%20engineer", "cloud%20devops", "web%20application"
+        ]
         seen_ids = set()
         parsed_projects = []
 
@@ -91,11 +112,14 @@ class JobDiscoveryAgent:
                 if "mysql" in haystack: tech_stack.append("MySQL")
                 if "mongo" in haystack: tech_stack.append("MongoDB")
 
+                role_cat = self._categorize_role(title, desc)
+
                 parsed_projects.append({
                     "id": f"fl_{p_id}",
                     "title": title,
+                    "role_category": role_cat,
                     "company": "Client Project (Freelancer.com)",
-                    "department": "Engineering Gig",
+                    "department": f"{role_cat} Gig",
                     "location": "Global Remote",
                     "remote_type": "Remote",
                     "job_type": "Freelance / Contract",
@@ -112,7 +136,7 @@ class JobDiscoveryAgent:
         return parsed_projects
 
     def fetch_remoteok_jobs(self) -> List[Dict[str, Any]]:
-        logger.info("Fetching live jobs & freelance contracts (<30 days old) from RemoteOK API...")
+        logger.info("Fetching live jobs & freelance contracts (<30 days old) from RemoteOK API across roles...")
         data = self._fetch_url("https://remoteok.com/api")
         if not data or not isinstance(data, list):
             return []
@@ -141,7 +165,8 @@ class JobDiscoveryAgent:
             salary_min = item.get("salary_min")
             salary_max = item.get("salary_max")
             
-            desc_lower = (item.get("description") or "").lower()
+            desc_raw = item.get("description", "")
+            desc_lower = desc_raw.lower()
             tags_lower = [t.lower() for t in tags]
             
             is_contract = any(k in tags_lower or k in desc_lower for k in ["contract", "freelance", "hourly", "gig", "consultant", "project"])
@@ -156,11 +181,14 @@ class JobDiscoveryAgent:
             else:
                 sal_str = "$45 - $90 / hr (Project Contract)" if is_contract else "Competitive Market Rate"
             
+            role_cat = self._categorize_role(position, f"{' '.join(tags)} {desc_raw[:300]}")
+
             parsed_jobs.append({
                 "id": f"rok_{item.get('id', uuid.uuid4().hex[:6])}",
                 "title": position,
+                "role_category": role_cat,
                 "company": company,
-                "department": "Engineering",
+                "department": f"{role_cat} Engineering",
                 "location": location if location else "Remote",
                 "remote_type": "Remote",
                 "job_type": job_type,
@@ -172,7 +200,7 @@ class JobDiscoveryAgent:
                 "salary_max": salary_max * 83 if salary_max else (1400000 if is_contract else 1600000),
                 "experience_required": "1+ Years",
                 "tech_stack": [t.title() for t in tags[:6]] if tags else ["React", "Node.js", "Full Stack"],
-                "description": self._clean_text(item.get("description", ""))[:400]
+                "description": self._clean_text(desc_raw)[:400]
             })
         return parsed_jobs
 
@@ -200,12 +228,14 @@ class JobDiscoveryAgent:
             
             is_contract = any(k in title.lower() for k in ["freelance", "contract", "interim", "consultant"])
             job_type = "Freelance / Contract" if is_contract else "Full-Time"
+            role_cat = self._categorize_role(title, item.get("description", ""))
             
             parsed_jobs.append({
                 "id": f"an_{uuid.uuid4().hex[:6]}",
                 "title": title,
+                "role_category": role_cat,
                 "company": company,
-                "department": "Software Engineering",
+                "department": f"{role_cat} Engineering",
                 "location": location,
                 "remote_type": remote,
                 "job_type": job_type,
@@ -224,7 +254,7 @@ class JobDiscoveryAgent:
     def fetch_greenhouse_jobs(self) -> List[Dict[str, Any]]:
         parsed_jobs = []
         for comp in self.greenhouse_companies:
-            logger.info(f"Scanning live Greenhouse career board for {comp}...")
+            logger.info(f"Scanning live Greenhouse career board for {comp} across technical roles...")
             url = f"https://boards-api.greenhouse.io/v1/boards/{comp}/jobs?content=true"
             data = self._fetch_url(url)
             if not data or not isinstance(data, dict):
@@ -233,14 +263,21 @@ class JobDiscoveryAgent:
             jobs = data.get("jobs", [])
             for j in jobs:
                 title = self._clean_text(j.get("title", ""))
-                if any(k in title.lower() for k in ["engineer", "developer", "software", "full stack", "frontend", "backend"]):
+                # Broaden to all software, web, AI, cloud, frontend, backend, and product roles
+                if any(k in title.lower() for k in [
+                    "engineer", "developer", "software", "full stack", "fullstack", "frontend", "backend",
+                    "ai", "machine learning", "product", "cloud", "devops", "platform", "solutions",
+                    "architect", "web", "data", "technical", "consultant", "erp", "ui", "ux", "systems"
+                ]):
                     loc = self._clean_text(j.get("location", {}).get("name", "Remote"))
                     is_contract = "contract" in title.lower()
+                    role_cat = self._categorize_role(title, f"{title} {loc}")
                     parsed_jobs.append({
                         "id": f"gh_{j.get('id')}",
                         "title": title,
+                        "role_category": role_cat,
                         "company": comp.title(),
-                        "department": "Engineering",
+                        "department": f"{role_cat} Engineering",
                         "location": loc,
                         "remote_type": "Remote" if "remote" in loc.lower() else "Hybrid",
                         "job_type": "Freelance / Contract" if is_contract else "Full-Time",
@@ -259,7 +296,7 @@ class JobDiscoveryAgent:
     def fetch_lever_jobs(self) -> List[Dict[str, Any]]:
         parsed_jobs = []
         for comp in self.lever_companies:
-            logger.info(f"Scanning live Lever career board for {comp}...")
+            logger.info(f"Scanning live Lever career board for {comp} across technical roles...")
             url = f"https://api.lever.co/v0/postings/{comp}?mode=json"
             data = self._fetch_url(url)
             if not data or not isinstance(data, list):
@@ -271,13 +308,19 @@ class JobDiscoveryAgent:
                 loc = self._clean_text(categories.get("location", "Remote"))
                 team = self._clean_text(categories.get("team", "Engineering"))
                 
-                if any(k in title.lower() or k in team.lower() for k in ["engineer", "developer", "software", "full stack", "frontend", "backend"]):
+                if any(k in title.lower() or k in team.lower() for k in [
+                    "engineer", "developer", "software", "full stack", "fullstack", "frontend", "backend",
+                    "ai", "machine learning", "product", "cloud", "devops", "platform", "solutions",
+                    "architect", "web", "data", "technical", "consultant", "erp", "ui", "ux", "systems"
+                ]):
                     is_contract = "contract" in title.lower()
+                    role_cat = self._categorize_role(title, f"{title} {team}")
                     parsed_jobs.append({
                         "id": f"lev_{j.get('id', uuid.uuid4().hex[:6])}",
                         "title": title,
+                        "role_category": role_cat,
                         "company": comp.title(),
-                        "department": team or "Engineering",
+                        "department": team or f"{role_cat} Engineering",
                         "location": loc,
                         "remote_type": "Remote" if "remote" in loc.lower() or "remote" in j.get("workplaceType", "").lower() else "Hybrid",
                         "job_type": "Freelance / Contract" if is_contract else "Full-Time",
@@ -294,98 +337,122 @@ class JobDiscoveryAgent:
         return parsed_jobs
 
     def fetch_linkedin_jobs(self) -> List[Dict[str, Any]]:
-        logger.info("Scanning live LinkedIn Jobs stream for Software & Full Stack positions...")
+        logger.info("Scanning live LinkedIn Jobs stream across Software, AI, Frontend, Backend & Product positions...")
         try:
             import requests
             from bs4 import BeautifulSoup
-            url = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=software%20developer&location=India"
+            queries = [
+                "software%20developer", "full%20stack%20developer", 
+                "frontend%20engineer", "backend%20developer", 
+                "ai%20engineer", "product%20engineer"
+            ]
             headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-            resp = requests.get(url, headers=headers, timeout=10)
-            if resp.status_code != 200:
-                return []
-            
-            soup = BeautifulSoup(resp.text, "html.parser")
-            cards = soup.find_all("li")
             parsed_jobs = []
-            for c in cards:
-                title_elem = c.find("h3", class_="base-search-card__title")
-                comp_elem = c.find("h4", class_="base-search-card__subtitle")
-                loc_elem = c.find("span", class_="job-search-card__location")
-                link_elem = c.find("a", class_="base-card__full-link")
-                
-                if not title_elem or not link_elem:
+            seen_links = set()
+
+            for q in queries:
+                url = f"https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={q}&location=India"
+                try:
+                    resp = requests.get(url, headers=headers, timeout=8)
+                    if resp.status_code != 200:
+                        continue
+                    soup = BeautifulSoup(resp.text, "html.parser")
+                    cards = soup.find_all("li")
+                    for c in cards[:6]:
+                        title_elem = c.find("h3", class_="base-search-card__title")
+                        comp_elem = c.find("h4", class_="base-search-card__subtitle")
+                        loc_elem = c.find("span", class_="job-search-card__location")
+                        link_elem = c.find("a", class_="base-card__full-link")
+                        if not title_elem or not link_elem:
+                            continue
+                        job_url = link_elem.get("href", "").split("?")[0]
+                        if job_url in seen_links:
+                            continue
+                        seen_links.add(job_url)
+
+                        title = self._clean_text(title_elem.text)
+                        company = self._clean_text(comp_elem.text if comp_elem else "LinkedIn Enterprise")
+                        location = self._clean_text(loc_elem.text if loc_elem else "India")
+                        role_cat = self._categorize_role(title, f"{title} {q}")
+
+                        parsed_jobs.append({
+                            "id": f"li_{uuid.uuid4().hex[:6]}",
+                            "title": title,
+                            "role_category": role_cat,
+                            "company": company,
+                            "department": f"{role_cat} Engineering",
+                            "location": location,
+                            "remote_type": "Remote" if "remote" in location.lower() else "Hybrid",
+                            "job_type": "Full-Time",
+                            "url": job_url,
+                            "source": "LinkedIn",
+                            "ats_platform": "LinkedIn Easy Apply",
+                            "salary_raw": "₹12,00,000 - ₹20,00,000 INR",
+                            "salary_min": 1200000,
+                            "salary_max": 2000000,
+                            "experience_required": "1-3 Years",
+                            "tech_stack": ["React", "Node.js", "TypeScript", "REST APIs", "SQL"],
+                            "description": f"Live LinkedIn listing for {title} at {company} in {location}."
+                        })
+                except Exception:
                     continue
-                
-                title = self._clean_text(title_elem.text)
-                company = self._clean_text(comp_elem.text if comp_elem else "LinkedIn Enterprise")
-                location = self._clean_text(loc_elem.text if loc_elem else "India")
-                job_url = link_elem.get("href", "").split("?")[0]
-                
-                parsed_jobs.append({
-                    "id": f"li_{uuid.uuid4().hex[:6]}",
-                    "title": title,
-                    "company": company,
-                    "department": "Engineering",
-                    "location": location,
-                    "remote_type": "Remote" if "remote" in location.lower() else "Hybrid",
-                    "job_type": "Full-Time",
-                    "url": job_url,
-                    "source": "LinkedIn",
-                    "ats_platform": "LinkedIn Easy Apply",
-                    "salary_raw": "₹12,00,000 - ₹20,00,000 INR",
-                    "salary_min": 1200000,
-                    "salary_max": 2000000,
-                    "experience_required": "1-3 Years",
-                    "tech_stack": ["React", "Node.js", "TypeScript", "REST APIs", "SQL"],
-                    "description": f"Live LinkedIn listing for {title} at {company} in {location}."
-                })
-            logger.info(f"Successfully scraped {len(parsed_jobs)} real live LinkedIn postings.")
+
+            logger.info(f"Successfully scraped {len(parsed_jobs)} real live LinkedIn postings across multiple roles.")
             return parsed_jobs
         except Exception as e:
             logger.warning(f"Error fetching live LinkedIn jobs: {e}")
             return []
 
     def fetch_indeed_jobs(self) -> List[Dict[str, Any]]:
-        logger.info("Scanning live Indeed Jobs stream for Tech listings...")
+        logger.info("Scanning live Indeed Jobs stream across technical roles...")
         try:
             import requests
             from bs4 import BeautifulSoup
-            url = "https://www.indeed.com/rss?q=software+developer&l=India"
+            queries = ["software+developer", "full+stack+developer", "frontend+engineer", "backend+developer", "ai+engineer"]
             headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-            resp = requests.get(url, headers=headers, timeout=10)
-            if resp.status_code != 200:
-                return []
-            
-            soup = BeautifulSoup(resp.text, "html.parser")
-            items = soup.find_all("item")
             parsed_jobs = []
-            for item in items:
-                title = self._clean_text(item.find("title").text if item.find("title") else "")
-                link = item.find("link").text if item.find("link") else ""
-                desc = self._clean_text(item.find("description").text if item.find("description") else "")
-                
-                if not title or not link:
+            seen_links = set()
+
+            for q in queries:
+                url = f"https://www.indeed.com/rss?q={q}&l=India"
+                try:
+                    resp = requests.get(url, headers=headers, timeout=8)
+                    if resp.status_code != 200:
+                        continue
+                    soup = BeautifulSoup(resp.text, "html.parser")
+                    items = soup.find_all("item")
+                    for item in items[:4]:
+                        title = self._clean_text(item.find("title").text if item.find("title") else "")
+                        link = item.find("link").text if item.find("link") else ""
+                        desc = self._clean_text(item.find("description").text if item.find("description") else "")
+                        if not title or not link or link in seen_links:
+                            continue
+                        seen_links.add(link)
+                        role_cat = self._categorize_role(title, desc)
+
+                        parsed_jobs.append({
+                            "id": f"ind_{uuid.uuid4().hex[:6]}",
+                            "title": title,
+                            "role_category": role_cat,
+                            "company": "Tech Company (Indeed)",
+                            "department": f"{role_cat} Engineering",
+                            "location": "India / Remote",
+                            "remote_type": "Remote",
+                            "job_type": "Full-Time",
+                            "url": link,
+                            "source": "Indeed",
+                            "ats_platform": "Indeed Apply",
+                            "salary_raw": "₹10,00,000 - ₹16,00,000 INR",
+                            "salary_min": 1000000,
+                            "salary_max": 1600000,
+                            "experience_required": "1+ Years",
+                            "tech_stack": ["Node.js", "Express.js", "MongoDB", "React", "REST APIs"],
+                            "description": desc if desc else f"Live Indeed {role_cat} job listing."
+                        })
+                except Exception:
                     continue
-                
-                parsed_jobs.append({
-                    "id": f"ind_{uuid.uuid4().hex[:6]}",
-                    "title": title,
-                    "company": "Tech Company (Indeed)",
-                    "department": "Digital Engineering",
-                    "location": "India / Remote",
-                    "remote_type": "Remote",
-                    "job_type": "Full-Time",
-                    "url": link,
-                    "source": "Indeed",
-                    "ats_platform": "Indeed Apply",
-                    "salary_raw": "₹10,00,000 - ₹16,00,000 INR",
-                    "salary_min": 1000000,
-                    "salary_max": 1600000,
-                    "experience_required": "1+ Years",
-                    "tech_stack": ["Node.js", "Express.js", "MongoDB", "React", "REST APIs"],
-                    "description": desc if desc else "Live Indeed job listing."
-                })
-            logger.info(f"Successfully scraped {len(parsed_jobs)} real live Indeed postings.")
+
+            logger.info(f"Successfully scraped {len(parsed_jobs)} real live Indeed postings across roles.")
             return parsed_jobs
         except Exception as e:
             logger.warning(f"Error fetching live Indeed jobs: {e}")
@@ -417,12 +484,14 @@ class JobDiscoveryAgent:
                 company = self._clean_text(comp_elem.text if comp_elem else "Tech Startup")
                 location = self._clean_text(loc_elem.text if loc_elem else "Remote / India")
                 link = "https://internshala.com" + c.get("data-href", "/jobs")
+                role_cat = self._categorize_role(title)
                 
                 parsed_jobs.append({
                     "id": f"is_{uuid.uuid4().hex[:6]}",
                     "title": title,
+                    "role_category": role_cat,
                     "company": company,
-                    "department": "Engineering",
+                    "department": f"{role_cat} Engineering",
                     "location": location,
                     "remote_type": "Remote" if "work from home" in location.lower() or "remote" in location.lower() else "Hybrid",
                     "job_type": "Full-Time / Paid Internship",
@@ -461,12 +530,14 @@ class JobDiscoveryAgent:
                 job_detail = item.get("job_detail", {})
                 sal_min = job_detail.get("min_salary") or 900000
                 sal_max = job_detail.get("max_salary") or 1800000
+                role_cat = self._categorize_role(title, item.get("description", ""))
                 
                 parsed_jobs.append({
                     "id": f"un_{item.get('id', uuid.uuid4().hex[:6])}",
                     "title": title,
+                    "role_category": role_cat,
                     "company": comp_name,
-                    "department": "Engineering Core",
+                    "department": f"{role_cat} Engineering",
                     "location": "India / Remote",
                     "remote_type": "Hybrid",
                     "job_type": "Full-Time",
@@ -487,42 +558,50 @@ class JobDiscoveryAgent:
             return []
 
     def fetch_naukri_jobs(self) -> List[Dict[str, Any]]:
-        logger.info("Scanning live Naukri stream for Full Stack, Vue, Laravel, ERP & React listings in Remote, Bengaluru, Chennai...")
+        logger.info("Scanning live Naukri stream across Frontend, Backend, AI, ERP, and Full Stack...")
         try:
             import requests
             from bs4 import BeautifulSoup
             parsed_jobs = []
-            queries = ["full-stack-developer", "vue-js-developer", "laravel-developer", "react-developer"]
+            queries = [
+                "full-stack-developer", "vue-js-developer", "laravel-developer", 
+                "react-developer", "ai-engineer", "frontend-engineer", "backend-developer"
+            ]
             for q in queries:
                 url = f"https://www.naukri.com/{q}-jobs-in-bengaluru-chennai?k={q}&l=bengaluru%2C%20chennai%2C%20remote"
                 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-                resp = requests.get(url, headers=headers, timeout=8)
-                if resp.status_code == 200:
-                    soup = BeautifulSoup(resp.text, "html.parser")
-                    title_elems = soup.find_all("a", class_="title")
-                    for t in title_elems[:5]:
-                        t_text = self._clean_text(t.text)
-                        job_link = t.get("href", "")
-                        if t_text and job_link:
-                            parsed_jobs.append({
-                                "id": f"nk_{uuid.uuid4().hex[:6]}",
-                                "title": t_text,
-                                "company": "Naukri Partner Company",
-                                "department": "Engineering",
-                                "location": "Bengaluru / Chennai / Remote",
-                                "remote_type": "Remote" if "remote" in t_text.lower() else "Hybrid",
-                                "job_type": "Full-Time",
-                                "url": job_link if job_link.startswith("http") else f"https://www.naukri.com{job_link}",
-                                "source": "Naukri",
-                                "ats_platform": "Naukri 1-Click Apply",
-                                "salary_raw": "₹8,00,000 - ₹16,00,000 INR",
-                                "salary_min": 800000,
-                                "salary_max": 1600000,
-                                "experience_required": "0-2 Years",
-                                "tech_stack": ["React", "Vue.js", "Laravel", "MySQL", "Node.js", "Full Stack"],
-                                "description": f"Live Naukri job listing for {t_text}."
-                            })
-            logger.info(f"Successfully scraped {len(parsed_jobs)} live Naukri postings.")
+                try:
+                    resp = requests.get(url, headers=headers, timeout=6)
+                    if resp.status_code == 200:
+                        soup = BeautifulSoup(resp.text, "html.parser")
+                        title_elems = soup.find_all("a", class_="title")
+                        for t in title_elems[:3]:
+                            t_text = self._clean_text(t.text)
+                            job_link = t.get("href", "")
+                            if t_text and job_link:
+                                role_cat = self._categorize_role(t_text)
+                                parsed_jobs.append({
+                                    "id": f"nk_{uuid.uuid4().hex[:6]}",
+                                    "title": t_text,
+                                    "role_category": role_cat,
+                                    "company": "Naukri Partner Company",
+                                    "department": f"{role_cat} Engineering",
+                                    "location": "Bengaluru / Chennai / Remote",
+                                    "remote_type": "Remote" if "remote" in t_text.lower() else "Hybrid",
+                                    "job_type": "Full-Time",
+                                    "url": job_link if job_link.startswith("http") else f"https://www.naukri.com{job_link}",
+                                    "source": "Naukri",
+                                    "ats_platform": "Naukri 1-Click Apply",
+                                    "salary_raw": "₹8,00,000 - ₹16,00,000 INR",
+                                    "salary_min": 800000,
+                                    "salary_max": 1600000,
+                                    "experience_required": "0-2 Years",
+                                    "tech_stack": ["React", "Vue.js", "Laravel", "MySQL", "Node.js", "Full Stack"],
+                                    "description": f"Live Naukri job listing for {t_text}."
+                                })
+                except Exception:
+                    continue
+            logger.info(f"Successfully scraped {len(parsed_jobs)} live Naukri postings across roles.")
             return parsed_jobs
         except Exception as e:
             logger.warning(f"Error fetching live Naukri jobs: {e}")
@@ -542,11 +621,13 @@ class JobDiscoveryAgent:
                 title = self._clean_text(j.get("title", ""))
                 loc = self._clean_text(j.get("locationName", "Remote"))
                 is_contract = "contract" in title.lower()
+                role_cat = self._categorize_role(title)
                 parsed_jobs.append({
                     "id": f"ash_{j.get('id', uuid.uuid4().hex[:6])}",
                     "title": title,
+                    "role_category": role_cat,
                     "company": comp.title(),
-                    "department": self._clean_text(j.get("departmentName", "Engineering")),
+                    "department": self._clean_text(j.get("departmentName", f"{role_cat} Engineering")),
                     "location": loc,
                     "remote_type": "Remote" if "remote" in loc.lower() or j.get("isRemote") else "Hybrid",
                     "job_type": "Freelance / Contract" if is_contract else "Full-Time",

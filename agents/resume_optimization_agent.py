@@ -58,32 +58,51 @@ class ResumeOptimizationAgent:
 
         # 4. Tailored Title & Executive Summary
         role_lower = job_title.lower()
-        if "frontend" in role_lower:
-            variant_title = f"Frontend / Full Stack Engineer — Specialized in {top_keywords_str}"
-        elif "backend" in role_lower:
-            variant_title = f"Backend / Full Stack Engineer — Node.js, REST APIs & Distributed Architectures"
-        elif "ai" in role_lower or "machine learning" in role_lower:
-            variant_title = f"AI & Full Stack Engineer — MERN, RAG Pipelines & Grok/LLM Systems"
+        if any(k in role_lower for k in ["frontend", "front-end", "react", "vue", "ui", "ux"]):
+            variant_title = f"Frontend / UI Engineer — React 18, Next.js, Vue & High-Performance Web"
+            role_focus = "responsive React/Vue interfaces, component modularity, and Core Web Vitals optimization"
+            top_highlight = f"Modular UI Architecture: Engineered 20+ reusable React UI components at Zupper cutting duplicate effort by 30%, and reduced page load times by 25% via memoization and code splitting."
+        elif any(k in role_lower for k in ["backend", "back-end", "api", "distributed", "node"]):
+            variant_title = f"Backend / Distributed Systems Engineer — Node.js, REST APIs, Microservices & Databases"
+            role_focus = "high-concurrency RESTful microservices, distributed data layers, and database optimization"
+            top_highlight = f"High-Throughput Data Layer: Slashed MongoDB query latency by 40% using compound indexing and designed high-throughput Laravel/Node REST APIs with queue architectures."
+        elif any(k in role_lower for k in ["ai", "machine learning", "rag", "llm", "grok", "deep learning"]):
+            variant_title = f"AI Application Engineer — RAG Architectures, Vector Search & LLM Integration"
+            role_focus = "production RAG pipelines, vector retrieval, and LLM application development (Grok/xAI APIs)"
+            top_highlight = f"Cerebrum RAG Platform: Engineered a production RAG pipeline and Grok API (xAI) integration for real-time contextual semantic search, directly applicable to {company_name}'s {comp_projects}."
+        elif any(k in role_lower for k in ["product", "growth"]):
+            variant_title = f"Product Engineer — Full Stack Web, User Experience & Rapid Iteration"
+            role_focus = "end-to-end full-stack feature delivery, user onboarding flows, and product analytics"
+            top_highlight = f"Product Velocity: Delivered cross-device web applications and interactive analytics dashboards with fast iteration cycles at Zupper, Jozzby Bazar, and Onemodo."
+        elif any(k in role_lower for k in ["cloud", "devops", "platform", "sre", "infrastructure"]):
+            variant_title = f"Cloud & Platform Systems Engineer — Docker, CI/CD, Microservices & High-Availability"
+            role_focus = "cloud microservices, containerization, and sub-millisecond database caching"
+            top_highlight = f"Resilient Cloud Services: Architected distributed REST contracts, Redis sub-ms caching, and Docker/CI/CD automated pipelines for high-traffic environments."
+        elif any(k in role_lower for k in ["erp", "enterprise", "solutions", "laravel"]):
+            variant_title = f"Enterprise ERP Solutions Engineer — Laravel, Vue.js & Database Architecture"
+            role_focus = "complex enterprise ERP workflows, relational database schemas, and real-time plant dispatch operations"
+            top_highlight = f"Enterprise ERP Engineering: Architected reactive Vue.js SPA interfaces and Laravel relational schemas for Ready-Mix Concrete (RMC) plant operations at Onemodo Technologies."
         else:
             variant_title = f"Full Stack Engineer — React, Node.js, Cloud APIs & High-Performance Web"
+            role_focus = "high-concurrency cloud systems, responsive React/Vue frontends, and AI/RAG architectures"
+            top_highlight = f"Full Stack Platform Architecture: Proven track record delivering 40% reduction in database query latency and 25% improvement in frontend load times."
 
         # Strategic summary tailored to company's current projects & services
         tailored_summary = (
-            f"Results-driven {job_title} with hands-on production experience developing high-concurrency cloud services, "
-            f"responsive React/Vue frontends, and AI/RAG architectures. Currently Software Engineer at Onemodo Technologies "
-            f"(engineering enterprise ERP software for RMC using Laravel and Vue.js), with prior tenure as Junior Software "
-            f"Developer at Zupper and React Developer at Jozzby Bazar (1 Year). "
+            f"Results-driven {job_title} specializing in {role_focus}. "
+            f"Currently Software Engineer at Onemodo Technologies (engineering enterprise ERP software for RMC using Laravel and Vue.js), "
+            f"with prior tenure as Junior Software Developer at Zupper and React Developer at Jozzby Bazar (1 Year). "
             f"Tailored specifically for {company_name}'s focus on {comp_services} and key initiatives in {comp_projects}. "
             f"Proven track record delivering a 40% reduction in database query latency and 25% improvement in frontend load times. "
-            f"Deeply proficient in {top_keywords_str}, REST API architecture, and scalable microservices designed to accelerate "
+            f"Deeply proficient in {top_keywords_str}, REST API contracts, and scalable MERN/Laravel/Next.js architectures designed to accelerate "
             f"{company_name}'s technical roadmap."
         )
 
         # 5. Tailored Project Highlights mirroring Company Initiatives
         tailored_highlights = [
+            top_highlight,
             f"Cerebrum AI Architecture: Built production RAG pipeline and Grok API (xAI) integration for real-time contextual semantic search, directly applicable to {company_name}'s {comp_projects}.",
-            f"Zupper Component Library: Engineered 20+ reusable React UI components reducing development cycles by 30% and improved page load speeds by 25% via memoization and lazy loading.",
-            f"High-Performance Data Layer: Reduced MongoDB query latency by 40% through compound indexing and optimized REST contracts, ensuring high-throughput reliability for {company_name}'s {comp_services}."
+            f"High-Performance Data Layer: Reduced database query latency by 40% through compound indexing and optimized REST contracts, ensuring high-throughput reliability for {company_name}'s {comp_services}."
         ]
 
         # 6. Tailored Cover Letter (CV) incorporating Company Trick
@@ -91,8 +110,8 @@ class ResumeOptimizationAgent:
             f"Dear {company_name} Hiring Team,\n\n"
             f"I am writing to express my strong enthusiasm for the {job_title} role at {company_name}. "
             f"Having followed {company_name}'s impactful work in {comp_domain}—specifically your current initiatives in "
-            f"{comp_projects} and your dedication to {comp_services}—I am confident that my technical background and "
-            f"performance-focused engineering approach will deliver immediate value to your team.\n\n"
+            f"{comp_projects} and your dedication to {comp_services}—I am confident that my background in {role_focus} "
+            f"will deliver immediate value to your team.\n\n"
             f"Currently a Software Engineer at Onemodo Technologies, I engineer enterprise ERP software for Ready-Mix Concrete (RMC) plants using Laravel (PHP) and Vue.js, alongside scalable cloud architectures and microservices. "
             f"At Zupper as a Junior Software Developer, I authored a modular library of 20+ React components that cut duplicate effort by 30% and "
             f"boosted frontend load speeds by 25% through lazy loading and memoization. In building Cerebrum, I engineered a production RAG pipeline "
