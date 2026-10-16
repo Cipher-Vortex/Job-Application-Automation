@@ -57,6 +57,31 @@ const getLiveJobsFromCache = () => {
   return null;
 };
 
+// Robust RFC 4180 CSV Line Parser (handles quotes, escaped quotes, and commas inside fields)
+const parseCSVLine = (line) => {
+  const result = [];
+  let current = '';
+  let inQuotes = false;
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+    if (char === '"') {
+      if (inQuotes && line[i + 1] === '"') {
+        current += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (char === ',' && !inQuotes) {
+      result.push(current.trim());
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+  result.push(current.trim());
+  return result;
+};
+
 // Helper to append a row to Google Sheets CSV sync export and post to live Google Sheets Webhook
 const appendToGoogleSheetsCSV = (appItem) => {
   try {
@@ -167,8 +192,12 @@ const loadApplicationsHistory = () => {
       const content = fs.readFileSync(sheetsCsv, 'utf-8');
       const lines = content.trim().split('\n').filter(l => l.trim().length > 0);
       for (let i = 1; i < lines.length; i++) {
-        const parts = lines[i].split(',').map(s => s.replace(/^"|"$/g, '').trim());
-        if (parts.length >= 10) {
+        const parts = parseCSVLine(lines[i]);
+        if (parts.length >= 4) {
+          const foundUrl = parts.find(p => p.startsWith('http://') || p.startsWith('https://')) || (parts[10] && parts[10].startsWith('http') ? parts[10] : '');
+          const score = parts.find(p => /^\d+(\.\d+)?%$/.test(p)) || parts[8] || '94%';
+          const status = parts.find(p => ['applied', 'review_required', 'needs_info', 'active stream', 'rejected', 'interview'].includes(p.toLowerCase())) || parts[9] || 'Applied';
+
           list.push({
             appliedAt: parts[0] || new Date().toISOString(),
             id: parts[1] || `app_${i}`,
@@ -178,9 +207,9 @@ const loadApplicationsHistory = () => {
             remoteType: parts[5] || 'Remote',
             jobType: parts[6] || 'Full-Time',
             salaryRaw: parts[7] || 'Competitive Pay',
-            matchScore: parseFloat((parts[8] || '94').replace('%', '')) || 94,
-            status: parts[9] || 'Applied',
-            url: parts[10] || '',
+            matchScore: parseFloat((score + '').replace('%', '')) || 94,
+            status: status,
+            url: foundUrl,
             ats_platform: 'Web Form',
             resume_version: 'Tailored (Keywords + Company Projects)'
           });
@@ -629,9 +658,25 @@ app.get('/api/sheets/data', (req, res) => {
       const content = fs.readFileSync(csvExportPath, 'utf-8');
       const lines = content.trim().split('\n').filter(l => l.trim().length > 0);
       for (let i = 1; i < lines.length; i++) {
-        const parts = lines[i].split(',').map(s => s.replace(/^"|"$/g, '').trim());
+        const parts = parseCSVLine(lines[i]);
         if (parts.length >= 4) {
-          rows.push(parts);
+          const foundUrl = parts.find(p => p.startsWith('http://') || p.startsWith('https://')) || (parts[10] && parts[10].startsWith('http') ? parts[10] : '');
+          const score = parts.find(p => /^\d+(\.\d+)?%$/.test(p)) || parts[8] || '94%';
+          const status = parts.find(p => ['applied', 'review_required', 'needs_info', 'active stream', 'rejected', 'interview'].includes(p.toLowerCase())) || parts[9] || 'Applied';
+
+          rows.push([
+            parts[0] || new Date().toISOString().substring(0, 19),
+            parts[1] || `app_${i}`,
+            parts[2] || 'Target Company',
+            parts[3] || 'Software Engineer',
+            parts[4] || 'Remote',
+            parts[5] || 'Remote',
+            parts[6] || 'Full-Time',
+            parts[7] || 'Competitive Pay',
+            score.includes('%') ? score : score + '%',
+            status,
+            foundUrl
+          ]);
         }
       }
     } catch (e) {
@@ -824,6 +869,14 @@ app.get('/api/analytics', (req, res) => {
     avgMatchScore: parseFloat(avgMatchScore),
     responseRate: totalApplied > 0 ? `${Math.min(25, Math.max(10, ((3 / totalApplied) * 100))).toFixed(1)}%` : "16.8%"
   });
+});
+
+// Universal wildcard route for SPA client navigation - safely renders index.html
+app.get('*', (req, res) => {
+  if (req.path.startsWith('/api/')) {
+    return res.status(404).json({ error: "Endpoint not found" });
+  }
+  res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
 
 const startServer = (portToTry) => {

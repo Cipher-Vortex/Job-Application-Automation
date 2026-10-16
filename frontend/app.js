@@ -1302,7 +1302,8 @@ function renderNativeSheetsTable(rows) {
     const isApplied = (r[9] || '').toLowerCase().includes('applied');
     const statusColor = isApplied ? '#30d158' : '#ff9f0a';
     const statusBg = isApplied ? 'rgba(48,209,88,0.12)' : 'rgba(255,159,10,0.12)';
-    const url = r[10] || '';
+    const rawUrl = (r[10] || '').trim();
+    const isValidUrl = rawUrl.startsWith('http://') || rawUrl.startsWith('https://');
 
     return `
       <tr style="border-bottom: 1px solid rgba(255,255,255,0.04); transition: background 0.15s ease;" onmouseover="this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.background='transparent'">
@@ -1321,7 +1322,7 @@ function renderNativeSheetsTable(rows) {
           </span>
         </td>
         <td style="padding: 0.6rem 1rem;">
-          ${url ? `<a href="${url}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-apple-blue); text-decoration: none; font-size: 0.72rem;">Open Job ↗</a>` : '<span style="color: var(--text-tertiary);">-</span>'}
+          ${isValidUrl ? `<a href="${rawUrl}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-apple-blue); text-decoration: none; font-size: 0.72rem;">Open Job ↗</a>` : '<span style="color: var(--text-tertiary);">-</span>'}
         </td>
       </tr>
     `;
