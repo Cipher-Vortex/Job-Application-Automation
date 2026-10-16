@@ -587,21 +587,30 @@ app.post('/api/applications/approve', async (req, res) => {
     });
   }
 
-  let playwrightResult = { status: "Applied", confirmation_message: "Application submitted." };
+  let playwrightResult = null;
   try {
     const aiResp = await axios.post(`${FASTAPI_URL}/api/ai/apply`, {
-      url: url || "https://boards.greenhouse.io/vercel/jobs/4091823",
+      url: url || "",
       company: company || "Target Company",
       role: role || "Software Engineer",
       resume_version: "Tailored (Keywords + Company Projects)",
       source: source || "Live Portal",
       match_score: matchScore || 92.5,
       salary_raw: salaryRaw || "Competitive Pay"
-    }, { timeout: 30000 });
+    }, { timeout: 45000 });
     playwrightResult = aiResp.data;
   } catch (err) {
     console.warn("FastAPI Playwright invocation warning:", err.message);
+    playwrightResult = {
+      status: "Execution_Failed",
+      success: false,
+      human_review_needed: true,
+      reason: `Browser automation backend unreachable (${err.message}). No application was submitted.`
+    };
   }
+
+  const appStatus = playwrightResult.status || "Execution_Failed";
+  const appDetails = playwrightResult.confirmation_message || playwrightResult.reason || "Execution failed.";
 
   const appItem = {
     id: id || `app_${Date.now()}`,
@@ -613,10 +622,10 @@ app.post('/api/applications/approve', async (req, res) => {
     jobType: jobType || "Full-Time",
     remoteType: remoteType || "Remote",
     matchScore: matchScore || 92,
-    status: playwrightResult.status || "Applied",
+    status: appStatus,
     appliedAt: new Date().toISOString(),
     humanApproved: true,
-    details: playwrightResult.confirmation_message || playwrightResult.reason
+    details: appDetails
   };
   
   applicationsStore.unshift(appItem);
@@ -624,9 +633,12 @@ app.post('/api/applications/approve', async (req, res) => {
   // Sync row to Google Sheets
   appendToGoogleSheetsCSV(appItem);
 
+  const isSuccess = appStatus === "Applied";
   res.json({ 
-    success: true, 
-    message: `Real Playwright execution finished for ${role} at ${company}. Synced to Google Sheets.`, 
+    success: isSuccess, 
+    message: isSuccess 
+      ? `Real Playwright execution verified for ${role} at ${company}. Synced to Google Sheets.`
+      : `Application not submitted: ${appDetails}`, 
     application: appItem,
     playwright_result: playwrightResult
   });
