@@ -129,8 +129,7 @@ async function scrapeLiveJobs() {
   ];
 
   const leverList = [
-    { id: 'metabase', name: 'Metabase' },
-    { id: 'palantir', name: 'Palantir' }
+    { id: 'metabase', name: 'Metabase' }
   ];
 
   const tasks = [];
@@ -139,7 +138,7 @@ async function scrapeLiveJobs() {
   for (const b of ghList) {
     tasks.push((async () => {
       try {
-        const res = await axios.get(`https://boards-api.greenhouse.io/v1/boards/${b.id}/jobs?content=true`, { headers, timeout: 7000 });
+        const res = await axios.get(`https://boards-api.greenhouse.io/v1/boards/${b.id}/jobs?content=true`, { headers, timeout: 4500 });
         const list = res.data && res.data.jobs ? res.data.jobs : [];
         let count = 0;
         for (const j of list) {
@@ -195,7 +194,7 @@ async function scrapeLiveJobs() {
   for (const b of ashbyList) {
     tasks.push((async () => {
       try {
-        const res = await axios.get(`https://api.ashbyhq.com/posting-api/job-board/${b.id}`, { headers, timeout: 7000 });
+        const res = await axios.get(`https://api.ashbyhq.com/posting-api/job-board/${b.id}`, { headers, timeout: 4500 });
         const list = res.data && res.data.jobs ? res.data.jobs : [];
         let count = 0;
         for (const j of list) {
@@ -247,11 +246,11 @@ async function scrapeLiveJobs() {
     })());
   }
 
-  // 3. Lever Boards (Metabase, Palantir)
+  // 3. Lever Boards (Metabase)
   for (const b of leverList) {
     tasks.push((async () => {
       try {
-        const res = await axios.get(`https://api.lever.co/v0/postings/${b.id}?mode=json`, { headers, timeout: 7000 });
+        const res = await axios.get(`https://api.lever.co/v0/postings/${b.id}?mode=json`, { headers, timeout: 4500 });
         const list = Array.isArray(res.data) ? res.data : [];
         let count = 0;
         for (const j of list) {

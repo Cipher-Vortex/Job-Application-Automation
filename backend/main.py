@@ -492,9 +492,19 @@ def get_interview_prep(company: str = "SaaSify Technologies", role: str = "Full 
 def get_skill_gap():
     candidate = load_candidate_profile()
     skills_list = candidate["skills"].get("frontend", []) + candidate["skills"].get("backend", [])
-    mock_jobs = [
-        {"tech_stack": ["React", "Node.js", "Docker", "Kubernetes", "AWS"]},
-        {"tech_stack": ["React", "Node.js", "TypeScript", "Docker", "GraphQL"]},
-        {"tech_stack": ["Next.js", "Tailwind", "Docker", "PostgreSQL"]}
-    ]
-    return skill_gap_agent.analyze_skill_gaps(skills_list, mock_jobs)
+    real_jobs = []
+    cache_path = os.path.join(os.path.dirname(__file__), "../data/live_scraped_jobs.json")
+    if os.path.exists(cache_path):
+        try:
+            with open(cache_path, "r", encoding="utf-8") as f:
+                cdata = json.load(f)
+                if isinstance(cdata, dict) and "jobs" in cdata:
+                    real_jobs = [{"tech_stack": j.get("techStack", [])} for j in cdata["jobs"] if j.get("techStack")]
+        except Exception as e:
+            logger.warning(f"Error reading live scraped jobs for skill gap: {e}")
+    if not real_jobs:
+        real_jobs = [
+            {"tech_stack": ["React", "Next.js", "TypeScript", "Node.js", "Docker", "REST APIs", "PostgreSQL", "AI / LLMs"]},
+            {"tech_stack": ["Vue.js", "Laravel", "MySQL", "Docker", "Redis", "Cloud & DevOps"]}
+        ]
+    return skill_gap_agent.analyze_skill_gaps(skills_list, real_jobs)
