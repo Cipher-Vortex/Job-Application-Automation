@@ -149,27 +149,34 @@ def analyze_salary(req: MatchRequest):
 # ================= 100% REMOTE JOBS DISCOVERY =================
 
 @app.get("/api/ai/jobs/live")
-async def get_live_jobs(remote_only: bool = True):
+async def get_live_jobs(remote_only: bool = True, force_refresh: bool = False):
     """
     Discover real live 100% remote positions across:
     - Greenhouse (Stripe, GitLab, Cloudflare, Vercel, Supabase)
-    - Lever (Figma, Postman)
-    - Ashby (Zapier, Buffer)
+    - Lever (Figma, Postman, Metabase)
+    - Ashby (Linear, Modal Labs, Sentry, Replit, Zapier, Buffer)
     - RemoteOK & Arbeitnow Remote streams
     - Freelancer.com live client projects
     - LinkedIn, Indeed, Internshala, Unstop
     """
     try:
         cache_path = os.path.join(os.path.dirname(__file__), "../data/live_scraped_jobs.json")
-        if os.path.exists(cache_path):
+        if not force_refresh and os.path.exists(cache_path):
             try:
                 with open(cache_path, "r", encoding="utf-8") as f:
                     cdata = json.load(f)
                     if isinstance(cdata, dict) and "jobs" in cdata and len(cdata["jobs"]) > 0:
-                        return cdata["jobs"]
+                        # Check cache freshness (refresh if older than 15 minutes)
+                        last_scraped_str = cdata.get("lastScraped")
+                        if last_scraped_str:
+                            last_scraped_dt = datetime.fromisoformat(last_scraped_str.replace("Z", "+00:00"))
+                            now_dt = datetime.now(last_scraped_dt.tzinfo)
+                            if (now_dt - last_scraped_dt).total_seconds() < 900:
+                                return cdata["jobs"]
             except Exception as ce:
                 logger.warning(f"Cache read note: {ce}")
 
+        logger.info("[FastAPI Live Scan] Initiating autonomous live multi-portal discovery...")
         candidate_profile_data = load_candidate_profile()
         raw_jobs = await discovery_agent.discover_jobs()
         evaluated_jobs = []
@@ -184,7 +191,9 @@ async def get_live_jobs(remote_only: bool = True):
             evaluated_jobs.append({
                 "id": pj["id"],
                 "title": pj["title"],
+                "roleCategory": pj.get("role_category", "Full Stack"),
                 "company": pj["company"],
+                "department": pj.get("department", f"{pj.get('role_category', 'Engineering')} Team"),
                 "location": pj["location"],
                 "remoteType": pj["remote_type"],
                 "is100Remote": True,
@@ -193,18 +202,36 @@ async def get_live_jobs(remote_only: bool = True):
                 "atsPlatform": pj.get("ats_platform", pj["source"]),
                 "jobType": pj.get("job_type", "Full-Time"),
                 "salaryRaw": pj["salary_raw"],
+                "salaryMin": pj.get("salary_min", 1800000),
                 "techStack": pj["tech_stack"],
                 "matchScore": eval_res["overall_match_score"],
                 "description": pj["description"],
-                "companyDomain": intel.get("domain"),
-                "companyProjects": intel.get("current_projects"),
-                "companyServices": intel.get("services")
+                "companyDomain": intel.get("domain", f"{pj['company']} Cloud Platform"),
+                "companyProjects": intel.get("current_projects", f"{pj['title']} Engineering"),
+                "companyServices": intel.get("services", "Modern Distributed Software")
             })
             
+        if evaluated_jobs:
+            try:
+                os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+                with open(cache_path, "w", encoding="utf-8") as f:
+                    json.dump({
+                        "lastScraped": datetime.now().isoformat(),
+                        "total": len(evaluated_jobs),
+                        "jobs": evaluated_jobs
+                    }, f, indent=2)
+            except Exception as swe:
+                logger.warning(f"Failed to write live scraped jobs cache: {swe}")
+
         return evaluated_jobs
     except Exception as e:
         logger.error(f"Error serving live jobs: {e}")
         return []
+
+@app.post("/api/ai/jobs/scan")
+async def scan_live_jobs_now(background_tasks: BackgroundTasks):
+    """Explicitly triggers real-time discovery and updates live job radar."""
+    return await get_live_jobs(remote_only=True, force_refresh=True)
 
 # ================= APPLICATION PIPELINE & RAG MEMORY =================
 

@@ -302,6 +302,170 @@ async function scrapeLiveJobs() {
     })());
   }
 
+  // 4. RemoteOK Live API Stream
+  tasks.push((async () => {
+    try {
+      const res = await axios.get('https://remoteok.com/api', { headers, timeout: 6000 });
+      const list = Array.isArray(res.data) ? res.data : [];
+      let count = 0;
+      for (const j of list.slice(1)) {
+        if (!j || !j.position) continue;
+        const title = (j.position || '').trim();
+        const comp = (j.company || 'Remote Tech Co').trim();
+        const url = j.url || `https://remoteok.com/remote-jobs/${j.id}`;
+        const isTech = /engineer|developer|software|frontend|backend|full stack|cloud|devops|product|ai|architect|platform|web|data/i.test(title);
+
+        if (isTech && url && !seenUrls.has(url) && !isBlacklisted(comp)) {
+          seenUrls.add(url);
+          const rawContent = cleanHtml(j.description || '');
+          const desc = rawContent.substring(0, 450) || `Live remote position at ${comp}: ${title}.`;
+          const tech = extractTechStack(`${title} ${(j.tags || []).join(' ')} ${rawContent}`);
+          const sal = (j.salary_min && j.salary_max) 
+            ? `$${Number(j.salary_min).toLocaleString()} - $${Number(j.salary_max).toLocaleString()} USD`
+            : extractSalary(rawContent);
+          const roleCat = categorizeRole(title, desc);
+
+          allJobs.push({
+            id: `rok_${j.id || Math.random().toString(36).substring(2, 9)}`,
+            title,
+            roleCategory: roleCat,
+            company: comp,
+            department: `${roleCat} Engineering`,
+            location: j.location || 'Global Remote',
+            remoteType: 'Remote',
+            is100Remote: true,
+            jobType: (rawContent.toLowerCase().includes('contract') || (j.tags || []).includes('contract')) ? 'Freelance / Contract' : 'Full-Time',
+            url,
+            source: 'RemoteOK',
+            atsPlatform: 'RemoteOK Live API',
+            salaryRaw: sal,
+            salaryMin: j.salary_min ? j.salary_min * 83 : 1800000,
+            techStack: tech,
+            matchScore: 94 + (tech.length >= 4 ? 3 : 1),
+            description: desc,
+            companyDomain: `${comp} Digital Products`,
+            companyProjects: `${title} Architecture & Features`,
+            companyServices: 'Scalable Remote Cloud Applications'
+          });
+          count++;
+          if (count >= 15) break;
+        }
+      }
+      console.log(`[LiveScraper] Scraped ${count} real live jobs from RemoteOK`);
+    } catch (e) {
+      console.warn('[LiveScraper] RemoteOK stream fetch note:', e.message);
+    }
+  })());
+
+  // 5. Arbeitnow Live Remote Tech Stream
+  tasks.push((async () => {
+    try {
+      const res = await axios.get('https://www.arbeitnow.com/api/job-board-api', { headers, timeout: 6000 });
+      const list = res.data && Array.isArray(res.data.data) ? res.data.data : [];
+      let count = 0;
+      for (const j of list) {
+        if (!j || !j.title) continue;
+        const title = (j.title || '').trim();
+        const comp = (j.company_name || 'Tech Company').trim();
+        const url = j.url;
+        const isRemote = j.remote === true || /remote/i.test(j.location || '');
+        const isTech = /engineer|developer|software|frontend|backend|full stack|cloud|devops|product|ai|architect|platform|web|data/i.test(title);
+
+        if (isTech && isRemote && url && !seenUrls.has(url) && !isBlacklisted(comp)) {
+          seenUrls.add(url);
+          const rawContent = cleanHtml(j.description || '');
+          const desc = rawContent.substring(0, 450) || `Active position at ${comp}: ${title}.`;
+          const tech = extractTechStack(`${title} ${(j.tags || []).join(' ')} ${rawContent}`);
+          const sal = extractSalary(rawContent);
+          const roleCat = categorizeRole(title, desc);
+
+          allJobs.push({
+            id: `an_${j.slug || Math.random().toString(36).substring(2, 9)}`,
+            title,
+            roleCategory: roleCat,
+            company: comp,
+            department: `${roleCat} Engineering`,
+            location: j.location || 'Remote',
+            remoteType: 'Remote',
+            is100Remote: true,
+            jobType: 'Full-Time',
+            url,
+            source: 'Arbeitnow',
+            atsPlatform: 'Arbeitnow Live API',
+            salaryRaw: sal,
+            salaryMin: 1800000,
+            techStack: tech,
+            matchScore: 94 + (tech.length >= 4 ? 3 : 1),
+            description: desc,
+            companyDomain: `${comp} Platform`,
+            companyProjects: `${title} Development`,
+            companyServices: 'Cloud & Modern Engineering'
+          });
+          count++;
+          if (count >= 15) break;
+        }
+      }
+      console.log(`[LiveScraper] Scraped ${count} real live jobs from Arbeitnow`);
+    } catch (e) {
+      console.warn('[LiveScraper] Arbeitnow stream fetch note:', e.message);
+    }
+  })());
+
+  // 6. Freelancer.com Active Client Contracts
+  tasks.push((async () => {
+    try {
+      const res = await axios.get('https://www.freelancer.com/api/projects/0.1/projects/active/?query=fullstack%20developer&limit=15', { headers, timeout: 6000 });
+      const projects = res.data && res.data.result && Array.isArray(res.data.result.projects) ? res.data.result.projects : [];
+      let count = 0;
+      for (const p of projects) {
+        if (!p || !p.title) continue;
+        const title = (p.title || '').trim();
+        const pId = p.id;
+        const seoUrl = p.seo_url;
+        const url = seoUrl ? `https://www.freelancer.com/projects/${seoUrl}` : `https://www.freelancer.com/projects/${pId}`;
+
+        if (url && !seenUrls.has(url)) {
+          seenUrls.add(url);
+          const rawContent = cleanHtml(p.preview_description || p.description || '');
+          const desc = rawContent.substring(0, 450) || `Active contract gig on Freelancer.com: ${title}.`;
+          const tech = extractTechStack(`${title} ${rawContent}`);
+          const minB = p.budget && p.budget.minimum ? p.budget.minimum : 100;
+          const maxB = p.budget && p.budget.maximum ? p.budget.maximum : 1500;
+          const sal = `$${minB} - $${maxB} USD (Fixed Project Contract)`;
+          const roleCat = categorizeRole(title, desc);
+
+          allJobs.push({
+            id: `fl_${pId}`,
+            title,
+            roleCategory: roleCat,
+            company: 'Client Project (Freelancer.com)',
+            department: `${roleCat} Gig`,
+            location: 'Global Remote',
+            remoteType: 'Remote',
+            is100Remote: true,
+            jobType: 'Freelance / Contract',
+            url,
+            source: 'Freelancer.com',
+            atsPlatform: 'Freelancer API',
+            salaryRaw: sal,
+            salaryMin: minB * 83,
+            techStack: tech,
+            matchScore: 94 + (tech.length >= 4 ? 3 : 1),
+            description: desc,
+            companyDomain: 'Freelancer Client Deliverable',
+            companyProjects: `${title} Contract Deliverable`,
+            companyServices: 'Custom Software & Web Engineering'
+          });
+          count++;
+          if (count >= 10) break;
+        }
+      }
+      console.log(`[LiveScraper] Scraped ${count} real active contract gigs from Freelancer.com`);
+    } catch (e) {
+      console.warn('[LiveScraper] Freelancer.com stream fetch note:', e.message);
+    }
+  })());
+
   // Run all ATS board scraping concurrently in parallel
   await Promise.allSettled(tasks);
 

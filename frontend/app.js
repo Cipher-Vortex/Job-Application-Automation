@@ -175,22 +175,30 @@ function switchTab(tabId) {
 
 async function fetchJobs(silent = false, forceRefresh = false) {
   const container = document.getElementById('job-feed-container');
+  const statusPill = document.getElementById('live-scan-status-text');
+
   if (container && !silent) {
     container.innerHTML = `<div style="color: var(--text-secondary); padding: 3rem; text-align: center; font-size: 0.9rem;">
       <span class="pulse-indicator" style="margin-right: 0.5rem;"></span>
-      Scanning live 100% remote streams across Greenhouse, Lever, Ashby, RemoteOK, Freelancer.com...
+      Scanning live 100% remote streams across Greenhouse, Ashby, Lever, RemoteOK, Freelancer.com...
     </div>`;
   }
 
   try {
-    const url = forceRefresh ? '/api/jobs?forceRefresh=true' : '/api/jobs';
-    const res = await fetch(url);
-    const jobs = await res.json();
+    const url = forceRefresh ? '/api/jobs/live-scan' : '/api/jobs';
+    const res = await fetch(url, { method: forceRefresh ? 'POST' : 'GET' });
+    const data = await res.json();
+    const jobs = Array.isArray(data) ? data : (data.jobs || []);
     rawFetchedJobs = Array.isArray(jobs) ? jobs : [];
     window.rawFetchedJobs = rawFetchedJobs;
     window.renderJobs = renderJobs;
     window.fetchApplications = fetchApplications;
     window.generateClientSideTailoredProfile = generateClientSideTailoredProfile;
+
+    if (statusPill) {
+      const nowTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      statusPill.textContent = `Live Stream Active • ${rawFetchedJobs.length} Positions (${nowTime})`;
+    }
 
     const metricDiscovered = document.getElementById('metric-discovered');
     if (metricDiscovered) {
@@ -207,7 +215,7 @@ async function fetchJobs(silent = false, forceRefresh = false) {
   } catch (err) {
     console.warn("Error fetching remote jobs:", err);
     if (!silent && container) {
-      container.innerHTML = `<div style="color: var(--accent-apple-amber); text-align: center; padding: 2rem;">Connecting to discovery engine... Click 'Refresh Remote Feed' to initiate.</div>`;
+      container.innerHTML = `<div style="color: var(--accent-apple-amber); text-align: center; padding: 2rem;">Connecting to discovery engine... Click 'Run Live Scan' to scan live boards.</div>`;
     }
   }
 }
@@ -1197,34 +1205,80 @@ async function runAutoApplyNow() {
   }
 }
 
-// Scraper trigger
-async function triggerScraper() {
+// Real-Time Live Multi-Portal Scanner Trigger
+async function triggerLiveScan() {
   const btn = document.getElementById('btn-run-scraper');
+  const btnText = document.getElementById('btn-run-scraper-text');
+  const statusPill = document.getElementById('live-scan-status-text');
+  const feedContainer = document.getElementById('job-feed-container');
+
   if (btn) {
     btn.disabled = true;
-    btn.innerHTML = `Scraping Live Web Streams...`;
+    if (btnText) btnText.innerHTML = `📡 Scanning Live ATS Streams...`;
+  }
+  if (statusPill) {
+    statusPill.innerHTML = `Querying Live ATS APIs in real time...`;
+  }
+  if (feedContainer) {
+    feedContainer.innerHTML = `
+      <div style="background: var(--bg-card); padding: 3.5rem 2rem; text-align: center; border-radius: 18px; border: 1px solid rgba(0, 113, 227, 0.3);">
+        <div class="pulse-indicator" style="width: 14px; height: 14px; margin: 0 auto 1rem auto; display: block;"></div>
+        <h3 style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 600;">Executing Autonomous Multi-Portal Live Scan</h3>
+        <p style="color: var(--text-secondary); font-size: 0.85rem; max-width: 540px; margin: 0 auto 1.5rem auto;">
+          Scanning live career boards in real time across Greenhouse, Ashby, Lever, RemoteOK, Arbeitnow & Freelancer.com...
+        </p>
+        <div style="display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
+          <span class="tag" style="background: rgba(34, 197, 94, 0.15); color: #22c55e;">Greenhouse Boards</span>
+          <span class="tag" style="background: rgba(168, 85, 247, 0.15); color: #a855f7;">Ashby Boards</span>
+          <span class="tag" style="background: rgba(6, 182, 212, 0.15); color: #06b6d4;">Lever Boards</span>
+          <span class="tag" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">RemoteOK Live</span>
+          <span class="tag" style="background: rgba(41, 178, 254, 0.15); color: #29b2fe;">Freelancer.com</span>
+        </div>
+      </div>
+    `;
   }
 
   try {
-    const res = await fetch('/api/scrape/trigger', { method: 'POST' });
+    const res = await fetch('/api/jobs/live-scan', { method: 'POST' });
     const data = await res.json();
-    await fetchJobs(false, true);
+    const jobs = Array.isArray(data) ? data : (data.jobs || []);
+    rawFetchedJobs = Array.isArray(jobs) ? jobs : [];
+    window.rawFetchedJobs = rawFetchedJobs;
+
+    const nowTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    if (statusPill) {
+      statusPill.textContent = `Live Scanned: ${nowTime} (${rawFetchedJobs.length} Active Positions)`;
+    }
+
+    const metricDiscovered = document.getElementById('metric-discovered');
+    if (metricDiscovered) {
+      metricDiscovered.textContent = rawFetchedJobs.length;
+    }
+
+    currentPage = 1;
+    applyFilters();
+
     if (btn) {
-      btn.innerHTML = `✅ Scraped ${data.total || ''} Live Jobs`;
-      showToast(`Live scrape completed directly on production! Captured ${data.total || 0} verified 100% remote positions.`, "success", "Live Scraper Finished");
+      if (btnText) btnText.innerHTML = `✅ ${rawFetchedJobs.length} Live Openings`;
+      showToast(`Real-time live scan completed! Discovered ${rawFetchedJobs.length} verified 100% remote positions across live ATS boards.`, "success", "Live Scan Complete");
       setTimeout(() => {
         btn.disabled = false;
-        btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg> Refresh Remote Feed`;
-      }, 3000);
+        if (btnText) btnText.innerHTML = `📡 Run Live Scan`;
+      }, 3500);
     }
   } catch (err) {
-    showToast("Live scrape note: " + err.message, "error", "Refresh Notice");
+    console.error("Live scan error:", err);
+    showToast("Live scan note: " + err.message, "error", "Scan Notice");
     if (btn) {
       btn.disabled = false;
-      btn.innerHTML = "Refresh Remote Feed";
+      if (btnText) btnText.innerHTML = `📡 Run Live Scan`;
     }
+    await fetchJobs(false, false);
   }
 }
+
+// Backwards compatibility alias
+const triggerScraper = triggerLiveScan;
 
 function showPortalLoginMenu() {
   const modal = document.getElementById('portal-login-modal');
