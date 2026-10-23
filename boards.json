@@ -1,0 +1,21 @@
+{
+  "greenhouse": [
+    "gitlab",
+    "supabase",
+    "automattic",
+    "canonical",
+    "docker",
+    "datadog",
+    "elastic",
+    "zapier",
+    "cloudflare",
+    "stripe"
+  ],
+  "lever": [
+    "postman",
+    "remote",
+    "retool",
+    "sourcegraph",
+    "grafana"
+  ]
+}

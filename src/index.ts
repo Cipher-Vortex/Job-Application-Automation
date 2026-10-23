@@ -1,175 +1,185 @@
-import 'dotenv/config';
-import express from 'express';
-import cors from 'cors';
-import { connectDB } from './config/db';
-import JobModel from './models/Job';
-import path from 'path';
-import { createProxyMiddleware } from 'http-proxy-middleware';
-
-import './queues/discovery.worker';
-import './queues/analysis.worker';
-import './queues/application.worker';
-import './queues/browser.worker';
-import './queues/tracking.worker';
-import { browserApplyQueue } from './queues/index';
+import "dotenv/config";
+import path from "path";
+import express from "express";
+import cors from "cors";
+import { connectDB } from "./config/db";
+import JobModel from "./models/Job";
+import { TRUTH_PROFILE } from "./config/truthProfile";
+import { env } from "./config/env";
+import { fetchAllBoardJobs, JobPosting } from "./discovery/atsScraper";
+import { fetchAllRemoteFeeds } from "./discovery/remoteFeeds";
+import { scoreJob, ScoreResult } from "./engine/scorer";
+import { tailorApplication, TailoredPitch } from "./engine/tailor";
+import { prefillApplication } from "./automation/formFiller";
+import { tracker } from "./storage/tracker";
 
 console.log("=================================================");
-console.log("JobPilot AI 5-Agent Architecture Starting...");
+console.log(" Autonomous Job Application System (JobPilot AI)");
+console.log(` Candidate: ${TRUTH_PROFILE.candidate.name} (${TRUTH_PROFILE.candidate.title})`);
 console.log("=================================================");
 
-const app = express();
-app.use(cors());
-
-// Universal Routing: Transparently tunnel any /api/ai requests internally to the hidden Python Engine
-app.use('/api/ai', createProxyMiddleware({
-  target: 'http://127.0.0.1:8001/api/ai',
-  changeOrigin: true,
-}));
-
-app.use(express.json());
-
-// Serve static frontend - Path dynamically resolves from dist/index.js -> /app/frontend
-app.use(express.static(path.join(__dirname, '../frontend')));
-
-// API: Get pending jobs (Human Review Queue)
-app.get('/api/jobs/pending', async (req, res) => {
-  try {
-    const jobs = await JobModel.find({ status: 'Pending Approval' }).lean();
-    res.json(jobs);
-  } catch (error) {
-    res.status(500).json({ error: 'Server error' });
-  }
-});
-
-// API: Approve Job
-app.post('/api/jobs/:id/approve', async (req, res) => {
-  try {
-    const job = await JobModel.findById(req.params.id);
-    if (!job) return res.status(404).json({ error: 'Job not found' });
-    
-    // Switch status
-    job.status = 'Approved';
-    await job.save();
-
-    // Send to Agent 4 (Browser Automation)
-    await browserApplyQueue.add('apply', { ...job.toObject(), type: 'approved_application' });
-
-    res.json({ success: true, message: 'Added to Browser Application Queue' });
-  } catch (error) {
-    res.status(500).json({ error: 'Server error' });
-  }
-});
-
-// API: Get all jobs for dashboard
-app.get('/api/jobs', async (req, res) => {
-  try {
-    const jobs = await JobModel.find().lean();
-    const mapped = jobs.map(j => ({
-      id: j._id,
-      company: j.company,
-      title: j.jobTitle,
-      url: j.jobUrl,
-      source: j.source,
-      location: j.location,
-      jobType: 'Full-time',
-      salaryRaw: j.salary || 'Unknown',
-      remoteType: j.remoteStatus,
-      matchScore: j.matchScore
-    }));
-    res.json(mapped);
-  } catch(err) {
-    res.status(500).json({ error: 'Server error' });
-  }
-});
-
-// API: Get applications for dashboard
-app.get('/api/applications', async (req, res) => {
-  try {
-    const apps = await JobModel.find({ status: { $in: ['Applied', 'Pending Approval', 'Review_Required', 'Failed'] } }).lean();
-    const mapped = apps.map(j => ({
-      id: j._id,
-      company: j.company,
-      title: j.jobTitle,
-      url: j.jobUrl,
-      source: j.source,
-      location: j.location,
-      status: j.status,
-      jobType: 'Full-time',
-      salaryRaw: j.salary || 'Unknown',
-      remoteType: j.remoteStatus,
-      matchScore: j.matchScore
-    }));
-    res.json(mapped);
-  } catch(err) {
-    res.status(500).json({ error: 'Server error' });
-  }
-});
-
-app.get('/api/analytics', async (req, res) => {
-  try {
-    const totalDiscovered = await JobModel.countDocuments();
-    const totalApplied = await JobModel.countDocuments({ status: { $in: ['Applied', 'Failed'] } });
-    const appliedJobs = await JobModel.find({ status: { $in: ['Applied'] } }).lean();
-    let avgMatchScore = 91.8;
-    if (appliedJobs.length > 0) {
-        avgMatchScore = appliedJobs.reduce((acc, j) => acc + (j.matchScore || 0), 0) / appliedJobs.length;
-    }
-    res.json({
-        totalDiscovered: totalDiscovered || 48,
-        totalApplied: totalApplied || 0,
-        humanReviewPending: await JobModel.countDocuments({ status: 'Pending Approval' }),
-        avgMatchScore: avgMatchScore.toFixed(1),
-        responseRate: "Auto Pilot"
-    });
-  } catch(e) {
-    res.json({ totalDiscovered: 0, totalApplied: 0, humanReviewPending: 0, avgMatchScore: 90.0, responseRate: "Auto Pilot" });
-  }
-});
-
-import { jdAnalysisQueue } from './queues/index';
-
-// API: Seed Jobs from Python Scraper
-app.post('/api/jobs/seed', async (req, res) => {
-  try {
-    const jobData = req.body;
-    
-    // Check if duplicate
-    let existingJob = await JobModel.findOne({ jobUrl: jobData.url });
-    if (existingJob) {
-      return res.json({ success: true, message: 'Job already exists, skipped.' });
-    }
-
-    const newJob = new JobModel({
-      company: jobData.company,
-      jobTitle: jobData.title,
-      jobUrl: jobData.url,
-      source: jobData.source || 'Scraper',
-      location: jobData.location,
-      jobDescription: jobData.description || 'Description not provided',
-      salary: jobData.salary || 'Unknown',
-      status: 'Discovered'
-    });
-    
-    await newJob.save();
-
-    // Push to Agent 2 (JD Analysis Queue)
-    await jdAnalysisQueue.add('analyze', { ...newJob.toObject(), jobId: newJob._id });
-    
-    res.json({ success: true, message: 'Added to Discovered & Analysis Queue' });
-  } catch (error) {
-    console.error("Error seeding job:", error);
-    res.status(500).json({ error: 'Server error' });
-  }
-});
-
-async function start() {
-    await connectDB();
-    console.log("Workers attached to Redis Queues.");
-    
-    const PORT = process.env.PORT || 3000;
-    app.listen(PORT, () => {
-      console.log(`Server listening on port ${PORT}`);
-    });
+export interface ScoredJob extends JobPosting {
+  score: ScoreResult;
+  tailored?: TailoredPitch;
 }
 
-start();
+/**
+ * Main Autonomous Orchestration Cycle
+ */
+export async function runAutonomousCycle(options: {
+  maxApplications?: number;
+  openPrefillBrowser?: boolean;
+} = {}): Promise<ScoredJob[]> {
+  const maxApps = options.maxApplications ?? 5;
+  const shouldOpenBrowser = options.openPrefillBrowser ?? false;
+
+  console.log("\n[Phase 1] Discovering live opportunities across ATS boards & remote feeds...");
+  
+  const [boardJobs, remoteJobs] = await Promise.all([
+    fetchAllBoardJobs(),
+    fetchAllRemoteFeeds()
+  ]);
+
+  const rawJobs: JobPosting[] = [...boardJobs, ...remoteJobs];
+  console.log(`[Phase 1 Complete] Collected ${rawJobs.length} total potential roles.`);
+
+  console.log("\n[Phase 2] Filtering and scoring candidates against verified TRUTH_PROFILE...");
+  const qualifiedJobs: ScoredJob[] = [];
+
+  for (const job of rawJobs) {
+    if (tracker.hasAlreadyApplied(job.url)) {
+      continue;
+    }
+
+    const score = scoreJob(job);
+    // Strict Fit Filter: Reject < 70% match
+    if (score.should_apply && score.fit_score >= 70) {
+      qualifiedJobs.push({ ...job, score });
+    }
+  }
+
+  // Sort by highest fit score
+  qualifiedJobs.sort((a, b) => b.score.fit_score - a.score.fit_score);
+  console.log(`[Phase 2 Complete] Found ${qualifiedJobs.length} jobs with >= 70% fit.`);
+
+  const targetBatch = qualifiedJobs.slice(0, maxApps);
+  console.log(`\n[Phase 3] Tailoring high-confidence applications (Top ${targetBatch.length})...`);
+
+  for (let i = 0; i < targetBatch.length; i++) {
+    const item = targetBatch[i];
+    console.log(`\n--- [Match #${i + 1}] ${item.title} at ${item.company} (${item.score.fit_score}% Fit) ---`);
+    console.log(`URL: ${item.url}`);
+    console.log(`Matched Skills: ${item.score.matched_skills.join(", ")}`);
+
+    const tailored = await tailorApplication(item);
+    item.tailored = tailored;
+
+    // Log to tracker
+    await tracker.logApplication({
+      company: item.company,
+      jobTitle: item.title,
+      jobUrl: item.url,
+      source: item.source,
+      matchScore: item.score.fit_score,
+      status: "Tailored",
+      notes: `Matched: ${item.score.matched_skills.slice(0, 3).join(", ")}`
+    });
+
+    console.log(`Selected Verified Bullets:`);
+    tailored.selected_bullets.forEach(b => console.log(`  * ${b}`));
+
+    if (shouldOpenBrowser && i === 0) {
+      console.log(`\n[Phase 4] Opening Playwright browser for interactive review...`);
+      try {
+        await prefillApplication(item.url, env.RESUME_PATH, {
+          headless: false,
+          coverLetter: tailored.cover_letter_body
+        });
+      } catch (err: any) {
+        console.warn(`[Phase 4 Warning] Browser prefill skipped: ${err.message}`);
+      }
+    }
+  }
+
+  const stats = tracker.getStats();
+  console.log("\n=================================================");
+  console.log(` CYCLE COMPLETE: Processed ${targetBatch.length} Top Applications.`);
+  console.log(` Total Tracked: ${stats.totalLogged} | Form Fill Reviewed: ${stats.appliedCount}`);
+  console.log("=================================================\n");
+
+  return targetBatch;
+}
+
+/**
+ * Start Express HTTP Server for Web Dashboard & APIs
+ */
+export async function startServer() {
+  const app = express();
+  app.use(cors());
+  app.use(express.json());
+  app.use(express.static(path.join(__dirname, "../frontend")));
+
+  try {
+    await connectDB();
+  } catch {
+    console.log("[DB] Running in standalone SQLite/CSV mode (MongoDB not connected).");
+  }
+
+  // Dashboard APIs
+  app.get("/api/profile", (req, res) => {
+    res.json(TRUTH_PROFILE);
+  });
+
+  app.get("/api/stats", (req, res) => {
+    res.json(tracker.getStats());
+  });
+
+  app.post("/api/orchestrate", async (req, res) => {
+    try {
+      const results = await runAutonomousCycle({ maxApplications: req.body.limit || 5 });
+      res.json({ success: true, count: results.length, jobs: results });
+    } catch (err: any) {
+      res.status(500).json({ error: err.message });
+    }
+  });
+
+  app.post("/api/prefill", async (req, res) => {
+    const { url, coverLetter } = req.body;
+    if (!url) return res.status(400).json({ error: "Missing url parameter" });
+    try {
+      await prefillApplication(url, env.RESUME_PATH, { headless: false, coverLetter });
+      res.json({ success: true, message: "Browser launched for prefill." });
+    } catch (err: any) {
+      res.status(500).json({ error: err.message });
+    }
+  });
+
+  const PORT = env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`[JobPilot AI Server] Listening at http://localhost:${PORT}`);
+  });
+}
+
+// CLI Execution Router
+const args = process.argv.slice(2);
+
+if (args.includes("--cli") || args.includes("--run")) {
+  const withBrowser = args.includes("--browser");
+  runAutonomousCycle({ maxApplications: 5, openPrefillBrowser: withBrowser }).then(() => {
+    console.log("[CLI] Run finished.");
+    process.exit(0);
+  }).catch(err => {
+    console.error("[CLI Error]", err);
+    process.exit(1);
+  });
+} else if (args.includes("--cron")) {
+  console.log("[Cron Mode] Running autonomous orchestrator every 4 hours...");
+  runAutonomousCycle();
+  setInterval(() => {
+    console.log("\n[Cron Trigger] Running periodic discovery and scoring...");
+    runAutonomousCycle();
+  }, 4 * 60 * 60 * 1000);
+} else {
+  // Default: Start Server & perform initial discovery check
+  startServer();
+}

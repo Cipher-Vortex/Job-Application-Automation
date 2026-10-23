@@ -1,0 +1,42 @@
+[
+  {
+    "company": "Lemon.io",
+    "jobTitle": "Senior React Full stack Developer",
+    "jobUrl": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1137475",
+    "source": "feed",
+    "matchScore": 77,
+    "status": "Tailored",
+    "notes": "Matched: React.js, Next.js, TypeScript",
+    "appliedDate": "2026-10-23"
+  },
+  {
+    "company": "gitlab",
+    "jobTitle": "Senior Frontend Engineer",
+    "jobUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8826920002",
+    "source": "greenhouse",
+    "matchScore": 73,
+    "status": "Tailored",
+    "notes": "Matched: React.js, TypeScript, Express.js",
+    "appliedDate": "2026-10-23"
+  },
+  {
+    "company": "gitlab",
+    "jobTitle": "Staff Frontend Engineer",
+    "jobUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8826965002",
+    "source": "greenhouse",
+    "matchScore": 73,
+    "status": "Tailored",
+    "notes": "Matched: React.js, TypeScript, Express.js",
+    "appliedDate": "2026-10-23"
+  },
+  {
+    "company": "cloudflare",
+    "jobTitle": "Software Engineer (Threat Intelligence), Cloudforce One",
+    "jobUrl": "https://boards.greenhouse.io/cloudflare/jobs/7309174?gh_jid=7309174",
+    "source": "greenhouse",
+    "matchScore": 70,
+    "status": "Tailored",
+    "notes": "Matched: React.js, TypeScript, Express.js",
+    "appliedDate": "2026-10-23"
+  }
+]
