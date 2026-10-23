@@ -15,7 +15,7 @@ const envSchema = z.object({
   // Application Settings
   AUTO_APPLY_ENABLED: z.string().default('false').transform(val => val === 'true'),
   MAX_DAILY_APPLICATIONS: z.string().default('50').transform(val => parseInt(val, 10)),
-  RESUME_PATH: z.string().default('./documents/Kiran_S_R_Resume.pdf'),
+  RESUME_PATH: z.string().default('./documents/Kiran S R _ Full Stack Engineer.pdf'),
 
   // SMTP Mailer (Optional)
   SMTP_HOST: z.string().optional(),

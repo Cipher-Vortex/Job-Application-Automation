@@ -10,7 +10,8 @@
     "start:dist": "node dist/index.js",
     "dev": "node server/index.js",
     "legacy": "python start_all.py",
-    "test": "python -m unittest tests/test_agents.py"
+    "test": "node --test tests/autonomous_pipeline.test.js",
+    "test:legacy": "python -m unittest tests/test_agents.py"
   },
   "keywords": [
     "ai",
