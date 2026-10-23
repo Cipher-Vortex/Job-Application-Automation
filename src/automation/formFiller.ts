@@ -69,7 +69,7 @@ export async function prefillApplication(jobUrl: string, resumePath?: string, op
   // 1. Resume Upload (Upload first so ATS auto-parsing completes before filling)
   if (resumePath && fs.existsSync(resumePath)) {
     try {
-      const fileInput = await page.$('input[type="file"][id*="resume" i], input[type="file"]');
+      const fileInput = await page.$('input[type="file"][id*="resume" i], #_systemfield_resume, input[type="file"]');
       if (fileInput) {
         await fileInput.setInputFiles(path.resolve(resumePath));
         console.log(`[FormFiller] Resume attached successfully from ${resumePath}`);
@@ -87,10 +87,10 @@ export async function prefillApplication(jobUrl: string, resumePath?: string, op
 
   await fillField(['#first_name', 'input[id="first_name"]', 'input[name="first_name"]', 'input[aria-label*="first name" i]'], firstName);
   await fillField(['#last_name', 'input[id="last_name"]', 'input[name="last_name"]', 'input[aria-label*="last name" i]'], lastName);
-  await fillField(['#name', 'input[id="name"]', 'input[name="name"]', 'input[placeholder*="Full Name" i]'], TRUTH_PROFILE.candidate.name);
+  await fillField(['#name', '#_systemfield_name', 'input[name="_systemfield_name"]', 'input[id="name"]', 'input[name="name"]', 'input[placeholder*="Full Name" i]'], TRUTH_PROFILE.candidate.name);
 
   // 3. Contact & Location
-  await fillField(['#email', 'input[id="email"]', 'input[type="email"]', 'input[name*="email" i]'], TRUTH_PROFILE.candidate.email);
+  await fillField(['#email', '#_systemfield_email', 'input[name="_systemfield_email"]', 'input[id="email"]', 'input[type="email"]', 'input[name*="email" i]'], TRUTH_PROFILE.candidate.email);
 
   // Phone: Handle intl-tel-input widget if present
   try {
