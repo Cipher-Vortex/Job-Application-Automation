@@ -91,13 +91,35 @@ export async function prefillApplication(jobUrl: string, resumePath?: string, op
 
   // 3. Contact & Location
   await fillField(['#email', 'input[id="email"]', 'input[type="email"]', 'input[name*="email" i]'], TRUTH_PROFILE.candidate.email);
-  await fillField(['#phone', 'input[id="phone"]', 'input[type="tel"]', 'input[name*="phone" i]'], TRUTH_PROFILE.candidate.phone);
+
+  // Phone: Handle intl-tel-input widget if present
+  try {
+    const itiCountryBtn = await page.$('.iti__selected-country');
+    if (itiCountryBtn) {
+      await itiCountryBtn.click();
+      await page.waitForTimeout(300);
+      const itiSearch = await page.$('.iti__search-input');
+      if (itiSearch) {
+        await itiSearch.fill("India");
+        await page.keyboard.press("Enter");
+        await page.waitForTimeout(300);
+      }
+    }
+  } catch {}
+
+  const cleanPhone = TRUTH_PROFILE.candidate.phone.replace(/[^0-9]/g, '').slice(-10);
+  const phoneFilled = await fillField(['#phone', 'input[id="phone"]', 'input[type="tel"]', 'input[name*="phone" i]'], cleanPhone);
+  if (!phoneFilled) {
+    await fillField(['#phone', 'input[type="tel"]'], TRUTH_PROFILE.candidate.phone);
+  }
   await fillField(['input[id="candidate-location"]', 'input[name*="location" i]', 'input[placeholder*="Location" i]'], TRUTH_PROFILE.candidate.location);
 
   // 4. Socials and Portfolios
   await fillField(['input[aria-label*="linkedin" i]', 'input[id*="linkedin" i]', 'input[name*="linkedin" i]'], TRUTH_PROFILE.candidate.linkedin);
   await fillField(['input[aria-label*="github" i]', 'input[id*="github" i]', 'input[name*="github" i]'], TRUTH_PROFILE.candidate.github);
   await fillField(['input[id*="website" i]', 'input[name*="website" i]', '#website'], TRUTH_PROFILE.candidate.portfolio);
+  await fillField(['input[id*="38435287002" i]', 'input[aria-label*="prefer" i]'], firstName);
+  await fillField(['input[id*="38435291002" i]', 'input[aria-label*="gitlab username" i]'], "skkiran1258");
 
   // 5. Cover Letter Textarea
   if (options.coverLetter) {
@@ -107,8 +129,59 @@ export async function prefillApplication(jobUrl: string, resumePath?: string, op
     );
   }
 
-  // 6. Automated Standard ATS Screening Question Answers
+  // 6. Automated Standard ATS Screening Question Answers & Dropdowns
   try {
+    const dropdownInputs = await page.$$('input.select__input, input[role="combobox"], [class*="-control"], div[id*="question"]');
+    for (const inp of dropdownInputs) {
+      try {
+        const id = (await inp.getAttribute('id') || '').toLowerCase();
+        const label = (await inp.evaluate(el => {
+          const lbl = document.querySelector(`label[for="${el.id}"]`) || el.closest('div')?.querySelector('label');
+          return lbl ? lbl.textContent || '' : '';
+        })).toLowerCase();
+
+        const combinedText = `${id} ${label}`;
+        let answer = "";
+        if (id === "country") {
+          answer = "India +91";
+        } else if (combinedText.includes("country of residence") || combinedText.includes("current country")) {
+          answer = "India";
+        } else if (combinedText.includes("sponsorship") || combinedText.includes("visa")) {
+          answer = "No";
+        } else if (combinedText.includes("restrictions") || combinedText.includes("employment agreement")) {
+          answer = "No";
+        } else if (combinedText.includes("worked at") || combinedText.includes("previously worked")) {
+          answer = "No";
+        } else if (id === "gender") {
+          answer = "Male";
+        } else if (id === "hispanic_ethnicity") {
+          answer = "No";
+        } else if (id === "veteran_status") {
+          answer = "I am not a protected veteran";
+        }
+
+        if (answer) {
+          await inp.scrollIntoViewIfNeeded();
+          await inp.click();
+          await page.waitForTimeout(300);
+          await inp.fill(answer);
+          await page.waitForTimeout(500);
+
+          const fieldId = id.replace('#', '');
+          const option = await page.$(`div[id^="react-select-${fieldId}-option"]:has-text("${answer}")`)
+                      || await page.$(`[class*="option"]:has-text("${answer}")`)
+                      || await page.$(`div[id^="react-select-${fieldId}-option"]`)
+                      || await page.$('.select__option');
+          if (option) {
+            await option.click();
+          } else {
+            await page.keyboard.press("Enter");
+          }
+          await page.waitForTimeout(300);
+        }
+      } catch {}
+    }
+
     const textInputs = await page.$$('input[type="text"]:not(#first_name):not(#last_name):not(#email), textarea:not([name*="cover" i])');
     for (const inp of textInputs) {
       const id = (await inp.getAttribute('id') || '').toLowerCase();
