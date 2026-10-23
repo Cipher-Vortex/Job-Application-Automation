@@ -155,6 +155,20 @@ test("Autonomous Job Application System Test Suite", async (t) => {
     const stats = tracker.getStats();
     assert.ok(stats.totalLogged > 0, "totalLogged > 0");
     assert.ok(stats.appliedCount > 0, "appliedCount > 0");
+
+    // Clean up test entry so tracker CSV and JSON stay pristine
+    try {
+      const csvPath = path.resolve(process.cwd(), "job_applications_tracker.csv");
+      const jsonPath = path.resolve(process.cwd(), "data", "applied_history.json");
+      if (fs.existsSync(csvPath)) {
+        const cleanedCsv = fs.readFileSync(csvPath, "utf-8").split("\n").filter(line => !line.includes(testUrl)).join("\n");
+        fs.writeFileSync(csvPath, cleanedCsv, "utf-8");
+      }
+      if (fs.existsSync(jsonPath)) {
+        const records = JSON.parse(fs.readFileSync(jsonPath, "utf-8")).filter(r => r.jobUrl !== testUrl);
+        fs.writeFileSync(jsonPath, JSON.stringify(records, null, 2), "utf-8");
+      }
+    } catch {}
   });
 
   await t.test("7. ATS Scraper Error Handling", async () => {
