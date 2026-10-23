@@ -1006,10 +1006,43 @@ function openReviewModal(appJsonEscaped) {
   const modal = document.getElementById('review-modal');
   const target = document.getElementById('review-modal-target');
   const reason = document.getElementById('review-modal-reason');
+  const urlDisplay = document.getElementById('review-modal-url-display');
 
   if (target) target.textContent = `${app.role} at ${app.company}`;
   if (reason) reason.textContent = app.notes || "Security safeguard paused application to allow user manual review or CAPTCHA resolution.";
+  if (urlDisplay) urlDisplay.textContent = app.url || "No direct URL provided";
   if (modal) modal.style.display = 'flex';
+}
+
+function openJobInNewTab() {
+  if (currentReviewApp && currentReviewApp.url) {
+    window.open(currentReviewApp.url, '_blank');
+  } else {
+    showToast("No direct link found for this application.", "error", "Link Notice");
+  }
+}
+
+async function launchPrefillFromModal() {
+  if (!currentReviewApp || !currentReviewApp.url) {
+    showToast("No application URL available to prefill.", "error", "Notice");
+    return;
+  }
+  showToast("Launching Playwright to prefill job application...", "info", "Form Filler");
+  try {
+    const res = await fetch('/api/prefill', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: currentReviewApp.url })
+    });
+    const data = await res.json();
+    if (data.success) {
+      showToast("Playwright browser launched! Check your screen.", "success", "Prefill Ready");
+    } else {
+      window.open(currentReviewApp.url, '_blank');
+    }
+  } catch (err) {
+    window.open(currentReviewApp.url, '_blank');
+  }
 }
 
 function closeReviewModal() {

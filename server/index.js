@@ -580,6 +580,28 @@ app.post('/api/ai/applications/submit-info', async (req, res) => {
   }
 });
 
+let prefillFn = null;
+try {
+  prefillFn = require('../dist/automation/formFiller').prefillApplication;
+} catch (e) {}
+
+app.post('/api/prefill', async (req, res) => {
+  const { url, coverLetter } = req.body;
+  if (!url) return res.status(400).json({ error: "Missing url parameter" });
+  try {
+    if (prefillFn) {
+      const resumePath = path.resolve(__dirname, '../documents/Kiran S R _ Full Stack Engineer.pdf');
+      prefillFn(url, resumePath, { headless: false, coverLetter }).catch(err => {
+        console.warn("[Prefill Error]", err.message);
+      });
+      return res.json({ success: true, message: "Browser launched for prefill." });
+    }
+    return res.json({ success: true, message: "Opening URL directly in browser." });
+  } catch (err) {
+    return res.status(500).json({ error: err.message });
+  }
+});
+
 app.post('/api/applications/approve', async (req, res) => {
   const { id, company, role, url, salaryRaw, jobType, remoteType, matchScore, source, tailored_resume_markdown, tailored_cv } = req.body;
   
