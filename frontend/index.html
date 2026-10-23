@@ -535,8 +535,11 @@
             <button class="btn btn-primary" onclick="openJobInNewTab()" style="font-size: 0.75rem; padding: 0.4rem 0.85rem; background: var(--accent-apple-blue); color: #fff;">
               🌐 Open Job Page in Browser ↗
             </button>
-            <button class="btn btn-secondary" onclick="launchPrefillFromModal()" style="font-size: 0.75rem; padding: 0.4rem 0.85rem;">
-              🤖 Auto-Prefill with Playwright
+            <button class="btn btn-secondary" onclick="launchPrefillFromModal(false)" style="font-size: 0.75rem; padding: 0.4rem 0.85rem;">
+              🤖 Pre-Fill Form Only
+            </button>
+            <button class="btn btn-primary" onclick="launchPrefillFromModal(true)" style="font-size: 0.75rem; padding: 0.4rem 0.85rem; background: #30d158; color: #000; font-weight: 600;">
+              ⚡ Fill & Submit Application (Live)
             </button>
           </div>
         </div>

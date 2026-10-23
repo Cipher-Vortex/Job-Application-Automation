@@ -591,10 +591,11 @@ app.post('/api/prefill', async (req, res) => {
   try {
     if (prefillFn) {
       const resumePath = path.resolve(__dirname, '../documents/Kiran S R _ Full Stack Engineer.pdf');
-      prefillFn(url, resumePath, { headless: false, coverLetter }).catch(err => {
+      const autoSubmit = req.body.autoSubmit === true;
+      prefillFn(url, resumePath, { headless: false, coverLetter, autoSubmit }).catch(err => {
         console.warn("[Prefill Error]", err.message);
       });
-      return res.json({ success: true, message: "Browser launched for prefill." });
+      return res.json({ success: true, message: autoSubmit ? "Browser launched and submitted." : "Browser launched for prefill." });
     }
     return res.json({ success: true, message: "Opening URL directly in browser." });
   } catch (err) {

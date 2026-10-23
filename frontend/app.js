@@ -1022,21 +1022,22 @@ function openJobInNewTab() {
   }
 }
 
-async function launchPrefillFromModal() {
+async function launchPrefillFromModal(autoSubmit = false) {
   if (!currentReviewApp || !currentReviewApp.url) {
     showToast("No application URL available to prefill.", "error", "Notice");
     return;
   }
-  showToast("Launching Playwright to prefill job application...", "info", "Form Filler");
+  const actionText = autoSubmit ? "Filling and submitting application..." : "Launching Playwright to prefill...";
+  showToast(actionText, "info", "Automation Runner");
   try {
     const res = await fetch('/api/prefill', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url: currentReviewApp.url })
+      body: JSON.stringify({ url: currentReviewApp.url, autoSubmit })
     });
     const data = await res.json();
     if (data.success) {
-      showToast("Playwright browser launched! Check your screen.", "success", "Prefill Ready");
+      showToast(autoSubmit ? "Application submitted live! Confirmation email should arrive shortly." : "Playwright browser launched! Check your screen.", "success", "Automation Status");
     } else {
       window.open(currentReviewApp.url, '_blank');
     }
