@@ -1,0 +1,87 @@
+{
+  "name": "Bengaluru Local Business Lead Hunter & Pitch Generator",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 10
+            }
+          ]
+        }
+      },
+      "id": "1",
+      "name": "Daily Schedule 10AM",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Target Business Categories in Bengaluru\nconst categories = [\n  { niche: \"Travel Operators & Tour Cabs\", area: \"Koramangala, Bengaluru\", targetTicket: \"₹8,000\" },\n  { niche: \"Homestays & Resorts\", area: \"Bengaluru Outskirts / Sakleshpur\", targetTicket: \"₹10,000\" },\n  { niche: \"Dental & Wellness Clinics\", area: \"Indiranagar, Bengaluru\", targetTicket: \"₹8,000\" },\n  { niche: \"Packers & Movers / Car Rentals\", area: \"HSR Layout, Bengaluru\", targetTicket: \"₹6,000\" }\n];\n\nreturn categories.map(cat => ({ json: cat }));"
+      },
+      "id": "2",
+      "name": "Define Target Niches",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [420, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Sample local businesses scraped or retrieved via Google Places API\n// Validates whether website exists or requires modernization\nconst item = $input.item.json;\n\nconst sampleLeads = [\n  {\n    businessName: \"Karnataka Wheels & Tours\",\n    category: item.niche,\n    phone: \"+919876543210\",\n    email: \"info@karnatakawheels.example\",\n    websiteUrl: \"\",\n    hasWebsite: false,\n    status: \"NO_WEBSITE\"\n  },\n  {\n    businessName: \"Nandi Hills Valley Homestay\",\n    category: item.niche,\n    phone: \"+919845012345\",\n    email: \"bookings@nandivalley.example\",\n    websiteUrl: \"http://nandivalley.tripod.com\",\n    hasWebsite: true,\n    isOutdated: true,\n    status: \"OUTDATED_SLOW_SITE\"\n  }\n];\n\nreturn sampleLeads.map(lead => ({ json: lead }));"
+      },
+      "id": "3",
+      "name": "Website & Mobile Checker",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [640, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const lead = $input.item.json;\n\n// Tailored high-converting pitch citing Kiran's Yeshu Tours & Travels\nconst whatsappMessage = `Namaste ${lead.businessName} team! 🙏\\n\\nI saw your listing in Bengaluru for ${lead.category}. I noticed you don't have a modern mobile booking website yet (most customers today book straight from their phones on WhatsApp).\\n\\nI am a local web developer in Bengaluru. I recently built and launched yeshutoursandtravels.com—a fast mobile booking website with direct WhatsApp inquiry integration.\\n\\nI can deploy a modern, high-speed booking site for ${lead.businessName} in 4 days for just ₹8,000 (one-time), or help optimize and maintain your existing presence for ₹2,000/month.\\n\\nWould you like me to share a quick 1-minute demo preview of how your website would look?\\n\\nBest regards,\\nKiran S R\\nBengaluru | https://cipher-vortex.vercel.app`;\n\nconst cleanPhone = lead.phone.replace(/[^0-9]/g, '');\nconst whatsappLink = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(whatsappMessage)}`;\n\nreturn {\n  json: {\n    ...lead,\n    pitch: whatsappMessage,\n    whatsappDirectLink: whatsappLink\n  }\n};"
+      },
+      "id": "4",
+      "name": "Draft ₹8k Yeshu Tours Pitch",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [860, 300]
+    }
+  ],
+  "connections": {
+    "Daily Schedule 10AM": {
+      "main": [
+        [
+          {
+            "node": "Define Target Niches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Define Target Niches": {
+      "main": [
+        [
+          {
+            "node": "Website & Mobile Checker",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Website & Mobile Checker": {
+      "main": [
+        [
+          {
+            "node": "Draft ₹8k Yeshu Tours Pitch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

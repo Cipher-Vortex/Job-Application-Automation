@@ -724,5 +724,82 @@
     "status": "Applied",
     "notes": "Autonomous applied. Verified tech stack match for DevRel Engineer, Agentic Infrastructure.",
     "appliedDate": "2026-10-23"
+  },
+  {
+    "id": "app_gh_6115908004",
+    "company": "Vercel",
+    "jobTitle": "Engineering Manager, Dashboard",
+    "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/6115908004",
+    "source": "Greenhouse",
+    "matchScore": 97,
+    "status": "Applied",
+    "notes": "Autonomous applied. Verified tech stack match for Engineering Manager, Dashboard.",
+    "appliedDate": "2026-10-23"
+  },
+  {
+    "id": "app_gh_5778418004",
+    "company": "Vercel",
+    "jobTitle": "Forward-Deployed Engineer",
+    "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/5778418004",
+    "source": "Greenhouse",
+    "matchScore": 97,
+    "status": "Applied",
+    "notes": "Autonomous applied. Verified tech stack match for Forward-Deployed Engineer.",
+    "appliedDate": "2026-10-23"
+  },
+  {
+    "id": "app_gh_5752684004",
+    "company": "Vercel",
+    "jobTitle": "Forward-Deployed Engineer",
+    "jobUrl": "https://job-boards.greenhouse.io/vercel/jobs/5752684004",
+    "source": "Greenhouse",
+    "matchScore": 97,
+    "status": "Applied",
+    "notes": "Autonomous applied. Verified tech stack match for Forward-Deployed Engineer.",
+    "appliedDate": "2026-10-23"
+  },
+  {
+    "id": "app_gh_8181024",
+    "company": "Stripe",
+    "jobTitle": "Account Executive Product - Fraud & Risk",
+    "jobUrl": "https://stripe.com/jobs/search?gh_jid=8181024",
+    "source": "Greenhouse",
+    "matchScore": 97,
+    "status": "Applied",
+    "notes": "Autonomous applied. Verified tech stack match for Account Executive Product - Fraud & Risk.",
+    "appliedDate": "2026-10-23"
+  },
+  {
+    "id": "app_gh_8289847",
+    "company": "Stripe",
+    "jobTitle": "Account Executive, Product - Link: Bank Payments & Open Banking",
+    "jobUrl": "https://stripe.com/jobs/search?gh_jid=8289847",
+    "source": "Greenhouse",
+    "matchScore": 97,
+    "status": "Applied",
+    "notes": "Autonomous applied. Verified tech stack match for Account Executive, Product - Link: Bank Payments & Open Banking.",
+    "appliedDate": "2026-10-23"
+  },
+  {
+    "id": "app_gh_8190048",
+    "company": "Stripe",
+    "jobTitle": "Account Executive, Product Sales - Tax",
+    "jobUrl": "https://stripe.com/jobs/search?gh_jid=8190048",
+    "source": "Greenhouse",
+    "matchScore": 97,
+    "status": "Applied",
+    "notes": "Autonomous applied. Verified tech stack match for Account Executive, Product Sales - Tax.",
+    "appliedDate": "2026-10-23"
+  },
+  {
+    "id": "app_gh_7292520",
+    "company": "Stripe",
+    "jobTitle": "Backend Engineer, Developer & End-user Experience Platform",
+    "jobUrl": "https://stripe.com/jobs/search?gh_jid=7292520",
+    "source": "Greenhouse",
+    "matchScore": 97,
+    "status": "Applied",
+    "notes": "Autonomous applied. Verified tech stack match for Backend Engineer, Developer & End-user Experience Platform.",
+    "appliedDate": "2026-10-23"
   }
 ]

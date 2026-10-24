@@ -1,0 +1,48 @@
+name: 24/7 Autonomous Scout & Bounty Hunter Cron
+
+on:
+  schedule:
+    # Runs every 30 minutes 24/7/365 (Zero cloud hosting cost on GitHub Actions)
+    - cron: '*/30 * * * *'
+  workflow_dispatch: # Allows manual trigger anytime from GitHub UI or mobile app
+
+permissions:
+  contents: write
+
+jobs:
+  scout:
+    name: Poll Channels & Dispatch AI Pitches
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install --no-audit
+
+      - name: Run Autonomous Scout Cycle
+        env:
+          GROK_API_KEY: ${{ secrets.GROK_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: npm run scout
+
+      - name: Persist Deduplication History
+        run: |
+          git config --global user.name "JobScout Autonomous Agent"
+          git config --global user.email "bot@jobpilot.ai"
+          git add data/seen_opportunities.json data/pending_pitches.json || true
+          if git diff --staged --quiet; then
+            echo "No new opportunities to persist in history."
+          else
+            git commit -m "chore(scout): update seen opportunities history [skip ci]"
+            git push origin HEAD || true
+          fi

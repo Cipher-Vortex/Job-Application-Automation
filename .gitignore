@@ -81,6 +81,7 @@ output.txt
 debug_log.txt
 data/browser_profile/
 data/portal_login_status.json
+user-data-dir/
 
 *.csv
 !data/google_sheets_sync_export.csv
