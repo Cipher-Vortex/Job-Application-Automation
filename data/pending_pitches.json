@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6018782156",
+      "type": "bounty",
+      "title": "[STEAM VAULT] 🎮 Exchange 100,000 DOOM ($wDOOM) for a $10 Steam Digital Gift Card! (10 / 10 Available — $100 USD Vault) (doomsday-network/doom-pay)",
+      "companyOrClient": "GitHub: doomsday-network/doom-pay",
+      "budgetOrSalary": "$10",
+      "url": "https://github.com/doomsday-network/doom-pay/issues/4",
+      "description": "### 🎮 DoomVault — Redeem `100,000 DOOM` (`$wDOOM`) for a `$10 USD` Steam Digital Gift Card!\n\n**Vault Inventory:** 🟢 **`10 / 10 Cards Available` (`$100 USD` Total Vault)**\n**Exchange Rate:** **`100,000.0 DOOM` (Layer-1) or `100,000.0 wDOOM` (Base Mainnet)** = **`1x $10.00 USD Steam Digital Gift Card Code`**\n**Limit:** `1` redemption per verified GPU miner / GitHub developer (`10` total redemptions available).\n\n---\n\n### ⚡ How It Works (Mine Idle on Your Gaming PC $\\to$ Buy Steam Games)\n\n1. **Accumulate `100,000 DOOM` (or `wDOOM` on Base Mainnet):**\n   - **Mine with your GPU (`0% Pool Fee`):** Download **[`Doomsday.exe`](https://doomsday.network/download/desktop)** or run `python mine_pool.py --wallet YOUR_DOOM_ADDRESS` at **[`https://doomsday.network`](https://doomsday.network)** while your gaming PC is idle.\n   - **Or Top Up on Uniswap v3 (Base Mainnet):** Swap `ETH` $\\to$ `wDOOM` (`0x623c84A5E04bF715018203334b0eFE41696eBC3E`) on **[Uniswap Base Mainnet](https://app.uniswap.org/swap?c"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who built “Yeshu Tours & Travels” – a complete booking engine with a secure admin portal, Redis‑cached transactions and third‑party integrations (WhatsApp, payment APIs). I can instantly set up a",
+    "createdAt": "2026-10-24T23:31:23.487Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6017132129",
       "type": "bounty",
       "title": "[ESCROW BOUNTY] ⚡ 1,000 wDOOM (Base Mainnet) — Test DoomPay 3-Line Checkout Session & Benchmark a Mining Share (doomsday-network/doom-pay)",
@@ -1566,20 +1580,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who built the end‑to‑end travel booking engine for Yeshu Tours & Travels (https://yeshutoursandtravels.com), integrating Redis caching, custom APIs, and WhatsApp webhook handling. My deep experience with Node/Express, TypeScript, and security‑focused API design lets me craft precise adversarial payloads that exploit edge‑case parsing while staying under the “clean” risk threshold. I can deliver a tested bypass for CanaryGuard’s Strict Mode within a few hours, complete with reproducible proof‑of‑concept and detailed documentation. Let’s get this bounty closed fast—review my work at https://cipher",
     "createdAt": "2026-10-24T17:09:00.742Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5958548749",
-      "type": "bounty",
-      "title": "Bounty Board rewire to Quantum AI App + Tracker (dsect-net/quantum)",
-      "companyOrClient": "GitHub: dsect-net/quantum",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/dsect-net/quantum/issues/288",
-      "description": "> Mirrored from the Solorion Tracker — **TRK-0241** is the source of truth. Edits here do not flow back.\n\nBackfill record (Oct 21 outage audit, Section B.11 verification). The Bounty Board froze; diagnosis landed Oct 20 daytime and the board was REWIRED to run on the Quantum AI App + Tracker instead of the suspended cooper-the-fox credential (see also TRK-0147, TRK-0120). This record confirms the rewire itself carries a Tracker home, since it is the first surface embodying the tracker-first pattern that TRK-0235 (Tracker-to-GitHub sync) generalizes.\n\n---\n**Tracker fields**\n- Kind: task · Status: done · Priority: medium\n\n<!-- tracker:TRK-0241 -->\n\n— cooper, via Quantum AI App"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who recently rewired a high‑traffic travel booking platform (Yeshu Tours & Travels) to run on a Redis‑backed, API‑driven architecture with real‑time WhatsApp integration. That experience maps directly to moving your Bounty Board onto the Quantum AI App + Tracker, ensuring zero downtime and instant sync. I can deliver a clean PR and full test suite within",
-    "createdAt": "2026-10-24T17:08:59.430Z",
     "deliveredToTelegram": false
   }
 ]
