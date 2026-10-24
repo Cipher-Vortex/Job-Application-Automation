@@ -69,6 +69,20 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
         <span>RAG Memory</span>
       </div>
+      <div class="nav-item" onclick="switchTab('sniper')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        <span style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+          <span>Freelance Sniper</span>
+          <span class="sheets-badge-pill" style="font-size: 0.65rem; color: #38bdf8; background: rgba(56,189,248,0.15); padding: 0.1rem 0.35rem; border-radius: 4px; font-weight: 600;">BOUNTY</span>
+        </span>
+      </div>
+      <div class="nav-item" onclick="switchTab('local-leads')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+          <span>Bengaluru Leads</span>
+          <span class="sheets-badge-pill" style="font-size: 0.65rem; color: #10b981; background: rgba(16,185,129,0.15); padding: 0.1rem 0.35rem; border-radius: 4px; font-weight: 600;">₹8K</span>
+        </span>
+      </div>
       <div class="nav-item" onclick="openSheetsModal()">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
         <span class="nav-sheets-label" style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
@@ -407,9 +421,117 @@
         </div>
 
       </section>
-
-    </main>
-  </div>
+ 
+       <!-- TAB 4: FREELANCE SNIPER & BOUNTY HUNTER -->
+       <section id="tab-sniper" class="tab-content">
+         <div class="feed-header-toolbar" style="margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+           <div>
+             <h2 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem; display: flex; align-items: center; gap: 0.5rem;">
+               <span>🎯 Freelance Sniper & Paid Bounty Hunter</span>
+               <span class="sheets-badge-pill" style="font-size: 0.7rem; color: #38bdf8; background: rgba(56,189,248,0.15); padding: 0.15rem 0.5rem; border-radius: 9999px;">MULTI-CHANNEL 24/7</span>
+             </h2>
+             <p style="color: var(--text-secondary); font-size: 0.82rem;">
+               Real-time paid opportunities across Reddit r/forhire, GitHub Bounties, RemoteOK, We Work Remotely & Hacker News with AI pitches citing <b>Yeshu Tours & Travels</b>, <b>RMC ERP</b>, and <b>Zupper</b>.
+             </p>
+           </div>
+           <div style="display: flex; gap: 0.6rem; align-items: center;">
+             <button id="btn-run-scout" class="btn btn-primary" onclick="runLiveScoutScan()" style="background: var(--accent-apple-blue); color: #fff; font-weight: 600; display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem;">
+               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+               <span id="btn-run-scout-text">Run Live Multi-Channel Hunt</span>
+             </button>
+           </div>
+         </div>
+ 
+         <!-- Live Sniper Metrics Grid -->
+         <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-bottom: 1.5rem;">
+           <div class="card">
+             <div class="card-title">Pitches Ready to Send</div>
+             <div class="card-value" id="metric-sniper-total" style="color: #38bdf8;">--</div>
+             <div class="card-subtext">Pre-written in 80–120 words</div>
+           </div>
+           <div class="card">
+             <div class="card-title">GitHub Paid Bounties</div>
+             <div class="card-value" id="metric-sniper-bounties" style="color: #a855f7;">--</div>
+             <div class="card-subtext">$100 - $850 per merged PR</div>
+           </div>
+           <div class="card">
+             <div class="card-title">Remote Developer Roles</div>
+             <div class="card-value" id="metric-sniper-remote" style="color: var(--accent-apple-green);">--</div>
+             <div class="card-subtext">WWR, RemoteOK & Himalayas</div>
+           </div>
+           <div class="card">
+             <div class="card-title">Freelance Cash Gigs</div>
+             <div class="card-value" id="metric-sniper-freelance" style="color: #fbbf24;">--</div>
+             <div class="card-subtext">Reddit & Hacker News contracts</div>
+           </div>
+         </div>
+ 
+         <!-- Filter Bar -->
+         <div style="display: flex; gap: 0.5rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
+           <button class="status-pill-btn active" onclick="filterSniperPitches('all', this)">All Opportunities</button>
+           <button class="status-pill-btn" onclick="filterSniperPitches('bounty', this)">💎 Paid Bounties</button>
+           <button class="status-pill-btn" onclick="filterSniperPitches('freelance', this)">💰 Freelance (Reddit/HN)</button>
+           <button class="status-pill-btn" onclick="filterSniperPitches('remote_job', this)">🚀 Remote Tech Roles</button>
+         </div>
+ 
+         <!-- Pitches List Container -->
+         <div id="sniper-pitches-container" style="display: grid; gap: 1.25rem;">
+           <div style="padding: 3rem; text-align: center; color: var(--text-tertiary);">Loading live opportunities & tailored pitches...</div>
+         </div>
+       </section>
+ 
+       <!-- TAB 5: BENGALURU LOCAL BUSINESS LEAD GENERATOR -->
+       <section id="tab-local-leads" class="tab-content">
+         <div class="feed-header-toolbar" style="margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+           <div>
+             <h2 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem; display: flex; align-items: center; gap: 0.5rem;">
+               <span>📍 Bengaluru Local Business Leads (₹8k Sites / ₹2k Retainers)</span>
+               <span class="sheets-badge-pill" style="font-size: 0.7rem; color: #10b981; background: rgba(16,185,129,0.15); padding: 0.15rem 0.5rem; border-radius: 9999px;">LOCAL BENGALURU</span>
+             </h2>
+             <p style="color: var(--text-secondary); font-size: 0.82rem;">
+               Targeting local travel operators, homestays, and clinics without mobile booking websites. Offer ₹8,000 site build or ₹2,000/mo retainer citing <b>yeshutoursandtravels.com</b>.
+             </p>
+           </div>
+           <div style="display: flex; gap: 0.6rem; align-items: center;">
+             <button id="btn-refresh-leads" class="btn btn-primary" onclick="refreshLocalLeads()" style="background: #10b981; color: #fff; font-weight: 600; display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem;">
+               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+               <span>Scan Bengaluru Pipeline</span>
+             </button>
+           </div>
+         </div>
+ 
+         <!-- Leads Metrics Grid -->
+         <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-bottom: 1.5rem;">
+           <div class="card">
+             <div class="card-title">Prospects in Pipeline</div>
+             <div class="card-value" id="metric-leads-total" style="color: #10b981;">--</div>
+             <div class="card-subtext">Koramangala, Indiranagar, HSR</div>
+           </div>
+           <div class="card">
+             <div class="card-title">Missing Mobile Websites</div>
+             <div class="card-value" id="metric-leads-missing" style="color: #ef4444;">--</div>
+             <div class="card-subtext">Immediate ₹8,000 pitch targets</div>
+           </div>
+           <div class="card">
+             <div class="card-title">Average Deal Value</div>
+             <div class="card-value" style="color: #f59e0b;">₹8,000</div>
+             <div class="card-subtext">1-time build or ₹2,000/mo retainer</div>
+           </div>
+           <div class="card">
+             <div class="card-title">Flagship Credential</div>
+             <div class="card-value" style="color: #38bdf8; font-size: 1.15rem; margin-top: 0.35rem;">Yeshu Tours</div>
+             <div class="card-subtext">yeshutoursandtravels.com</div>
+           </div>
+         </div>
+ 
+         <!-- Leads List Container -->
+         <div id="local-leads-container" style="display: grid; gap: 1.25rem;">
+           <div style="padding: 3rem; text-align: center; color: var(--text-tertiary);">Loading Bengaluru local business leads...</div>
+         </div>
+       </section>
+ 
+     </main>
+   </div>
 
   <!-- GROOMED RESUME & CV MODAL (THE JD KEYWORDS & COMPANY PROJECTS TRICK) -->
   <div id="groom-modal" class="modal-overlay">

@@ -910,6 +910,89 @@ app.get('/api/analytics', (req, res) => {
   });
 });
 
+// ================= FREELANCE SNIPER & BOUNTY HUNTER ENDPOINTS =================
+
+// 1. Get generated pitches and bounties
+app.get('/api/scout/pitches', (req, res) => {
+  const pitchesFile = path.join(__dirname, '../data/pending_pitches.json');
+  if (fs.existsSync(pitchesFile)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(pitchesFile, 'utf-8'));
+      return res.json({ success: true, count: data.length, pitches: data });
+    } catch (e) {
+      return res.status(500).json({ success: false, error: e.message });
+    }
+  }
+  res.json({ success: true, count: 0, pitches: [] });
+});
+
+// 2. Trigger on-demand scout scan across Reddit, GitHub Bounties, RemoteOK, WWR, and HN
+app.post('/api/scout/run', (req, res) => {
+  const { exec } = require('child_process');
+  exec('npx tsx agent-scout.ts', { cwd: path.join(__dirname, '..') }, (error, stdout, stderr) => {
+    if (error) {
+      console.warn('[Scout API] Scan warning:', error.message);
+    }
+  });
+
+  res.json({
+    success: true,
+    message: "Multi-channel scout scan initiated in background. Pitches will update shortly!"
+  });
+});
+
+// ================= BENGALURU LOCAL BUSINESS LEAD GEN ENDPOINTS =================
+
+// 3. Get Bengaluru local business leads
+app.get('/api/leads', (req, res) => {
+  const leadsFile = path.join(__dirname, '../data/local_business_leads.json');
+  if (fs.existsSync(leadsFile)) {
+    try {
+      const data = JSON.parse(fs.readFileSync(leadsFile, 'utf-8'));
+      return res.json({ success: true, count: data.length, leads: data });
+    } catch (e) {
+      return res.status(500).json({ success: false, error: e.message });
+    }
+  }
+  res.json({ success: true, count: 0, leads: [] });
+});
+
+// 4. Trigger on-demand local business scan
+app.post('/api/leads/generate', (req, res) => {
+  const { exec } = require('child_process');
+  exec('npx tsx src/scripts/local_business_leadgen.ts', { cwd: path.join(__dirname, '..') }, (error, stdout, stderr) => {
+    const leadsFile = path.join(__dirname, '../data/local_business_leads.json');
+    let leads = [];
+    if (fs.existsSync(leadsFile)) {
+      try { leads = JSON.parse(fs.readFileSync(leadsFile, 'utf-8')); } catch {}
+    }
+    res.json({ success: true, count: leads.length, leads });
+  });
+});
+
+// ================= LOCAL PERSISTENT PLAYWRIGHT AUTO-APPLY =================
+
+// 5. Launch local persistent residential context form filler
+app.post('/api/apply/persistent', (req, res) => {
+  const { url } = req.body;
+  if (!url) {
+    return res.status(400).json({ error: "Missing job application URL" });
+  }
+
+  const { spawn } = require('child_process');
+  const child = spawn('npx', ['tsx', 'src/scripts/run_local_persistent_apply.ts', url], {
+    cwd: path.join(__dirname, '..'),
+    detached: true,
+    stdio: 'ignore'
+  });
+  child.unref();
+
+  res.json({
+    success: true,
+    message: "Launched local persistent Chromium browser with residential session. Check your desktop!"
+  });
+});
+
 // Universal wildcard route for SPA client navigation - safely renders index.html
 app.get('*', (req, res) => {
   if (req.path.startsWith('/api/')) {

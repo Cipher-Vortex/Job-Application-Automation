@@ -143,6 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchApplications();
   refreshRAGStats();
   checkAutoApplyStatus();
+  fetchSniperPitches(true);
+  fetchLocalLeads(true);
 
   // Polling loop every 10 seconds to keep tracker & remote feed in sync
   setInterval(() => {
@@ -162,6 +164,8 @@ function switchTab(tabId) {
     if (tabId === 'dashboard' && text.includes('remote radar')) return true;
     if (tabId === 'review-queue' && text.includes('application tracker')) return true;
     if (tabId === 'rag-memory' && text.includes('rag')) return true;
+    if (tabId === 'sniper' && text.includes('freelance sniper')) return true;
+    if (tabId === 'local-leads' && text.includes('bengaluru leads')) return true;
     return text.includes(tabId.replace('-', ' '));
   });
 
@@ -169,6 +173,9 @@ function switchTab(tabId) {
 
   const targetTab = document.getElementById(`tab-${tabId}`);
   if (targetTab) targetTab.classList.add('active');
+
+  if (tabId === 'sniper') fetchSniperPitches();
+  if (tabId === 'local-leads') fetchLocalLeads();
 }
 
 // ================= 100% REMOTE JOBS FEED =================
@@ -1486,5 +1493,286 @@ async function triggerSheetsSyncNow() {
   } catch (err) {
     showToast("Error triggering sheets sync: " + err.message, "error", "Sync Error");
   }
+}
+
+// ================= FREELANCE SNIPER & BOUNTY HUNTER ENGINE =================
+
+let allSniperPitches = [];
+let currentSniperFilter = 'all';
+
+async function fetchSniperPitches(silent = false) {
+  const container = document.getElementById('sniper-pitches-container');
+  if (!container) return;
+
+  try {
+    const res = await fetch('/api/scout/pitches');
+    const data = await res.json();
+    if (data.success && Array.isArray(data.pitches)) {
+      allSniperPitches = data.pitches;
+
+      // Update metrics
+      const totalEl = document.getElementById('metric-sniper-total');
+      const bountiesEl = document.getElementById('metric-sniper-bounties');
+      const remoteEl = document.getElementById('metric-sniper-remote');
+      const freelanceEl = document.getElementById('metric-sniper-freelance');
+
+      if (totalEl) totalEl.textContent = allSniperPitches.length;
+      if (bountiesEl) bountiesEl.textContent = allSniperPitches.filter(p => p.opportunity?.type === 'bounty').length;
+      if (remoteEl) remoteEl.textContent = allSniperPitches.filter(p => p.opportunity?.type === 'remote_job').length;
+      if (freelanceEl) freelanceEl.textContent = allSniperPitches.filter(p => p.opportunity?.type === 'freelance').length;
+
+      renderSniperPitches();
+    }
+  } catch (err) {
+    if (!silent) showToast("Error loading pitches: " + err.message, "error", "Sniper Error");
+  }
+}
+
+function filterSniperPitches(category, btnElement) {
+  currentSniperFilter = category;
+  if (btnElement && btnElement.parentElement) {
+    btnElement.parentElement.querySelectorAll('.status-pill-btn').forEach(b => b.classList.remove('active'));
+    btnElement.classList.add('active');
+  }
+  renderSniperPitches();
+}
+
+function renderSniperPitches() {
+  const container = document.getElementById('sniper-pitches-container');
+  if (!container) return;
+
+  const filtered = currentSniperFilter === 'all'
+    ? allSniperPitches
+    : allSniperPitches.filter(p => p.opportunity?.type === currentSniperFilter);
+
+  if (filtered.length === 0) {
+    container.innerHTML = `
+      <div class="card" style="text-align: center; padding: 3rem; color: var(--text-tertiary);">
+        <p style="margin-bottom: 0.5rem; font-size: 1.1rem;">No opportunities found for filter "${currentSniperFilter}"</p>
+        <button class="btn btn-secondary" onclick="runLiveScoutScan()">Click here to run live multi-channel scan</button>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = filtered.map(item => {
+    const opp = item.opportunity || {};
+    const badgeClass =
+      opp.type === 'bounty' ? 'badge-bounty' :
+      opp.type === 'freelance' ? 'badge-freelance' : 'badge-remote';
+
+    const icon =
+      opp.type === 'bounty' ? '💎 BOUNTY' :
+      opp.type === 'freelance' ? '💰 FREELANCE' : '🚀 REMOTE JOB';
+
+    const safeUrl = opp.url ? encodeURI(opp.url) : '#';
+
+    return `
+      <div class="sniper-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.35rem;">
+              <span class="sniper-badge ${badgeClass}">${icon}</span>
+              <span style="font-size: 0.75rem; color: var(--text-tertiary);">${item.createdAt ? new Date(item.createdAt).toLocaleDateString() : 'Just now'}</span>
+            </div>
+            <h3 style="font-size: 1.15rem; font-weight: 600; color: #fff; margin: 0 0 0.25rem;">${escapeHtmlText(opp.title)}</h3>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0;">
+              🏢 <b>${escapeHtmlText(opp.companyOrClient || 'Direct Client')}</b> &bull;
+              💵 <span style="color: var(--accent-apple-green); font-weight: 600;">${escapeHtmlText(opp.budgetOrSalary || 'Competitive')}</span>
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.75rem; padding: 0.4rem 0.8rem; text-decoration: none;">
+              Open Link ↗
+            </a>
+            <button class="btn btn-apple-blue" onclick="launchPersistentApply('${safeUrl}')" style="font-size: 0.75rem; padding: 0.4rem 0.8rem;">
+              Auto-Fill Locally ⚡
+            </button>
+          </div>
+        </div>
+
+        <div style="margin-top: 0.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+            <span style="font-size: 0.74rem; font-weight: 600; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.04em;">
+              📝 Pre-Written Tailored Pitch (Citing Yeshu Tours / RMC ERP / Zupper)
+            </span>
+            <button class="btn-copy-pitch" onclick="copyPitchFromCard(this)">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>Copy Pitch</span>
+            </button>
+          </div>
+          <div class="pitch-box">${escapeHtmlText(item.pitch)}</div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+async function runLiveScoutScan() {
+  const btnText = document.getElementById('btn-run-scout-text');
+  if (btnText) btnText.textContent = "Scanning Reddit, GitHub, WWR, RemoteOK & HN...";
+  showToast("Scanning Reddit, GitHub Bounties, RemoteOK, WWR & Hacker News in real time...", "info", "Multi-Channel Scout");
+
+  try {
+    const res = await fetch('/api/scout/run', { method: 'POST' });
+    const data = await res.json();
+    showToast(data.message || "Hunt cycle initiated in background!", "success", "Scout Dispatched");
+
+    // Poll to refresh pitches after 4s and 10s
+    setTimeout(() => fetchSniperPitches(true), 4000);
+    setTimeout(() => {
+      fetchSniperPitches(true);
+      if (btnText) btnText.textContent = "Run Live Multi-Channel Hunt";
+    }, 10000);
+  } catch (err) {
+    showToast("Error triggering scout: " + err.message, "error", "Scout Error");
+    if (btnText) btnText.textContent = "Run Live Multi-Channel Hunt";
+  }
+}
+
+async function launchPersistentApply(url) {
+  showToast(`Launching local residential Chromium context for ${url}...`, "info", "Local Persistent Playwright");
+  try {
+    const res = await fetch('/api/apply/persistent', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url })
+    });
+    const data = await res.json();
+    if (data.success) {
+      showToast(data.message, "success", "Browser Launched!");
+    } else {
+      showToast(data.error || "Failed to launch persistent context.", "error", "Launch Failed");
+    }
+  } catch (err) {
+    showToast("Error launching persistent context: " + err.message, "error", "Launch Error");
+  }
+}
+
+// ================= BENGALURU LOCAL BUSINESS LEADS ENGINE =================
+
+let allLocalLeads = [];
+
+async function fetchLocalLeads(silent = false) {
+  const container = document.getElementById('local-leads-container');
+  if (!container) return;
+
+  try {
+    const res = await fetch('/api/leads');
+    const data = await res.json();
+    if (data.success && Array.isArray(data.leads)) {
+      allLocalLeads = data.leads;
+
+      const totalEl = document.getElementById('metric-leads-total');
+      const missingEl = document.getElementById('metric-leads-missing');
+
+      if (totalEl) totalEl.textContent = allLocalLeads.length;
+      if (missingEl) missingEl.textContent = allLocalLeads.filter(l => l.websiteStatus === 'MISSING').length;
+
+      renderLocalLeads();
+    }
+  } catch (err) {
+    if (!silent) showToast("Error loading local leads: " + err.message, "error", "Leads Error");
+  }
+}
+
+function renderLocalLeads() {
+  const container = document.getElementById('local-leads-container');
+  if (!container) return;
+
+  if (allLocalLeads.length === 0) {
+    container.innerHTML = `
+      <div class="card" style="text-align: center; padding: 3rem; color: var(--text-tertiary);">
+        <p style="margin-bottom: 0.5rem; font-size: 1.1rem;">No leads in pipeline yet.</p>
+        <button class="btn btn-primary" onclick="refreshLocalLeads()">Scan Bengaluru Niches Now</button>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = allLocalLeads.map(lead => {
+    const statusTag = lead.websiteStatus === 'MISSING'
+      ? `<span class="sniper-badge" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3);">NO WEBSITE</span>`
+      : `<span class="sniper-badge" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3);">OUTDATED SITE</span>`;
+
+    return `
+      <div class="sniper-card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap;">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.35rem;">
+              ${statusTag}
+              <span class="sniper-badge" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3);">${lead.category}</span>
+            </div>
+            <h3 style="font-size: 1.15rem; font-weight: 600; color: #fff; margin: 0 0 0.25rem;">${lead.businessName}</h3>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin: 0;">
+              📍 <b>${lead.locality}</b> &bull; 📞 <b>${lead.phone}</b>
+            </p>
+          </div>
+          <div>
+            <a href="${lead.whatsappDirectLink}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-chat">
+              💬 Open WhatsApp Chat
+            </a>
+          </div>
+        </div>
+
+        <div style="margin-top: 0.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+            <span style="font-size: 0.74rem; font-weight: 600; color: #10b981; text-transform: uppercase;">
+              🎯 ₹8,000 Pitch Offer (Citing yeshutoursandtravels.com)
+            </span>
+            <button class="btn-copy-pitch" onclick="copyPitchFromCard(this)">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>Copy Pitch</span>
+            </button>
+          </div>
+          <div class="pitch-box">${escapeHtmlText(lead.pitchOffer)}</div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+async function refreshLocalLeads() {
+  showToast("Scanning Bengaluru travel operators, clinics and homestays...", "info", "Lead Pipeline");
+  try {
+    const res = await fetch('/api/leads/generate', { method: 'POST' });
+    const data = await res.json();
+    if (data.success) {
+      allLocalLeads = data.leads || [];
+      renderLocalLeads();
+      showToast(`Pipeline updated with ${allLocalLeads.length} Bengaluru prospects!`, "success", "Leads Ready");
+    }
+  } catch (err) {
+    showToast("Error updating leads: " + err.message, "error", "Leads Error");
+  }
+}
+
+function copyPitchFromCard(btn) {
+  const card = btn.closest('.sniper-card');
+  if (!card) return;
+  const pitchBox = card.querySelector('.pitch-box');
+  if (!pitchBox) return;
+
+  const text = pitchBox.textContent.trim();
+  navigator.clipboard.writeText(text).then(() => {
+    btn.classList.add('copied');
+    const label = btn.querySelector('span');
+    if (label) label.textContent = "Copied! ✓";
+    setTimeout(() => {
+      btn.classList.remove('copied');
+      if (label) label.textContent = "Copy Pitch";
+    }, 2000);
+  }).catch(() => {
+    showToast("Failed to copy text automatically.", "warning");
+  });
+}
+
+function escapeHtmlText(str) {
+  if (!str) return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
