@@ -13,35 +13,41 @@ export async function prefillApplication(jobUrl: string, resumePath?: string, op
   const isHeadless = options.headless ?? false;
   const shouldSubmit = options.autoSubmit ?? false;
 
-  console.log(`[FormFiller] Launching browser (headless: ${isHeadless}, autoSubmit: ${shouldSubmit}) for ${jobUrl}`);
+  console.log(`[FormFiller] Launching persistent browser context (headless: ${isHeadless}, autoSubmit: ${shouldSubmit}) for ${jobUrl}`);
 
-  let browser: Browser;
+  const userDataDir = './user-data-dir';
+  let context: BrowserContext;
+
   try {
-    browser = await chromium.launch({
+    context = await chromium.launchPersistentContext(userDataDir, {
       headless: isHeadless,
       channel: "chrome",
-      args: ["--start-maximized", "--disable-blink-features=AutomationControlled"]
+      args: ["--start-maximized", "--disable-blink-features=AutomationControlled"],
+      viewport: null
     });
   } catch {
     try {
-      browser = await chromium.launch({
+      context = await chromium.launchPersistentContext(userDataDir, {
         headless: isHeadless,
         channel: "msedge",
-        args: ["--start-maximized", "--disable-blink-features=AutomationControlled"]
+        args: ["--start-maximized", "--disable-blink-features=AutomationControlled"],
+        viewport: null
       });
     } catch {
-      browser = await chromium.launch({
+      context = await chromium.launchPersistentContext(userDataDir, {
         headless: isHeadless,
-        args: ["--start-maximized", "--disable-blink-features=AutomationControlled"]
+        args: ["--start-maximized", "--disable-blink-features=AutomationControlled"],
+        viewport: null
       });
     }
   }
 
-  const context: BrowserContext = await browser.newContext({
-    viewport: null
-  });
-
-  const page: Page = await context.newPage();
+  let page: Page;
+  if (context.pages().length > 0) {
+    page = context.pages()[0];
+  } else {
+    page = await context.newPage();
+  }
 
   console.log(`[FormFiller] Navigating to: ${jobUrl}`);
   try {
@@ -240,5 +246,5 @@ export async function prefillApplication(jobUrl: string, resumePath?: string, op
     console.log("=================================================================");
   }
 
-  return { browser, context, page };
+  return { browser: context.browser() || context, context, page };
 }
