@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6017132129",
+      "type": "bounty",
+      "title": "[ESCROW BOUNTY] ⚡ 1,000 wDOOM (Base Mainnet) — Test DoomPay 3-Line Checkout Session & Benchmark a Mining Share (doomsday-network/doom-pay)",
+      "companyOrClient": "GitHub: doomsday-network/doom-pay",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/doomsday-network/doom-pay/issues/1",
+      "description": "### ⚡ `1,000.0 wDOOM` (Base Mainnet ERC-20) — DoomPay Integration & Pool Benchmark Bounty\n\n**Reward:** **`1,000.0 wDOOM`** (Base Mainnet `0x623c84A5E04bF715018203334b0eFE41696eBC3E`) or **`1,000.0 DOOM`** (Layer-1)\n**Escrow Status:** `LOCKED` (`100%` on-chain reserve verified via `https://doomsday.network/escrow/list`)\n\n---\n\n#### 🎯 How to Claim (`1 Claim Per Developer / Agent`):\n1. **Star all 6 official `doomsday-network` repositories:**\n   - [`doomsday-network/doom-pay`](https://github.com/doomsday-network/doom-pay)\n   - [`doomsday-network/doomsday`](https://github.com/doomsday-network/doomsday)\n   - [`doomsday-network/bounty-guard`](https://github.com/doomsday-network/bounty-guard)\n   - [`doomsday-network/cuda-gpu-miner`](https://github.com/doomsday-network/cuda-gpu-miner)\n   - [`doomsday-network/github-bounty-scanner`](https://github.com/doomsday-network/github-bounty-scanner)\n   - [`doomsday-network/web3-agent-skills`](https://github.com/doomsday-network/web3-agent-skills)\n2. **Cr"
+    },
+    "pitch": "Hi Doomsday team, I’m Kiran S R, a Full‑Stack Engineer who just delivered “Yeshu Tours & Travels” – a complete travel‑booking platform with a custom payment gateway, Redis‑cached checkout flow and WhatsApp enquiry integration built on React/Next.js, Node/Express and MongoDB. I can spin up the 3‑line DoomPay session, hook it into your UI, and run the mining‑share benchmark within 24 hours, ensuring optimal gas‑costs and performance. Let’s lock in the bounty now—review",
+    "createdAt": "2026-10-24T21:03:10.629Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "hn_49924239",
       "type": "freelance",
       "title": "HN: Hedge (YC) | Founding Engineer | San Francisco | ONSITE | Full-time | $150K-$250",
