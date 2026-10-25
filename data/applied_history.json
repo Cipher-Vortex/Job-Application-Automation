@@ -801,5 +801,26 @@
     "status": "Applied",
     "notes": "Autonomous applied. Verified tech stack match for Backend Engineer, Developer & End-user Experience Platform.",
     "appliedDate": "2026-10-23"
+  },
+  {
+    "company": "gitlab",
+    "jobTitle": "Staff Frontend Engineer",
+    "jobUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8826965002",
+    "source": "greenhouse",
+    "matchScore": 73,
+    "status": "Tailored",
+    "notes": "Matched: React.js, TypeScript, Express.js",
+    "appliedDate": "2026-10-25"
+  },
+  {
+    "id": "app_mvnoxrdc",
+    "company": "GitLab",
+    "jobTitle": "Senior Frontend Engineer",
+    "jobUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8826920002",
+    "source": "greenhouse",
+    "matchScore": 92,
+    "status": "Pending Review",
+    "notes": "ApplyPilot autonomous apply. Tailored resume: Kiran_SR_GitLab_Senior_Frontend_Engineer.pdf",
+    "appliedDate": "2026-10-25"
   }
 ]

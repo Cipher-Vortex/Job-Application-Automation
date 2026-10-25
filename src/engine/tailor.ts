@@ -29,6 +29,7 @@ Instructions:
 2. Calculate a fit score (0 to 100). If < 70, set should_apply to false.
 3. Select the 3 most relevant bullet points from Kiran's real background that align directly with this JD.
 4. Draft a concise 3-paragraph outreach email (under 180 words) addressed to the hiring team. Emphasize relevant real-world experience (e.g., Zupper Commerce, Yeshu Tours, or RMC ERP) matching their stack.
+5. Always include Kiran's verified portfolio link (${TRUTH_PROFILE.candidate.portfolio}) in the signature.
 
 Output strictly valid JSON with this structure:
 {
@@ -104,6 +105,52 @@ ${TRUTH_PROFILE.candidate.email} | ${TRUTH_PROFILE.candidate.phone}`;
 }
 
 export async function tailorApplication(job: JobPosting): Promise<TailoredPitch> {
+  const groqKey = process.env.GROK_API_KEY || process.env.GROQ_API_KEY;
+  if (groqKey && groqKey.startsWith("gsk_")) {
+    try {
+      const prompt = generateTailoringPrompt(job.title, job.company, job.description);
+      const res = await axios.post(
+        "https://api.groq.com/openai/v1/chat/completions",
+        {
+          model: "qwen/qwen3.8-27b",
+          messages: [
+            { role: "system", content: "You are a precise career advisor for Kiran S R. Output strictly valid JSON." },
+            { role: "user", content: prompt }
+          ],
+          response_format: { type: "json_object" },
+          temperature: 0.2,
+          max_tokens: 800
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${groqKey}`,
+            "Content-Type": "application/json"
+          },
+          timeout: 15000
+        }
+      );
+
+      const content = res.data.choices[0]?.message?.content;
+      if (content) {
+        const parsed = JSON.parse(content);
+        let body = parsed.cover_letter_body ?? "";
+        if (!body.includes("cipher-vortex.vercel.app")) {
+          body += `\n\nPortfolio: ${TRUTH_PROFILE.candidate.portfolio}`;
+        }
+        return {
+          fit_score: parsed.fit_score ?? 80,
+          should_apply: parsed.should_apply ?? true,
+          match_reason: parsed.match_reason ?? "LLM verified fit",
+          selected_bullets: parsed.selected_bullets ?? [],
+          cover_letter_body: body,
+          subject_line: parsed.subject_line ?? `Application for ${job.title} - Kiran S R`
+        };
+      }
+    } catch (err: any) {
+      console.warn(`[Tailor] Groq LLM call failed (${err.message}). Trying fallback.`);
+    }
+  }
+
   // If OpenAI API key is available, use it for customized dynamic generation
   if (env.OPENAI_API_KEY) {
     try {
@@ -131,12 +178,16 @@ export async function tailorApplication(job: JobPosting): Promise<TailoredPitch>
       const content = res.data.choices[0]?.message?.content;
       if (content) {
         const parsed = JSON.parse(content);
+        let body = parsed.cover_letter_body ?? "";
+        if (!body.includes("cipher-vortex.vercel.app")) {
+          body += `\n\nPortfolio: ${TRUTH_PROFILE.candidate.portfolio}`;
+        }
         return {
           fit_score: parsed.fit_score ?? 80,
           should_apply: parsed.should_apply ?? true,
           match_reason: parsed.match_reason ?? "LLM verified fit",
           selected_bullets: parsed.selected_bullets ?? [],
-          cover_letter_body: parsed.cover_letter_body ?? "",
+          cover_letter_body: body,
           subject_line: parsed.subject_line ?? `Application for ${job.title} - Kiran S R`
         };
       }

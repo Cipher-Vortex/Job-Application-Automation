@@ -23,7 +23,7 @@ function getLLMClient(): { client: OpenAI; model: string } {
         apiKey: groqKey,
         baseURL: "https://api.groq.com/openai/v1",
       }),
-      model: "openai/gpt-oss-120b",
+      model: "qwen/qwen3.8-27b",
     };
   }
 
@@ -42,7 +42,7 @@ function getLLMClient(): { client: OpenAI; model: string } {
       apiKey: groqKey || "dummy_key",
       baseURL: "https://api.groq.com/openai/v1",
     }),
-    model: "openai/gpt-oss-120b",
+    model: "qwen/qwen3.8-27b",
   };
 }
 
@@ -83,16 +83,16 @@ INSTRUCTIONS:
       messages: [
         {
           role: "system",
-          content: "You are a professional freelance & developer agent who writes succinct, compelling client pitches based strictly on verified credentials.",
+          content: "You are a professional freelance & developer agent who writes succinct, compelling client pitches based strictly on verified credentials. Output ONLY the pitch text, ready to send. No conversational preamble, no markdown headers, and ensure it ends with a complete sentence and link.",
         },
         { role: "user", content: prompt },
       ],
       temperature: 0.6,
-      max_tokens: 300,
+      max_tokens: 600,
     });
 
     const content = response.choices[0]?.message?.content?.trim();
-    if (content) return content;
+    if (content && content.length > 60) return content;
   } catch (err: any) {
     console.warn(`[PitchGenerator] LLM Error (${err.message}). Using fallback template.`);
   }

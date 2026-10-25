@@ -95,3 +95,7 @@ extracted_*.txt
 
 # Allow live scraped real ATS jobs in repository for instant production availability
 !data/live_scraped_jobs.json
+
+# Generated Tailored PDF Resumes
+data/tailored_resumes/*.pdf
+!data/tailored_resumes/.gitkeep

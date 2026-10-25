@@ -7,9 +7,10 @@ const fs = require("node:fs");
 const { TRUTH_PROFILE } = require("../dist/config/truthProfile");
 const { env } = require("../dist/config/env");
 const { scoreJob } = require("../dist/engine/scorer");
-const { generateTailoringPrompt, generateDeterministicTailoredPitch } = require("../dist/engine/tailor");
+const { generateTailoringPrompt, generateDeterministicTailoredPitch, tailorApplication } = require("../dist/engine/tailor");
 const { tracker } = require("../dist/storage/tracker");
 const { fetchGreenhouseJobs, fetchLeverJobs } = require("../dist/discovery/atsScraper");
+const { generateTailoredResumePdf, generateTailoredResumeHtml } = require("../dist/engine/resumeTailorer");
 
 test("Autonomous Job Application System Test Suite", async (t) => {
 
@@ -176,6 +177,106 @@ test("Autonomous Job Application System Test Suite", async (t) => {
     const nonExistentJobs = await fetchGreenhouseJobs("board_that_definitely_does_not_exist_987654");
     assert.ok(Array.isArray(nonExistentJobs), "Returns array on error");
     assert.equal(nonExistentJobs.length, 0, "Returns empty list on 404");
+  });
+
+  await t.test("8. Anti-Dummy & Non-Tech Role Filter Verification", () => {
+    const EXCLUDED_TITLE_KEYWORDS = /\b(pharmacist|pharmacy|nurse|dentist|doctor|medical|dentistry|test issue|\[test\]|driver|warehouse|truck|sales rep|account manager|cashier|tutor|barista)\b/i;
+    const IS_TECH_ROLE = /\b(engineer|developer|programmer|architect|full[\s-]?stack|frontend|backend|web|devops|software|coder|bounty|lead|staff|principal|sdet|tech\s*lead)\b/i;
+
+    // Must be rejected
+    const dummyRoles = [
+      "Specialty Infusion Pharmacists (On-Call After-Hours)",
+      "Pediatric Dentist & Orthodontist",
+      "test issue (Zimb/zimb)",
+      "[test] Dummy Issue for Bot",
+      "Technical Account Manager",
+      "Delivery Truck Driver",
+      "Registered Nurse (ICU)"
+    ];
+
+    for (const role of dummyRoles) {
+      const isRejected = EXCLUDED_TITLE_KEYWORDS.test(role) || !IS_TECH_ROLE.test(role);
+      assert.ok(isRejected, `Role "${role}" should have been rejected as dummy/non-tech.`);
+    }
+
+    // Must be accepted
+    const validRoles = [
+      "Senior Full Stack Engineer",
+      "React Frontend Developer",
+      "Staff Software Engineer - Query Execution",
+      "Full Stack Web3 Engineer (Solidity / TypeScript)",
+      "[ESCROW BOUNTY] Test Checkout Session"
+    ];
+
+    for (const role of validRoles) {
+      const isAccepted = !EXCLUDED_TITLE_KEYWORDS.test(role) && IS_TECH_ROLE.test(role);
+      assert.ok(isAccepted, `Valid tech role "${role}" should have been accepted.`);
+    }
+  });
+
+  await t.test("9. Pending Pitches Quality & Integrity (No Dummy Data)", () => {
+    const pendingFile = path.resolve(process.cwd(), "data/pending_pitches.json");
+    assert.ok(fs.existsSync(pendingFile), "pending_pitches.json exists");
+
+    const pitches = JSON.parse(fs.readFileSync(pendingFile, "utf-8"));
+    assert.ok(Array.isArray(pitches), "pending_pitches is an array");
+    assert.ok(pitches.length > 0, "pending_pitches has live opportunities");
+
+    for (const item of pitches) {
+      const title = item.opportunity.title;
+      const pitch = item.pitch;
+
+      // Verify no dummy titles
+      assert.ok(!/pharmacist|nurse|dentist|test issue/i.test(title), `Found dummy title: ${title}`);
+      assert.ok(!/^HN:\s*Location:/i.test(title), `Found HN job-seeker post instead of job: ${title}`);
+
+      // Verify pitch completeness (not truncated mid-sentence)
+      assert.ok(pitch.length >= 70, `Pitch too short: ${pitch.slice(0, 40)}...`);
+      assert.ok(!pitch.endsWith("..."), `Pitch ends in ellipsis/truncated: ${pitch.slice(-30)}`);
+      assert.ok(!pitch.endsWith("–"), `Pitch ends in dash: ${pitch.slice(-30)}`);
+      assert.ok(!pitch.endsWith("of") && !pitch.endsWith("and") && !pitch.endsWith("the"), `Pitch cut off mid-sentence: ${pitch.slice(-30)}`);
+    }
+  });
+
+  await t.test("10. Live Freelance & JD Pitch Tailoring", async () => {
+    const sampleJD = {
+      id: "live_sample_01",
+      title: "Senior Full Stack React Developer",
+      company: "Modern SaaS",
+      location: "Remote",
+      url: "https://job-boards.greenhouse.io/modernsaas/jobs/123",
+      description: "Looking for an engineer with React, Next.js, Node.js, and Redis caching experience to optimize platform response times.",
+      source: "greenhouse"
+    };
+
+    const tailored = await tailorApplication(sampleJD);
+    assert.ok(tailored.should_apply, "should_apply must be true");
+    assert.ok(tailored.fit_score >= 70, "fit_score must be >= 70");
+    assert.ok(tailored.cover_letter_body.includes("Zupper Commerce") || tailored.cover_letter_body.includes("Yeshu Tours"), "Pitch references candidate's real verified work");
+    assert.ok(tailored.cover_letter_body.includes("cipher-vortex.vercel.app"), "Pitch includes verified portfolio link");
+  });
+
+  await t.test("11. ApplyPilot Engine - Dynamic Tailored Resume PDF Generation", async () => {
+    const resumeOptions = {
+      jobTitle: "Senior Full Stack Engineer",
+      company: "Stripe",
+      description: "We are seeking a Full Stack Engineer proficient in React, TypeScript, Node.js, and Redis caching.",
+      client: "Fintech Platform"
+    };
+
+    // 1. Verify HTML Structure & Tailored Re-prioritization
+    const html = generateTailoredResumeHtml(resumeOptions);
+    assert.ok(html.includes("Kiran S R"), "HTML contains candidate name");
+    assert.ok(html.includes("Stripe"), "HTML contains target company name Stripe");
+    assert.ok(html.includes("Senior Full Stack Engineer"), "HTML contains target title");
+    assert.ok(html.includes("Zupper Commerce"), "HTML contains verified experience");
+    assert.ok(html.includes("Yeshu Tours & Travels"), "HTML contains verified project");
+
+    // 2. Verify PDF Generation
+    const pdfPath = await generateTailoredResumePdf(resumeOptions);
+    assert.ok(fs.existsSync(pdfPath), `Tailored PDF resume was generated at ${pdfPath}`);
+    const stats = fs.statSync(pdfPath);
+    assert.ok(stats.size > 15000, `PDF size is valid (>15KB), got ${stats.size} bytes`);
   });
 
 });

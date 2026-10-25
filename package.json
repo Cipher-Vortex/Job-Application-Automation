@@ -11,6 +11,8 @@
     "dev": "node server/index.js",
     "scout": "npx tsx agent-scout.ts",
     "scout:watch": "npx tsx agent-scout.ts --watch",
+    "apply": "npx tsx src/scripts/apply_pilot.ts",
+    "apply:pilot": "npx tsx src/scripts/apply_pilot.ts",
     "apply:local": "npx tsx src/scripts/run_local_persistent_apply.ts",
     "leads:local": "npx tsx src/scripts/local_business_leadgen.ts",
     "legacy": "python start_all.py",

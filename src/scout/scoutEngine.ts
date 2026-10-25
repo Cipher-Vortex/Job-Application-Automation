@@ -10,6 +10,8 @@ dotenv.config();
 const SEEN_FILE = path.resolve(process.cwd(), "data/seen_opportunities.json");
 
 const KEYWORDS = /\b(react|next\.?js|node|typescript|javascript|laravel|vue|mern|full[\s-]?stack|frontend|backend|web\s*developer|software\s*engineer|tailwind|mongodb|express|bounty)\b/i;
+const EXCLUDED_TITLE_KEYWORDS = /\b(pharmacists?|pharmacy|nurses?|dentists?|doctors?|medical|dentistry|test issue|\[test\]|drivers?|warehouse|trucks?|sales rep|account manager|cashiers?|tutors?|baristas?)\b/i;
+const IS_TECH_ROLE = /\b(engineer|developer|programmer|architect|full[\s-]?stack|frontend|backend|web|devops|software|coder|bounty|lead|staff|principal|sdet|tech\s*lead)\b/i;
 
 export class ScoutEngine {
   private seenIds: Set<string>;
@@ -178,10 +180,14 @@ export class ScoutEngine {
           const id = `gh_bounty_${issue.id}`;
           if (this.seenIds.has(id)) continue;
 
-          this.seenIds.add(id);
-
           const title = issue.title;
           const body = issue.body || "";
+
+          // Exclude test issues, spam, and unfunded items
+          if (EXCLUDED_TITLE_KEYWORDS.test(title) || /test issue/i.test(title) || /not yet funded/i.test(body)) continue;
+
+          this.seenIds.add(id);
+
           const repoUrl = issue.repository_url || "";
           const repoName = repoUrl.split("/").slice(-2).join("/");
 
@@ -225,6 +231,9 @@ export class ScoutEngine {
         if (this.seenIds.has(id)) continue;
 
         const role = job.position || "";
+        // Strict anti-dummy & non-tech filter
+        if (EXCLUDED_TITLE_KEYWORDS.test(role) || !IS_TECH_ROLE.test(role)) continue;
+
         const tags = Array.isArray(job.tags) ? job.tags.join(" ") : "";
         const combined = `${role} ${tags}`;
 
@@ -263,6 +272,9 @@ export class ScoutEngine {
         if (this.seenIds.has(id)) continue;
 
         const role = job.title || "";
+        // Strict anti-dummy & non-tech filter
+        if (EXCLUDED_TITLE_KEYWORDS.test(role) || !IS_TECH_ROLE.test(role)) continue;
+
         const desc = job.excerpt || job.description || "";
         const combined = `${role} ${desc}`;
 
@@ -336,6 +348,8 @@ export class ScoutEngine {
             position = parts.slice(1).join(":").trim();
           }
 
+          if (EXCLUDED_TITLE_KEYWORDS.test(position) || !IS_TECH_ROLE.test(position)) continue;
+
           const desc = (descMatch ? descMatch[1] : "").replace(/<[^>]+>/g, " ").slice(0, 1000);
           const combined = `${rawTitle} ${desc}`;
 
@@ -379,12 +393,24 @@ export class ScoutEngine {
           if (this.seenIds.has(id)) continue;
 
           const text = (hit.comment_text || "").replace(/<[^>]+>/g, " ");
-          if (KEYWORDS.test(text) && /(remote|contract|full.?time)/i.test(text)) {
-            this.seenIds.add(id);
+          const lines = text.split("\n").map((l: string) => l.trim()).filter(Boolean);
+          const firstLine = lines[0] || "";
 
-            // First line or snippet as title
-            const lines = text.split("\n").map((l: string) => l.trim()).filter(Boolean);
-            const titleSnippet = lines[0] ? lines[0].slice(0, 80) : "Hacker News Hiring Posting";
+          // Exclude applicant resume submissions (e.g. "Location: ...", "willing to relocate", "seeking")
+          const isJobSeeker = /^location:/i.test(firstLine) ||
+                              /\b(seeking|looking for work|looking for a role|willing to relocate|r[eé]sum[eé]|hire me|available for hire)\b/i.test(text);
+          if (isJobSeeker) continue;
+
+          // Exclude comments that are just forum discussions without hiring intent
+          const hasHiringIntent = /\b(we're hiring|we are hiring|is hiring|hiring|open positions?|apply at|apply:|join our team)\b/i.test(text) || firstLine.includes("|");
+          if (!hasHiringIntent) continue;
+
+          if (KEYWORDS.test(text) && /(remote|contract|full.?time)/i.test(text)) {
+            const titleSnippet = firstLine ? firstLine.slice(0, 80) : "Hacker News Hiring Posting";
+            if (EXCLUDED_TITLE_KEYWORDS.test(titleSnippet)) continue;
+            if (/nobody I ever|random HN|I disagree|what\?/i.test(titleSnippet)) continue;
+
+            this.seenIds.add(id);
 
             discovered.push({
               id,

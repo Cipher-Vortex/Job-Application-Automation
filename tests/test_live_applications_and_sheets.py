@@ -103,6 +103,13 @@ class TestLiveApplicationsAndSheets(unittest.IsolatedAsyncioTestCase):
             "url": "https://boards.greenhouse.io/cloudflare/jobs/8097321"
         }
 
+        import tempfile
+        temp_csv = tempfile.NamedTemporaryFile(mode="w+", delete=False, suffix=".csv")
+        temp_csv.close()
+        os.remove(temp_csv.name)
+        service.csv_export_path = temp_csv.name
+        service._ensure_csv_headers()
+
         with patch("urllib.request.urlopen") as mock_urlopen:
             mock_resp = MagicMock()
             mock_resp.getcode.return_value = 200

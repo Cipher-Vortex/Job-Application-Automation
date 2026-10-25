@@ -9,8 +9,8 @@
       "url": "https://weworkremotely.com/remote-jobs/tebra-senior-software-engineer",
       "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;Tebra only initiates contact with candidates via email from an official Tebra email address (@&lt;a class=\"c-link\" href=\"http://tebra.com/\"&gt;tebra.com&lt;/a&gt;, @&lt;a class=\"c-link\" href=\"http://patientpop.com/\"&gt;patientpop.com&lt;/a&gt;, or @&lt;a class=\"c-link\" href=\"http://kareo.com/\"&gt;kareo.com&lt;/a&gt;) or through our applicant tracking system, Greenhouse.&amp;nbsp;We will only ask you to provide sensitive personal information through our official application portal — not via social media or text message. We do not conduct interviews via instant messaging.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Position: &lt;strong&gt;Senior Software Engineer&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Location: Corona Del Mar, CA&lt;/p&gt;\n&lt;p&gt;Responsibilities: Analyze information to determine, recommend, and provide innovative solutions to complex business problems rel"
     },
-    "pitch": "Hi Tebra Team,\n\nI’m Kiran S R, a Full‑Stack Engineer who delivers enterprise‑grade solutions at speed. My recent work on **RMC ERP**—an end‑to‑end Laravel/Vue 3 Inertia",
-    "createdAt": "2026-10-25T08:37:55.539Z",
+    "pitch": "Hi, I’m Kiran S R, a Senior Full Stack Engineer specializing in scalable, high-performance web applications. Your need for innovative solutions to complex business problems aligns perfectly with my recent work on RMC ERP, where I architected a robust Laravel and Vue 3 system handling real-time sensor feeds and intricate dispatch workflows. I bring deep expertise in React, TypeScript, and Node.js, with a proven track record of optimizing page loads by 25% and implementing Redis caching for seamless user experiences. I am ready to leverage this technical depth to deliver immediate, high-impact results for Tebra’s engineering team. Let’s connect to discuss how I can contribute to your next critical release. You can view my full portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-25T10:23:50.160Z",
     "deliveredToTelegram": true
   },
   {
@@ -23,22 +23,22 @@
       "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
       "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n&lt;/p&gt;\n\n&lt;p&gt;PlanetScale is growing rapidly and reinventing the database space. The PlanetScale platform delivers a fully managed, multi-cloud Postgres service designed for the most demanding production workloads. We handle the complexity of provisioning, scaling, replication, and failover - so engineering teams can focus on building their products.&lt;/p&gt;\n&lt;p&gt;Our customers entrust us with their most precious digital asset, their data, so the stakes couldn't be higher. We're looking for a Software Engineer to join our Postgres engineering team and help us build a world-class managed Postgres offering.&lt;/p&gt;\n&lt;h3&gt;What's the job to be done?&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;You will design and build the control plane that provisions, scales, and heals Postgres clusters with minimal customer-visible downtime.&lt;/li&gt;\n&lt;li&gt;You will build and maintain high availability, disaster recovery, and data"
     },
-    "pitch": "Kiran S R here—a Full‑Stack Engineer who builds resilient, high‑throughput systems that stay online under heavy load. In “Yeshu Tours & Travels” I designed a full‑scale booking engine with a customer portal, admin dashboard, Redis‑",
-    "createdAt": "2026-10-25T08:37:54.261Z",
+    "pitch": "Subject: Software Engineer Application: PlanetScale Postgres Control Plane\n\nHi PlanetScale Team,\n\nI am Kiran S R, a Full Stack Engineer specializing in building resilient, high-availability systems. Your need for a robust control plane to provision and heal Postgres clusters aligns perfectly with my experience engineering complex enterprise workflows.\n\nAt RMC ERP, I architected a Laravel and Vue 3 platform handling real-time sensor feeds and critical dispatch operations, ensuring zero-downtime data integrity under heavy load. Additionally, my work on Yeshu Tours & Travels involved implementing Redis caching to optimize performance for a high-traffic booking engine. I am eager to bring this same focus on reliability, scalability, and minimal customer-visible downtime to your Postgres engineering team.\n\nI am ready to contribute to your multi-cloud infrastructure immediately. Please review my work at https://cipher-vortex.vercel.app.\n\nBest regards,\nKiran S R",
+    "createdAt": "2026-10-25T10:23:49.325Z",
     "deliveredToTelegram": true
   },
   {
     "opportunity": {
-      "id": "gh_bounty_6018782156",
-      "type": "bounty",
-      "title": "[STEAM VAULT] 🎮 Exchange 100,000 DOOM ($wDOOM) for a $10 Steam Digital Gift Card! (10 / 10 Available — $100 USD Vault) (doomsday-network/doom-pay)",
-      "companyOrClient": "GitHub: doomsday-network/doom-pay",
-      "budgetOrSalary": "$10",
-      "url": "https://github.com/doomsday-network/doom-pay/issues/4",
-      "description": "### 🎮 DoomVault — Redeem `100,000 DOOM` (`$wDOOM`) for a `$10 USD` Steam Digital Gift Card!\n\n**Vault Inventory:** 🟢 **`10 / 10 Cards Available` (`$100 USD` Total Vault)**\n**Exchange Rate:** **`100,000.0 DOOM` (Layer-1) or `100,000.0 wDOOM` (Base Mainnet)** = **`1x $10.00 USD Steam Digital Gift Card Code`**\n**Limit:** `1` redemption per verified GPU miner / GitHub developer (`10` total redemptions available).\n\n---\n\n### ⚡ How It Works (Mine Idle on Your Gaming PC $\\to$ Buy Steam Games)\n\n1. **Accumulate `100,000 DOOM` (or `wDOOM` on Base Mainnet):**\n   - **Mine with your GPU (`0% Pool Fee`):** Download **[`Doomsday.exe`](https://doomsday.network/download/desktop)** or run `python mine_pool.py --wallet YOUR_DOOM_ADDRESS` at **[`https://doomsday.network`](https://doomsday.network)** while your gaming PC is idle.\n   - **Or Top Up on Uniswap v3 (Base Mainnet):** Swap `ETH` $\\to$ `wDOOM` (`0x623c84A5E04bF715018203334b0eFE41696eBC3E`) on **[Uniswap Base Mainnet](https://app.uniswap.org/swap?c"
+      "id": "him_undefined",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Privacy",
+      "companyOrClient": "Mozilla",
+      "budgetOrSalary": "$53k - $71k",
+      "url": "https://himalayas.app/companies/mozilla/jobs/senior-software-engineer-privacy-2573878757?utm_source=api",
+      "description": "Why Mozilla? Mozilla Corporation is the non-profit-backed technology company that has shaped the internet for the better over the last 25 years."
     },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who built “Yeshu Tours & Travels” – a complete booking engine with a secure admin portal, Redis‑cached transactions and third‑party integrations (WhatsApp, payment APIs). I can instantly set up a",
-    "createdAt": "2026-10-24T23:31:23.487Z",
+    "pitch": "Hi Mozilla team,\n\nAs a Full Stack Engineer specializing in TypeScript and Node.js, I am excited to apply for the Senior Software Engineer, Privacy role. My experience building secure, high-performance systems aligns perfectly with Mozilla’s mission. For Zupper Commerce, I engineered 20+ reusable React components and optimized frontend performance by 25% through advanced memoization and code splitting, demonstrating the precision and user-centric focus required for privacy-focused tooling. I am ready to leverage my proficiency in React, Next.js, and REST APIs to deliver immediate value to your privacy initiatives.\n\nPlease review my work at https://cipher-vortex.vercel.app to see how I can contribute.\n\nBest regards,\nKiran S R",
+    "createdAt": "2026-10-25T10:23:48.420Z",
     "deliveredToTelegram": true
   },
   {
@@ -51,8 +51,36 @@
       "url": "https://github.com/doomsday-network/doom-pay/issues/1",
       "description": "### ⚡ `1,000.0 wDOOM` (Base Mainnet ERC-20) — DoomPay Integration & Pool Benchmark Bounty\n\n**Reward:** **`1,000.0 wDOOM`** (Base Mainnet `0x623c84A5E04bF715018203334b0eFE41696eBC3E`) or **`1,000.0 DOOM`** (Layer-1)\n**Escrow Status:** `LOCKED` (`100%` on-chain reserve verified via `https://doomsday.network/escrow/list`)\n\n---\n\n#### 🎯 How to Claim (`1 Claim Per Developer / Agent`):\n1. **Star all 6 official `doomsday-network` repositories:**\n   - [`doomsday-network/doom-pay`](https://github.com/doomsday-network/doom-pay)\n   - [`doomsday-network/doomsday`](https://github.com/doomsday-network/doomsday)\n   - [`doomsday-network/bounty-guard`](https://github.com/doomsday-network/bounty-guard)\n   - [`doomsday-network/cuda-gpu-miner`](https://github.com/doomsday-network/cuda-gpu-miner)\n   - [`doomsday-network/github-bounty-scanner`](https://github.com/doomsday-network/github-bounty-scanner)\n   - [`doomsday-network/web3-agent-skills`](https://github.com/doomsday-network/web3-agent-skills)\n2. **Cr"
     },
-    "pitch": "Hi Doomsday team, I’m Kiran S R, a Full‑Stack Engineer who just delivered “Yeshu Tours & Travels” – a complete travel‑booking platform with a custom payment gateway, Redis‑cached checkout flow and WhatsApp enquiry integration built on React/Next.js, Node/Express and MongoDB. I can spin up the 3‑line DoomPay session, hook it into your UI, and run the mining‑share benchmark within 24 hours, ensuring optimal gas‑costs and performance. Let’s lock in the bounty now—review",
-    "createdAt": "2026-10-24T21:03:10.629Z",
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to execute this DoomPay bounty immediately. My performance-driven approach is proven by my work on Zupper Commerce, where I optimized React components to cut page load times by 25% through memoization and code splitting. I bring this same efficiency to integrating the 3-line checkout session and benchmarking mining shares, ensuring a seamless, high-performance implementation for the doomsday-network repo. I am prepared to submit the required PR and complete the integration steps today to secure your project’s technical standards. Let’s get this live. View my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-25T10:23:47.575Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6018782156",
+      "type": "bounty",
+      "title": "[STEAM VAULT] 🎮 Exchange 100,000 DOOM ($wDOOM) for a $10 Steam Digital Gift Card! (10 / 10 Available — $100 USD Vault) (doomsday-network/doom-pay)",
+      "companyOrClient": "GitHub: doomsday-network/doom-pay",
+      "budgetOrSalary": "$10",
+      "url": "https://github.com/doomsday-network/doom-pay/issues/4",
+      "description": "### 🎮 DoomVault — Redeem `100,000 DOOM` (`$wDOOM`) for a `$10 USD` Steam Digital Gift Card!\n\n**Vault Inventory:** 🟢 **`10 / 10 Cards Available` (`$100 USD` Total Vault)**\n**Exchange Rate:** **`100,000.0 DOOM` (Layer-1) or `100,000.0 wDOOM` (Base Mainnet)** = **`1x $10.00 USD Steam Digital Gift Card Code`**\n**Limit:** `1` redemption per verified GPU miner / GitHub developer (`10` total redemptions available).\n\n---\n\n### ⚡ How It Works (Mine Idle on Your Gaming PC $\\to$ Buy Steam Games)\n\n1. **Accumulate `100,000 DOOM` (or `wDOOM` on Base Mainnet):**\n   - **Mine with your GPU (`0% Pool Fee`):** Download **[`Doomsday.exe`](https://doomsday.network/download/desktop)** or run `python mine_pool.py --wallet YOUR_DOOM_ADDRESS` at **[`https://doomsday.network`](https://doomsday.network)** while your gaming PC is idle.\n   - **Or Top Up on Uniswap v3 (Base Mainnet):** Swap `ETH` $\\to$ `wDOOM` (`0x623c84A5E04bF715018203334b0eFE41696eBC3E`) on **[Uniswap Base Mainnet](https://app.uniswap.org/swap?c"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. I can deliver the required code implementation or integration for the DoomVault project with immediate turnaround. My work on Zupper Commerce, where I optimized React components to reduce page load times by 25%, proves my ability to build efficient, scalable frontend solutions that handle complex data flows. I am ready to contribute to your GitHub repository right now to ensure seamless functionality and user experience. Let’s get this bounty completed quickly and effectively. You can review my recent work and credentials here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-25T10:23:46.741Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "test_opp_01",
+      "type": "remote_job",
+      "title": "Senior Full Stack Engineer",
+      "companyOrClient": "Linear",
+      "budgetOrSalary": "140k-180k USD",
+      "url": "https://linear.app",
+      "description": "React and Node role"
+    },
+    "pitch": "Hi Linear team, I am Kiran S R, Full Stack Engineer specializing in React and TypeScript. Check my work: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-25T10:20:27.414Z",
     "deliveredToTelegram": true
   },
   {
@@ -67,34 +95,6 @@
     },
     "pitch": "Kiran S R here – a full‑stack engineer who has built production‑grade platforms from zero to launch. At Yeshu Tours & Travels I delivered a complete travel‑booking engine: a React/Next.js customer portal, an Express/Node admin dashboard, Redis‑backed caching, and WhatsApp API integration, all running reliably for thousands of daily users. My expertise in TypeScript, React, API design, and data‑",
     "createdAt": "2026-10-24T17:50:07.643Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_49924327",
-      "type": "freelance",
-      "title": "HN: Solace Health | Multiple Engineering Roles | REMOTE (US) | Full-time | No visa s",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49924327",
-      "description": "Solace Health | Multiple Engineering Roles | REMOTE (US) | Full-time | No visa sponsorship offered We&#x27;re hiring Typescript Engineers (full-stack, backend, and platform) on all our core groups. We&#x27;re Solace Health. In 4.5 years, we&#x27;ve provided free healthcare advocacy to over 200K patients on Medicare, and just begun opening access to everyone in the US. We exist to make sure nobody in the US has to navigate their healthcare journey alone. We hit Unicorn status after our February Series-C led by IVP, bringing us to $207M raised and a $1B valuation. Compensation and benefits are highly competitive and include equity. Open Roles - Senior Full Stack Engineer ($150k-$200k)\n- Senior Backend Engineer ($150k-$200k)\n- Staff Software Engineer ($200k-$225k, Fullstack or Backend lean)\n- Senior Platform Engineer ($150k-$175k)\n- Technical Lead ($200k-$230k, player&#x2F;coach people managers) Tech Stack\nTypescript with ReactJS and NodeJS plus NestJS, PostgreSQL, GCP, SQL, TypeORM, shad"
-    },
-    "pitch": "Hi, I",
-    "createdAt": "2026-10-24T17:50:01.518Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_49924430",
-      "type": "freelance",
-      "title": "HN: Location: Dhaka, Bangladesh (flexible with US&#x2F;EU overlap) Remote: Yes, remo",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49924430",
-      "description": "Location: Dhaka, Bangladesh (flexible with US&#x2F;EU overlap) Remote: Yes, remote only Willing to relocate: No Technologies: TypeScript, Python, Next.js, Node.js, PostgreSQL, Supabase, Redis, OpenAI &amp; Gemini APIs, RAG, AI agents, MCP, Claude Code, n8n, Clay, Apollo Résumé&#x2F;CV:  https:&#x2F;&#x2F;shihabcodes.github.io&#x2F;resume.pdf  Email: shihabcodes@gmail.com Portfolio:  https:&#x2F;&#x2F;shihabcodes.github.io  Most early teams hire one person to build the AI features and another to find customers for them. I do both. Build side: Cogniflow AI (open source, 26 stars) is a RAG app that answers questions over YouTube, podcasts and PDFs, with citations that jump to the exact second of the video. DevChat is real-time chat on Supabase with row-level security checked by a 37-case test suite. I&#x27;m a backend intern at Springer Capital (US) on Node.js&#x2F;Python services. Sell side: I research who&#x27;s ready to buy (fresh funding, hiring, live product) and turn it into outboun"
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"HN: Location: Dhaka, Bangladesh (flexible with US&#x2F;EU overlap) Remote: Yes, remo\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:49:55.504Z",
     "deliveredToTelegram": false
   },
   {
@@ -141,20 +141,6 @@
   },
   {
     "opportunity": {
-      "id": "hn_49929994",
-      "type": "freelance",
-      "title": "HN: Location: Austria, EU",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49929994",
-      "description": "       Location: Austria, EU\n    Remote: Yes, US&#x2F;EU&#x2F;UK&#x2F;Global\n    Technologies: Rust, Python, Go, Haskell, C++, TypeScript, JS, React, K8s, PHP, ...\n    Code: https:&#x2F;&#x2F;github.com&#x2F;cheater\n    Résumé&#x2F;CV: ask\n    Email: damianjobsites+hn@gmail.com\n  \nAI-native Senior Software Engineer with 10+ years of hands-on experience building difficult systems in AI, fintech, high-performance APIs and crypto. • Part of original Tezos launch team - blockchain protocol and cryptography • Built an LLM start to end at Primer.ai - incl algo, training&#x2F;backfill infra, production code, deployment. • High-perf systems eg in Rust and Python; latency and throughput improvements of up to 10-1000x. • Fintech: Low-latency&#x2F;kernel-bypass networking, FIX, MEV • Crypto: EVM, Solidity, DAML, and Solana contracts and dApps, ... • Dozens of infosec audits on crypto codebases (eg Solana), secure gov facilities, defense • Contrib to books on Rust, Haskell, and other resources Str"
-    },
-    "pitch": "Hi Damian, I’m Kiran S R, a Full‑Stack & Front‑End Engineer who ships production‑grade React/TypeScript solutions at speed. On the Zupper Commerce platform I built 20+ reusable React components, introduced memoization and code‑splitting, and cut page‑load times by ~25%—exactly the performance focus you need for a",
-    "createdAt": "2026-10-24T17:49:30.108Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
       "id": "hn_49934638",
       "type": "freelance",
       "title": "HN: Fredrin | Forward Deployed Engineers | Los Angeles, CA | REMOTE | $150k-$250k an",
@@ -165,20 +151,6 @@
     },
     "pitch": "Hi Fredrin team, I’m Kiran S R, a Full‑Stack Engineer with deep TypeScript expertise and extensive production experience. My work on **Zupper Commerce** involved building 20+ reusable React components, optimizing bundle size by 25% through memoization and code‑splitting, and integrating CI pipelines that made the codebase",
     "createdAt": "2026-10-24T17:49:22.029Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_49938088",
-      "type": "freelance",
-      "title": "HN: Location: Berkeley &#x2F; San Francisco, California. Remote: Yes. Open to remote",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49938088",
-      "description": "Location: Berkeley &#x2F; San Francisco, California. Remote: Yes. Open to remote and hybrid&#x2F;on-site roles. Willing to relocate: No. Technologies: Product management; AI-assisted coding exposure across: LLMs, local inference, Python, TypeScript&#x2F;React, Swift&#x2F;SwiftUI, APIs&#x2F;integrations, automation, and HITL systems. Résumé&#x2F;CV:  https:&#x2F;&#x2F;mmt510.com&#x2F;mason_thompson_mmt510_resume.pdf  LinkedIn:  https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;mmt510  Email: mason.thompson@berkeley.edu Portfolio: mmt510.com Pitch: Technical product manager and AI builder. Solid pre-AI SaaS experience in HRIS health insurance platforms Zenefits and Ease. I&#x27;ve leaned hard into generative AI across a broad range of domains, including local LLM infrastructure, candidate-side hiring software, AI transcription, voice&#x2F;agent systems, and human-in-the-loop tools. Comfortable working with code generation technologies and building. Most useful feature I&#x27;ve built: résu"
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"HN: Location: Berkeley &#x2F; San Francisco, California. Remote: Yes. Open to remote\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:49:13.854Z",
     "deliveredToTelegram": false
   },
   {
@@ -249,20 +221,6 @@
     },
     "pitch": "Hi Tivly Team,\n\nI’m Kiran S R, a Full‑Stack Engineer with a track record of designing and scaling high‑performance platforms. On the “Yeshu Tours & Travels” project I built a complete travel‑booking engine—customer portal",
     "createdAt": "2026-10-24T17:48:43.109Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_49939178",
-      "type": "freelance",
-      "title": "HN: Location: Edmonton, Canada",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49939178",
-      "description": "Location: Edmonton, Canada\nRemote: Yes\nWilling to Relocate: Yes, within Canada\nTechnologies: C++, Rust, Kafka, TypeScript, Express.js, C#, React, PostgreSQL, KDB+\nRésumé&#x2F;CV:  https:&#x2F;&#x2F;www.mitul.codes&#x2F;resume.pdf \nEmail: mituldhawan154@gmail.com\nI’m a software engineer who enjoys building fast, reliable systems and solving challenging technical problems.\nMy experience ranges from performance-sensitive trading and backend systems in C++ and Rust to distributed systems, Kafka pipelines, APIs, and full-stack development. I’ve also built projects such as a CPU emulator from the ground up and enjoy working close to the systems level when performance matters.\nI’m comfortable working across the stack, whether that means optimizing backend infrastructure, designing APIs with TypeScript and Express.js, working with databases and messaging systems, or solving lower-level performance problems.\nI care about writing clean, maintainable code, learning quickly, and working with teams"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer",
-    "createdAt": "2026-10-24T17:48:36.797Z",
     "deliveredToTelegram": false
   },
   {
@@ -351,20 +309,6 @@
   },
   {
     "opportunity": {
-      "id": "hn_49954494",
-      "type": "freelance",
-      "title": "HN: Nobody I ever worked with ever said anything even remotely close to that first p",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49954494",
-      "description": "Nobody I ever worked with ever said anything even remotely close to that first paragraph. &quot;Full stack should be effortless&quot;? What? This is definitely not coming from anyone other than two groups: random HN people with an axe to grind, or people trying to diminish the value of the profession. Hiring for web is difficult, salaries are historically good, people complain about complexities, including yourself: &quot;quite complex&quot;, &quot;super complex&quot;, &quot;nobody has a full picture&quot;. Nevertheless: React proves that it&#x27;s not effortless. There are complexities in there and kicking and screaming saying &quot;it was supposed to be easy!!!&quot; won&#x27;t change the situation. &quot;It should be simple&quot; yeah Crypto should be simple as well, so there are no bugs. But it&#x27;s not. Maybe learn to value other people&#x27;s jobs."
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack & Frontend Engineer who turns complex web challenges into reliable products on day one. My work on **Yeshu Tours & Travels**—a complete travel‑booking engine with a customer portal, admin dashboard, Redis caching, and WhatsApp integration—demonstrates end‑to‑end expertise in React, Next.js, Node/Express, TypeScript and scalable architecture. I can deliver clean, performant code, set up robust APIs, and ship a production‑ready feature set within 48 hours. Let’s discuss how I can bring the same precision and speed to your project. View my portfolio: https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-24T17:47:51.311Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
       "id": "hn_49964448",
       "type": "freelance",
       "title": "HN: ALBERT | REMOTE ALMOST ANYWHERE IN THE WORLD| Hiring principal and distinguished",
@@ -375,34 +319,6 @@
     },
     "pitch": "Hi there,\n\nI saw your requirement for \"HN: ALBERT | REMOTE ALMOST ANYWHERE IN THE WORLD| Hiring principal and distinguished\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
     "createdAt": "2026-10-24T17:47:45.042Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_49967347",
-      "type": "freelance",
-      "title": "HN: Location: Poland, Europe Remote: Yes (11 YoE working remotely, EST&#x2F;PST time",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49967347",
-      "description": "Location: Poland, Europe Remote: Yes (11 YoE working remotely, EST&#x2F;PST timezones OK too) Willing to relocate: For the right opportunity Technologies: Ruby on Rails (15 YoE), SQL, Redis, Sidekiq, Elasticsearch, Memcached, Heroku, AWS, K8s, Datadog, Javascript (15 YoE), Typescript, React, Vue Skills: designing and implementing web apps across the entire stack, high-traffic optimizations, security, payment processing architecture and financial integrations, leading remote teams, hiring Résumé&#x2F;CV:  https:&#x2F;&#x2F;cutt.ly&#x2F;mariusz-rails  Email: in the resume Available full or part time Hi, I&#x27;m Mariusz. I have 15 years of experience building high scale apps using Ruby on Rails with startups from US, Canada, Europe, Australia and Taiwan. Most recently, I&#x27;ve been a part of a hybrid team working on a content creators platform at Playboy. I&#x27;m interested in both tech lead and senior&#x2F;staff level individual contributor roles alike and I&#x27;m open to work with "
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer with 11 years of remote‑first experience delivering high‑traffic, secure web apps. My recent work on **Yeshu Tours & Travels** (yeshutoursandtravels.com) built a full‑scale booking engine, admin dashboard, Redis‑cached APIs and WhatsApp‑driven enquiries—cutting response times by 30% and handling thousands of concurrent users. I’m fluent in React, Next.js, TypeScript, Node/Express and Redis,",
-    "createdAt": "2026-10-24T17:47:38.763Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_49982648",
-      "type": "freelance",
-      "title": "HN: Empower Pharmacy is hiring engineers to work on event-driven, distributed system",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49982648",
-      "description": "Empower Pharmacy is hiring engineers to work on event-driven, distributed systems that actually run a real-world business (regulated pharma), not ad tech or yet another CRUD SaaS. We just filled one Staff Engineer role directly from my last LinkedIn post (thanks to everyone who shared&#x2F;applied). Now we’re expanding the team: - 1 Staff Software Engineer\n- 4 Senior Software Engineers\n- 4 Software Engineers (new grad &#x2F; early career) All roles are US-based (remote within the US). We’re a small team owning the core platforms that run manufacturing, operations, and logistics. A lot of the work is greenfield or foundational: distributed systems, workflow orchestration, reliability&#x2F;observability, and making it all scale in a domain where correctness actually matters. Tech stack: Java &#x2F; Spring Boot, React &#x2F; Next.js, Azure (Service Bus, Kubernetes), SQL Server. Event-driven, service-oriented architecture at enterprise scale. We use AI-assisted development heavily in the w"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who builds production‑grade, event‑driven platforms. My recent work on **Yeshu Tours & Travels** delivered a complete travel‑booking engine with a customer portal, admin dashboard, Redis‑based caching, and WhatsApp‑triggered workflows—handling real‑time bookings and high‑volume traffic while guaranteeing data integrity. I’ve architected the same stack you use (React/Next.js front‑end, Node/Express back‑end, Redis, REST APIs) and can hit the ground running on your distributed, Azure‑Kubernetes services. Let’s",
-    "createdAt": "2026-10-24T17:47:32.380Z",
     "deliveredToTelegram": false
   },
   {
@@ -543,20 +459,6 @@
     },
     "pitch": "Hi Lithic team, I’m Kiran S R, a Full‑Stack Engineer who builds high‑throughput, secure systems. My work on “Yeshu Tours & Travels” delivered a complete travel‑booking engine with a customer portal, admin dashboard, Redis‑backed caching, and real‑time WhatsApp integration—handling thousands of concurrent transactions",
     "createdAt": "2026-10-24T17:46:26.789Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_salesloft-principal-software-engineer-ai",
-      "type": "remote_job",
-      "title": "Principal Software Engineer, AI",
-      "companyOrClient": "Salesloft",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/salesloft-principal-software-engineer-ai",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States, Remote\n&lt;/p&gt;\n\n&lt;p&gt;&lt;span&gt;&lt;strong&gt;Job Title:&lt;/strong&gt; Principal Software Engineer, AI&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;&lt;strong&gt;Location&lt;/strong&gt;: Remote - US&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;Salesloft is building the next era of enterprise revenue — one where teams make confident decisions powered by AI and real signals. By combining our scale, insights, and AI innovation, we're building the industry's first Predictive Revenue System, enabling humans and AI to work together to make smarter decisions and drive consistent growth.&lt;/p&gt;\n&lt;p&gt;With thousands of customers using our platforms every day, we have an unmatched view into how revenue is actually won — the Revenue Context that reveals what happens, when, and with what outcome. This gives us a unique opportunity to transform an entire category and set a new benchmark for how modern revenue teams o"
-    },
-    "pitch": "Kiran S R here—a full‑stack engineer who turns complex, data‑rich systems into fast, reliable products. At RMC ERP I led the",
-    "createdAt": "2026-10-24T17:46:21.441Z",
     "deliveredToTelegram": false
   },
   {
@@ -799,34 +701,6 @@
   },
   {
     "opportunity": {
-      "id": "wwr_oportun-senior-software-engineer-r14285",
-      "type": "remote_job",
-      "title": "Senior Software Engineer (R14285)",
-      "companyOrClient": "Oportun",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - US\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h2&gt;&lt;span&gt;Who We Are&lt;/span&gt;&lt;/h2&gt;\n&lt;p&gt;&lt;span&gt;Oportun (Nasdaq: OPRT) is a mission-driven financial services company that puts its members' financial goals within reach. With intelligent borrowing, savings, and budgeting capabilities, Oportun empowers members with the confidence to build a better financial future. Since inception, Oportun has provided more than $22.7 billion in responsible and affordable credit, saved its members more than $2.5 billion in interest and fees, and helped its members set aside an average of more than $1,800 annually.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;span&gt;The Opportunity&lt;/span&gt;&lt;/h2&gt;\n&lt;p&gt;&lt;span&gt;The Engineering Ecosystem Org exists to help engineers deliver member value with high speed and high quality. As a Senior Software Engineer, you will design, build, and operate scalable"
-    },
-    "pitch": "Hi Oportun Team, I’m Kiran S R, a Full‑Stack Engineer who builds high‑throughput, secure platforms that ship fast and scale effortlessly. My recent work on **Yeshu Tours & Travels** delivered a full‑stack travel‑booking engine with a customer portal, admin dashboard, Redis‑backed caching, and WhatsApp‑API integration—handling thousands of concurrent bookings while cutting response times by 30%. I bring deep expertise in React, Next.js, TypeScript, Node/Express, and",
-    "createdAt": "2026-10-24T17:44:45.979Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_bondex-fullstack-web3-engineer-solidity-rust-typescript",
-      "type": "remote_job",
-      "title": "Fullstack Web3 Engineer (Solidity / Rust / Typescript)",
-      "companyOrClient": "bondex",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/bondex-fullstack-web3-engineer-solidity-rust-typescript",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6491/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - Americas, El Salvador\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://bondex.app\"&gt;http://bondex.app&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;div class=\"jp-text\"&gt;\n&lt;div&gt;\n&lt;p&gt;We're recruiting a &lt;strong&gt;Web 3 Fullstack Developer (Solidity / Rust / Typescript)&lt;/strong&gt; who is looking for a new challenge and ready to join an exciting new chapter to expand our clients product value proposition in the DeFi Web3 realm.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;The client is is revoluzionezing financial interoperability and the &lt;strong&gt;requirements&lt;/strong&gt; for the role are:&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Minimum 4 years of professional experience in WEB development; preferably wi"
-    },
-    "pitch": "Hi Bondex team, I’m Kiran S R, a Full‑Stack Engineer with 5+",
-    "createdAt": "2026-10-24T17:44:44.816Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
       "id": "wwr_hr-plus-web-developer-fresh-graduate-welcome-wfh-policy-on-job-training",
       "type": "remote_job",
       "title": "Web Developer (Fresh graduate welcome, WFH policy, on-job-training)",
@@ -896,20 +770,6 @@
     },
     "pitch": "Hi there,\n\nI saw your requirement for \"Senior Software Engineer\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
     "createdAt": "2026-10-24T17:13:50.695Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "him_undefined",
-      "type": "remote_job",
-      "title": "Specialty Infusion Pharmacists (On-Call After-Hours)",
-      "companyOrClient": "AmeriPharma",
-      "budgetOrSalary": "$0k - $0k",
-      "url": "https://himalayas.app/companies/ameripharma/jobs/specialty-infusion-pharmacists-on-call-after-hours-5481222267?utm_source=api",
-      "description": "About AmeriPharmaAmeriPharma is a rapidly growing healthcare company where you will have the opportunity to contribute to our joint success on a daily basis."
-    },
-    "pitch": "Hi AmeriPharma team,\n\nI’m Kiran S R, a Full‑Stack Engineer from Bengaluru with a proven track record building mission‑critical, real‑time platforms. My recent work on **Yeshu Tours & Travels** (https://yeshutoursandtravels.com) delivered a complete travel‑booking engine with a secure customer portal, admin dashboard, Redis caching, and WhatsApp enquiry integration—exactly the kind of reliable, after‑hours notification",
-    "createdAt": "2026-10-24T17:12:40.410Z",
     "deliveredToTelegram": false
   },
   {
@@ -1167,45 +1027,6 @@
   },
   {
     "opportunity": {
-      "id": "rok_1137562",
-      "type": "remote_job",
-      "title": "Senior Frontend Engineer",
-      "companyOrClient": "B2spin",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-frontend-engineer-b2spin-1137562",
-      "description": "  About B2Spin  We are B2Spin, and we are dedicated to delivering the best Free-to-Play Social Casino and gaming experiences by creating captivating, engaging, and unique products that are accessible to everyone. We have built a team of talented professionals from all over the globe, who are working to continually improve the experiences of our players. We are not looking to just be part of the industry, but to revolutionize it.   AI-Driven Engineering Culture   We are actively building an AI-driven engineering organization with a clear and deliberate stance: artificial intelligence is a core part of how we build and deliver software â not an experiment, not a trend, and not an optional add-on.  AI is embedded into our engineering workflows, from system design and prototyping to refactoring, testing, and code review. We expect engineers to be fully comfortable working in AI-driven environments and to treat AI as a primary productivity multiplier. Strong engineering judgment, architec",
-      "tags": [
-        "front end",
-        "design",
-        "react",
-        "embedded",
-        "sys admin",
-        "game dev",
-        "technical",
-        "dev",
-        "testing",
-        "marketing",
-        "web dev",
-        "javascript",
-        "finance",
-        "css",
-        "html",
-        "typescript",
-        "seo",
-        "mobile",
-        "senior",
-        "stats",
-        "engineer",
-        "backend",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi B2Spin team, I’m Kiran S R, a Full‑Stack & Frontend Engineer who consistently ships high‑performance UI at scale. At Zupper Commerce I built 20+ reusable React/Next.js components, applied memoization and code‑splitting to cut page load times by ~25%, and integrated TypeScript and Tailwind for a pixel‑perfect, maintainable codebase—exactly the speed and quality needed for a cutting‑edge social casino platform. I thrive in AI‑driven workflows, using tools like GitHub Copilot and",
-    "createdAt": "2026-10-24T17:11:42.567Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
       "id": "gh_bounty_5878910962",
       "type": "bounty",
       "title": "[$450] One command to run the full SpaceApp stack from source for contributors (oll4com/spaceapp)",
@@ -1388,20 +1209,6 @@
   },
   {
     "opportunity": {
-      "id": "gh_bounty_5964033324",
-      "type": "bounty",
-      "title": "[routes] Segments and gaps (amiller/bounty-arcade)",
-      "companyOrClient": "GitHub: amiller/bounty-arcade",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/amiller/bounty-arcade/issues/10",
-      "description": "**App:** `apps/routes`\n**Amount:** not yet funded\n**Base commit:** `5c76d40`\n**Checker:** [`bounties/routes-segments/check.yml`](https://github.com/amiller/bounty-arcade/blob/8232383/bounties/routes-segments/check.yml) at `8232383`, run with `node check.mjs bounties/routes-segments/check.yml <patch>` in the dev image. Nobody reviews the result.\n\n`parseGpx` flattens every `<trkpt>` into one list, so a GPX with two `<trkseg>` blocks (a paused recording, or a ferry crossing) counts the straight line across the gap as distance. Return `segments: [[point, ...], ...]` alongside `points` (`points` stays the flat list), and add `stats(points, { segments })` (default `[points]`) whose distance and gain/loss sum within segments only. Draw each segment as its own `<polyline>` in `#track`.\n\nAcceptance tests (`bounties/routes-segments/`):\n- `parses two segments`: a GPX string with two `<trkseg>` blocks of 2 and 3 points gives `segments.length === 2`, lengths `[2, 3]`, and `points.length === 5`.\n- `"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack & Front",
-    "createdAt": "2026-10-24T17:10:04.825Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
       "id": "gh_bounty_5964033652",
       "type": "bounty",
       "title": "[routes] Gain/loss threshold (amiller/bounty-arcade)",
@@ -1542,20 +1349,6 @@
   },
   {
     "opportunity": {
-      "id": "gh_bounty_5483179055",
-      "type": "bounty",
-      "title": "test issue (Zimb/zimb)",
-      "companyOrClient": "GitHub: Zimb/zimb",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/Zimb/zimb/issues/1",
-      "description": "## 🎯 Problem\n\ntest issue\n\n\n---\n\n## 🧪 Hypotheses already ruled out\n\n_To be filled by the requester — copy/paste any debug steps already tried._\n\n\n---\n\n## 🔍 Root node / pinpoint\n\n_Describe the smallest unit that still misbehaves (function, route, line, …)._\n\n\n---\n\n## 🛠️ Stack\n\n- **Repo**: [Zimb/zimb](https://github.com/Zimb/zimb)\n- **Languages**: .ts, .js, .mjs\n\n\n---\n\n## 🟢 Claim this bounty\n\nIf you're a senior and want to take this ticket, **comment on this issue** with:\n\n```\n@zimb-bot claim\n```\n\nThe bot will (1) assign this issue to you, (2) grant you `push` access on the repo `Zimb/zimb`. First come, first served — bounty on a single seat.\n\n> 💡 Once you have push access, create a branch named `zimb/<short-id>` and open a PR. The bot watches `pull_request` events on this repo and will mark the bounty delivered when the PR is merged."
-    },
-    "pitch": "I’m Kiran S R, a senior Full‑Stack/Frontend engineer with extensive TypeScript and JavaScript experience. I recently built Zupper Commerce, delivering 20+ reusable React components and cutting page‑load times 25% through memoization and code‑splitting—exactly the skill set needed to diagnose and fix the test issue in the Zimb repo quickly. I can claim the bounty, create the required branch, and push a clean PR within a few hours,",
-    "createdAt": "2026-10-24T17:09:05.861Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
       "id": "gh_bounty_5485063394",
       "type": "bounty",
       "title": "Debug bounty from VS Code (Zimb/zimb) (Zimb/zimb)",
@@ -1580,6 +1373,48 @@
     },
     "pitch": "Kiran S R here—a Full‑Stack & Frontend Engineer with deep React, Next.js and TypeScript expertise. On my Zupper Commerce project I built 20+ reusable React components, cut page‑load times ~25% through memoization, code‑splitting and precise SSR handling—exactly the skill set needed to dissect Vista’s RSC/SSR pipeline, link navigation, image handling and AI streaming. I can start immediately, reproduce any bug, submit a minimal reproducible issue and push a clean PR within 24‑48 hours. Let’s eliminate those hidden defects",
     "createdAt": "2026-10-24T17:09:03.653Z",
+    "deliveredToTelegram": false
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_5519781644",
+      "type": "bounty",
+      "title": "Bug: vista deploy still breaks static hosts and platform adapters (Mantitup-Org/vista)",
+      "companyOrClient": "GitHub: Mantitup-Org/vista",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/Mantitup-Org/vista/issues/62",
+      "description": "## Goal\n\nHunt and fix remaining **deployment** bugs in `vista deploy` and the hosted docs site.\n\n`create-vista-app` no longer copies `Dockerfile` / `render.yaml` / `deploy/`. Platform files must come from the **engine** (`vista deploy`). That path is still buggy on some hosts.\n\n## Known failure modes\n\nReproduce on `@vistagenic/vista@latest` (or `main` after #60 merges).\n\n- [ ] **Cloudflare Pages (static)** — `/rsc/*` Flight fetches get rewritten to HTML instead of `.rsc` (double `_redirects` / identity `.rsc` rule). Client nav then full-reloads or hydrates from the wrong payload.\n- [ ] **PPR shells** — loading HTML must not inline the finished page Flight (`ppr-page-content` leak).\n- [ ] **Vercel / Netlify full SSR** — standalone `.vista/standalone/server.js` missing from the function pack; `--dry-run` should still emit a runnable handler.\n- [ ] **Cloudflare Containers vs Pages** — `wrangler.toml` / Dockerfile emitted when the user wanted static Pages (or the reverse).\n- [ ] **Render /"
+    },
+    "pitch": "Hi Mantitup team, I’m Kiran S R, a Full‑Stack Engineer who built “Yeshu Tours & Travels,” a complete booking platform that required flawless Docker, Redis, and multi‑host deployments. I know the intricacies of `vista deploy` and can quickly resolve the static‑host and platform‑adapter bugs—ensuring Cloudflare Pages, Vercel, Netlify, Render and PPR shells all serve the correct `.rsc` payloads without missing server files. I can reproduce the failures today, submit a clean PR, and have the fix merged within 24‑48 hours. Let’s get Vista stable now—",
+    "createdAt": "2026-10-24T17:09:01.848Z",
+    "deliveredToTelegram": false
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_5922300294",
+      "type": "bounty",
+      "title": "[BOUNTY] $5.00+ USDC: Adversarial Prompt Injection Bypass on CanaryGuard Firewall (ak10082247-max/canaryguard-402)",
+      "companyOrClient": "GitHub: ak10082247-max/canaryguard-402",
+      "budgetOrSalary": "$5",
+      "url": "https://github.com/ak10082247-max/canaryguard-402/issues/2",
+      "description": "### 🎯 Objective\nCanaryGuard defends autonomous AI agents using deterministic, sub-millisecond heuristic filtering. To win the bounty, submit an adversarial prompt injection or instruction override payload that slips past Strict Mode with status `\"clean\"` (Risk: 0) instead of being `\"blocked\"`.\n\n### 💰 Bounty Details\n- **Reward:** **$5.00+ USDC** (Paid on Base `eip155:8453` or Solana)\n- **Challenge Type:** Adversarial Bypass / False Negative\n- **Difficulty:** Open Red-Team Challenge\n- **Payout:** Sent directly to the winning researcher's EVM or Solana address upon verified reproduction.\n\n---\n\n### 🧪 Live Testing Sandbox\nTest your payloads instantly directly in the interactive web sandbox:\n👉 **[https://canaryguard-402.onrender.com/bounty.html](https://canaryguard-402.onrender.com/bounty.html)**\n\nOr test via the raw API:\n```bash\ncurl -X POST https://canaryguard-402.onrender.com/v1/sanitize \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"prompt\": \"YOUR_PAYLOAD_HERE\", \"mode\": \"strict\"}'"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who built the end‑to‑end travel booking engine for Yeshu Tours & Travels (https://yeshutoursandtravels.com), integrating Redis caching, custom APIs, and WhatsApp webhook handling. My deep experience with Node/Express, TypeScript, and security‑focused API design lets me craft precise adversarial payloads that exploit edge‑case parsing while staying under the “clean” risk threshold. I can deliver a tested bypass for CanaryGuard’s Strict Mode within a few hours, complete with reproducible proof‑of‑concept and detailed documentation. Let’s get this bounty closed fast—review my work at https://cipher",
+    "createdAt": "2026-10-24T17:09:00.742Z",
+    "deliveredToTelegram": false
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_5958548749",
+      "type": "bounty",
+      "title": "Bounty Board rewire to Quantum AI App + Tracker (dsect-net/quantum)",
+      "companyOrClient": "GitHub: dsect-net/quantum",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/dsect-net/quantum/issues/288",
+      "description": "> Mirrored from the Solorion Tracker — **TRK-0241** is the source of truth. Edits here do not flow back.\n\nBackfill record (Oct 21 outage audit, Section B.11 verification). The Bounty Board froze; diagnosis landed Oct 20 daytime and the board was REWIRED to run on the Quantum AI App + Tracker instead of the suspended cooper-the-fox credential (see also TRK-0147, TRK-0120). This record confirms the rewire itself carries a Tracker home, since it is the first surface embodying the tracker-first pattern that TRK-0235 (Tracker-to-GitHub sync) generalizes.\n\n---\n**Tracker fields**\n- Kind: task · Status: done · Priority: medium\n\n<!-- tracker:TRK-0241 -->\n\n— cooper, via Quantum AI App"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who recently rewired a high‑traffic travel booking platform (Yeshu Tours & Travels) to run on a Redis‑backed, API‑driven architecture with real‑time WhatsApp integration. That experience maps directly to moving your Bounty Board onto the Quantum AI App + Tracker, ensuring zero downtime and instant sync. I can deliver a clean PR and full test suite within",
+    "createdAt": "2026-10-24T17:08:59.430Z",
     "deliveredToTelegram": false
   }
 ]
