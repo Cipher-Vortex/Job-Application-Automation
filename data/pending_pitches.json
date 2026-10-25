@@ -1,6 +1,62 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6026417530",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-25T16:02 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1329",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1601866\tStacker_Stocks\t2\t266\t10000\t5\t3.9\t9274\t28889\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,LOW_COMP,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle your `sn-monetization-runtime` bounty immediately. With deep expertise in Node.js, TypeScript, and Redis, I have successfully engineered high-performance systems like Yeshu Tours & Travels, which utilized Redis caching to optimize data retrieval and handle complex state management. I can apply this same architectural rigor to your monetization runtime, ensuring robust, low-latency execution and seamless integration. I am prepared to deliver a clean, tested PR instantly to secure this bounty for you. Let’s get this shipped today. You can review my full technical portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-25T17:23:16.494Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "reddit_rss_t3_1xf0o2o",
+      "type": "freelance",
+      "title": "Software Engineer | System Architecture looking to hire me work together with individuals, startups, small businesses or teams remotely",
+      "companyOrClient": "Reddit r/forhire Client",
+      "budgetOrSalary": "Quoted per project",
+      "url": "https://www.reddit.com/r/forhire/comments/1xf0o2o/hiring_software_engineer_system_architecture/",
+      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hey everyone!&lt;/p&gt; &lt;p&gt;I&amp;#39;m a software Engineer interested in connecting with people building interesting software products and solving real-world problems.&lt;/p&gt; &lt;p&gt;I work with Python, JavaScript, React, FastAPI, Node.js, PostgreSQL, System Design, Ai models, Rag and REST APIs. I&amp;#39;m also working on Sentinel, a fraud detection project where I&amp;#39;m exploring backend engineering and transaction analysis with ML models.&lt;/p&gt; &lt;p&gt;I&amp;#39;d love to connect with other developers, startup founders, and people working on ambitious ideas. I&amp;#39;m also interested in learning about opportunities to contribute to a team and grow through real-world engineering experience.&lt;/p&gt; &lt;p&gt;i would love to connect for budget and work together as teams&lt;/p&gt; &lt;p&gt;What kinds of projects are you all working on lately?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitte"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in scalable systems with React, Node.js, and TypeScript. Given your focus on system architecture and AI, I’d be a strong fit. I recently built Yeshu Tours & Travels, a high-traffic booking engine featuring Redis caching and complex admin workflows, proving my ability to handle real-world data integrity and performance. I also developed Cerebrum, an AI note-taking platform using RAG architecture, directly aligning with your interest in AI models and backend engineering. I’m available for immediate remote collaboration to deliver robust, production-ready solutions. Let’s discuss how I can contribute to your next project. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-25T17:23:14.628Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "reddit_rss_t3_1xf0yfq",
+      "type": "freelance",
+      "title": "Software Engineer | System Architecture looking to hire me work together with individuals, startups, small businesses or teams remotely",
+      "companyOrClient": "Reddit r/forhire Client",
+      "budgetOrSalary": "Quoted per project",
+      "url": "https://www.reddit.com/r/forhire/comments/1xf0yfq/hiring_software_engineer_system_architecture/",
+      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;h1&gt;Hey everyone![](&lt;a href=&quot;https://www.reddit.com/r/forhire/?f=flair_name%3A%22Hiring%20-%20Open%22&quot;&gt;https://www.reddit.com/r/forhire/?f=flair_name%3A%22Hiring%20-%20Open%22&lt;/a&gt;)&lt;/h1&gt; &lt;p&gt;I&amp;#39;m a software Engineer interested in connecting with people building interesting software products and solving real-world problems.&lt;/p&gt; &lt;p&gt;I work with Python, JavaScript, React, FastAPI, Node.js, PostgreSQL, System Design, Ai models, Rag and REST APIs. I&amp;#39;m also working on Sentinel, a fraud detection project where I&amp;#39;m exploring backend engineering and transaction analysis with ML models.&lt;/p&gt; &lt;p&gt;I&amp;#39;d love to connect with other developers, startup founders, and people working on ambitious ideas. I&amp;#39;m also interested in learning about opportunities to contribute to a team and grow through real-world engineering experience.&lt;/p&gt; &lt;p&gt;i would l"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React, Node.js, and system architecture. I noticed your interest in building robust backend systems and AI solutions. My work on Yeshu Tours & Travels directly aligns with your needs, where I engineered a high-availability booking engine using Redis caching and REST APIs to handle complex transaction workflows. I also built Cerebrum, an AI note-taking platform leveraging RAG architectures, proving my ability to integrate modern AI models into production-ready applications. I am available for immediate remote collaboration to help you scale your infrastructure or build new features with precision. Let’s discuss how I can contribute to your current roadmap. Check out my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-25T17:23:13.809Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "reddit_rss_t3_1xf1dp3",
+      "type": "freelance",
+      "title": "Software Engineer | System Architecture looking to hire me work together with individuals, startups, small businesses or teams remotely",
+      "companyOrClient": "Reddit r/forhire Client",
+      "budgetOrSalary": "Quoted per project",
+      "url": "https://www.reddit.com/r/forhire/comments/1xf1dp3/hiring_software_engineer_system_architecture/",
+      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I&amp;#39;m a software Engineer interested in connecting with people building interesting software products and solving real-world problems.&lt;/p&gt; &lt;p&gt;I work with Python, JavaScript, React, FastAPI, Node.js, PostgreSQL, System Design, Ai models, Rag and REST APIs. I&amp;#39;m also working on Sentinel, a fraud detection project where I&amp;#39;m exploring backend engineering and transaction analysis with ML models.&lt;/p&gt; &lt;p&gt;I&amp;#39;d love to connect with other developers, startup founders, and people working on ambitious ideas. I&amp;#39;m also interested in learning about opportunities to contribute to a team and grow through real-world engineering experience.&lt;/p&gt; &lt;p&gt;i would love to connect for budget and work together as teams&lt;/p&gt; &lt;p&gt;What kinds of projects are you all working on lately?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;h"
+    },
+    "pitch": "Hi there, I’m Kiran S R, a Bengaluru-based Full Stack Engineer specializing in React, Node.js, and TypeScript. Your focus on system architecture and real-world problem solving aligns perfectly with my recent work on RMC ERP, an enterprise platform handling complex sensor feeds and dispatch workflows using Laravel, Vue 3, and Inertia.js. I also built a high-performance travel booking engine with Redis caching and integrated AI note-taking features, proving my ability to deliver scalable, production-ready solutions quickly. I thrive in remote, collaborative environments and am ready to hit the ground running on your next ambitious project. Let’s discuss how I can contribute to your team’s growth. Check out my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-25T17:23:13.005Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_tebra-senior-software-engineer",
       "type": "remote_job",
       "title": "Senior Software Engineer",
