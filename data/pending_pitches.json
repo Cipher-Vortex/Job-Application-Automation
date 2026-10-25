@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6028075606",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-25T18:56 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1331",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1601866\tStacker_Stocks\t2\t266\t10000\t9\t6.8\t9274\t28899\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```"
+    },
+    "pitch": "Hi Stacker_Stocks,\n\nI’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. I see you’re running the Week #16 Close Contest and need a reliable, technical partner to execute. My background in building complex, data-heavy platforms like the Yeshu Tours & Travels booking engine—featuring real-time Redis caching and robust admin dashboards—proves I can handle the precision and speed required for your monetization runtime. I’m ready to deliver a clean, functional PR immediately to help you secure that 20k Sats win. Let’s get this bounty closed out efficiently. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-25T19:50:58.429Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6026417530",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-10-25T16:02 (relayhop/sn-monetization-runtime)",
