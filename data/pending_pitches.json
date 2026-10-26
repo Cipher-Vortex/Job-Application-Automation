@@ -1,6 +1,62 @@
 [
   {
     "opportunity": {
+      "id": "wwr_reddit-frontend-engineer-ads",
+      "type": "remote_job",
+      "title": "Frontend Engineer, Ads",
+      "companyOrClient": "Reddit",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/reddit-frontend-engineer-ads",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - United States\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;div class=\"c-message_kit__blocks c-message_kit__blocks--rich_text\"&gt;\n&lt;div class=\"c-message__message_blocks c-message__message_blocks--rich_text\"&gt;\n&lt;div class=\"p-block_kit_renderer\"&gt;\n&lt;div class=\"p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first\"&gt;\n&lt;div class=\"p-rich_text_block\"&gt;\n&lt;div class=\"p-rich_text_section\"&gt;Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internet’s largest sources of information. For more information, visit &lt;a class=\"c-link\" href=\"http://www.redditinc.com/\"&gt;www.redd"
+    },
+    "pitch": "Hi Reddit Ads team,\n\nI’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. I built 20+ reusable components for Zupper Commerce, reducing page load times by 25% through aggressive memoization and code splitting. This experience directly aligns with the performance and scalability demands of a frontend role in ad-tech. I am ready to start immediately, delivering clean, production-ready code with zero friction. My portfolio, including a full-scale travel booking engine and enterprise ERP, is available here: https://cipher-vortex.vercel.app. I’d love to discuss how I can contribute to your ad platform’s frontend infrastructure.",
+    "createdAt": "2026-10-26T12:11:00.087Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6039191994",
+      "type": "bounty",
+      "title": "feat(spikes): add structured task scopes & affine JoinHandle spike (closes #1669) (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/1856",
+      "description": "Closes #1669\n\n## Wildcard #1669 Feasibility Spike: Structured Task Scopes (`scope { ... }`) & Affine `JoinHandle[T]`\n\nImplements the bounded M1/M2 executable feasibility spike for Wildcard proposal **#1669** (`💎 Bounty` + `wildcard`), scoped strictly to `spikes/w1669-structured-task-scopes/`.\n\n### Summary of M1 & M2 Deliverables\n- **M1 Formal Grammar & Affine Containment (`HYB-E3501`):** Every `task` spawned inside `scope { ... }` yields an affine `JoinHandle[T]` in state `UNJOINED`. Any scope exit (`return`, `break`, `continue`, `select` timeout, or block end) with an `UNJOINED` handle fails closed with `HYB-E3501 (unjoined task escape)`.\n- **Double Consumption (`HYB-E3502`) & Foreign Callback Boundary (`HYB-E3503`):** Rejects use-after-join (`HYB-E3502`) and unenclosed `http.HandleFunc` callback spawns (`HYB-E3503`) unless wrapped in `managed(..., \"foreign_callback\")`.\n- **Zero-Allocation Lowering:** Verified scopes lower to stack-inlined `sync.WaitGroup` Go code.\n\n### Payout Addres"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle the Wildcard #1669 feasibility spike for Go-Hybrid. My work on RMC ERP, which manages complex sensor feeds and dispatch workflows, demonstrates my ability to handle rigorous state management and performance-critical systems. I can deliver the M1/M2 deliverables, including the formal grammar for affine `JoinHandle[T]` containment and zero-allocation lowering, ensuring strict compliance with `HYB-E3501` and `HYB-E3502` failure modes. I’m prepared to submit a clean, reviewed PR immediately to close this issue. Check my recent work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-26T12:10:59.177Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6034255604",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-26T06:01 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1337",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1601866\tStacker_Stocks\t2\t319\t10000\t14\t17.9\t9274\t28904\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js systems. I see your open bounty for the `sn-monetization-runtime` repository and am ready to deliver a clean, merged PR immediately. My experience building complex financial workflows, such as the admin dashboard and transaction handling for Yeshu Tours & Travels, aligns perfectly with the precision required for monetization runtimes. I leverage TypeScript and Redis to ensure robust, scalable implementations without technical debt. I can start right now and provide a complete, tested solution within hours. Let’s get this bounty closed efficiently. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-26T12:10:57.880Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "reddit_rss_t3_1xfmkym",
+      "type": "freelance",
+      "title": "Web Developer | Remote | Flexible Hours",
+      "companyOrClient": "Reddit r/forhire Client",
+      "budgetOrSalary": "$2,000 - $5,000",
+      "url": "https://www.reddit.com/r/forhire/comments/1xfmkym/hiring_web_developer_remote_flexible_hours/",
+      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;We&amp;#39;re looking for a Web Developer to join us for a website project.&lt;/p&gt; &lt;p&gt;Compensation:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;$2,000 - $5,000+ depending on experience and scope&lt;/li&gt; &lt;li&gt;Flexible working hours&lt;/li&gt; &lt;li&gt;Remote&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;What we&amp;#39;re looking for:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Strong experience building modern websites&lt;/li&gt; &lt;li&gt;Good knowledge of HTML, CSS and JavaScript&lt;/li&gt; &lt;li&gt;React / Next.js experience preferred&lt;/li&gt; &lt;li&gt;Good understanding of responsive design&lt;/li&gt; &lt;li&gt;Experience working with APIs&lt;/li&gt; &lt;li&gt;Familiarity with Git and GitHub&lt;/li&gt; &lt;li&gt;Able to work independently and communicate clearly&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Bonus:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;TypeScript&lt;/li&gt; &lt;li&gt;Backend/API development&lt;/li&gt; &lt;li&gt;SaaS or dashboard development&lt"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. Your need for a modern website with React/Next.js and API integration aligns perfectly with my recent work on Yeshu Tours & Travels, where I built a scalable booking engine featuring a customer portal, admin dashboard, and WhatsApp integration. I excel at responsive design and performance optimization, having reduced page load times by 25% on Zupper Commerce. I work independently, communicate clearly, and can deliver a robust, production-ready solution within your $2,000–$5,000 budget. Check my live projects and code at https://cipher-vortex.vercel.app, and let’s schedule a quick call to discuss your specific requirements.",
+    "createdAt": "2026-10-26T12:10:56.436Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6033830873",
       "type": "bounty",
       "title": "Bounty Scout — 2026-10-26 (ariahendrawan-sudo/project-a)",
@@ -1499,48 +1555,6 @@
     },
     "pitch": "Kiran S R here—a Full‑Stack & Frontend Engineer with deep React, Next.js and TypeScript expertise. On my Zupper Commerce project I built 20+ reusable React components, cut page‑load times ~25% through memoization, code‑splitting and precise SSR handling—exactly the skill set needed to dissect Vista’s RSC/SSR pipeline, link navigation, image handling and AI streaming. I can start immediately, reproduce any bug, submit a minimal reproducible issue and push a clean PR within 24‑48 hours. Let’s eliminate those hidden defects",
     "createdAt": "2026-10-24T17:09:03.653Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5519781644",
-      "type": "bounty",
-      "title": "Bug: vista deploy still breaks static hosts and platform adapters (Mantitup-Org/vista)",
-      "companyOrClient": "GitHub: Mantitup-Org/vista",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/Mantitup-Org/vista/issues/62",
-      "description": "## Goal\n\nHunt and fix remaining **deployment** bugs in `vista deploy` and the hosted docs site.\n\n`create-vista-app` no longer copies `Dockerfile` / `render.yaml` / `deploy/`. Platform files must come from the **engine** (`vista deploy`). That path is still buggy on some hosts.\n\n## Known failure modes\n\nReproduce on `@vistagenic/vista@latest` (or `main` after #60 merges).\n\n- [ ] **Cloudflare Pages (static)** — `/rsc/*` Flight fetches get rewritten to HTML instead of `.rsc` (double `_redirects` / identity `.rsc` rule). Client nav then full-reloads or hydrates from the wrong payload.\n- [ ] **PPR shells** — loading HTML must not inline the finished page Flight (`ppr-page-content` leak).\n- [ ] **Vercel / Netlify full SSR** — standalone `.vista/standalone/server.js` missing from the function pack; `--dry-run` should still emit a runnable handler.\n- [ ] **Cloudflare Containers vs Pages** — `wrangler.toml` / Dockerfile emitted when the user wanted static Pages (or the reverse).\n- [ ] **Render /"
-    },
-    "pitch": "Hi Mantitup team, I’m Kiran S R, a Full‑Stack Engineer who built “Yeshu Tours & Travels,” a complete booking platform that required flawless Docker, Redis, and multi‑host deployments. I know the intricacies of `vista deploy` and can quickly resolve the static‑host and platform‑adapter bugs—ensuring Cloudflare Pages, Vercel, Netlify, Render and PPR shells all serve the correct `.rsc` payloads without missing server files. I can reproduce the failures today, submit a clean PR, and have the fix merged within 24‑48 hours. Let’s get Vista stable now—",
-    "createdAt": "2026-10-24T17:09:01.848Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5922300294",
-      "type": "bounty",
-      "title": "[BOUNTY] $5.00+ USDC: Adversarial Prompt Injection Bypass on CanaryGuard Firewall (ak10082247-max/canaryguard-402)",
-      "companyOrClient": "GitHub: ak10082247-max/canaryguard-402",
-      "budgetOrSalary": "$5",
-      "url": "https://github.com/ak10082247-max/canaryguard-402/issues/2",
-      "description": "### 🎯 Objective\nCanaryGuard defends autonomous AI agents using deterministic, sub-millisecond heuristic filtering. To win the bounty, submit an adversarial prompt injection or instruction override payload that slips past Strict Mode with status `\"clean\"` (Risk: 0) instead of being `\"blocked\"`.\n\n### 💰 Bounty Details\n- **Reward:** **$5.00+ USDC** (Paid on Base `eip155:8453` or Solana)\n- **Challenge Type:** Adversarial Bypass / False Negative\n- **Difficulty:** Open Red-Team Challenge\n- **Payout:** Sent directly to the winning researcher's EVM or Solana address upon verified reproduction.\n\n---\n\n### 🧪 Live Testing Sandbox\nTest your payloads instantly directly in the interactive web sandbox:\n👉 **[https://canaryguard-402.onrender.com/bounty.html](https://canaryguard-402.onrender.com/bounty.html)**\n\nOr test via the raw API:\n```bash\ncurl -X POST https://canaryguard-402.onrender.com/v1/sanitize \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"prompt\": \"YOUR_PAYLOAD_HERE\", \"mode\": \"strict\"}'"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who built the end‑to‑end travel booking engine for Yeshu Tours & Travels (https://yeshutoursandtravels.com), integrating Redis caching, custom APIs, and WhatsApp webhook handling. My deep experience with Node/Express, TypeScript, and security‑focused API design lets me craft precise adversarial payloads that exploit edge‑case parsing while staying under the “clean” risk threshold. I can deliver a tested bypass for CanaryGuard’s Strict Mode within a few hours, complete with reproducible proof‑of‑concept and detailed documentation. Let’s get this bounty closed fast—review my work at https://cipher",
-    "createdAt": "2026-10-24T17:09:00.742Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5958548749",
-      "type": "bounty",
-      "title": "Bounty Board rewire to Quantum AI App + Tracker (dsect-net/quantum)",
-      "companyOrClient": "GitHub: dsect-net/quantum",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/dsect-net/quantum/issues/288",
-      "description": "> Mirrored from the Solorion Tracker — **TRK-0241** is the source of truth. Edits here do not flow back.\n\nBackfill record (Oct 21 outage audit, Section B.11 verification). The Bounty Board froze; diagnosis landed Oct 20 daytime and the board was REWIRED to run on the Quantum AI App + Tracker instead of the suspended cooper-the-fox credential (see also TRK-0147, TRK-0120). This record confirms the rewire itself carries a Tracker home, since it is the first surface embodying the tracker-first pattern that TRK-0235 (Tracker-to-GitHub sync) generalizes.\n\n---\n**Tracker fields**\n- Kind: task · Status: done · Priority: medium\n\n<!-- tracker:TRK-0241 -->\n\n— cooper, via Quantum AI App"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who recently rewired a high‑traffic travel booking platform (Yeshu Tours & Travels) to run on a Redis‑backed, API‑driven architecture with real‑time WhatsApp integration. That experience maps directly to moving your Bounty Board onto the Quantum AI App + Tracker, ensuring zero downtime and instant sync. I can deliver a clean PR and full test suite within",
-    "createdAt": "2026-10-24T17:08:59.430Z",
     "deliveredToTelegram": false
   }
 ]
