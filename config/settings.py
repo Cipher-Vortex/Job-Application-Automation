@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     # AI Engine Configuration
     AI_PROVIDER: str = "ollama"  # ollama | groq | openrouter | mock
     OLLAMA_BASE_URL: str = "http://localhost:11434"
-    OLLAMA_MODEL: str = "qwen2.5-coder:latest"
+    OLLAMA_MODEL: str = "qwen2.5:7b"
     GROQ_API_KEY: str = ""
     OPENROUTER_API_KEY: str = ""
     

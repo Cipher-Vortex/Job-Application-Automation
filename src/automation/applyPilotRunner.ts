@@ -5,6 +5,23 @@ import { TRUTH_PROFILE } from "../config/truthProfile";
 import { generateTailoredResumePdf } from "../engine/resumeTailorer";
 import { tailorApplication, generateDeterministicTailoredPitch } from "../engine/tailor";
 import { tracker } from "../storage/tracker";
+import axios from "axios";
+
+async function generateOllamaScreeningAnswer(question: string, company: string, role: string): Promise<string> {
+  const ollamaUrl = process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434";
+  const model = process.env.OLLAMA_MODEL || "qwen2.5:7b";
+  try {
+    const res = await axios.post(`${ollamaUrl}/api/generate`, {
+      model,
+      prompt: `Candidate: Kiran S R, Full Stack Software Engineer (React, TypeScript, Node.js, REST APIs, Microservices). Target Company: ${company}. Target Role: ${role}. Screening Question: "${question}". Answer in 1-2 professional sentences strictly based on Kiran's real background:`,
+      stream: false,
+      options: { num_predict: 70, temperature: 0.2 }
+    }, { timeout: 4000 });
+    const ans = res.data?.response?.trim();
+    if (ans && ans.length > 10) return ans;
+  } catch {}
+  return "Results-driven Full Stack Engineer experienced in React, Node.js, TypeScript, and high-concurrency microservices.";
+}
 
 export interface ApplyPilotJobInput {
   url: string;
@@ -359,9 +376,11 @@ export async function runApplyPilot(
           } else if (combined.includes("adjustments") || combined.includes("assist you during")) {
             await inp.fill("None");
             fieldsFilled.push("accommodations_none");
-          } else if (combined.includes("why") || combined.includes("about") || combined.includes("summary")) {
-            await inp.fill("Full Stack & AI Engineer experienced in React, Node.js, TypeScript, REST APIs, and microservices.");
-            fieldsFilled.push("why_work_here");
+          } else if (combined.includes("why") || combined.includes("about") || combined.includes("summary") || combined.includes("interest")) {
+            const dynamicAnswer = await generateOllamaScreeningAnswer(label || placeholder || "why work here", job.company, job.title);
+            await inp.fill(dynamicAnswer);
+            fieldsFilled.push("why_work_here_ollama");
+            console.log(`  ✓ Filled Screening Question with Local Ollama: ${dynamicAnswer.slice(0, 45)}...`);
           } else if (combined.includes("legal name")) {
             await inp.fill(TRUTH_PROFILE.candidate.name);
             fieldsFilled.push("legal_name");

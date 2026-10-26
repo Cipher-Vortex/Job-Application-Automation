@@ -192,8 +192,51 @@ export async function tailorApplication(job: JobPosting): Promise<TailoredPitch>
         };
       }
     } catch (err: any) {
-      console.warn(`[Tailor] OpenAI call failed (${err.message}). Using deterministic zero-hallucination pitch.`);
+      console.warn(`[Tailor] OpenAI call failed (${err.message}). Trying local Ollama.`);
     }
+  }
+
+  // 3. Local Ollama LLM Engine (qwen2.5:7b on http://127.0.0.1:11434)
+  const ollamaBaseUrl = process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434";
+  const ollamaModel = process.env.OLLAMA_MODEL || "qwen2.5:7b";
+  try {
+    const prompt = generateTailoringPrompt(job.title, job.company, job.description);
+    const res = await axios.post(
+      `${ollamaBaseUrl}/api/chat`,
+      {
+        model: ollamaModel,
+        messages: [
+          { role: "system", content: "You are an expert technical career advisor for Kiran S R. Strict zero-hallucination. Output strictly valid JSON." },
+          { role: "user", content: prompt }
+        ],
+        format: "json",
+        stream: false,
+        options: {
+          temperature: 0.2,
+          num_predict: 500
+        }
+      },
+      { timeout: 18000 }
+    );
+
+    const content = res.data?.message?.content;
+    if (content) {
+      const parsed = JSON.parse(content);
+      let body = parsed.cover_letter_body ?? "";
+      if (!body.includes(TRUTH_PROFILE.candidate.portfolio)) {
+        body += `\n\nPortfolio: ${TRUTH_PROFILE.candidate.portfolio}`;
+      }
+      return {
+        fit_score: parsed.fit_score ?? 86,
+        should_apply: parsed.should_apply ?? true,
+        match_reason: parsed.match_reason ?? `Local Ollama (${ollamaModel}) AI Tailored Alignment`,
+        selected_bullets: parsed.selected_bullets ?? [],
+        cover_letter_body: body,
+        subject_line: parsed.subject_line ?? `Application for ${job.title} - Kiran S R`
+      };
+    }
+  } catch (err: any) {
+    console.log(`[Tailor] Ollama status: ${err.message}. Seamlessly continuing with high-fidelity deterministic engine.`);
   }
 
   // Deterministic zero-hallucination fallback

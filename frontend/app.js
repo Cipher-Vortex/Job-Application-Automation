@@ -142,6 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchJobs();
   fetchApplications();
   refreshRAGStats();
+  checkLocalLLMStatus();
   checkAutoApplyStatus();
   fetchSniperPitches(true);
   fetchLocalLeads(true);
@@ -151,6 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchJobs(true);
     fetchApplications(true);
     refreshRAGStats();
+    checkLocalLLMStatus();
   }, 10000);
 });
 
@@ -1147,6 +1149,42 @@ async function refreshRAGStats() {
     console.warn("RAG stats check warning:", err);
   }
 }
+
+async function checkLocalLLMStatus() {
+  try {
+    const res = await fetch('/api/llm/status');
+    const data = await res.json();
+    const badge = document.getElementById('llm-header-badge');
+    const dot = document.getElementById('llm-status-dot');
+    const container = document.getElementById('llm-header-badge-container');
+
+    if (data.online) {
+      if (badge) badge.textContent = `Ollama (${data.active_model}) Active`;
+      if (dot) {
+        dot.style.background = '#38bdf8';
+        dot.style.boxShadow = '0 0 8px #38bdf8';
+      }
+      if (container) {
+        container.style.background = 'rgba(56, 189, 248, 0.12)';
+        container.style.borderColor = 'rgba(56, 189, 248, 0.35)';
+        container.title = `Local LLM Active: ${data.active_model} on ${data.url}`;
+      }
+    } else {
+      if (badge) badge.textContent = `Ollama Standby`;
+      if (dot) {
+        dot.style.background = '#94a3b8';
+        dot.style.boxShadow = 'none';
+      }
+      if (container) {
+        container.style.background = 'rgba(255, 255, 255, 0.05)';
+        container.style.borderColor = 'rgba(255, 255, 255, 0.15)';
+      }
+    }
+  } catch (err) {
+    console.warn("LLM status check warning:", err);
+  }
+}
+window.checkLocalLLMStatus = checkLocalLLMStatus;
 
 async function runRAGTestQuery() {
   const query = document.getElementById('rag-test-input')?.value;

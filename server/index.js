@@ -455,6 +455,34 @@ app.get('/api/ai/rag/status', async (req, res) => {
   }
 });
 
+// Local Ollama LLM Status Endpoint
+app.get('/api/llm/status', async (req, res) => {
+  const ollamaUrl = process.env.OLLAMA_BASE_URL || 'http://127.0.0.1:11434';
+  const targetModel = process.env.OLLAMA_MODEL || 'qwen2.5:7b';
+  try {
+    const r = await axios.get(`${ollamaUrl}/api/tags`, { timeout: 2500 });
+    const models = (r.data && r.data.models) ? r.data.models.map(m => m.name) : [];
+    const hasTargetModel = models.some(m => m.includes(targetModel) || m.includes('qwen'));
+    return res.json({
+      online: true,
+      provider: "Ollama (Local LLM)",
+      active_model: targetModel,
+      available_models: models,
+      has_active_model: hasTargetModel,
+      url: ollamaUrl,
+      status: "Online & Active"
+    });
+  } catch (err) {
+    return res.json({
+      online: false,
+      provider: "Ollama (Local LLM)",
+      active_model: targetModel,
+      status: "Offline or Standby",
+      error: err.message
+    });
+  }
+});
+
 // Proxy route for Auto-Apply Status & Toggle
 app.get('/api/ai/auto-apply/status', async (req, res) => {
   try {
