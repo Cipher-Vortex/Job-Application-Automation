@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "wwr_vested-inc-senior-software-engineer-1",
+      "type": "remote_job",
+      "title": "Senior Software Engineer",
+      "companyOrClient": "Vested, Inc.",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1",
+      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/1089/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://vested.co\"&gt;https://vested.co&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;h2&gt;&lt;strong&gt;About the role&lt;span class=\"Apple-converted-space\"&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;We're looking for a Senior Software Engineer who can define and deliver products that have a real impact on people's financial futures. You'll be joining a small and early-stage engineering team where each engineer has significant ownership and your contributions will directly shape the product and the company's technical direction.&lt;span class=\"Apple-converted-space\"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;As a senior member of our engineering team, you'll focus on the development and supporting "
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-impact web applications. I see Vested is scaling its engineering team, and I bring immediate value with my experience building complex, data-heavy platforms.\n\nAt RMC ERP, I architected a Laravel and Vue 3 system handling real-time sensor feeds and intricate dispatch workflows, ensuring robust backend logic and seamless frontend performance. I’ve also optimized React applications like Zupper Commerce, reducing page load times by 25% through code splitting. I thrive in early-stage environments where ownership drives product direction, and I am ready to contribute to Vested’s financial infrastructure immediately.\n\nLet’s connect to discuss how I can support your technical roadmap. You can view my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-26T23:00:39.769Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6046438098",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-26T19:11 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1340",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t5.0\t9274\t28931\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,SIGNAL\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n1601866\tStacker_Stocks\t2\t319\t10000\t23\t31.0\t9274\t28931\trecent@Stacker_Stocks\tOPEN_BOUNTY\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance systems. I see you’re running a paid bounty for the SN monetization runtime. I deliver production-ready code with immediate turnaround, ensuring robust API integrations and scalable architecture.\n\nMy recent work on RMC ERP demonstrates my ability to handle complex dispatch workflows and real-time data feeds using Laravel and Vue 3, directly aligning with the engineering rigor required for your runtime. I can submit a clean PR or proof-of-work within 24 hours to secure the bounty.\n\nLet’s get this built. Check my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-26T23:00:38.951Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "rok_1137571",
       "type": "remote_job",
       "title": "Senior Software Engineer",
@@ -1535,34 +1563,6 @@
     },
     "pitch": "Hi Senthemodder team, I’m Kiran S R, a Full‑Stack Engineer who specializes in clean, performant UI solutions. On my Zupper Commerce project I built 20+ reusable React components and optimized rendering with memoization and code‑splitting, delivering pixel‑perfect, responsive interfaces across mobile and desktop. I can apply that same precision to your Bedrock JSON UI by implementing native 16‑character truncation with proper binding syntax, eliminating the “invalid binding format specifier” warning and ensuring flawless scaling on pocket",
     "createdAt": "2026-10-24T17:09:13.684Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5407238450",
-      "type": "bounty",
-      "title": "[Bounty: $850] Bedrock Physics: 1-Tick Kinematic Ghost Teleportation and Swept AABB Dropout (Senthemodder/aquarium-of-gullibles)",
-      "companyOrClient": "GitHub: Senthemodder/aquarium-of-gullibles",
-      "budgetOrSalary": "$850",
-      "url": "https://github.com/Senthemodder/aquarium-of-gullibles/issues/2",
-      "description": "### Bounty:  USDC (Escrow Locked)\n\n### Description\nIn high-speed kinematic entity projection (> 1.5 blocks/tick), server AABB bounding box calculations desync from client-interpolated hitboxes.\n\n### Requirements\n- Implement swept AABB continuous collision detection (CCD).\n- Derive all 8 spatial bounding vertices following Bedrock coordinate space (+X East, +Y Up, +Z South).\n- All tests in \test/verify.js must pass.\n\n**Payout Settlement:** Release upon PR merge."
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"[Bounty: $850] Bedrock Physics: 1-Tick Kinematic Ghost Teleportation and Swept AABB Dropout (Senthemodder/aquarium-of-gullibles)\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:09:10.245Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5407238639",
-      "type": "bounty",
-      "title": "[Bounty: $500] Critical: system.beforeEvents.startup Throws CommandRegistrationError on Bedrock 1.21.70 (Senthemodder/aquarium-of-gullibles)",
-      "companyOrClient": "GitHub: Senthemodder/aquarium-of-gullibles",
-      "budgetOrSalary": "$500",
-      "url": "https://github.com/Senthemodder/aquarium-of-gullibles/issues/4",
-      "description": "### Bounty:  USDC (Escrow Locked)\n\n### Description\nRegistering custom slash commands in scripts/commands/inspect.ts crashes BDS at startup:\n`\nTypeError: CustomCommandRegistry.registerCommand is not a function\n    at registerInspectCommand (scripts/commands/inspect.ts:24)\n`\n\n### Requirements\n- Refactor custom command registration using stable @minecraft/server 2.8.0+ startup event hooks.\n- Enforce CommandPermissionLevel permissions gating.\n\n**Payout Settlement:** Release upon PR merge."
-    },
-    "pitch": "Hi Senthemodder team, I’m Kiran S R, a Full‑Stack Engineer who built the “Yeshu Tours & Travels” travel‑booking engine from the ground up—integrating Redis caching, custom admin APIs, and complex startup routines in Node/Express. That experience translates directly to refactoring Bedrock’s command registration using stable @minecraft/server 2.8+ hooks and enforcing permission levels without crashes. I can deliver a clean, tested PR within 24 hours, ensuring",
-    "createdAt": "2026-10-24T17:09:08.765Z",
     "deliveredToTelegram": false
   }
 ]
