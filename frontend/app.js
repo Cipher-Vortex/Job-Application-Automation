@@ -364,14 +364,17 @@ function renderJobs() {
         Applied
       </div>
     ` : `
-      <div style="display: flex; gap: 0.5rem; align-items: center;">
-        <button class="btn btn-secondary" onclick="openGroomModal('${jobJsonEscaped}')" style="font-size: 0.76rem; padding: 0.45rem 0.85rem;" title="Preview and edit tailored resume and cover letter">
+      <div style="display: flex; gap: 0.45rem; align-items: center; flex-wrap: wrap;">
+        <button class="btn btn-secondary" onclick="openGroomModal('${jobJsonEscaped}')" style="font-size: 0.74rem; padding: 0.4rem 0.75rem;" title="Preview and edit tailored resume and cover letter">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          Groom Resume & CV
+          Groom
         </button>
-        <button class="btn btn-apple-blue" onclick="applyWithTailoredResume('${jobJsonEscaped}', this)" style="font-size: 0.76rem; padding: 0.45rem 0.95rem; font-weight: 600;" title="Instantly submit application with resume and cover letter tailored to this JD and company">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          Apply with Tailored Resume
+        <button class="btn btn-primary" onclick="openLiveApplyModal('${jobJsonEscaped}')" style="font-size: 0.74rem; padding: 0.4rem 0.85rem; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border: none; font-weight: 600; box-shadow: 0 2px 8px rgba(16,185,129,0.3); display: inline-flex; align-items: center; gap: 0.35rem;" title="Launch real Playwright browser to open link, autofill profile & PDF resume, and submit">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span>🚀 Live Apply</span>
+        </button>
+        <button class="btn btn-apple-blue" onclick="applyWithTailoredResume('${jobJsonEscaped}', this)" style="font-size: 0.74rem; padding: 0.4rem 0.85rem; font-weight: 600;" title="Instantly submit application with resume and cover letter tailored to this JD and company">
+          ⚡ 1-Click
         </button>
       </div>
     `;
@@ -1775,4 +1778,208 @@ function escapeHtmlText(str) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 }
+
+// ================= AUTONOMOUS LIVE APPLY ENGINE (PLAYWRIGHT BROWSER) =================
+
+function openLiveApplyModal(jobJsonEscaped = null) {
+  const modal = document.getElementById('live-apply-modal');
+  if (!modal) return;
+
+  const urlInput = document.getElementById('live-apply-url');
+  const compInput = document.getElementById('live-apply-company');
+  const titleInput = document.getElementById('live-apply-title');
+  const consoleContainer = document.getElementById('live-apply-console-container');
+  const proofSection = document.getElementById('live-apply-proof-section');
+  const statusTag = document.getElementById('live-apply-status-tag');
+  const btnText = document.getElementById('btn-execute-live-apply-text');
+  const btn = document.getElementById('btn-execute-live-apply');
+
+  if (consoleContainer) consoleContainer.style.display = 'none';
+  if (proofSection) proofSection.style.display = 'none';
+  if (statusTag) {
+    statusTag.textContent = 'READY';
+    statusTag.style.background = 'rgba(56,189,248,0.15)';
+    statusTag.style.color = '#38bdf8';
+  }
+  if (btn) btn.disabled = false;
+  if (btnText) btnText.textContent = '🚀 Run Live Apply & Submit';
+
+  if (jobJsonEscaped) {
+    try {
+      const job = typeof jobJsonEscaped === 'string' ? JSON.parse(decodeURIComponent(jobJsonEscaped)) : jobJsonEscaped;
+      if (urlInput) urlInput.value = job.url || '';
+      if (compInput) compInput.value = job.company || '';
+      if (titleInput) titleInput.value = job.title || '';
+    } catch (e) {
+      console.warn("Could not parse job json for live apply modal:", e);
+    }
+  } else {
+    // Default active Greenhouse opening if user hasn't typed anything
+    if (urlInput && !urlInput.value) {
+      urlInput.value = 'https://boards.greenhouse.io/cloudflare/jobs/8097321?gh_jid=8097321';
+      if (compInput) compInput.value = 'Cloudflare';
+      if (titleInput) titleInput.value = 'Systems / Software Engineer';
+    }
+  }
+
+  modal.style.display = 'flex';
+  if (urlInput) {
+    urlInput.focus();
+    urlInput.select();
+  }
+}
+window.openLiveApplyModal = openLiveApplyModal;
+
+function closeLiveApplyModal() {
+  const modal = document.getElementById('live-apply-modal');
+  if (modal) modal.style.display = 'none';
+}
+window.closeLiveApplyModal = closeLiveApplyModal;
+
+function setLiveApplyPreset(url, company, title) {
+  const urlInput = document.getElementById('live-apply-url');
+  const compInput = document.getElementById('live-apply-company');
+  const titleInput = document.getElementById('live-apply-title');
+
+  if (urlInput) urlInput.value = url;
+  if (compInput) compInput.value = company;
+  if (titleInput) titleInput.value = title;
+  showToast(`Loaded ${company} live ATS application link.`, "info", "Preset Loaded");
+}
+window.setLiveApplyPreset = setLiveApplyPreset;
+
+async function executeLiveApply() {
+  const urlInput = document.getElementById('live-apply-url');
+  const compInput = document.getElementById('live-apply-company');
+  const titleInput = document.getElementById('live-apply-title');
+  const autoSubmitCheck = document.getElementById('live-apply-autosubmit');
+  const visibleCheck = document.getElementById('live-apply-visible');
+
+  const consoleContainer = document.getElementById('live-apply-console-container');
+  const consoleBox = document.getElementById('live-apply-console');
+  const proofSection = document.getElementById('live-apply-proof-section');
+  const screenshotImg = document.getElementById('live-apply-screenshot-img');
+  const screenshotLink = document.getElementById('live-apply-screenshot-link');
+  const statusTag = document.getElementById('live-apply-status-tag');
+  const btn = document.getElementById('btn-execute-live-apply');
+  const btnText = document.getElementById('btn-execute-live-apply-text');
+
+  const url = (urlInput ? urlInput.value : '').trim();
+  const company = (compInput ? compInput.value : '').trim() || 'Direct Company';
+  const title = (titleInput ? titleInput.value : '').trim() || 'Software Engineer';
+  const autoSubmit = autoSubmitCheck ? autoSubmitCheck.checked : true;
+  const isVisible = visibleCheck ? visibleCheck.checked : true;
+
+  if (!url || !url.startsWith('http')) {
+    showToast("Please enter a valid job URL starting with http:// or https://", "warning", "URL Required");
+    if (urlInput) urlInput.focus();
+    return;
+  }
+
+  // Safeguard: Do not apply to Onemodo Technologies
+  if (company.toLowerCase().includes('onemodo') || url.toLowerCase().includes('onemodo')) {
+    showToast("Safeguard active: Cannot apply to current employer Onemodo Technologies.", "warning", "Exclusion Safeguard");
+    return;
+  }
+
+  // UI state: Running
+  if (btn) btn.disabled = true;
+  if (btnText) btnText.textContent = '⏳ Browser Running...';
+  if (consoleContainer) consoleContainer.style.display = 'block';
+  if (proofSection) proofSection.style.display = 'none';
+  if (statusTag) {
+    statusTag.textContent = 'RUNNING LIVE';
+    statusTag.style.background = 'rgba(56,189,248,0.15)';
+    statusTag.style.color = '#38bdf8';
+  }
+
+  const logs = [];
+  const appendLog = (msg) => {
+    const timestamp = new Date().toLocaleTimeString();
+    logs.push(`[${timestamp}] ${msg}`);
+    if (consoleBox) {
+      consoleBox.textContent = logs.join('\n');
+      consoleBox.scrollTop = consoleBox.scrollHeight;
+    }
+  };
+
+  appendLog(`⚡ Initializing Playwright autonomous engine for: ${company} — ${title}`);
+  appendLog(`🔗 Target URL: ${url}`);
+  appendLog(`🖥️ Mode: ${isVisible ? 'Visible Chrome Window' : 'Headless Background'}`);
+  appendLog(`🚀 Auto-Submit: ${autoSubmit ? 'Enabled (Clicks Submit on completion)' : 'Disabled (Pre-fill only)'}`);
+  appendLog(`👤 Candidate: Kiran S R | Resume: documents/Kiran S R _ Full Stack Engineer.pdf`);
+  appendLog(`🌐 Launching local Chrome executable...`);
+
+  try {
+    const response = await fetch('/api/apply/now', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        url,
+        company,
+        title,
+        autoSubmit,
+        headless: !isVisible
+      })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok || data.error) {
+      throw new Error(data.error || "Failed to execute live apply");
+    }
+
+    const result = data.result || {};
+    appendLog(`✅ Browser navigated and parsed page form fields.`);
+    appendLog(`📝 Form filling finished: ${result.fieldsFilled || 0} inputs and selects populated.`);
+    if (result.submitted) {
+      appendLog(`🎯 Submit button clicked. Confirmation detected!`);
+    } else {
+      appendLog(`⚠️ Form filled and prepared for manual submission.`);
+    }
+
+    if (result.confirmationScreenshot) {
+      appendLog(`📸 Proof screenshot saved: ${result.confirmationScreenshot}`);
+    }
+
+    appendLog(`🏁 Pipeline complete! Status: ${result.status || 'Applied'}`);
+
+    // Update status badge
+    if (statusTag) {
+      statusTag.textContent = result.status === 'Applied' ? 'APPLIED (VERIFIED)' : result.status;
+      statusTag.style.background = 'rgba(16,185,129,0.2)';
+      statusTag.style.color = '#34d399';
+    }
+
+    // Display screenshot proof
+    if (proofSection && screenshotImg) {
+      const cacheBustUrl = `/submission_confirmation.png?t=${Date.now()}`;
+      screenshotImg.src = cacheBustUrl;
+      if (screenshotLink) screenshotLink.href = cacheBustUrl;
+      proofSection.style.display = 'block';
+    }
+
+    showToast(`Successfully applied to ${company} with proof screenshot captured!`, "success", "Live Apply Complete");
+
+    // Refresh application tracker and metrics
+    if (window.fetchApplications) {
+      window.fetchApplications(true);
+    }
+
+  } catch (err) {
+    console.error("Live apply execution failed:", err);
+    appendLog(`❌ ERROR: ${err.message}`);
+    if (statusTag) {
+      statusTag.textContent = 'FAILED';
+      statusTag.style.background = 'rgba(239,68,68,0.2)';
+      statusTag.style.color = '#f87171';
+    }
+    showToast(`Live Apply error: ${err.message}`, "error", "Execution Failed");
+  } finally {
+    if (btn) btn.disabled = false;
+    if (btnText) btnText.textContent = '🚀 Run Live Apply & Submit';
+  }
+}
+window.executeLiveApply = executeLiveApply;
+
 

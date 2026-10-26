@@ -29,6 +29,12 @@
         <span id="rag-header-badge" style="color: var(--text-secondary);">RAG Memory Online (1.2ms)</span>
       </div>
 
+      <!-- Quick Action: Live Apply Button -->
+      <button onclick="openLiveApplyModal()" class="btn btn-primary" id="nav-btn-live-apply" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); border: none; font-weight: 600; box-shadow: 0 2px 10px rgba(16, 185, 129, 0.4); display: flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.85rem; font-size: 0.78rem; cursor: pointer;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <span>🚀 Live Apply Link</span>
+      </button>
+
       <!-- Google Sheets Live Sync Link -->
       <a href="https://docs.google.com/spreadsheets/d/1CjpYCVydPHoEy3zxW1DDV4eHk83qcq0VdFGxiMKbaN0/edit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary sheets-nav-link" title="Open live synchronized Google Sheet">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent-apple-green)" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
@@ -135,6 +141,10 @@
             </span>
           </div>
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;">
+            <button class="btn btn-primary" onclick="openLiveApplyModal()" id="btn-live-apply-hero" style="background: linear-gradient(135deg, #10b981 0%, #0071e3 100%); border: none; font-weight: 600; box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4); display: flex; align-items: center; gap: 0.45rem; cursor: pointer;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span>🚀 Live Apply Link (Open, Fill & Submit)</span>
+            </button>
             <button class="btn btn-primary" onclick="window.triggerReactAutoApplyAll && window.triggerReactAutoApplyAll()" id="btn-react-auto-apply-hero" style="background: linear-gradient(135deg, #0071e3 0%, #38bdf8 100%); border: none; font-weight: 600; box-shadow: 0 4px 14px rgba(0, 113, 227, 0.4); display: flex; align-items: center; gap: 0.4rem;">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
               <span>⚡ 1-Click Auto-Apply to All (Tailored)</span>
@@ -863,6 +873,127 @@
       <div class="modal-footer" style="padding: 0.85rem 1.5rem; display: flex; justify-content: space-between; align-items: center;">
         <span style="font-size: 0.76rem; color: var(--text-tertiary);">All applications, match scores, and interview notes sync here in real time.</span>
         <button class="btn btn-secondary" onclick="closeSheetsModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= LIVE AUTOMATED APPLICATION MODAL (PLAYWRIGHT BROWSER) ================= -->
+  <div id="live-apply-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-container" style="max-width: 760px; width: 92vw; max-height: 90vh; display: flex; flex-direction: column;">
+      <!-- Modal Header -->
+      <div class="modal-header" style="background: linear-gradient(135deg, rgba(16,185,129,0.08) 0%, rgba(0,113,227,0.08) 100%);">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <div style="width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, #10b981 0%, #0071e3 100%); display: flex; align-items: center; justify-content: center; color: #fff; box-shadow: 0 4px 14px rgba(16,185,129,0.35);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: #fff; margin: 0;">Autonomous Live Apply Engine</h3>
+              <span style="font-size: 0.68rem; background: rgba(16,185,129,0.2); color: #34d399; border: 1px solid rgba(16,185,129,0.4); padding: 0.15rem 0.5rem; border-radius: 980px; font-weight: 600;">Playwright + Local Chrome</span>
+            </div>
+            <p style="font-size: 0.76rem; color: var(--text-secondary); margin: 0.15rem 0 0;">Opens job URL, autofills candidate profile, attaches PDF resume, and submits form.</p>
+          </div>
+        </div>
+        <button onclick="closeLiveApplyModal()" style="background: none; border: none; color: var(--text-tertiary); cursor: pointer; padding: 0.4rem; border-radius: 8px; transition: color 0.15s;" title="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body" style="padding: 1.25rem 1.75rem; display: flex; flex-direction: column; gap: 1rem; overflow-y: auto;">
+        
+        <!-- Job URL Input & Quick Presets -->
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+            <label style="font-size: 0.8rem; font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.35rem;">
+              <span>🔗 Job Application URL (ATS link)</span>
+              <span style="color: #ef4444;">*</span>
+            </label>
+            <span style="font-size: 0.72rem; color: var(--accent-apple-blue); font-weight: 500;">Greenhouse · Lever · Workday · Ashby · Any Web ATS</span>
+          </div>
+          <input type="url" id="live-apply-url" placeholder="https://boards.greenhouse.io/... or https://jobs.lever.co/..." style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.65rem 0.85rem; border-radius: 10px; font-size: 0.82rem; font-family: monospace; outline: none; box-sizing: border-box;">
+          
+          <!-- Quick Presets -->
+          <div style="display: flex; align-items: center; gap: 0.45rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <span style="font-size: 0.72rem; color: var(--text-tertiary);">Quick Test Links:</span>
+            <button type="button" class="btn btn-secondary" onclick="setLiveApplyPreset('https://boards.greenhouse.io/cloudflare/jobs/8097321?gh_jid=8097321', 'Cloudflare', 'Systems / Software Engineer')" style="font-size: 0.7rem; padding: 0.2rem 0.55rem; border-radius: 6px;">
+              ⚡ Cloudflare SWE (Greenhouse)
+            </button>
+            <button type="button" class="btn btn-secondary" onclick="setLiveApplyPreset('https://job-boards.greenhouse.io/gitlab/jobs/8687926002', 'GitLab', 'Senior Engineer')" style="font-size: 0.7rem; padding: 0.2rem 0.55rem; border-radius: 6px;">
+              🦊 GitLab Remote (Greenhouse)
+            </button>
+          </div>
+        </div>
+
+        <!-- Target Company & Title (Optional Overrides) -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+          <div>
+            <label style="font-size: 0.76rem; color: var(--text-secondary); display: block; margin-bottom: 0.35rem;">Company Name:</label>
+            <input type="text" id="live-apply-company" placeholder="e.g. Cloudflare (Auto-detected if empty)" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem 0.75rem; border-radius: 8px; font-size: 0.8rem; box-sizing: border-box;">
+          </div>
+          <div>
+            <label style="font-size: 0.76rem; color: var(--text-secondary); display: block; margin-bottom: 0.35rem;">Job Role / Title:</label>
+            <input type="text" id="live-apply-title" placeholder="e.g. Software Engineer (Auto-detected)" style="width: 100%; background: var(--bg-card-hover); color: #fff; border: 1px solid var(--border-subtle); padding: 0.5rem 0.75rem; border-radius: 8px; font-size: 0.8rem; box-sizing: border-box;">
+          </div>
+        </div>
+
+        <!-- Options Switches (Auto Submit, Browser Visibility) -->
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 0.75rem 1rem; display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center; justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 0.6rem;">
+            <label class="filter-chip" style="cursor: pointer; background: rgba(16,185,129,0.12); border-color: rgba(16,185,129,0.3); color: #34d399; font-weight: 600;">
+              <input type="checkbox" id="live-apply-autosubmit" checked> ⚡ Auto-Submit Form
+            </label>
+            <span style="font-size: 0.72rem; color: var(--text-tertiary);">Clicks submit button automatically</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.6rem;">
+            <label class="filter-chip" style="cursor: pointer;">
+              <input type="checkbox" id="live-apply-visible" checked> 👁️ Visible Chrome Window
+            </label>
+            <span style="font-size: 0.72rem; color: var(--text-tertiary);">Watch automation live on screen</span>
+          </div>
+        </div>
+
+        <!-- Live Status / Console Box -->
+        <div id="live-apply-console-container" style="display: none;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+            <span style="font-size: 0.74rem; font-weight: 600; color: #38bdf8; display: flex; align-items: center; gap: 0.4rem;">
+              <span class="status-dot" style="background: #38bdf8; box-shadow: 0 0 8px #38bdf8;"></span>
+              Live Browser Execution Logs:
+            </span>
+            <span id="live-apply-status-tag" style="font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 980px; background: rgba(56,189,248,0.15); color: #38bdf8;">RUNNING</span>
+          </div>
+          <div id="live-apply-console" style="background: #090a0f; border: 1px solid #1e293b; border-radius: 10px; padding: 0.75rem 1rem; font-family: 'Consolas', 'Monaco', monospace; font-size: 0.75rem; color: #94a3b8; height: 130px; overflow-y: auto; line-height: 1.5; white-space: pre-wrap;">
+Initializing Playwright browser context...
+          </div>
+        </div>
+
+        <!-- Proof Screenshot Section (When finished) -->
+        <div id="live-apply-proof-section" style="display: none; background: rgba(16,185,129,0.05); border: 1px solid rgba(16,185,129,0.25); border-radius: 12px; padding: 0.85rem 1rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-size: 0.78rem; font-weight: 600; color: #34d399; display: flex; align-items: center; gap: 0.35rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Application Verified & Submitted! Proof Screenshot:</span>
+            </span>
+            <a id="live-apply-screenshot-link" href="/submission_confirmation.png" target="_blank" class="btn btn-secondary" style="font-size: 0.7rem; padding: 0.2rem 0.55rem; text-decoration: none;">Open Full Image ↗</a>
+          </div>
+          <div style="max-height: 220px; overflow: hidden; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: #000; display: flex; justify-content: center;">
+            <img id="live-apply-screenshot-img" src="/submission_confirmation.png" alt="Proof of Submission" style="width: 100%; height: auto; object-fit: contain; display: block;">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer" style="padding: 1rem 1.75rem; background: rgba(255,255,255,0.01); border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 0.74rem; color: var(--text-tertiary);">Resume PDF attached: <code>Kiran S R _ Full Stack Engineer.pdf</code></span>
+        <div style="display: flex; gap: 0.6rem; align-items: center;">
+          <button class="btn btn-secondary" onclick="closeLiveApplyModal()">Close</button>
+          <button id="btn-execute-live-apply" class="btn btn-primary" onclick="executeLiveApply()" style="background: linear-gradient(135deg, #10b981 0%, #0071e3 100%); border: none; font-weight: 600; box-shadow: 0 4px 14px rgba(16,185,129,0.4); display: flex; align-items: center; gap: 0.45rem; padding: 0.55rem 1.25rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span id="btn-execute-live-apply-text">🚀 Run Live Apply & Submit</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>

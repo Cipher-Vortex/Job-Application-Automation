@@ -31,6 +31,14 @@ const FASTAPI_URL = process.env.FASTAPI_URL || 'http://127.0.0.1:8000';
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../frontend')));
+app.use('/screenshots', express.static(path.join(__dirname, '../data/screenshots')));
+app.use('/tailored_resumes', express.static(path.join(__dirname, '../data/tailored_resumes')));
+
+app.get('/submission_confirmation.png', (req, res) => {
+  const p = path.join(__dirname, '../submission_confirmation.png');
+  if (fs.existsSync(p)) return res.sendFile(p);
+  res.status(404).send('Not found');
+});
 
 // Inline SVG Favicon endpoint to eliminate 404 browser errors
 app.get('/favicon.ico', (req, res) => {
