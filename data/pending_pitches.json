@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6033830873",
+      "type": "bounty",
+      "title": "Bounty Scout — 2026-10-26 (ariahendrawan-sudo/project-a)",
+      "companyOrClient": "GitHub: ariahendrawan-sudo/project-a",
+      "budgetOrSalary": "$10",
+      "url": "https://github.com/ariahendrawan-sudo/project-a/issues/15",
+      "description": "# Bounty Scout — week of 2026-10-26\n\nTarget: at least US$10/week. One merged bounty of US$50 covers ~5 weeks.\n\n| # | Score | Amount | Stars | Comments | Repository | Issue |\n|---|------:|-------:|------:|---------:|------------|-------|\n| – | – | – | – | – | – | No bounty passed the filters this week |\n\n## Filtered out\n\n- no stated amount: 79\n- bounty-farm repository: 57\n- outside expertise: 39\n- below minimum amount: 14\n- not an organisation repo: 9\n- fewer than 500 stars: 3\n\n## Before claiming\n- Read the repo's CONTRIBUTING and bounty rules; many ban low-effort or unreviewed AI-generated PRs.\n- Check nobody is already assigned or has an open PR (comment count is a proxy only).\n- Prefer 💎 Algora bounties: the payout is escrowed by the platform.\n- Comment to claim (e.g. `/attempt` on Algora) only when you can deliver within a week.\n- Payouts go to your own Algora/IssueHunt/Stripe account; declare the income for tax.\n"
+    },
+    "pitch": "Hi Ariah, I’m Kiran S R, a Full Stack Engineer based in Bengaluru ready to deliver high-quality, production-ready code for your project-a repository. With a background in React, TypeScript, and Node.js, I specialize in optimizing performance and building scalable architectures. My work on Zupper Commerce, where I reduced page load times by 25% through memoization and code splitting, demonstrates my ability to implement efficient, maintainable solutions that pass strict quality filters. I am available to start immediately and can ensure any PR I submit is well-documented, tested, and compliant with your CONTRIBUTING guidelines. Let’s connect to discuss how I can help you secure your next bounty. You can view my full portfolio and technical details at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-26T05:44:28.643Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6030951747",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-10-26T00:09 (relayhop/sn-monetization-runtime)",
