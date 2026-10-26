@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6030951747",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-26T00:09 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1335",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1601866\tStacker_Stocks\t2\t319\t10000\t12\t12.0\t9274\t28904\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js systems. I can deliver the required monetization runtime logic immediately, ensuring seamless API integration and robust state management. My work on Zupper Commerce demonstrates my ability to optimize complex frontend architectures, reducing page load times by 25% through strategic code splitting and memoization—skills directly applicable to building scalable, low-latency bounty interfaces. I’m ready to start right now and deliver a clean, tested PR within 24 hours. Check out my recent projects and technical approach here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-26T00:32:08.817Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6025801709",
       "type": "bounty",
       "title": "test(worker): sandbox tests for every Temporal workflow (oll4com/spaceapp)",
