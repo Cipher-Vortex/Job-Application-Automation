@@ -822,5 +822,49 @@
     "status": "Pending Review",
     "notes": "ApplyPilot autonomous apply. Tailored resume: Kiran_SR_GitLab_Senior_Frontend_Engineer.pdf",
     "appliedDate": "2026-10-25"
+  },
+  {
+    "id": "app_mvpcpz2y",
+    "company": "GitLab",
+    "jobTitle": "Senior Frontend Engineer",
+    "jobUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8556658002",
+    "source": "greenhouse",
+    "matchScore": 92,
+    "status": "Pending Review",
+    "notes": "ApplyPilot autonomous apply. Tailored resume: Kiran_SR_GitLab_Senior_Frontend_Engineer.pdf",
+    "appliedDate": "2026-10-26"
+  },
+  {
+    "id": "app_mvpct87s",
+    "company": "GitLab",
+    "jobTitle": "Senior Frontend Engineer",
+    "jobUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8556658002",
+    "source": "greenhouse",
+    "matchScore": 92,
+    "status": "Pending Review",
+    "notes": "ApplyPilot autonomous apply. Tailored resume: Kiran_SR_GitLab_Senior_Frontend_Engineer.pdf",
+    "appliedDate": "2026-10-26"
+  },
+  {
+    "id": "app_mvpcwblz",
+    "company": "Cloudflare",
+    "jobTitle": "Systems / Software Engineer",
+    "jobUrl": "https://job-boards.greenhouse.io/cloudflare/jobs/8097321?gh_jid=8097321",
+    "source": "greenhouse",
+    "matchScore": 92,
+    "status": "Applied",
+    "notes": "ApplyPilot autonomous apply. Tailored resume: Kiran_SR_Cloudflare_Systems___Software_Engineer.pdf",
+    "appliedDate": "2026-10-26"
+  },
+  {
+    "id": "app_mvpec9nb",
+    "company": "Cloudflare",
+    "jobTitle": "Systems / Software Engineer",
+    "jobUrl": "https://job-boards.greenhouse.io/cloudflare/jobs/8097321?gh_jid=8097321",
+    "source": "greenhouse",
+    "matchScore": 92,
+    "status": "Applied",
+    "notes": "ApplyPilot autonomous apply. Tailored resume: Kiran_SR_Cloudflare_Systems___Software_Engineer.pdf",
+    "appliedDate": "2026-10-26"
   }
 ]

@@ -15,6 +15,9 @@
     "apply:pilot": "npx tsx src/scripts/apply_pilot.ts",
     "apply:local": "npx tsx src/scripts/run_local_persistent_apply.ts",
     "leads:local": "npx tsx src/scripts/local_business_leadgen.ts",
+    "deploy:pm2": "npx pm2 start ecosystem.config.js",
+    "deploy:stop": "npx pm2 stop ecosystem.config.js",
+    "deploy:status": "npx pm2 status",
     "legacy": "python start_all.py",
     "test": "node --test tests/autonomous_pipeline.test.js",
     "test:legacy": "python -m unittest tests/test_agents.py"

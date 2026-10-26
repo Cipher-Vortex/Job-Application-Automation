@@ -7,39 +7,59 @@ import { tracker } from "../storage/tracker";
 
 async function main() {
   const args = process.argv.slice(2);
-  const autoSubmit = args.includes("--submit") || args.includes("-s");
+  // Auto-submit is ENABLED by default; use --no-submit or --dry-run for prefill-only preview
+  const autoSubmit = !args.includes("--no-submit") && !args.includes("--dry-run") && !args.includes("--preview");
   const isHeadless = args.includes("--headless");
-  const targetUrl = args.find(a => a.startsWith("http"));
+  const targetUrls = args.filter(a => a.startsWith("http"));
 
   console.log("==================================================================");
-  console.log("✈️ APPLYPILOT: AUTONOMOUS APPLICATION ENGINE (ApplyPilot-Style)");
+  console.log("✈️ APPLYPILOT: AUTONOMOUS APPLICATION ENGINE (AUTO-OPEN, FILL & SUBMIT)");
+  console.log(`AutoSubmit: ${autoSubmit ? "ENABLED (Will fill form & submit to employer)" : "DISABLED (Prefill only)"}`);
+  console.log(`Browser Mode: ${isHeadless ? "Headless" : "Visible Application Window"}`);
   console.log("==================================================================");
 
   let targetJobs: ApplyPilotJobInput[] = [];
 
-  if (targetUrl) {
-    // Single job mode
-    let company = "Direct Company";
-    let title = "Senior Full Stack Engineer";
+  if (targetUrls.length > 0) {
+    for (const url of targetUrls) {
+      let company = "Direct Company";
+      let title = "Senior Full Stack Engineer";
 
-    if (targetUrl.includes("gitlab")) {
-      company = "GitLab";
-      title = "Senior Frontend Engineer";
-    } else if (targetUrl.includes("cloudflare")) {
-      company = "Cloudflare";
-      title = "Software Engineer";
-    } else if (targetUrl.includes("linear")) {
-      company = "Linear";
-      title = "Full Stack Engineer";
+      // Intelligent company extractor from ATS URL
+      try {
+        const parsed = new URL(url);
+        const segments = parsed.pathname.split("/").filter(Boolean);
+        if (parsed.hostname.includes("greenhouse.io")) {
+          company = segments[0] === "jobs" ? (segments[1] || "Company") : segments[0];
+          if (company.toLowerCase() === "job-boards.greenhouse.io") company = segments[0] || "Company";
+        } else if (parsed.hostname.includes("lever.co")) {
+          company = segments[0] || "Company";
+        } else if (parsed.hostname.includes("ashbyhq.com")) {
+          company = segments[0] || "Company";
+        }
+        // Capitalize company
+        company = company.charAt(0).toUpperCase() + company.slice(1);
+      } catch {}
+
+      if (url.includes("gitlab")) {
+        company = "GitLab";
+        title = "Senior Frontend Engineer";
+      } else if (url.includes("cloudflare")) {
+        company = "Cloudflare";
+        title = "Systems / Software Engineer";
+      } else if (url.includes("linear")) {
+        company = "Linear";
+        title = "Full Stack Engineer";
+      }
+
+      targetJobs.push({
+        url,
+        company,
+        title,
+        description: "Full Stack Engineer role requiring React, TypeScript, Node.js, and high performance architecture.",
+        matchScore: 92
+      });
     }
-
-    targetJobs.push({
-      url: targetUrl,
-      company,
-      title,
-      description: "Full Stack Engineer role requiring React, TypeScript, Node.js, and high performance architecture.",
-      matchScore: 92
-    });
   } else {
     // Batch mode: Read live scraped jobs or fetch top ATS match
     const liveScrapedPath = path.resolve(process.cwd(), "data/live_scraped_jobs.json");

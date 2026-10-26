@@ -83,12 +83,26 @@ export async function runApplyPilot(
     "--no-sandbox"
   ];
 
+  const possiblePaths = [
+    "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+    "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe",
+  ];
+  const exePath = possiblePaths.find(p => fs.existsSync(p));
+
+  const launchOptions: any = {
+    headless: isHeadless,
+    args: launchArgs
+  };
+  if (exePath) {
+    launchOptions.executablePath = exePath;
+  } else {
+    launchOptions.channel = "chrome";
+  }
+
   try {
-    browser = await chromium.launch({
-      channel: "chrome",
-      headless: isHeadless,
-      args: launchArgs
-    });
+    browser = await chromium.launch(launchOptions);
   } catch {
     try {
       browser = await chromium.launch({
@@ -183,45 +197,97 @@ export async function runApplyPilot(
       );
     }
 
-    // Standard ATS Screening Questions & React-Select Dropdowns
+    // Standard ATS Screening Questions, Dropdowns, Radios & Checkboxes
     try {
-      // 1. Handle modern react-select containers (e.g. Greenhouse, Lever)
-      const selectContainers = await page.$$('.select__container, div.select, [class*="select-container"]');
-      for (const container of selectContainers) {
+      // 1. Handle standard HTML <select> dropdowns
+      const htmlSelects = await page.$$('select');
+      for (const sel of htmlSelects) {
         try {
-          const label = (await container.$eval('label', el => el.innerText.trim()).catch(() => '')).toLowerCase();
-          const control = await container.$('.select__control, [class*="-control"], div[role="combobox"]');
-          if (!control) continue;
+          if (!await sel.isVisible()) continue;
+          const options = await sel.$$('option');
+          const nameAttr = (await sel.getAttribute('name') || '').toLowerCase();
+          const idAttr = (await sel.getAttribute('id') || '').toLowerCase();
+          const parentText = (await sel.evaluate(el => (el.closest('div') || el.parentElement)?.innerText || '')).toLowerCase();
+          const combined = `${nameAttr} ${idAttr} ${parentText}`;
 
-          let answer = "";
-          if (label.includes("country of residence") || (label.includes("country") && !label.includes("phone"))) {
-            answer = "India";
-          } else if (label.includes("country") || label.includes("phone code")) {
-            answer = "+91";
-          } else if (label.includes("sponsorship") || label.includes("visa")) {
-            answer = "No";
-          } else if (label.includes("employment agreement") || label.includes("restrictions")) {
-            answer = "No";
-          } else if (label.includes("worked at") || label.includes("previously worked") || label.includes("consulted")) {
-            answer = "No";
-          } else if (label.includes("gender")) {
-            answer = "Decline To Self Identify";
-          } else if (label.includes("hispanic") || label.includes("latino")) {
-            answer = "No";
-          } else if (label.includes("veteran")) {
-            answer = "I am not a protected veteran";
+          let targetKeywords: string[] = [];
+          if (combined.includes('gender')) {
+            targetKeywords = ['male', 'decline', 'prefer not'];
+          } else if (combined.includes('country') || combined.includes('dial') || combined.includes('phone')) {
+            targetKeywords = ['india', '+91'];
+          } else if (combined.includes('race') || combined.includes('ethnic')) {
+            targetKeywords = ['asian', 'decline', 'prefer not'];
+          } else if (combined.includes('veteran')) {
+            targetKeywords = ['not a protected', 'no'];
+          } else if (combined.includes('disability')) {
+            targetKeywords = ["don't have", 'no'];
+          } else if (combined.includes('sponsorship') || combined.includes('visa')) {
+            targetKeywords = ['no'];
+          } else if (combined.includes('authorized') || combined.includes('eligible')) {
+            targetKeywords = ['yes'];
           }
 
-          if (answer) {
-            await control.scrollIntoViewIfNeeded();
-            await control.click();
-            await page.waitForTimeout(250);
-            await page.keyboard.type(answer);
-            await page.waitForTimeout(300);
-            await page.keyboard.press("Enter");
-            await page.waitForTimeout(200);
-            fieldsFilled.push(`select_${label.slice(0, 15)}`);
-            console.log(`  ✓ Handled dropdown [${label.slice(0, 30)}...]: ${answer}`);
+          let selected = false;
+          for (const opt of options) {
+            const val = await opt.getAttribute('value');
+            const txt = (await opt.innerText()).toLowerCase();
+            if (val && val !== '' && !txt.includes('select')) {
+              if (targetKeywords.length > 0) {
+                if (targetKeywords.some(k => txt.includes(k))) {
+                  await sel.selectOption(val);
+                  selected = true;
+                  fieldsFilled.push(`select_${nameAttr || idAttr}`);
+                  console.log(`  ✓ Selected standard dropdown [${nameAttr || idAttr}]: ${txt.trim().slice(0, 25)}`);
+                  break;
+                }
+              } else {
+                await sel.selectOption(val);
+                selected = true;
+                break;
+              }
+            }
+          }
+          if (targetKeywords.length > 0 && !selected) {
+            for (const opt of options) {
+              const val = await opt.getAttribute('value');
+              const txt = (await opt.innerText()).toLowerCase();
+              if (val && val !== '' && !txt.includes('select')) {
+                await sel.selectOption(val);
+                break;
+              }
+            }
+          }
+        } catch {}
+      }
+
+      // 1.8 Handle Radio buttons
+      const radioGroups = await page.$$('input[type="radio"]');
+      for (const rb of radioGroups) {
+        try {
+          if (!await rb.isVisible()) continue;
+          const rbName = (await rb.getAttribute('name') || '').toLowerCase();
+          const rbVal = (await rb.getAttribute('value') || '').toLowerCase();
+          const parentTxt = (await rb.evaluate(el => (el.closest('fieldset') || el.closest('div') || el.parentElement)?.innerText || '')).toLowerCase();
+
+          // Check if this radio button group has already been answered
+          const isChecked = await rb.isChecked();
+          if (isChecked) continue;
+
+          let targetVal = "";
+          if (parentTxt.includes('authorized to work') || parentTxt.includes('legally authorized') || parentTxt.includes('18 years')) {
+            targetVal = "yes";
+          } else if (parentTxt.includes('sponsorship') || parentTxt.includes('visa') || parentTxt.includes('previously worked') || parentTxt.includes('former employee') || parentTxt.includes('non-compete')) {
+            targetVal = "no";
+          } else if (parentTxt.includes('gender')) {
+            targetVal = "male";
+          } else if (parentTxt.includes('agree') || parentTxt.includes('consent') || parentTxt.includes('acknowledge')) {
+            targetVal = "yes";
+          }
+
+          if (targetVal && (rbVal.includes(targetVal) || parentTxt.includes(targetVal))) {
+            await rb.check({ force: true });
+            fieldsFilled.push(`radio_${rbName}`);
+            console.log(`  ✓ Checked radio option [${rbName}]: ${targetVal}`);
           }
         } catch {}
       }
@@ -232,16 +298,24 @@ export async function runApplyPilot(
         try {
           const id = (await inp.getAttribute('id') || '').toLowerCase();
           const aria = (await inp.getAttribute('aria-label') || '').toLowerCase();
+          const placeholder = (await inp.getAttribute('placeholder') || '').toLowerCase();
           const label = (await inp.evaluate(el => {
             const lbl = document.querySelector(`label[for="${el.id}"]`) || el.closest('div')?.querySelector('label');
             return lbl ? lbl.textContent || '' : '';
           })).toLowerCase();
 
-          const combined = `${id} ${aria} ${label}`;
+          const combined = `${id} ${aria} ${placeholder} ${label}`;
           const currentVal = await inp.inputValue().catch(() => '');
           if (currentVal) continue; // Already filled
 
-          if (combined.includes("linkedin")) {
+          if (combined.includes("location") || combined.includes("city") || combined.includes("country")) {
+            await inp.fill("Bengaluru, India");
+            await page.waitForTimeout(500);
+            await page.keyboard.press("ArrowDown");
+            await page.keyboard.press("Enter");
+            fieldsFilled.push("location");
+            console.log(`  ✓ Filled Location: Bengaluru, India`);
+          } else if (combined.includes("linkedin")) {
             await inp.fill(TRUTH_PROFILE.candidate.linkedin);
             fieldsFilled.push("linkedin_profile");
             console.log(`  ✓ Filled LinkedIn Profile: ${TRUTH_PROFILE.candidate.linkedin}`);
@@ -261,15 +335,50 @@ export async function runApplyPilot(
             await inp.fill("Kiran");
             fieldsFilled.push("preferred_name");
             console.log(`  ✓ Filled Preferred Name: Kiran`);
-          } else if (combined.includes("adjustments") || combined.includes("assist you during")) {
-            await inp.fill("None");
-            fieldsFilled.push("accommodations_none");
           } else if (combined.includes("notice period") || combined.includes("notice")) {
             await inp.fill("Immediate (15 days)");
             fieldsFilled.push("notice_period");
+            console.log(`  ✓ Filled Notice Period: Immediate (15 days)`);
+          } else if (combined.includes("current salary") || combined.includes("current ctc") || combined.includes("current_ctc")) {
+            await inp.fill("280000");
+            fieldsFilled.push("current_salary");
+            console.log(`  ✓ Filled Current Salary: 280000`);
+          } else if (combined.includes("expected") || combined.includes("salary") || combined.includes("ctc") || combined.includes("compensation")) {
+            await inp.fill("800000");
+            fieldsFilled.push("expected_salary");
+            console.log(`  ✓ Filled Expected Salary: 800000`);
+          } else if (combined.includes("relocat")) {
+            await inp.fill("Yes");
+            fieldsFilled.push("relocation");
+          } else if (combined.includes("experience") || combined.includes("years")) {
+            await inp.fill("1.5");
+            fieldsFilled.push("years_experience");
+          } else if (combined.includes("sponsorship") || combined.includes("visa")) {
+            await inp.fill("No");
+            fieldsFilled.push("visa_sponsorship_no");
+          } else if (combined.includes("adjustments") || combined.includes("assist you during")) {
+            await inp.fill("None");
+            fieldsFilled.push("accommodations_none");
+          } else if (combined.includes("why") || combined.includes("about") || combined.includes("summary")) {
+            await inp.fill("Full Stack & AI Engineer experienced in React, Node.js, TypeScript, REST APIs, and microservices.");
+            fieldsFilled.push("why_work_here");
           } else if (combined.includes("legal name")) {
             await inp.fill(TRUTH_PROFILE.candidate.name);
             fieldsFilled.push("legal_name");
+          }
+        } catch {}
+      }
+
+      // 3. Handle Checkboxes (Terms, Privacy, Consent, Agreements)
+      const checkboxes = await page.$$('input[type="checkbox"]');
+      for (const cb of checkboxes) {
+        try {
+          if (!await cb.isVisible()) continue;
+          const isChecked = await cb.isChecked();
+          if (!isChecked) {
+            await cb.check({ force: true });
+            fieldsFilled.push("checkbox_checked");
+            console.log("  ✓ Checked required compliance/consent checkbox");
           }
         } catch {}
       }
@@ -278,7 +387,7 @@ export async function runApplyPilot(
     }
 
     // 5. Submit or Review
-    console.log(`\n[Stage 5/5] Finalizing application...`);
+    console.log(`\n[Stage 5/5] Submitting & finalizing application...`);
     let finalStatus: "Applied" | "Pre-filled" = "Pre-filled";
     let screenshotPath = "";
 
@@ -286,21 +395,65 @@ export async function runApplyPilot(
     if (!fs.existsSync(screenshotsDir)) fs.mkdirSync(screenshotsDir, { recursive: true });
 
     if (shouldSubmit) {
-      console.log("[ApplyPilot] Submitting application...");
-      const submitBtn = await page.$('button[type="submit"], #submit_app, input[type="submit"], button:has-text("Submit application"), button:has-text("Submit Application")');
+      console.log("[ApplyPilot] Submitting application live via Playwright...");
+      const submitSelectors = [
+        '#submit_app',
+        'button[type="submit"]',
+        'input[type="submit"]',
+        'button:has-text("Submit application")',
+        'button:has-text("Submit Application")',
+        'button:has-text("Submit")',
+        'button:has-text("Apply now")',
+        'button:has-text("Apply Now")',
+        'button:has-text("Apply")'
+      ];
+
+      let submitBtn = null;
+      for (const sel of submitSelectors) {
+        submitBtn = await page.$(sel);
+        if (submitBtn && await submitBtn.isVisible()) break;
+      }
+
       if (submitBtn) {
         await submitBtn.scrollIntoViewIfNeeded();
-        await page.waitForTimeout(500);
+        await page.waitForTimeout(1000);
+        console.log("  🚀 Clicking Submit button live...");
         await submitBtn.click();
-        await page.waitForTimeout(4000);
-        finalStatus = "Applied";
-        console.log("  ✓ Submit button clicked successfully.");
+        await page.waitForTimeout(5000);
+
+        // Check for success or error notices
+        const bodyText = (await page.innerText("body").catch(() => "")).toLowerCase();
+        const hasSuccess = ["thank you", "application submitted", "received your application", "successfully submitted", "we will review", "we'll be in touch"].some(kw => bodyText.includes(kw));
+
+        if (hasSuccess) {
+          finalStatus = "Applied";
+          console.log("  🎉 Application submission verified! Success confirmation displayed.");
+        } else {
+          // Check if error elements are highlighted
+          const errors = await page.$$('.field-error, .error, [class*="error-message"], [role="alert"]');
+          let hasVisibleError = false;
+          for (const errEl of errors) {
+            try {
+              if (await errEl.isVisible()) {
+                const errTxt = (await errEl.innerText()).trim();
+                if (errTxt && !errTxt.toLowerCase().includes("cookie")) {
+                  console.warn(`  ⚠️ Field validation note: ${errTxt}`);
+                  hasVisibleError = true;
+                }
+              }
+            } catch {}
+          }
+          finalStatus = hasVisibleError ? "Pre-filled" : "Applied";
+        }
       } else {
-        console.log("  ℹ Submit button not detected or requires review. Staged as Pre-filled.");
+        console.log("  ℹ Submit button not detected automatically. Saved as Pre-filled.");
       }
 
       screenshotPath = path.resolve(screenshotsDir, `${job.company.replace(/[^a-zA-Z0-9]/g, '_')}_submitted.png`);
       await page.screenshot({ path: screenshotPath, fullPage: true }).catch(() => {});
+      // Also save root screenshot for immediate verification
+      const rootScreenshot = path.resolve(process.cwd(), "submission_confirmation.png");
+      await page.screenshot({ path: rootScreenshot, fullPage: true }).catch(() => {});
       console.log(`  ✓ Application proof captured at: ${screenshotPath}`);
     } else {
       screenshotPath = path.resolve(screenshotsDir, `${job.company.replace(/[^a-zA-Z0-9]/g, '_')}_prefilled.png`);

@@ -16,12 +16,23 @@ export async function prefillApplication(jobUrl: string, resumePath?: string, op
   console.log(`[FormFiller] Launching browser (headless: ${isHeadless}, autoSubmit: ${shouldSubmit}) for ${jobUrl}`);
 
   let browser: Browser;
+  const possiblePaths = [
+    "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+    "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe",
+  ];
+  const exePath = possiblePaths.find(p => fs.existsSync(p));
+
+  const launchOptions: any = {
+    headless: isHeadless,
+    args: ["--start-maximized", "--disable-blink-features=AutomationControlled"]
+  };
+  if (exePath) launchOptions.executablePath = exePath;
+  else launchOptions.channel = "chrome";
+
   try {
-    browser = await chromium.launch({
-      headless: isHeadless,
-      channel: "chrome",
-      args: ["--start-maximized", "--disable-blink-features=AutomationControlled"]
-    });
+    browser = await chromium.launch(launchOptions);
   } catch {
     try {
       browser = await chromium.launch({
