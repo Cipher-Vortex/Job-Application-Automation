@@ -1,6 +1,56 @@
 [
   {
     "opportunity": {
+      "id": "rok_1137571",
+      "type": "remote_job",
+      "title": "Senior Software Engineer",
+      "companyOrClient": "Klardaten",
+      "budgetOrSalary": "$80000k - $100000k",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-klardaten-1137571",
+      "description": " Klardaten connects DATEV with other software and AI applications. Weâre hiring 1â2 senior engineers to own product development, DATEV integrations and automation.   Based in the EU Â· Remote or Berlin Â· Full time Â· Permanent or contract Â· Start as soon as possible   Own the outcome  Once we agree on a general goal, you independently work out what to build and how to deliver it. You investigate the problem, define the scope, make technical decisions and carry the work through implementation, testing, deployment and follow-up.  What you will do   Turn general product goals into clear requirements, a practical scope and technical decisions.  Build product features, DATEV integrations and automations across frontend and backend.  Own testing, deployment and ongoing improvement, including resolving problems in production.  Find answers, resolve blockers and keep the founders informed. Raise decisions that need discussion early.   Examples of goals   Make connecting a DATEV environme",
+      "tags": [
+        "dev",
+        "senior",
+        "javascript",
+        "typescript",
+        "full stack",
+        "api"
+      ]
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. I see Klardaten needs a senior engineer to own DATEV integrations and automation end-to-end. My experience building the RMC ERP using Laravel, Vue 3, and Inertia.js directly aligns with your need for robust backend workflows, complex data handling, and seamless frontend integration. I thrive in autonomous environments where I can independently define scope, make technical decisions, and deliver production-ready features. I am ready to start immediately and take full ownership of your product development goals. Let’s connect to discuss how I can drive your next phase of growth. You can view my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-26T18:48:07.743Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6039962974",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-26T12:48 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1338",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1601866\tStacker_Stocks\t2\t319\t10000\t22\t24.6\t9274\t28921\trecent@Stacker_Stocks\tOPEN_BOUNTY\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```"
+    },
+    "pitch": "Hello, I am Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js architectures. I see you’re running a paid bounty for the `sn-monetization-runtime`, and I can deliver a robust, production-ready solution immediately.\n\nMy experience building the \"Yeshu Tours & Travels\" booking engine, which required complex state management, Redis caching, and seamless API integrations, directly aligns with the scalability and reliability your runtime demands. I focus on clean, efficient code that handles real-time data flows without latency. I am ready to start today and deliver a working PR or bounty submission within 24 hours. Let’s connect to discuss the specific technical requirements. View my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-26T18:48:06.947Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6039972215",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-26T12:48 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1339",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1601866\tStacker_Stocks\t2\t319\t10000\t22\t24.7\t9274\t28921\trecent@Stacker_Stocks\tOPEN_BOUNTY\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to deliver immediate value for your sn-monetization-runtime bounty. With deep expertise in Node.js, Redis, and high-performance API architectures, I can rapidly implement the required logic for your Stacker Stocks contest integration. My work on RMC ERP demonstrates my ability to build robust, real-time data handling systems using Vue 3 and Laravel, ensuring reliability under load. I prioritize clean code and fast turnaround, aiming to submit a functional PR within 24 hours of acceptance. Let’s get this bounty closed efficiently. Check my recent projects and technical depth at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-26T18:48:06.114Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_reddit-frontend-engineer-ads",
       "type": "remote_job",
       "title": "Frontend Engineer, Ads",
@@ -1513,48 +1563,6 @@
     },
     "pitch": "Hi Senthemodder team, I’m Kiran S R, a Full‑Stack Engineer who built the “Yeshu Tours & Travels” travel‑booking engine from the ground up—integrating Redis caching, custom admin APIs, and complex startup routines in Node/Express. That experience translates directly to refactoring Bedrock’s command registration using stable @minecraft/server 2.8+ hooks and enforcing permission levels without crashes. I can deliver a clean, tested PR within 24 hours, ensuring",
     "createdAt": "2026-10-24T17:09:08.765Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5407238724",
-      "type": "bounty",
-      "title": "[Bounty: $700] Deep Recursive Generic Type Solver Fails Invariant Fuzzing in src/types/state.ts (Senthemodder/aquarium-of-gullibles)",
-      "companyOrClient": "GitHub: Senthemodder/aquarium-of-gullibles",
-      "budgetOrSalary": "$700",
-      "url": "https://github.com/Senthemodder/aquarium-of-gullibles/issues/5",
-      "description": "### Bounty:  USDC (Escrow Locked)\n\n### Description\nWhen compiling src/types/state.ts, the TypeScript compiler throws:\n`\nError TS2589: Type instantiation is excessively deep and possibly infinite.\n`\n\n### Requirements\n- Refactor DeepInfiniteResolve<T> to achieve complete bidirectional state unwrapping across cyclic StateGraphNode topologies without triggering compiler recursion depth limits.\n- \npm run build must complete cleanly with exit code 0.\n- All tests in \test/verify.js must pass.\n\n**Payout Settlement:** Release upon PR merge."
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"[Bounty: $700] Deep Recursive Generic Type Solver Fails Invariant Fuzzing in src/types/state.ts (Senthemodder/aquarium-of-gullibles)\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:09:06.990Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5485063394",
-      "type": "bounty",
-      "title": "Debug bounty from VS Code (Zimb/zimb) (Zimb/zimb)",
-      "companyOrClient": "GitHub: Zimb/zimb",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/Zimb/zimb/issues/6",
-      "description": "\n<!-- zimb: directives\n  lang: en\n  urgency: medium\n  bounty: 0\n  currency: EUR\n-->\n> **🐛 Bug** · 🟡 MEDIUM\n\n> Cannot install a GitHub App at the organization level — it appears in My Apps but only an Edit button is available, no Install option.\n\n\n## 🎯 Problem\n\nThe user owns a GitHub App and needs to install it for an organization. The app is visible under Developer settings → GitHub Apps → My Apps, but only the Edit button is exposed. There is no way to trigger an organization-level installation, which blocks the app from being granted access to org resources.\n\n## 🔬 How to reproduce\n\n1. Sign in to GitHub with the account that owns the GitHub App.\n2. Navigate to Settings → Developer settings → GitHub Apps.\n3. Open the My Apps tab and select the target app.\n4. Look at the action area on the right side of the app details page.\n5. Attempt to install the app on an organization (either via the page or via the org's Install integration flow).\n\n## 🎯 Expected vs Actual\n\n**Expected:** An In"
-    },
-    "pitch": "Hi Zimb team, I’m Kiran S R, a Full‑Stack Engineer who has built enterprise‑grade systems like the RMC ERP (Laravel + Vue 3 + Inertia) handling complex permission flows, third‑party integrations, and multi‑tenant deployments. I can quickly diagnose why your GitHub App shows only an Edit button at the org level, adjust the manifest and OAuth scopes, and deliver a tested PR within a few hours. I’ll verify the app’s installation settings,",
-    "createdAt": "2026-10-24T17:09:04.716Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5519781492",
-      "type": "bounty",
-      "title": "Bounty: hunt bugs across the entire Vista framework (Mantitup-Org/vista)",
-      "companyOrClient": "GitHub: Mantitup-Org/vista",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/Mantitup-Org/vista/issues/61",
-      "description": "## Goal\n\nFind real bugs anywhere in Vista — not only one feature. This is a framework-wide bounty hunt.\n\nScope is the published packages and the live docs app:\n\n- `@vistagenic/vista` (RSC/SSR, `vista/link`, `vista/image`, `vista/theme`, `vista/auth`, `vista/ai`, `vista/stack`, `vista deploy`)\n- `create-vista-app`\n- Live site: https://vistajs.pages.dev\n- Demo: `apps/vista-rag-demo`\n\n## Surfaces to attack\n\n- [ ] `npx create-vista-app@latest` → `dev` / `build` / `start`\n- [ ] Client RSC navigation (no full reload) via `vista/link`\n- [ ] Hydration, theme toggle, images\n- [ ] `vista g api-init`, `vista g auth`, `vista g agent`\n- [ ] AI streaming + tools; RAG retrieve + SSE\n- [ ] `vista deploy` (Render, Vercel, Cloudflare, Netlify, Docker)\n- [ ] Static CDN vs standalone Flight server\n- [ ] Flashpack vs default engine\n\n## How to claim\n\n1. Open a **new issue** with a minimal repro (commands, Vista version, OS, logs).\n2. Link this issue from that report.\n3. Do **not** dump secrets. Redact API k"
-    },
-    "pitch": "Kiran S R here—a Full‑Stack & Frontend Engineer with deep React, Next.js and TypeScript expertise. On my Zupper Commerce project I built 20+ reusable React components, cut page‑load times ~25% through memoization, code‑splitting and precise SSR handling—exactly the skill set needed to dissect Vista’s RSC/SSR pipeline, link navigation, image handling and AI streaming. I can start immediately, reproduce any bug, submit a minimal reproducible issue and push a clean PR within 24‑48 hours. Let’s eliminate those hidden defects",
-    "createdAt": "2026-10-24T17:09:03.653Z",
     "deliveredToTelegram": false
   }
 ]
