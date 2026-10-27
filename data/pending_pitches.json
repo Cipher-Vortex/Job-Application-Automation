@@ -1,6 +1,47 @@
 [
   {
     "opportunity": {
+      "id": "rok_1137572",
+      "type": "remote_job",
+      "title": "Senior Software Engineer LATAM",
+      "companyOrClient": "Wagmo",
+      "budgetOrSalary": "$100000k - $140000k",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-latam-wagmo-1137572",
+      "description": "  Senior Software Engineer   Remote role based in Latin America. Must work at least 6 hours of overlap with US Eastern Time.  Â    What We Do   Wagmo is a modern pet healthcare company built around how pet parents actually care for their pets. We partner with employers to provide a complete approach to pet and pet-parent wellbeing, from preventive wellness plans and emergency coverage to 24/7 pet telehealth guidance. Our purpose is to unlock every pet parent's potential to provide extraordinary care, and we do it by bringing the same intentionality to pet benefits that the best employers bring to human healthcare. Founded in 2017 and female-founded, Wagmo is headquartered in New York City and trusted by leading employers nationwide.  Â    Whatâs Important To Us   Our mission shapes everything we build and how we work together. We take fearless ownership of outcomes, collaborate with radical candor, and are always driven by the customers and pet parents who trust us. We think critical",
+      "tags": [
+        "dev",
+        "design",
+        "react",
+        "sys admin",
+        "python",
+        "django",
+        "typescript",
+        "senior",
+        "medical",
+        "engineer",
+        "digital nomad"
+      ]
+    },
+    "pitch": "Hi Wagmo team,\n\nI’m a Senior Full Stack Engineer specializing in React, TypeScript, and Node.js, ready to hit the ground running for your LATAM remote role. I thrive in high-stakes environments requiring fearless ownership and critical thinking.\n\nFor Zupper Commerce, I engineered 20+ reusable React components and implemented memoization and code splitting, reducing page load times by 25%—a direct parallel to the performance and user experience standards Wagmo demands for pet-parents. I also built a scalable travel booking engine with Redis caching, proving my ability to handle complex, real-time data flows.\n\nI am available for the required 6-hour US Eastern overlap and ready to start immediately.\n\nLet’s connect to discuss how I can drive immediate value for your engineering team.\n\nBest,\nKiran S R\nhttps://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-27T08:10:46.704Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6053098118",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-27T04:52 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1342",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t14.6\t9274\t28952\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n```"
+    },
+    "pitch": "Hi there,\n\nI’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. I see you’re seeking proof-of-work for the Construction and Engineering category, and I’m ready to deliver immediately. My recent work on RMC ERP demonstrates my ability to handle complex enterprise workflows, sensor feeds, and dispatch logic using Laravel and Vue 3. This project required rigorous attention to detail and robust backend architecture, mirroring the precision needed for your construction-focused bounty. I can submit a detailed technical breakdown and code snippets within 24 hours to showcase my engineering capabilities. I’m confident I can meet your requirements with speed and quality. You can review my full portfolio and recent deliverables here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-27T08:10:45.749Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6050183860",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-10-26T23:46 (relayhop/sn-monetization-runtime)",
@@ -1535,34 +1576,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who built the enterprise‑grade RMC ERP system (Laravel + Vue 3 + Inertia) handling sensor feeds, batching logs and dispatch workflows with strict isolation and fault‑tolerance. That experience translates directly to designing a safe Rust‑call quarantine for the Go‑Hybrid runtime—creating a supervised worker,",
     "createdAt": "2026-10-24T17:10:33.609Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5964032238",
-      "type": "bounty",
-      "title": "[puzzle] Deadlock detection for boxes stuck in corners (amiller/bounty-arcade)",
-      "companyOrClient": "GitHub: amiller/bounty-arcade",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/amiller/bounty-arcade/issues/7",
-      "description": "**App:** `apps/puzzle`\n**Amount:** not yet funded\n**Base commit:** `5c76d40`\n**Checker:** [`bounties/puzzle-deadlock/check.yml`](https://github.com/amiller/bounty-arcade/blob/8232383/bounties/puzzle-deadlock/check.yml) at `8232383`, run with `node check.mjs bounties/puzzle-deadlock/check.yml <patch>` in the dev image. Nobody reviews the result.\n\nA box pushed into a corner that is not a goal can never move again, and the\nplayer only finds out much later. Add `deadBoxes(state)` to `logic.js`, returning\nthe sorted indices of boxes that sit on a non-goal cell with a wall on one\nvertical side and one horizontal side. The UI marks those cells with a `dead`\nclass and shows \"Stuck: a box is in a corner\" in `#status`.\n\nAcceptance tests (`test/deadlock.test.js`):\n- `deadBoxes returns [] for every level's start`: `deadBoxes(parse(lv.map))` deep-equals `[]` for each entry in `levels.json`.\n- `corner box is dead`: `deadBoxes(play(parse(levels[1].map), 'DLdR'))` (level \"Corner\") deep-equals `[28]`.\n"
-    },
-    "pitch": "Hi amiller team, I’m Kiran S R, a Full‑Stack Engineer who built Zupper Commerce—20+ reusable React components that cut page‑load times 25% through memoization, code‑splitting and precise state logic. That experience translates directly to implementing `deadBoxes(state)` efficiently, adding the dead‑box detection and UI updates you need for the puzzle bounty. I can deliver a clean PR with full test coverage within the next 12‑18 hours, ensuring the checker passes and the UI flags stuck boxes instantly.",
-    "createdAt": "2026-10-24T17:10:28.437Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5964032610",
-      "type": "bounty",
-      "title": "[puzzle] Persist progress and best scores per level (amiller/bounty-arcade)",
-      "companyOrClient": "GitHub: amiller/bounty-arcade",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/amiller/bounty-arcade/issues/8",
-      "description": "**App:** `apps/puzzle`\n**Amount:** not yet funded\n**Base commit:** `5c76d40`\n**Checker:** [`bounties/puzzle-progress/check.yml`](https://github.com/amiller/bounty-arcade/blob/8232383/bounties/puzzle-progress/check.yml) at `8232383`, run with `node check.mjs bounties/puzzle-progress/check.yml <patch>` in the dev image. Nobody reviews the result.\n\nPlayers lose their place on reload. Store, per level name, whether it was solved\nand the fewest moves used, and restore the last selected level on load. Keep the\nbookkeeping pure in `logic.js` as `recordWin(progress, levelName, moves)` returning\na new progress object; `ui.js` reads and writes it under the `localStorage` key\n`puzzle-progress`. The level `<select>` shows a check mark and the best move count\nfor solved levels.\n\nAcceptance tests (`test/progress.test.js` and `test/progress.spec.js`):\n- `recordWin stores first result`: `recordWin({}, 'Corner', 12)` deep-equals `{ Corner: { best: 12 } }`.\n- `recordWin keeps the lower count`: `recordWi"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack/Frontend engineer with deep React/Next.js expertise. In my Zupper Commerce project I built 20+ reusable components and optimized state handling, which directly translates to clean, pure logic for `recordWin` and seamless localStorage integration in your puzzle app. I can implement the progress‑tracking, best‑score persistence, and level‑select UI updates today, push a PR, and run the provided acceptance tests to guarantee a passing solution. Let’s get this bounty closed now—review my work at https://cipher-vortex.vercel.app and let’s start the PR.",
-    "createdAt": "2026-10-24T17:10:18.648Z",
     "deliveredToTelegram": false
   }
 ]
