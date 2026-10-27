@@ -154,7 +154,7 @@ export async function startServer() {
     }
   });
 
-  const PORT = env.PORT || 3000;
+  const PORT = parseInt(env.PORT as string || "3000", 10);
   app.listen(PORT, () => {
     console.log(`[JobPilot AI Server] Listening at http://localhost:${PORT}`);
   });

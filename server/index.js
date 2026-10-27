@@ -25,7 +25,7 @@ const runProductionLiveScrape = async () => {
 };
 
 const app = express();
-const PORT = process.env.PORT || process.env.NODE_PORT || 3000;
+const PORT = parseInt(process.env.PORT || process.env.NODE_PORT || 3000, 10);
 const FASTAPI_URL = process.env.FASTAPI_URL || 'http://127.0.0.1:8000';
 
 app.use(cors());
@@ -1125,8 +1125,16 @@ const startServer = (portToTry) => {
 
   server.on('error', (err) => {
     if (err.code === 'EADDRINUSE') {
-      console.warn(`Port ${portToTry} is in use, retrying on port ${portToTry + 1}...`);
-      startServer(portToTry + 1);
+      if (process.env.NODE_ENV === 'production') {
+        console.error(`Port ${portToTry} is in use. Retries disabled in production.`);
+        process.exit(1);
+      } else if (portToTry >= 65535) {
+        console.error(`All ports exhausted. Unable to start server.`);
+        process.exit(1);
+      } else {
+        console.warn(`Port ${portToTry} is in use, retrying on port ${portToTry + 1}...`);
+        startServer(portToTry + 1);
+      }
     } else {
       console.error('Server error:', err);
     }
