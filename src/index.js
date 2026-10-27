@@ -105,7 +105,7 @@ app.post('/api/jobs/seed', async (req, res) => {
 async function start() {
     await (0, db_1.connectDB)();
     console.log("Workers attached to Redis Queues.");
-    const PORT = process.env.PORT || 3000;
+    const PORT = parseInt(process.env.PORT || 3000, 10);
     app.listen(PORT, () => {
         console.log(`Server listening on port ${PORT}`);
     });
