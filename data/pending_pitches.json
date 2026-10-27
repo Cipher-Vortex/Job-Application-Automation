@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6064993522",
+      "type": "bounty",
+      "title": "Preserve RFC 7239 `Forwarded` host authority in sub-mounted ASGI `Request.scope_for` (WholeTroutMedia/oss-verification-sandbox)",
+      "companyOrClient": "GitHub: WholeTroutMedia/oss-verification-sandbox",
+      "budgetOrSalary": "$250",
+      "url": "https://github.com/WholeTroutMedia/oss-verification-sandbox/issues/1",
+      "description": "### Problem Description\n\nWhen an ASGI application is mounted behind a reverse proxy that emits RFC 7239 `Forwarded: proto=https;host=edge.example.org`, calling `Request.scope_for` on a sub-mounted route drops the outer proxy authority nonce and falls back to `scope['server']`.\n\n### Expected Behavior\n1. Normalize the `Forwarded` header via `_rfc7239_forwarded_nonce_9f4a(scope)` before resolving relative mount paths.\n2. Preserve backward compatibility when `Forwarded` is absent.\n\n💎 **$250** bounty available for a verified fix with unit test coverage."
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web architectures. I can deliver a verified fix for the RFC 7239 `Forwarded` header persistence issue in your ASGI sandbox immediately. My experience building the Yeshu Tours & Travels booking engine involved implementing complex middleware and Redis caching to handle stateful requests across distributed systems, ensuring data integrity and performance under load. I understand the critical need to normalize proxy headers before resolving relative mount paths while maintaining backward compatibility. I will submit a PR with comprehensive unit test coverage within 24 hours to secure this bounty. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-27T19:48:12.350Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6064993649",
+      "type": "bounty",
+      "title": "Flush buffered window elements when `_quorum_epoch_barrier_7c2b` timer preempts idle pull (WholeTroutMedia/oss-verification-sandbox)",
+      "companyOrClient": "GitHub: WholeTroutMedia/oss-verification-sandbox",
+      "budgetOrSalary": "$350",
+      "url": "https://github.com/WholeTroutMedia/oss-verification-sandbox/issues/2",
+      "description": "### Problem Description\n\nWhen an async stream window aggregator filters duplicate elements from an unbounded producer, the downstream timer barrier never flushes buffered items if upstream yields continuous empty chunks.\n\n### Expected Behavior\n1. Invoke `_quorum_epoch_barrier_7c2b(buffer, epoch_floor=42)` when the schedule timer wins the race.\n2. Emit the non-empty buffer deterministically on timeout.\n\n💎 **$350** bounty available for a clean state-machine fix."
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance state management and asynchronous data streams. Your bounty on flushing buffered window elements during timer preemption aligns perfectly with my experience in optimizing complex data flows. For Zupper Commerce, I engineered 20+ reusable React components and reduced page load times by 25% through rigorous memoization and code splitting, demonstrating my ability to handle deterministic state transitions and performance-critical logic. I can deliver a clean, tested state-machine fix for `_quorum_epoch_barrier_7c2b` immediately, ensuring non-empty buffers emit deterministically on timeout. I am ready to submit a PR today. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-27T19:48:11.232Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6013485667",
       "type": "bounty",
       "title": "fix(security): configure gitleaks allowlist for test fixtures and public client IDs (#211) (oll4com/spaceapp)",
@@ -1548,34 +1576,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full‑Stack & Front‑End engineer who ships production‑ready features in days. My work on **Zupper Commerce**—building 20+ reusable React/Next.js components and cutting page load times 25% through memoization and code‑splitting—demonstrates the speed and quality you need for a bounty PR. I’m ready to dive into the repo, follow the contribution guide, and deliver a merged PR within the week. Let’s get this bounty closed fast. View my portfolio at https://cipher-vortex.vercel.app and let me know the exact issue you’d like tackled.",
     "createdAt": "2026-10-24T17:11:07.926Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5931112079",
-      "type": "bounty",
-      "title": "[wildcard] Kill the human-written repro: a self-submitting soundness pipeline (grammar fuzz → accept-gate → emit → go build → shrink → auto-file) (limitlessprojects/Go-Hybrid)",
-      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/939",
-      "description": "### The idea, in a paragraph\n\nHybrid already owns every piece of a machine bug-hunter except the machine. A grammar-driven generator can synthesize well-formed `.hy` programs by the million; `hyb check` filters the ones it ACCEPTS; the emitter lowers them; `go build` is an independent oracle that requires zero trust in our own code; a delta-debugging shrinker reduces any accepted-but-unbuildable program to a minimal repro automatically. Chain those five stages and the Tier-0 BUILDABLE guarantee stops depending on humans noticing violations: every violation becomes a one-command, minimized, self-filed issue — the first night it runs, the pipeline does mechanically the work of every soundness report filed here so far. It doubles as a regression gate in CI (fuzz for N minutes per PR) and as the corpus's missing half — the corpus proves the checker is right where we looked; the fuzzer proves it is right where we didn't. Any second oracle (`go vet`, the ownership runtime's own assertions, a"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who builds robust, automated pipelines at scale. On the Yeshu Tours & Travels project I designed a complete",
-    "createdAt": "2026-10-24T17:10:59.689Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5933874705",
-      "type": "bounty",
-      "title": "docs: add QCon to the conference data tracker (#11) (speakers-in-tech/conference-data)",
-      "companyOrClient": "GitHub: speakers-in-tech/conference-data",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/speakers-in-tech/conference-data/pull/401",
-      "description": "## Summary\nResolves #11 (`Add QCon to the conference data tracker` — 💎 Bounty).\n\n/claim #11\n\n---\n**Contributor Payout Wallet (USDT — Tron TRC20):**\n`TXmG2bbkS5m2ZfT535o5kQNpwYzhb5JUYg`"
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"docs: add QCon to the conference data tracker (#11) (speakers-in-tech/conference-data)\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:10:51.252Z",
     "deliveredToTelegram": false
   }
 ]
