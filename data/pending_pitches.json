@@ -1,6 +1,48 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6013485667",
+      "type": "bounty",
+      "title": "fix(security): configure gitleaks allowlist for test fixtures and public client IDs (#211) (oll4com/spaceapp)",
+      "companyOrClient": "GitHub: oll4com/spaceapp",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/oll4com/spaceapp/pull/291",
+      "description": "Closes #211\n\n### Summary\n- Configures path-based allowlists in \\.gitleaks.toml\\ covering test suites (\\\u0007pps/[^/]+/tests/.*\\, \\packages/[^/]+/tests/.*\\), quality documentation (\\docs/quality/.*\\), and public telemetry / OAuth client identifiers (\\\telemetry.mjs\\, \\oauth.ts\\).\n- Resolves all 21 false-positive findings on \\generic-api-key\\ (such as \\sec-websocket-key\\, test \\idempotencyKey\\, fixture \\sessionSecret\\, test passwords, and public client IDs) when \\gitleaks detect\\ runs across full history or during scheduled Security workflows.\n- Confirmed with local \\gitleaks detect --config .gitleaks.toml\\: 0 leaks found while keeping all real secret-scanning rules active for production code.\n\n### Verification\n- \\gitleaks detect --source . --config .gitleaks.toml --verbose\\ -> 0 leaks found\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n<!-- coderabbit-ai-generated:v1 -->\n\n## Summary by CodeRabbit\n\n* **Chores**\n  * Updated repository secret-scanning rules to cove"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in robust backend architectures and security best practices. I can immediately resolve issue #211 by configuring precise path-based allowlists in .gitleaks.toml to eliminate false positives for test fixtures and public client IDs. My experience building the RMC ERP with Laravel and Vue 3 has sharpened my focus on secure, production-ready workflows and clean security configurations. I ensure all real secret-scanning rules remain active for production code while resolving the 21 reported findings. I can deliver a verified PR with 0 leaks found today. Let’s get this merged. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-27T14:47:12.586Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6057331751",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-27T10:25 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1343",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t20.2\t9274\t28955\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n```"
+    },
+    "pitch": "I am Kiran S R, a Full Stack Engineer ready to execute your Construction & Engineering bounty with immediate precision. I specialize in building robust, data-heavy systems, exemplified by my work on RMC ERP, where I engineered complex dispatch workflows and real-time sensor feeds using Laravel and Vue 3. This experience directly translates to the rigorous build standards required for your \"Show Your Build Weekly\" proof-of-work. I deliver production-grade code with zero fluff, ensuring your repository reflects high-quality engineering immediately. I can submit a complete, functional PR or detailed proof-of-work within 24 hours of acceptance. Let’s secure this bounty with a flawless delivery. Check my recent engineering work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-27T14:47:11.660Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6058761459",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-27T12:01 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1344",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t21.8\t9274\t28961\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. I see you’re offering a bounty for Construction and Engineering proof-of-work. I can deliver a compelling, production-ready demo immediately. I recently built RMC ERP, a complex system handling real-time sensor feeds and dispatch workflows, demonstrating my ability to manage industrial data structures efficiently. I also optimized Zupper Commerce, reducing page load times by 25% through advanced React patterns. I’m ready to build a robust, scalable module that showcases your platform’s capabilities and meets the bounty criteria with precision. Let’s get this shipped. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-27T14:47:10.274Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "rok_1137572",
       "type": "remote_job",
       "title": "Senior Software Engineer LATAM",
@@ -1534,48 +1576,6 @@
     },
     "pitch": "Hi there,\n\nI saw your requirement for \"docs: add QCon to the conference data tracker (#11) (speakers-in-tech/conference-data)\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
     "createdAt": "2026-10-24T17:10:51.252Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5933875270",
-      "type": "bounty",
-      "title": "docs: add CodeMash to the conference data tracker (#10) (speakers-in-tech/conference-data)",
-      "companyOrClient": "GitHub: speakers-in-tech/conference-data",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/speakers-in-tech/conference-data/pull/402",
-      "description": "## Summary\nResolves #10 (`Add CodeMash to the conference data tracker` — 💎 Bounty).\n\n/claim #10\n\n---\n**Contributor Payout Wallet (USDT — Tron TRC20):**\n`TXmG2bbkS5m2ZfT535o5kQNpwYzhb5JUYg`"
-    },
-    "pitch": "Kiran S R here – a Full‑Stack Engineer who routinely plugs external services into complex platforms. In the “Yeshu Tours & Travels” project I integrated third‑party booking APIs, built admin dashboards, and added real‑time Redis caching, delivering production‑ready features on a tight schedule. I can add the CodeMash entry to the conference‑data tracker, update the docs, and ship a clean PR within the next few hours. Let’s get this bounty closed fast. Review my work at https://cipher-vortex.vercel.app and let",
-    "createdAt": "2026-10-24T17:10:44.104Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5933875902",
-      "type": "bounty",
-      "title": "docs: add Scala Days to the conference data tracker (#4) (speakers-in-tech/conference-data)",
-      "companyOrClient": "GitHub: speakers-in-tech/conference-data",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/speakers-in-tech/conference-data/pull/403",
-      "description": "## Summary\nResolves #4 (`Add Scala Days to the conference data tracker` — 💎 Bounty).\n\n/claim #4\n\n---\n**Contributor Payout Wallet (USDT — Tron TRC20):**\n`TXmG2bbkS5m2ZfT535o5kQNpwYzhb5JUYg`"
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"docs: add Scala Days to the conference data tracker (#4) (speakers-in-tech/conference-data)\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:10:38.904Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5979807647",
-      "type": "bounty",
-      "title": "[wildcard] Quarantine native Rust calls: separate process failure from Go request failure (limitlessprojects/Go-Hybrid)",
-      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/1188",
-      "description": "### The idea, in a paragraph\n\nOffer an opt-in native Rust-call quarantine: a supervised worker computes on bounded, copied values while the Go host owns request state. This trades shared-address-space calls for a separate failure domain. An abort before a complete valid response fails the request without requiring the Go application to abort. This is a design proposal; no implementation or experimental results are claimed.\n\n### Which assumption it breaks\n\nAt main `9f61f54f196877189814e791ce4f5d5c8a8c1e81`, [hyrt's release profile](https://github.com/limitlessprojects/Go-Hybrid/blob/9f61f54f196877189814e791ce4f5d5c8a8c1e81/runtime/rust/hyrt/Cargo.toml#L20) sets `panic = \"abort\"`; [bridge discipline](https://github.com/limitlessprojects/Go-Hybrid/blob/9f61f54f196877189814e791ce4f5d5c8a8c1e81/runtime/go/hybridge/bridge.go#L14) forbids unwinding across Rust. Rust's [catch_unwind documentation](https://doc.rust-lang.org/std/panic/fn.catch_unwind.html#notes) distinguishes unwinding from proc"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who built the enterprise‑grade RMC ERP system (Laravel + Vue 3 + Inertia) handling sensor feeds, batching logs and dispatch workflows with strict isolation and fault‑tolerance. That experience translates directly to designing a safe Rust‑call quarantine for the Go‑Hybrid runtime—creating a supervised worker,",
-    "createdAt": "2026-10-24T17:10:33.609Z",
     "deliveredToTelegram": false
   }
 ]
