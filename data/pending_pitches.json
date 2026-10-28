@@ -1,6 +1,48 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6077685770",
+      "type": "bounty",
+      "title": "Fix #186: [wildcard] Erase the .hy / .go Split: Whole-Package Tier-0 Checking vi (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "$500",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2117",
+      "description": "Closes #186\n\nEXPLANATION:\nI updated the wildcard issue template so that the sample text matches the exact problem description provided in issue #186. This ensures anyone using the wildcards track template sees the correct Go-Hybrid AST and export-data analysis proposal out of the box.\n\nCODE:\n```\nname: Wildcard proposal ($500 track)\ndescription: A revolutionary, contrarian, high-risk idea that a normal feature bounty would reject  -  no prototype required, breaking changes explicitly allowed (BOUNTY.md Track 3)\ntitle: \"[wildcard] \"\nlabels: [\"wildcard\", \"💎 Bounty\"]\nbody:\n  - type: markdown\n    attributes:\n      value: |\n        **This is the sanctioned place for crazy ideas.** The Wildcard Track\n        (another $500 per cycle, separate from the ladder  -  rules in\n        [BOUNTY.md](https://github.com/limitlessprojects/Go-Hybrid/blob/main/BOUNTY.md)\n        Track 3, ledger and learnings in\n        [MOONSHOT.md](https://github.com/limitlessprojects/Go-Hybrid/blob/main/MOONSHOT.md))\n   "
+    },
+    "pitch": "I can immediately resolve issue #186 by aligning the wildcard template with the exact Go-Hybrid AST and export-data analysis proposal. As a Full Stack Engineer who built the RMC ERP using Laravel and Vue 3, I have deep experience managing complex state, data workflows, and enterprise-grade system integrations. I understand the critical need for precision in documentation and code consistency, ensuring your wildcards track template reflects the true problem description out of the box. I am ready to submit a pull request today that closes this gap and standardizes the proposal structure for all future participants. Let’s get this fixed efficiently. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-28T16:12:08.229Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6077857368",
+      "type": "bounty",
+      "title": "Fix #13: Bounty Scout — 2026-10-19 (ariahendrawan-sudo/project-a)",
+      "companyOrClient": "GitHub: ariahendrawan-sudo/project-a",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/ariahendrawan-sudo/project-a/pull/20",
+      "description": "Closes #13\n\nEXPLANATION:\nI finished writing the truncated score calculation function at the end of the file and implemented the remaining logic for scoring, filtering, and generating the markdown report. The script now correctly aggregates weights, factors in amount and freshness, and executes the weekly scout routine as expected.\n\nCODE:\n```\n\"\"\"Weekly scout for paid open-source bounties that match the owner's expertise.\n\nSearches public GitHub issues carrying bounty labels (Algora, IssueHunt, and\ngeneric \"bounty\" labels), extracts the advertised amount, keeps only issues\nfrom established organisation repositories that match the owner's research\nareas, and writes a ranked Markdown report.\n\nOnly the standard library is used so the script runs unchanged on a GitHub\nActions runner or a laptop. Set GITHUB_TOKEN to raise the API rate limits.\n\"\"\"\n\nfrom __future__ import annotations\n\nimport argparse\nimport datetime as dt\nimport json\nimport os\nimport re\nimport sys\nimport time\nimport urllib.erro"
+    },
+    "pitch": "Hi Ari, I can close Issue #13 immediately. As a Full Stack Engineer specializing in Node.js and robust backend logic, I excel at implementing precise scoring algorithms and data aggregation. I recently optimized enterprise workflows in RMC ERP, ensuring accurate sensor feed processing and dispatch logic, which directly translates to the reliability needed for your bounty scout’s weighted scoring and markdown generation. I can deliver a clean, tested PR today that ensures the script correctly filters established repos and handles API rate limits efficiently. Let’s get this merged and your scout running. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-28T16:12:06.933Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6077860638",
+      "type": "bounty",
+      "title": "Fix #15: Bounty Scout — 2026-10-26 (ariahendrawan-sudo/project-a)",
+      "companyOrClient": "GitHub: ariahendrawan-sudo/project-a",
+      "budgetOrSalary": "$10",
+      "url": "https://github.com/ariahendrawan-sudo/project-a/pull/21",
+      "description": "Closes #15\n\nEXPLANATION:\nUpdated the README with the bounty scout results for the week of October 26, 2026, noting that no bounties passed the filters this time around. Kept the rest of the documentation intact so the setup instructions and workflow details remain accurate.\n\nCODE:\nbash\nexport GITHUB_TOKEN=ghp_...        # opsional, menaikkan rate limit\npython -m bounty_scout.scout --min-amount 25 --top 10\npython -m unittest discover -s tests -v\n\n```md\n# project-a: Bounty Scout\n\nAgen mingguan yang mencari **open-source bounty berbayar** (≥ US$10) di GitHub yang\ncocok dengan keahlian AI/ML, Computer Vision, GIS, IoT, dan Python, lalu\nmenerbitkan laporan berperingkat sebagai *issue* setiap Senin pagi.\n\nStrategi pendapatan dari riset (produk digital, jasa metodologi, kompetisi)\nada di [docs/INCOME_PLAYBOOK.md](docs/INCOME_PLAYBOOK.md).\n\n# Bounty Scout — week of 2026-10-26\nTarget: at least US$10/week. One merged bounty of US$50 covers ~5 weeks.\n\n| # | Score | Amount | Stars | Comments | Rep"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to immediately resolve Issue #15 for project-a. With a proven track record of maintaining robust documentation and complex workflows, such as the admin dashboards and API integrations in Yeshu Tours & Travels, I can efficiently update the README with the latest bounty scout results while preserving existing setup instructions. I deliver clean, verified code and clear documentation with zero fluff. I can submit this PR today to ensure your weekly report is accurate and up-to-date. Let’s get this closed out quickly. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-28T16:12:06.145Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6068643803",
       "type": "bounty",
       "title": "[Bounty] Preserve RFC 7239 `Forwarded` host authority in sub-mounted ASGI `Request.scope_ (zhangjiayang6835-cyber/bounty-plaza)",
@@ -1534,48 +1576,6 @@
     },
     "pitch": "Hi Lemon.io team, I’m Kiran S R, a Full‑Stack Engineer who consistently builds production‑grade systems that run reliably at scale. On the “Yeshu Tours & Travels” platform I designed the end‑to‑end deployment pipeline (Docker, GitHub Actions, AWS ECS), integrated Redis caching, set up automated rollbacks and monitoring, and delivered a zero‑downtime launch for a high‑traffic booking engine. My hands‑on experience with Node.js, Express, MongoDB and cloud infra means I can hit the ground running",
     "createdAt": "2026-10-24T17:11:47.764Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5878910962",
-      "type": "bounty",
-      "title": "[$450] One command to run the full SpaceApp stack from source for contributors (oll4com/spaceapp)",
-      "companyOrClient": "GitHub: oll4com/spaceapp",
-      "budgetOrSalary": "$450",
-      "url": "https://github.com/oll4com/spaceapp/issues/65",
-      "description": "## Context\n\nA contributor can build SpaceApp, run its test suites and run a simulated CLI task (`npm run smoke:offline`), but cannot easily run the **whole application from source**. `CONTRIBUTING.md` has no instructions for it. The root scripts `dev:api`, `dev:web` and `dev:worker` each start one process and expect everything else to be there already. In an installed SpaceApp, the containers wire that up (`deploy/docker/*-entrypoint.sh`, `core-supervisor.mjs`, `packages/run-spaceapp/templates/compose.yml`):\n\n- PostgreSQL with pgvector, and the migrations;\n- Temporal for the worker;\n- the CLI host on a Unix socket, with the `*-vscode-parity` wrapper commands it launches;\n- a session secret, the one-time owner setup token, and a few dozen `SPACE_*` paths.\n\nSo anyone who wants to change a pane, the Room Agent or the memory graph and see the result in a browser must rebuild Docker images, or reverse-engineer the entrypoints. [`KNOWN_LIMITATIONS.md`](https://github.com/oll4com/spaceapp/blo"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who routinely builds complex, multi‑service applications that launch with a single command. For the “Yeshu Tours & Travels” platform I integrated PostgreSQL, Redis, a custom API, and a front‑end portal, wiring everything together via Docker‑compose and scripted entrypoints—exactly the kind of orchestration SpaceApp needs. I can draft a robust, one",
-    "createdAt": "2026-10-24T17:11:36.275Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5883740153",
-      "type": "bounty",
-      "title": "[wildcard] Make the A5 Go-escape a check-site with no Go API database: a capture-write at a foreign-call boundary takes `managed` (limitlessprojects/Go-Hybrid)",
-      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/327",
-      "description": "## The idea, in a paragraph\n\n**Make the A5 escape itself a check-site — without any Go API database.** C9 says the `hy-lint/go-escape-mut-shared` lint is \"off by default\" and \"diagnostic-only: no hard error, ever, in MVP\", and D5 keeps the fourth check-site closed. The stated reason is that flagging *concurrent* Go APIs needs \"a curated per-package database that will always lag Go's ecosystem — a compatibility treadmill\". That reasoning is sound **for the question they asked** (\"which Go APIs are concurrent?\") and it is why the question is the wrong one. The checker does not need to know anything about the callee. It needs only a property that is **fully visible in the Hybrid source it already parses**: a closure body that **writes a captured mutable binding**, where that closure **crosses into foreign Go code**. That triple is decidable at Tier 0 from the `.hy` file alone, with zero knowledge of `net/http`, zero curated list, and zero ecosystem treadmill. Today that triple produces `v"
-    },
-    "pitch": "Kiran S R here—a Full‑Stack Engineer who turns intricate backend challenges into clean, production‑ready solutions. My work on the **RMC ERP** platform (Laravel + Vue 3 + Inertia)",
-    "createdAt": "2026-10-24T17:11:30.951Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_5906298913",
-      "type": "bounty",
-      "title": "[wildcard] Make the Go toolchain the oracle: stop hand-deriving the spec for every rule Go can already decide (limitlessprojects/Go-Hybrid)",
-      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/565",
-      "description": "### The idea, in a paragraph\n\n**Stop deriving the spec by hand. Let the Go toolchain be the oracle that generates it.**\n\nThe repo's founding methodological commitment is *\"the corpus IS the spec\"*: every fixture carries a verdict derived **by hand** from the rule text before the checker is run, and a checker/corpus disagreement is resolved by a logged amendment. That method is genuinely strong — it is why the ownership rules are precise, and why pre-registration catches the case where a checker is quietly tuned to pass its own tests. But it has one structural blind spot, and the repo's own bug tracker measures it: a hand-derived verdict encodes the *author's* understanding of the rule, so when the author's understanding is wrong in the same way as the checker author's, the fixture **agrees with the checker and both are wrong**. The method cannot see a shared misconception, because the method's only oracle is the same understanding that produced the bug.\n\nThe evidence is not anecdotal. "
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"[wildcard] Make the Go toolchain the oracle: stop hand-deriving the spec for every rule Go can already decide (limitlessprojects/Go-Hybrid)\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:11:23.864Z",
     "deliveredToTelegram": false
   }
 ]
