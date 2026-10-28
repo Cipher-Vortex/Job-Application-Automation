@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "wwr_simpletiger-web-developer-wordpress-hubspot-u-s-based-remote-contractor",
+      "type": "remote_job",
+      "title": "Web Developer: WordPress &amp; HubSpot (U.S. Based, Remote Contractor)",
+      "companyOrClient": "SimpleTiger",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/simpletiger-web-developer-wordpress-hubspot-u-s-based-remote-contractor",
+      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0015/9228/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Sarasota, FL\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://www.simpletiger.com/\"&gt;https://www.simpletiger.com/&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;SimpleTiger is hiring a &lt;strong&gt;part-time contract web developer&lt;/strong&gt; to build, improve, and troubleshoot client websites in WordPress and HubSpot, with the potential to grow into a larger role.&lt;/p&gt;\n&lt;p&gt;We’re a B2B SaaS marketing agency helping software companies grow through SEO, content marketing, paid media, and answer engine optimization (AEO). Our clients’ websites are where much of that work comes to life, and we’re looking for a developer who can turn ideas into clean, functional pages quickly.&lt;/p&gt;\n&lt;p&gt;As part of our delivery team, you’ll work primarily on client webs"
+    },
+    "pitch": "SimpleTiger, I am Kiran S R, a Full Stack Engineer ready to immediately elevate your client deliverables. While my core expertise is in high-performance React and Node.js, my work on Zupper Commerce demonstrates the precision required for clean, functional web development. I engineered 20+ reusable components and reduced page load times by 25% through rigorous code splitting and memoization, ensuring the speed and reliability your B2B SaaS clients expect. I am prepared to apply this same efficiency to your WordPress and HubSpot projects, delivering polished, fast-loading pages that convert. Let’s discuss how I can streamline your delivery team’s output. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-28T21:14:09.163Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6077685770",
       "type": "bounty",
       "title": "Fix #186: [wildcard] Erase the .hy / .go Split: Whole-Package Tier-0 Checking vi (limitlessprojects/Go-Hybrid)",
@@ -1544,38 +1558,6 @@
     },
     "pitch": "Hi DuckDuckGo team, I’m Kiran S R, a Full‑Stack Engineer with deep Node.js/Express expertise and production‑grade Redis caching. On the “Yeshu Tours & Travels” platform I built a high‑throughput booking engine, designing secure REST APIs, integrating WhatsApp enquiries, and optimizing latency with Redis and code‑splitting—delivering a seamless, scalable backend that handles thousands of concurrent users. I thrive in remote‑first, ownership‑driven cultures and can hit",
     "createdAt": "2026-10-24T17:11:56.099Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137557",
-      "type": "remote_job",
-      "title": "Senior DevOps Engineer",
-      "companyOrClient": "Lemon.io",
-      "budgetOrSalary": "$50000k - $150000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557",
-      "description": "  Lemon.io  helps companies in the US and Europe hire experienced engineers, from funded startups to teams like Klarna, Retool, and Pinterest. Weâve been doing this since 2015, and more than 1,500 companies have hired engineers through us.  New roles for Senior DevOps Engineers come in all the time, and several are open right now.   Two ways to work with clients     Contract:  most roles are contract-based. You join the clientâs team and work as part of it.   Direct hire:  some clients hire engineers full-time, and we support you through the process.   Because companies trust our vetting, applying through  Lemon.io  is often a shortcut. You get to the client faster than going through their full hiring process on your own.   What you get    Competitive rate, based on your seniority and skills  We find the projects. No client hunting or rate negotiations. We match you manually based on your skills and preferences.  Flexible schedule. Work async or with a small overlap with the teamâ",
-      "tags": [
-        "devops",
-        "engineer",
-        "dev",
-        "python",
-        "golang",
-        "aws",
-        "gcp",
-        "kubernetes",
-        "sql",
-        "linux",
-        "ansible",
-        "ai",
-        "full time",
-        "full stack",
-        "remote",
-        "remote work"
-      ]
-    },
-    "pitch": "Hi Lemon.io team, I’m Kiran S R, a Full‑Stack Engineer who consistently builds production‑grade systems that run reliably at scale. On the “Yeshu Tours & Travels” platform I designed the end‑to‑end deployment pipeline (Docker, GitHub Actions, AWS ECS), integrated Redis caching, set up automated rollbacks and monitoring, and delivered a zero‑downtime launch for a high‑traffic booking engine. My hands‑on experience with Node.js, Express, MongoDB and cloud infra means I can hit the ground running",
-    "createdAt": "2026-10-24T17:11:47.764Z",
     "deliveredToTelegram": false
   }
 ]
