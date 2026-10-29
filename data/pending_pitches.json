@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6099199912",
+      "type": "bounty",
+      "title": "[wildcard] GUARANTEES as code: claim-carrying corpus and an automatic demotion gate (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/2220",
+      "description": "## The idea, in a paragraph\n\nEvery row of GUARANTEES.md becomes a machine-readable claim record with an executable falsifier, and the table itself is generated from that registry in CI. A row that cannot point at a running falsifier is automatically demoted to \"no claim\" — with an owner, a dated debt ticket, and a scheduled review — instead of living on as prose. The project is already unusually honest: the claims table cites the spec rule and the evidence. But the citation is not an obligation; nothing fails when a corpus program no longer exercises the row it is cited for. A claim-carrying corpus turns each promise into the artifact that can break it, and turns drift into a red build. \"The claim is exactly as strong as the checker and its adversarial corpus prove it to be\" becomes operational instead of aspirational.\n\n## Which assumption it breaks\n\n1. **Evidence as citation.** Today the \"Evidence\" column links files; a claim row survives even if its cited tests are skipped, renamed, "
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer in Bengaluru. Your Go-Hybrid project’s focus on machine-readable claims and automatic demotion gates aligns perfectly with my experience building robust, data-driven systems. At RMC ERP, I engineered complex dispatch workflows and sensor feed processing using Laravel and Vue 3, ensuring that every data point was strictly validated and traceable. I can immediately implement the CI pipeline to generate your GUARANTEES.md from a claim registry, ensuring that any drift triggers a red build and creates a dated debt ticket automatically. I am ready to deliver a working PR within 48 hours that turns your aspirational honesty into operational code. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-29T14:34:53.621Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "reddit_rss_t3_1xi4keq",
       "type": "freelance",
       "title": "Florida - React/Node dev to fix a bug in my side project, $1,000 flat",
@@ -1506,51 +1520,6 @@
     },
     "pitch": "I’m Kiran S R, a Full‑Stack Engineer who built “Yeshu Tours & Travels” – a complete travel‑booking platform with a React/Next front‑end, Node/Express API, Redis caching, MongoDB, and WhatsApp integration. I know how to isolate a real change, reconstruct the repo, write precise task briefs, craft correct solutions and rigorous grading checks that catch lazy or incorrect",
     "createdAt": "2026-10-24T17:12:09.702Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137540",
-      "type": "remote_job",
-      "title": "Technical Account Manager",
-      "companyOrClient": "Yuno",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-technical-account-manager-yuno-1137540",
-      "description": "   Remote, Brazil, Full Time, Individual Contributor, +3 years of experience   \n   Who We Are   \n  At Yuno, we are building the payment infrastructure that allows all companies to participate in the global market. Founded by seasoned experts from the payments and tech industries, our technology provides access to leading payment capabilities, enabling companies to engage customers confidently and maintain global operations through seamless integrations.  \n  We empower high-performing teams at brands like InDrive, McDonald's, Rappi, and Viva Aerobus to integrate over 1,000 payment methods via a single API. By leveraging advanced AI and the latest technologies, we orchestrate smart routing and fraud prevention across 80+ countries.  \n &nbsp; \n \n   About The Role   \n  We are orchestrating the best high-performing team!  \n  We are looking for a Technical Account Manager to own and elevate Yuno's technical customer relationships across Latin America. This is a leadership position for someon",
-      "tags": [
-        "exec",
-        "design",
-        "hr",
-        "python",
-        "technical",
-        "customer support",
-        "marketing",
-        "web dev",
-        "speech",
-        "javascript",
-        "finance",
-        "css",
-        "html",
-        "sql",
-        "postgres",
-        "node",
-        "node.js",
-        "mongo",
-        "api",
-        "senior",
-        "ops",
-        "sales",
-        "sys admin",
-        "golang",
-        "medical",
-        "engineer",
-        "apache",
-        "nginx",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"Technical Account Manager\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:12:03.499Z",
     "deliveredToTelegram": false
   }
 ]
