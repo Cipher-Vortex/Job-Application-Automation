@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "reddit_rss_t3_1xi4keq",
+      "type": "freelance",
+      "title": "Florida - React/Node dev to fix a bug in my side project, $1,000 flat",
+      "companyOrClient": "Reddit r/forhire Client",
+      "budgetOrSalary": "$1,000",
+      "url": "https://www.reddit.com/r/forhire/comments/1xi4keq/hiring_florida_reactnode_dev_to_fix_a_bug_in_my/",
+      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hey all. I&amp;#39;ve got a small personal project (React front end, Node API, Postgres on Railway) that&amp;#39;s mostly working, but there&amp;#39;s one bug I&amp;#39;ve been fighting for a couple weeks and I&amp;#39;m done banging my head on it. Not a build-from-scratch thing, I just need someone who knows what they&amp;#39;re doing to come in and sort it out.&lt;/p&gt; &lt;p&gt;The bug: when a user logs out and logs back in, the dashboard shows the previous session&amp;#39;s data instead of pulling fresh from the API. It stays stale until you hard reload. I&amp;#39;m guessing it&amp;#39;s cached state not clearing on logout but I haven&amp;#39;t been able to pin it down. Fixed = it loads fresh data on its own every time after login, no manual refresh.&lt;/p&gt; &lt;p&gt;I&amp;#39;d prefer someone in Florida because part of it runs on a machine at my place and I&amp;#39;d rather sit down and walk through the setup togethe"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React and Node.js. I’ve resolved complex state management and session persistence issues in production environments, most notably for Yeshu Tours & Travels, where I implemented Redis caching and robust API synchronization for user dashboards. Your stale data bug is a classic React state clearing issue, and I can diagnose and fix it immediately. While I’m based in Bengaluru, I offer immediate remote access to your Railway environment and can walk through the local machine setup via screen share to ensure a seamless handoff. I guarantee the fix will ensure fresh data loads on every login without manual refresh. Ready to start today to deliver a clean PR. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-29T01:08:11.329Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_simpletiger-web-developer-wordpress-hubspot-u-s-based-remote-contractor",
       "type": "remote_job",
       "title": "Web Developer: WordPress &amp; HubSpot (U.S. Based, Remote Contractor)",
@@ -1537,27 +1551,6 @@
     },
     "pitch": "Hi there,\n\nI saw your requirement for \"Technical Account Manager\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
     "createdAt": "2026-10-24T17:12:03.499Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137551",
-      "type": "remote_job",
-      "title": "Senior Backend Engineer",
-      "companyOrClient": "DuckDuckGo",
-      "budgetOrSalary": "$190000k - $190000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-duckduckgo-1137551",
-      "description": "  Who We Are    Hi, we're DuckDuckGo, the online protection company and remote-first team of 400+ on a mission to raise the standard of trust online. Founded in 2008 and profitable since 2014, our annual revenue is in the hundreds of millions USD and millions use our browser on  Mac ,  Windows ,  iOS , and  Android , our  search engine , and the  DuckDuckGo subscription . We also offer private, useful, and optional AI, including  Duck.ai , which lets you chat privately with ChatGPT, Claude, and other AIs, all in one place.     Our  culture  of trust, inclusivity, and empowered project management underpins everything we do, where each team member takes full ownership of their projects, from scoping and execution to postmortem. If you're seeking end-to-end ownership of your work, you've come to the right place!      Your Team and Role    Working on the Backend Functional Team, you'll lead complex projects across key company-wide objectives. Using Perl (Version 5), Go, and Node.js, youâ",
-      "tags": [
-        "backend",
-        "perl",
-        "golang",
-        "javascript",
-        "node"
-      ]
-    },
-    "pitch": "Hi DuckDuckGo team, I’m Kiran S R, a Full‑Stack Engineer with deep Node.js/Express expertise and production‑grade Redis caching. On the “Yeshu Tours & Travels” platform I built a high‑throughput booking engine, designing secure REST APIs, integrating WhatsApp enquiries, and optimizing latency with Redis and code‑splitting—delivering a seamless, scalable backend that handles thousands of concurrent users. I thrive in remote‑first, ownership‑driven cultures and can hit",
-    "createdAt": "2026-10-24T17:11:56.099Z",
     "deliveredToTelegram": false
   }
 ]
