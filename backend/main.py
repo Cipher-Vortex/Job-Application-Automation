@@ -265,9 +265,8 @@ def job_accepts_india(job: Dict[str, Any]) -> bool:
     return any(term in normalized for term in ("india", "worldwide", "anywhere", "global"))
 
 @app.get("/api/telegram/logs")
-def get_telegram_logs(limit: int = 100, request: Request = None):
-    if request is not None:
-        require_telegram_api_key(request)
+def get_telegram_logs(request: Request, limit: int = 100):
+    require_telegram_api_key(request)
     limit = max(1, min(limit, 300))
     return {"logs": list(TELEGRAM_LOGS)[-limit:], "count": min(len(TELEGRAM_LOGS), limit)}
 
