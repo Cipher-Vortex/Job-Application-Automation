@@ -1,10 +1,12 @@
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException, BackgroundTasks, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Dict, Any, List, Optional
 import json
 import os
 import asyncio
+import time
+from collections import deque
 from datetime import datetime
 from config.logger import logger
 
@@ -34,11 +36,11 @@ app.add_middleware(
 
 # Global Auto-Apply state
 AUTO_APPLY_STATE = {
-    "enabled": True,
+    "enabled": False,
     "last_run": None,
     "total_auto_applied": 0,
     "is_running": False,
-    "message": "Instant auto-apply monitor is active. Standing by for newly posted remote jobs."
+    "message": "Auto-apply is disabled by default. Use Telegram to find jobs and prepare drafts for manual review."
 }
 
 def load_candidate_profile():
@@ -232,6 +234,162 @@ async def get_live_jobs(remote_only: bool = True, force_refresh: bool = False):
 async def scan_live_jobs_now(background_tasks: BackgroundTasks):
     """Explicitly triggers real-time discovery and updates live job radar."""
     return await get_live_jobs(remote_only=True, force_refresh=True)
+
+
+# Telegram integration diagnostics. Keep a bounded in-memory log; never log secrets.
+TELEGRAM_LOGS = deque(maxlen=300)
+
+def telegram_log(level: str, message: str, **fields):
+    entry = {"timestamp": datetime.now().isoformat(), "level": level.upper(),
+             "message": message, "details": fields}
+    TELEGRAM_LOGS.append(entry)
+    getattr(logger, level.lower(), logger.info)(f"[Telegram API] {message} | {fields}")
+
+def require_telegram_api_key(request: Request):
+    expected = os.getenv("JOB_ENGINE_API_KEY", "").strip()
+    if expected:
+        supplied = request.headers.get("Authorization", "")
+        if supplied != f"Bearer {expected}":
+            raise HTTPException(status_code=401, detail="Unauthorized")
+
+def job_accepts_india(job: Dict[str, Any]) -> bool:
+    countries = job.get("eligible_countries") or job.get("eligibleCountries") or []
+    if isinstance(countries, str):
+        countries = [countries]
+    locations = job.get("locations") or []
+    if isinstance(locations, str):
+        locations = [locations]
+    explicit = " ".join(str(x) for x in countries + locations)
+    explicit += " " + str(job.get("location", ""))
+    normalized = explicit.lower()
+    return any(term in normalized for term in ("india", "worldwide", "anywhere", "global"))
+
+@app.get("/api/telegram/logs")
+def get_telegram_logs(limit: int = 100, request: Request = None):
+    if request is not None:
+        require_telegram_api_key(request)
+    limit = max(1, min(limit, 300))
+    return {"logs": list(TELEGRAM_LOGS)[-limit:], "count": min(len(TELEGRAM_LOGS), limit)}
+
+@app.post("/api/telegram/search")
+async def telegram_search(payload: Dict[str, Any], request: Request):
+    require_telegram_api_key(request)
+    started = time.monotonic()
+    try:
+        filters = payload.get("filters") or {}
+        jobs = await get_live_jobs(remote_only=True, force_refresh=bool(filters.get("force_refresh", False)))
+        selected = []
+        seen = set()
+        for job in jobs:
+            url = str(job.get("url", "")).strip()
+            if not url or url in seen or not job.get("is100Remote", False):
+                continue
+            if filters.get("accepts_india_based_applicants", True) and not job_accepts_india(job):
+                continue
+            seen.add(url)
+            selected.append(job)
+            if len(selected) >= min(int(filters.get("max_results", 20)), 50):
+                break
+        telegram_log("info", "Job search completed", returned=len(selected),
+                     discovered=len(jobs), elapsed_seconds=round(time.monotonic()-started, 2))
+        return {"jobs": selected, "count": len(selected), "source": "live_job_discovery"}
+    except Exception as exc:
+        telegram_log("exception", "Job search failed", error_type=type(exc).__name__)
+        raise HTTPException(status_code=502, detail=f"Job search failed ({type(exc).__name__})")
+
+@app.post("/api/telegram/drafts")
+def telegram_drafts(payload: Dict[str, Any], request: Request):
+    require_telegram_api_key(request)
+    candidate = payload.get("candidate_profile") or load_candidate_profile()
+    max_drafts = max(1, min(int(payload.get("max_drafts", 5)), 5))
+    try:
+        # Draft generation is intentionally limited to explicit, publicly verified
+        # recruiter/contact email fields. Never guess email addresses.
+        cache_path = os.path.join(os.path.dirname(__file__), "../data/live_scraped_jobs.json")
+        with open(cache_path, "r", encoding="utf-8") as handle:
+            cache = json.load(handle)
+        jobs = cache.get("jobs", []) if isinstance(cache, dict) else []
+        drafts, skipped = [], []
+        for job in jobs:
+            if len(drafts) >= max_drafts:
+                break
+            if not job.get("is100Remote") or not job_accepts_india(job):
+                continue
+            email = str(job.get("public_contact_email") or job.get("recruiter_email") or "").strip()
+            if not email or not job.get("contact_email_publicly_verified", False):
+                skipped.append({"job": job.get("id"), "reason": "No publicly verified contact email"})
+                continue
+            parsed = job_parser_agent.parse_job(job)
+            role = parsed.get("title") or job.get("title") or "Full Stack Engineer"
+            tailored = resume_optimizer.optimize_resume(candidate, role, parsed)
+            letter = cover_letter_agent.generate_cover_letter(candidate, parsed)
+            body = str(letter or "").strip()
+            if not body:
+                skipped.append({"job": job.get("id"), "reason": "Cover-letter generator returned empty content"})
+                continue
+            drafts.append({
+                "to": email,
+                "subject": f"Application interest: {role} at {job.get('company', 'your team')}",
+                "body": body[:5000],
+                "job": job,
+                "tailored_resume_markdown": tailored.get("tailored_resume_markdown", ""),
+                "tailored_cv": tailored.get("tailored_cv", "")
+            })
+        telegram_log("info", "Draft generation completed", drafts=len(drafts), skipped=len(skipped))
+        return {"drafts": drafts, "count": len(drafts), "skipped": skipped,
+                "note": "Drafts only; no applications or emails were submitted."}
+    except FileNotFoundError:
+        telegram_log("warning", "Draft generation skipped; live jobs cache does not exist")
+        return {"drafts": [], "count": 0, "skipped": [], "note": "Run job search first."}
+    except Exception as exc:
+        telegram_log("exception", "Draft generation failed", error_type=type(exc).__name__)
+        raise HTTPException(status_code=502, detail=f"Draft generation failed ({type(exc).__name__})")
+
+@app.get("/api/telegram/report")
+def telegram_report(request: Request):
+    require_telegram_api_key(request)
+    return {"engine": "online", "auto_apply_enabled": AUTO_APPLY_STATE["enabled"],
+            "applications": rag_db.get_applications(), "auto_apply": AUTO_APPLY_STATE}
+
+@app.get("/api/telegram/sent")
+def telegram_sent(request: Request):
+    require_telegram_api_key(request)
+    return {"sent": [], "note": "Email sending is managed by Gmail in the Telegram controller; this engine does not send email."}
+
+@app.get("/api/telegram/stats")
+def telegram_stats(request: Request):
+    require_telegram_api_key(request)
+    apps = rag_db.get_applications()
+    return {"applications": len(apps), "auto_applied": AUTO_APPLY_STATE["total_auto_applied"],
+            "auto_apply_enabled": AUTO_APPLY_STATE["enabled"], "recent_log_entries": len(TELEGRAM_LOGS)}
+
+@app.post("/api/telegram/control/pause")
+def telegram_pause(request: Request):
+    require_telegram_api_key(request)
+    AUTO_APPLY_STATE["enabled"] = False
+    AUTO_APPLY_STATE["message"] = "Paused by Telegram controller."
+    telegram_log("warning", "Auto-apply paused through Telegram")
+    return {"ok": True, "paused": True, "auto_apply": AUTO_APPLY_STATE}
+
+@app.post("/api/telegram/control/resume")
+def telegram_resume(request: Request):
+    require_telegram_api_key(request)
+    # Resume enables the internal auto-apply scheduler. Telegram's outreach
+    # search/draft actions remain approval-based; default is safely disabled.
+    AUTO_APPLY_STATE["enabled"] = False
+    AUTO_APPLY_STATE["message"] = "Outreach resumed; automatic applications remain disabled."
+    telegram_log("info", "Outreach resumed; auto-apply remains disabled")
+    return {"ok": True, "paused": False, "auto_apply_enabled": False,
+            "message": AUTO_APPLY_STATE["message"]}
+
+@app.on_event("startup")
+async def engine_startup_diagnostics():
+    logger.info("[Startup] JobPilot engine initializing; waiting 10 seconds before dependency warm-up.")
+    await asyncio.sleep(10)
+    logger.info("[Startup] Environment loaded: JOB_ENGINE_API_KEY configured=%s",
+                bool(os.getenv("JOB_ENGINE_API_KEY", "").strip()))
+    logger.info("[Startup] Job discovery agent ready; auto-apply default=%s", AUTO_APPLY_STATE["enabled"])
+
 
 # ================= APPLICATION PIPELINE & RAG MEMORY =================
 
