@@ -1097,6 +1097,39 @@ app.post('/api/apply/persistent', (req, res) => {
   });
 });
 
+// Telegram controller bridge: expose the FastAPI Telegram endpoints through the
+// public Express service. The FastAPI app listens privately on FASTAPI_URL (8001
+// in the Docker image), while the Telegram controller can only reach this public
+// Express port.
+app.all(['/api/telegram', '/api/telegram/*'], async (req, res) => {
+  const targetUrl = `${FASTAPI_URL}${req.originalUrl}`;
+  try {
+    const upstream = await axios({
+      method: req.method,
+      url: targetUrl,
+      data: ['GET', 'HEAD'].includes(req.method) ? undefined : req.body,
+      headers: {
+        'Accept': req.get('Accept') || 'application/json',
+        'Content-Type': req.get('Content-Type') || 'application/json',
+        ...(req.get('Authorization') ? { 'Authorization': req.get('Authorization') } : {})
+      },
+      timeout: 95000,
+      validateStatus: () => true
+    });
+    res.status(upstream.status);
+    if (upstream.headers['content-type']) {
+      res.set('Content-Type', upstream.headers['content-type']);
+    }
+    return res.send(upstream.data);
+  } catch (err) {
+    console.error(`[Telegram API Proxy] ${req.method} ${req.originalUrl} failed: ${err.message}`);
+    return res.status(502).json({
+      error: 'Telegram API upstream unavailable',
+      detail: err.code || err.message
+    });
+  }
+});
+
 // Universal wildcard route for SPA client navigation - safely renders index.html
 app.get('*', (req, res) => {
   if (req.path.startsWith('/api/')) {
