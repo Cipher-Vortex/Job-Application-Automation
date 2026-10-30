@@ -31,10 +31,6 @@ const FASTAPI_URL = process.env.FASTAPI_URL || 'http://127.0.0.1:8000';
 app.use(cors());
 app.use(express.json());
 
-// Lightweight health endpoint for external keep-alive checks (no database or AI work).
-app.get('/healthz', (req, res) => {
-  res.status(200).json({ status: 'ok', service: 'job-application-automation', timestamp: new Date().toISOString() });
-});
 app.use(express.static(path.join(__dirname, '../frontend')));
 app.use('/screenshots', express.static(path.join(__dirname, '../data/screenshots')));
 app.use('/tailored_resumes', express.static(path.join(__dirname, '../data/tailored_resumes')));
