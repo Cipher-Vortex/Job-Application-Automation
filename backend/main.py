@@ -300,49 +300,74 @@ async def telegram_search(payload: Dict[str, Any], request: Request):
 def telegram_drafts(payload: Dict[str, Any], request: Request):
     require_telegram_api_key(request)
     candidate = payload.get("candidate_profile") or load_candidate_profile()
-    max_drafts = max(1, min(int(payload.get("max_drafts", 5)), 5))
+    max_items = max(1, min(int(payload.get("max_drafts", 5)), 5))
     try:
-        # Draft generation is intentionally limited to explicit, publicly verified
-        # recruiter/contact email fields. Never guess email addresses.
         cache_path = os.path.join(os.path.dirname(__file__), "../data/live_scraped_jobs.json")
         with open(cache_path, "r", encoding="utf-8") as handle:
             cache = json.load(handle)
         jobs = cache.get("jobs", []) if isinstance(cache, dict) else []
-        drafts, skipped = [], []
+        tailored_jobs, drafts, skipped = [], [], []
+        processed = 0
         for job in jobs:
-            if len(drafts) >= max_drafts:
+            if processed >= max_items:
                 break
             if not job.get("is100Remote") or not job_accepts_india(job):
                 continue
-            email = str(job.get("public_contact_email") or job.get("recruiter_email") or "").strip()
-            if not email or not job.get("contact_email_publicly_verified", False):
-                skipped.append({"job": job.get("id"), "reason": "No publicly verified contact email"})
-                continue
-            parsed = job_parser_agent.parse_job(job)
-            role = parsed.get("title") or job.get("title") or "Full Stack Engineer"
-            tailored = resume_optimizer.optimize_resume(candidate, role, parsed)
-            letter = cover_letter_agent.generate_cover_letter(candidate, parsed)
-            body = str(letter or "").strip()
-            if not body:
-                skipped.append({"job": job.get("id"), "reason": "Cover-letter generator returned empty content"})
-                continue
-            drafts.append({
-                "to": email,
-                "subject": f"Application interest: {role} at {job.get('company', 'your team')}",
-                "body": body[:5000],
-                "job": job,
-                "tailored_resume_markdown": tailored.get("tailored_resume_markdown", ""),
-                "tailored_cv": tailored.get("tailored_cv", "")
-            })
-        telegram_log("info", "Draft generation completed", drafts=len(drafts), skipped=len(skipped))
-        return {"drafts": drafts, "count": len(drafts), "skipped": skipped,
-                "note": "Drafts only; no applications or emails were submitted."}
+            processed += 1
+            try:
+                parsed = job_parser_agent.parse_job(job)
+                role = parsed.get("title") or job.get("title") or "Full Stack Engineer"
+                tailored = resume_optimizer.optimize_resume(candidate, role, parsed)
+                resume_text = (tailored.get("tailored_resume_markdown")
+                               or tailored.get("tailored_cv") or "").strip()
+                if not resume_text:
+                    skipped.append({"job": job.get("id"), "reason": "Resume optimizer returned empty content"})
+                    continue
+                tailored_jobs.append({
+                    "job": job,
+                    "role": role,
+                    "tailored_resume_markdown": resume_text,
+                    "tailored_cv": tailored.get("tailored_cv", ""),
+                    "tailored_summary": tailored.get("tailored_summary", "")
+                })
+                email = str(job.get("public_contact_email") or job.get("recruiter_email") or "").strip()
+                if email and job.get("contact_email_publicly_verified", False):
+                    letter = cover_letter_agent.generate_cover_letter(candidate, parsed)
+                    body = str(letter or "").strip()
+                    if body:
+                        drafts.append({
+                            "to": email,
+                            "subject": f"Application interest: {role} at {job.get('company', 'your team')}",
+                            "body": body[:5000],
+                            "job": job,
+                            "tailored_resume_markdown": resume_text,
+                            "tailored_cv": tailored.get("tailored_cv", "")
+                        })
+                    else:
+                        skipped.append({"job": job.get("id"), "reason": "Cover-letter generator returned empty content"})
+                else:
+                    skipped.append({"job": job.get("id"), "reason": "No publicly verified contact email; resume tailored only"})
+            except Exception as job_exc:
+                telegram_log("exception", "Per-job tailoring failed",
+                             job_id=str(job.get("id", "")), error_type=type(job_exc).__name__)
+                skipped.append({"job": job.get("id"), "reason": f"Tailoring failed ({type(job_exc).__name__})"})
+        telegram_log("info", "Resume tailoring and draft generation completed",
+                     tailored=len(tailored_jobs), drafts=len(drafts), skipped=len(skipped))
+        return {
+            "tailored_jobs": tailored_jobs,
+            "tailored_count": len(tailored_jobs),
+            "drafts": drafts,
+            "count": len(drafts),
+            "skipped": skipped,
+            "note": "Resumes are tailored independently of recruiter email availability. Emails are drafted only for publicly verified recipient addresses; nothing is sent."
+        }
     except FileNotFoundError:
-        telegram_log("warning", "Draft generation skipped; live jobs cache does not exist")
-        return {"drafts": [], "count": 0, "skipped": [], "note": "Run job search first."}
+        telegram_log("warning", "Tailoring skipped; live jobs cache does not exist")
+        return {"tailored_jobs": [], "tailored_count": 0, "drafts": [], "count": 0,
+                "skipped": [], "note": "Run Find Jobs first; the live jobs cache does not exist."}
     except Exception as exc:
-        telegram_log("exception", "Draft generation failed", error_type=type(exc).__name__)
-        raise HTTPException(status_code=502, detail=f"Draft generation failed ({type(exc).__name__})")
+        telegram_log("exception", "Resume tailoring/draft generation failed", error_type=type(exc).__name__)
+        raise HTTPException(status_code=502, detail=f"Resume tailoring/draft generation failed ({type(exc).__name__})")
 
 @app.get("/api/telegram/report")
 def telegram_report(request: Request):
