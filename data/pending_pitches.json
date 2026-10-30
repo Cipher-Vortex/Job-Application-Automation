@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6115276398",
+      "type": "bounty",
+      "title": "feat(config): expand active bounty organizations in mapping.json (#18) (FuZoe/PD-Hunter)",
+      "companyOrClient": "GitHub: FuZoe/PD-Hunter",
+      "budgetOrSalary": "$500",
+      "url": "https://github.com/FuZoe/PD-Hunter/pull/29",
+      "description": "Resolves #18\n\n### Overview\nThis PR expands `mapping.json` to include confirmed active bounty organizations across high-value and medium-value tiers.\n\n### Added Organizations\n- **High-Value ($500+)**: `tenstorrent`, `archestra-ai`, `getkyo`\n- **Medium-Value ($50–$500)**: `tscircuit`, `activepieces`, `Dokploy`, `coollabsio`, `mediar-ai`, `tari-project`, `PX4`\n- **Entry-Level & Tooling**: `FreezingMoon`, `Cap-go`\n- **Enhanced Labels**: Updated `golemcloud`, `zio`, `calcom` with `💎 Bounty` and `$250` tags for Algora compatibility.\n\n### Verification\n- JSON syntax validated\n- Schema matches `pkg/scraper/config.go` (`LoadConfig`)"
+    },
+    "pitch": "Hi FuZoe team, I can deliver the `mapping.json` expansion for #18 immediately. As a Full Stack Engineer proficient in TypeScript and Node.js, I ensure strict schema alignment with `pkg/scraper/config.go` and zero syntax errors. My work on Zupper Commerce, where I optimized React components for 25% faster load times, demonstrates my commitment to clean, efficient code and rigorous validation. I will update high-value tiers like `tenstorrent` and `archestra-ai`, alongside medium and entry-level orgs, with precise Algora-compatible labels. I am ready to submit a verified, merge-ready PR today for your $500 bounty. Let’s get this resolved—check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-30T13:18:06.104Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6099199912",
       "type": "bounty",
       "title": "[wildcard] GUARANTEES as code: claim-carrying corpus and an automatic demotion gate (limitlessprojects/Go-Hybrid)",
@@ -1497,29 +1511,6 @@
     },
     "pitch": "Hi there,\n\nI saw your requirement for \"Head of Technology\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
     "createdAt": "2026-10-24T17:12:16.191Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137538",
-      "type": "remote_job",
-      "title": "Software Engineer AI Coding Tasks",
-      "companyOrClient": "Askable",
-      "budgetOrSalary": "$10000k - $10000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-ai-coding-tasks-askable-1137538",
-      "description": " We're looking for experienced software engineers to build AI coding tasks from a codebase they know well. US$1,000 per task, and you can do as many tasks as you want.  You turn a real change from a repository you know into a task that today's best AI coding models struggle with: hard for the models, but fair for a skilled engineer. Your tasks are used to measure and train AI coding models.  Remote, any location. US$1,000 per task that passes review. Minimum of one task a week, about 10 hours a week.      How it works     Apply.  Complete a short screener interview and upload your resume.   Propose.  Once you're selected, pick a change from a repository you know and submit a short proposal. We approve it or suggest a better candidate.   Build.  In our platform, set up the repository as it was before the change, then write the brief, the correct solution and the grading checks.   Stress-test.  Try lazy, incorrect and shortcut solutions and make sure your checks catch them.   Model testi",
-      "tags": [
-        "dev",
-        "python",
-        "javascript",
-        "typescript",
-        "golang",
-        "java",
-        "c plus plus"
-      ]
-    },
-    "pitch": "I’m Kiran S R, a Full‑Stack Engineer who built “Yeshu Tours & Travels” – a complete travel‑booking platform with a React/Next front‑end, Node/Express API, Redis caching, MongoDB, and WhatsApp integration. I know how to isolate a real change, reconstruct the repo, write precise task briefs, craft correct solutions and rigorous grading checks that catch lazy or incorrect",
-    "createdAt": "2026-10-24T17:12:09.702Z",
     "deliveredToTelegram": false
   }
 ]
