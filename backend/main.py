@@ -296,6 +296,40 @@ async def telegram_search(payload: Dict[str, Any], request: Request):
         telegram_log("exception", "Job search failed", error_type=type(exc).__name__)
         raise HTTPException(status_code=502, detail=f"Job search failed ({type(exc).__name__})")
 
+# Telegram tailored-resume store. Atomic JSON writes survive process restarts when the
+# Render service has a persistent disk mounted; without one, Render's ephemeral
+# filesystem is not durable across redeploys.
+TAILORED_STORE_PATH = os.getenv(
+    "TELEGRAM_TAILORED_STORE_PATH",
+    os.path.join(os.path.dirname(__file__), "../data/telegram_tailored_resumes.json")
+)
+TAILORED_STORE_LOCK = asyncio.Lock()
+
+def _read_tailored_store():
+    try:
+        with open(TAILORED_STORE_PATH, "r", encoding="utf-8") as handle:
+            data = json.load(handle)
+        return data if isinstance(data, list) else []
+    except FileNotFoundError:
+        return []
+    except Exception as exc:
+        logger.exception("Could not read tailored resume store: %s", exc)
+        return []
+
+def _write_tailored_store(items):
+    os.makedirs(os.path.dirname(os.path.abspath(TAILORED_STORE_PATH)), exist_ok=True)
+    temp_path = TAILORED_STORE_PATH + ".tmp"
+    with open(temp_path, "w", encoding="utf-8") as handle:
+        json.dump(items, handle, ensure_ascii=False, indent=2)
+    os.replace(temp_path, TAILORED_STORE_PATH)
+
+@app.get("/api/telegram/tailored")
+def telegram_tailored(request: Request):
+    require_telegram_api_key(request)
+    items = _read_tailored_store()
+    return {"tailored_jobs": items, "tailored_count": len(items),
+            "storage": "persistent-disk-required-for-redeploy-durability"}
+
 @app.post("/api/telegram/drafts")
 def telegram_drafts(payload: Dict[str, Any], request: Request):
     require_telegram_api_key(request)
@@ -323,13 +357,21 @@ def telegram_drafts(payload: Dict[str, Any], request: Request):
                 if not resume_text:
                     skipped.append({"job": job.get("id"), "reason": "Resume optimizer returned empty content"})
                     continue
-                tailored_jobs.append({
+                job_url = str(job.get("url") or job.get("job_url") or job.get("apply_url") or "").strip()
+                job_key = str(job.get("id") or job_url or f"{job.get('company','')}-{role}").strip()
+                tailored_item = {
+                    "id": __import__("hashlib").sha256(job_key.encode("utf-8")).hexdigest()[:12],
                     "job": job,
                     "role": role,
+                    "company": job.get("company") or "Company not listed",
+                    "job_url": job_url,
                     "tailored_resume_markdown": resume_text,
                     "tailored_cv": tailored.get("tailored_cv", ""),
-                    "tailored_summary": tailored.get("tailored_summary", "")
-                })
+                    "tailored_summary": tailored.get("tailored_summary", ""),
+                    "created_at": datetime.utcnow().isoformat() + "Z",
+                    "status": "ready"
+                }
+                tailored_jobs.append(tailored_item)
                 email = str(job.get("public_contact_email") or job.get("recruiter_email") or "").strip()
                 if email and job.get("contact_email_publicly_verified", False):
                     letter = cover_letter_agent.generate_cover_letter(candidate, parsed)
@@ -351,6 +393,13 @@ def telegram_drafts(payload: Dict[str, Any], request: Request):
                 telegram_log("exception", "Per-job tailoring failed",
                              job_id=str(job.get("id", "")), error_type=type(job_exc).__name__)
                 skipped.append({"job": job.get("id"), "reason": f"Tailoring failed ({type(job_exc).__name__})"})
+        # Upsert by stable job ID/URL so reruns do not create duplicate saved resumes.
+        saved = _read_tailored_store()
+        by_id = {str(item.get("id")): item for item in saved if item.get("id")}
+        for item in tailored_jobs:
+            by_id[item["id"]] = item
+        saved = sorted(by_id.values(), key=lambda item: item.get("created_at", ""), reverse=True)[:100]
+        _write_tailored_store(saved)
         telegram_log("info", "Resume tailoring and draft generation completed",
                      tailored=len(tailored_jobs), drafts=len(drafts), skipped=len(skipped))
         return {
