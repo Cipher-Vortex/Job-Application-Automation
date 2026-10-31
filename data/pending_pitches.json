@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "wwr_gitlab-backend-engineer-knowledge-graph",
+      "type": "remote_job",
+      "title": "Backend Engineer, Knowledge Graph",
+      "companyOrClient": "GitLab",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/gitlab-backend-engineer-knowledge-graph",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote, Canada; Remote, United States\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster.&lt;/p&gt;\n&lt;p&gt;The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&amp;nbsp;and continuous knowledge exchange, enabling our team members t"
+    },
+    "pitch": "Hi, I’m Kiran S R. I build high-performance backend systems that scale, and I saw your opening for a Backend Engineer at GitLab. My experience with RMC ERP, where I engineered complex dispatch workflows and real-time sensor feeds using Laravel and Vue 3, aligns perfectly with the need for robust data orchestration. I’ve also optimized React applications by 25% through rigorous code splitting and memoization, proving my commitment to developer efficiency and operational speed. I’m ready to leverage my Node.js and API expertise to contribute to GitLab’s intelligent DevSecOps platform immediately. Let’s connect to discuss how I can drive impact for your team. You can view my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-31T08:12:47.983Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_ritual-distributed-systems-engineer",
+      "type": "remote_job",
+      "title": "Distributed Systems Engineer",
+      "companyOrClient": "Ritual",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/ritual-distributed-systems-engineer",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h3&gt;About Ritual&amp;nbsp;&lt;/h3&gt;\n&lt;p&gt;Ritual is building a sovereign, execution layer for AI, with our private testnet already live and running. The Ritual chain is the first blockchain custom-built to support AI-native operations, designed from the ground up to enable a new class of applications at the intersection of crypto and AI. Our first product, Infernet, is pioneering new ground as the first solution to enable developers to access AI models both on-chain via smart contracts and off-chain, demonstrating our commitment to bridging these transformative technologies.&lt;/p&gt;&lt;/div&gt;&lt;h4&gt;About the role&lt;/h4&gt;\n&lt;p&gt;As a Distributed Systems Engineer at Ritual, you'll be instrumental in building and scaling our heterogeneous blockchain infrastructure. You'll work on innovative solutions for node specialization, consensus mechanisms, and distribu"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance, scalable systems. I see Ritual is building a sovereign execution layer for AI, and my experience in architecting complex, real-time data pipelines makes me a strong fit for your Distributed Systems role.\n\nFor RMC ERP, I engineered enterprise-grade dispatch workflows and sensor feed processing using Laravel and Vue 3, ensuring low-latency data handling under heavy load. Additionally, I optimized Zupper Commerce’s infrastructure, reducing page load times by 25% through strategic code splitting and memoization. I am ready to apply these rigorous performance optimization and system design principles to scale your heterogeneous blockchain infrastructure and consensus mechanisms immediately.\n\nLet’s connect to discuss how I can contribute to the Ritual chain’s growth: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-31T08:12:46.724Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6128999383",
       "type": "bounty",
       "title": "fix(vscode): keep file imports working when flows or imported files move (#112) (flydelabs/flyde)",
@@ -1436,74 +1464,6 @@
     },
     "pitch": "Hi there,\n\nI saw your requirement for \"Principal Software Engineer\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
     "createdAt": "2026-10-24T17:12:33.112Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137523",
-      "type": "remote_job",
-      "title": "Sr REACT NATIVE",
-      "companyOrClient": "Somnio Software",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-sr-react-native-somnio-software-1137523",
-      "description": "  QuÃ© es Deazy  Deazy es una plataforma/marketplace de UK que conecta empresas que necesitan desarrollo de software con agencias de desarrollo en todo el mundo. Ellos consiguen el cliente, definen el proyecto y luego lo asignan a una agencia como Somnio para ejecutarlo. BÃ¡sicamente son un intermediario entre el cliente final y nosotros.   CÃ³mo funciona el modelo  Deazy factura al cliente final a su propia tarifa (en este caso estÃ¡n hablando de EUR 47/h, aunque todavÃ­a hay que confirmar si ese es el rate al cliente o lo que pagan al proveedor). Nosotros le facturamos a Deazy a un rate mÃ¡s bajo, y la diferencia es su margen.  Por eso la tarifa introductoria que les estamos ofreciendo es USD 45/h - USD 40/h â pensada para que Deazy tenga margen cÃ³modo y nos priorice y abrir la cuenta   Si la relaciÃ³n funciona, Deazy nos puede asignar proyectos de forma recurrente sin que nosotros tengamos que salir a conseguirlos. Es un canal de ventas indirecto, ellos traen el cliente, nosotros",
-      "tags": [
-        "react native",
-        "react",
-        "dev",
-        "python",
-        "javascript",
-        "c",
-        "flutter",
-        "node",
-        "node.js",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi Somnio team, I’m Kiran S R, a Full‑Stack & Frontend Engineer with 5+ years of React expertise. On the Zupper Commerce project I built 20+ reusable React components, slashed page‑load times by ~25% through memoization, code‑splitting, and TypeScript‑strict patterns—skills that translate directly to high‑performance React Native apps. I’m ready to hit the ground running, deliver clean, scalable code, and integrate native modules or APIs within days. Let’s discuss how I can accelerate your next mobile release. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-24T17:12:27.941Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137527",
-      "type": "remote_job",
-      "title": "Senior Software Engineer II Applied AI",
-      "companyOrClient": "Wrapbook",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-ii-applied-ai-wrapbook-1137527",
-      "description": "  About Us:   Wrapbook is the AI platform for production finance. Weâre building a system of action that puts finance teams in control of their whole production, from payroll, to spend, to accounting.   Built for feature films, TV, and commercials, Wrapbook is trusted by teams at Netflix, Paramount, Anonymous Content, and more. With backing from Andreessen Horowitz, Bessemer Venture Partners, and Jeffrey Katzenberg's WndrCo, our team of 350+ is using AI to transform how finance teams work and empower them to do more with less.     The Opportunity: Senior Software Engineer II, Applied AI (Remote - USA / Canada)    We are looking for a Senior Software Engineer II, Applied AI to join our Agentic Systems team, where you'll build AI agents that automate workflows for teams across Wrapbook. You'll partner directly with internal teams like Marketing, Sales, Support, Operations and Finance to find high-leverage processes, then design, ship and iterate on agents that take real work off their ",
-      "tags": [
-        "dev",
-        "design",
-        "amazon",
-        "sys admin",
-        "backend",
-        "infosec",
-        "python",
-        "education",
-        "technical",
-        "customer support",
-        "accounting",
-        "payroll",
-        "javascript",
-        "finance",
-        "java",
-        "typescript",
-        "node",
-        "node.js",
-        "content writing",
-        "senior",
-        "ops",
-        "marketing",
-        "sales",
-        "medical",
-        "engineer",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"Senior Software Engineer II Applied AI\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:12:21.543Z",
     "deliveredToTelegram": false
   }
 ]
