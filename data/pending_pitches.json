@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6134658663",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-31T12:12 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1345",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1605944\thistory\t2\t21\t10000\t0\t0.2\t9274\t29131\trecent@history|top@history\tOPEN_BOUNTY,LOW_COMP,FRESH\tIYKYK:  Can you guess what this is about?\n```"
+    },
+    "pitch": "I specialize in high-performance React and Node.js architectures, ideal for the relayhop/sn-monetization-runtime bounty. My work on Zupper Commerce involved building 20+ reusable React components that cut page load times by 25% through memoization and code splitting—exactly the kind of optimized, scalable frontend logic your runtime requires. I also have deep experience with Redis caching and REST APIs from my Yeshu Tours project, ensuring your monetization features are both fast and secure. I can deliver the necessary PR immediately with clean, tested code. Check out my recent work and let’s get this bounty completed today: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-10-31T14:38:45.164Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6134668905",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-10-31T12:13 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1346",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1605336\tStacker_Sports\t3\t1069\t4200\t18\t21.4\t1448206\t2652\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,HOT,SELF_POST_OPP\t🏈 Sunday Leaders Bounty • 4.200 double bounty\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle your SN monetization runtime bounty immediately. My experience building high-performance systems like Yeshu Tours & Travels, which utilized Redis caching and complex API integrations, directly aligns with the technical demands of this project. I specialize in React, Node.js, and TypeScript, ensuring robust, scalable solutions delivered with precision. For this specific bounty, I can deliver a complete, tested PR within 24 hours to secure the reward. Let’s get this done efficiently. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-31T14:38:44.336Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_gitlab-backend-engineer-knowledge-graph",
       "type": "remote_job",
       "title": "Backend Engineer, Knowledge Graph",
@@ -1399,71 +1427,6 @@
     },
     "pitch": "Hi there,\n\nI saw your requirement for \"Senior Backend Engineer\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
     "createdAt": "2026-10-24T17:13:51.655Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137545",
-      "type": "remote_job",
-      "title": "Senior Software Engineer",
-      "companyOrClient": "Sothebyâs",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-sothebys-1137545",
-      "description": "Remote - Established in 1744, Sothebyâs promotes access and ownership of exceptional art and luxury objects through auctions, private sales and retail. Our deep expertise across 70 selling categories is supported by a leading technology platform and a global network of special...  Please mention the word **EVALUATIVE** and tag RMjcuNS4xMjUuMTg1 when applying to show you read the job post completely (#RMjcuNS4xMjUuMTg1). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-      "tags": [
-        "golang",
-        "dev",
-        "senior",
-        "sales",
-        "engineer",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"Senior Software Engineer\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:13:50.695Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137508",
-      "type": "remote_job",
-      "title": "Principal Software Engineer",
-      "companyOrClient": "Vytalize Health",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-principal-software-engineer-vytalize-health-1137508",
-      "description": "  Your Opportunity   As a  Principal Engineer , you will help design, build, and operate the clinical decision support and API-driven data delivery platform that enables Vytalize Health to embed timely, actionable clinical insights directly into provider workflows. Working cross-functionally with Data Engineering, Product, Clinical Operations, and EMR partners, your solutions will transform how clinicians access dataâmoving from external tools and workarounds to seamless, in-workflow decision support via CDS Hooks and real-time APIs.    You will own the technical foundation for Clinical Decision Support (CDS) Hooks, REST APIs, and the architectural patterns that ensure clinical data is accessible, trustworthy, and performant at the moment of care. This role sits at the intersection of healthcare interoperability standards, modern API design, and operational excellence. You will establish reliability metrics and SLAs that ensure CDS Hooks and APIs serve clinician workflows with consis",
-      "tags": [
-        "dev",
-        "design",
-        "infosec",
-        "python",
-        "docker",
-        "technical",
-        "recruiter",
-        "customer support",
-        "testing",
-        "marketing",
-        "quality assurance",
-        "finance",
-        "java",
-        "c",
-        "cloud",
-        "api",
-        "exec",
-        "content writing",
-        "senior",
-        "ops",
-        "stats",
-        "sys admin",
-        "golang",
-        "medical",
-        "engineer",
-        "backend",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"Principal Software Engineer\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:12:33.112Z",
     "deliveredToTelegram": false
   }
 ]
