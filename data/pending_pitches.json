@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6128999383",
+      "type": "bounty",
+      "title": "fix(vscode): keep file imports working when flows or imported files move (#112) (flydelabs/flyde)",
+      "companyOrClient": "GitHub: flydelabs/flyde",
+      "budgetOrSalary": "$15",
+      "url": "https://github.com/flydelabs/flyde/pull/301",
+      "description": "/claim #112\n\n## Summary\n\nFlows store imported file paths relative to the flow file. Renaming an imported\nfile or folder in VS Code left those paths pointing at the old location, so the\nimport broke and resolving the flow failed with ENOENT.\n\nThis change listens for `workspace.onDidRenameFiles`, coalesces rapid renames\ninto one move chain, and rewrites file import paths with a comment-preserving\nYAML edit. It covers the current `source.type: \"file\"` format, nested inline\nflows, legacy `imports:` keys, relative and absolute paths, Windows separators\nand chained moves. Open editors receive the move batch itself, so unsaved\ninstances, duplicate instances, retained paste/undo state and resolved inline\nnodes are repaired too. A disk-authoritative merge on visual saves keeps\nrepaired paths from being overwritten by a queued debounced save without\nreplacing unsaved editor state.\n\n## What changed\n\n- `@flyde/loader`: `rewriteImportPathsAfterMove` and `mergeFileImportPaths`.\n  The rewrite skips u"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in complex state management and file system logic. I’ve reviewed issue #112 regarding VS Code import path resolution. Having built the RMC ERP, which handles intricate sensor feeds and dynamic workflow dispatches, I possess the deep understanding of file path manipulation and state synchronization required to fix this. I can implement the `workspace.onDidRenameFiles` listener, coalesce rapid renames, and execute the comment-preserving YAML edits immediately. I am ready to deliver the pull request with full test coverage for nested flows and legacy keys today. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-10-31T01:58:25.509Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6115276398",
       "type": "bounty",
       "title": "feat(config): expand active bounty organizations in mapping.json (#18) (FuZoe/PD-Hunter)",
@@ -1490,27 +1504,6 @@
     },
     "pitch": "Hi there,\n\nI saw your requirement for \"Senior Software Engineer II Applied AI\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
     "createdAt": "2026-10-24T17:12:21.543Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137537",
-      "type": "remote_job",
-      "title": "Head of Technology",
-      "companyOrClient": "Sanctuary Computer",
-      "budgetOrSalary": "$140000k - $250000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-head-of-technology-sanctuary-computer-1137537",
-      "description": " We are hiring a  Head of Technology  for the garden3d creative collective, to lead engineering at Sanctuary Computer and garden3d in the era of agentic computer code.    Original job posting link     About  garden3d    We are worker owned creative collective, innovating on everything from brands and IRL communities to IoT devices and cross platform apps. We share profit, open source everything, spin out new businesses, and invest in exciting ideas through financial and/or in-kind contributions.  Our client roster includes Google, Stripe, Figma, Hinge, Black Socialists in America, ACLU, Pratt, Parsons, Mozilla, The Nobel Prize, MIT, Gnosis, Etsy &amp; Gagosian.  Weâre the software team behind innovative products like The Light Phone &amp; Mill, and we operate a global, decentralized community space collective called Index Space.  We think of our garden3d as collective for creative people, prioritizing a happy, talented, and diverse studio culture. We work on projects that bring value",
-      "tags": [
-        "dev",
-        "engineer",
-        "senior",
-        "full stack",
-        "front end"
-      ]
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"Head of Technology\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:12:16.191Z",
     "deliveredToTelegram": false
   }
 ]
