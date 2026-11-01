@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6150401704",
+      "type": "bounty",
+      "title": "[wildcard] Flip X1: exact-value arithmetic — silent integer wraparound becomes a named, checked effect, adjudicated by a BigInt reference oracle (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/3060",
+      "description": "### The idea, in a paragraph\r\n\r\nGive Hybrid a **value** guarantee to sit beside its access guarantee. Today the checker proves *who may touch a value* — ownership, freeze, sendability: 36 of its 42 `HYB-Exxxx` codes — and says nothing about *what the value is*. SPEC §11 **X1** defines signed overflow as **wrapping**, X2 unsigned likewise, X4 conversions as **truncating**, and the six `HYB-E6nnn` codes that do look at values only ever look at **compile-time constants**. So `int8(100) + int8(100)` is accepted, emits as a bare `c := a + b`, and prints `-56`: the checker's value protection stops exactly where Go's constant folding stops, and the programme's own oracle (does it build? does `-race` fire?) is *structurally blind* to it. The proposal: make the arithmetic site an **effect** — `exact` / `guarded` / **named** — with the qualifier carried in the *type* (`no_wrap int8`, `wrapping int8` = today's X1, `saturated int8` as sugar), emitting a guard **only** where the proof fails; and, t"
+    },
+    "pitch": "I can deliver a precise implementation for the Go-Hybrid X1 exact-value arithmetic bounty. My work on RMC ERP, which processes complex sensor feeds and dispatch workflows using TypeScript and Node.js, demonstrates my ability to build robust, performance-critical systems with strict data integrity. I am ready to implement the `no_wrap` and `saturated` type qualifiers, ensuring the checker emits guards only where proofs fail, validated against the BigInt reference oracle. I can submit a clean, tested PR immediately to resolve this silent integer wraparound issue. Let’s get this bounty closed out efficiently. View my full technical portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-01T20:06:56.285Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6151132817",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-01T19:32 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1349",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1606443\tStacker_Stocks\t2\t250\t10000\t5\t5.8\t9274\t29185\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,LOW_COMP,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats!\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer in Bengaluru specializing in high-performance React, Node.js, and Redis architectures. I see you’re looking for a developer to tackle the `sn-monetization-runtime` bounty. My recent work on Yeshu Tours & Travels involved building a robust booking engine with real-time Redis caching and complex state management, directly mirroring the performance and reliability needs of a monetization runtime. I can deliver a clean, optimized PR immediately, ensuring your codebase remains stable and efficient. Let’s get this bounty shipped today. Check my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-01T20:06:55.506Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6148359581",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-11-01T14:58 (relayhop/sn-monetization-runtime)",
@@ -1390,34 +1418,6 @@
     },
     "pitch": "Hi Proxify team, I’m Kiran S R, a 5‑year Full‑Stack Engineer specializing in React.js, Next.js, TypeScript, Node.js and Redis. I built “Yeshu Tours & Travels” – a complete travel‑booking platform with a customer portal, admin dashboard, Redis‑cached data layers and WhatsApp enquiry integration, delivering a seamless, high‑performance experience for thousands of users. My expertise in building scalable APIs, optimizing front‑end performance, and driving rapid feature delivery aligns perfectly with your senior React/Node role. I can start immediately and contribute to your next product launch. Let’s discuss how I can add value—view my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-10-24T17:44:50.575Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_growth-minded-senior-data-engineer",
-      "type": "remote_job",
-      "title": "Senior Data Engineer",
-      "companyOrClient": "Growth Minded",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/growth-minded-senior-data-engineer",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0157/5402/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://growthminded.co\"&gt;https://growthminded.co&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;div class=\"space-y-12\"&gt;\n\n&lt;h2 class=\"text-3xl font-medium\"&gt;About the role&lt;/h2&gt;\n&lt;p class=\"mt-5 whitespace-pre-line text-lg leading-relaxed text-[#526760]\"&gt;You'll own the data layer underneath InsightsOS and EngageOS, the products that turn booking, CRM, ad, and financial data from multi-location brands into proactive insights and automated actions. Today that layer is built and maintained by our product lead alongside two full-stack engineers. We need someone who owns it end to end: architecture, modeling, pipelines, and the analytical models on top. You'll report to our product lead and work directly with the fou"
-    },
-    "pitch": "Hi Growth Minded team, I’m Kiran S R, a Full‑Stack Engineer with a proven track record of building robust data pipelines and scalable architectures. In my recent RMC ERP project I designed end‑to‑end data models, batch‑processing logs, sensor‑feed ingestion, and dispatch workflows using Node/Express, Laravel, and Redis, cutting latency by 30% while ensuring data integrity across multiple modules. My expertise in TypeScript, REST APIs, and performance‑focused optimization equips me to own and accelerate the data layer for InsightsOS and EngageOS from day one. Let’s discuss how I can deliver immediate value—view my portfolio at https://cipher-v",
-    "createdAt": "2026-10-24T17:44:49.156Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_lemon-io-senior-vue-developer-1",
-      "type": "remote_job",
-      "title": "Senior Vue Developer",
-      "companyOrClient": "Lemon.io",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-vue-developer-1",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6623/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; New York, NY\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://lemon.io\"&gt;https://lemon.io&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\"https://lemon.io/for-developers/?utm_source=weworkremotely&amp;amp;utm_medium=job_ad&amp;amp;utm_campaign=supply_en_vue_nuxt/node/php/net/python_oct_2026_job_ad\"&gt;Lemon.io&lt;/a&gt; helps companies in the US and Europe hire experienced engineers, from funded startups to teams like Klarna, Retool, and Pinterest. We’ve been doing this since 2015, and more than 1,500 companies have hired engineers through us.&lt;/p&gt;\n&lt;p&gt;New roles for Senior Angular Engineers come in all the time, and several are open right now.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Two ways to work with clients&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&g"
-    },
-    "pitch": "Hi Lemon.io team, I’m Kiran S R, a senior Full‑Stack Engineer with deep Vue 3 expertise. On the RMC ERP project I built a high‑performance enterprise suite using Laravel, Vue 3 and Inertia.js, handling real‑time sensor feeds, complex dispatch workflows and a modular admin dashboard—all while ensuring clean, type‑safe code and rapid feature delivery. My track record of cutting load times and scaling with Redis caching translates directly to the fast, reliable Vue applications you need for your clients. I’m ready to start immediately and drive results from day one. Let’s discuss how I can add value—view my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-24T17:44:48.089Z",
     "deliveredToTelegram": false
   }
 ]
