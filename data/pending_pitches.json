@@ -1,6 +1,48 @@
 [
   {
     "opportunity": {
+      "id": "wwr_descript-software-engineer-infrastructure",
+      "type": "remote_job",
+      "title": "Software Engineer, Infrastructure",
+      "companyOrClient": "Descript",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; San Francisco, CA or Remote, US\n&lt;/p&gt;\n\n&lt;p&gt;Platform owns the &lt;strong&gt;foundation&lt;/strong&gt; the company runs on: compute and deployment, reliability and on-call, CI/CD and monorepo health, developer environments, the infrastructure that model training and inference run on, and the security boundaries around all of it.&lt;/p&gt;\n&lt;p&gt;AI and agent tooling is the clearest example. You will contribute to how models are trained and served here, as well as how agents work inside our codebase: the environments they run in, the verification that makes their output trustworthy, and the review paths that keep it all legible. There is no industry standard and you’ll help form our opinions rather than inheriting one.&lt;/p&gt;\n&lt;p&gt;Our users are other engineers. Expect to spend time with all the other engineering teams, understanding their needs and building a roadmap. The scope is large, so you'll be choosing what"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer with deep experience in building resilient, high-performance infrastructure. Your focus on CI/CD, monorepo health, and AI agent environments aligns perfectly with my work on RMC ERP, where I architected a Laravel and Vue 3 enterprise system handling complex sensor feeds and real-time dispatch workflows. I specialize in optimizing system reliability and developer experience, ensuring robust security boundaries and efficient deployment pipelines. I am ready to contribute immediately to Descript’s foundational infrastructure, helping shape the standards for how your agents run and verify code. Let’s connect to discuss how I can help scale your platform. You can view my technical details here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-02T12:44:50.339Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6157761797",
+      "type": "bounty",
+      "title": "Bounty Scout — 2026-11-02 (ariahendrawan-sudo/project-a)",
+      "companyOrClient": "GitHub: ariahendrawan-sudo/project-a",
+      "budgetOrSalary": "$10",
+      "url": "https://github.com/ariahendrawan-sudo/project-a/issues/22",
+      "description": "# Bounty Scout — week of 2026-11-02\n\nTarget: at least US$10/week. One merged bounty of US$50 covers ~5 weeks.\n\n| # | Score | Amount | Stars | Comments | Repository | Issue |\n|---|------:|-------:|------:|---------:|------------|-------|\n| – | – | – | – | – | – | No bounty passed the filters this week |\n\n## Filtered out\n\n- no stated amount: 76\n- bounty-farm repository: 54\n- outside expertise: 47\n- below minimum amount: 15\n- not an organisation repo: 6\n- fewer than 500 stars: 3\n\n## Before claiming\n- Read the repo's CONTRIBUTING and bounty rules; many ban low-effort or unreviewed AI-generated PRs.\n- Check nobody is already assigned or has an open PR (comment count is a proxy only).\n- Prefer 💎 Algora bounties: the payout is escrowed by the platform.\n- Comment to claim (e.g. `/attempt` on Algora) only when you can deliver within a week.\n- Payouts go to your own Algora/IssueHunt/Stripe account; declare the income for tax.\n"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React, TypeScript, and Node.js. I noticed this bounty scout report and am ready to deliver high-quality, production-ready code immediately. My recent work on Zupper Commerce involved building 20+ reusable React components and optimizing performance by 25% through memoization and code splitting—skills directly applicable to resolving open issues efficiently. I strictly adhere to repository guidelines, ensuring clean, reviewed, and merge-ready PRs without low-effort AI-generated content. I can claim and resolve qualifying bounties within the week to secure your US$10 weekly target. Let’s connect to start delivering value right away. You can view my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-02T12:44:49.439Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6157036273",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-02T05:51 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1351",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1606443\tStacker_Stocks\t2\t250\t10000\t13\t16.1\t9274\t29204\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #17 Win up to 30k Sats!\n```"
+    },
+    "pitch": "Hi Stacker_Stocks, I’m Kiran S R, a Full Stack Engineer in Bengaluru ready to deliver your SN monetization runtime bounty immediately. I specialize in high-performance Node.js and TypeScript architectures, ensuring robust, scalable solutions for complex data workflows.\n\nMy recent work on the RMC ERP demonstrates my ability to manage intricate operational logic and real-time data feeds using Laravel and Vue 3, while my Zupper Commerce project highlights my expertise in optimizing performance through code splitting and memoization. I can provide a clean, tested PR with full documentation within 24 hours. Let’s get this bounty closed efficiently. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-02T12:44:48.507Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6153411372",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-11-01T23:30 (relayhop/sn-monetization-runtime)",
@@ -1376,48 +1418,6 @@
     },
     "pitch": "Hi Askable team, I’m Kiran S R, a Full‑Stack Engineer from Bengaluru with deep expertise in React, Next.js, Node/Express, TypeScript, Redis and API integration. My work on “Yeshu Tours & Travels” delivered a complete booking engine—customer portal, admin dashboard, Redis caching and WhatsApp enquiry hooks—requiring meticulous code‑base analysis and clean, reusable components. I can quickly turn such a mature repository into challenging AI coding tasks that push model limits while staying fair for engineers. I’m ready to start this week, deliver a high‑quality task within 10 hours, and iterate fast. Let’s discuss how I can add value",
     "createdAt": "2026-10-24T17:45:13.513Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_dremio-staff-software-engineer-connectivity",
-      "type": "remote_job",
-      "title": "Staff Software Engineer - Connectivity",
-      "companyOrClient": "Dremio",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Portugal - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h2&gt;&lt;strong&gt;Be Part of Building the Future&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;Dremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&amp;amp;P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost.&amp;nbsp; Learn more at&amp;nbsp;&lt;a class=\"c-link\" href=\"http://www.dremio.com/\"&gt;www.dremio.com.&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Dremio's C"
-    },
-    "pitch": "Kiran S R here – a Full‑Stack Engineer who builds high‑throughput, data‑centric platforms that ship on time and scale. I recently delivered “Yeshu Tours & Travels”, a full‑scale travel‑booking engine with a React/Next front‑end, Node/Express APIs, Redis caching, and WhatsApp integration, handling thousands of concurrent users while cutting response latency by",
-    "createdAt": "2026-10-24T17:45:04.182Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_lithic-senior-software-engineer-processing",
-      "type": "remote_job",
-      "title": "Senior Software Engineer, Processing",
-      "companyOrClient": "Lithic",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote \n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt;\n&lt;p&gt;Our infrastructure powers card programs for 100+ innovative clients, from fintechs reimagining credit and digital banking to platforms transforming disbursements and spend management. Companies like Mercury, Flex, and Novo rely on Lithic's developer-friendly APIs, direct network connections, and flawless reconciliation to launch and scale card programs in weeks, not years.&lt;/p&gt;\n&lt;p&gt;We're building a future where access to better financial products materially improves people's lives, free from the constraints of 30-year-old mainframes and legacy processors. We're proud to be backed by world-class investors who share that vision, including Bessemer Venture Partners, Index Ventures, Spark Capital, Stripes, and Mast"
-    },
-    "pitch": "I’m Kiran S R, a Full‑Stack Engineer who builds high‑throughput, secure platforms with React, Next.js, Node, TypeScript and Redis. My recent work on **Yeshu Tours & Travels** delivered a complete travel‑booking engine—customer portal, admin dashboard, Redis‑backed caching, and real‑time WhatsApp enquiry integration—handling thousands of concurrent requests with sub‑second latency. I can translate that same performance‑first mindset to Lithic’s card‑issuing APIs, ensuring reliable processing,",
-    "createdAt": "2026-10-24T17:44:58.971Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_lithic-senior-software-engineer-product-platform",
-      "type": "remote_job",
-      "title": "Senior Software Engineer, Product Platform",
-      "companyOrClient": "Lithic",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote \n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt;\n&lt;p&gt;Our infrastructure powers card programs for 100+ innovative clients, from fintechs reimagining credit and digital banking to platforms transforming disbursements and spend management. Companies like Mercury, Flex, and Novo rely on Lithic's developer-friendly APIs, direct network connections, and flawless reconciliation to launch and scale card programs in weeks, not years.&lt;/p&gt;\n&lt;p&gt;We're building a future where access to better financial products materially improves people's lives, free from the constraints of 30-year-old mainframes and legacy processors. We're proud to be backed by world-class investors who share that vision, including Bessemer Venture Partners, Index Ventures, Spark Capital, Stripes, and Mast"
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"Senior Software Engineer, Product Platform\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:44:51.725Z",
     "deliveredToTelegram": false
   }
 ]
