@@ -1,6 +1,202 @@
 [
   {
     "opportunity": {
+      "id": "hn_50339013",
+      "type": "freelance",
+      "title": "HN: MixRank (YC S11) | Software Engineers | 100% Remote (Global) | Full-Time MixRank",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50339013",
+      "description": "MixRank (YC S11) | Software Engineers | 100% Remote (Global) | Full-Time MixRank processes petabytes of data every month through web crawling. Hundreds of customers use our data products, including Google, Amazon, Facebook, Intel, and Adobe, across industries such as finance, recruiting, sales, marketing, and security. We’re a fully remote company with a global footprint across 20+ countries. We’re growing, profitable, employee-owned, and have no dependence on outside funding. Applicants from all geographies and backgrounds are welcome. We’re looking for passionate individuals for whom programming is not just a job, but something they genuinely love to do. We’re obsessed with computers, programming, big data, databases, compilers, hardware, math, data science, and the internet. Does this sound like you? Please apply to join our team. Our codebase is friendly to new contributors. You’ll have a fully functional development environment within hours through full automation and will be push"
+    },
+    "pitch": "Hi MixRank team,\n\nI am a Full Stack Engineer from Bengaluru with deep expertise in Node.js, Redis, and high-performance data pipelines. My work on the RMC ERP system, where I engineered real-time sensor feed processing and complex dispatch workflows using Laravel and Vue 3, mirrors the precision required for handling petabyte-scale data products. I thrive in fully remote environments and am eager to contribute to your profitable, employee-owned culture where programming is a genuine passion. I am available to start immediately and can hit the ground running with your automated dev environment.\n\nLet’s connect to discuss how I can support your engineering goals.\n\nKiran S R\nhttps://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-02T22:07:21.443Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50340892",
+      "type": "freelance",
+      "title": "HN: Ledgebrook | Engineering, Product &amp; Data | REMOTE (US, Canada, Poland; eligi",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50340892",
+      "description": "Ledgebrook | Engineering, Product &amp; Data | REMOTE (US, Canada, Poland; eligibility varies by role) |  https:&#x2F;&#x2F;www.ledgebrook.com&#x2F;careers  Hi HN, I&#x27;m Nathan, CTO at Ledgebrook. We&#x27;re a Series D tech-enabled insurance company building technology for our internal user base. Our engineers work directly with other departments, so they see the impact of each product release firsthand. We&#x27;re hiring for the following remote roles: Director of Engineering (US or Canada) Staff Engineer (US or Canada) Full Stack Engineer (US, Canada, or POland) Sr Platform Engineer (AWS) (US or Canada) Principal Data Engineer (US, Canada or Poland) Product Manager - Underwriting Operations (Poland) We value clear ownership, direct communication, and giving people room to get things done without micromanagement. Employees share in the company&#x27;s success through ownership. Full descriptions and applications:  https:&#x2F;&#x2F;www.ledgebrook.com&#x2F;careers  Questions: hiring@"
+    },
+    "pitch": "Nathan, I’m a Full Stack Engineer specializing in high-performance React, Next.js, and TypeScript applications. Your Series D insurance platform requires robust, scalable infrastructure, and I bring proven experience building complex systems. At Zupper Commerce, I engineered 20+ reusable React components and optimized page load times by 25% through strategic memoization and code splitting. Additionally, I developed RMC ERP using Laravel and Vue 3, managing real-time sensor feeds and dispatch workflows for enterprise clients. I thrive in direct, ownership-driven environments and am ready to deliver immediate value to your engineering team. I’d love to discuss how I can contribute to Ledgebrook’s technical goals. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-02T22:07:12.277Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50342433",
+      "type": "freelance",
+      "title": "HN: Sumble | Multiple Roles | Remote (US)| Full-time",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50342433",
+      "description": "Sumble | Multiple Roles | Remote (US)| Full-time \nSumble is the newco from the founders of Kaggle. We are hiring full-stack engineers, ai&#x2F;ml engineers, growth&#x2F;marketing, sales, and design. You can view our roles and apply here:  https:&#x2F;&#x2F;sumble-inc.workable.com  - We are building a knowledge graph from web data with a first focus on data for go-to-market teams. \n- We use web data to identify things like org structure, tech stack, and key projects (e.g., GenAI initiatives, cloud migrations). \n- Our product already has strong product-market fit, early revenue, and happy customers — and now we’re ready to accelerate. \n- Our long-term vision is to become the world&#x27;s best data vendor. Try the product at sumble.com. \n- We are a team of 35 with experience at companies such as Google, Meta, Stack Overflow, Rippling, Snowflake, Confluent and Kaggle. \n- We raised $38.5MM from Coatue, Canaan, Square Peg Capital ( https:&#x2F;&#x2F;techcrunch.com&#x2F;2025&#x2F;10&#x2F;22&#"
+    },
+    "pitch": "Sumble’s mission to build the world’s best data vendor aligns perfectly with my full-stack expertise. At RMC ERP, I engineered a scalable Laravel and Vue 3 platform handling complex sensor feeds and dispatch workflows, demonstrating my ability to manage high-volume data structures and enterprise-grade reliability. Additionally, my work on Zupper Commerce, where I reduced page load times by 25% through meticulous code splitting, ensures the performance standards required for Sumble’s accelerating growth phase. I am ready to deploy my skills in React and Node.js to help Sumble scale its knowledge graph infrastructure. I would welcome the opportunity to discuss how I can contribute to your team’s next growth stage. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-02T22:07:03.215Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50342723",
+      "type": "freelance",
+      "title": "HN: Fly.io | REMOTE (multiple countries) | Full time | $190k USD + equity Hey folks,",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50342723",
+      "description": "Fly.io | REMOTE (multiple countries) | Full time | $190k USD + equity Hey folks, Fly.io is a developer-focused public cloud. We are currently hiring for three roles: * Networking Engineer: Proxy and Corrosion -  https:&#x2F;&#x2F;fly.io&#x2F;jobs&#x2F;networking-engineer&#x2F;  * Infrastructure Operations Engineer -  https:&#x2F;&#x2F;fly.io&#x2F;jobs&#x2F;infra-engineer&#x2F;  * Fullstack Engineer -  https:&#x2F;&#x2F;fly.io&#x2F;jobs&#x2F;fullstack-engineer&#x2F;  Here&#x27;s how we hire:  https:&#x2F;&#x2F;docs.fly.io&#x2F;hiring "
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru specializing in the exact stack Fly.io leverages: React, Next.js, TypeScript, and Node.js. I understand the need for high-performance, scalable web infrastructure. At Zupper Commerce, I engineered 20+ reusable React components and implemented advanced memoization and code splitting strategies, directly reducing page load times by 25%. This experience demonstrates my ability to optimize frontend performance while maintaining robust backend integration, a critical requirement for your Fullstack Engineer role. I am ready to contribute immediately to your developer-focused cloud platform, bringing a proven track record of building efficient, production-grade applications. You can review my technical depth and project outcomes here: https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-02T22:06:54.123Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50339468",
+      "type": "freelance",
+      "title": "HN: MONUMENTAL |  https:&#x2F;&#x2F;www.monumental.co&#x2F;  | Amsterdam, The Nether",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50339468",
+      "description": "MONUMENTAL |  https:&#x2F;&#x2F;www.monumental.co&#x2F;  | Amsterdam, The Netherlands | Full Time | Onsite We make robots that autonomously construct buildings, starting with bricklaying. There&#x27;s a lot of vapourware in robotics, but we&#x27;re deploying robots across multiple concurrent sites today - and generating revenue. In the last couple of months, our robots have built affordable social housing, health care living units, canal walls in the historic city centre of Amsterdam, and a youth sports centre. Help us to build things that matter in the long run. We&#x27;re looking for experienced software engineers for many roles. You can help us solve problems like: - Data sync and analytics queries across a fleet of robots (that can be offline for hours at a time) - Modelling buildings in code and finding the right UI for operators to edit them - Designing systems for robots to drive safely and fully autonomously around a building site Check out the progress we&#x27;ve already made "
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer from Bengaluru. Your challenge of syncing data across offline robot fleets and building intuitive operator interfaces aligns perfectly with my recent work. I developed the RMC ERP, an enterprise system handling real-time sensor feeds and complex dispatch workflows using Laravel and Vue 3. I also optimized Zupper Commerce by reducing page load times 25% through strategic code splitting, ensuring smooth performance even with heavy data models. I am ready to apply this expertise to build robust, scalable systems for Monumental’s autonomous construction robots. Let’s discuss how I can help you keep building things that matter. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-02T22:06:44.998Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50339551",
+      "type": "freelance",
+      "title": "HN: Juro | AI Engineer (Agentic team) | London, UK | REMOTE (UK) | Full-time | £115k",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50339551",
+      "description": "Juro | AI Engineer (Agentic team) | London, UK | REMOTE (UK) | Full-time | £115k + equity Juro is an AI contract automation platform used by in-house legal and business teams. Our Agentic team builds Operator, the agent that works across contracts inside Juro: it answers questions and takes action on legal data. You&#x27;d build the tools that let it act across the product, own parts of the agent harness (planning, tool use, context) and put evals around what you ship, together with our QA team. Stack: TypeScript&#x2F;Node.js, MongoDB, pgvector, AWS Bedrock, LiteLLM, Mastra, some React. Engineers pick their own AI tooling (Claude Code, Codex, Cursor...) and we pay for the usage. We&#x27;re looking for programmers first who now build with LLMs, and who have shipped something people use. Years of ML matter less to us than what you&#x27;ve built. We apply models, we don&#x27;t train them. Process: 30-min intro call, interview with the hiring manager, a build review where you walk us throu"
+    },
+    "pitch": "Hi Juro team, I am a Full Stack Engineer specializing in TypeScript, Node.js, and MongoDB, with direct experience building AI-driven products. My platform, Cerebrum, utilizes a RAG architecture with LLM APIs to automate note-taking, mirroring the agentic logic required for Operator. I also shipped Zupper Commerce, optimizing React performance by 25% through code splitting and memoization, proving my ability to ship robust, high-impact frontend features. I am ready to contribute to your agent harness and tooling immediately. Let’s schedule a 30-minute intro call to discuss how I can accelerate your team’s output. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-02T22:06:36.855Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50339750",
+      "type": "freelance",
+      "title": "HN: Stream | Multiple Positions | Amsterdam (NL), Skopje (North Macedonia) | Boulder",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50339750",
+      "description": "Stream | Multiple Positions | Amsterdam (NL), Skopje (North Macedonia) | Boulder, CO (US) | Toronto (Canada)) | Remote possible | Full Time | Visa Sponsorship |  https:&#x2F;&#x2F;getstream.io  Stream powers Chat, Video, AI Moderation, and Activity Feeds for billions of global end users across thousands of different apps. We&#x27;re constantly hiring backend engineers, but I wanted to take this opportunity to tout my own hire because I&#x27;m hoping you&#x27;ll come work with me... I&#x27;m pavlov on HN, been here for nearly two decades, and working in realtime media for a good while longer. Now I run the Video team at Stream and I&#x27;m looking for a Staff Engineer. You&#x27;d report to me with a direct line to our CTO. Check out the details:  https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;stream&#x2F;82b37457-3d54-4f7a-8a0e-ae52...  You&#x27;d own the media plane of Stream Video. It&#x27;s a modern stack: SFU in Go, cascading to handle very large audiences, ingest and recording fleets, glo"
+    },
+    "pitch": "Hi Pavlov, I’m Kiran S R, a Bengaluru-based Full Stack Engineer specializing in high-performance Node.js and React systems. I noticed your post seeking a Staff Engineer for Stream Video’s media plane. While my core strength is full-scale application architecture, I bring direct experience optimizing real-time data flows and reducing latency. For instance, I engineered the customer portal for Yeshu Tours, implementing Redis caching and WhatsApp integration to handle high-volume concurrent requests efficiently. I am keen to bring this rigor to your ingest and recording fleets. I am available for immediate remote collaboration and eager to discuss how I can contribute to your team’s scaling goals. You can review my technical work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-02T22:06:27.626Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50340101",
+      "type": "freelance",
+      "title": "HN: River | Staff Engineers (Elixir) | NYC or REMOTE (US, Europe, South America) | F",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50340101",
+      "description": "River | Staff Engineers (Elixir) | NYC or REMOTE (US, Europe, South America) | Full-Time | $200K-$250K + equity |  https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;river?utm_source=Zp9nJyqvd4  I&#x27;m Alex, founder and CEO of River. I also wrote the first line of code and still ship PRs. River is a client-first Bitcoin-only financial institution building the financial app people use every day to save in bitcoin and spend in dollars. We custody over 33,000 BTC, serve individuals and businesses across the U.S., and are profitable. We publish cryptographic proof of reserves monthly and our company financials annually. Here&#x27;s what our engineering team is working on:     - Real-time Bitcoin and USD payments, trading, and settlement on an Elixir monolith with a unified GraphQL API\n  - Next-generation Bitcoin custody with quorum signing, key ceremonies, and geo-redundant infrastructure\n  - Scaling our ML&#x2F;AI systems (Python, PyTorch, XGBoost, LLMs) to automate operations and tackle fraud&#x2"
+    },
+    "pitch": "Alex, I am Kiran S R, a Full Stack Engineer specializing in high-performance web applications and scalable backend architectures. While River’s core stack is Elixir, my experience building RMC ERP with Laravel and Vue 3, handling complex sensor feeds and dispatch workflows, demonstrates my ability to manage intricate state and data integrity in enterprise environments. I also optimized Zupper Commerce, reducing page load times by 25% through rigorous code splitting, a skill directly applicable to scaling your unified GraphQL API and real-time payment interfaces. I am ready to contribute to your next-gen custody systems and ML automation efforts immediately. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-02T22:06:20.436Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50340584",
+      "type": "freelance",
+      "title": "HN: Oklo | Remote (US) or Santa Clara or Brooklyn | Full time |  https:&#x2F;&#x2F;o",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50340584",
+      "description": "Oklo | Remote (US) or Santa Clara or Brooklyn | Full time |  https:&#x2F;&#x2F;oklo.com  Join us in pioneering the next generation of nuclear reactors! You&#x27;ll leverage your software skills alongside nuclear engineers to model, simulate, design, and deploy advanced fission power technology. You will work at the forefront of the nuclear industry, developing novel techniques to reach new levels of safety, efficiency, and resiliency. Come be a part of powering the future with advanced fission power plants to provide clean, reliable, affordable energy. We are hiring for: - Software Engineer:  https:&#x2F;&#x2F;job-boards.greenhouse.io&#x2F;oklo&#x2F;jobs&#x2F;4018702004  - Senior Software Engineer:  https:&#x2F;&#x2F;job-boards.greenhouse.io&#x2F;oklo&#x2F;jobs&#x2F;5739483004  See more opportunities here:  https:&#x2F;&#x2F;job-boards.greenhouse.io&#x2F;oklo  Please mention Hacker News in your cover letter!"
+    },
+    "pitch": "Hi, I am Kiran S R, a Full Stack Engineer based in Bengaluru. I saw the Hacker News post for Oklo’s Software Engineer role and am eager to contribute to your advanced fission power technology. My background in building complex, high-throughput systems makes me an ideal fit for your modeling and deployment needs.\n\nRecently, I developed RMC ERP using Laravel, Vue 3, and Inertia.js, where I engineered real-time sensor feed processing and intricate dispatch workflows. This experience in handling critical, data-intensive industrial operations directly translates to the precision required for nuclear reactor simulations. I am ready to leverage my expertise in TypeScript, Node.js, and REST APIs to deliver robust, safe, and efficient software solutions for your team immediately.\n\nPlease review my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-02T22:06:19.609Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50340985",
+      "type": "freelance",
+      "title": "HN: Memorang | Product Engineers + Technical Project Manager | Full-Time | Los Angel",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50340985",
+      "description": "Memorang | Product Engineers + Technical Project Manager | Full-Time | Los Angeles (or US remote for exceptional hires) Memorang is an &quot;AI stack for education&quot; that helps organizations build, launch, and monetize AI-powered learning and assessment products. Think Vercel plus Shopify for EdTech. We currently operate on an enterprise model, serving as the AI technology and commercial partner behind new product lines for organizations like ETS, McGraw-Hill, Pearson, and the ACT. We’re hiring for two roles: Product Engineers\nOwn features from the first rough idea to production. You’ll work across AI workflows, backend systems, and user interfaces, making product decisions along the way. We’re looking for engineers who ask good questions, care about the details users notice, and can turn an ambiguous problem into something useful and shipped. Stack: TypeScript, React&#x2F;Next.js, React Native, Node.js, AWS Lambda, Postgres, and Neo4j. Technical Project Manager\nTurn complex work i"
+    },
+    "pitch": "I am a Full Stack Engineer specializing in the TypeScript, React, and Node.js stack, ready to own features from concept to production for Memorang. My experience aligns perfectly with your need for engineers who ship complex, user-facing systems. At Zupper Commerce, I architected 20+ reusable React components and implemented advanced memoization and code splitting, reducing page load times by 25% while maintaining high performance. This focus on optimizing frontend performance and building scalable, maintainable code is exactly what is needed to build robust AI-powered learning products. I am prepared to start immediately and drive value across your AI workflows and backend systems. Let’s connect to discuss how I can contribute to your next release at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-02T22:06:18.670Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50341345",
+      "type": "freelance",
+      "title": "HN: SadServers | Software Engineer | REMOTE (Canada) | Part-time or Contract  | $55 ",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50341345",
+      "description": "SadServers | Software Engineer | REMOTE (Canada) | Part-time or Contract  | $55 - $75&#x2F;hr |  https:&#x2F;&#x2F;sadservers.com  I&#x27;m the founder of SadServers, a SaaS that provides hands-on challenges for Linux &amp; DevOps&#x2F;SRE engineers and assessments for hiring teams. It was launched (and quickly broken) here on HN four years ago and we&#x27;ve been growing steadily since then (about to pass 1M VMs served). Besides training and interviewing, companies use our platform to evaluate and&#x2F;or train their SRE AI agents. I&#x27;m looking for a software engineer who can develop this offering, collaborating with customers and working on projects like our own benchmarking, see  https:&#x2F;&#x2F;srebattle.com&#x2F;  (WIP) for example. Our stack is Django REST (backend), Python (runners), Node&#x2F;React&#x2F;Vite (website). Please email jobs@sadservers.com with subject &quot;SRE AI Developer&quot;. The hiring process for selected applicants is two steps: one video call and one"
+    },
+    "pitch": "Subject: SRE AI Developer\n\nHi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. With 1M+ VMs served, SadServers’ scale demands robust system architecture. My experience building the RMC ERP—handling real-time sensor feeds and complex dispatch workflows with Laravel and Vue 3—directly parallels your need for reliable backend logic and efficient frontend interactions. I am proficient in Node.js and React, allowing me to seamlessly integrate with your existing Django REST and Vite stack. I can immediately contribute to developing your SRE AI agent evaluations and benchmarking tools, ensuring high availability and performance for your hiring teams. I am available for a remote part-time contract and ready to start. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-02T22:06:17.897Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50342697",
+      "type": "freelance",
+      "title": "HN: SerpApi |  https:&#x2F;&#x2F;serpapi.com  | Junior to Senior Fullstack Engineer ",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50342697",
+      "description": "SerpApi |  https:&#x2F;&#x2F;serpapi.com  | Junior to Senior Fullstack Engineer multiple positions | Customer Success Engineer | Hiring Coordinator | Python&#x2F;Ruby&#x2F;PHP&#x2F;Js&#x2F;Rust&#x2F;Kotlin&#x2F;C#&#x2F;Crystal&#x2F;Nim&#x2F;Elixir Developer Advocate positions | Based in Austin, TX but remote-first structure | Full-time | ONSITE or FULLY REMOTE | $150K - 180K a year 1099 for US or local avg + 20% for outside the US SerpApi is the leading API to scrape and parse search engine results. We provide 100+ APIs to Google, Google Maps, Google Images, Bing, Baidu, and more. Our current stack is Ruby, Rails, MongoDB, and React.JS. We are looking for more Junior and Senior FullStack Engineers. We have an awesome work environment: We are a remote first company (before Covid!). We do continuous integration, continuous deployments, code reviews, code pairings, profit sharing, and most of communication is async via GitHub. We value super strongly transparency, do open books, have a pu"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer in Bengaluru ready to hit the ground running. Your stack of Ruby, Rails, MongoDB, and React.js aligns perfectly with my expertise. I recently built Yeshu Tours & Travels, a high-traffic booking engine using MongoDB and React with Redis caching and complex admin dashboards. I thrive in remote-first, async environments and am comfortable with continuous integration and code pairing. I can immediately contribute to SerpApi’s API infrastructure or frontend modules, ensuring high-performance, scalable solutions. Let’s discuss how I can support your team’s growth. You can view my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-02T22:06:17.081Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_welcomehome-software-senior-software-engineer",
+      "type": "remote_job",
+      "title": "Senior Software Engineer",
+      "companyOrClient": "WelcomeHome Software",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer",
+      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6677/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Atlanta, Georgia\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://www.welcomehomesoftware.com/homecarecrm?utm_term=home%20care%20software&amp;amp;utm_campaign=Lead+Gen+-+Home+Care+-+Branded+%26+General&amp;amp;utm_source=adwords&amp;amp;utm_medium=ppc&amp;amp;hsa_acc=3279896849&amp;amp;hsa_cam=22158696391&amp;amp;hsa_grp=179100793812&amp;amp;hsa_ad=730236934988&amp;amp;hsa_s\"&gt;https://www.welcomehomesoftware.com/homecarecrm?utm_term=home%20care%20software&amp;amp;utm_campaign=Lead+Gen+-+Home+Care+-+Branded+%26+General&amp;amp;utm_source=adwords&amp;amp;utm_medium=ppc&amp;amp;hsa_acc=3279896849&amp;amp;hsa_cam=22158696391&amp;amp;hsa_grp=179100793812&amp;amp;hsa_ad=730236934988&amp;amp;hsa_s&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;About WelcomeHome&l"
+    },
+    "pitch": "Hi, I am Kiran S R, a Senior Full Stack Engineer specializing in complex enterprise systems. Your need for a robust Home Care CRM aligns perfectly with my recent work on \"RMC ERP,\" where I architected a Laravel and Vue 3 platform handling real-time sensor feeds and complex dispatch workflows. I bring deep expertise in TypeScript, Node.js, and Redis to ensure your platform is scalable, secure, and performant. I am ready to step in immediately to streamline your development pipeline and deliver high-impact features without ramp-up delays. Let’s connect to discuss how I can drive immediate value for your engineering team. You can view my technical portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-02T22:06:16.309Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6165704923",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-02T15:36 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1352",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1607023\tConstruction_and_Engineering\t2\t21\t5000\t0\t1.5\t9274\t29215\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,FRESH\tShow Your Build Weekly #8: Post Your Proof-of-Work 🔨 💰\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to deliver your \"Show Your Build Weekly #8\" proof-of-work immediately. I specialize in high-performance React and Next.js applications, recently optimizing page load times by 25% through memoization and code splitting for Zupper Commerce. I can execute this bounty with the same precision, ensuring a clean, functional, and verifiable build that meets all technical requirements within 24 hours. I’m available to start right now and push the PR directly to your repository. Let’s get this bounty closed out efficiently. Check my recent work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-02T22:06:15.288Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_descript-software-engineer-infrastructure",
       "type": "remote_job",
       "title": "Software Engineer, Infrastructure",
@@ -1222,202 +1418,6 @@
     },
     "pitch": "Hi there,\n\nI saw your requirement for \"Staff Software Engineer\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
     "createdAt": "2026-10-24T17:46:54.283Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_toggl-senior-full-stack",
-      "type": "remote_job",
-      "title": "Senior Full Stack",
-      "companyOrClient": "Toggl",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/toggl-senior-full-stack",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0074/7274/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Tallinn, Estonia\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://toggl.com/jobs/\"&gt;https://toggl.com/jobs/&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;div class=\"_descriptionText_5yu8i_201 ashby-job-posting-description\"&gt;\n&lt;p&gt;We are looking for a Senior Full Stack Engineer to join one of our Product Tribes, the cross-functional units that own the end-to-end experience for a specific Toggl user role. You'll join the Tribe building for managers, the people who plan work, protect margins, and keep projects on time and on budget.&lt;/p&gt;\n&lt;p&gt;You own significant parts of that experience end-to-end, working hands-on with product and design to ship work that matters. You'll do this as we build and launch Toggl 2.0, our consolidated planning, time tracking, and tim"
-    },
-    "pitch": "Kiran S R here – a Bengaluru‑based Full Stack Engineer with deep expertise in React, Next.js, TypeScript, Node, Laravel and Vue 3. I recently delivered RMC ERP, an enterprise‑grade system built with Laravel, Vue 3, Inertia.js and Redis that orchestrates complex batching logs, sensor feeds and dispatch workflows—exactly the end‑to‑end product ownership Toggl needs for its manager‑tribe. My track record of cutting load times by 25% and scaling APIs with Redis",
-    "createdAt": "2026-10-24T17:46:45.720Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_dremio-senior-staff-software-engineer-query-execution",
-      "type": "remote_job",
-      "title": "Senior Staff Software Engineer - Query Execution",
-      "companyOrClient": "Dremio",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/dremio-senior-staff-software-engineer-query-execution",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Portugal - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h2&gt;&lt;strong&gt;Be Part of Building the Future&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;Dremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&amp;amp;P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost.&amp;nbsp; Learn more at&amp;nbsp;&lt;a class=\"c-link\" href=\"http://www.dremio.com/\"&gt;www.dremio.com.&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Dremio’s Q"
-    },
-    "pitch": "Hi Dremio team, I’m Kiran S R, a Full‑Stack Engineer with deep expertise in building high‑performance data pipelines and query‑centric applications. On the Yeshu Tours & Travels platform I engineered a full‑scale booking engine using Node/Express, MongoDB and Redis caching, slashing response times by 30% while handling thousands of concurrent queries and integrating real‑time WhatsApp notifications. My mastery of TypeScript, REST APIs, and low‑latency caching aligns perfectly with Dremio’s Query Execution challenges, and I can",
-    "createdAt": "2026-10-24T17:46:39.484Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_dremio-software-engineer-developer-experience",
-      "type": "remote_job",
-      "title": "Software Engineer - Developer Experience",
-      "companyOrClient": "Dremio",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-developer-experience",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Portugal - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h2&gt;&lt;strong&gt;Be Part of Building the Future&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;Dremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&amp;amp;P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost.&amp;nbsp; Learn more at&amp;nbsp;&lt;a class=\"c-link\" href=\"http://www.dremio.com/\"&gt;www.dremio.com.&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;In this ro"
-    },
-    "pitch": "Hi Dremio team, I’m Kiran S R, a Full‑Stack & Frontend Engineer from Bengaluru with deep expertise in React, Next.js, TypeScript, and performance‑focused architecture. On my recent Zupper Commerce project I built a library of 20+ reusable React components, applied memoization and code‑splitting, and cut page‑load times by ~25%—exactly the kind of developer‑experience gains Dremio needs for its lakehouse UI. I can hit the ground running, streamline your component ecosystem, and boost productivity from day 1. Let’s discuss how I can deliver immediate value. Portfolio: https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-24T17:46:33.310Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_lithic-senior-software-engineer-card-authorization",
-      "type": "remote_job",
-      "title": "Senior Software Engineer, Card Authorization",
-      "companyOrClient": "Lithic",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-card-authorization",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote \n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt;\n&lt;p&gt;Our infrastructure powers card programs for 100+ innovative clients, from fintechs reimagining credit and digital banking to platforms transforming disbursements and spend management. Companies like Mercury, Flex, and Novo rely on Lithic's developer-friendly APIs, direct network connections, and flawless reconciliation to launch and scale card programs in weeks, not years.&lt;/p&gt;\n&lt;p&gt;We're building a future where access to better financial products materially improves people's lives, free from the constraints of 30-year-old mainframes and legacy processors. We're proud to be backed by world-class investors who share that vision, including Bessemer Venture Partners, Index Ventures, Spark Capital, Stripes, and Mast"
-    },
-    "pitch": "Hi Lithic team, I’m Kiran S R, a Full‑Stack Engineer who builds high‑throughput, secure systems. My work on “Yeshu Tours & Travels” delivered a complete travel‑booking engine with a customer portal, admin dashboard, Redis‑backed caching, and real‑time WhatsApp integration—handling thousands of concurrent transactions",
-    "createdAt": "2026-10-24T17:46:26.789Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_lemon-io-senior-angular-full-stack-developer",
-      "type": "remote_job",
-      "title": "Senior Angular Full-stack Developer",
-      "companyOrClient": "Lemon.io",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-angular-full-stack-developer",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6544/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; New York, NY\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://lemon.io\"&gt;https://lemon.io&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;Are you a talented Senior Developer looking for a remote job that lets you show your skills and get decent compensation? Look no further than &lt;a href=\"https://lemon.io/for-developers/?utm_source=weworkremotely&amp;amp;utm_medium=job_ad&amp;amp;utm_campaign=supply_en_angular_net/php/node_oct_2026_job_ad\"&gt;Lemon.io&lt;/a&gt; — the marketplace that connects you with hand-picked startups in the US and Europe.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What we offer:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;The rate depends on your seniority level, skills and experience. We've already paid out over $11M to our engineers.&lt;/li&gt;\n&lt;li&g"
-    },
-    "pitch": "Hi Lemon.io team, I’m Kiran S R, a senior full‑stack engineer with 5+ years delivering enterprise‑grade web apps. My work on the RMC ERP platform (Laravel + Vue 3 + Inertia.js) built a robust admin suite handling sensor feeds, batch logs and dispatch workflows, all backed by REST APIs, Redis caching and TypeScript‑driven code. I architected reusable UI components,",
-    "createdAt": "2026-10-24T17:46:14.882Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_dremio-software-engineer-query-execution",
-      "type": "remote_job",
-      "title": "Software Engineer - Query Execution",
-      "companyOrClient": "Dremio",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/dremio-software-engineer-query-execution",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Portugal - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h2&gt;&lt;strong&gt;Be Part of Building the Future&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;Dremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&amp;amp;P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost.&amp;nbsp; Learn more at&amp;nbsp;&lt;a class=\"c-link\" href=\"http://www.dremio.com/\"&gt;www.dremio.com.&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;br&gt;Dremio’s Query Execu"
-    },
-    "pitch": "Hi Dremio team, I’m Kiran S R, a Full‑Stack Engineer who builds high‑throughput, data‑centric systems. In “Yeshu Tours & Travels” I delivered a complete booking engine with a Redis‑backed query layer, real‑time WhatsApp integration, and a secure admin dashboard—cutting response times by 30% and handling thousands of concurrent requests. My expertise in Node.js, TypeScript, REST APIs, and performance‑focused caching aligns perfectly with Dremio’s Query Execution challenges, and I can start contributing immediately. Let’s discuss how I can accelerate your lakehouse platform. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-24T17:46:07.756Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_lemon-io-senior-net-full-stack-developer-2",
-      "type": "remote_job",
-      "title": "Senior .NET Full-stack Developer",
-      "companyOrClient": "Lemon.io",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-net-full-stack-developer-2",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6546/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; New York, NY\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://lemon.io\"&gt;https://lemon.io&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;Are you a talented Senior Developer looking for a remote job that lets you show your skills and get decent compensation? Look no further than &lt;a href=\"https://lemon.io/for-developers/?utm_source=weworkremotely&amp;amp;utm_medium=job_ad&amp;amp;utm_campaign=supply_en_net_react/angular/c/vue_oct_2026_job_ad\"&gt;Lemon.io&lt;/a&gt; — the marketplace that connects you with hand-picked startups in the US and Europe.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What we offer:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;The rate depends on your seniority level, skills and experience. We've already paid out over $11M to our engineers.&lt;/li&gt;\n&lt;l"
-    },
-    "pitch": "Hi Lemon.io team, I’m Kiran S R, a senior full‑stack engineer who consistently delivers enterprise‑grade solutions on tight timelines. My recent work on **RMC ERP**—a Laravel/Vue 3 Inertia.js platform handling sensor feeds, batching logs and complex dispatch workflows—mirrors the scalability and clean architecture expected of .NET stacks. I built a modular codebase, optimized API performance, and integrated real‑time data pipelines, cutting response times by 30%. My proven ability to master new tech stacks means I can hit the ground running with .NET, delivering",
-    "createdAt": "2026-10-24T17:46:01.781Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_lemon-io-senior-react-full-stack-developer-7",
-      "type": "remote_job",
-      "title": "Senior React Full-stack Developer",
-      "companyOrClient": "Lemon.io",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-react-full-stack-developer-7",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; New York, NY\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://lemon.io\"&gt;https://lemon.io&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;Are you a talented Senior Developer looking for a remote job that lets you show your skills and get decent compensation? Look no further than &lt;a href=\"https://lemon.io/for-developers/?utm_source=weworkremotely&amp;amp;utm_medium=job_ad&amp;amp;utm_campaign=supply_en_react_node/python/ruby_oct_2026_job_ad\"&gt;Lemon.io&lt;/a&gt; — the marketplace that connects you with hand-picked startups in the US and Europe.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;What we offer:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;The rate depends on your seniority level, skills and experience. We've already paid out over $11M to our engineers.&lt;/li&gt;\n&lt;li&gt;No more hunting for clients or negotiating rates — let us handle the business side of things so you can focus on what you do best.&lt;/li&gt;\n&lt;li&gt;"
-    },
-    "pitch": "Hi Lemon.io team, I’m Kiran S R, a senior Full‑Stack & Frontend Engineer from Bengaluru with 5+ years building high‑performance React solutions. On the Zupper Commerce platform I delivered 20+ reusable React components, cut page‑load times ~25% through memoization, code‑splitting and TypeScript‑strict architecture—exactly the speed and scalability you demand for startup clients. My stack (React, Next.js, TypeScript, Node/Express, MongoDB, Tailwind, Redis) lets me own end‑to‑end features and ship production‑ready code within days. I’m ready to start immediately and drive measurable results for your React‑centric projects. Let’s discuss how I can add value—view my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-24T17:45:54.761Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_typeform-full-stack-developer",
-      "type": "remote_job",
-      "title": "Full Stack Developer",
-      "companyOrClient": "Typeform",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/typeform-full-stack-developer",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Germany (Remote) ; Ireland (Remote); Netherlands (Remote) ; Portugal (Remote) ; Spain (Remote) ; United Kingdom (Remote) \n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h3&gt;Who we are&lt;/h3&gt;\n&lt;p&gt;Typeform is a refreshingly different form builder. We help over 150,000 businesses collect the data they need with forms, surveys, and quizzes that people enjoy. Designed to look striking and feel effortless to fill out, Typeform drives 500 million responses every year—and integrates with essential tools like Slack, Zapier, and Hubspot.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;span class=\"s1\"&gt;&lt;span&gt;Typeform is fully remote by design. For this role, we can hire candidates based in the UK, Ireland, Germany, Portugal, Spain or The Netherlands&lt;/span&gt;&lt;strong&gt;&lt;br&gt;&lt;br&gt;About the team&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;p class=\"p2\"&gt;Typeform is a leading provider of interactive forms, surveys, and da"
-    },
-    "pitch": "Hi Typeform team, I’m Kiran S R, a Full‑Stack Engineer who builds high‑performing, user‑centric web apps at speed. On the Zupper Commerce platform I delivered 20+ reusable React/Next.js components, slashing page load times by ~25% through memoization, code‑splitting and TypeScript‑strict typing—exactly the expertise needed to keep Typeform’s interactive forms lightning‑fast and maintainable. I’ve also integrated Redis caching and robust REST APIs (see Yeshu Tours) to scale traffic without latency spikes. I can start contributing immediately, ship production‑ready features this week, and help",
-    "createdAt": "2026-10-24T17:45:48.601Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_vercel-software-engineer-backend",
-      "type": "remote_job",
-      "title": "Software Engineer, Backend",
-      "companyOrClient": "Vercel",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-backend",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - United States\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h2&gt;About Vercel:&lt;/h2&gt;\n&lt;p&gt;&lt;span&gt;Vercel is the agentic infrastructure company, freeing people and agents to ship what's next. For more than a decade we've helped builders move from idea to production with speed, security, and exceptional developer experience.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;Now we're scaling our products for both agents and people to ship and run software, built in the open and trusted by OpenAI, PayPal, Ramp, Supreme, and millions of developers worldwide.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the Role:&lt;/h2&gt;\n&lt;p&gt;We are seeking a Backend leaning Software Engineer. In this role, you will play a pivotal role in designing, building, and maintaining scalable, high-performance systems. Leveraging JavaScript/TypeScript, Node.js, SQL and NoSQL cloud-native databases, and AWS, you will develop inno"
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"Software Engineer, Backend\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:45:42.156Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_vercel-software-engineer-data-platform",
-      "type": "remote_job",
-      "title": "Software Engineer - Data Platform",
-      "companyOrClient": "Vercel",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/vercel-software-engineer-data-platform",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - United States\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h2&gt;About Vercel:&lt;/h2&gt;\n&lt;p&gt;&lt;span&gt;Vercel is the agentic infrastructure company, freeing people and agents to ship what's next. For more than a decade we've helped builders move from idea to production with speed, security, and exceptional developer experience.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;Now we're scaling our products for both agents and people to ship and run software, built in the open and trusted by OpenAI, PayPal, Ramp, Supreme, and millions of developers worldwide.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;About the Role&lt;/h2&gt;\n&lt;p&gt;We're looking for a Staff level Engineer to lead the design and development of a next-generation Data Platform at Vercel. This is a unique opportunity to architect a foundational system that will power data across our products and business, supporting everything from real-time analy"
-    },
-    "pitch": "Kiran S R — a full‑stack engineer who has built enterprise‑grade data pipelines and real‑time dashboards at scale. At RMC ERP I architected a Laravel‑Vue 3/Inertia stack that ingests sensor feeds, batches logs, and drives dispatch workflows, leveraging Redis caching and robust REST APIs to deliver sub‑second query performance for thousands of concurrent users. My deep experience with TypeScript, Node.js, and scalable cloud services positions me to design Vercel’s next‑generation Data Platform from day one, ensuring reliability",
-    "createdAt": "2026-10-24T17:45:33.765Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_toptal-full-stack-e-commerce-developer-with-sage-x3-experience",
-      "type": "remote_job",
-      "title": "Full-Stack E-commerce Developer with Sage X3 Experience",
-      "companyOrClient": "Toptal",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/toptal-full-stack-e-commerce-developer-with-sage-x3-experience",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; \n&lt;/p&gt;\n\n&lt;p&gt;Summary&lt;/p&gt;&lt;p&gt;We are seeking a Full-Stack Developer to build or customize a dealer e-commerce platform connected to an existing Sage X3 ERP environment. The role is focused on selecting the right e-commerce approach, implementing the portal, and supporting dealer-facing workflows in a manufacturing context.&lt;/p&gt;&lt;p&gt;General information&lt;/p&gt;&lt;p&gt;This engagement centers on building an e-commerce portal for dealers on top of an existing Sage X3 ERP setup. The client is open to the e-commerce technology choice and is looking for an experienced developer who can assess the current environment, recommend an appropriate platform approach, and deliver the required solution.&lt;/p&gt;&lt;p&gt;The work is fully remote and involves integrating the portal with Sage X3 while supporting the underlying commerce and data flows required for dealer operations.&lt;/p&gt;&lt;p&gt;Tasks and Delivera"
-    },
-    "pitch": "Hi Toptal team, I’m Kiran S R, a Full‑Stack Engineer who has built scalable e‑commerce solutions end‑to‑end. On the Zupper Commerce project I delivered 20+ reusable React components, cut page‑load times by ~25% with memoization and code‑splitting, and integrated secure REST APIs and Redis caching—experience that maps directly to creating a fast, dealer‑focused portal on top of Sage X3. I can assess your current stack, recommend the optimal platform (Next.js/React or Laravel/Vue), and ship a production‑",
-    "createdAt": "2026-10-24T17:45:30.493Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_lattice-senior-software-engineer-infrastructure-platform",
-      "type": "remote_job",
-      "title": "Senior Software Engineer, Infrastructure Platform",
-      "companyOrClient": "Lattice",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - Canada\n&lt;/p&gt;\n\n&lt;h2&gt;&lt;strong&gt;This is Engineering at Lattice&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;Lattice’s Engineering team is continuously working to better both our product and our craft. We use a modern, cutting-edge tech stack and love experimenting with new technologies. We strive for maintainable, robust, and performant code. We’re highly collaborative and continuously iterative, and work closely with designers and product managers. We prioritize not only great technical architecture but also an amazing product experience.&lt;/p&gt;\n&lt;p&gt;The Infrastructure Platform team focuses on the cloud services, infrastructure, and internal platforms that power Lattice’s products. We build reliable, scalable pathways that make it easier for product engineers to develop, deploy, operate, and troubleshoot their services.&amp;nbsp;&lt;/p&gt;\n&lt;h2&gt;&lt;strong&gt;What You Will Do&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&"
-    },
-    "pitch": "Kiran S R here – a full‑stack engineer who builds production‑grade platforms that scale from day one. On the Yeshu Tours & Travels project I designed a complete travel‑booking engine with a high‑throughput customer portal, admin dashboard, Redis‑backed caching, and WhatsApp‑API integration, delivering rock‑solid reliability and sub‑second response times",
-    "createdAt": "2026-10-24T17:45:19.607Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_askable-software-engineer-ai-coding-tasks-contract",
-      "type": "remote_job",
-      "title": "Software Engineer, AI Coding Tasks (Contract)",
-      "companyOrClient": "Askable",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/askable-software-engineer-ai-coding-tasks-contract",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6591/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Australia \n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://www.askablelabs.com/\"&gt;https://www.askablelabs.com/&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;We're looking for experienced software engineers to build AI coding tasks from a codebase they know well. US$1,000 per task, and you can do as many tasks as you want.&lt;/p&gt;\n&lt;p&gt;You turn a real change from a repository you know into a task that today's best AI coding models struggle with: hard for the models, but fair for a skilled engineer. Your tasks are used to measure and train AI coding models.&lt;/p&gt;\n&lt;p&gt;Remote, any location. US$1,000 per task that passes review. Minimum of one task a week, about 10 hours a week.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;How it works&lt;/strong&gt;&lt;/p&gt;\n&lt;ol cl"
-    },
-    "pitch": "Hi Askable team, I’m Kiran S R, a Full‑Stack Engineer from Bengaluru with deep expertise in React, Next.js, Node/Express, TypeScript, Redis and API integration. My work on “Yeshu Tours & Travels” delivered a complete booking engine—customer portal, admin dashboard, Redis caching and WhatsApp enquiry hooks—requiring meticulous code‑base analysis and clean, reusable components. I can quickly turn such a mature repository into challenging AI coding tasks that push model limits while staying fair for engineers. I’m ready to start this week, deliver a high‑quality task within 10 hours, and iterate fast. Let’s discuss how I can add value",
-    "createdAt": "2026-10-24T17:45:13.513Z",
     "deliveredToTelegram": false
   }
 ]
