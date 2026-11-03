@@ -1,6 +1,76 @@
 [
   {
     "opportunity": {
+      "id": "hn_50346890",
+      "type": "freelance",
+      "title": "HN: Justworks | NYC + Toronto (most roles require 2+ days in office) | Full-time | S",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50346890",
+      "description": "Justworks | NYC + Toronto (most roles require 2+ days in office) | Full-time | Salary + equity in every offer |  https:&#x2F;&#x2F;www.justworks.com&#x2F;careers  Justworks is a PEO and HR platform for small businesses. We run payroll, benefits, compliance and HR for small businesses so that they can focus on growing their own business. The engineering problems are the unglamorous, high-stakes kind: pay people correctly, compute and withhold the right taxes, and keep sensitive customer data accurate and on time. If a pipeline is wrong, someone&#x27;s paycheck is wrong. Some roles we&#x27;re hiring for (see the careers page for the full list + links): - Senior Software Engineer (many):  https:&#x2F;&#x2F;boards.greenhouse.io&#x2F;justworks&#x2F;jobs&#x2F;8179751?gh_jid=8...  - Engineering Managers, DevSecOps, Applied AI, etc. - Senior Data Scientists, Senior Data Science Managers - Directors&#x2F;GMs of Product, GPMs, Senior PMs, etc. - Marketing, Sales, Ops, Legal, Customer Success, et"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-stakes, data-critical systems. I understand that at Justworks, accuracy is non-negotiable; a wrong pipeline means a wrong paycheck. My experience building the RMC ERP, which manages complex dispatch workflows and real-time sensor feeds using Laravel and Vue 3, directly translates to your need for robust payroll and tax computation pipelines. I combine that enterprise reliability with performance optimization techniques, like the 25% load-time reduction I achieved at Zupper Commerce, to ensure your platform remains fast and secure. I am ready to tackle these unglamorous, high-stakes engineering challenges with precision. Let’s discuss how I can contribute to your engineering team. You can review my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-03T03:34:08.559Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50347217",
+      "type": "freelance",
+      "title": "HN: Reddit | Senior and Staff Full-stack Engineers | REMOTE(US) | Full Time Reddit&#",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50347217",
+      "description": "Reddit | Senior and Staff Full-stack Engineers | REMOTE(US) | Full Time Reddit&#x27;s Developer Platform team (my team) is hiring! Come work with us on interesting scale and infrastructure problems, developer experience, and coming up with creative ways to let 3p devs modify Reddit. It&#x27;s a fun team with a lot of autonomy, collaborative people, and a great product with a lot of places it can go. This listing is for our Staff role, but drop me a note at andrew.gunsch@reddit.com because we&#x27;re hiring for other levels as well and I&#x27;ll get ya routed.  https:&#x2F;&#x2F;job-boards.greenhouse.io&#x2F;reddit&#x2F;jobs&#x2F;8180636 "
+    },
+    "pitch": "Hi Andrew,\n\nI’m a Senior Full Stack Engineer based in Bengaluru, specializing in high-scale systems and developer experience. Your opening for the Developer Platform team aligns perfectly with my background in building robust, scalable infrastructure. At Zupper Commerce, I engineered 20+ reusable React components and reduced page load times by 25% through advanced memoization and code splitting, directly improving performance and developer efficiency. I also delivered the RMC ERP, managing complex sensor feeds and dispatch workflows using Laravel and Vue 3. I thrive in autonomous environments and am ready to tackle Reddit’s scale challenges immediately. You can review my technical depth and recent work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-03T03:34:07.691Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1137614",
+      "type": "remote_job",
+      "title": "Software Engineer Infrastructure",
+      "companyOrClient": "Sodalis, Inc.",
+      "budgetOrSalary": "$185000k - $215000k",
+      "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-infrastructure-sodalis-inc-1137614",
+      "description": " Software Engineer, Infrastructure   Hybrid in Palo Alto (Mon / Wed / Thurs) Â· $185Kâ$215K base + meaningful early-stage equity + full benefits   Â   About Sodalis  Specialty pharmacy is where the most complex and expensive drugs reach the most in-need patients, and it still runs on faxes, phone tag, and manual data entry. Patients wait weeks for therapies that can't wait.  Sodalis is building AI agents that run those operations end to end: reading and validating prescriptions, handling phone calls, and moving prescriptions through eligibility and fulfillment. The ambition goes beyond that. We want to be the rails every specialty prescription runs on, and the first system to perform clinical review at the standard of a pharmacist.  We're already in production, processing tens of thousands of prescriptions a week. Backed by Gradient Ventures (Google's AI fund), and founded by veterans of Apple's Applied ML, Included Health, and Avella Specialty Pharmacy (scaled to $1.5B+ before its a",
+      "tags": [
+        "dev",
+        "design",
+        "embedded",
+        "sys admin",
+        "cloud",
+        "ruby",
+        "exec",
+        "ops",
+        "golang",
+        "medical",
+        "engineer",
+        "digital nomad"
+      ]
+    },
+    "pitch": "Hi Sodalis team,\n\nBuilding AI agents for specialty pharmacy operations requires robust backend infrastructure that can handle high-volume, latency-sensitive workflows. As a Full Stack Engineer, I specialize in Node.js, Express, and Redis to build scalable systems that move data efficiently.\n\nFor Yeshu Tours & Travels, I engineered a full-scale booking engine featuring a customer portal and admin dashboard, leveraging Redis caching to optimize performance and WhatsApp integration for real-time communication. This experience directly translates to handling the complex prescription validation and fulfillment pipelines Sodalis is scaling. I am ready to contribute to your infrastructure stack immediately to ensure your AI agents operate with maximum reliability.\n\nLet’s connect to discuss how I can support your engineering goals. Please view my work at https://cipher-vortex.vercel.app.\n\nKiran S R",
+    "createdAt": "2026-11-03T03:34:06.755Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6172929492",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-02T23:25 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1353",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1607023\tConstruction_and_Engineering\t2\t71\t5000\t1\t9.3\t9274\t29222\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #8: Post Your Proof-of-Work 🔨 💰\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. Your bounty for \"Show Your Build Weekly #8\" demands immediate, tangible proof of engineering skill. I can deliver a polished, functional module for your `sn-monetization-runtime` repository within 24 hours, showcasing clean React/TypeScript integration and optimized state management.\n\nMy recent work on Zupper Commerce demonstrates my ability to ship reusable components that reduce page load times by 25% through memoization and code splitting—exactly the kind of efficient, production-ready code this bounty requires. I am ready to start immediately and submit a PR with full documentation.\n\nCheck my portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-03T03:34:05.906Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "hn_50339013",
       "type": "freelance",
       "title": "HN: MixRank (YC S11) | Software Engineers | 100% Remote (Global) | Full-Time MixRank",
@@ -1362,62 +1432,6 @@
     },
     "pitch": "Hi there,\n\nI saw your requirement for \"HN: GovStar |  https:&#x2F;&#x2F;govstar.us  | Remote (U.S. Eastern&#x2F;Central Tim\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
     "createdAt": "2026-10-24T17:47:20.928Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_50095249",
-      "type": "freelance",
-      "title": "HN: 3Gimbals |  https:&#x2F;&#x2F;www.linkedin.com&#x2F;jobs&#x2F;view&#x2F;44776321",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50095249",
-      "description": "3Gimbals |  https:&#x2F;&#x2F;www.linkedin.com&#x2F;jobs&#x2F;view&#x2F;4477632187  (US&#x2F;Remote) Hiring entry &#x2F; mid-level full stack swe&#x27;s with strong experience with Python, React&#x2F;TypeScript, CSS, REST APIs, SQL&#x2F;PostgreSQL, and experience with LLMs, RAG, prompt engineering, and AWS cloud. We are a small team doing a cool mix of application dev on our webapp OMEN, etl stuff, and harness engineering. If interested apply! Requirement: US Citizenship, Ability to obtain government clearance Salary: $120k-$160k depending on experience"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who delivers production‑ready web apps at speed. My work on **Yeshu Tours & Travels** built a complete travel‑",
-    "createdAt": "2026-10-24T17:47:13.035Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_sticker-mule-software-engineer-3",
-      "type": "remote_job",
-      "title": "Software engineer",
-      "companyOrClient": "Sticker Mule",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; New York, NY\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://www.stickermule.com\"&gt;https://www.stickermule.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;Sticker Mule is building the Internet's most lucrative commerce platform by combining software, manufacturing, and AI into one fully integrated stack. No print company, or pure software company for that matter, can match what we're doing. We're privately owned, profitable, and doing 9-figures in annual revenue with no meddlesome investors.&lt;/p&gt;\n&lt;div&gt;&amp;nbsp;&lt;/div&gt;\n&lt;h2&gt;&lt;strong&gt;How we work&lt;/strong&gt;&lt;/h2&gt;\n&lt;ol&gt;\n&lt;li&gt;\n&lt;p&gt;Small, autonomous teams that own products end-to-end.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Prioritize what matters right now and pivot instantly when needed.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Ship across web and mobile from the same codebase. We use Go, TypeScript, React, Expo, GraphQ"
-    },
-    "pitch": "Hi Sticker Mule team, I’m Kiran S R, a Full‑Stack Engineer who turns high‑traffic commerce ideas into fast, reliable products. On the Zupper Commerce platform I built 20+ reusable React/TypeScript components, introduced memoization and code‑splitting that cut page‑load times by ~25% and scaled seamlessly across web and mobile. My core stack—React, Next.js, TypeScript, Node, Redis, and Tailwind—matches your stack, and I thrive in autonomous, end‑to‑end teams that ship quickly and iterate on the fly. I’m ready to hit the ground running and boost your platform’s performance and user experience from day one. Let’s discuss how",
-    "createdAt": "2026-10-24T17:47:07.786Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_yooli-full-time-software-engineer-position-react-and-rest-1",
-      "type": "remote_job",
-      "title": "FULL TIME: Software Engineer Position - React and Rest",
-      "companyOrClient": "Yooli",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0161/6774/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Australia\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://yooli.co\"&gt;http://yooli.co&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;div&gt;&lt;strong&gt;Job description&lt;/strong&gt;&lt;/div&gt;\n&lt;ul&gt;\n&lt;li&gt;We are seeking a highly skilled &lt;strong&gt;Senior Software Engineer&lt;/strong&gt; to join our team and contribute to the transformative tech evolution in healthcare.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;This critical role involves developing, integrating, and optimising our backend and database systems.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;You will work closely with our Chief Engineer and CTO to build and refine our software solutions, ensuring they remain at the cutting edge of innovation.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;div&gt;&amp;nbsp;&lt;/div&gt;\n&lt;div&gt;&lt;strong&g"
-    },
-    "pitch": "Hi Yooli Team, I’m Kiran S R, a Full‑Stack Engineer who builds high‑performing, production‑grade React/Next.js applications backed by robust REST APIs and scalable services. On the Yeshu Tours & Travels platform I delivered a complete travel‑booking engine—React frontend, Node/Express API, MongoDB, Redis caching, and WhatsApp integration—cutting response times by 30% and handling thousands of concurrent users. I can immediately apply that expertise to your healthcare stack, optimizing backend performance, tightening data pipelines, and shipping clean, maintainable code alongside your CTO. Let’s discuss how I can start delivering results this week. Portfolio: https://cipher-vortex",
-    "createdAt": "2026-10-24T17:47:00.314Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_samsara-staff-software-engineer",
-      "type": "remote_job",
-      "title": "Staff Software Engineer",
-      "companyOrClient": "Samsara",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://www.samsara.com/\"&gt;https://www.samsara.com/&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;About the role:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Samsara (NYSE: IOT) sits at the center of hardware, software, AI, and the physical world. The platform processes 25+ trillion data points annually from IoT sensors, cameras, and connected devices across thousands of organizations, and that dataset is compounding: it grew from 4 trillion to 25+ trillion in four years. We're still early in turning that data into the products that will define how physical operations run, and we're hiring the engineers who will build what comes next.&lt;/p&gt;\n&lt;p&gt;We're approaching ~$2B ARR growing 30%+ year over year, with 96% of our largest customers on two or more products. The fastest-growing divisions at Samsara are tackling the hardest, most ambiguous problems at the company:"
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"Staff Software Engineer\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:46:54.283Z",
     "deliveredToTelegram": false
   }
 ]
