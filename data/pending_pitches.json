@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "hn_50350810",
+      "type": "freelance",
+      "title": "HN: Proofline | Founding Staff &#x2F; Principal Engineer | REMOTE (Worldwide, Berlin",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50350810",
+      "description": "Proofline | Founding Staff &#x2F; Principal Engineer | REMOTE (Worldwide, Berlin timezone overlap preferred) | Full-time | €120k-€200k + equity |  https:&#x2F;&#x2F;proofline.sh&#x2F;careers&#x2F;founding-staff-principal-engine...  Hi HN, I&#x27;m the founder of Proofline. We&#x27;re building an infrastructure-aware AI code reviewer that catches deployment failures before they reach production. Think of it as a type checker for your cloud infrastructure. We analyze code changes against Terraform, live cloud environments, and deployment evidence rather than just reading diffs. We&#x27;re hiring a hands-on Staff &#x2F; Principal Engineer to help us build. You&#x27;ll own core SaaS architecture, cloud integrations, developer tools, and product delivery, with a path toward engineering leadership. Stack: Rust, Go, PostgreSQL, React&#x2F;TypeScript, Terraform, AWS, GCP. We&#x27;re looking for someone with 10+ years of hands-on infrastructure engineering experience, deep SaaS and cloud expert"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance SaaS architectures and developer tools. Your need for infrastructure-aware code review resonates with my recent work on Zupper Commerce, where I engineered 20+ reusable React/TypeScript components and optimized page loads by 25% through rigorous code splitting and memoization. I bring the same precision to system design, having built complex, data-heavy platforms like RMC ERP that handle real-time sensor feeds and intricate dispatch workflows. I am ready to apply this depth of engineering discipline to Proofline’s core SaaS architecture and cloud integrations, ensuring your AI reviewer is robust, scalable, and production-ready. Let’s discuss how I can accelerate your product delivery immediately. View my work at https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-03T18:59:02.364Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "hn_50353951",
+      "type": "freelance",
+      "title": "HN: ThreatMark | Security, Machine Learning | REMOTE(World) &#x2F; Brno, Czech Repub",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50353951",
+      "description": "ThreatMark | Security, Machine Learning | REMOTE(World) &#x2F; Brno, Czech Republic | Equity ThreatMark protects &gt;60M end users from finacial fraud and saves &gt; $1.2M every day in losses. We are working with banks in EU and US to protect their end users. We develop large-behavioral models that recognizes returning users by their mouse movements, keystroke timings and sensoric data (accelerometer, gyroscope). We detect cyberthreats (e.g. malware, phishing, scraping) by exploiting browsers&#x2F;sandboxes of devices. We manage ~PB scale of data and provide realtime scoring in milliseconds driving authentication&#x2F;authorization flow (2nd factor). Stack: [python, typescript, rust], [redis, postgresql], [aws, terraform] ... We are looking for exceptional engineers to build with us and be part of the success: - Backend Engineer [rust, python] - low-latency stream processing engine, rewrite python microservices to rust, build new detection features - DevOps Engineer (IaaC in AWS) - Dev"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. I noticed ThreatMark’s focus on low-latency systems and real-time data processing. My experience building high-performance architectures aligns perfectly with your needs. For instance, I engineered the backend for a large-scale ERP system handling real-time sensor feeds and complex dispatch workflows using Redis and optimized APIs, ensuring sub-second response times under heavy load. I am proficient in TypeScript and Node.js, with a strong understanding of data pipeline efficiency. I am ready to contribute to your detection features or backend optimization immediately. Let’s discuss how I can help scale your security infrastructure. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-03T18:59:01.289Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "hn_50348145",
       "type": "freelance",
       "title": "HN: VALIS (Valis Insights) | Software Engineer, new product line | REMOTE (US, East ",
@@ -1404,34 +1432,6 @@
     },
     "pitch": "Hi there,\n\nI saw your requirement for \"HN: Ojin | Lead Platform Engineer | HYBRID (Berlin) or REMOTE (CET ±2h) | Full-time \" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
     "createdAt": "2026-10-24T17:48:03.386Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_49943713",
-      "type": "freelance",
-      "title": "HN: GC AI | Member of Technical Staff, Applied AI | REMOTE (US&#x2F;Canada) | $180K–",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49943713",
-      "description": "GC AI | Member of Technical Staff, Applied AI | REMOTE (US&#x2F;Canada) | $180K–$430K + equity GC AI is building an AI platform for in-house legal teams, helping lawyers draft, review, and analyze legal documents. The product is used by 1,800+ companies, including 150+ public companies and 25+ unicorns. GC AI raised a $60M Series B in November 2025 at a $555M valuation. We’re hiring 5 engineers for the Applied AI team.\nThis is a full-stack product engineering role with a strong AI execution layer — not an ML research or data science position. We’re looking for engineers with:\n- Deep, recent TypeScript&#x2F;JavaScript + React production experience\n- Hands-on experience shipping LLM-powered product features\n- Experience with LLM orchestration, RAG, integrations, agents, and&#x2F;or evaluation systems\n- Strong end-to-end product ownership, from architecture through production\n- A track record of shipping quickly and working closely with product Strong signals include founding&#x2F;foundin"
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"HN: GC AI | Member of Technical Staff, Applied AI | REMOTE (US&#x2F;Canada) | $180K–\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:47:57.113Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_49964448",
-      "type": "freelance",
-      "title": "HN: ALBERT | REMOTE ALMOST ANYWHERE IN THE WORLD| Hiring principal and distinguished",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49964448",
-      "description": "ALBERT | REMOTE ALMOST ANYWHERE IN THE WORLD| Hiring principal and distinguished engineers to build net new products | up to ~ $750k\nHiring: exceptional consumer product engineers at Albert. We&#x27;re a consumer fintech with 20M+ users who trust us to budget, save, invest, and bank in one place. Profitable for 4+ years. And as of today, our average employee tenure is 3.6 years, a number you almost never see in startup tech, and one we&#x27;re quietly proud of. People stay because the work is good, the people are sharp, and we&#x27;ve built something worth staying for. Now we&#x27;re building net-new consumer products from zero, and we&#x27;re looking for people who love to tinker and build stuff to ship them with us. The kind of person we&#x27;re looking for: • Top fraction of a percentile in craft, the kind of good that&#x27;s hard to fake • Builds for fun, not just for work. The kind who ships a working prototype over the weekend and can&#x27;t help themselves • Comfortable owning 0"
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"HN: ALBERT | REMOTE ALMOST ANYWHERE IN THE WORLD| Hiring principal and distinguished\" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:47:45.042Z",
     "deliveredToTelegram": false
   }
 ]
