@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "hn_50365279",
+      "type": "freelance",
+      "title": "HN: Search Atlas | Product Engineer (PM) | REMOTE (anywhere, EST hours) | Full-time ",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50365279",
+      "description": "Search Atlas | Product Engineer (PM) | REMOTE (anywhere, EST hours) | Full-time | $23-34&#x2F;hr We&#x27;re ~160 people building an AI marketing platform. Our main product, OTTO, runs a site&#x27;s SEO on its own: it reads live search data and ships the technical and on-page fixes itself. Customers include Autotrader, Hyundai, P&amp;G and Vendasta. Pods are 1 PM and 2-4 engineers. You own your pod&#x27;s roadmap and ship it with them, with no veteran PM signing off on your specs. You have 3+ years as a B2B SaaS PM with a real technical background (eng or QA before PM, or you already work in the codebase). You read Python and TS, write your own SQL, and don&#x27;t need an engineer to explain a stack trace. Stack is Django + React&#x2F;Next. QA is yours end to end, release sign-off included. You use Claude Code or similar daily. Apply (mention HN):  https:&#x2F;&#x2F;careers.searchatlas.com&#x2F;jobs&#x2F;599248-product-engineer...  Also hiring: * Senior Full-Stack Engineer (Django&#x2F;"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Bengaluru-based Full Stack Engineer ready to join your pod. While the role specifies PM experience, my deep technical foundation in React, Next.js, and TypeScript means I can own the roadmap and ship code without translation gaps. I recently optimized Zupper Commerce’s frontend, reducing page load times by 25% via memoization and code splitting, proving my ability to handle end-to-end QA and performance metrics. I read TS and SQL fluently, and I’m comfortable working in EST hours. I can hit the ground running with your Django + React stack immediately. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-04T20:15:21.468Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "hn_50348022",
       "type": "freelance",
       "title": "HN: Splash Tech | DevOps Mid&#x2F;Senior &#x2F; Frontend | Remote (LATAM and EU) | F",
@@ -1418,20 +1432,6 @@
     },
     "pitch": "Hi Hacker News Team, I’m Kiran S R, a full‑stack engineer who builds production‑grade, data‑intensive systems that ship today. On the “Yeshu Tours & Travels” platform I delivered a complete booking engine with a customer portal, admin dashboard, Redis‑cached real‑time availability, and WhatsApp‑based telemetry—handling noisy field data, scaling to hundreds of concurrent users, and integrating tightly with external hardware APIs. My experience architecting resilient subsystems, optimizing performance (≈25% faster loads), and debugging complex integrations translates directly to owning",
     "createdAt": "2026-10-24T17:48:19.480Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_49971729",
-      "type": "freelance",
-      "title": "HN: Early-stage Startup | Software Engineer &amp; Data Analyst | Full-Time | REMOTE ",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49971729",
-      "description": "Early-stage Startup | Software Engineer &amp; Data Analyst | Full-Time | REMOTE (US &amp; Canada) | $150,000 - $180,000 USD We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst. For the Software Engineer role, we’re looking for someone with solid technical ability and strong computer science fundamentals. Experience building reliable systems, performance optimization, clean architecture, and solving complex problems matters more to us than any specific tech stack. For the Data Analyst role, we’re looking for someone who can turn messy data into clear insights. Strong SQL&#x2F;Python skills and the ability to drive product and business decisions with data are key. Some reasons you may enjoy working with us: * Collaborative and innovative environment where your voice is heard\n* Fully remote with flexible hours\n* Long-term, full-time role (not a fixed-term contract)\n* High ownership and interesting technical&#x2F;data challenges\n* Work with a talented team "
-    },
-    "pitch": "I’m Kiran S R, a Full‑Stack Engineer who builds reliable, high‑performance systems from the ground up. At RMC ERP I architected a Laravel‑Vue 3 enterprise platform handling real‑time sensor feeds, batching logs and dispatch workflows, using clean Inertia.js patterns, Redis caching and robust REST APIs—delivering rock‑solid uptime and scalable performance. My deep CS fundamentals, expertise in React/Next.js, TypeScript, Node.js and data‑centric design let me turn complex problems into maintainable code instantly",
-    "createdAt": "2026-10-24T17:48:10.377Z",
     "deliveredToTelegram": false
   }
 ]
