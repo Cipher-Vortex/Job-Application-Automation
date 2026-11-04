@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "hn_50348022",
+      "type": "freelance",
+      "title": "HN: Splash Tech | DevOps Mid&#x2F;Senior &#x2F; Frontend | Remote (LATAM and EU) | F",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50348022",
+      "description": "Splash Tech | DevOps Mid&#x2F;Senior &#x2F; Frontend | Remote (LATAM and EU) | Full Time |  https:&#x2F;&#x2F;splash.tech&#x2F;  We&#x27;re a small UK-based free-to-play gaming company with a distributed team, growing fast after recent success and scaling our backend platform. We’re looking for a DevOps engineer with 5+ years of experience. Most of the work is AWS-focused. You should have hands-on experience with: - AWS, particularly EKS, EC2, Application Load Balancers, RDS, and IAM.\n- Terraform and managing infrastructure as code.\n- Kubernetes, including troubleshooting workloads and cluster issues.\n- CI&#x2F;CD and GitOps workflows using GitHub Actions and Flux.\n- Monitoring, alerting, and tracing with tools such as Grafana, Prometheus, Alertmanager, Jaeger, and OpenTelemetry.\n- DNS, TLS, and Cloudflare. Strong AWS networking knowledge, including VPC design, routing, private connectivity, and troubleshooting is highly desirable. Our stack includes AWS, Kubernetes (EKS), PostgreSQL, "
+    },
+    "pitch": "Hi, I’m Kiran S R, a full-stack engineer based in Bengaluru. While my core strength is building scalable frontend and backend systems, I bring deep operational insight from managing complex production environments. At Yeshu Tours & Travels, I architected a high-traffic booking engine using Redis caching and robust API integrations, ensuring stability under load—a critical skillset that translates directly to the AWS and Kubernetes-centric infrastructure you are scaling. My experience with performance optimization and system reliability positions me to support your DevOps and frontend needs effectively. I am available for an immediate start to help stabilize and scale your distributed platform. Let’s connect to discuss how I can support your team’s growth. You can view my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-04T04:46:50.574Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "hn_50350810",
       "type": "freelance",
       "title": "HN: Proofline | Founding Staff &#x2F; Principal Engineer | REMOTE (Worldwide, Berlin",
@@ -1418,20 +1432,6 @@
     },
     "pitch": "I’m Kiran S R, a Full‑Stack Engineer who builds reliable, high‑performance systems from the ground up. At RMC ERP I architected a Laravel‑Vue 3 enterprise platform handling real‑time sensor feeds, batching logs and dispatch workflows, using clean Inertia.js patterns, Redis caching and robust REST APIs—delivering rock‑solid uptime and scalable performance. My deep CS fundamentals, expertise in React/Next.js, TypeScript, Node.js and data‑centric design let me turn complex problems into maintainable code instantly",
     "createdAt": "2026-10-24T17:48:10.377Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_50004401",
-      "type": "freelance",
-      "title": "HN: Ojin | Lead Platform Engineer | HYBRID (Berlin) or REMOTE (CET ±2h) | Full-time ",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50004401",
-      "description": "Ojin | Lead Platform Engineer | HYBRID (Berlin) or REMOTE (CET ±2h) | Full-time Hi HN! I&#x27;m Seema, part of the team at Ojin, and we&#x27;re looking for our next Lead Platform Engineer. We build AI agents that look and sound human - real face, real voice, real-time conversation. The kind of thing that makes people ask if it&#x27;s actually live the first time they see it. Getting there means solving latency at a level most infrastructure can&#x27;t touch, running custom frontier models for lipsync and face generation, and orchestrating all of it live across a globally distributed GPU fabric we own and operate ourselves. This isn&#x27;t a role where you maintain what someone else built. The hard problems are still open: dynamic routing and load balancing across thousands of concurrent GPU servers spanning multiple clouds and regions, keeping latency low enough that conversation feels natural, and deployment pipelines that can keep up with a product that&#x27;s moving fast. You&#x27;d"
-    },
-    "pitch": "Hi there,\n\nI saw your requirement for \"HN: Ojin | Lead Platform Engineer | HYBRID (Berlin) or REMOTE (CET ±2h) | Full-time \" and would love to help you build and ship this.\n\nI'm a Full Stack Engineer specializing in React, Next.js, TypeScript, and Node.js. Recently, I built and deployed Yeshu Tours & Travels (full-scale booking engine with Redis and responsive UI) and engineered modular React systems at Zupper Commerce, optimizing page load times by 25%.\n\nI can deliver clean, modular code with immediate turnaround. You can view my live work at https://cipher-vortex.vercel.app.\n\nLooking forward to connecting!\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-24T17:48:03.386Z",
     "deliveredToTelegram": false
   }
 ]
