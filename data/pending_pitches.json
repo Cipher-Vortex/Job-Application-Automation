@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "hn_50376253",
+      "type": "freelance",
+      "title": "HN: ICEYE | Platform Software Engineers (Senior&#x2F;Staff) | Espoo, Finland &#x2F; ",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50376253",
+      "description": "ICEYE | Platform Software Engineers (Senior&#x2F;Staff) | Espoo, Finland &#x2F; Berlin, Germany | HYBRID | Full-time (relocation support) ICEYE builds and operates the world&#x27;s largest SAR satellite constellation. I lead Platform: three teams (Core Platform, Developer Enablement, SRE) that run the foundation engineering teams ship on. Why it is hard: we run Kubernetes in public cloud, in our own data centers, and inside customer sites that are air-gapped. Same platform, same tooling, no internet. Satellite tasking and image delivery run on it, so downtime is not an option. Stack: Go, Python, K8s, Terraform&#x2F;OpenTofu, Istio, Vault, LGTM, OpenTelemetry. We are hiring in Espoo and our Berlin office: - Staff&#x2F;Senior Platform and DevOps Engineer: own the Kubernetes platform across cloud and on-prem, build &amp; extend tooling in Go, set technical direction.  https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;iceye&#x2F;cf6ba0e9-a750-4ee7-9b0a-8cb51...  - Senior&#x2F;Staff Platform Observab"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance, scalable architectures. While my core expertise is in complex web platforms, I bring rigorous engineering discipline directly applicable to your Platform team’s needs. For RMC ERP, I engineered an enterprise system handling real-time sensor feeds and critical dispatch workflows, ensuring zero-downtime reliability for mission-critical operations. This experience mirrors the high-stakes, low-tolerance environment of running Kubernetes across air-gapped and public cloud environments. I excel at building robust tooling and optimizing system performance, ready to contribute immediately to ICEYE’s infrastructure stability and developer enablement goals. I would welcome the chance to discuss how my background in enterprise-grade system design can support your platform objectives. Please view my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-05T07:48:24.016Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "hn_50365279",
       "type": "freelance",
       "title": "HN: Search Atlas | Product Engineer (PM) | REMOTE (anywhere, EST hours) | Full-time ",
@@ -1418,20 +1432,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full‑Stack Engineer who builds high‑performance, data‑driven platforms. My work on **Yeshu Tours & Travels** delivered a complete travel‑booking engine with a customer portal,",
     "createdAt": "2026-10-24T17:48:24.583Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_49964254",
-      "type": "freelance",
-      "title": "HN: Greenzie | Robotics Software Engineer (Experienced, 3–6 yrs) | Atlanta, GA | ONS",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=49964254",
-      "description": "Greenzie | Robotics Software Engineer (Experienced, 3–6 yrs) | Atlanta, GA | ONSITE&#x2F;HYBRID | Full-time |  https:&#x2F;&#x2F;greenzie.applytojob.com&#x2F;apply&#x2F;UdRcDlWSzs&#x2F;Robotics-So...  Greenzie builds the autonomy software that runs on commercial mowers. We don&#x27;t sell the iron — Wright, Mean Green, Bobcat, and Greenworks Commercial do, with our stack on them. Mission is to free humans from repetitive outdoor labor. The software is on hundreds of machines in the field today. We&#x27;re hiring an experienced roboticist who wants production robots doing real outdoor work, not lab demos. C++, Python, ROS&#x2F;ROS2. You&#x27;ll own a subsystem, debug messy field data, and ship to machines that mow for a living. Apply on that page and mention HN. Questions: cbq@greenzie.com"
-    },
-    "pitch": "Hi Hacker News Team, I’m Kiran S R, a full‑stack engineer who builds production‑grade, data‑intensive systems that ship today. On the “Yeshu Tours & Travels” platform I delivered a complete booking engine with a customer portal, admin dashboard, Redis‑cached real‑time availability, and WhatsApp‑based telemetry—handling noisy field data, scaling to hundreds of concurrent users, and integrating tightly with external hardware APIs. My experience architecting resilient subsystems, optimizing performance (≈25% faster loads), and debugging complex integrations translates directly to owning",
-    "createdAt": "2026-10-24T17:48:19.480Z",
     "deliveredToTelegram": false
   }
 ]
