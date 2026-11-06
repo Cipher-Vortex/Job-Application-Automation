@@ -1,6 +1,124 @@
 [
   {
     "opportunity": {
+      "id": "rok_1137688",
+      "type": "remote_job",
+      "title": "Senior Vue Developer",
+      "companyOrClient": "Lemon.io",
+      "budgetOrSalary": "$50000k - $180000k",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688",
+      "description": "  Lemon.io  helps companies in the US and Europe hire experienced engineers, from funded startups to teams like Klarna, Retool, and Pinterest. Weâve been doing this since 2015, and more than 1,500 companies have hired engineers through us.  New roles for Senior Vue Engineers come in all the time, and several are open right now.   Two ways to work with clients     Contract:  most roles are contract-based. You join the clientâs team and work as part of it.   Direct hire:  some clients hire engineers full-time, and we support you through the process.   Because companies trust our vetting, applying through  Lemon.io  is often a shortcut. You get to the client faster than going through their full hiring process on your own.   What you get    Competitive rate, based on your seniority and skills  We find the projects. No client hunting or rate negotiations. We match you manually based on your skills and preferences.  Flexible schedule. Work async or with a small overlap with the teamâs ",
+      "tags": [
+        "engineer",
+        "dev",
+        "full time",
+        "full stack",
+        "remote",
+        "remote work",
+        "javascript",
+        "typescript",
+        "php",
+        "laravel",
+        "node",
+        "dot net",
+        "python",
+        "front end"
+      ]
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer in Bengaluru specializing in Vue 3 and enterprise-grade applications. I see you’re seeking a Senior Vue Developer, and my recent work with RMC ERP aligns perfectly with that need. I built a complex Laravel and Vue 3 stack using Inertia.js to manage batching logs, sensor feeds, and dispatch workflows for an industrial client. This experience proves my ability to handle real-time data and intricate state management in high-stakes environments. I’m ready to integrate immediately into your client’s team, bringing speed and precision to your project without the usual onboarding friction. Let’s connect to discuss how I can deliver immediate value. You can review my full portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-06T17:37:31.765Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1137691",
+      "type": "remote_job",
+      "title": "Feltsense AI Engineer",
+      "companyOrClient": "Silver.dev",
+      "budgetOrSalary": "$60000k - $110000k",
+      "url": "https://remoteOK.com/remote-jobs/remote-feltsense-ai-engineer-silver-dev-1137691",
+      "description": " About the company  We raised $5.1M to build agents that operate as fully autonomous founders. Our backers include Matt Schlicht (founder of Moltbook), the founders of Crunchbase and Republic, and VCs including Draper, Precursor, and Liquid2.  We're working at the frontier of autonomous systems, building agents that don't just chat, but run entire businesses.  Our system identifies business opportunities through market signals, validates ideas with live ad tests, builds and launches software products, and brings in human experts wherever agents fall short. That loop already runs end to end: from idea to launched product to first revenue.  Over the next 12 months, our focus is on reliability, throughput, and self-improvement, making every launch better than the last.    About the role  We're looking for a hands-on AI Engineer to take ownership of the architecture and development of our autonomous agent system.  You'll lead the technical direction of the platform, building multi-agent or",
+      "tags": [
+        "design",
+        "sys admin",
+        "exec",
+        "technical",
+        "customer support",
+        "dev",
+        "testing",
+        "javascript",
+        "cloud",
+        "postgres",
+        "typescript",
+        "node",
+        "node.js",
+        "engineer",
+        "backend",
+        "digital nomad"
+      ]
+    },
+    "pitch": "Hi Silver.dev team,\n\nI’m Kiran S R, a Full Stack Engineer specializing in high-reliability systems and AI integration. Your mission to build autonomous founders resonates with my recent work on Cerebrum, an AI note-taking platform leveraging RAG architecture and Grok API. I bring proven expertise in React, Next.js, and Node.js to your stack, with a track record of reducing page load times by 25% through optimized component architecture. I’m ready to take ownership of your agent system’s technical direction, focusing on the reliability and throughput improvements needed for your next 12-month growth phase. Let’s discuss how I can help scale your autonomous infrastructure. You can view my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-06T17:37:30.878Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6236274666",
+      "type": "bounty",
+      "title": "[Bounty] 💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Bloc (zhangjiayang6835-cyber/bounty-plaza)",
+      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
+      "budgetOrSalary": "$600 USDC",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4219",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/2\n\n### 漏洞描述 / Description\n💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://132.145.159.202:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `arbitrate_slot_025a` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GREE"
+    },
+    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance systems and state synchronization. I recently engineered a Redis-cached booking engine for Yeshu Tours & Travels, solving complex data consistency challenges under heavy load. This experience directly translates to the precision required for your PagedAttention KV-Cache conformance suite. I am prepared to implement `arbitrate_slot_025a` and align the necessary bitmasks to ensure `verify_conformance.py` passes all 24 vectors. I can deliver a working PR immediately for the $600 USDC bounty. Let’s secure this merge. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-06T17:37:30.037Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6241069826",
+      "type": "bounty",
+      "title": "🎯 Bounty Alert: 17 New Opportunityies found (dev-kp-eloper/BountyScout)",
+      "companyOrClient": "GitHub: dev-kp-eloper/BountyScout",
+      "budgetOrSalary": "$600 USDC",
+      "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1732",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-06 10:32 UTC\n\n#### 1. [Card coverage: Foundations (FDN)](https://github.com/krakenhavoc/cmd_and_ctrl/issues/4465)\n- **Repository:** [krakenhavoc/cmd_and_ctrl](https://github.com/krakenhavoc/cmd_and_ctrl)\n- **Comments:** 10\n- **Last Updated:** 2026-11-06T10:32:01Z\n\n#### 2. [Card coverage: Avatar: The Last Airbender (TLA)](https://github.com/krakenhavoc/cmd_and_ctrl/issues/4459)\n- **Repository:** [krakenhavoc/cmd_and_ctrl](https://github.com/krakenhavoc/cmd_and_ctrl)\n- **Comments:** 1\n- **Last Updated:** 2026-11-06T10:30:55Z\n\n#### 3. [[BUG BOUNTY] Medium: cosign_message hardcodes SPL_TOKEN_PROGRAM_ID in transact_spl assembly and omits token_program in SettlementParams, breaking Token-2022 settlement](https://github.com/paraloom-labs/paraloom-core/issues/1363)\n- **Repository:** [paraloom-labs/paraloom-core](https://github.com/paraloom-labs/paraloom-core)\n- **Comments:** 1\n- **Last Updated:** 2026-11-06T10:29:28Z\n\n#### 4. [POLISH — MAG"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in performance optimization and scalable architecture. I saw the BountyScout scan and am ready to deliver immediate value. My work on Zupper Commerce directly aligns with your needs, where I built 20+ reusable React components and reduced page load times by 25% through memoization and code splitting. I combine this frontend expertise with robust backend patterns from projects like RMC ERP, ensuring end-to-end reliability. I can start immediately and deliver a polished, high-performance solution within 24 hours. Let’s discuss how I can tackle these specific issues for you. You can view my recent work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-06T17:37:29.138Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6241933277",
+      "type": "bounty",
+      "title": "[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
+      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
+      "budgetOrSalary": "$450 USDC",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4236",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/asyncpg-savepoint-harness/issues/1\n\n### 漏洞描述 / Description\n💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://132.145.159.202:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `_reconcile_cursor_span_v6` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS "
+    },
+    "pitch": "Hi, I am Kiran S R, a Full Stack Engineer specializing in high-performance backend systems and real-time data handling. Your bounty requires precise implementation of `_reconcile_cursor_span_v6` and complex bit-manipulation logic for SSE chunk reassembly. My work on RMC ERP, where I managed real-time sensor feeds and dispatch workflows using Laravel and Vue 3, demonstrates my ability to handle concurrent data streams and state synchronization under load. I can immediately implement the 48-bit mask alignment and ensure `verify_conformance.py` passes all 24 vectors. I am ready to deliver the merged solution for the $450 USDC reward. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-06T17:37:28.294Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6241933449",
+      "type": "bounty",
+      "title": "[Bounty] 💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Bloc (zhangjiayang6835-cyber/bounty-plaza)",
+      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
+      "budgetOrSalary": "$600 USDC",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4237",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/asyncpg-savepoint-harness/issues/2\n\n### 漏洞描述 / Description\n💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://132.145.159.202:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `unwind_slab_state_a85` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GR"
+    },
+    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance optimization and complex state management. Your bounty requires precise alignment of `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` within the `unwind_slab_state_a85` function. My experience building the RMC ERP, which handles real-time sensor feeds and intricate dispatch workflows, demonstrates my ability to manage complex data synchronization and edge cases under strict constraints. I can analyze the 24-vector conformance suite and implement the necessary logic to pass `verify_conformance.py` immediately. I am ready to deliver a clean, verified pull request today. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-06T17:37:27.311Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6236274751",
       "type": "bounty",
       "title": "[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
@@ -1353,90 +1471,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle your `sn-monetization-runtime` bounty immediately. With deep expertise in Node.js, TypeScript, and Redis, I have successfully engineered high-performance systems like Yeshu Tours & Travels, which utilized Redis caching to optimize data retrieval and handle complex state management. I can apply this same architectural rigor to your monetization runtime, ensuring robust, low-latency execution and seamless integration. I am prepared to deliver a clean, tested PR instantly to secure this bounty for you. Let’s get this shipped today. You can review my full technical portfolio here: https://cipher-vortex.vercel.app",
     "createdAt": "2026-10-25T17:23:16.494Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "reddit_rss_t3_1xf0o2o",
-      "type": "freelance",
-      "title": "Software Engineer | System Architecture looking to hire me work together with individuals, startups, small businesses or teams remotely",
-      "companyOrClient": "Reddit r/forhire Client",
-      "budgetOrSalary": "Quoted per project",
-      "url": "https://www.reddit.com/r/forhire/comments/1xf0o2o/hiring_software_engineer_system_architecture/",
-      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hey everyone!&lt;/p&gt; &lt;p&gt;I&amp;#39;m a software Engineer interested in connecting with people building interesting software products and solving real-world problems.&lt;/p&gt; &lt;p&gt;I work with Python, JavaScript, React, FastAPI, Node.js, PostgreSQL, System Design, Ai models, Rag and REST APIs. I&amp;#39;m also working on Sentinel, a fraud detection project where I&amp;#39;m exploring backend engineering and transaction analysis with ML models.&lt;/p&gt; &lt;p&gt;I&amp;#39;d love to connect with other developers, startup founders, and people working on ambitious ideas. I&amp;#39;m also interested in learning about opportunities to contribute to a team and grow through real-world engineering experience.&lt;/p&gt; &lt;p&gt;i would love to connect for budget and work together as teams&lt;/p&gt; &lt;p&gt;What kinds of projects are you all working on lately?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitte"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in scalable systems with React, Node.js, and TypeScript. Given your focus on system architecture and AI, I’d be a strong fit. I recently built Yeshu Tours & Travels, a high-traffic booking engine featuring Redis caching and complex admin workflows, proving my ability to handle real-world data integrity and performance. I also developed Cerebrum, an AI note-taking platform using RAG architecture, directly aligning with your interest in AI models and backend engineering. I’m available for immediate remote collaboration to deliver robust, production-ready solutions. Let’s discuss how I can contribute to your next project. View my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-10-25T17:23:14.628Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "reddit_rss_t3_1xf0yfq",
-      "type": "freelance",
-      "title": "Software Engineer | System Architecture looking to hire me work together with individuals, startups, small businesses or teams remotely",
-      "companyOrClient": "Reddit r/forhire Client",
-      "budgetOrSalary": "Quoted per project",
-      "url": "https://www.reddit.com/r/forhire/comments/1xf0yfq/hiring_software_engineer_system_architecture/",
-      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;h1&gt;Hey everyone![](&lt;a href=&quot;https://www.reddit.com/r/forhire/?f=flair_name%3A%22Hiring%20-%20Open%22&quot;&gt;https://www.reddit.com/r/forhire/?f=flair_name%3A%22Hiring%20-%20Open%22&lt;/a&gt;)&lt;/h1&gt; &lt;p&gt;I&amp;#39;m a software Engineer interested in connecting with people building interesting software products and solving real-world problems.&lt;/p&gt; &lt;p&gt;I work with Python, JavaScript, React, FastAPI, Node.js, PostgreSQL, System Design, Ai models, Rag and REST APIs. I&amp;#39;m also working on Sentinel, a fraud detection project where I&amp;#39;m exploring backend engineering and transaction analysis with ML models.&lt;/p&gt; &lt;p&gt;I&amp;#39;d love to connect with other developers, startup founders, and people working on ambitious ideas. I&amp;#39;m also interested in learning about opportunities to contribute to a team and grow through real-world engineering experience.&lt;/p&gt; &lt;p&gt;i would l"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React, Node.js, and system architecture. I noticed your interest in building robust backend systems and AI solutions. My work on Yeshu Tours & Travels directly aligns with your needs, where I engineered a high-availability booking engine using Redis caching and REST APIs to handle complex transaction workflows. I also built Cerebrum, an AI note-taking platform leveraging RAG architectures, proving my ability to integrate modern AI models into production-ready applications. I am available for immediate remote collaboration to help you scale your infrastructure or build new features with precision. Let’s discuss how I can contribute to your current roadmap. Check out my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-25T17:23:13.809Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "reddit_rss_t3_1xf1dp3",
-      "type": "freelance",
-      "title": "Software Engineer | System Architecture looking to hire me work together with individuals, startups, small businesses or teams remotely",
-      "companyOrClient": "Reddit r/forhire Client",
-      "budgetOrSalary": "Quoted per project",
-      "url": "https://www.reddit.com/r/forhire/comments/1xf1dp3/hiring_software_engineer_system_architecture/",
-      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I&amp;#39;m a software Engineer interested in connecting with people building interesting software products and solving real-world problems.&lt;/p&gt; &lt;p&gt;I work with Python, JavaScript, React, FastAPI, Node.js, PostgreSQL, System Design, Ai models, Rag and REST APIs. I&amp;#39;m also working on Sentinel, a fraud detection project where I&amp;#39;m exploring backend engineering and transaction analysis with ML models.&lt;/p&gt; &lt;p&gt;I&amp;#39;d love to connect with other developers, startup founders, and people working on ambitious ideas. I&amp;#39;m also interested in learning about opportunities to contribute to a team and grow through real-world engineering experience.&lt;/p&gt; &lt;p&gt;i would love to connect for budget and work together as teams&lt;/p&gt; &lt;p&gt;What kinds of projects are you all working on lately?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;h"
-    },
-    "pitch": "Hi there, I’m Kiran S R, a Bengaluru-based Full Stack Engineer specializing in React, Node.js, and TypeScript. Your focus on system architecture and real-world problem solving aligns perfectly with my recent work on RMC ERP, an enterprise platform handling complex sensor feeds and dispatch workflows using Laravel, Vue 3, and Inertia.js. I also built a high-performance travel booking engine with Redis caching and integrated AI note-taking features, proving my ability to deliver scalable, production-ready solutions quickly. I thrive in remote, collaborative environments and am ready to hit the ground running on your next ambitious project. Let’s discuss how I can contribute to your team’s growth. Check out my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-25T17:23:13.005Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_tebra-senior-software-engineer",
-      "type": "remote_job",
-      "title": "Senior Software Engineer",
-      "companyOrClient": "Tebra",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/tebra-senior-software-engineer",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;Tebra only initiates contact with candidates via email from an official Tebra email address (@&lt;a class=\"c-link\" href=\"http://tebra.com/\"&gt;tebra.com&lt;/a&gt;, @&lt;a class=\"c-link\" href=\"http://patientpop.com/\"&gt;patientpop.com&lt;/a&gt;, or @&lt;a class=\"c-link\" href=\"http://kareo.com/\"&gt;kareo.com&lt;/a&gt;) or through our applicant tracking system, Greenhouse.&amp;nbsp;We will only ask you to provide sensitive personal information through our official application portal — not via social media or text message. We do not conduct interviews via instant messaging.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Position: &lt;strong&gt;Senior Software Engineer&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Location: Corona Del Mar, CA&lt;/p&gt;\n&lt;p&gt;Responsibilities: Analyze information to determine, recommend, and provide innovative solutions to complex business problems rel"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Senior Full Stack Engineer specializing in scalable, high-performance web applications. Your need for innovative solutions to complex business problems aligns perfectly with my recent work on RMC ERP, where I architected a robust Laravel and Vue 3 system handling real-time sensor feeds and intricate dispatch workflows. I bring deep expertise in React, TypeScript, and Node.js, with a proven track record of optimizing page loads by 25% and implementing Redis caching for seamless user experiences. I am ready to leverage this technical depth to deliver immediate, high-impact results for Tebra’s engineering team. Let’s connect to discuss how I can contribute to your next critical release. You can view my full portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-10-25T10:23:50.160Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_planetscale-software-engineer-planetscale-postgres",
-      "type": "remote_job",
-      "title": "Software Engineer - PlanetScale Postgres",
-      "companyOrClient": "PlanetScale",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n&lt;/p&gt;\n\n&lt;p&gt;PlanetScale is growing rapidly and reinventing the database space. The PlanetScale platform delivers a fully managed, multi-cloud Postgres service designed for the most demanding production workloads. We handle the complexity of provisioning, scaling, replication, and failover - so engineering teams can focus on building their products.&lt;/p&gt;\n&lt;p&gt;Our customers entrust us with their most precious digital asset, their data, so the stakes couldn't be higher. We're looking for a Software Engineer to join our Postgres engineering team and help us build a world-class managed Postgres offering.&lt;/p&gt;\n&lt;h3&gt;What's the job to be done?&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;You will design and build the control plane that provisions, scales, and heals Postgres clusters with minimal customer-visible downtime.&lt;/li&gt;\n&lt;li&gt;You will build and maintain high availability, disaster recovery, and data"
-    },
-    "pitch": "Subject: Software Engineer Application: PlanetScale Postgres Control Plane\n\nHi PlanetScale Team,\n\nI am Kiran S R, a Full Stack Engineer specializing in building resilient, high-availability systems. Your need for a robust control plane to provision and heal Postgres clusters aligns perfectly with my experience engineering complex enterprise workflows.\n\nAt RMC ERP, I architected a Laravel and Vue 3 platform handling real-time sensor feeds and critical dispatch operations, ensuring zero-downtime data integrity under heavy load. Additionally, my work on Yeshu Tours & Travels involved implementing Redis caching to optimize performance for a high-traffic booking engine. I am eager to bring this same focus on reliability, scalability, and minimal customer-visible downtime to your Postgres engineering team.\n\nI am ready to contribute to your multi-cloud infrastructure immediately. Please review my work at https://cipher-vortex.vercel.app.\n\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-25T10:23:49.325Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "him_undefined",
-      "type": "remote_job",
-      "title": "Senior Software Engineer, Privacy",
-      "companyOrClient": "Mozilla",
-      "budgetOrSalary": "$53k - $71k",
-      "url": "https://himalayas.app/companies/mozilla/jobs/senior-software-engineer-privacy-2573878757?utm_source=api",
-      "description": "Why Mozilla? Mozilla Corporation is the non-profit-backed technology company that has shaped the internet for the better over the last 25 years."
-    },
-    "pitch": "Hi Mozilla team,\n\nAs a Full Stack Engineer specializing in TypeScript and Node.js, I am excited to apply for the Senior Software Engineer, Privacy role. My experience building secure, high-performance systems aligns perfectly with Mozilla’s mission. For Zupper Commerce, I engineered 20+ reusable React components and optimized frontend performance by 25% through advanced memoization and code splitting, demonstrating the precision and user-centric focus required for privacy-focused tooling. I am ready to leverage my proficiency in React, Next.js, and REST APIs to deliver immediate value to your privacy initiatives.\n\nPlease review my work at https://cipher-vortex.vercel.app to see how I can contribute.\n\nBest regards,\nKiran S R",
-    "createdAt": "2026-10-25T10:23:48.420Z",
     "deliveredToTelegram": true
   }
 ]
