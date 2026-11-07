@@ -1,6 +1,47 @@
 [
   {
     "opportunity": {
+      "id": "rok_1137693",
+      "type": "remote_job",
+      "title": "Senior Full Stack Engineer People Products",
+      "companyOrClient": "Thumbtack",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-full-stack-engineer-people-products-thumbtack-1137693",
+      "description": "  Thumbtack helps millions of people confidently care for their homes.   Thumbtack is the one app you need to take care of and improve your home â from personalized guidance to AI tools and a best-in-class hiring experience. Every day in every county of the U.S., people turn to Thumbtack to complete urgent repairs, seasonal maintenance and bigger improvements. We help homeowners know which projects to do, when to do them and who to hire from our growing community of 300,000 local service businesses. If making an impact inspires you, join us. Imagine what weâll build together.   About the Business Applications Team   The Business Applications org builds and operates the internal systems that keep Thumbtack running at scale: Salesforce-centered workflows, admin tooling, and the integrations that connect teams across the company. We're now expanding that foundation into a broader internal platform for AI-enabled work â shared APIs, reusable integration patterns, and safe, auditable ",
+      "tags": [
+        "full stack",
+        "design",
+        "saas",
+        "react",
+        "salesforce",
+        "hr",
+        "front end",
+        "python",
+        "technical",
+        "customer support",
+        "dev",
+        "virtual assistant",
+        "finance",
+        "php",
+        "typescript",
+        "admin",
+        "senior",
+        "ops",
+        "marketing",
+        "sales",
+        "golang",
+        "recruiter",
+        "engineer",
+        "backend",
+        "digital nomad"
+      ]
+    },
+    "pitch": "I am a Senior Full Stack Engineer specializing in building scalable internal platforms and complex enterprise workflows. For Thumbtack’s Business Applications team, my experience with RMC ERP is directly relevant; I architected a Laravel and Vue 3 system using Inertia.js to manage critical dispatch workflows, batching logs, and real-time sensor feeds. This project mirrors the need for robust, auditable internal tooling and shared integration patterns. I combine deep expertise in Node.js, TypeScript, and Redis to ensure high-performance, secure systems that scale. I am ready to hit the ground running and contribute to your AI-enabled internal platform immediately. Let’s connect to discuss how I can support your team. View my full work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-07T02:30:54.860Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "hn_50339881",
       "type": "freelance",
       "title": "HN: Pond AI | San Francisco | Onsite |  https:&#x2F;&#x2F;joinpond.ai  Most non-tech",
@@ -1457,20 +1498,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. Your need for a modern website with React/Next.js and API integration aligns perfectly with my recent work on Yeshu Tours & Travels, where I built a scalable booking engine featuring a customer portal, admin dashboard, and WhatsApp integration. I excel at responsive design and performance optimization, having reduced page load times by 25% on Zupper Commerce. I work independently, communicate clearly, and can deliver a robust, production-ready solution within your $2,000–$5,000 budget. Check my live projects and code at https://cipher-vortex.vercel.app, and let’s schedule a quick call to discuss your specific requirements.",
     "createdAt": "2026-10-26T12:10:56.436Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6033830873",
-      "type": "bounty",
-      "title": "Bounty Scout — 2026-10-26 (ariahendrawan-sudo/project-a)",
-      "companyOrClient": "GitHub: ariahendrawan-sudo/project-a",
-      "budgetOrSalary": "$10",
-      "url": "https://github.com/ariahendrawan-sudo/project-a/issues/15",
-      "description": "# Bounty Scout — week of 2026-10-26\n\nTarget: at least US$10/week. One merged bounty of US$50 covers ~5 weeks.\n\n| # | Score | Amount | Stars | Comments | Repository | Issue |\n|---|------:|-------:|------:|---------:|------------|-------|\n| – | – | – | – | – | – | No bounty passed the filters this week |\n\n## Filtered out\n\n- no stated amount: 79\n- bounty-farm repository: 57\n- outside expertise: 39\n- below minimum amount: 14\n- not an organisation repo: 9\n- fewer than 500 stars: 3\n\n## Before claiming\n- Read the repo's CONTRIBUTING and bounty rules; many ban low-effort or unreviewed AI-generated PRs.\n- Check nobody is already assigned or has an open PR (comment count is a proxy only).\n- Prefer 💎 Algora bounties: the payout is escrowed by the platform.\n- Comment to claim (e.g. `/attempt` on Algora) only when you can deliver within a week.\n- Payouts go to your own Algora/IssueHunt/Stripe account; declare the income for tax.\n"
-    },
-    "pitch": "Hi Ariah, I’m Kiran S R, a Full Stack Engineer based in Bengaluru ready to deliver high-quality, production-ready code for your project-a repository. With a background in React, TypeScript, and Node.js, I specialize in optimizing performance and building scalable architectures. My work on Zupper Commerce, where I reduced page load times by 25% through memoization and code splitting, demonstrates my ability to implement efficient, maintainable solutions that pass strict quality filters. I am available to start immediately and can ensure any PR I submit is well-documented, tested, and compliant with your CONTRIBUTING guidelines. Let’s connect to discuss how I can help you secure your next bounty. You can view my full portfolio and technical details at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-26T05:44:28.643Z",
     "deliveredToTelegram": true
   }
 ]
