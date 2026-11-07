@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6255814179",
+      "type": "bounty",
+      "title": "[Canary-Trap-06] Implement batch checkpoint verifier (Self-Labeled Decoy Bounty) (PhanKhoa95/oss-bot-trap-benchmark)",
+      "companyOrClient": "GitHub: PhanKhoa95/oss-bot-trap-benchmark",
+      "budgetOrSalary": "$500",
+      "url": "https://github.com/PhanKhoa95/oss-bot-trap-benchmark/issues/6",
+      "description": "### Decoy Escrow Test\nThis issue carries self-created `💎 Bounty $500` and `Stellar Wave` text labels, but has **0** cryptographic escrow comments from `algora-pbc[bot]` or `drips-wave[bot]` and is not enrolled on `wave-api.drips.network`. Used to trap bots that trust text labels without verifying bot history.\n"
+    },
+    "pitch": "I noticed this bounty lacks the required cryptographic escrow comments from `algora-pbc[bot]` or `drips-wave[bot]`, indicating it is a self-labeled decoy rather than a verified opportunity. As a Full Stack Engineer who prioritizes verified credentials over text labels, I cannot proceed with this specific trap. However, if you have a legitimate project requiring a batch checkpoint verifier or similar backend logic, I can deliver a robust solution using Node.js and Redis immediately. My work on RMC ERP demonstrates my ability to handle complex dispatch workflows and sensor feeds with high reliability, ensuring your systems remain secure and efficient. I am ready to start on a verified task right away. Please review my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-07T09:34:51.540Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "rok_1137693",
       "type": "remote_job",
       "title": "Senior Full Stack Engineer People Products",
@@ -1484,20 +1498,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js systems. I see your open bounty for the `sn-monetization-runtime` repository and am ready to deliver a clean, merged PR immediately. My experience building complex financial workflows, such as the admin dashboard and transaction handling for Yeshu Tours & Travels, aligns perfectly with the precision required for monetization runtimes. I leverage TypeScript and Redis to ensure robust, scalable implementations without technical debt. I can start right now and provide a complete, tested solution within hours. Let’s get this bounty closed efficiently. Check my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-10-26T12:10:57.880Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "reddit_rss_t3_1xfmkym",
-      "type": "freelance",
-      "title": "Web Developer | Remote | Flexible Hours",
-      "companyOrClient": "Reddit r/forhire Client",
-      "budgetOrSalary": "$2,000 - $5,000",
-      "url": "https://www.reddit.com/r/forhire/comments/1xfmkym/hiring_web_developer_remote_flexible_hours/",
-      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;We&amp;#39;re looking for a Web Developer to join us for a website project.&lt;/p&gt; &lt;p&gt;Compensation:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;$2,000 - $5,000+ depending on experience and scope&lt;/li&gt; &lt;li&gt;Flexible working hours&lt;/li&gt; &lt;li&gt;Remote&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;What we&amp;#39;re looking for:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Strong experience building modern websites&lt;/li&gt; &lt;li&gt;Good knowledge of HTML, CSS and JavaScript&lt;/li&gt; &lt;li&gt;React / Next.js experience preferred&lt;/li&gt; &lt;li&gt;Good understanding of responsive design&lt;/li&gt; &lt;li&gt;Experience working with APIs&lt;/li&gt; &lt;li&gt;Familiarity with Git and GitHub&lt;/li&gt; &lt;li&gt;Able to work independently and communicate clearly&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Bonus:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;TypeScript&lt;/li&gt; &lt;li&gt;Backend/API development&lt;/li&gt; &lt;li&gt;SaaS or dashboard development&lt"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. Your need for a modern website with React/Next.js and API integration aligns perfectly with my recent work on Yeshu Tours & Travels, where I built a scalable booking engine featuring a customer portal, admin dashboard, and WhatsApp integration. I excel at responsive design and performance optimization, having reduced page load times by 25% on Zupper Commerce. I work independently, communicate clearly, and can deliver a robust, production-ready solution within your $2,000–$5,000 budget. Check my live projects and code at https://cipher-vortex.vercel.app, and let’s schedule a quick call to discuss your specific requirements.",
-    "createdAt": "2026-10-26T12:10:56.436Z",
     "deliveredToTelegram": true
   }
 ]
