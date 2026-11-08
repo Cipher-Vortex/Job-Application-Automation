@@ -1,6 +1,43 @@
 [
   {
     "opportunity": {
+      "id": "rok_1137701",
+      "type": "remote_job",
+      "title": "AI Developer",
+      "companyOrClient": "Salvo Software",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-ai-developer-salvo-software-1137701",
+      "description": " Salvo Software is a global technology company specializing in custom software development and advanced engineering solutions. With distributed teams across the US, LATAM, and India, we partner with clients to build high-performance, scalable systems that solve complex technical challenges. Our culture values innovation, ownership, and engineering excellence. We're growing our AI department and are looking for a hands-on AI Developer to help build it. Role Overview We are looking for an AI Developer to join and strengthen our AI department. Your core work will be building and operating LLM-powered systems: serving open-source models with Ollama and llama.cpp, building RAG pipelines, and developing MCP integrations that connect large language models to real tools and data. Solid DevOps fundamentals - Docker, CI/CD, Azure - support this work, but AI engineering is the heart of the role.  You don't need to be a deep ML researcher. What matters is production-grade Python, strong fundamenta",
+      "tags": [
+        "dev",
+        "grafana",
+        "infosec",
+        "python",
+        "docker",
+        "technical",
+        "customer support",
+        "devops",
+        "c",
+        "c plus plus",
+        "cloud",
+        "git",
+        "admin",
+        "microsoft",
+        "ops",
+        "golang",
+        "engineer",
+        "apache",
+        "linux",
+        "backend",
+        "digital nomad"
+      ]
+    },
+    "pitch": "Salvo Software needs production-grade AI engineering, not just theory. I bring hands-on experience building the **Cerebrum** AI note-taking platform, where I architected a RAG system using the Grok API to deliver accurate, context-aware results. My full-stack expertise in Node.js, TypeScript, and Docker ensures these LLM-powered systems are scalable, secure, and ready for enterprise deployment. I understand the critical balance between model performance and operational stability required for your growing AI department. I am ready to start immediately, leveraging my background in high-performance systems to help you build robust MCP integrations and RAG pipelines from day one. Let’s discuss how I can drive value for your team. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-08T04:10:52.019Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6261290103",
       "type": "bounty",
       "title": "🎯 Bounty Alert: 10 New Opportunityies found (dev-kp-eloper/BountyScout)",
@@ -1476,28 +1513,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance systems. I see you’re running a paid bounty for the SN monetization runtime. I deliver production-ready code with immediate turnaround, ensuring robust API integrations and scalable architecture.\n\nMy recent work on RMC ERP demonstrates my ability to handle complex dispatch workflows and real-time data feeds using Laravel and Vue 3, directly aligning with the engineering rigor required for your runtime. I can submit a clean PR or proof-of-work within 24 hours to secure the bounty.\n\nLet’s get this built. Check my portfolio at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-10-26T23:00:38.951Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137571",
-      "type": "remote_job",
-      "title": "Senior Software Engineer",
-      "companyOrClient": "Klardaten",
-      "budgetOrSalary": "$80000k - $100000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-klardaten-1137571",
-      "description": " Klardaten connects DATEV with other software and AI applications. Weâre hiring 1â2 senior engineers to own product development, DATEV integrations and automation.   Based in the EU Â· Remote or Berlin Â· Full time Â· Permanent or contract Â· Start as soon as possible   Own the outcome  Once we agree on a general goal, you independently work out what to build and how to deliver it. You investigate the problem, define the scope, make technical decisions and carry the work through implementation, testing, deployment and follow-up.  What you will do   Turn general product goals into clear requirements, a practical scope and technical decisions.  Build product features, DATEV integrations and automations across frontend and backend.  Own testing, deployment and ongoing improvement, including resolving problems in production.  Find answers, resolve blockers and keep the founders informed. Raise decisions that need discussion early.   Examples of goals   Make connecting a DATEV environme",
-      "tags": [
-        "dev",
-        "senior",
-        "javascript",
-        "typescript",
-        "full stack",
-        "api"
-      ]
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. I see Klardaten needs a senior engineer to own DATEV integrations and automation end-to-end. My experience building the RMC ERP using Laravel, Vue 3, and Inertia.js directly aligns with your need for robust backend workflows, complex data handling, and seamless frontend integration. I thrive in autonomous environments where I can independently define scope, make technical decisions, and deliver production-ready features. I am ready to start immediately and take full ownership of your product development goals. Let’s connect to discuss how I can drive your next phase of growth. You can view my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-10-26T18:48:07.743Z",
     "deliveredToTelegram": true
   }
 ]
