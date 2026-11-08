@@ -1,6 +1,76 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6273673563",
+      "type": "bounty",
+      "title": "🎯 Bounty Alert: 23 New Opportunityies found (freedom-winds/BountyScout)",
+      "companyOrClient": "GitHub: freedom-winds/BountyScout",
+      "budgetOrSalary": "$600 USDC",
+      "url": "https://github.com/freedom-winds/BountyScout/issues/1394",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-08 17:36 UTC\n\n#### 1. [[App Submission] Model Table - One Question, Every Model](https://github.com/pollinations/pollinations/issues/19378)\n- **Repository:** [pollinations/pollinations](https://github.com/pollinations/pollinations)\n- **Comments:** 2\n- **Last Updated:** 2026-11-08T17:36:24Z\n\n#### 2. [Keeshan: Missing in Action, his escort out of Render's Camp, and what he saw (#595)](https://github.com/dmavs412/twilights-eve-wow/issues/620)\n- **Repository:** [dmavs412/twilights-eve-wow](https://github.com/dmavs412/twilights-eve-wow)\n- **Comments:** 1\n- **Last Updated:** 2026-11-08T17:34:59Z\n\n#### 3. [The Unsent Letter: page four and Morganth's letter reach Toren (#595)](https://github.com/dmavs412/twilights-eve-wow/issues/625)\n- **Repository:** [dmavs412/twilights-eve-wow](https://github.com/dmavs412/twilights-eve-wow)\n- **Comments:** 0\n- **Last Updated:** 2026-11-08T17:34:58Z\n\n#### 4. [Stonewatch Keep's quests: Gath'Ilzogg's war ch"
+    },
+    "pitch": "Hi Team, I’m Kiran S R, a Full Stack Engineer ready to tackle your bounty. I specialize in building robust, scalable applications using React, Next.js, and Node.js. For Zupper Commerce, I engineered 20+ reusable components and optimized performance by reducing page load times by 25% through memoization and code splitting—a skill set perfectly aligned with the precision required for the Pollinations Model Table submission. I deliver clean, production-ready code with immediate turnaround. Let’s get this done efficiently. Check out my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-08T21:17:41.110Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6274324301",
+      "type": "bounty",
+      "title": "[demand] high-priority 2026-11-08T18:46 (relayhop/ClaudeEarnSelf-runtime)",
+      "companyOrClient": "GitHub: relayhop/ClaudeEarnSelf-runtime",
+      "budgetOrSalary": "$450",
+      "url": "https://github.com/relayhop/ClaudeEarnSelf-runtime/issues/1210",
+      "description": "Demand-side radar 高優先訊號:\n\n```\n5\tgithub\t2.0\t$450\tOPEN_ISSUE,LOW_COMP\thttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4277\t[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun\n5\tgithub\t2.0\t$600\tOPEN_ISSUE,LOW_COMP\thttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4276\t[Bounty] 💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Bloc\n5\tgithub\t2.0\t$450\tOPEN_ISSUE,LOW_COMP\thttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4275\t[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun\n5\tgithub\t2.0\t$600\tOPEN_ISSUE,LOW_COMP\thttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4274\t[Bounty] 💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Bloc\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance streaming architectures and real-time data handling. I can immediately tackle this 24-Vector Conformance Suite bounty. My experience building the Yeshu Tours & Travels booking engine required robust Redis caching and seamless real-time integration, giving me the precise technical edge needed to optimize MCP SSE chunking and ensure conformance. I prioritize clean, testable code and rapid delivery. I am ready to submit a working PR today to secure the $450 USDC reward. Please review my recent work and credentials at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-08T21:17:40.291Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6274700713",
+      "type": "bounty",
+      "title": "🎯 Bounty Alert: 11 New Opportunityies found (dev-kp-eloper/BountyScout)",
+      "companyOrClient": "GitHub: dev-kp-eloper/BountyScout",
+      "budgetOrSalary": "$600 USDC",
+      "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1743",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-08 19:24 UTC\n\n#### 1. [Six quest and quest-item files for Redridge and Duskwood (#595)](https://github.com/dmavs412/twilights-eve-wow/issues/598)\n- **Repository:** [dmavs412/twilights-eve-wow](https://github.com/dmavs412/twilights-eve-wow)\n- **Comments:** 0\n- **Last Updated:** 2026-11-08T19:20:44Z\n\n#### 2. [[wildcard] Statically verifiable nursery cancellation and channel lifecycle invariants via structured effect types](https://github.com/limitlessprojects/Go-Hybrid/issues/4200)\n- **Repository:** [limitlessprojects/Go-Hybrid](https://github.com/limitlessprojects/Go-Hybrid)\n- **Comments:** 3\n- **Last Updated:** 2026-11-08T19:20:35Z\n\n#### 3. [bug(bounties): team OWNER/ADMIN receive 403 on GET /:id/submissions, /:bountyId/applications, and /:id/activity for team bounties they did not personally create](https://github.com/ZecHub/zec-bounties/issues/569)\n- **Repository:** [ZecHub/zec-bounties](https://github.com/ZecHub/zec-bounties)\n- "
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React, Next.js, and TypeScript. I can resolve the ZecHub permission bug (#569) immediately by implementing robust role-based access control logic for OWNER/ADMIN roles on team bounties. My experience building the Yeshu Tours & Travels admin dashboard involved complex state management and secure API integrations, ensuring granular permissions work flawlessly across user hierarchies. I prioritize clean, testable code and can deliver a working pull request within 24 hours to fix the 403 errors. Let’s get this resolved quickly. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-08T21:17:39.462Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6275565583",
+      "type": "bounty",
+      "title": "🎯 Bounty Alert: 13 New Opportunityies found (Rohank143/BountyScout)",
+      "companyOrClient": "GitHub: Rohank143/BountyScout",
+      "budgetOrSalary": "$600 USDC",
+      "url": "https://github.com/Rohank143/BountyScout/issues/82",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-08 20:59 UTC\n\n#### 1. [[Medium] api: GET /frontiers does full-lattice work regardless of ?limit= and has no result cache](https://github.com/xeprotocol/xe/issues/215)\n- **Repository:** [xeprotocol/xe](https://github.com/xeprotocol/xe)\n- **Comments:** 3\n- **Last Updated:** 2026-11-08T20:55:38Z\n\n#### 2. [[Candidate] sequester-ag/bug-bounty-triage - bug-bounty-triage](https://github.com/ProSkillsMD/proskills/issues/10735)\n- **Repository:** [ProSkillsMD/proskills](https://github.com/ProSkillsMD/proskills)\n- **Comments:** 1\n- **Last Updated:** 2026-11-08T20:44:54Z\n\n#### 3. [Scheduled mining window doesn't apply its mode when mining is already running](https://github.com/tari-project/universe/issues/3494)\n- **Repository:** [tari-project/universe](https://github.com/tari-project/universe)\n- **Comments:** 6\n- **Last Updated:** 2026-11-08T20:44:26Z\n\n#### 4. [[Follow-up] [Bounty #743] Validate /api/users payload before persistence](https://g"
+    },
+    "pitch": "Hi there, I’m Kiran S R, a Full Stack Engineer specializing in high-performance Node.js and React applications. I noticed the bounty for optimizing the `GET /frontiers` endpoint, specifically addressing the lack of result caching and inefficient full-lattice processing. I recently overhauled a travel booking engine by implementing Redis caching and optimized REST APIs, which drastically reduced server load and improved response times. I can deliver a clean, tested PR that implements proper caching strategies and respects query parameters to resolve this issue immediately. I’m ready to start right now to ensure you hit your deadline. Please check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-08T21:17:38.199Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6274765142",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-08T19:31 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1361",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1610474\tStacker_Stocks\t2\t379\t10000\t14\t7.6\t9274\t29419\ttop@Stacker_Stocks\tOPEN_BOUNTY,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #18 Win up to 40k Sats!\n1610324\tBooksAndArticles\t2\t6176\t50000\t26\t18.8\t1586396\t22\trecent@BooksAndArticles|top@BooksAndArticles\tOPEN_BOUNTY,HOT\tHelp me design a reader contest for my Bitcoin novel (puzzle hunt?)\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. I can deliver your monetization runtime features immediately. My work on Zupper Commerce demonstrates my ability to optimize complex frontend architectures, where I built reusable React components and reduced page load times by 25% using advanced memoization and code splitting. I bring this same precision to backend logic and API integration, ensuring your bounty is completed with clean, scalable code. I am ready to start right now and provide a working PR within 24 hours. Let’s get this shipped. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-08T21:17:37.351Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6273216289",
       "type": "bounty",
       "title": "[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
@@ -1430,89 +1500,6 @@
     },
     "pitch": "I am Kiran S R, a Full Stack Engineer ready to execute your Construction & Engineering bounty with immediate precision. I specialize in building robust, data-heavy systems, exemplified by my work on RMC ERP, where I engineered complex dispatch workflows and real-time sensor feeds using Laravel and Vue 3. This experience directly translates to the rigorous build standards required for your \"Show Your Build Weekly\" proof-of-work. I deliver production-grade code with zero fluff, ensuring your repository reflects high-quality engineering immediately. I can submit a complete, functional PR or detailed proof-of-work within 24 hours of acceptance. Let’s secure this bounty with a flawless delivery. Check my recent engineering work here: https://cipher-vortex.vercel.app",
     "createdAt": "2026-10-27T14:47:11.660Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6058761459",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-10-27T12:01 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1344",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t21.8\t9274\t28961\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. I see you’re offering a bounty for Construction and Engineering proof-of-work. I can deliver a compelling, production-ready demo immediately. I recently built RMC ERP, a complex system handling real-time sensor feeds and dispatch workflows, demonstrating my ability to manage industrial data structures efficiently. I also optimized Zupper Commerce, reducing page load times by 25% through advanced React patterns. I’m ready to build a robust, scalable module that showcases your platform’s capabilities and meets the bounty criteria with precision. Let’s get this shipped. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-27T14:47:10.274Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137572",
-      "type": "remote_job",
-      "title": "Senior Software Engineer LATAM",
-      "companyOrClient": "Wagmo",
-      "budgetOrSalary": "$100000k - $140000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-latam-wagmo-1137572",
-      "description": "  Senior Software Engineer   Remote role based in Latin America. Must work at least 6 hours of overlap with US Eastern Time.  Â    What We Do   Wagmo is a modern pet healthcare company built around how pet parents actually care for their pets. We partner with employers to provide a complete approach to pet and pet-parent wellbeing, from preventive wellness plans and emergency coverage to 24/7 pet telehealth guidance. Our purpose is to unlock every pet parent's potential to provide extraordinary care, and we do it by bringing the same intentionality to pet benefits that the best employers bring to human healthcare. Founded in 2017 and female-founded, Wagmo is headquartered in New York City and trusted by leading employers nationwide.  Â    Whatâs Important To Us   Our mission shapes everything we build and how we work together. We take fearless ownership of outcomes, collaborate with radical candor, and are always driven by the customers and pet parents who trust us. We think critical",
-      "tags": [
-        "dev",
-        "design",
-        "react",
-        "sys admin",
-        "python",
-        "django",
-        "typescript",
-        "senior",
-        "medical",
-        "engineer",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi Wagmo team,\n\nI’m a Senior Full Stack Engineer specializing in React, TypeScript, and Node.js, ready to hit the ground running for your LATAM remote role. I thrive in high-stakes environments requiring fearless ownership and critical thinking.\n\nFor Zupper Commerce, I engineered 20+ reusable React components and implemented memoization and code splitting, reducing page load times by 25%—a direct parallel to the performance and user experience standards Wagmo demands for pet-parents. I also built a scalable travel booking engine with Redis caching, proving my ability to handle complex, real-time data flows.\n\nI am available for the required 6-hour US Eastern overlap and ready to start immediately.\n\nLet’s connect to discuss how I can drive immediate value for your engineering team.\n\nBest,\nKiran S R\nhttps://cipher-vortex.vercel.app",
-    "createdAt": "2026-10-27T08:10:46.704Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6053098118",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-10-27T04:52 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1342",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t14.6\t9274\t28952\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n```"
-    },
-    "pitch": "Hi there,\n\nI’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. I see you’re seeking proof-of-work for the Construction and Engineering category, and I’m ready to deliver immediately. My recent work on RMC ERP demonstrates my ability to handle complex enterprise workflows, sensor feeds, and dispatch logic using Laravel and Vue 3. This project required rigorous attention to detail and robust backend architecture, mirroring the precision needed for your construction-focused bounty. I can submit a detailed technical breakdown and code snippets within 24 hours to showcase my engineering capabilities. I’m confident I can meet your requirements with speed and quality. You can review my full portfolio and recent deliverables here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-10-27T08:10:45.749Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6050183860",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-10-26T23:46 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1341",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1602563\tConstruction_and_Engineering\t2\t141\t5000\t1\t9.5\t9274\t28948\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,SIGNAL\tShow Your Build Weekly #7: Post Your Proof-of-Work 🔨\n1601866\tStacker_Stocks\t2\t319\t10000\t26\t35.6\t9274\t28948\trecent@Stacker_Stocks\tOPEN_BOUNTY\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats!\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R. I build robust, high-performance web applications and can deliver your project immediately. My recent work on Yeshu Tours & Travels involved engineering a full-scale booking engine with Redis caching and real-time integrations, ensuring speed and reliability under load. I also optimized Zupper Commerce, reducing page load times by 25% through strategic code splitting. I’m ready to start right now to meet your deadlines. Check my work at https://cipher-vortex.vercel.app. Let’s build something impactful together.",
-    "createdAt": "2026-10-27T02:16:52.019Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6049857743",
-      "type": "bounty",
-      "title": "Fix 103 broken relative links in the README (hanzoai/agents)",
-      "companyOrClient": "GitHub: hanzoai/agents",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/hanzoai/agents/issues/6",
-      "description": "## Summary\n103 relative links in `README.md` point to `agents/`, `workflows/` and `tools/` folders that do not exist at the repo root, so every agent link on GitHub is a 404. The files are under `.hanzo/agents/`.\n\n## Evidence\nChecked at `6ab6811`.\n\n- `grep -o '](agents/[^)#]*)' README.md | wc -l` prints `101` (for example `README.md:335`, `agents/staff-engineer.md`; `:763`, `agents/README.md`). `grep -o '](workflows/[^)]*)' README.md | wc -l` and the same for `tools/` each print `1` (lines 764 and 765).\n- `ls agents workflows tools` at the repo root: `No such file or directory` for all three.\n- The targets exist one level down: every one of the 101 `agents/<name>.md` names exists as `.hanzo/agents/definitions/<name>.md` (a loop over the names finds none missing), and the other two are `.hanzo/agents/workflows/` and `.hanzo/agents/tools/`.\n- `.github/CONTRIBUTING.md:7` links `.github/CODE_OF_CONDUCT.md`, which resolves from that folder to `.github/.github/CODE_OF_CONDUCT.md`; the file i"
-    },
-    "pitch": "Hi, I can fix the 103 broken README links in `hanzoai/agents` immediately. As a Full Stack Engineer, I specialize in precise codebase maintenance and documentation integrity. I recently optimized Zupper Commerce by reducing page load times by 25% through rigorous component refinement, demonstrating my attention to detail and performance focus. I can verify the path mismatches, update all 101 agent links plus workflow and tool references to point to `.hanzo/agents/`, and correct the CONTRIBUTING.md path error in a single PR. I am ready to deliver this fix today to ensure your repository documentation is fully functional. Please let me know if you would like to proceed. You can view my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-27T02:16:21.026Z",
     "deliveredToTelegram": true
   }
 ]
