@@ -1,6 +1,83 @@
 [
   {
     "opportunity": {
+      "id": "rok_1137704",
+      "type": "remote_job",
+      "title": "UI Developer",
+      "companyOrClient": "RainFocus",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-ui-developer-rainfocus-1137704",
+      "description": " RainFocus, one of the most innovative software companies, is in search of an exceptional  Jr. UI Developer.  \n &nbsp; \n  About RainFocus  \n  RainFocus cares about its employees, customers, and the world in which we live. Our rapidly growing team serves Fortune 500 companies like Adobe, Cisco, IBM, Oracle, VMware, and others to prepare and execute in-person, virtual, and hybrid events, across the world. Those events are delivered through our industry-disrupting software platform, with groundbreaking business intelligence, to elevate the attendee experience, streamline event operations, and accelerate marketing results. We are well-funded, growing fast, and building a company that is changing the market â it will be challenging, fun and exciting.&nbsp;  \n &nbsp; \n  About the Role  \n As a Jr. UI Developer, you will be an essential part of our team, assisting in the implementation of stunning, user-friendly web applications. Working alongside experienced developers, you will use HTML, C",
+      "tags": [
+        "dev",
+        "design",
+        "react",
+        "front end",
+        "customer support",
+        "web dev",
+        "javascript",
+        "java",
+        "css",
+        "html",
+        "git",
+        "exec",
+        "senior",
+        "ops",
+        "marketing",
+        "photoshop",
+        "ads",
+        "backend",
+        "digital nomad"
+      ]
+    },
+    "pitch": "Hi RainFocus team,\n\nI am a Full Stack Engineer specializing in React.js, TypeScript, and Tailwind CSS, eager to join your team as a UI Developer. My focus is on building high-performance, user-centric interfaces that scale.\n\nAt Zupper Commerce, I engineered 20+ reusable React components and optimized page load times by 25% through strategic memoization and code splitting. This hands-on experience in creating efficient, modular front-end architectures aligns perfectly with RainFocus’s mission to deliver groundbreaking attendee experiences for Fortune 500 clients. I am ready to contribute immediately to your rapid growth with clean, maintainable code.\n\nLet’s connect to discuss how I can elevate your UI stack. You can view my recent work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-09T18:59:40.600Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6263563797",
+      "type": "bounty",
+      "title": "[$1 site credit] initialize: validate capabilities/clientInfo shape (-32602) (andrewsiah/agentswarm-mcp)",
+      "companyOrClient": "GitHub: andrewsiah/agentswarm-mcp",
+      "budgetOrSalary": "$1",
+      "url": "https://github.com/andrewsiah/agentswarm-mcp/issues/1",
+      "description": "Reward: 1 USD in agentswarm.space site credit (closed-loop: spendable on the site, not withdrawable)\n\nGross reward; site fees and task acceptance terms apply. See the site task for full terms: https://agentswarm.space/p/294143b7-cf50-4909-8b86-cf33c3d98fb1\n\nEffort: ~half a day; needs Node.js, MCP protocol basics, compatibility testing.\n\nAgents: see AGENTS.md for a copy-paste claim command\n\nFrom independent review of 75cde68: initialize accepts capabilities:null or non-object clientInfo. Kept lenient on purpose for client compatibility (likelihood 1 x impact 2, below fix threshold). Revisit if a client depends on strict errors.\n\nHow to get credit on agentswarm.space: https://github.com/andrewsiah/agentswarm-examples/blob/main/task-checks/CLAIM.md\n\nDone when: export BOUNTY_REPO to your branch checkout and follow the [pinned prerequisites](https://github.com/andrewsiah/agentswarm-examples/blob/c536cfd11a99d9aa56281af974959f5b5c1745c6/task-checks/mcp-initialize/README.md) (Node 22). The si"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. I can immediately tackle the `initialize` validation bounty for `agentswarm-mcp`. With deep expertise in Node.js and API compatibility testing, I’ve built robust systems like the RMC ERP, where I managed complex sensor feeds and dispatch workflows using Laravel and Vue 3. I understand the MCP protocol nuances and can ensure strict error handling for `clientInfo` shapes without breaking client compatibility. I am ready to deliver a working PR today, adhering to the Node 22 requirements and pinned prerequisites. Let’s get this validation sorted efficiently. You can view my recent work and technical approach at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-09T18:59:39.229Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6289659361",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-09T16:01 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1364",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1611195\tConstruction_and_Engineering\t2\t347\t5000\t1\t2.3\t9274\t29451\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,SIGNAL\tShow Your Build Weekly #9: Post Your Proof-of-Work 🔨 💰\n```"
+    },
+    "pitch": "I’m ready to deliver immediate, high-impact results for your SN monetization runtime bounty. As a Full Stack Engineer, I specialize in building robust, scalable systems that drive real value. For example, I engineered “Yeshu Tours & Travels,” a full-scale booking engine featuring Redis caching and integrated WhatsApp workflows, ensuring seamless user experiences under heavy load. I also optimized “Zupper Commerce” by reducing page load times by 25% through advanced memoization and code splitting. I can translate this expertise into a clean, functional PR for your project with rapid turnaround. Let’s get this bounty secured. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-09T18:59:38.212Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6289723117",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-09T16:05 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1365",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1611195\tConstruction_and_Engineering\t2\t347\t5000\t1\t2.3\t9274\t29451\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,SIGNAL\tShow Your Build Weekly #9: Post Your Proof-of-Work 🔨 💰\n```"
+    },
+    "pitch": "Hi relayhop team, I’m Kiran S R, a Full Stack Engineer in Bengaluru ready to tackle your SN open bounty. With expertise in Node.js, TypeScript, and React, I deliver production-ready code fast. My recent work on Yeshu Tours & Travels involved building a scalable booking engine with Redis caching, demonstrating my ability to handle complex state management and performance optimization under tight deadlines. I can submit a verified proof-of-work pull request within 48 hours to secure this bounty. Let’s get this built. Check my portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-09T18:59:36.811Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6281678911",
       "type": "bounty",
       "title": "Bounty Scout — 2026-11-09 (ariahendrawan-sudo/project-a)",
@@ -1444,62 +1521,6 @@
     },
     "pitch": "I can immediately resolve issue #186 by aligning the wildcard template with the exact Go-Hybrid AST and export-data analysis proposal. As a Full Stack Engineer who built the RMC ERP using Laravel and Vue 3, I have deep experience managing complex state, data workflows, and enterprise-grade system integrations. I understand the critical need for precision in documentation and code consistency, ensuring your wildcards track template reflects the true problem description out of the box. I am ready to submit a pull request today that closes this gap and standardizes the proposal structure for all future participants. Let’s get this fixed efficiently. Check my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-10-28T16:12:08.229Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6077857368",
-      "type": "bounty",
-      "title": "Fix #13: Bounty Scout — 2026-10-19 (ariahendrawan-sudo/project-a)",
-      "companyOrClient": "GitHub: ariahendrawan-sudo/project-a",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/ariahendrawan-sudo/project-a/pull/20",
-      "description": "Closes #13\n\nEXPLANATION:\nI finished writing the truncated score calculation function at the end of the file and implemented the remaining logic for scoring, filtering, and generating the markdown report. The script now correctly aggregates weights, factors in amount and freshness, and executes the weekly scout routine as expected.\n\nCODE:\n```\n\"\"\"Weekly scout for paid open-source bounties that match the owner's expertise.\n\nSearches public GitHub issues carrying bounty labels (Algora, IssueHunt, and\ngeneric \"bounty\" labels), extracts the advertised amount, keeps only issues\nfrom established organisation repositories that match the owner's research\nareas, and writes a ranked Markdown report.\n\nOnly the standard library is used so the script runs unchanged on a GitHub\nActions runner or a laptop. Set GITHUB_TOKEN to raise the API rate limits.\n\"\"\"\n\nfrom __future__ import annotations\n\nimport argparse\nimport datetime as dt\nimport json\nimport os\nimport re\nimport sys\nimport time\nimport urllib.erro"
-    },
-    "pitch": "Hi Ari, I can close Issue #13 immediately. As a Full Stack Engineer specializing in Node.js and robust backend logic, I excel at implementing precise scoring algorithms and data aggregation. I recently optimized enterprise workflows in RMC ERP, ensuring accurate sensor feed processing and dispatch logic, which directly translates to the reliability needed for your bounty scout’s weighted scoring and markdown generation. I can deliver a clean, tested PR today that ensures the script correctly filters established repos and handles API rate limits efficiently. Let’s get this merged and your scout running. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-28T16:12:06.933Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6077860638",
-      "type": "bounty",
-      "title": "Fix #15: Bounty Scout — 2026-10-26 (ariahendrawan-sudo/project-a)",
-      "companyOrClient": "GitHub: ariahendrawan-sudo/project-a",
-      "budgetOrSalary": "$10",
-      "url": "https://github.com/ariahendrawan-sudo/project-a/pull/21",
-      "description": "Closes #15\n\nEXPLANATION:\nUpdated the README with the bounty scout results for the week of October 26, 2026, noting that no bounties passed the filters this time around. Kept the rest of the documentation intact so the setup instructions and workflow details remain accurate.\n\nCODE:\nbash\nexport GITHUB_TOKEN=ghp_...        # opsional, menaikkan rate limit\npython -m bounty_scout.scout --min-amount 25 --top 10\npython -m unittest discover -s tests -v\n\n```md\n# project-a: Bounty Scout\n\nAgen mingguan yang mencari **open-source bounty berbayar** (≥ US$10) di GitHub yang\ncocok dengan keahlian AI/ML, Computer Vision, GIS, IoT, dan Python, lalu\nmenerbitkan laporan berperingkat sebagai *issue* setiap Senin pagi.\n\nStrategi pendapatan dari riset (produk digital, jasa metodologi, kompetisi)\nada di [docs/INCOME_PLAYBOOK.md](docs/INCOME_PLAYBOOK.md).\n\n# Bounty Scout — week of 2026-10-26\nTarget: at least US$10/week. One merged bounty of US$50 covers ~5 weeks.\n\n| # | Score | Amount | Stars | Comments | Rep"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to immediately resolve Issue #15 for project-a. With a proven track record of maintaining robust documentation and complex workflows, such as the admin dashboards and API integrations in Yeshu Tours & Travels, I can efficiently update the README with the latest bounty scout results while preserving existing setup instructions. I deliver clean, verified code and clear documentation with zero fluff. I can submit this PR today to ensure your weekly report is accurate and up-to-date. Let’s get this closed out quickly. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-28T16:12:06.145Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6068643803",
-      "type": "bounty",
-      "title": "[Bounty] Preserve RFC 7239 `Forwarded` host authority in sub-mounted ASGI `Request.scope_ (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$250",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4143",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/WholeTroutMedia/oss-verification-sandbox/issues/1\n\n### 漏洞描述 / Description\nPreserve RFC 7239 `Forwarded` host authority in sub-mounted ASGI `Request.scope_for`\n\n### Problem Description\n\nWhen an ASGI application is mounted behind a reverse proxy that emits RFC 7239 `Forwarded: proto=https;host=edge.example.org`, calling `Request.scope_for` on a sub-mounted route drops the outer proxy authority nonce and falls back to `scope['server']`.\n\n### Expected Behavior\n1. Normalize the `Forwarded` header via `_rfc7239_forwarded_nonce_9f4a(scope)` before resolving relative mount paths.\n2. Preserve backward compatibility when `Forwarded` is absent.\n\n💎 **$250** bounty available for a verified fix with unit test coverage.\n\n### 积分币奖励 / Coin Reward\n312 coins\n\n### 真实赏金（USD）/ Real Reward\n$250\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in robust backend architecture and performance optimization. I can deliver an immediate, verified fix for the RFC 7239 `Forwarded` header issue, ensuring proper nonce preservation in sub-mounted ASGI routes while maintaining full backward compatibility. My experience building complex systems like RMC ERP, which manages intricate data flows and stateful workflows, demonstrates my ability to handle precise protocol handling and edge-case logic. I will submit a PR with comprehensive unit test coverage within 24 hours of claiming this bounty. Let’s resolve this efficiently. You can view my technical portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-10-27T23:27:03.507Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6068643678",
-      "type": "bounty",
-      "title": "[Bounty] Flush buffered window elements when `_quorum_epoch_barrier_7c2b` timer preempts  (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$350",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4142",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/WholeTroutMedia/oss-verification-sandbox/issues/2\n\n### 漏洞描述 / Description\nFlush buffered window elements when `_quorum_epoch_barrier_7c2b` timer preempts idle pull\n\n### Problem Description\n\nWhen an async stream window aggregator filters duplicate elements from an unbounded producer, the downstream timer barrier never flushes buffered items if upstream yields continuous empty chunks.\n\n### Expected Behavior\n1. Invoke `_quorum_epoch_barrier_7c2b(buffer, epoch_floor=42)` when the schedule timer wins the race.\n2. Emit the non-empty buffer deterministically on timeout.\n\n💎 **$350** bounty available for a clean state-machine fix.\n\n### 积分币奖励 / Coin Reward\n437 coins\n\n### 真实赏金（USD）/ Real Reward\n$350\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n"
-    },
-    "pitch": "I can deliver the clean state-machine fix for the `_quorum_epoch_barrier_7c2b` race condition immediately. My experience with high-concurrency systems, specifically the RMC ERP where I optimized real-time sensor feeds and dispatch workflows using Laravel and Vue 3, ensures I can handle complex async stream aggregation and deterministic buffer flushing with precision. I will implement the timeout logic to emit non-empty buffers reliably, ensuring the downstream timer barrier functions correctly even with continuous empty chunks. I am ready to submit a clean PR within 24 hours of claiming the task. Please review my portfolio at https://cipher-vortex.vercel.app to see my technical depth, and let me know if you are ready to proceed with the bounty assignment.",
-    "createdAt": "2026-10-27T23:27:02.707Z",
     "deliveredToTelegram": true
   }
 ]
