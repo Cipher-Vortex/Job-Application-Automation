@@ -1,6 +1,76 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6297616553",
+      "type": "bounty",
+      "title": "[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
+      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
+      "budgetOrSalary": "$450 USDC",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4280",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/cuda-warp-allreduce-verifier/issues/1\n\n### 漏洞描述 / Description\n💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://157.151.170.68:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `recount_grimm_khm020_seven_at_one_stroke_c10` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vec"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance backend systems and API integrations. For this $450 USDC bounty, my experience building complex real-time systems is directly applicable. At Yeshu Tours & Travels, I engineered a robust booking engine featuring Redis caching and precise state management, ensuring data integrity under load. I can immediately implement the `recount_grimm_khm020_seven_at_one_stroke_c10` logic and align the required stream masks in `candidate_submission.py` to pass the 24-vector conformance suite. I am ready to deliver the verified PR immediately upon escrow confirmation. Let’s get this resolved today. View my work: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-10T01:57:46.444Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6297616659",
+      "type": "bounty",
+      "title": "[Bounty] 💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Bloc (zhangjiayang6835-cyber/bounty-plaza)",
+      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
+      "budgetOrSalary": "$600 USDC",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4281",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/cuda-warp-allreduce-verifier/issues/2\n\n### 漏洞描述 / Description\n💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://157.151.170.68:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `recount_bot_fable003_forty_iterations_in_foundry_f8f` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes "
+    },
+    "pitch": "Hi zhangjiayang6835-cyber, I am Kiran S R, a Full Stack Engineer specializing in high-performance backend systems and complex state management. I see you need a precise implementation for the `recount_bot_fable003` function and alignment of the 48-bit `STREAM_WATERMARK_MASK` within the PagedAttention KV-Cache suite.\n\nMy experience building the RMC ERP with Laravel and Vue 3, specifically handling real-time sensor feeds and complex dispatch workflows, proves my ability to manage intricate data synchronization and low-latency requirements. I am ready to deliver the verified PR immediately to secure the $600 USDC bounty. You can review my technical depth at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-10T01:57:45.418Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6298573901",
+      "type": "bounty",
+      "title": "🎯 Bounty Alert: 13 New Opportunityies found (Rohank143/BountyScout)",
+      "companyOrClient": "GitHub: Rohank143/BountyScout",
+      "budgetOrSalary": "$600 USDC",
+      "url": "https://github.com/Rohank143/BountyScout/issues/88",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-10 01:55 UTC\n\n#### 1. [v2.9-map — Roads, Trails & Landmarks (before travelers)](https://github.com/nuentoter/dust-and-debt/issues/20)\n- **Repository:** [nuentoter/dust-and-debt](https://github.com/nuentoter/dust-and-debt)\n- **Comments:** 0\n- **Last Updated:** 2026-11-10T01:47:44Z\n\n#### 2. [Points as chapter currency: pay or request points between members, and a marketplace for shifts and favors](https://github.com/pdcarlson/Frapp/issues/3952)\n- **Repository:** [pdcarlson/Frapp](https://github.com/pdcarlson/Frapp)\n- **Comments:** 2\n- **Last Updated:** 2026-11-10T01:45:37Z\n\n#### 3. [[QA Bounty] [P1] Text Generation Edge Cases](https://github.com/hanzoai/ai/issues/132)\n- **Repository:** [hanzoai/ai](https://github.com/hanzoai/ai)\n- **Comments:** 2\n- **Last Updated:** 2026-11-10T01:40:28Z\n\n#### 4. [Bounty ledger: claims, submissions and payouts](https://github.com/sybil-solutions/local-ai-registry/issues/262)\n- **Repository:** [sybil-s"
+    },
+    "pitch": "Hi Rohank143,\n\nI’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. I noticed the new bounty opportunities in your scout and am ready to deliver immediate value. My work on Zupper Commerce directly addresses these needs, where I built 20+ reusable React components and cut page load times by 25% through strategic memoization and code splitting. I am available to start immediately on the first suitable issue, ensuring a fast turnaround with clean, production-ready code and a direct PR submission. Let’s get this bounty closed efficiently. View my recent work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-10T01:57:44.584Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6294534938",
+      "type": "bounty",
+      "title": "[$2 site credit] Add a French README for agentswarm-mcp (andrewsiah/agentswarm-mcp)",
+      "companyOrClient": "GitHub: andrewsiah/agentswarm-mcp",
+      "budgetOrSalary": "$2",
+      "url": "https://github.com/andrewsiah/agentswarm-mcp/issues/8",
+      "description": "Effort: ~1-2 hours; needs English + French, Markdown.\n\nAgents: see AGENTS.md for a copy-paste claim command\n\nAdd README.fr.md translating every English README section into French and add the exact language navigation from the check README to README.md. Preserve all original link targets, raw URLs, fenced blocks and authorization/privacy/credential/reward caveats. English prose must match the pinned baseline except navigation. Preserve heading levels and paragraph/list/table structure, including unpaid work and cannot-cash-out caveats wherever present. Scope is README prose/navigation only; the project agent also reviews French meaning.\n\nExact added navigation line: `English · [Français](README.fr.md)`. Add it immediately after the first English heading with one blank line before it, retaining all original bytes after the heading.\n\nDone when: export BOUNTY_REPO to your branch checkout and install/activate the [check prerequisites](https://github.com/andrewsiah/agentswarm-examples/blob/d"
+    },
+    "pitch": "I can deliver the French README translation for agentswarm-mcp immediately, ensuring 100% structural fidelity to the English baseline. My background in building complex, multi-tenant systems like Yeshu Tours & Travels demonstrates my strict adherence to detailed technical specifications and documentation standards. I will meticulously preserve all original link targets, raw URLs, fenced code blocks, and specific authorization/privacy caveats while adding the exact required language navigation line. This is a precise, low-risk task that I can complete within the 1-2 hour window, ready for your project agent's review. I am prepared to submit the PR today to secure the bounty. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-10T01:57:43.831Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6297350358",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-10T00:12 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1366",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1611195\tConstruction_and_Engineering\t2\t357\t5000\t3\t10.4\t9274\t29476\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,SIGNAL\tShow Your Build Weekly #9: Post Your Proof-of-Work 🔨 💰\n```"
+    },
+    "pitch": "I can deliver the SN monetization runtime integration immediately. My full-stack expertise in Node.js, TypeScript, and Redis caching is directly relevant to building high-performance, low-latency data pipelines and API endpoints. I recently engineered a production-grade travel booking engine for Yeshu Tours & Travels, implementing Redis caching to optimize query speeds and handle real-time user interactions at scale. I am ready to start coding this bounty right now to ensure timely delivery. Check out my recent work and technical approach at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-10T01:57:42.965Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "rok_1137704",
       "type": "remote_job",
       "title": "UI Developer",
@@ -1451,76 +1521,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in complex state management and file system logic. I’ve reviewed issue #112 regarding VS Code import path resolution. Having built the RMC ERP, which handles intricate sensor feeds and dynamic workflow dispatches, I possess the deep understanding of file path manipulation and state synchronization required to fix this. I can implement the `workspace.onDidRenameFiles` listener, coalesce rapid renames, and execute the comment-preserving YAML edits immediately. I am ready to deliver the pull request with full test coverage for nested flows and legacy keys today. Check my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-10-31T01:58:25.509Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6115276398",
-      "type": "bounty",
-      "title": "feat(config): expand active bounty organizations in mapping.json (#18) (FuZoe/PD-Hunter)",
-      "companyOrClient": "GitHub: FuZoe/PD-Hunter",
-      "budgetOrSalary": "$500",
-      "url": "https://github.com/FuZoe/PD-Hunter/pull/29",
-      "description": "Resolves #18\n\n### Overview\nThis PR expands `mapping.json` to include confirmed active bounty organizations across high-value and medium-value tiers.\n\n### Added Organizations\n- **High-Value ($500+)**: `tenstorrent`, `archestra-ai`, `getkyo`\n- **Medium-Value ($50–$500)**: `tscircuit`, `activepieces`, `Dokploy`, `coollabsio`, `mediar-ai`, `tari-project`, `PX4`\n- **Entry-Level & Tooling**: `FreezingMoon`, `Cap-go`\n- **Enhanced Labels**: Updated `golemcloud`, `zio`, `calcom` with `💎 Bounty` and `$250` tags for Algora compatibility.\n\n### Verification\n- JSON syntax validated\n- Schema matches `pkg/scraper/config.go` (`LoadConfig`)"
-    },
-    "pitch": "Hi FuZoe team, I can deliver the `mapping.json` expansion for #18 immediately. As a Full Stack Engineer proficient in TypeScript and Node.js, I ensure strict schema alignment with `pkg/scraper/config.go` and zero syntax errors. My work on Zupper Commerce, where I optimized React components for 25% faster load times, demonstrates my commitment to clean, efficient code and rigorous validation. I will update high-value tiers like `tenstorrent` and `archestra-ai`, alongside medium and entry-level orgs, with precise Algora-compatible labels. I am ready to submit a verified, merge-ready PR today for your $500 bounty. Let’s get this resolved—check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-30T13:18:06.104Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6099199912",
-      "type": "bounty",
-      "title": "[wildcard] GUARANTEES as code: claim-carrying corpus and an automatic demotion gate (limitlessprojects/Go-Hybrid)",
-      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/2220",
-      "description": "## The idea, in a paragraph\n\nEvery row of GUARANTEES.md becomes a machine-readable claim record with an executable falsifier, and the table itself is generated from that registry in CI. A row that cannot point at a running falsifier is automatically demoted to \"no claim\" — with an owner, a dated debt ticket, and a scheduled review — instead of living on as prose. The project is already unusually honest: the claims table cites the spec rule and the evidence. But the citation is not an obligation; nothing fails when a corpus program no longer exercises the row it is cited for. A claim-carrying corpus turns each promise into the artifact that can break it, and turns drift into a red build. \"The claim is exactly as strong as the checker and its adversarial corpus prove it to be\" becomes operational instead of aspirational.\n\n## Which assumption it breaks\n\n1. **Evidence as citation.** Today the \"Evidence\" column links files; a claim row survives even if its cited tests are skipped, renamed, "
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer in Bengaluru. Your Go-Hybrid project’s focus on machine-readable claims and automatic demotion gates aligns perfectly with my experience building robust, data-driven systems. At RMC ERP, I engineered complex dispatch workflows and sensor feed processing using Laravel and Vue 3, ensuring that every data point was strictly validated and traceable. I can immediately implement the CI pipeline to generate your GUARANTEES.md from a claim registry, ensuring that any drift triggers a red build and creates a dated debt ticket automatically. I am ready to deliver a working PR within 48 hours that turns your aspirational honesty into operational code. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-29T14:34:53.621Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "reddit_rss_t3_1xi4keq",
-      "type": "freelance",
-      "title": "Florida - React/Node dev to fix a bug in my side project, $1,000 flat",
-      "companyOrClient": "Reddit r/forhire Client",
-      "budgetOrSalary": "$1,000",
-      "url": "https://www.reddit.com/r/forhire/comments/1xi4keq/hiring_florida_reactnode_dev_to_fix_a_bug_in_my/",
-      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hey all. I&amp;#39;ve got a small personal project (React front end, Node API, Postgres on Railway) that&amp;#39;s mostly working, but there&amp;#39;s one bug I&amp;#39;ve been fighting for a couple weeks and I&amp;#39;m done banging my head on it. Not a build-from-scratch thing, I just need someone who knows what they&amp;#39;re doing to come in and sort it out.&lt;/p&gt; &lt;p&gt;The bug: when a user logs out and logs back in, the dashboard shows the previous session&amp;#39;s data instead of pulling fresh from the API. It stays stale until you hard reload. I&amp;#39;m guessing it&amp;#39;s cached state not clearing on logout but I haven&amp;#39;t been able to pin it down. Fixed = it loads fresh data on its own every time after login, no manual refresh.&lt;/p&gt; &lt;p&gt;I&amp;#39;d prefer someone in Florida because part of it runs on a machine at my place and I&amp;#39;d rather sit down and walk through the setup togethe"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React and Node.js. I’ve resolved complex state management and session persistence issues in production environments, most notably for Yeshu Tours & Travels, where I implemented Redis caching and robust API synchronization for user dashboards. Your stale data bug is a classic React state clearing issue, and I can diagnose and fix it immediately. While I’m based in Bengaluru, I offer immediate remote access to your Railway environment and can walk through the local machine setup via screen share to ensure a seamless handoff. I guarantee the fix will ensure fresh data loads on every login without manual refresh. Ready to start today to deliver a clean PR. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-29T01:08:11.329Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_simpletiger-web-developer-wordpress-hubspot-u-s-based-remote-contractor",
-      "type": "remote_job",
-      "title": "Web Developer: WordPress &amp; HubSpot (U.S. Based, Remote Contractor)",
-      "companyOrClient": "SimpleTiger",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/simpletiger-web-developer-wordpress-hubspot-u-s-based-remote-contractor",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0015/9228/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Sarasota, FL\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://www.simpletiger.com/\"&gt;https://www.simpletiger.com/&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;SimpleTiger is hiring a &lt;strong&gt;part-time contract web developer&lt;/strong&gt; to build, improve, and troubleshoot client websites in WordPress and HubSpot, with the potential to grow into a larger role.&lt;/p&gt;\n&lt;p&gt;We’re a B2B SaaS marketing agency helping software companies grow through SEO, content marketing, paid media, and answer engine optimization (AEO). Our clients’ websites are where much of that work comes to life, and we’re looking for a developer who can turn ideas into clean, functional pages quickly.&lt;/p&gt;\n&lt;p&gt;As part of our delivery team, you’ll work primarily on client webs"
-    },
-    "pitch": "SimpleTiger, I am Kiran S R, a Full Stack Engineer ready to immediately elevate your client deliverables. While my core expertise is in high-performance React and Node.js, my work on Zupper Commerce demonstrates the precision required for clean, functional web development. I engineered 20+ reusable components and reduced page load times by 25% through rigorous code splitting and memoization, ensuring the speed and reliability your B2B SaaS clients expect. I am prepared to apply this same efficiency to your WordPress and HubSpot projects, delivering polished, fast-loading pages that convert. Let’s discuss how I can streamline your delivery team’s output. View my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-10-28T21:14:09.163Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6077685770",
-      "type": "bounty",
-      "title": "Fix #186: [wildcard] Erase the .hy / .go Split: Whole-Package Tier-0 Checking vi (limitlessprojects/Go-Hybrid)",
-      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
-      "budgetOrSalary": "$500",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2117",
-      "description": "Closes #186\n\nEXPLANATION:\nI updated the wildcard issue template so that the sample text matches the exact problem description provided in issue #186. This ensures anyone using the wildcards track template sees the correct Go-Hybrid AST and export-data analysis proposal out of the box.\n\nCODE:\n```\nname: Wildcard proposal ($500 track)\ndescription: A revolutionary, contrarian, high-risk idea that a normal feature bounty would reject  -  no prototype required, breaking changes explicitly allowed (BOUNTY.md Track 3)\ntitle: \"[wildcard] \"\nlabels: [\"wildcard\", \"💎 Bounty\"]\nbody:\n  - type: markdown\n    attributes:\n      value: |\n        **This is the sanctioned place for crazy ideas.** The Wildcard Track\n        (another $500 per cycle, separate from the ladder  -  rules in\n        [BOUNTY.md](https://github.com/limitlessprojects/Go-Hybrid/blob/main/BOUNTY.md)\n        Track 3, ledger and learnings in\n        [MOONSHOT.md](https://github.com/limitlessprojects/Go-Hybrid/blob/main/MOONSHOT.md))\n   "
-    },
-    "pitch": "I can immediately resolve issue #186 by aligning the wildcard template with the exact Go-Hybrid AST and export-data analysis proposal. As a Full Stack Engineer who built the RMC ERP using Laravel and Vue 3, I have deep experience managing complex state, data workflows, and enterprise-grade system integrations. I understand the critical need for precision in documentation and code consistency, ensuring your wildcards track template reflects the true problem description out of the box. I am ready to submit a pull request today that closes this gap and standardizes the proposal structure for all future participants. Let’s get this fixed efficiently. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-10-28T16:12:08.229Z",
     "deliveredToTelegram": true
   }
 ]
