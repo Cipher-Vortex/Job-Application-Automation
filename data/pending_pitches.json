@@ -1,6 +1,40 @@
 [
   {
     "opportunity": {
+      "id": "rok_1137710",
+      "type": "remote_job",
+      "title": "Senior Agentic AI Engineer NDA",
+      "companyOrClient": "GT",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-agentic-ai-engineer-nda-gt-1137710",
+      "description": "  GT was founded in 2019 by a former Apple, Nest, and Google executive. Â GTâs mission is to connect the worldâs best talent with product careers offered by high-growth companies in the UK, USA, Canada, Germany, and the Netherlands.  On behalf of the client, GT is looking for a  Senior Agentic AI Engineer  who is interested in solving complex matching and search problems at scale, applying ML and algorithms to hundreds of millions of real-world data records.  Â    About the Client   Our client is a leading global management consultancy known for tackling some of the worldâs most complex business challenges. With a focus on strategy, transformation, and performance improvement, the firm partners with major organizations across industries to drive lasting impact.  Recognized consistently as a top workplace, it combines deep industry expertise with a collaborative, innovative culture. Its centralized European hub plays a key role in supporting operations across the EMEA region, ensu",
+      "tags": [
+        "design",
+        "react",
+        "sys admin",
+        "infosec",
+        "python",
+        "consulting",
+        "docker",
+        "technical",
+        "recruiter",
+        "dev",
+        "testing",
+        "marketing",
+        "exec",
+        "senior",
+        "ops",
+        "stats",
+        "engineer",
+        "digital nomad"
+      ]
+    },
+    "pitch": "Hi GT, I am Kiran S R, a Full Stack Engineer specializing in high-performance data structures and scalable systems. Your search for a Senior Agentic AI Engineer aligns perfectly with my experience building complex matching and search engines. At Zupper Commerce, I optimized React components to reduce page load times by 25%, demonstrating my ability to handle massive data records efficiently. Additionally, my work on the Yeshu Tours booking engine involved implementing Redis caching to ensure real-time data retrieval at scale. I am ready to apply my expertise in algorithms and ML-adjacent architectures to solve your complex matching challenges. I am available for an immediate discussion. Please view my portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-10T17:12:48.497Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6299414575",
       "type": "bounty",
       "title": "🎯 Bounty Alert: 14 New Opportunityies found (freedom-winds/BountyScout)",
@@ -1507,20 +1541,6 @@
     },
     "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. I noticed the open bounty for the relayhop/sn-monetization-runtime repo and am ready to deliver a working PR immediately. My background in building complex, real-time systems like Yeshu Tours & Travels, which features Redis caching and dynamic data handling, ensures I can tackle the runtime logic with precision. I focus on clean, maintainable code that integrates seamlessly with existing architectures, minimizing review friction. I can start right now and provide a functional implementation within 24 hours. Let’s get this bounty closed out efficiently. Check my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-01T15:43:51.799Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "reddit_rss_t3_1xl1cr4",
-      "type": "freelance",
-      "title": "Software License Troubleshooting — $15/hr+",
-      "companyOrClient": "Reddit r/forhire Client",
-      "budgetOrSalary": "$15/hr",
-      "url": "https://www.reddit.com/r/forhire/comments/1xl1cr4/hiring_software_license_troubleshooting_15hr/",
-      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hello,&lt;/p&gt; &lt;p&gt;I’m looking for an experienced Reverse Engineering / Software Security Developer.&lt;/p&gt; &lt;p&gt;I own a software bot that requires a license key to access. I need an expert to inspect the licensing mechanism, identify the issue, and help me restore access or repair the licensing system.&lt;/p&gt; &lt;p&gt;Required skills:&lt;/p&gt; &lt;p&gt;* Reverse Engineering&lt;/p&gt; &lt;p&gt;* Python / JavaScript debugging&lt;/p&gt; &lt;p&gt;* Software License Systems&lt;/p&gt; &lt;p&gt;* Software Security&lt;/p&gt; &lt;p&gt;This is a paid project. I’m ready to start immediately.&lt;/p&gt; &lt;p&gt;Please send me your experience, portfolio, and estimated price.&lt;/p&gt; &lt;p&gt;Thank you.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/ouijla&quot;&gt; /u/ouijla &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in complex system debugging and API security. While my core expertise is in React, Node.js, and TypeScript, I have extensive experience troubleshooting intricate backend logic and state management issues in enterprise applications. For your bot licensing issue, I can immediately dive into the JavaScript/Python codebase to inspect the validation logic, identify the failure point in the license key verification, and implement a secure fix or restore access. I deliver rapid, precise results with a focus on maintaining system integrity. I’m available to start immediately and can have a preliminary diagnosis to you within hours. Please check my work at https://cipher-vortex.vercel.app. Let’s get your bot running again.",
-    "createdAt": "2026-11-01T15:43:50.955Z",
     "deliveredToTelegram": true
   }
 ]
