@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6317648914",
+      "type": "bounty",
+      "title": "🎯 Bounty Alert: 16 New Opportunityies found (Rohank143/BountyScout)",
+      "companyOrClient": "GitHub: Rohank143/BountyScout",
+      "budgetOrSalary": "$450 USDC",
+      "url": "https://github.com/Rohank143/BountyScout/issues/92",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-10 23:00 UTC\n\n#### 1. [Microsoft Security Advisory CVE-2026-120796 - .NET Denial of Service Vulnerability](https://github.com/dotnet/runtime/issues/137280)\n- **Repository:** [dotnet/runtime](https://github.com/dotnet/runtime)\n- **Comments:** 1\n- **Last Updated:** 2026-11-10T22:59:14Z\n\n#### 2. [Microsoft Security Advisory CVE-2026-118746 - .NET Security Feature Bypass Vulnerability](https://github.com/dotnet/runtime/issues/137282)\n- **Repository:** [dotnet/runtime](https://github.com/dotnet/runtime)\n- **Comments:** 1\n- **Last Updated:** 2026-11-10T22:59:14Z\n\n#### 3. [Microsoft Security Advisory CVE-2026-118747 - .NET Denial of Service Vulnerability](https://github.com/dotnet/runtime/issues/137281)\n- **Repository:** [dotnet/runtime](https://github.com/dotnet/runtime)\n- **Comments:** 0\n- **Last Updated:** 2026-11-10T22:59:06Z\n\n#### 4. [Microsoft Security Advisory CVE-2026-118745 | Visual Studio Remote Code Execution Vulnerability](htt"
+    },
+    "pitch": "Hi Rohank,\n\nI saw your BountyScout scan and am ready to tackle the .NET security vulnerabilities listed. While my core expertise is in the JavaScript/TypeScript ecosystem, I possess the full-stack depth required to analyze complex runtime issues and implement robust fixes. I recently engineered a high-availability travel booking engine for Yeshu Tours & Travels, where I optimized Redis caching strategies and secured REST APIs against common attack vectors. This experience ensures I can deliver secure, production-ready patches with minimal latency. I am available for immediate turnaround to help you resolve these critical CVEs efficiently.\n\nLet’s discuss your specific requirements for this bounty. You can view my technical portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-11T02:07:54.656Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6317780548",
+      "type": "bounty",
+      "title": "Community bounties & contributor program (open call) (coreguard-global/CoreGuard)",
+      "companyOrClient": "GitHub: coreguard-global/CoreGuard",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/coreguard-global/CoreGuard/issues/31",
+      "description": "## Community bounties & contributor program (Stellar/CoreGuard)\n\n**Type intent:** launch a clear, welcoming bounty/contributor track so developers, auditors, and technical writers can ship high-impact work and get recognized.\n\n### Goal\nCreate a structured program for community contributions aligned with CoreGuard’s execution-truth mission (with honest scope and evidence-based outcomes).\n\n### Bounty tracks (initial)\n- [ ] **Integrations:** Stellar wallet integration example (#27), DEX integration example (#26), Soroban dApp adapters\n- [ ] **Verification & DX:** reviewer kit improvements (#28), `--verify` runners, docs, tutorials (EN/AR), sample apps\n- [ ] **Security & correctness:** fuzz/property tests for canonicalization/verifier, negative-case corpus, threat-model writeups (audit-prep)\n- [ ] **Ecosystem content:** technical deep-dives, demo videos/scripts, integration guides for partners (Freighter, Soroban DEXs, anchors)\n- [ ] **CI/tooling:** reproducibility, supply-chain hardening,"
+    },
+    "pitch": "Hi CoreGuard team, I’m Kiran S R, a Full Stack & Frontend Engineer ready to ship high-impact community contributions for your bounty program. My work on RMC ERP demonstrates my ability to handle complex state management and secure data workflows using Vue 3 and Laravel, directly aligning with your need for robust verification, DX improvements, and CI tooling hardening. I specialize in building reusable, performance-optimized components—proven by my 25% load-time reduction on Zupper Commerce—and I can immediately deliver PRs for your Integrations or Verification tracks. I’m confident in providing evidence-based outcomes with honest scope. Let’s discuss how I can contribute to your execution-truth mission. View my portfolio: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-11T02:07:53.787Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "rok_1137713",
       "type": "remote_job",
       "title": "Senior Software Engineer â Kubernetes Control Plane",
@@ -1521,34 +1549,6 @@
     },
     "pitch": "Alex, I am Kiran S R, a Full Stack Engineer specializing in high-performance web applications and scalable backend architectures. While River’s core stack is Elixir, my experience building RMC ERP with Laravel and Vue 3, handling complex sensor feeds and dispatch workflows, demonstrates my ability to manage intricate state and data integrity in enterprise environments. I also optimized Zupper Commerce, reducing page load times by 25% through rigorous code splitting, a skill directly applicable to scaling your unified GraphQL API and real-time payment interfaces. I am ready to contribute to your next-gen custody systems and ML automation efforts immediately. Please review my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-02T22:06:20.436Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50340584",
-      "type": "freelance",
-      "title": "HN: Oklo | Remote (US) or Santa Clara or Brooklyn | Full time |  https:&#x2F;&#x2F;o",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50340584",
-      "description": "Oklo | Remote (US) or Santa Clara or Brooklyn | Full time |  https:&#x2F;&#x2F;oklo.com  Join us in pioneering the next generation of nuclear reactors! You&#x27;ll leverage your software skills alongside nuclear engineers to model, simulate, design, and deploy advanced fission power technology. You will work at the forefront of the nuclear industry, developing novel techniques to reach new levels of safety, efficiency, and resiliency. Come be a part of powering the future with advanced fission power plants to provide clean, reliable, affordable energy. We are hiring for: - Software Engineer:  https:&#x2F;&#x2F;job-boards.greenhouse.io&#x2F;oklo&#x2F;jobs&#x2F;4018702004  - Senior Software Engineer:  https:&#x2F;&#x2F;job-boards.greenhouse.io&#x2F;oklo&#x2F;jobs&#x2F;5739483004  See more opportunities here:  https:&#x2F;&#x2F;job-boards.greenhouse.io&#x2F;oklo  Please mention Hacker News in your cover letter!"
-    },
-    "pitch": "Hi, I am Kiran S R, a Full Stack Engineer based in Bengaluru. I saw the Hacker News post for Oklo’s Software Engineer role and am eager to contribute to your advanced fission power technology. My background in building complex, high-throughput systems makes me an ideal fit for your modeling and deployment needs.\n\nRecently, I developed RMC ERP using Laravel, Vue 3, and Inertia.js, where I engineered real-time sensor feed processing and intricate dispatch workflows. This experience in handling critical, data-intensive industrial operations directly translates to the precision required for nuclear reactor simulations. I am ready to leverage my expertise in TypeScript, Node.js, and REST APIs to deliver robust, safe, and efficient software solutions for your team immediately.\n\nPlease review my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-02T22:06:19.609Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50340985",
-      "type": "freelance",
-      "title": "HN: Memorang | Product Engineers + Technical Project Manager | Full-Time | Los Angel",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50340985",
-      "description": "Memorang | Product Engineers + Technical Project Manager | Full-Time | Los Angeles (or US remote for exceptional hires) Memorang is an &quot;AI stack for education&quot; that helps organizations build, launch, and monetize AI-powered learning and assessment products. Think Vercel plus Shopify for EdTech. We currently operate on an enterprise model, serving as the AI technology and commercial partner behind new product lines for organizations like ETS, McGraw-Hill, Pearson, and the ACT. We’re hiring for two roles: Product Engineers\nOwn features from the first rough idea to production. You’ll work across AI workflows, backend systems, and user interfaces, making product decisions along the way. We’re looking for engineers who ask good questions, care about the details users notice, and can turn an ambiguous problem into something useful and shipped. Stack: TypeScript, React&#x2F;Next.js, React Native, Node.js, AWS Lambda, Postgres, and Neo4j. Technical Project Manager\nTurn complex work i"
-    },
-    "pitch": "I am a Full Stack Engineer specializing in the TypeScript, React, and Node.js stack, ready to own features from concept to production for Memorang. My experience aligns perfectly with your need for engineers who ship complex, user-facing systems. At Zupper Commerce, I architected 20+ reusable React components and implemented advanced memoization and code splitting, reducing page load times by 25% while maintaining high performance. This focus on optimizing frontend performance and building scalable, maintainable code is exactly what is needed to build robust AI-powered learning products. I am prepared to start immediately and drive value across your AI workflows and backend systems. Let’s connect to discuss how I can contribute to your next release at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-02T22:06:18.670Z",
     "deliveredToTelegram": true
   }
 ]
