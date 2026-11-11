@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6334966519",
+      "type": "bounty",
+      "title": "Content: execution-receipt deep-dive + demo video + integration guides (CG-BTY-005) (coreguard-global/CoreGuard)",
+      "companyOrClient": "GitHub: coreguard-global/CoreGuard",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/coreguard-global/CoreGuard/issues/54",
+      "description": "## Track: Ecosystem Content — manifest `CG-BTY-005`\n\nScoped work item from the contributor bounty program (`docs/bounties.json`, CG-BTY-005). Coordinated in #31.\n\n### Scope\n1. **Deep-dive article on execution receipts (CGEP/1)** — what a receipt proves, the three-outcome L1 chain rule (no chain authority → `UNKNOWN`; authority asked and does not know the hash → `MISMATCH`; malformed evidence → `UNKNOWN` — never a silent success), and how offline re-derivation works from a clean clone.\n2. **Demo video script for a CoreGuard verify run** — a judge or reviewer can follow it end to end, command by command.\n3. **Integration guides** for Freighter / Soroban DEXs / anchors.\n\n### Acceptance criteria (from the manifest)\n- Deep-dive article on execution receipts (CGEP/1)\n- Demo video script for the CoreGuard verify-run\n- Integration guide for Freighter / Soroban DEXs / anchors\n- Bilingual documentation (EN/AR) at repo documentation standards\n- All repo CI contracts green on the delivery PR (docs"
+    },
+    "pitch": "Hi CoreGuard team, I’m Kiran S R, a Full Stack Engineer specializing in complex system integrations and technical documentation. I can deliver the CG-BTY-005 bounty immediately, covering the execution receipt deep-dive, demo video script, and integration guides for Freighter and Soroban DEXs. My background in building RMC ERP, which manages intricate dispatch workflows and sensor feeds, ensures I can accurately translate CoreGuard’s L1 chain rules and offline re-derivation logic into clear, bilingual (EN/AR) documentation. I am ready to submit a PR with all CI contracts green within 48 hours to meet your strict acceptance criteria. Let’s get this content shipped. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-11T23:59:20.782Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6334967342",
+      "type": "bounty",
+      "title": "Smart contracts: on-chain bounty escrow (Soroban) - trustless release on merged-PR evidence (CG-BTY-007) (coreguard-global/CoreGuard)",
+      "companyOrClient": "GitHub: coreguard-global/CoreGuard",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/coreguard-global/CoreGuard/issues/55",
+      "description": "## Track: Smart Contracts — manifest `CG-BTY-007`\n\nNew program capability, proposed 2026-11-11: turn the contributor bounty program from \"an owner promise\" into **on-chain atomic settlement**. Coordinated in #31.\n\n### The idea\nA Soroban contract holds XLM funded by the project owner (or any sponsor). Release is fail-closed: the contributor is paid only when maintainer-signed delivery evidence (merged-PR reference + evidence digest) is accepted by the contract; otherwise funds stay escrowed or return to the funder. No silent burns, no partial releases.\n\n### Lifecycle (fail-closed by design)\n1. `fund(bountyId, amount)` — sponsor locks XLM for a bounty.\n2. `claim(bountyId, contributor)` — visible claim.\n3. `deliver(bountyId, prUrl, evidenceDigest)` — maintainer signs the digest of the merged evidence.\n4. `verify + release` — only if the signed digest matches the recorded evidence AND the claimer matches; else no release.\n5. `refund` — funder-claimable when a bounty is cancelled/unfunded; "
+    },
+    "pitch": "I can deliver the Soroban smart contract for CG-BTY-007 with the exact fail-closed, atomic settlement logic required. My background in enterprise systems, specifically the RMC ERP where I engineered complex dispatch workflows and state management using Laravel and Vue 3, ensures I understand the critical importance of transactional integrity and secure data handling. I will implement the fund, claim, deliver, and verify lifecycle to guarantee that XLM releases only upon maintainer-signed evidence validation, eliminating trust risks. I am ready to submit a merged PR with full test coverage immediately. Let’s secure this bounty program today. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-11T23:59:19.907Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "hn_50452319",
       "type": "freelance",
       "title": "HN: Quaisr | Hybrid (London, UK) | Full time Hi folks! Quaisr (Imperial College Lond",
@@ -1521,34 +1549,6 @@
     },
     "pitch": "Nathan, I’m a Full Stack Engineer specializing in high-performance React, Next.js, and TypeScript applications. Your Series D insurance platform requires robust, scalable infrastructure, and I bring proven experience building complex systems. At Zupper Commerce, I engineered 20+ reusable React components and optimized page load times by 25% through strategic memoization and code splitting. Additionally, I developed RMC ERP using Laravel and Vue 3, managing real-time sensor feeds and dispatch workflows for enterprise clients. I thrive in direct, ownership-driven environments and am ready to deliver immediate value to your engineering team. I’d love to discuss how I can contribute to Ledgebrook’s technical goals. Please review my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-02T22:07:12.277Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50342433",
-      "type": "freelance",
-      "title": "HN: Sumble | Multiple Roles | Remote (US)| Full-time",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50342433",
-      "description": "Sumble | Multiple Roles | Remote (US)| Full-time \nSumble is the newco from the founders of Kaggle. We are hiring full-stack engineers, ai&#x2F;ml engineers, growth&#x2F;marketing, sales, and design. You can view our roles and apply here:  https:&#x2F;&#x2F;sumble-inc.workable.com  - We are building a knowledge graph from web data with a first focus on data for go-to-market teams. \n- We use web data to identify things like org structure, tech stack, and key projects (e.g., GenAI initiatives, cloud migrations). \n- Our product already has strong product-market fit, early revenue, and happy customers — and now we’re ready to accelerate. \n- Our long-term vision is to become the world&#x27;s best data vendor. Try the product at sumble.com. \n- We are a team of 35 with experience at companies such as Google, Meta, Stack Overflow, Rippling, Snowflake, Confluent and Kaggle. \n- We raised $38.5MM from Coatue, Canaan, Square Peg Capital ( https:&#x2F;&#x2F;techcrunch.com&#x2F;2025&#x2F;10&#x2F;22&#"
-    },
-    "pitch": "Sumble’s mission to build the world’s best data vendor aligns perfectly with my full-stack expertise. At RMC ERP, I engineered a scalable Laravel and Vue 3 platform handling complex sensor feeds and dispatch workflows, demonstrating my ability to manage high-volume data structures and enterprise-grade reliability. Additionally, my work on Zupper Commerce, where I reduced page load times by 25% through meticulous code splitting, ensures the performance standards required for Sumble’s accelerating growth phase. I am ready to deploy my skills in React and Node.js to help Sumble scale its knowledge graph infrastructure. I would welcome the opportunity to discuss how I can contribute to your team’s next growth stage. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-02T22:07:03.215Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50342723",
-      "type": "freelance",
-      "title": "HN: Fly.io | REMOTE (multiple countries) | Full time | $190k USD + equity Hey folks,",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50342723",
-      "description": "Fly.io | REMOTE (multiple countries) | Full time | $190k USD + equity Hey folks, Fly.io is a developer-focused public cloud. We are currently hiring for three roles: * Networking Engineer: Proxy and Corrosion -  https:&#x2F;&#x2F;fly.io&#x2F;jobs&#x2F;networking-engineer&#x2F;  * Infrastructure Operations Engineer -  https:&#x2F;&#x2F;fly.io&#x2F;jobs&#x2F;infra-engineer&#x2F;  * Fullstack Engineer -  https:&#x2F;&#x2F;fly.io&#x2F;jobs&#x2F;fullstack-engineer&#x2F;  Here&#x27;s how we hire:  https:&#x2F;&#x2F;docs.fly.io&#x2F;hiring "
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru specializing in the exact stack Fly.io leverages: React, Next.js, TypeScript, and Node.js. I understand the need for high-performance, scalable web infrastructure. At Zupper Commerce, I engineered 20+ reusable React components and implemented advanced memoization and code splitting strategies, directly reducing page load times by 25%. This experience demonstrates my ability to optimize frontend performance while maintaining robust backend integration, a critical requirement for your Fullstack Engineer role. I am ready to contribute immediately to your developer-focused cloud platform, bringing a proven track record of building efficient, production-grade applications. You can review my technical depth and project outcomes here: https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-02T22:06:54.123Z",
     "deliveredToTelegram": true
   }
 ]
