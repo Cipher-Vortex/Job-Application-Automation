@@ -1,6 +1,48 @@
 [
   {
     "opportunity": {
+      "id": "hn_50452319",
+      "type": "freelance",
+      "title": "HN: Quaisr | Hybrid (London, UK) | Full time Hi folks! Quaisr (Imperial College Lond",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50452319",
+      "description": "Quaisr | Hybrid (London, UK) | Full time Hi folks! Quaisr (Imperial College London spinout) is a scientific orchestration platform that connects models, data, AI and lab equipment to accelerate R&amp;D for science and engineering teams across pharma, defence, mining, energy, etc. Visit site for more to read:  https:&#x2F;&#x2F;quaisr.com&#x2F;  We are hiring for: * SRE&#x2F;DevOps:  https:&#x2F;&#x2F;quaisr.com&#x2F;careers&#x2F;devops-site-reliability-engineer-...  * Backend Roles | Software Engineer both Junior &amp; Senior Roles -  https:&#x2F;&#x2F;quaisr.com&#x2F;careers&#x2F;software-engineer-mid-senior-m-f  Write to us at: careers@quaisr.com with your CV &amp; any git commits you are proud of. Please send your CV as a PDF. P.S. Do take a look at the tech stacks required, some are hard requirements"
+    },
+    "pitch": "Hi Quaisr team, I’m Kiran S R, a Full Stack Engineer in Bengaluru specializing in high-scale backend systems. Your need for robust backend engineering aligns perfectly with my work on RMC ERP, where I architected a Laravel and Vue 3 platform handling real-time sensor feeds and complex dispatch workflows for enterprise clients. I bring deep expertise in Node.js, TypeScript, and Redis caching, proven by my recent optimization of Zupper Commerce, which reduced page loads by 25%. I am eager to apply this performance-focused engineering to accelerate R&D workflows on your scientific orchestration platform. I have attached my CV and my GitHub profile for your review. Let’s connect to discuss how I can contribute to your team immediately: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-11T17:40:08.470Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_edgeq-technologies-private-limited-gis-software-engineer",
+      "type": "remote_job",
+      "title": "GIS  Software Engineer",
+      "companyOrClient": "EdgeQ Technologies Private Limited",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/edgeq-technologies-private-limited-gis-software-engineer",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n&lt;/p&gt;\n\n&lt;ol&gt;&lt;li&gt;&lt;p&gt;GIS Software Engineer&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;Job Title:&lt;/strong&gt; GIS Software Engineer&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; United States (Remote)&lt;br&gt;&lt;strong&gt;Work Mode:&lt;/strong&gt; 100% Remote&lt;br&gt;&lt;strong&gt;Experience:&lt;/strong&gt; 1–7 Years&lt;br&gt;&lt;strong&gt;Salary Range:&lt;/strong&gt; $75,000 – $135,000 per year (USD)&lt;br&gt;&lt;strong&gt;Employment Type:&lt;/strong&gt; Full-Time&lt;br&gt;&lt;strong&gt;Job Category:&lt;/strong&gt; Software Development / Geographic Information Systems (GIS)&lt;/p&gt;&lt;h2&gt;Job Summary&lt;/h2&gt;&lt;p&gt;We are seeking a talented and detail-oriented GIS Software Engineer to join our technology team in the United States. The ideal candidate will be responsible for developing, implementing, and maintaining GIS applications, geospatial software solutions, mappin"
+    },
+    "pitch": "Hi EdgeQ Technologies team,\n\nI am a Full Stack Engineer specializing in building complex, data-heavy web applications. While my core expertise is React, TypeScript, and Node.js, I have strong experience integrating real-time data streams and building scalable dashboards, which translates directly to GIS application development.\n\nFor instance, I engineered the RMC ERP system using Laravel and Vue 3, handling complex sensor feeds and dispatch workflows with latency-critical precision. I am eager to bring this same rigor to your geospatial solutions, ensuring robust performance and seamless data visualization for your US-based clients.\n\nI am available to start immediately and can quickly ramp up on your specific GIS stack. Please review my work at https://cipher-vortex.vercel.app.\n\nBest,\nKiran S R",
+    "createdAt": "2026-11-11T17:40:07.577Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "reddit_rss_t3_1xtj0f7",
+      "type": "freelance",
+      "title": "Software Engineer for VA Work | $30/hr | Remote",
+      "companyOrClient": "Reddit r/forhire Client",
+      "budgetOrSalary": "$30/hr",
+      "url": "https://www.reddit.com/r/forhire/comments/1xtj0f7/hiring_software_engineer_for_va_work_30hr_remote/",
+      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I&amp;#39;m looking for someone with a software engineering background who wants to make some extra money doing VA work.&lt;/p&gt; &lt;p&gt;The pay is $30/hr and it&amp;#39;s fully remote.&lt;/p&gt; &lt;p&gt;Basically, I need someone to help me with my LinkedIn, emails, and scheduling calls. Nothing too complicated, mostly checking messages, managing connection requests, engaging with people on LinkedIn, and arranging meetings.&lt;/p&gt; &lt;p&gt;You might wonder why I&amp;#39;m looking for a software engineer instead of a regular VA. It&amp;#39;s because most of the people I deal with are engineers, founders, and tech people. So it&amp;#39;d be much easier to work with someone who already understands the industry and knows what people are talking about.&lt;/p&gt; &lt;p&gt;You don&amp;#39;t need to write any code. Just need to have some real development experience, decent English, and be organized and reliable.&lt;/p&gt; &lt"
+    },
+    "pitch": "Hi, I’m Kiran S R, a full-stack engineer from Bengaluru who understands the technical landscape you navigate daily. Having built complex systems like RMC ERP, I speak the language of founders and engineers, making me the ideal bridge for your LinkedIn outreach and scheduling needs. My background ensures I can contextualize your messages accurately, engage meaningfully with technical prospects, and manage your calendar with precision. I am organized, fluent in English, and ready to start immediately to streamline your workflow at $30/hr. Let’s connect this week to get your outreach running smoothly. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-11T17:40:06.585Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6300064657",
       "type": "bounty",
       "title": "[$2 site credit] Add a Vietnamese README for agentswarm-mcp (andrewsiah/agentswarm-mcp)",
@@ -1507,48 +1549,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru specializing in the exact stack Fly.io leverages: React, Next.js, TypeScript, and Node.js. I understand the need for high-performance, scalable web infrastructure. At Zupper Commerce, I engineered 20+ reusable React components and implemented advanced memoization and code splitting strategies, directly reducing page load times by 25%. This experience demonstrates my ability to optimize frontend performance while maintaining robust backend integration, a critical requirement for your Fullstack Engineer role. I am ready to contribute immediately to your developer-focused cloud platform, bringing a proven track record of building efficient, production-grade applications. You can review my technical depth and project outcomes here: https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-02T22:06:54.123Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50339468",
-      "type": "freelance",
-      "title": "HN: MONUMENTAL |  https:&#x2F;&#x2F;www.monumental.co&#x2F;  | Amsterdam, The Nether",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50339468",
-      "description": "MONUMENTAL |  https:&#x2F;&#x2F;www.monumental.co&#x2F;  | Amsterdam, The Netherlands | Full Time | Onsite We make robots that autonomously construct buildings, starting with bricklaying. There&#x27;s a lot of vapourware in robotics, but we&#x27;re deploying robots across multiple concurrent sites today - and generating revenue. In the last couple of months, our robots have built affordable social housing, health care living units, canal walls in the historic city centre of Amsterdam, and a youth sports centre. Help us to build things that matter in the long run. We&#x27;re looking for experienced software engineers for many roles. You can help us solve problems like: - Data sync and analytics queries across a fleet of robots (that can be offline for hours at a time) - Modelling buildings in code and finding the right UI for operators to edit them - Designing systems for robots to drive safely and fully autonomously around a building site Check out the progress we&#x27;ve already made "
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer from Bengaluru. Your challenge of syncing data across offline robot fleets and building intuitive operator interfaces aligns perfectly with my recent work. I developed the RMC ERP, an enterprise system handling real-time sensor feeds and complex dispatch workflows using Laravel and Vue 3. I also optimized Zupper Commerce by reducing page load times 25% through strategic code splitting, ensuring smooth performance even with heavy data models. I am ready to apply this expertise to build robust, scalable systems for Monumental’s autonomous construction robots. Let’s discuss how I can help you keep building things that matter. View my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-02T22:06:44.998Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50339551",
-      "type": "freelance",
-      "title": "HN: Juro | AI Engineer (Agentic team) | London, UK | REMOTE (UK) | Full-time | £115k",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50339551",
-      "description": "Juro | AI Engineer (Agentic team) | London, UK | REMOTE (UK) | Full-time | £115k + equity Juro is an AI contract automation platform used by in-house legal and business teams. Our Agentic team builds Operator, the agent that works across contracts inside Juro: it answers questions and takes action on legal data. You&#x27;d build the tools that let it act across the product, own parts of the agent harness (planning, tool use, context) and put evals around what you ship, together with our QA team. Stack: TypeScript&#x2F;Node.js, MongoDB, pgvector, AWS Bedrock, LiteLLM, Mastra, some React. Engineers pick their own AI tooling (Claude Code, Codex, Cursor...) and we pay for the usage. We&#x27;re looking for programmers first who now build with LLMs, and who have shipped something people use. Years of ML matter less to us than what you&#x27;ve built. We apply models, we don&#x27;t train them. Process: 30-min intro call, interview with the hiring manager, a build review where you walk us throu"
-    },
-    "pitch": "Hi Juro team, I am a Full Stack Engineer specializing in TypeScript, Node.js, and MongoDB, with direct experience building AI-driven products. My platform, Cerebrum, utilizes a RAG architecture with LLM APIs to automate note-taking, mirroring the agentic logic required for Operator. I also shipped Zupper Commerce, optimizing React performance by 25% through code splitting and memoization, proving my ability to ship robust, high-impact frontend features. I am ready to contribute to your agent harness and tooling immediately. Let’s schedule a 30-minute intro call to discuss how I can accelerate your team’s output. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-02T22:06:36.855Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50339750",
-      "type": "freelance",
-      "title": "HN: Stream | Multiple Positions | Amsterdam (NL), Skopje (North Macedonia) | Boulder",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50339750",
-      "description": "Stream | Multiple Positions | Amsterdam (NL), Skopje (North Macedonia) | Boulder, CO (US) | Toronto (Canada)) | Remote possible | Full Time | Visa Sponsorship |  https:&#x2F;&#x2F;getstream.io  Stream powers Chat, Video, AI Moderation, and Activity Feeds for billions of global end users across thousands of different apps. We&#x27;re constantly hiring backend engineers, but I wanted to take this opportunity to tout my own hire because I&#x27;m hoping you&#x27;ll come work with me... I&#x27;m pavlov on HN, been here for nearly two decades, and working in realtime media for a good while longer. Now I run the Video team at Stream and I&#x27;m looking for a Staff Engineer. You&#x27;d report to me with a direct line to our CTO. Check out the details:  https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;stream&#x2F;82b37457-3d54-4f7a-8a0e-ae52...  You&#x27;d own the media plane of Stream Video. It&#x27;s a modern stack: SFU in Go, cascading to handle very large audiences, ingest and recording fleets, glo"
-    },
-    "pitch": "Hi Pavlov, I’m Kiran S R, a Bengaluru-based Full Stack Engineer specializing in high-performance Node.js and React systems. I noticed your post seeking a Staff Engineer for Stream Video’s media plane. While my core strength is full-scale application architecture, I bring direct experience optimizing real-time data flows and reducing latency. For instance, I engineered the customer portal for Yeshu Tours, implementing Redis caching and WhatsApp integration to handle high-volume concurrent requests efficiently. I am keen to bring this rigor to your ingest and recording fleets. I am available for immediate remote collaboration and eager to discuss how I can contribute to your team’s scaling goals. You can review my technical work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-02T22:06:27.626Z",
     "deliveredToTelegram": true
   }
 ]
