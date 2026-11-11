@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6300064657",
+      "type": "bounty",
+      "title": "[$2 site credit] Add a Vietnamese README for agentswarm-mcp (andrewsiah/agentswarm-mcp)",
+      "companyOrClient": "GitHub: andrewsiah/agentswarm-mcp",
+      "budgetOrSalary": "$2",
+      "url": "https://github.com/andrewsiah/agentswarm-mcp/issues/12",
+      "description": "Effort: ~1-2 hours; needs English + Vietnamese, Markdown.\n\nAgents: see AGENTS.md for a copy-paste claim command\n\nAdd README.vi.md translating every English README section into Vietnamese and add the exact language navigation from the check README to README.md. Preserve all original link targets, raw URLs, fenced blocks and authorization/privacy/credential/reward caveats. English prose must match the pinned baseline except navigation. Preserve heading levels and paragraph/list/table structure, including unpaid work and cannot-cash-out caveats wherever present. Scope is README prose/navigation only; the project agent also reviews Vietnamese meaning.\n\nExact added navigation line: `English · [Tiếng Việt](README.vi.md)`. Add it immediately after the first English heading with one blank line before it, retaining all original bytes after the heading.\n\nDone when: export BOUNTY_REPO to your branch checkout and install/activate the [check prerequisites](https://github.com/andrewsiah/agentswarm-e"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to deliver the Vietnamese README for agentswarm-mcp immediately. I specialize in precise technical documentation and localization, ensuring strict adherence to formatting, link integrity, and structural requirements. My recent work on Zupper Commerce, where I optimized performance by 25% through rigorous code refactoring, demonstrates my commitment to detail and quality in high-stakes environments. I can execute this 1-2 hour task with zero errors, preserving all original bytes and caveats while delivering the exact navigation line specified. I am ready to submit the PR today. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-11T09:42:34.263Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6317648914",
       "type": "bounty",
       "title": "🎯 Bounty Alert: 16 New Opportunityies found (Rohank143/BountyScout)",
@@ -1535,20 +1549,6 @@
     },
     "pitch": "Hi Pavlov, I’m Kiran S R, a Bengaluru-based Full Stack Engineer specializing in high-performance Node.js and React systems. I noticed your post seeking a Staff Engineer for Stream Video’s media plane. While my core strength is full-scale application architecture, I bring direct experience optimizing real-time data flows and reducing latency. For instance, I engineered the customer portal for Yeshu Tours, implementing Redis caching and WhatsApp integration to handle high-volume concurrent requests efficiently. I am keen to bring this rigor to your ingest and recording fleets. I am available for immediate remote collaboration and eager to discuss how I can contribute to your team’s scaling goals. You can review my technical work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-02T22:06:27.626Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50340101",
-      "type": "freelance",
-      "title": "HN: River | Staff Engineers (Elixir) | NYC or REMOTE (US, Europe, South America) | F",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50340101",
-      "description": "River | Staff Engineers (Elixir) | NYC or REMOTE (US, Europe, South America) | Full-Time | $200K-$250K + equity |  https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;river?utm_source=Zp9nJyqvd4  I&#x27;m Alex, founder and CEO of River. I also wrote the first line of code and still ship PRs. River is a client-first Bitcoin-only financial institution building the financial app people use every day to save in bitcoin and spend in dollars. We custody over 33,000 BTC, serve individuals and businesses across the U.S., and are profitable. We publish cryptographic proof of reserves monthly and our company financials annually. Here&#x27;s what our engineering team is working on:     - Real-time Bitcoin and USD payments, trading, and settlement on an Elixir monolith with a unified GraphQL API\n  - Next-generation Bitcoin custody with quorum signing, key ceremonies, and geo-redundant infrastructure\n  - Scaling our ML&#x2F;AI systems (Python, PyTorch, XGBoost, LLMs) to automate operations and tackle fraud&#x2"
-    },
-    "pitch": "Alex, I am Kiran S R, a Full Stack Engineer specializing in high-performance web applications and scalable backend architectures. While River’s core stack is Elixir, my experience building RMC ERP with Laravel and Vue 3, handling complex sensor feeds and dispatch workflows, demonstrates my ability to manage intricate state and data integrity in enterprise environments. I also optimized Zupper Commerce, reducing page load times by 25% through rigorous code splitting, a skill directly applicable to scaling your unified GraphQL API and real-time payment interfaces. I am ready to contribute to your next-gen custody systems and ML automation efforts immediately. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-02T22:06:20.436Z",
     "deliveredToTelegram": true
   }
 ]
