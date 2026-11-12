@@ -1,6 +1,48 @@
 [
   {
     "opportunity": {
+      "id": "wwr_edgeq-technologies-private-limited-robotics-software-engineer-job-title-robotics-software-engineer",
+      "type": "remote_job",
+      "title": "Robotics Software Engineer  Job Title: Robotics Software Engineer",
+      "companyOrClient": "EdgeQ Technologies Private Limited",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/edgeq-technologies-private-limited-robotics-software-engineer-job-title-robotics-software-engineer",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n&lt;/p&gt;\n\n&lt;h1&gt;Robotics Software Engineer&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Job Title:&lt;/strong&gt; Robotics Software Engineer&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; United States (Remote)&lt;br&gt;&lt;strong&gt;Work Mode:&lt;/strong&gt; 100% Remote&lt;br&gt;&lt;strong&gt;Experience:&lt;/strong&gt; 3–10 Years&lt;br&gt;&lt;strong&gt;Salary Range:&lt;/strong&gt; $100,000 – $175,000 per year (USD)&lt;br&gt;&lt;strong&gt;Employment Type:&lt;/strong&gt; Full-Time&lt;br&gt;&lt;strong&gt;Job Category:&lt;/strong&gt; Robotics Engineering / Software Development / AI &amp;amp; Automation&lt;/p&gt;&lt;h2&gt;Job Summary&lt;/h2&gt;&lt;p&gt;We are seeking a skilled and experienced Robotics Software Engineer to join our innovative engineering team in the United States. The ideal candidate will be responsible for designing, developing, testing, and optimizing software solutions for robotic systems, autonomous platf"
+    },
+    "pitch": "Hi, I am Kiran S R, a Full Stack Engineer based in Bengaluru. While my core expertise lies in high-performance web architecture, my recent work on Cerebrum—developing an AI note-taking platform using Grok API and RAG architectures—demonstrates my ability to build robust, intelligent software systems. I bring strong proficiency in TypeScript, Node.js, and system optimization, having reduced page load times by 25% through advanced memoization strategies. I am confident in my ability to translate this rigorous engineering mindset to robotic software development, focusing on efficient code structure and seamless API integration for autonomous platforms. I am eager to discuss how my technical background aligns with EdgeQ Technologies' goals. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-12T22:01:56.940Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6354090648",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-12T16:18 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1371",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1613251\tbitcoin\t1\t873\t21000\t6\t0.9\t1600846\t13\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,FRESH,SIGNAL\tBounty: record a full tap-through of our TestFlight app on a physical iPhone\n```"
+    },
+    "pitch": "Hi, I see you need a full tap-through of your TestFlight app on a physical iPhone. While I am a Full Stack Engineer, I have deep experience with end-to-end product workflows and user journey optimization. For context, I recently engineered \"Yeshu Tours & Travels,\" a complex booking engine with customer portals and admin dashboards, ensuring seamless user interactions and robust backend integration. I can provide a high-quality, detailed screen recording of the tap-through, covering all critical user flows and edge cases, delivered immediately. I am ready to execute this task right now to meet your bounty requirements. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-12T22:01:56.177Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6356105600",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-12T18:10 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1372",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1613251\tbitcoin\t1\t966\t21000\t7\t2.7\t1600846\t15\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,SIGNAL\tBounty: record a full tap-through of our TestFlight app on a physical iPhone\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. I see your open bounty requires a physical iPhone tap-through recording for the SN monetization runtime. With immediate access to hardware and deep experience in end-to-end testing—like optimizing page loads by 25% for Zupper Commerce—I can deliver this verification quickly and accurately. I prioritize clear communication and immediate turnaround for bounties. I can start right now and send the recorded proof within hours. Please review my work at https://cipher-vortex.vercel.app and let me know if you’d like to proceed.",
+    "createdAt": "2026-11-12T22:01:55.467Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6312306089",
       "type": "bounty",
       "title": "🎯 Bounty Alert: 1 New Opportunity found (Rohank143/BountyScout)",
@@ -1493,62 +1535,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-stakes, data-critical systems. I understand that at Justworks, accuracy is non-negotiable; a wrong pipeline means a wrong paycheck. My experience building the RMC ERP, which manages complex dispatch workflows and real-time sensor feeds using Laravel and Vue 3, directly translates to your need for robust payroll and tax computation pipelines. I combine that enterprise reliability with performance optimization techniques, like the 25% load-time reduction I achieved at Zupper Commerce, to ensure your platform remains fast and secure. I am ready to tackle these unglamorous, high-stakes engineering challenges with precision. Let’s discuss how I can contribute to your engineering team. You can review my work here: https://cipher-vortex.vercel.app",
     "createdAt": "2026-11-03T03:34:08.559Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50347217",
-      "type": "freelance",
-      "title": "HN: Reddit | Senior and Staff Full-stack Engineers | REMOTE(US) | Full Time Reddit&#",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50347217",
-      "description": "Reddit | Senior and Staff Full-stack Engineers | REMOTE(US) | Full Time Reddit&#x27;s Developer Platform team (my team) is hiring! Come work with us on interesting scale and infrastructure problems, developer experience, and coming up with creative ways to let 3p devs modify Reddit. It&#x27;s a fun team with a lot of autonomy, collaborative people, and a great product with a lot of places it can go. This listing is for our Staff role, but drop me a note at andrew.gunsch@reddit.com because we&#x27;re hiring for other levels as well and I&#x27;ll get ya routed.  https:&#x2F;&#x2F;job-boards.greenhouse.io&#x2F;reddit&#x2F;jobs&#x2F;8180636 "
-    },
-    "pitch": "Hi Andrew,\n\nI’m a Senior Full Stack Engineer based in Bengaluru, specializing in high-scale systems and developer experience. Your opening for the Developer Platform team aligns perfectly with my background in building robust, scalable infrastructure. At Zupper Commerce, I engineered 20+ reusable React components and reduced page load times by 25% through advanced memoization and code splitting, directly improving performance and developer efficiency. I also delivered the RMC ERP, managing complex sensor feeds and dispatch workflows using Laravel and Vue 3. I thrive in autonomous environments and am ready to tackle Reddit’s scale challenges immediately. You can review my technical depth and recent work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-03T03:34:07.691Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137614",
-      "type": "remote_job",
-      "title": "Software Engineer Infrastructure",
-      "companyOrClient": "Sodalis, Inc.",
-      "budgetOrSalary": "$185000k - $215000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-infrastructure-sodalis-inc-1137614",
-      "description": " Software Engineer, Infrastructure   Hybrid in Palo Alto (Mon / Wed / Thurs) Â· $185Kâ$215K base + meaningful early-stage equity + full benefits   Â   About Sodalis  Specialty pharmacy is where the most complex and expensive drugs reach the most in-need patients, and it still runs on faxes, phone tag, and manual data entry. Patients wait weeks for therapies that can't wait.  Sodalis is building AI agents that run those operations end to end: reading and validating prescriptions, handling phone calls, and moving prescriptions through eligibility and fulfillment. The ambition goes beyond that. We want to be the rails every specialty prescription runs on, and the first system to perform clinical review at the standard of a pharmacist.  We're already in production, processing tens of thousands of prescriptions a week. Backed by Gradient Ventures (Google's AI fund), and founded by veterans of Apple's Applied ML, Included Health, and Avella Specialty Pharmacy (scaled to $1.5B+ before its a",
-      "tags": [
-        "dev",
-        "design",
-        "embedded",
-        "sys admin",
-        "cloud",
-        "ruby",
-        "exec",
-        "ops",
-        "golang",
-        "medical",
-        "engineer",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi Sodalis team,\n\nBuilding AI agents for specialty pharmacy operations requires robust backend infrastructure that can handle high-volume, latency-sensitive workflows. As a Full Stack Engineer, I specialize in Node.js, Express, and Redis to build scalable systems that move data efficiently.\n\nFor Yeshu Tours & Travels, I engineered a full-scale booking engine featuring a customer portal and admin dashboard, leveraging Redis caching to optimize performance and WhatsApp integration for real-time communication. This experience directly translates to handling the complex prescription validation and fulfillment pipelines Sodalis is scaling. I am ready to contribute to your infrastructure stack immediately to ensure your AI agents operate with maximum reliability.\n\nLet’s connect to discuss how I can support your engineering goals. Please view my work at https://cipher-vortex.vercel.app.\n\nKiran S R",
-    "createdAt": "2026-11-03T03:34:06.755Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6172929492",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-02T23:25 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1353",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1607023\tConstruction_and_Engineering\t2\t71\t5000\t1\t9.3\t9274\t29222\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #8: Post Your Proof-of-Work 🔨 💰\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. Your bounty for \"Show Your Build Weekly #8\" demands immediate, tangible proof of engineering skill. I can deliver a polished, functional module for your `sn-monetization-runtime` repository within 24 hours, showcasing clean React/TypeScript integration and optimized state management.\n\nMy recent work on Zupper Commerce demonstrates my ability to ship reusable components that reduce page load times by 25% through memoization and code splitting—exactly the kind of efficient, production-ready code this bounty requires. I am ready to start immediately and submit a PR with full documentation.\n\nCheck my portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-03T03:34:05.906Z",
     "deliveredToTelegram": true
   }
 ]
