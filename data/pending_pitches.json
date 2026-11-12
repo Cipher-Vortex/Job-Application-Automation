@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6312306089",
+      "type": "bounty",
+      "title": "🎯 Bounty Alert: 1 New Opportunity found (Rohank143/BountyScout)",
+      "companyOrClient": "GitHub: Rohank143/BountyScout",
+      "budgetOrSalary": "$450 USDC",
+      "url": "https://github.com/Rohank143/BountyScout/issues/91",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-10 17:35 UTC\n\n#### 1. [[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4236)\n- **Repository:** [zhangjiayang6835-cyber/bounty-plaza](https://github.com/zhangjiayang6835-cyber/bounty-plaza)\n- **Comments:** 3\n- **Last Updated:** 2026-11-10T17:33:46Z\n\n"
+    },
+    "pitch": "Hi Rohank143, I can deliver the 24-Vector Conformance Suite for the Streaming MCP SSE Chunk Bounty immediately. With deep expertise in Node.js, Express, and high-performance streaming architectures, I have the precise technical fit to ensure robust SSE chunk handling and strict vector conformance. My background building the Zupper Commerce platform, where I optimized React performance by 25% through memoization and code splitting, demonstrates my commitment to efficient, production-ready engineering. I am ready to submit a clean, tested PR for the $450 USDC escrowed reward with a rapid turnaround. Let’s get this bounty closed out efficiently. You can review my full portfolio and technical credentials at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-12T15:45:16.539Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6353069548",
+      "type": "bounty",
+      "title": "[wildcard] No orphan diagnostics: every HYB-E code must carry a two-sided witness — or be retired (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/4408",
+      "description": "## The idea, in a paragraph\n\nHybrid's diagnostic registry reads as the inventory of implemented rules. It is a wish-list with a test suite attached: of 48 codes, the adversarial corpus pins only 10 exact codes, and two codes the compiler emits are unregistered. This proposal replaces \"documented\" with \"demonstrated\": a code exists only with a black-box pair — a minimal known-bad `.hy` rejected with exactly that code, plus a one-construct near-miss that is not. Codes that cannot earn a pair are marked `paper-only` or retired; their claims leave `GUARANTEES.md`. The registry becomes a proof ledger.\n\n## The sacred cow it kills\n\n**\"A documented rule is an implemented rule.\"** Its corollary dies too: \"the suite is green, so the reject side is trustworthy.\" A green suite proves only the cases someone wrote; it cannot distinguish a rule that rejects too little from one that rejects too much. A `HYB-Exxxx` is the public proof obligation cited by users, bounty reports, and `GUARANTEES.md`.\n\n## "
+    },
+    "pitch": "I can deliver a PR that transforms Go-Hybrid’s diagnostic registry into a verifiable proof ledger. My experience building the RMC ERP, which manages complex sensor feeds and strict dispatch workflows, demonstrates my ability to handle rigorous state validation and edge-case testing. I will implement the required black-box witness pairs—ensuring every HYB-E code has a minimal known-bad rejection and a near-miss acceptance—while retiring unproven claims from GUARANTEES.md. I am ready to start immediately and deliver the complete codebase update within 48 hours. Let’s eliminate the gap between documented rules and demonstrated reality. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-12T15:45:15.495Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6334966519",
       "type": "bounty",
       "title": "Content: execution-receipt deep-dive + demo video + integration guides (CG-BTY-005) (coreguard-global/CoreGuard)",
@@ -1521,34 +1549,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. Your bounty for \"Show Your Build Weekly #8\" demands immediate, tangible proof of engineering skill. I can deliver a polished, functional module for your `sn-monetization-runtime` repository within 24 hours, showcasing clean React/TypeScript integration and optimized state management.\n\nMy recent work on Zupper Commerce demonstrates my ability to ship reusable components that reduce page load times by 25% through memoization and code splitting—exactly the kind of efficient, production-ready code this bounty requires. I am ready to start immediately and submit a PR with full documentation.\n\nCheck my portfolio here: https://cipher-vortex.vercel.app",
     "createdAt": "2026-11-03T03:34:05.906Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50339013",
-      "type": "freelance",
-      "title": "HN: MixRank (YC S11) | Software Engineers | 100% Remote (Global) | Full-Time MixRank",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50339013",
-      "description": "MixRank (YC S11) | Software Engineers | 100% Remote (Global) | Full-Time MixRank processes petabytes of data every month through web crawling. Hundreds of customers use our data products, including Google, Amazon, Facebook, Intel, and Adobe, across industries such as finance, recruiting, sales, marketing, and security. We’re a fully remote company with a global footprint across 20+ countries. We’re growing, profitable, employee-owned, and have no dependence on outside funding. Applicants from all geographies and backgrounds are welcome. We’re looking for passionate individuals for whom programming is not just a job, but something they genuinely love to do. We’re obsessed with computers, programming, big data, databases, compilers, hardware, math, data science, and the internet. Does this sound like you? Please apply to join our team. Our codebase is friendly to new contributors. You’ll have a fully functional development environment within hours through full automation and will be push"
-    },
-    "pitch": "Hi MixRank team,\n\nI am a Full Stack Engineer from Bengaluru with deep expertise in Node.js, Redis, and high-performance data pipelines. My work on the RMC ERP system, where I engineered real-time sensor feed processing and complex dispatch workflows using Laravel and Vue 3, mirrors the precision required for handling petabyte-scale data products. I thrive in fully remote environments and am eager to contribute to your profitable, employee-owned culture where programming is a genuine passion. I am available to start immediately and can hit the ground running with your automated dev environment.\n\nLet’s connect to discuss how I can support your engineering goals.\n\nKiran S R\nhttps://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-02T22:07:21.443Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50340892",
-      "type": "freelance",
-      "title": "HN: Ledgebrook | Engineering, Product &amp; Data | REMOTE (US, Canada, Poland; eligi",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50340892",
-      "description": "Ledgebrook | Engineering, Product &amp; Data | REMOTE (US, Canada, Poland; eligibility varies by role) |  https:&#x2F;&#x2F;www.ledgebrook.com&#x2F;careers  Hi HN, I&#x27;m Nathan, CTO at Ledgebrook. We&#x27;re a Series D tech-enabled insurance company building technology for our internal user base. Our engineers work directly with other departments, so they see the impact of each product release firsthand. We&#x27;re hiring for the following remote roles: Director of Engineering (US or Canada) Staff Engineer (US or Canada) Full Stack Engineer (US, Canada, or POland) Sr Platform Engineer (AWS) (US or Canada) Principal Data Engineer (US, Canada or Poland) Product Manager - Underwriting Operations (Poland) We value clear ownership, direct communication, and giving people room to get things done without micromanagement. Employees share in the company&#x27;s success through ownership. Full descriptions and applications:  https:&#x2F;&#x2F;www.ledgebrook.com&#x2F;careers  Questions: hiring@"
-    },
-    "pitch": "Nathan, I’m a Full Stack Engineer specializing in high-performance React, Next.js, and TypeScript applications. Your Series D insurance platform requires robust, scalable infrastructure, and I bring proven experience building complex systems. At Zupper Commerce, I engineered 20+ reusable React components and optimized page load times by 25% through strategic memoization and code splitting. Additionally, I developed RMC ERP using Laravel and Vue 3, managing real-time sensor feeds and dispatch workflows for enterprise clients. I thrive in direct, ownership-driven environments and am ready to deliver immediate value to your engineering team. I’d love to discuss how I can contribute to Ledgebrook’s technical goals. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-02T22:07:12.277Z",
     "deliveredToTelegram": true
   }
 ]
