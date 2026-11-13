@@ -1,6 +1,48 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6360233234",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-12T22:24 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1373",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1613251\tbitcoin\t1\t1036\t21000\t7\t7.0\t1600846\t15\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,HOT,SIGNAL\tBounty: record a full tap-through of our TestFlight app on a physical iPhone\n```"
+    },
+    "pitch": "I can execute this bounty immediately. As a Full Stack Engineer specializing in React and mobile-adjacent web technologies, I have the technical precision required to record a flawless, full tap-through of your TestFlight app on a physical iPhone. My experience building complex, real-time user interfaces—such as the Yeshu Tours booking engine with Redis caching and WhatsApp integration—ensures I can navigate your UI smoothly while capturing high-quality, error-free video. I am ready to start right now to meet the 2026-11-12 deadline with zero latency. I guarantee a polished, submission-ready deliverable that highlights your app’s core features. Let’s get this done today. View my work: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-13T02:45:27.163Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6361745925",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-13T00:10 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1374",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1613251\tbitcoin\t1\t1036\t21000\t7\t8.7\t1600846\t15\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,HOT,SIGNAL\tBounty: record a full tap-through of our TestFlight app on a physical iPhone\n```"
+    },
+    "pitch": "I am Kiran S R, a Full Stack Engineer ready to deliver the TestFlight tap-through recording for your sn-monetization-runtime bounty immediately. My background in building complex, state-heavy applications like Yeshu Tours & Travels, which features real-time Redis caching and seamless user journey integrations, ensures I can navigate your app’s specific flows with precision and speed. I understand the critical importance of accurate UI validation for your Bitcoin network signals. I can execute this task on a physical iPhone today and submit the complete video evidence by end of day. Let’s secure this bounty efficiently. View my verified work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-13T02:45:26.347Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6219760300",
+      "type": "bounty",
+      "title": "[20 JNZ] Example: watch new blocks over the WebSocket (newBlocks subscription) (janzeerOrg/janzeer-sdk-ts)",
+      "companyOrClient": "GitHub: janzeerOrg/janzeer-sdk-ts",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/janzeerOrg/janzeer-sdk-ts/issues/3",
+      "description": "`examples/02-subscribe-address-activity.ts` mixes the two subscription kinds; there is no example that shows only `newBlocks`: print each block as it is finalized (height, hash, producer, transaction count), stop after N blocks or Ctrl-C.\n\n**What to do:** `examples/06-watch-new-blocks.ts` using `JanzeerRpcWs.connect` and `subscribeNewBlocks({ fromHeight, includeTransactions })`, the same structure as example 02 (env `JANZEER_WS_URL`, `EXAMPLE_SECONDS`, a clean `ws.close()` on exit), ~30 lines, plus a line in the README's Examples list. `npm run examples` (scripts/run-examples.mjs) picks up every file in `examples/`, so it must run unattended. It must work against the public mainnet node too: `JANZEER_WS_URL=wss://explorer.janzeer.org/rpc/ws`. `npm run lint` clean.\n\n**Reference:** the Python SDK has the same example (`examples/06_watch_new_blocks.py`) and the Go SDK `examples/watchblocks`; the subscription parameters are in `docs/json-rpc-and-subscriptions.md`. No AI attribution trailer"
+    },
+    "pitch": "I can deliver the `examples/06-watch-new-blocks.ts` implementation immediately, ensuring it runs unattended against the public mainnet node and passes `npm run lint`. My experience building real-time data pipelines and optimizing performance in complex systems like RMC ERP and Zupper Commerce guarantees a clean, efficient solution that mirrors the existing example structure. I will handle the WebSocket subscription logic, clean exit protocols, and README updates within 24 hours. Ready to submit the PR for your review. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-13T02:45:25.085Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_edgeq-technologies-private-limited-robotics-software-engineer-job-title-robotics-software-engineer",
       "type": "remote_job",
       "title": "Robotics Software Engineer  Job Title: Robotics Software Engineer",
@@ -1493,48 +1535,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. I noticed ThreatMark’s focus on low-latency systems and real-time data processing. My experience building high-performance architectures aligns perfectly with your needs. For instance, I engineered the backend for a large-scale ERP system handling real-time sensor feeds and complex dispatch workflows using Redis and optimized APIs, ensuring sub-second response times under heavy load. I am proficient in TypeScript and Node.js, with a strong understanding of data pipeline efficiency. I am ready to contribute to your detection features or backend optimization immediately. Let’s discuss how I can help scale your security infrastructure. Please review my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-03T18:59:01.289Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50348145",
-      "type": "freelance",
-      "title": "HN: VALIS (Valis Insights) | Software Engineer, new product line | REMOTE (US, East ",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50348145",
-      "description": "VALIS (Valis Insights) | Software Engineer, new product line | REMOTE (US, East Coast hours) | Full-time | $125k-$155k + equity I&#x27;m Caleb, co-founder&#x2F;CTO. VALIS builds data products for scrap metal recyclers. Our product images, weighs, and classifies scrap metal, and our platform turns that into actionable quality analytics to improve physical ops at plants across the US. Recycled metal takes a fraction of the energy of mined metal, and better data means more of it gets recovered. We&#x27;re hiring an engineer to build our next product line: a production tracking and analytics platform for recycling plants, extended from our existing product. We&#x27;re a small team (&lt;10 ppl). What you&#x27;d work on (ideate, build, deploy, own): - Modeling a complex (and intellectually stimulating) physical process - Agentic features that dig through production and quality data, surface trends, flag anomalies, and notify the right people - Working directly with customers: regular calls w"
-    },
-    "pitch": "Hi Caleb,\n\nI am Kiran S R, a Full Stack Engineer in Bengaluru ready to build VALIS’s new production tracking platform. Your need for agentic features and complex process modeling mirrors my work on RMC ERP, where I engineered sensor feeds, batching logs, and dispatch workflows using Laravel, Vue 3, and Inertia.js. I specialize in turning raw operational data into actionable analytics, a skill I also applied to Zupper Commerce to cut page load times by 25%. I am comfortable working US East Coast hours and thrive in small, high-impact teams. I can start immediately to help you surface trends and flag anomalies for your recycling plant clients. Let’s connect. View my work: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-03T11:35:05.437Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6177560918",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-03T06:35 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1354",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1607023\tConstruction_and_Engineering\t2\t71\t5000\t3\t16.5\t9274\t29241\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #8: Post Your Proof-of-Work 🔨 💰\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle your relayhop/sn-monetization-runtime bounty. My work on RMC ERP demonstrates my expertise in building robust enterprise systems with Laravel, Vue 3, and Inertia.js, specifically handling complex dispatch workflows and real-time data feeds. This experience directly aligns with the engineering rigor required for your monetization runtime. I can deliver a clean, documented PR for this bounty immediately, ensuring your proof-of-work standards are met with high-quality code. Let’s get this shipped efficiently. View my portfolio at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-03T11:35:04.637Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50346890",
-      "type": "freelance",
-      "title": "HN: Justworks | NYC + Toronto (most roles require 2+ days in office) | Full-time | S",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50346890",
-      "description": "Justworks | NYC + Toronto (most roles require 2+ days in office) | Full-time | Salary + equity in every offer |  https:&#x2F;&#x2F;www.justworks.com&#x2F;careers  Justworks is a PEO and HR platform for small businesses. We run payroll, benefits, compliance and HR for small businesses so that they can focus on growing their own business. The engineering problems are the unglamorous, high-stakes kind: pay people correctly, compute and withhold the right taxes, and keep sensitive customer data accurate and on time. If a pipeline is wrong, someone&#x27;s paycheck is wrong. Some roles we&#x27;re hiring for (see the careers page for the full list + links): - Senior Software Engineer (many):  https:&#x2F;&#x2F;boards.greenhouse.io&#x2F;justworks&#x2F;jobs&#x2F;8179751?gh_jid=8...  - Engineering Managers, DevSecOps, Applied AI, etc. - Senior Data Scientists, Senior Data Science Managers - Directors&#x2F;GMs of Product, GPMs, Senior PMs, etc. - Marketing, Sales, Ops, Legal, Customer Success, et"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-stakes, data-critical systems. I understand that at Justworks, accuracy is non-negotiable; a wrong pipeline means a wrong paycheck. My experience building the RMC ERP, which manages complex dispatch workflows and real-time sensor feeds using Laravel and Vue 3, directly translates to your need for robust payroll and tax computation pipelines. I combine that enterprise reliability with performance optimization techniques, like the 25% load-time reduction I achieved at Zupper Commerce, to ensure your platform remains fast and secure. I am ready to tackle these unglamorous, high-stakes engineering challenges with precision. Let’s discuss how I can contribute to your engineering team. You can review my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-03T03:34:08.559Z",
     "deliveredToTelegram": true
   }
 ]
