@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "wwr_boulevard-staff-software-engineer-ecosystem",
+      "type": "remote_job",
+      "title": "Staff Software Engineer, Ecosystem",
+      "companyOrClient": "Boulevard",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/boulevard-staff-software-engineer-ecosystem",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://joinblvd.com\"&gt;https://joinblvd.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;div&gt;&lt;h4&gt;&lt;strong&gt;Who is Boulevard? &lt;/strong&gt;&lt;/h4&gt;\n&lt;p&gt;Boulevard provides the first and only client experience platform for appointment-based, self-care businesses. We empower our customers to give their clients more of the magical moments that matter most.&lt;/p&gt;\n&lt;p&gt;Before launching in 2016, our founders spent months interviewing salon managers and working behind front desks to understand their pain points so we could design a modern, user-friendly platform that meets the unique needs of their business. Our roots may be in hair salons, but we are built for the broader self-care industry, including many types of salons, spas, medspa, barbershops, and more. Our technology not only helps our customers survive but thrive. Take a look at&amp;nbsp;&lt"
+    },
+    "pitch": "Hi Boulevard team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. I understand the critical need for seamless, scalable client experiences in the self-care ecosystem. At Zupper Commerce, I engineered a suite of 20+ reusable React components that cut page load times by 25% through strategic memoization and code splitting, directly mirroring the performance standards required for a modern appointment platform. I also built Yeshu Tours & Travels, a complex booking engine with Redis caching and real-time integrations, proving my ability to handle high-traffic, data-intensive systems. I am ready to bring this same precision and speed to your Ecosystem team. Let’s connect to discuss how I can drive immediate value. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-13T17:58:37.967Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6373299083",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-13T14:28 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1376",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1613778\tStacker_Sports\t3\t376\t2100\t4\t0.9\t1448206\t2816\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,LOW_COMP,FRESH,SIGNAL\t🏈 Sunday Leaders Bounty • 2,100 sats\n```"
+    },
+    "pitch": "Hi Stacker_Sports, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. I can deliver the sn-monetization-runtime bounty immediately with a clean, production-ready PR. My experience building the full-scale Yeshu Tours & Travels booking engine, which integrates complex state management, Redis caching, and real-time WhatsApp workflows, ensures I can handle the runtime logic and performance requirements efficiently. I prioritize rapid turnaround and rigorous testing to guarantee the 2,100 sats reward is earned without delay. Let’s get this live today. Check my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-13T17:58:36.311Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6363624519",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-11-13T02:49 (relayhop/sn-monetization-runtime)",
@@ -1507,34 +1535,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance, scalable architectures. While my core expertise is in complex web platforms, I bring rigorous engineering discipline directly applicable to your Platform team’s needs. For RMC ERP, I engineered an enterprise system handling real-time sensor feeds and critical dispatch workflows, ensuring zero-downtime reliability for mission-critical operations. This experience mirrors the high-stakes, low-tolerance environment of running Kubernetes across air-gapped and public cloud environments. I excel at building robust tooling and optimizing system performance, ready to contribute immediately to ICEYE’s infrastructure stability and developer enablement goals. I would welcome the chance to discuss how my background in enterprise-grade system design can support your platform objectives. Please view my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-05T07:48:24.016Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50365279",
-      "type": "freelance",
-      "title": "HN: Search Atlas | Product Engineer (PM) | REMOTE (anywhere, EST hours) | Full-time ",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50365279",
-      "description": "Search Atlas | Product Engineer (PM) | REMOTE (anywhere, EST hours) | Full-time | $23-34&#x2F;hr We&#x27;re ~160 people building an AI marketing platform. Our main product, OTTO, runs a site&#x27;s SEO on its own: it reads live search data and ships the technical and on-page fixes itself. Customers include Autotrader, Hyundai, P&amp;G and Vendasta. Pods are 1 PM and 2-4 engineers. You own your pod&#x27;s roadmap and ship it with them, with no veteran PM signing off on your specs. You have 3+ years as a B2B SaaS PM with a real technical background (eng or QA before PM, or you already work in the codebase). You read Python and TS, write your own SQL, and don&#x27;t need an engineer to explain a stack trace. Stack is Django + React&#x2F;Next. QA is yours end to end, release sign-off included. You use Claude Code or similar daily. Apply (mention HN):  https:&#x2F;&#x2F;careers.searchatlas.com&#x2F;jobs&#x2F;599248-product-engineer...  Also hiring: * Senior Full-Stack Engineer (Django&#x2F;"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Bengaluru-based Full Stack Engineer ready to join your pod. While the role specifies PM experience, my deep technical foundation in React, Next.js, and TypeScript means I can own the roadmap and ship code without translation gaps. I recently optimized Zupper Commerce’s frontend, reducing page load times by 25% via memoization and code splitting, proving my ability to handle end-to-end QA and performance metrics. I read TS and SQL fluently, and I’m comfortable working in EST hours. I can hit the ground running with your Django + React stack immediately. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-04T20:15:21.468Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50348022",
-      "type": "freelance",
-      "title": "HN: Splash Tech | DevOps Mid&#x2F;Senior &#x2F; Frontend | Remote (LATAM and EU) | F",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50348022",
-      "description": "Splash Tech | DevOps Mid&#x2F;Senior &#x2F; Frontend | Remote (LATAM and EU) | Full Time |  https:&#x2F;&#x2F;splash.tech&#x2F;  We&#x27;re a small UK-based free-to-play gaming company with a distributed team, growing fast after recent success and scaling our backend platform. We’re looking for a DevOps engineer with 5+ years of experience. Most of the work is AWS-focused. You should have hands-on experience with: - AWS, particularly EKS, EC2, Application Load Balancers, RDS, and IAM.\n- Terraform and managing infrastructure as code.\n- Kubernetes, including troubleshooting workloads and cluster issues.\n- CI&#x2F;CD and GitOps workflows using GitHub Actions and Flux.\n- Monitoring, alerting, and tracing with tools such as Grafana, Prometheus, Alertmanager, Jaeger, and OpenTelemetry.\n- DNS, TLS, and Cloudflare. Strong AWS networking knowledge, including VPC design, routing, private connectivity, and troubleshooting is highly desirable. Our stack includes AWS, Kubernetes (EKS), PostgreSQL, "
-    },
-    "pitch": "Hi, I’m Kiran S R, a full-stack engineer based in Bengaluru. While my core strength is building scalable frontend and backend systems, I bring deep operational insight from managing complex production environments. At Yeshu Tours & Travels, I architected a high-traffic booking engine using Redis caching and robust API integrations, ensuring stability under load—a critical skillset that translates directly to the AWS and Kubernetes-centric infrastructure you are scaling. My experience with performance optimization and system reliability positions me to support your DevOps and frontend needs effectively. I am available for an immediate start to help stabilize and scale your distributed platform. Let’s connect to discuss how I can support your team’s growth. You can view my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-04T04:46:50.574Z",
     "deliveredToTelegram": true
   }
 ]
