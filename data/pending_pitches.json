@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6363624519",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-13T02:49 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1375",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1613251\tbitcoin\t1\t1036\t21000\t7\t11.4\t1600846\t15\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,HOT,SIGNAL\tBounty: record a full tap-through of our TestFlight app on a physical iPhone\n```"
+    },
+    "pitch": "I can deliver the required physical iPhone TestFlight tap-through immediately. As a Full Stack Engineer, I bring rigorous QA discipline and end-to-end testing expertise, ensuring your monetization runtime validation is flawless. I recently optimized Zupper Commerce by reducing page load times by 25% through precise performance tuning, proving my ability to handle detailed, high-stakes technical tasks with speed. I am ready to record the full user journey on a physical device and submit the bounty proof today. Let’s get this done. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-13T10:28:32.214Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6363627604",
+      "type": "bounty",
+      "title": "[$2 site credit] Add a TypeScript example that lists open bounties (andrewsiah/agentswarm-mcp)",
+      "companyOrClient": "GitHub: andrewsiah/agentswarm-mcp",
+      "budgetOrSalary": "$2",
+      "url": "https://github.com/andrewsiah/agentswarm-mcp/issues/25",
+      "description": "Effort: ~1–2 hours; needs TypeScript, HTTP + JSON basics, and Docker.\n\nAgents: see AGENTS.md for a copy-paste claim command\n\nAdd a tiny TypeScript example in `typescript-bounties/` that lists open bounties from the public read API. Read `AGENTSWARM_BASE_URL` (default `https://agentswarm.space`), trim trailing slashes, and call `GET /api/bounties`. For each row with `status == \"open\"`, print exactly one UTF-8 line in returned order, with literal tab separators:\n\n```text\n<id>\\t<title>\\t<bounty.reward>\\t<base>/p/<id>\n```\n\nThe response shape is `{\"bounties\":[{\"id\":\"…\",\"title\":\"…\",\"status\":\"open\",\"bounty\":{\"reward\":\"100 credits\"}}],\"nextCursor\":null,\"now\":\"…\"}`. Preserve the reward display string verbatim, including currency or units; do not imply that agentswarm.space pays externally sourced rewards. Skip closed rows; empty/all-closed responses print nothing. Preserve Unicode, quotation marks and order. HTTP failures and malformed JSON, including trailing garbage and multiple documents, mu"
+    },
+    "pitch": "Hi Andrew, I can deliver the TypeScript bounty example for `agentswarm-mcp` immediately. With 1–2 hours of effort, I will implement the `GET /api/bounties` call, handle `AGENTSWARM_BASE_URL` normalization, and ensure strict UTF-8 tab-separated output while correctly skipping closed rows and handling malformed JSON. My experience building robust REST API integrations for Yeshu Tours & Travels, including complex data handling and caching, ensures this will be precise and production-ready. I am ready to submit a clean PR today. Please check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-13T10:28:31.255Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6360233234",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-11-12T22:24 (relayhop/sn-monetization-runtime)",
@@ -1507,34 +1535,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a full-stack engineer based in Bengaluru. While my core strength is building scalable frontend and backend systems, I bring deep operational insight from managing complex production environments. At Yeshu Tours & Travels, I architected a high-traffic booking engine using Redis caching and robust API integrations, ensuring stability under load—a critical skillset that translates directly to the AWS and Kubernetes-centric infrastructure you are scaling. My experience with performance optimization and system reliability positions me to support your DevOps and frontend needs effectively. I am available for an immediate start to help stabilize and scale your distributed platform. Let’s connect to discuss how I can support your team’s growth. You can view my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-04T04:46:50.574Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50350810",
-      "type": "freelance",
-      "title": "HN: Proofline | Founding Staff &#x2F; Principal Engineer | REMOTE (Worldwide, Berlin",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50350810",
-      "description": "Proofline | Founding Staff &#x2F; Principal Engineer | REMOTE (Worldwide, Berlin timezone overlap preferred) | Full-time | €120k-€200k + equity |  https:&#x2F;&#x2F;proofline.sh&#x2F;careers&#x2F;founding-staff-principal-engine...  Hi HN, I&#x27;m the founder of Proofline. We&#x27;re building an infrastructure-aware AI code reviewer that catches deployment failures before they reach production. Think of it as a type checker for your cloud infrastructure. We analyze code changes against Terraform, live cloud environments, and deployment evidence rather than just reading diffs. We&#x27;re hiring a hands-on Staff &#x2F; Principal Engineer to help us build. You&#x27;ll own core SaaS architecture, cloud integrations, developer tools, and product delivery, with a path toward engineering leadership. Stack: Rust, Go, PostgreSQL, React&#x2F;TypeScript, Terraform, AWS, GCP. We&#x27;re looking for someone with 10+ years of hands-on infrastructure engineering experience, deep SaaS and cloud expert"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance SaaS architectures and developer tools. Your need for infrastructure-aware code review resonates with my recent work on Zupper Commerce, where I engineered 20+ reusable React/TypeScript components and optimized page loads by 25% through rigorous code splitting and memoization. I bring the same precision to system design, having built complex, data-heavy platforms like RMC ERP that handle real-time sensor feeds and intricate dispatch workflows. I am ready to apply this depth of engineering discipline to Proofline’s core SaaS architecture and cloud integrations, ensuring your AI reviewer is robust, scalable, and production-ready. Let’s discuss how I can accelerate your product delivery immediately. View my work at https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-03T18:59:02.364Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50353951",
-      "type": "freelance",
-      "title": "HN: ThreatMark | Security, Machine Learning | REMOTE(World) &#x2F; Brno, Czech Repub",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50353951",
-      "description": "ThreatMark | Security, Machine Learning | REMOTE(World) &#x2F; Brno, Czech Republic | Equity ThreatMark protects &gt;60M end users from finacial fraud and saves &gt; $1.2M every day in losses. We are working with banks in EU and US to protect their end users. We develop large-behavioral models that recognizes returning users by their mouse movements, keystroke timings and sensoric data (accelerometer, gyroscope). We detect cyberthreats (e.g. malware, phishing, scraping) by exploiting browsers&#x2F;sandboxes of devices. We manage ~PB scale of data and provide realtime scoring in milliseconds driving authentication&#x2F;authorization flow (2nd factor). Stack: [python, typescript, rust], [redis, postgresql], [aws, terraform] ... We are looking for exceptional engineers to build with us and be part of the success: - Backend Engineer [rust, python] - low-latency stream processing engine, rewrite python microservices to rust, build new detection features - DevOps Engineer (IaaC in AWS) - Dev"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. I noticed ThreatMark’s focus on low-latency systems and real-time data processing. My experience building high-performance architectures aligns perfectly with your needs. For instance, I engineered the backend for a large-scale ERP system handling real-time sensor feeds and complex dispatch workflows using Redis and optimized APIs, ensuring sub-second response times under heavy load. I am proficient in TypeScript and Node.js, with a strong understanding of data pipeline efficiency. I am ready to contribute to your detection features or backend optimization immediately. Let’s discuss how I can help scale your security infrastructure. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-03T18:59:01.289Z",
     "deliveredToTelegram": true
   }
 ]
