@@ -1,6 +1,37 @@
 [
   {
     "opportunity": {
+      "id": "rok_1137793",
+      "type": "remote_job",
+      "title": "Software Engineer AI Tooling",
+      "companyOrClient": "Supabase",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-ai-tooling-supabase-1137793",
+      "description": "  About Supabase   Supabase is the Postgres development platform, built by developers for developers. We provide a complete backend solution including Database, Auth, Storage, Edge Functions, Realtime, and Vector Search. All services are deeply integrated and designed for growth.    About the Role   Weâre looking for a Software Engineer to join our AI Tooling team and help shape how developers and agents build with Supabase. You'll build and own our AI tooling, including agents, the MCP server, agent skills and the dashboard assistant, and as the space moves you'll build the tooling for new technologies too. You'll build it all eval-first: every tool ships with evals and metrics, so we know, with evidence, that it makes agents better rather than worse.  You'll work closely with the Docs, CLI, Frontend and SDK teams, and with the AI Tooling Infrastructure engineers who run these services in production. Other teams contribute to AI Tooling to improve Supabase's agentic capabilities, an",
+      "tags": [
+        "dev",
+        "design",
+        "front end",
+        "customer support",
+        "testing",
+        "marketing",
+        "virtual assistant",
+        "javascript",
+        "education",
+        "typescript",
+        "sys admin",
+        "medical",
+        "engineer",
+        "backend",
+        "digital nomad"
+      ]
+    },
+    "pitch": "Hi, I’m Kiran S R. I’m applying for the Software Engineer AI Tooling role at Supabase because I build developer-centric tools with a focus on performance and robust integration. At Zupper Commerce, I engineered reusable React components that cut page load times by 25% through memoization, proving my ability to optimize frontend experiences for complex data flows. Additionally, my work on Cerebrum, an AI note-taking platform using RAG architecture, demonstrates my hands-on experience with LLM integrations and building responsive AI interfaces. I am ready to contribute immediately to building eval-first agents and MCP servers that enhance Supabase’s agentic capabilities. I’d love to discuss how my full-stack background aligns with your team’s goals. Please view my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-14T03:27:15.714Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "hn_50488627",
       "type": "freelance",
       "title": "HN: Common Prefix | Senior Software Engineer | Athens, Greece &#x2F; REMOTE | Full-t",
@@ -1521,20 +1552,6 @@
     },
     "pitch": "Hi Claims team, I’m Kiran S R, a Full Stack Engineer specializing in scalable data architectures with Node.js, TypeScript, and Redis. Your mission to structure scientific literature for AI agents requires robust data pipelines, and my work on Yeshu Tours & Travels demonstrates this directly. I engineered a complex booking engine featuring Redis caching and real-time integration, optimizing data flow for high-volume queries. I am ready to apply this expertise to your Subnet 111 infrastructure, ensuring your validator pipeline can handle the growing dataset of 10,000+ papers with precision. I can start immediately to help refine your data layer. Let’s connect to discuss how I can contribute to your next phase of growth. View my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-05T22:10:19.086Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "reddit_rss_t3_1xoidq5",
-      "type": "freelance",
-      "title": "AI Software Engineer - $30~$60/hr",
-      "companyOrClient": "Reddit r/forhire Client",
-      "budgetOrSalary": "$30",
-      "url": "https://www.reddit.com/r/forhire/comments/1xoidq5/hiring_ai_software_engineer_3060hr/",
-      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;We&amp;#39;re looking for a skilled AI Software Engineer with a strong background in software development and a deep understanding of AI technologies. The ideal candidate is passionate about building innovative AI-powered solutions and has solid engineering skills.&lt;/p&gt; &lt;p&gt;Requirements:&lt;/p&gt; &lt;p&gt;- Fluent in English, with strong verbal and written communication skills.&lt;/p&gt; &lt;p&gt;- 3+ years of professional experience in software development.&lt;/p&gt; &lt;p&gt;- Deep knowledge of AI, machine learning, and LLMs.&lt;/p&gt; &lt;p&gt;- Strong problem-solving skills and the ability to work independently.&lt;/p&gt; &lt;p&gt;- Experience developing, deploying, and maintaining production-ready software.&lt;/p&gt; &lt;p&gt;- Blockchain experience is a strong plus.&lt;/p&gt; &lt;p&gt;- Passion for emerging technologies and innovative projects.&lt;/p&gt; &lt;p&gt;Nice to Have:&lt;/p&gt; &lt;p&gt;- Experience"
-    },
-    "pitch": "Hello, I am Kiran S R, a Full Stack Engineer with 3+ years of experience building production-ready software. I recently architected \"Cerebrum,\" an AI note-taking platform utilizing RAG and LLM APIs, directly aligning with your need for deep AI expertise. My background in React, Node.js, and TypeScript ensures I can deliver robust, scalable solutions independently. I am fluent in English and ready to start immediately with a fast turnaround. I would love to discuss how I can contribute to your innovative AI-powered solutions. Please check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-05T22:10:18.266Z",
     "deliveredToTelegram": true
   }
 ]
