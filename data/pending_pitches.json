@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6386954537",
+      "type": "bounty",
+      "title": "[wildcard] Total Tier-0: delete fail-open — every accepted program must carry a machine-checkable certificate or be rejected (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/4465",
+      "description": "## The idea, in a paragraph\n\nMake acceptance into the build **conditional on a proof, not on the absence of a\ndiagnostic**. Today `hyb check` *accepts by default*: it walks the AST, applies a\nhand-maintained rule per construct, and every construct the walk does not model\nfalls through to \"no evidence of sharing\" ⇒ ACCEPT. That single default bit —\n`shape_may_share` returning `false` for an *unmodeled* shape — is the root of the\nentire open soundness backlog (#1781, #1997, #775, #753, #3252, #2966, #1042,\n#3947, #3948, #3001, #4410, and the \"X bypasses Y\" family around them). The\nmoonshot: rebuild Tier-0 as a **total function** — a 3-valued *provenance lattice*\n`{NoShare, MaybeShare(⊤), Share}` whose **default is `MaybeShare`**, where every\nvalue at a check-site must be discharged by a linear, independently checkable\n*witness*, and the emitter **refuses to emit any `.hy` function for which no\nwitness exists**. Incompleteness stops being a silent ACCEPT and becomes a loud,\nattributed REJ"
+    },
+    "pitch": "I specialize in building rigorous, production-grade systems where default acceptance is a critical failure mode. My recent work on RMC ERP, an enterprise platform handling complex sensor feeds and dispatch workflows, required precise state management and zero-tolerance error handling using Laravel and Vue 3. I understand the critical need to shift from silent defaults to explicit, machine-checkable proofs. I can immediately implement the 3-valued provenance lattice logic for Go-Hybrid, ensuring every accepted program carries a verifiable witness or is strictly rejected. I am ready to deliver a complete PR implementing this total function logic today. Let’s secure the soundness of your build pipeline. View my portfolio: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-14T10:47:32.430Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "rok_1137793",
       "type": "remote_job",
       "title": "Software Engineer AI Tooling",
@@ -1533,25 +1547,6 @@
     },
     "pitch": "Subject: Senior Engineer Candidate: Enterprise-scale Healthcare & ERP Architecture\n\nHi DrFirst team,\n\nWith 25 years of legacy healthcare infrastructure, your eRx platform demands an engineer who thrives on complex state management and high-throughput data. I built RMC ERP, an enterprise system handling real-time sensor feeds and intricate dispatch workflows using Laravel, Vue 3, and Inertia.js. This experience directly translates to optimizing prescription access and adherence workflows at scale.\n\nMy stack includes React, Next.js, TypeScript, and Redis, ensuring I can integrate seamlessly into your existing 270+ EHR ecosystem immediately. I focus on clean, maintainable code that reduces latency and improves user experience for providers and patients alike.\n\nI am ready to start contributing to your core product suite right away. Please review my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-05T22:10:19.923Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137685",
-      "type": "remote_job",
-      "title": "Software Engineer",
-      "companyOrClient": "Claims",
-      "budgetOrSalary": "$10000k - $30000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-claims-1137685",
-      "description": "    ð Build the data layer AI needs to do science  Application deadline: 16 Nov 2026 23:59 CET  About Claims  AI ate the Internet, but it can't digest science yet. A paper is thousands of words of prose written for humans, but an AI agent doing research needs to know what was claimed, what evidence supports it, and how far to trust it. Claims turns the scientific literature into exactly that: every claim, tied to its evidence, as structured data that models and agents can query.  We're a startup and run as Subnet 111 on Bittensor. Since our mainnet launch on 28 August 2026, an open competition of miners has processed more than 10,000 papers, and every record was checked by our validator before it entered the dataset. The competition keeps raising the bar: miners keep finding ways to beat our own reference pipeline, and every win becomes part of the standard the whole network is scored against.  The team  Claims was founded by two professors of economics and a senior engineer.     Ph",
-      "tags": [
-        "dev",
-        "ai",
-        "blockchain"
-      ]
-    },
-    "pitch": "Hi Claims team, I’m Kiran S R, a Full Stack Engineer specializing in scalable data architectures with Node.js, TypeScript, and Redis. Your mission to structure scientific literature for AI agents requires robust data pipelines, and my work on Yeshu Tours & Travels demonstrates this directly. I engineered a complex booking engine featuring Redis caching and real-time integration, optimizing data flow for high-volume queries. I am ready to apply this expertise to your Subnet 111 infrastructure, ensuring your validator pipeline can handle the growing dataset of 10,000+ papers with precision. I can start immediately to help refine your data layer. Let’s connect to discuss how I can contribute to your next phase of growth. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-05T22:10:19.086Z",
     "deliveredToTelegram": true
   }
 ]
