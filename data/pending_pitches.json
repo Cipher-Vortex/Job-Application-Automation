@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "wwr_life360-senior-software-engineer-verticals-ai-native",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Verticals (AI Native)",
+      "companyOrClient": "Life360",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/life360-senior-software-engineer-verticals-ai-native",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Canada\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://www.life360.com\"&gt;http://www.life360.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;h3&gt;About Life360&lt;/h3&gt;\n&lt;p&gt;Life360’s mission is to keep people close to the ones they love. Our category-leading mobile app, Tile tracking devices, and Pet GPS tracker empower members to protect the people, pets, and things they care about most with a range of services, including location sharing, safe driver reports, and crash detection with emergency dispatch. Life360 serves approximately 107.7 million monthly active users (MAU), as of September 30, 2026, across more than 180 countries.&amp;nbsp;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Life360 delivers peace of mind and enhances everyday family life with seamless coordination for all the moments that matter, big and small. By continuing to innovate and deliver for our customers, we have become a household name and the must-have mobil"
+    },
+    "pitch": "Life360’s scale demands engineering that prioritizes performance and reliability. I am Kiran S R, a Full Stack Engineer specializing in React, TypeScript, and Node.js. At Zupper Commerce, I engineered 20+ reusable React components and implemented advanced memoization and code splitting, reducing page load times by 25%. This direct experience in optimizing high-traffic frontend architectures aligns perfectly with your need for a Senior Software Engineer in your AI-native verticals. I am ready to leverage this expertise to enhance user experience and system efficiency for your 100M+ user base immediately. Please review my work at https://cipher-vortex.vercel.app and let’s discuss how I can contribute to your team.",
+    "createdAt": "2026-11-14T21:04:13.171Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_true-talent-solutions-partners-senior-software-engineer-design",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Design",
+      "companyOrClient": "True Talent Solutions Partners",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/true-talent-solutions-partners-senior-software-engineer-design",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://truetalentsolutionspartners.com\"&gt;https://truetalentsolutionspartners.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;h3&gt;About the Role&lt;/h3&gt;&lt;p&gt;Join a fintech product team as a senior engineer focused on the craft of user experience. You will shape and build intuitive interfaces for complex mortgage workflows, bringing visual design and production engineering together.&lt;/p&gt;&lt;h3&gt;What You'll Do&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Own the end-to-end design process, from wireframes in Figma through implementation in React and TypeScript.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Build and maintain a scalable design system and component library using shadcn/ui.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Develop accessible, production-quality React components with appropriate ARIA support and keyboard and focus management.&lt;/p&gt;&lt;/li&gt;&lt;li"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React, TypeScript, and scalable design systems. Your need for a senior engineer who bridges visual design and production engineering aligns perfectly with my recent work at Zupper Commerce, where I built 20+ reusable React components and reduced page load times by 25% through code splitting. I am adept at owning the end-to-end process, from Figma wireframes to accessible, ARIA-compliant React implementations using shadcn/ui. I bring the precision needed for complex mortgage workflows and the speed to deliver immediately. I’d love to discuss how I can elevate your user experience. Please review my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-14T21:04:11.970Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6390500218",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-11-14T13:24 (relayhop/sn-monetization-runtime)",
@@ -1519,34 +1547,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer who ships robust, edge-case-proof code. I can deliver the complete test suite for `agent/bounties.mjs` immediately, using `node:test` and mocked `fetch` to ensure zero network dependency. My recent work on Zupper Commerce, where I optimized React components and reduced load times by 25%, demonstrates my precision in performance and logic. I will rigorously test `pointsAtRepo`, `LINEA_BOUNTY` line-ending handling, and `bountyForIssue` ambiguity resolution to ensure your financial logic is airtight. I’m ready to submit the PR today. Let’s secure your codebase: https://cipher-vortex.vercel.app",
     "createdAt": "2026-11-06T10:19:56.182Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50384008",
-      "type": "freelance",
-      "title": "HN: Sortrace | Computer Vision Engineer, Junior Frontend Engineer | REMOTE (Europe),",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50384008",
-      "description": "Sortrace | Computer Vision Engineer, Junior Frontend Engineer | REMOTE (Europe), hybrid Norrköping or Stockholm | Full-time |  https:&#x2F;&#x2F;sortrace.com  Sortrace is a small cleantech AI company in Sweden. Cameras on waste collection trucks and trained vision models flag material in the wrong fraction when bins are emptied. Customers use our platform to review deviations, images, and insights. We&#x27;re hiring for two roles on a small team with short decision paths. Computer Vision Engineer\n- Train, evaluate, and improve deep learning models for real-world image analysis on our existing platform (datasets, augmentation, architecture experiments, precision&#x2F;robustness&#x2F;performance).\n- Python; PyTorch or TensorFlow. ~3+ years hands-on CV&#x2F;model work, or equivalent documented experience (professional, OSS, or serious personal projects). We care about what you&#x27;ve built, not only job titles.\n- Plus: edge inference, quantization, real-time video. Junior Frontend Engine"
-    },
-    "pitch": "Hi, I am Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. For Sortrace’s Junior Frontend Engineer role, my work on Zupper Commerce is directly relevant: I engineered 20+ reusable components and optimized page load times by 25% through memoization and code splitting. This expertise ensures your platform for reviewing waste deviations and AI insights remains fast, responsive, and user-friendly. I am ready to immediately integrate into your small, agile team to deliver robust frontend solutions that complement your computer vision models. Let’s connect to discuss how I can help scale your platform. View my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-05T22:10:32.178Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-      "type": "remote_job",
-      "title": "Senior Full-Stack Web Developer (.NET/C#/MongoDB/Angular/Redux) – AI-First, with GDPR Experience",
-      "companyOrClient": "Secure Privacy",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/secure-privacy-senior-full-stack-web-developer-net-c-mongodb-angular-redux-ai-first-with-gdpr-experience",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0017/0601/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Europe (DK)\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://secureprivacy.ai\"&gt;https://secureprivacy.ai&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;div&gt;&lt;strong&gt;Secure Privacy&lt;/strong&gt; is expanding, and we’re looking for an experienced Senior Full-Stack Developer with expertise in .NET, C#, and MongoDB, along with GDPR experience, to join our team! You’ll work remotely with a diverse group of developers, helping us build cutting-edge data privacy solutions for global clients. This role focuses on creating and optimizing APIs and backend services. If you’re passionate about clean, maintainable code, we’d love to hear from you!&lt;br&gt;&lt;br&gt;&lt;/div&gt;\n&lt;div&gt;&lt;strong&gt;What You’ll Do:&lt;/strong&gt;&lt;/div&gt;\n&lt;ul&gt;\n&lt;li&gt;Develop and "
-    },
-    "pitch": "Hello Secure Privacy team,\n\nI am a Senior Full-Stack Engineer specializing in high-performance backend services and complex enterprise architectures. While my core expertise lies in the JavaScript/TypeScript ecosystem, I bring deep proficiency in Node.js, MongoDB, and REST API optimization that transfers seamlessly to your .NET/C# stack.\n\nFor RMC ERP, I engineered a robust Laravel and Vue 3 system handling real-time sensor feeds and intricate dispatch workflows, demonstrating my ability to build scalable, data-intensive platforms. I understand the critical importance of GDPR compliance and clean, maintainable code in privacy-focused solutions. I am ready to leverage my experience with Redis caching and high-availability systems to optimize your backend services immediately.\n\nView my full portfolio and technical details here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-05T22:10:20.734Z",
     "deliveredToTelegram": true
   }
 ]
