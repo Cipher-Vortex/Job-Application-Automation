@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6390500218",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-14T13:24 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1381",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1613890\tStacker_Sports\t3\t1278\t2100\t7\t20.9\t232181\t4435\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,HOT,SELF_POST_OPP\tWeekly Random Sports Pick 'em\n1613778\tStacker_Sports\t3\t1049\t2100\t12\t23.9\t1448206\t2819\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,HOT,SELF_POST_OPP\t🏈 Sunday Leaders Bounty • 2,100 sats\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R. I see you’re looking for a full-stack engineer to tackle the relayhop/sn-monetization-runtime bounty. With deep expertise in Node.js, TypeScript, and Redis, I can deliver a robust, high-performance solution immediately.\n\nMy work on Yeshu Tours & Travels involved building a complex booking engine with Redis caching and real-time integrations, proving my ability to handle stateful, high-traffic systems efficiently. I can implement the required runtime features with clean, tested code and submit a PR within 24 hours. Let’s get this bounty closed and shipped.\n\nCheck my portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-14T16:50:14.423Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6386954537",
       "type": "bounty",
       "title": "[wildcard] Total Tier-0: delete fail-open — every accepted program must carry a machine-checkable certificate or be rejected (limitlessprojects/Go-Hybrid)",
@@ -1533,20 +1547,6 @@
     },
     "pitch": "Hello Secure Privacy team,\n\nI am a Senior Full-Stack Engineer specializing in high-performance backend services and complex enterprise architectures. While my core expertise lies in the JavaScript/TypeScript ecosystem, I bring deep proficiency in Node.js, MongoDB, and REST API optimization that transfers seamlessly to your .NET/C# stack.\n\nFor RMC ERP, I engineered a robust Laravel and Vue 3 system handling real-time sensor feeds and intricate dispatch workflows, demonstrating my ability to build scalable, data-intensive platforms. I understand the critical importance of GDPR compliance and clean, maintainable code in privacy-focused solutions. I am ready to leverage my experience with Redis caching and high-availability systems to optimize your backend services immediately.\n\nView my full portfolio and technical details here: https://cipher-vortex.vercel.app",
     "createdAt": "2026-11-05T22:10:20.734Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_drfirst-com-inc-senior-software-engineer",
-      "type": "remote_job",
-      "title": "Senior Software Engineer",
-      "companyOrClient": "DRFIRST COM INC",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/drfirst-com-inc-senior-software-engineer",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=fc2a6c7e-ef54-4ed9-8c04-d5aca23f99e3\"&gt;https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=fc2a6c7e-ef54-4ed9-8c04-d5aca23f99e3&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;&lt;span&gt;Senior Software Engineer, eRx Enterprise and Gadget&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;h1&gt;About DrFirst&lt;/h1&gt;&lt;p&gt;For 25 years, DrFirst has empowered providers and patients to achieve better health through intelligent medication management. We improve healthcare workflows and help patients start and stay on therapy with end-to-end solutions that enhance prescription access, affordability, and adherence. Our solutions help 100 million patients a year and are used by more than 420,000 prescribers, 71,000 pharmacies, 270 EHRs and health information "
-    },
-    "pitch": "Subject: Senior Engineer Candidate: Enterprise-scale Healthcare & ERP Architecture\n\nHi DrFirst team,\n\nWith 25 years of legacy healthcare infrastructure, your eRx platform demands an engineer who thrives on complex state management and high-throughput data. I built RMC ERP, an enterprise system handling real-time sensor feeds and intricate dispatch workflows using Laravel, Vue 3, and Inertia.js. This experience directly translates to optimizing prescription access and adherence workflows at scale.\n\nMy stack includes React, Next.js, TypeScript, and Redis, ensuring I can integrate seamlessly into your existing 270+ EHR ecosystem immediately. I focus on clean, maintainable code that reduces latency and improves user experience for providers and patients alike.\n\nI am ready to start contributing to your core product suite right away. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-05T22:10:19.923Z",
     "deliveredToTelegram": true
   }
 ]
