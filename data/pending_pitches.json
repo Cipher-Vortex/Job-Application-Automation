@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6404795444",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-15T13:51 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1383",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1614834\tStacker_Stocks\t2\t189\t10000\t5\t2.0\t9274\t29696\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,LOW_COMP,FRESH,SIGNAL\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #19 Win up to 20k Sats!\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R. I see you’re looking for a full-stack engineer to tackle the relayhop/sn-monetization-runtime bounty. I specialize in high-performance React, Next.js, and Node.js systems, with a proven track record of delivering complex, scalable applications. For example, I built the Zupper Commerce platform, where I engineered 20+ reusable React components and optimized page load times by 25% through strategic memoization and code splitting. I’m ready to apply this same precision to your runtime monetization logic, ensuring clean code and immediate turnaround. I can submit a working PR today. Let’s make this happen. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-15T15:45:49.650Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "reddit_rss_t3_1xwsin6",
+      "type": "freelance",
+      "title": "(Online) Part-time Backend Engineer, Node/TypeScript + MongoDB - $3,500/month for 30h/week",
+      "companyOrClient": "Reddit r/forhire Client",
+      "budgetOrSalary": "$3,500",
+      "url": "https://www.reddit.com/r/forhire/comments/1xwsin6/hiring_online_parttime_backend_engineer/",
+      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;AdKit is a small bootstrapped SaaS (solo founder + 1). People use it to run their Meta and Google ads from their AI agents through MCP. I&amp;#39;m looking for a part-time backend engineer to work on the engineering queue, so I can focus on growth.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Details&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Pay: $3,500/month for 30h/week (about $27/h), contractor, ongoing&lt;/li&gt; &lt;li&gt;Location: fully remote, with some overlap with Bangkok time (UTC+7)&lt;/li&gt; &lt;li&gt;Stack: Nuxt 4 (Vue/Nitro), TypeScript, MongoDB + Mongoose, Redis, queues, Hetzner/Dokploy&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;What you&amp;#39;ll do&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Fix bugs reported by users, same day&lt;/li&gt; &lt;li&gt;Work through the backlog: mostly ad platform APIs and their edge cases, some features&lt;/li&gt; &lt;li&gt;Tech debt, code review, infra and security&lt;/li&gt; &l"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer from Bengaluru ready to start immediately. Your AdKit stack aligns perfectly with my expertise in Node.js, TypeScript, and Redis. I recently built Yeshu Tours & Travels, a full-scale booking engine featuring complex admin dashboards and Redis caching, proving my ability to handle robust backend logic and real-time data flows. I’m comfortable working with Nuxt 4 and MongoDB, and I prioritize same-day bug fixes to keep your users happy. I can start contributing to your engineering queue this week, focusing on ad platform API integrations and tech debt reduction. Let’s discuss how I can help you scale AdKit’s backend while you focus on growth. Check my portfolio: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-15T15:45:48.788Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_life360-senior-software-engineer-verticals-ai-native",
       "type": "remote_job",
       "title": "Senior Software Engineer, Verticals (AI Native)",
@@ -1519,34 +1547,6 @@
     },
     "pitch": "Hi, I am Kiran S R, a Full Stack Engineer based in Bengaluru. I specialize in high-performance web applications and complex state management, skills directly transferable to the WASM ABI and indexer fixes listed in your BountyScout scan. My experience building the Yeshu Tours & Travels booking engine, which required rigorous API validation and Redis caching for real-time data integrity, proves my ability to handle strict validation logic and performance-critical systems. I am ready to deliver a clean, tested PR for the specified issues immediately. Check my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-06T10:19:57.847Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6237819722",
-      "type": "bounty",
-      "title": "Give the verifier a fair chance after a challenge (odiseo159-beep/mergit)",
-      "companyOrClient": "GitHub: odiseo159-beep/mergit",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/odiseo159-beep/mergit/issues/16",
-      "description": "**What this is for**\n\nA funder can object once to a proposed payment with `challenge`. That reopens the bounty, but it does not move the deadline. If the funder objects after the deadline has passed, which the contract allows while the challenge window is still open, the verifier can never settle again and the funder can refund at once.\n\nThe first round of bounties proved it with a test (#12). The objection was meant as a check on the verifier, not as a way to take the money back.\n\n**What done looks like**\n\n- [ ] In `MergitEscrowV3.challenge`, when less than one `challengeWindow` is left before the deadline, the deadline moves to `block.timestamp + challengeWindow`, and `maxDeadline` follows if it would fall behind. Emit `DeadlineExtended` so the move is visible on chain.\n- [ ] A test showing the exploit is closed: the funder challenges after the deadline, `refund` reverts with `TooEarly`, and the verifier can settle again inside the new deadline.\n- [ ] A test showing nothing changes w"
-    },
-    "pitch": "I can close this escrow exploit immediately. My experience building secure, stateful systems like RMC ERP—handling complex dispatch workflows and sensor feeds—gives me the precision needed to fix `MergitEscrowV3`. I will implement the deadline extension logic, emit the required `DeadlineExtended` event, and deliver comprehensive tests proving the `refund` reverts with `TooEarly` while allowing the verifier to settle. I am ready to submit a clean, audited PR today. Let’s secure the contract and finalize the bounty. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-06T10:19:57.021Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6237820072",
-      "type": "bounty",
-      "title": "Test the rules that decide which bounty a pull request claims (odiseo159-beep/mergit)",
-      "companyOrClient": "GitHub: odiseo159-beep/mergit",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/odiseo159-beep/mergit/issues/17",
-      "description": "**What this is for**\n\n`agent/bounties.mjs` decides which bounty a merged pull request can claim: through the issue it closes, or through an explicit `Bounty: #N` line, and only when the bounty was funded for that same repository. Those rules move money, and they have no tests yet.\n\n**What done looks like**\n\n- [ ] `agent/test/bounties.test.js`, with `node:test` and no network. Mock `fetch` where a function needs it.\n- [ ] `pointsAtRepo`: the same repository counts; a repository whose name only starts the same (`mergit` against `mergit-demo`) does not; another domain carrying the path does not; free text does not.\n- [ ] `pointsAtIssue`: issue #1 does not match issue #10, and a dot in an owner name is literal.\n- [ ] `LINEA_BOUNTY`: works with Windows line endings, does not jump to the next line, and ignores a mention in the middle of a sentence.\n- [ ] `closedIssues`: every form of close, fix and resolve.\n- [ ] `bountyForIssue`: exactly one match is returned; none gives a reason; two give "
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer who ships robust, edge-case-proof code. I can deliver the complete test suite for `agent/bounties.mjs` immediately, using `node:test` and mocked `fetch` to ensure zero network dependency. My recent work on Zupper Commerce, where I optimized React components and reduced load times by 25%, demonstrates my precision in performance and logic. I will rigorously test `pointsAtRepo`, `LINEA_BOUNTY` line-ending handling, and `bountyForIssue` ambiguity resolution to ensure your financial logic is airtight. I’m ready to submit the PR today. Let’s secure your codebase: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-06T10:19:56.182Z",
     "deliveredToTelegram": true
   }
 ]
