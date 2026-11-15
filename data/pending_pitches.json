@@ -1,6 +1,118 @@
 [
   {
     "opportunity": {
+      "id": "wwr_come-and-see-product-engineer-full-stack",
+      "type": "remote_job",
+      "title": "Product Engineer, Full Stack",
+      "companyOrClient": "Come and See",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/come-and-see-product-engineer-full-stack",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Colorado Springs, Colorado, United States\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://comeandsee.bamboohr.com/careers\"&gt;https://comeandsee.bamboohr.com/careers&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&lt;span&gt;JOIN THE COME AND SEE TEAM&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;Product Engineer, Full Stack&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;br&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;Great stories only matter when they reach people, and you build the way they get there.&lt;/span&gt; If you love shipping software that holds up in production and see engineering as a way to serve people well – we’d love to meet you.&lt;/p&gt;\n&lt;p&gt;&lt;br&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;ABOUT US&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;Come and See is the faith-based nonprofit media ministry behind &lt;span&gt;The Chosen&lt;/span&gt;. Our mission is &lt;span&gt;inviting everyone to encounter Jesus through exceptional storytelling that"
+    },
+    "pitch": "Subject: Product Engineer Application: Kiran S R\n\nHi Come and See team,\n\nI am writing to express my strong interest in the Product Engineer, Full Stack role. As a Full Stack Engineer based in Bengaluru, I specialize in building resilient production systems using React, Next.js, TypeScript, and Node.js.\n\nMy work on the Yeshu Tours & Travels platform directly aligns with your need for software that holds up in production. I engineered a full-scale booking engine featuring a customer portal, admin dashboard, and Redis caching, ensuring high availability and seamless user experience. I am eager to bring this same dedication to serving people through exceptional storytelling to the Come and See team.\n\nI would welcome the opportunity to discuss how my technical background can support your mission. You can view my portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-15T20:46:16.631Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_true-talent-solutions-partners-software-engineer-ai-agents",
+      "type": "remote_job",
+      "title": "Software Engineer, AI Agents",
+      "companyOrClient": "True Talent Solutions Partners",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/true-talent-solutions-partners-software-engineer-ai-agents",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://truetalentsolutionspartners.com\"&gt;https://truetalentsolutionspartners.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;h3&gt;About the Role&lt;/h3&gt;&lt;p&gt;Join a product engineering team building AI-powered tools for data and marketing workflows. You will help explore new product opportunities, shape the underlying AI architecture, and bring prototypes into production.&lt;/p&gt;&lt;h3&gt;What You'll Do&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Rapidly prototype ideas that apply AI to data and marketing workflows.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Work with a small team to develop and ship product concepts, including foundational work for new product areas.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Choose AI architectures and frameworks suited to each use case.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Evaluate where different language models and AI methods work we"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in AI-driven product development. I recently architected Cerebrum, an AI note-taking platform leveraging RAG and LLM APIs, giving me direct experience in shaping AI architectures for real-world data workflows. My background in high-performance React and Node.js ensures I can rapidly prototype and scale these tools for production. I am eager to bring this technical depth to True Talent Solutions Partners to help define and ship your next-generation AI marketing tools. Let’s connect to discuss how I can contribute to your team’s immediate goals. You can view my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-15T20:46:04.998Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6406820437",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-15T16:59 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1385",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1614834\tStacker_Stocks\t2\t1239\t10000\t14\t5.1\t9274\t29698\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,HOT,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #19 Win up to 20k Sats!\n```"
+    },
+    "pitch": "Hi team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance Node.js and React applications. I see your open bounty for the relayhop/sn-monetization-runtime and I’m ready to deliver a clean, merged PR immediately. My background includes building complex, state-managed systems like the RMC ERP, where I engineered robust dispatch workflows and real-time sensor data handling using Laravel and Vue 3. I also optimized the Zupper Commerce platform by reducing page load times by 25% through advanced memoization and code splitting, ensuring the kind of efficiency your runtime requires. I can start working on your codebase right now to ensure a swift, high-quality resolution. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-15T20:46:04.219Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6408872752",
+      "type": "bounty",
+      "title": "Atomic memory facts with deduplication and selective writes (Mem0-style) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/62",
+      "description": "Do not store only giant transcripts or summaries. An event-driven writer extracts typed facts, deduplicates and reconciles them against existing memory, and records source, scope, confidence and lifecycle. A small structured-decision model (Kai) makes the ADD / UPDATE / NOOP / REVIEW call; a language model writes text summaries only where needed. References: Mem0 (arXiv 2504.19413; Apache-2.0).\n\nBenchmark: LoCoMo, LongMemEval, write precision, facts retained, false memories introduced, retrieval token cost, write amplification.\n\nShared rules for the retrieval and memory program: a source document, repository blob, Git commit, agent event or stored decision has a stable identity and version; lexical, vector, graph, memory and code indexes are DERIVED representations over those identities and can be rebuilt without destroying the record. Source identity and access-control filters are applied before any hit is returned; tenant isolation is never relaxed for speed or recall. Benchmarks rep"
+    },
+    "pitch": "I can deliver a production-ready implementation for your atomic memory facts and deduplication bounty immediately. My work on Zupper Commerce, where I reduced page load times by 25% through memoization and code splitting, demonstrates my ability to optimize complex data handling and retrieval efficiency. I specialize in building scalable systems with Node.js and Redis, ensuring precise, low-latency writes and robust state management. I am ready to submit a PR that implements the event-driven writer, deduplication logic, and structured decision model per your specifications, focusing on minimizing write amplification and maintaining strict tenant isolation. Let’s get this shipped. You can view my full portfolio and code samples here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-15T20:46:03.337Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6408873069",
+      "type": "bounty",
+      "title": "Tiered episodic, semantic and procedural memory with one API (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/63",
+      "description": "Three classes behind one API with separate retention, retrieval and compaction: episodic (what happened, observations and results), semantic (durable facts, relationships, requirements, decisions), procedural (reusable methods, workflows, skills, recovery procedures). Durable records live in persistent storage, not in an always-on bot process. References: MemOS and Letta/MemGPT (both Apache-2.0).\n\nBenchmark: long-running agent tasks, memory growth, reuse of prior procedures, recovery after restart, tokens per completed task.\n\nShared rules for the retrieval and memory program: a source document, repository blob, Git commit, agent event or stored decision has a stable identity and version; lexical, vector, graph, memory and code indexes are DERIVED representations over those identities and can be rebuilt without destroying the record. Source identity and access-control filters are applied before any hit is returned; tenant isolation is never relaxed for speed or recall. Benchmarks report"
+    },
+    "pitch": "Kiran S R here. I specialize in building resilient, stateful systems that handle complex data persistence and retrieval efficiently. For the hanzoai/agents bounty, my experience with RMC ERP is directly applicable: I engineered an enterprise system using Laravel and Vue 3 that manages real-time sensor feeds, batching logs, and dispatch workflows, ensuring data integrity across restarts. I understand the critical need for durable records with stable identities and tenant isolation, mirroring the MemOS and Letta architectures you reference. I can deliver a robust implementation of your three-tier memory system (episodic, semantic, procedural) with optimized retrieval indexes and strict access controls. I am ready to start immediately to ensure a high-quality PR delivery. Let’s build this. View my work: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-15T20:46:01.680Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6408873447",
+      "type": "bounty",
+      "title": "Reflection with belief separation and consolidation (retain, recall, reflect) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/64",
+      "description": "Separate observed evidence from inferred conclusions and evolving hypotheses; every conclusion links to the observations that support it and a reflection never silently overwrites a fact ('the regression test failed' vs 'we suspect an allocator alias'). References: Hindsight (arXiv 2512.12818; MIT).\n\nBenchmark: contradiction resolution, unsupported-memory rate, evidence attribution, confidence calibration, multi-session QA.\n\nShared rules for the retrieval and memory program: a source document, repository blob, Git commit, agent event or stored decision has a stable identity and version; lexical, vector, graph, memory and code indexes are DERIVED representations over those identities and can be rebuilt without destroying the record. Source identity and access-control filters are applied before any hit is returned; tenant isolation is never relaxed for speed or recall. Benchmarks report accuracy, latency, cost and downstream task success together (a retriever that ranks the right file bu"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in robust state management and data integrity. Your requirement for strict separation between observed evidence and inferred conclusions mirrors the architectural rigor I applied in RMC ERP, where I engineered complex dispatch workflows and sensor feeds using Laravel and Vue 3 to ensure zero data drift in enterprise environments. I have the TypeScript and system design expertise to implement the Hindsight framework, ensuring every conclusion is traceable to its source identity while maintaining strict tenant isolation. I can deliver a high-fidelity implementation with clear evidence attribution metrics immediately. Let’s build a memory system that doesn’t just recall, but reflects accurately. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-15T20:46:00.552Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6408873825",
+      "type": "bounty",
+      "title": "Self-organising associative memory with bounded consolidation (A-MEM) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/65",
+      "description": "After a write, an asynchronous bounded consolidation step adds contextual descriptions, tags and links between related incidents, decisions, code changes and lessons without slowing the write path. Raw events stay immutable; derived nodes and scores may evolve with lineage back to evidence. Reference: A-MEM (NeurIPS 2025, arXiv 2502.12110). LICENSING: the research implementation needs a separate license review before any code is incorporated.\n\nBenchmark: associative retrieval accuracy, useful new relationships, graph growth per 1,000 events, consolidation cost, effect on later task success.\n\nShared rules for the retrieval and memory program: a source document, repository blob, Git commit, agent event or stored decision has a stable identity and version; lexical, vector, graph, memory and code indexes are DERIVED representations over those identities and can be rebuilt without destroying the record. Source identity and access-control filters are applied before any hit is returned; tenan"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance data structures and API integration. Your A-MEM bounty requires efficient, asynchronous consolidation without compromising write-path latency—a challenge I’ve mastered. For Zupper Commerce, I engineered React components that reduced page load times by 25% through aggressive code splitting and memoization, directly mirroring the performance constraints of your retrieval benchmarks. I can immediately implement the bounded consolidation logic, ensuring immutable raw events while evolving derived nodes with full lineage. I’m ready to deliver a working PR with optimized graph growth metrics and consolidation cost analysis right away. Check my portfolio at https://cipher-vortex.vercel.app to see my technical depth, and let’s get this shipped.",
+    "createdAt": "2026-11-15T20:45:59.663Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6408874166",
+      "type": "bounty",
+      "title": "Learned memory policy: when to add, update, delete, forget or abstain (Memory-R1) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/66",
+      "description": "Train or calibrate a lightweight structured controller on real task outcomes to choose ADD / UPDATE / DELETE / NOOP, optimising downstream usefulness rather than retrieval similarity. Hard authorisation and retention policies override learned decisions; evaluation includes revocation and forgetting, stale knowledge, sensitive-data isolation and answering 'insufficient evidence'. References: Memory-R1 (ACL 2026, arXiv 2508.19828), MemEval (Apache-2.0), OmniMemEval.\n\nBenchmark: LoCoMo, LongMemEval, BEAM at long history lengths, agent task outcomes.\n\nShared rules for the retrieval and memory program: a source document, repository blob, Git commit, agent event or stored decision has a stable identity and version; lexical, vector, graph, memory and code indexes are DERIVED representations over those identities and can be rebuilt without destroying the record. Source identity and access-control filters are applied before any hit is returned; tenant isolation is never relaxed for speed or rec"
+    },
+    "pitch": "I can deliver a high-impact PR for your Memory-R1 controller implementation. My full-stack expertise in Node.js and Redis, demonstrated by building the Yeshu Tours & Travels booking engine with robust caching and state management, directly translates to optimizing your ADD/UPDATE/DELETE decision logic. I understand the critical need for strict tenant isolation and derived index rebuilding without destroying source records. I am ready to start immediately, focusing on calibrating the lightweight controller for optimal downstream usefulness while ensuring hard authorization policies are never relaxed. Let’s execute this bounty with precision and speed. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-15T20:45:58.804Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6404795444",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-11-15T13:51 (relayhop/sn-monetization-runtime)",
@@ -1435,118 +1547,6 @@
     },
     "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance optimization and complex state management. Your bounty requires precise alignment of `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` within the `unwind_slab_state_a85` function. My experience building the RMC ERP, which handles real-time sensor feeds and intricate dispatch workflows, demonstrates my ability to manage complex data synchronization and edge cases under strict constraints. I can analyze the 24-vector conformance suite and implement the necessary logic to pass `verify_conformance.py` immediately. I am ready to deliver a clean, verified pull request today. Please review my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-06T17:37:27.311Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6236274751",
-      "type": "bounty",
-      "title": "[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4220",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/1\n\n### 漏洞描述 / Description\n💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://132.145.159.202:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `_coalesce_frame_state_v2` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS G"
-    },
-    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance data streams and complex state management. My work on the Yeshu Tours & Travels booking engine, where I implemented Redis caching and real-time WhatsApp integration, demonstrates my ability to handle efficient data chunking and backpressure scenarios. I can immediately implement `_coalesce_frame_state_v2` and align the required masks to pass all 24 conformance vectors. I am ready to deliver a verified PR for this escrowed bounty today. Let’s secure the $450 USDC reward by solving this streaming MCP SSE challenge. You can review my technical depth at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-06T10:20:55.722Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6236274831",
-      "type": "bounty",
-      "title": "[Bounty] 💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Bloc (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$600 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4221",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/Furnace/issues/2\n\n### 漏洞描述 / Description\n💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://132.145.159.202:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `reconcile_stride_dbdc` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GREEN`).\n\n### 积分币奖励 "
-    },
-    "pitch": "I am Kiran S R, a Full Stack Engineer ready to execute the 24-Vector Conformance Suite for PagedAttention KV-Cache. My background in high-performance systems, specifically optimizing React and Node.js architectures for Zupper Commerce, demonstrates my precision in handling complex state synchronization and data integrity. I am prepared to implement `reconcile_stride_dbdc` and align the `STREAM_WATERMARK_MASK` to ensure `verify_conformance.py` passes all 24 vectors immediately. I can deliver the PR today to secure the escrowed $600 USDC. Let’s finalize this quickly—check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-06T10:20:39.506Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6236274899",
-      "type": "bounty",
-      "title": "[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4222",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/Furnace/issues/1\n\n### 漏洞描述 / Description\n💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://132.145.159.202:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `_fence_cursor_state_v4` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GREEN`).\n\n### 积分币奖励 /"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance streaming architectures and state management. Your 24-vector conformance suite for MCP SSE chunk reassembly with backpressure aligns perfectly with my experience building real-time data pipelines. For RMC ERP, I engineered robust sensor feed handling and complex dispatch workflows using Laravel and Vue 3, ensuring zero data loss under heavy load. I can implement `_fence_cursor_state_v4` and align the watermark masks to pass all 24 vectors immediately. I’m ready to deliver the solution for escrowed payout on GitHub. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-06T10:20:38.657Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6236275020",
-      "type": "bounty",
-      "title": "[Bounty] 💎 [Bounty $600 USDC] PagedAttention KV-Cache Block Desync on Prefix-Aware Chunke (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$600 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4223",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/protocol-conformance-relay/issues/2\n\n### 漏洞描述 / Description\n💎 [Bounty $600 USDC] PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption (reconcile_stride_dbdc)\n\n> **Automated CI Regression Mirror Notice**: Automated CI build and specification relay issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC (`/attempt` / `/claim` enabled)\n- **External Edge Conformance Mirror**: http://132.145.159.202:11449/v1/conformance/epoch\n- **Upstream Conformance Test Runner**: https://github.com/IES-BoilerRoom/Furnace/issues/2\n- **Rotating Domain Mirror**: https://github.com/IES-BoilerRoom/vllm-paged-kv-verifier/issues/2\n\nDuring concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual blo"
-    },
-    "pitch": "Hello, I am Kiran S R, a Full Stack Engineer specializing in high-performance system optimization. I noticed the PagedAttention KV-Cache desync bounty and can deliver a robust fix immediately. My work on Zupper Commerce demonstrates my ability to reduce page load times by 25% through precise memoization and code splitting, proving my expertise in managing complex state and performance bottlenecks. I am ready to analyze the `reconcile_stride_dbdc` logic and submit a verified pull request to resolve the virtual block desync during prefix-aware chunked preemption. I prioritize immediate turnaround and secure escrow compliance. Please review my portfolio at https://cipher-vortex.vercel.app to confirm my technical depth and let’s proceed with the attempt.",
-    "createdAt": "2026-11-06T10:20:37.833Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6236275091",
-      "type": "bounty",
-      "title": "[Bounty] 💎 [Bounty $450 USDC] Streaming MCP SSE Chunk Boundary Reassembly with Backpressu (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4224",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/protocol-conformance-relay/issues/1\n\n### 漏洞描述 / Description\n💎 [Bounty $450 USDC] Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff (_fence_cursor_state_v4)\n\n> **Automated CI Regression Mirror Notice**: Automated CI build and specification relay issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (`/attempt` / `/claim` enabled)\n- **External Edge Conformance Mirror**: http://132.145.159.202:11449/v1/conformance/epoch\n- **Upstream Conformance Test Runner**: https://github.com/IES-BoilerRoom/Furnace/issues/1\n- **Rotating Domain Mirror**: https://github.com/IES-BoilerRoom/vllm-paged-kv-verifier/issues/1\n\nUnder high-throughput MCP tool streaming, multi-byte UTF-8 codepoints split across arbitrary Server-Sent Events (SSE) TCP ch"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance Node.js and streaming architectures. Your bounty on MCP SSE chunk boundary reassembly aligns perfectly with my experience optimizing real-time data flows. At Zupper Commerce, I reduced page load times by 25% through advanced memoization and code splitting, demonstrating my ability to handle complex state management and performance bottlenecks. I also built the Redis-cached booking engine for Yeshu Tours, ensuring robust data integrity under high throughput. I can deliver a precise, backpressure-aware solution for your UTF-8 reassembly issue immediately. Let’s discuss the technical specifics. View my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-06T10:20:36.921Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6236275176",
-      "type": "bounty",
-      "title": "[Bounty] [Bounty $750] Fix sharded softmax on offset core grids (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$750",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4225",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/tenstorrent/tt-metal/issues/64575\n\n### 漏洞描述 / Description\n[Bounty $750] Fix sharded softmax on offset core grids\n\n## 📝 Background\n\nttnn.softmax_in_place and ttnn.scale_mask_softmax_in_place can silently return incorrect results for height-sharded inputs when used with SoftmaxShardedMultiCoreProgramConfig and the shard grid does not begin at core (0, 0). On affected offset grids, some shards are softmaxed while others are left unchanged with their input logits. The same failure pattern is reproducible on Wormhole and Blackhole in ttsim.\n\nThis is a correctness issue: the operation returns without an error, but the output can be substantially wrong. Sharded layer_norm and rms_norm on comparable offset grids are correct.\n## 🎯 What Success Looks Like\n\n    Fix both softmax_in_place and scale_mask_softmax_in_place for supported height-sharded inputs whose shard grid is offset from (0, 0).\n\n    Fix both softmax_in_place and"
-    },
-    "pitch": "Hi, I’m Kiran S R. I can deliver a verified PR fixing the offset core grid bug in `ttnn.softmax_in_place` and `scale_mask_softmax_in_place` immediately. My background in high-performance systems, including building the RMC ERP with complex sensor feed handling and dispatch workflows, ensures I can rigorously debug and validate tensor operations on Wormhole and Blackhole architectures. I focus on correctness and performance, ensuring no silent failures in critical compute paths. I am ready to start now to meet your bounty requirements. Let’s resolve this together: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-06T10:20:36.095Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6237898386",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 16 New Opportunityies found (Rohank143/BountyScout)",
-      "companyOrClient": "GitHub: Rohank143/BountyScout",
-      "budgetOrSalary": "$600 USDC",
-      "url": "https://github.com/Rohank143/BountyScout/issues/70",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-06 06:23 UTC\n\n#### 1. [Test the rules that decide which bounty a pull request claims](https://github.com/odiseo159-beep/mergit/issues/17)\n- **Repository:** [odiseo159-beep/mergit](https://github.com/odiseo159-beep/mergit)\n- **Comments:** 1\n- **Last Updated:** 2026-11-06T06:19:34Z\n\n#### 2. [Give the verifier a fair chance after a challenge](https://github.com/odiseo159-beep/mergit/issues/16)\n- **Repository:** [odiseo159-beep/mergit](https://github.com/odiseo159-beep/mergit)\n- **Comments:** 1\n- **Last Updated:** 2026-11-06T06:19:34Z\n\n#### 3. [Contribution: fix(template_lib): reject duplicate NFT initial_supply IDs and add ConfidentialResourceBuilder::update_metadata (tari-project/tari-ootle#3354)](https://github.com/tari-project/special_contributions/issues/477)\n- **Repository:** [tari-project/special_contributions](https://github.com/tari-project/special_contributions)\n- **Comments:** 0\n- **Last Updated:** 2026-11-06T06:19:17Z\n\n####"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in complex state management and performance optimization. I see the bounty for the Mergit repository and am ready to deliver a precision-focused PR immediately. My experience building the RMC ERP with Laravel and Vue 3 involved rigorous logic for dispatch workflows and sensor feeds, directly translating to the nuanced rule-based verification and challenge handling required here. I prioritize clean, testable code that resolves edge cases without introducing regressions. I can start now and have a working solution ready for review within hours. Let’s get this bounty closed efficiently. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-06T10:19:58.695Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6238773563",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 16 New Opportunityies found (freedom-winds/BountyScout)",
-      "companyOrClient": "GitHub: freedom-winds/BountyScout",
-      "budgetOrSalary": "$600 USDC",
-      "url": "https://github.com/freedom-winds/BountyScout/issues/1384",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-06 07:39 UTC\n\n#### 1. [Contribution: fix(engine): validate method names on SetAccessRules and function output/nested types in WASM ABI (tari-project/tari-ootle#3351)](https://github.com/tari-project/special_contributions/issues/481)\n- **Repository:** [tari-project/special_contributions](https://github.com/tari-project/special_contributions)\n- **Comments:** 0\n- **Last Updated:** 2026-11-06T07:33:57Z\n\n#### 2. [Add a CONTRIBUTORS file](https://github.com/letsbecool9792/sereno-demo/issues/1)\n- **Repository:** [letsbecool9792/sereno-demo](https://github.com/letsbecool9792/sereno-demo)\n- **Comments:** 0\n- **Last Updated:** 2026-11-06T07:33:04Z\n\n#### 3. [Contribution: fix(indexer): index burnt UTXO substates when promoting shard snapshots (tari-project/tari-ootle#3300)](https://github.com/tari-project/special_contributions/issues/480)\n- **Repository:** [tari-project/special_contributions](https://github.com/tari-project/special_contributi"
-    },
-    "pitch": "Hi, I am Kiran S R, a Full Stack Engineer based in Bengaluru. I specialize in high-performance web applications and complex state management, skills directly transferable to the WASM ABI and indexer fixes listed in your BountyScout scan. My experience building the Yeshu Tours & Travels booking engine, which required rigorous API validation and Redis caching for real-time data integrity, proves my ability to handle strict validation logic and performance-critical systems. I am ready to deliver a clean, tested PR for the specified issues immediately. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-06T10:19:57.847Z",
     "deliveredToTelegram": true
   }
 ]
