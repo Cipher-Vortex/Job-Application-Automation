@@ -1,6 +1,76 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6416314114",
+      "type": "bounty",
+      "title": "Bounty Scout — 2026-11-16 (ariahendrawan-sudo/project-a)",
+      "companyOrClient": "GitHub: ariahendrawan-sudo/project-a",
+      "budgetOrSalary": "$10",
+      "url": "https://github.com/ariahendrawan-sudo/project-a/issues/28",
+      "description": "# Bounty Scout — week of 2026-11-16\n\nTarget: at least US$10/week. One merged bounty of US$50 covers ~5 weeks.\n\n| # | Score | Amount | Stars | Comments | Repository | Issue |\n|---|------:|-------:|------:|---------:|------------|-------|\n| – | – | – | – | – | – | No bounty passed the filters this week |\n\n## Filtered out\n\n- no stated amount: 93\n- outside expertise: 48\n- bounty-farm repository: 43\n- below minimum amount: 12\n- not an organisation repo: 3\n- fewer than 500 stars: 2\n\n## Before claiming\n- Read the repo's CONTRIBUTING and bounty rules; many ban low-effort or unreviewed AI-generated PRs.\n- Check nobody is already assigned or has an open PR (comment count is a proxy only).\n- Prefer 💎 Algora bounties: the payout is escrowed by the platform.\n- Comment to claim (e.g. `/attempt` on Algora) only when you can deliver within a week.\n- Payouts go to your own Algora/IssueHunt/Stripe account; declare the income for tax.\n"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. I noticed your bounty scout report for the week of 2026-11-16. While no specific bounty passed the filters this week, I am ready to deploy immediately on the next eligible issue that matches my expertise. My work on Zupper Commerce demonstrates a proven ability to optimize frontend performance, reducing page load times by 25% through efficient code splitting and memoization. I deliver clean, tested, and production-ready code with a fast turnaround, ensuring strict adherence to repository contribution guidelines. Let’s connect to discuss how I can help you secure the next bounty payout. You can review my full portfolio and technical details here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-16T07:36:05.015Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6412513511",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-16T01:53 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1389",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1614834\tStacker_Stocks\t2\t1239\t10000\t18\t14.0\t9274\t29715\ttop@Stacker_Stocks\tOPEN_BOUNTY,HOT,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #19 Win up to 20k Sats!\n```"
+    },
+    "pitch": "Hi Stacker_Stocks, I’m Kiran S R, a Full Stack Engineer ready to deliver immediate value for your SN monetization runtime bounty. My expertise in high-performance React and TypeScript directly addresses your needs, as demonstrated by my work on Zupper Commerce, where I built 20+ reusable components and reduced page load times by 25% through advanced memoization and code splitting. I am equipped to handle complex state management and API integrations with the precision required for your weekly contest infrastructure. I can start immediately and guarantee a quick turnaround for this HOT opportunity. Let’s connect to discuss how I can contribute to your runtime’s success. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-16T07:36:04.169Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6412082749",
+      "type": "bounty",
+      "title": "Bounty $150: capture adapter for Front (overturn-ai/overturn)",
+      "companyOrClient": "GitHub: overturn-ai/overturn",
+      "budgetOrSalary": "$150",
+      "url": "https://github.com/overturn-ai/overturn/issues/20",
+      "description": "Capture for Front, matching what `packages/zendesk-app` does in Zendesk: record what the AI drafted, what the human sent, and one-line reason, from inside the tool the expert already works in.\n\n**Bounty: $150**, paid on merge (PayPal, Wise or GitHub Sponsors — your choice).\n\n### What it should do\n\nA Front plugin that, for a conversation with an AI draft in the composer:\n\n1. Detects a draft landing in the reply box and shows `Draft inserted · N words`.\n2. Offers the reason picker (`reason_pack`, same eight codes as the claims pack; `support` pack also supported) with an optional note.\n3. On send, `POST /v1/capture` with `source: \"front\"`, `externalId: \"fr:<conversation id>\"`, the conversation as `context`, and `draft` / `sent` as `{ text, fields? }`.\n4. Honours `require_reason`: a changed reply is blocked until there is a reason.\n5. Never blocks the send — a failed capture logs and gets out of the way.\n\n### Shape to follow\n\n- `packages/zendesk-app/src/capture.ts` and its test are the re"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to deliver the Front capture adapter immediately. My work on the RMC ERP involved integrating complex dispatch workflows and real-time sensor feeds into existing enterprise tools, mirroring the precision needed to hook into Front’s composer without disrupting the send flow. I can build the `reason_pack` picker, handle the `POST /v1/capture` payload with `externalId` mapping, and ensure non-blocking error handling within 24-48 hours. I’m comfortable working within the `packages/zendesk-app` architectural patterns to ensure seamless integration. Let’s get this PR merged and the bounty secured. You can view my recent engineering work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-16T07:36:03.245Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6412082943",
+      "type": "bounty",
+      "title": "Bounty $100: capture adapter for Intercom (overturn-ai/overturn)",
+      "companyOrClient": "GitHub: overturn-ai/overturn",
+      "budgetOrSalary": "$100",
+      "url": "https://github.com/overturn-ai/overturn/issues/21",
+      "description": "Capture for Intercom, matching what `packages/zendesk-app` does in Zendesk: record what the AI drafted, what the human sent, and one-line reason, from inside the tool the expert already works in.\n\n**Bounty: $100**, paid on merge (PayPal, Wise or GitHub Sponsors — your choice).\n\n### What it should do\n\nAn Intercom app (Canvas Kit, inbox surface) that, for a conversation with an AI draft in the composer:\n\n1. Detects a draft landing in the composer and shows `Draft inserted · N words`.\n2. Offers the reason picker (`reason_pack`; `support` codes by default here) with an optional note.\n3. On send, `POST /v1/capture` with `source: \"intercom\"`, `externalId: \"ic:<conversation id>\"`, the conversation as `context`, and `draft` / `sent` as `{ text, fields? }`.\n4. Honours `require_reason`.\n5. Never blocks the send.\n\nNote that Intercom's Fin drafts and a human-written reply must be distinguishable: tag the run `draft:ai` only when the draft came from an assist, `draft:manual` when the human typed it"
+    },
+    "pitch": "I can deliver the Intercom capture adapter for overturn-ai/overturn immediately. My experience building the RMC ERP with Vue 3 and Inertia.js demonstrates my ability to integrate complex workflows directly into enterprise tools, ensuring seamless data capture without disrupting user flow. I will implement the Canvas Kit app to detect AI drafts, enforce reason selection, and POST to `/v1/capture` with proper `draft:ai` vs `draft:manual` tagging. I guarantee a working PR within 24 hours, strictly adhering to the non-blocking requirement. Let’s get this merged and paid. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-16T07:36:02.291Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6412083049",
+      "type": "bounty",
+      "title": "Bounty $100: capture adapter for Gorgias (overturn-ai/overturn)",
+      "companyOrClient": "GitHub: overturn-ai/overturn",
+      "budgetOrSalary": "$100",
+      "url": "https://github.com/overturn-ai/overturn/issues/22",
+      "description": "Capture for Gorgias, matching what `packages/zendesk-app` does in Zendesk: record what the AI drafted, what the human sent, and one-line reason, from inside the tool the expert already works in.\n\n**Bounty: $100**, paid on merge (PayPal, Wise or GitHub Sponsors — your choice).\n\n### What it should do\n\nA Gorgias app (ticket sidebar widget) that, for a ticket with an AI draft in the reply box:\n\n1. Detects a draft landing in the reply box and shows `Draft inserted · N words`.\n2. Offers the reason picker (`reason_pack`, `support` codes by default) with an optional note.\n3. On send, `POST /v1/capture` with `source: \"gorgias\"`, `externalId: \"gr:<ticket id>\"`, the ticket as `context`, and `draft` / `sent` as `{ text, fields? }`.\n4. Honours `require_reason`.\n5. Never blocks the send.\n\nGorgias ecommerce teams are the likely first users here, so the `support` reason pack and order-context fields matter more than the claims pack.\n\n### Shape to follow\n\n- `packages/zendesk-app/src/capture.ts` and its"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to deliver the Gorgias capture adapter for overturn-ai/overturn immediately. My experience building the Zupper Commerce platform, where I optimized React performance and managed complex state, directly translates to creating a non-blocking sidebar widget that seamlessly detects AI drafts and handles `POST /v1/capture` requests without interfering with the agent’s workflow. I understand the critical need for the `support` reason pack and order-context fields for ecommerce teams. I can have a PR ready for review within 24 hours, ensuring strict adherence to your `packages/zendesk-app` architecture. Check my work at https://cipher-vortex.vercel.app and let’s get this merged.",
+    "createdAt": "2026-11-16T07:36:00.742Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6409870437",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-11-15T21:41 (relayhop/sn-monetization-runtime)",
@@ -1443,110 +1513,6 @@
     },
     "pitch": "I can deliver the PR to integrate the Hybrid checker directly into `go vet` and `go build`, eliminating the `.hy` file split and adoption tax. My background in building complex, enterprise-grade systems like RMC ERP—handling intricate workflows and real-time data pipelines with Laravel and Vue 3—proves my ability to navigate and refactor sophisticated codebases with precision. I am ready to immediately start implementing the analyzer to treat `managed` blocks as lintable directives, ensuring the compiler crate functions strictly as a verifier while shrinking the emit pipeline. I can have a working proof-of-concept branch ready for review within 24 hours. Check my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-06T22:40:08.101Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137688",
-      "type": "remote_job",
-      "title": "Senior Vue Developer",
-      "companyOrClient": "Lemon.io",
-      "budgetOrSalary": "$50000k - $180000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688",
-      "description": "  Lemon.io  helps companies in the US and Europe hire experienced engineers, from funded startups to teams like Klarna, Retool, and Pinterest. Weâve been doing this since 2015, and more than 1,500 companies have hired engineers through us.  New roles for Senior Vue Engineers come in all the time, and several are open right now.   Two ways to work with clients     Contract:  most roles are contract-based. You join the clientâs team and work as part of it.   Direct hire:  some clients hire engineers full-time, and we support you through the process.   Because companies trust our vetting, applying through  Lemon.io  is often a shortcut. You get to the client faster than going through their full hiring process on your own.   What you get    Competitive rate, based on your seniority and skills  We find the projects. No client hunting or rate negotiations. We match you manually based on your skills and preferences.  Flexible schedule. Work async or with a small overlap with the teamâs ",
-      "tags": [
-        "engineer",
-        "dev",
-        "full time",
-        "full stack",
-        "remote",
-        "remote work",
-        "javascript",
-        "typescript",
-        "php",
-        "laravel",
-        "node",
-        "dot net",
-        "python",
-        "front end"
-      ]
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer in Bengaluru specializing in Vue 3 and enterprise-grade applications. I see you’re seeking a Senior Vue Developer, and my recent work with RMC ERP aligns perfectly with that need. I built a complex Laravel and Vue 3 stack using Inertia.js to manage batching logs, sensor feeds, and dispatch workflows for an industrial client. This experience proves my ability to handle real-time data and intricate state management in high-stakes environments. I’m ready to integrate immediately into your client’s team, bringing speed and precision to your project without the usual onboarding friction. Let’s connect to discuss how I can deliver immediate value. You can review my full portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-06T17:37:31.765Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137691",
-      "type": "remote_job",
-      "title": "Feltsense AI Engineer",
-      "companyOrClient": "Silver.dev",
-      "budgetOrSalary": "$60000k - $110000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-feltsense-ai-engineer-silver-dev-1137691",
-      "description": " About the company  We raised $5.1M to build agents that operate as fully autonomous founders. Our backers include Matt Schlicht (founder of Moltbook), the founders of Crunchbase and Republic, and VCs including Draper, Precursor, and Liquid2.  We're working at the frontier of autonomous systems, building agents that don't just chat, but run entire businesses.  Our system identifies business opportunities through market signals, validates ideas with live ad tests, builds and launches software products, and brings in human experts wherever agents fall short. That loop already runs end to end: from idea to launched product to first revenue.  Over the next 12 months, our focus is on reliability, throughput, and self-improvement, making every launch better than the last.    About the role  We're looking for a hands-on AI Engineer to take ownership of the architecture and development of our autonomous agent system.  You'll lead the technical direction of the platform, building multi-agent or",
-      "tags": [
-        "design",
-        "sys admin",
-        "exec",
-        "technical",
-        "customer support",
-        "dev",
-        "testing",
-        "javascript",
-        "cloud",
-        "postgres",
-        "typescript",
-        "node",
-        "node.js",
-        "engineer",
-        "backend",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi Silver.dev team,\n\nI’m Kiran S R, a Full Stack Engineer specializing in high-reliability systems and AI integration. Your mission to build autonomous founders resonates with my recent work on Cerebrum, an AI note-taking platform leveraging RAG architecture and Grok API. I bring proven expertise in React, Next.js, and Node.js to your stack, with a track record of reducing page load times by 25% through optimized component architecture. I’m ready to take ownership of your agent system’s technical direction, focusing on the reliability and throughput improvements needed for your next 12-month growth phase. Let’s discuss how I can help scale your autonomous infrastructure. You can view my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-06T17:37:30.878Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6236274666",
-      "type": "bounty",
-      "title": "[Bounty] 💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Bloc (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$600 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4219",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/mcp-sse-frame-conformance/issues/2\n\n### 漏洞描述 / Description\n💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://132.145.159.202:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `arbitrate_slot_025a` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GREE"
-    },
-    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance systems and state synchronization. I recently engineered a Redis-cached booking engine for Yeshu Tours & Travels, solving complex data consistency challenges under heavy load. This experience directly translates to the precision required for your PagedAttention KV-Cache conformance suite. I am prepared to implement `arbitrate_slot_025a` and align the necessary bitmasks to ensure `verify_conformance.py` passes all 24 vectors. I can deliver a working PR immediately for the $600 USDC bounty. Let’s secure this merge. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-06T17:37:30.037Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6241069826",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 17 New Opportunityies found (dev-kp-eloper/BountyScout)",
-      "companyOrClient": "GitHub: dev-kp-eloper/BountyScout",
-      "budgetOrSalary": "$600 USDC",
-      "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1732",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-06 10:32 UTC\n\n#### 1. [Card coverage: Foundations (FDN)](https://github.com/krakenhavoc/cmd_and_ctrl/issues/4465)\n- **Repository:** [krakenhavoc/cmd_and_ctrl](https://github.com/krakenhavoc/cmd_and_ctrl)\n- **Comments:** 10\n- **Last Updated:** 2026-11-06T10:32:01Z\n\n#### 2. [Card coverage: Avatar: The Last Airbender (TLA)](https://github.com/krakenhavoc/cmd_and_ctrl/issues/4459)\n- **Repository:** [krakenhavoc/cmd_and_ctrl](https://github.com/krakenhavoc/cmd_and_ctrl)\n- **Comments:** 1\n- **Last Updated:** 2026-11-06T10:30:55Z\n\n#### 3. [[BUG BOUNTY] Medium: cosign_message hardcodes SPL_TOKEN_PROGRAM_ID in transact_spl assembly and omits token_program in SettlementParams, breaking Token-2022 settlement](https://github.com/paraloom-labs/paraloom-core/issues/1363)\n- **Repository:** [paraloom-labs/paraloom-core](https://github.com/paraloom-labs/paraloom-core)\n- **Comments:** 1\n- **Last Updated:** 2026-11-06T10:29:28Z\n\n#### 4. [POLISH — MAG"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in performance optimization and scalable architecture. I saw the BountyScout scan and am ready to deliver immediate value. My work on Zupper Commerce directly aligns with your needs, where I built 20+ reusable React components and reduced page load times by 25% through memoization and code splitting. I combine this frontend expertise with robust backend patterns from projects like RMC ERP, ensuring end-to-end reliability. I can start immediately and deliver a polished, high-performance solution within 24 hours. Let’s discuss how I can tackle these specific issues for you. You can view my recent work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-06T17:37:29.138Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6241933277",
-      "type": "bounty",
-      "title": "[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4236",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/asyncpg-savepoint-harness/issues/1\n\n### 漏洞描述 / Description\n💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://132.145.159.202:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `_reconcile_cursor_span_v6` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS "
-    },
-    "pitch": "Hi, I am Kiran S R, a Full Stack Engineer specializing in high-performance backend systems and real-time data handling. Your bounty requires precise implementation of `_reconcile_cursor_span_v6` and complex bit-manipulation logic for SSE chunk reassembly. My work on RMC ERP, where I managed real-time sensor feeds and dispatch workflows using Laravel and Vue 3, demonstrates my ability to handle concurrent data streams and state synchronization under load. I can immediately implement the 48-bit mask alignment and ensure `verify_conformance.py` passes all 24 vectors. I am ready to deliver the merged solution for the $450 USDC reward. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-06T17:37:28.294Z",
     "deliveredToTelegram": true
   }
 ]
