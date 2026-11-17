@@ -1,6 +1,174 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6429663055",
+      "type": "bounty",
+      "title": "🎯 Bounty Alert: 11 New Opportunityies found (dev-kp-eloper/BountyScout)",
+      "companyOrClient": "GitHub: dev-kp-eloper/BountyScout",
+      "budgetOrSalary": "$1 USDC",
+      "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1774",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-16 20:04 UTC\n\n#### 1. [第三方独立复验：dsh-memory PR #955（fix(hot)：热层不再每次都全量重建）——脚本守卫8判据 基线2红/6过→修复全绿](https://github.com/FuRongJun-1999/dsh-bounty/issues/2690)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-11-16T20:01:28Z\n\n#### 2. [第三方独立复验：dsh-memory PR #952（fix(memory)：写入面也打用途标签）——脚本守卫6判据（新增T5） 基线1红/5过→修复全绿](https://github.com/FuRongJun-1999/dsh-bounty/issues/2689)\n- **Repository:** [FuRongJun-1999/dsh-bounty](https://github.com/FuRongJun-1999/dsh-bounty)\n- **Comments:** 0\n- **Last Updated:** 2026-11-16T19:53:57Z\n\n#### 3. [Railway 赏金：有 4 条值得抢](https://github.com/HCTDIP/corps-jobs/issues/198)\n- **Repository:** [HCTDIP/corps-jobs](https://github.com/HCTDIP/corps-jobs)\n- **Comments:** 0\n- **Last Updated:** 2026-11-16T19:52:24Z\n\n#### 4. [[Bounty] [Wave 2 · Epoch 1: 25 × $1 USDC | 1,000-Slot Program] Continuous Agent & Researc](https://github.com/zhangjia"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer in Bengaluru. I build high-performance systems using React, TypeScript, and Node.js. At Zupper Commerce, I engineered 20+ reusable components and cut page load times by 25% via code splitting, proving my ability to deliver efficient, production-ready code quickly. I can immediately tackle your bounty requirements with precision and speed. Check out my work at https://cipher-vortex.vercel.app and let’s get this done.",
+    "createdAt": "2026-11-17T01:31:06.803Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6429936276",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-16T20:19 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1396",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1615501\tConstruction_and_Engineering\t2\t86\t5000\t1\t4.9\t9274\t29727\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #10: Post Your Proof-of-Work 🔨 💰\n```"
+    },
+    "pitch": "I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js systems. I see you’re seeking proof-of-work for your monetization runtime. I can deliver a tangible, functional component or integration PR immediately, demonstrating real-world impact. My recent work on Zupper Commerce optimized page loads by 25% through rigorous memoization and code splitting, proving my ability to ship efficient, production-ready code fast. I don’t just write code; I solve architectural bottlenecks. I’m ready to start now and deliver a concrete, testable artifact for your review. Check my portfolio at https://cipher-vortex.vercel.app to see my latest builds and let’s get started.",
+    "createdAt": "2026-11-17T01:30:57.716Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6433234084",
+      "type": "bounty",
+      "title": "Automatic prompt and workflow optimization (DSPy) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/79",
+      "description": "Reference: DSPy, https://github.com/stanfordnlp/dspy\n\nOptimize selected agent instructions and model-call programs against executable task metrics. Acceptance: pass rate, cost and tokens on held-out tasks.\n\nClass: research bounty. A reproducible experiment with raw results, methodology, limitations and an integration recommendation; a valid negative result completes it. If the result earns a place in the core, maintainers open an implementation bounty on this issue (accepted code, tests, benchmarks, license clearance, merged PR); reproducing a paper alone is not enough.\n\nEvery submission carries: (1) the primary paper or code link, a summary and a license audit; (2) a reproducible upstream baseline and the identical baseline on Hanzo hardware; (3) one falsifiable hypothesis with metrics and expected failure modes; (4) a bounded implementation PR, or a documented negative result; (5) correctness, concurrency, security and regression evidence appropriate to the change; (6) before/after m"
+    },
+    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance optimization and complex system architecture. For the DSPy prompt optimization bounty, my work on Zupper Commerce is directly relevant, where I reduced page load times by 25% through rigorous memoization and code splitting. I approach this research bounty with the same precision, ready to deliver a reproducible experiment with raw results, a falsifiable hypothesis, and a bounded implementation PR. I can execute the baseline comparison and optimization strategy immediately, ensuring your acceptance criteria for pass rate, cost, and token efficiency are met. Let’s get this bounty closed. View my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-17T01:30:25.447Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6433237710",
+      "type": "bounty",
+      "title": "Computer-workflow benchmark on Visor (OSWorld) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/80",
+      "description": "(hanzoai/visor has issues disabled; tracked here.) Reference: OSWorld, https://os-world.github.io/\n\nRun a reproducible subset of real desktop and computer tasks in supported sandbox environments. Acceptance: success, cold-start time, resource usage and cleanup correctness.\n\nClass: research bounty. A reproducible experiment with raw results, methodology, limitations and an integration recommendation; a valid negative result completes it. If the result earns a place in the core, maintainers open an implementation bounty on this issue (accepted code, tests, benchmarks, license clearance, merged PR); reproducing a paper alone is not enough.\n\nEvery submission carries: (1) the primary paper or code link, a summary and a license audit; (2) a reproducible upstream baseline and the identical baseline on Hanzo hardware; (3) one falsifiable hypothesis with metrics and expected failure modes; (4) a bounded implementation PR, or a documented negative result; (5) correctness, concurrency, security a"
+    },
+    "pitch": "I can deliver the reproducible OSWorld benchmark suite for hanzoai/agents immediately. With deep expertise in Node.js, TypeScript, and system-level integration, I have the technical rigor to execute your acceptance criteria: measuring success rates, cold-start times, and resource cleanup in sandboxed environments. My work on RMC ERP, where I managed real-time sensor feeds and complex dispatch workflows, demonstrates my ability to build robust, high-stakes system integrations. I will provide a complete research package including raw results, a falsifiable hypothesis, and a bounded implementation PR or documented negative result, ensuring full license compliance and security. I am ready to submit this reproducible experiment today. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-17T01:30:24.580Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6433350548",
+      "type": "bounty",
+      "title": "[Bounty #28] Temporal memory benchmark · agents (LongMemEval) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/82",
+      "description": "**Umbrella HIP**: [HIP-1346: Evidence-Grounded Retrieval and Decision Evaluation](https://hips.hanzo.ai/docs/hip-1346-evidence-grounded-retrieval-and-decision-evaluation/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n**Primary Research / Code**: [LongMemEval code](https://github.com/xiaowu0162/LongMemEval) · [paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/d813d324dbf0598bbdc9c8e79740ed01-Abstract-Conference.html)\n\n### Objective & Acceptance Test\nEvaluate existing `hanzoai/agents` memory policies (`#62-#66`) on memory updates, contradictions, temporal ordering, abstention, and cross-session retrieval without adding a competing memory engine.\n\n### Scope & Canonical Architecture\nObjective evaluation harness for existing memory builders.\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reported f"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance data architectures. Your bounty on temporal memory benchmarks aligns perfectly with my work on RMC ERP, where I engineered complex dispatch workflows and sensor feed handling using Laravel and Vue 3 to ensure strict data integrity and real-time state management. I am ready to deliver the objective evaluation harness for hanzoai/agents, ensuring canonical stack boundaries remain intact while rigorously testing memory policies for temporal ordering and cross-session retrieval. I can provide an immediate PR with the evaluation logic and performance metrics. Let’s build a robust, evidence-grounded retrieval system together. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-17T01:30:23.751Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6433351123",
+      "type": "bounty",
+      "title": "[Bounty #29] Evidence-ordering robustness · agents (Lost in the Middle) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/83",
+      "description": "**Umbrella HIP**: [HIP-1346: Evidence-Grounded Retrieval and Decision Evaluation](https://hips.hanzo.ai/docs/hip-1346-evidence-grounded-retrieval-and-decision-evaluation/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n**Primary Research / Code**: [Lost in the Middle, TACL '24](https://aclanthology.org/2024.tacl-1.9/)\n\n### Objective & Acceptance Test\nBenchmark evidence placement and context packing across document positions in `hanzoai/agents`. Optimize answer correctness and input token cost rather than raw context size.\n\n### Scope & Canonical Architecture\nCovers long multi-document agent tool outputs.\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reported figures in referenced FAST/conference papers belong strictly to the original authors' environments and MUST NOT be treated as Hanzo expectations until r"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React, Node.js, and TypeScript systems. I can immediately tackle the evidence-ordering robustness bounty for `hanzoai/agents`. My work on Zupper Commerce, where I reduced page load times by 25% through aggressive memoization and code splitting, directly translates to optimizing input token costs and answer correctness for your long-context agent outputs. I understand the strict architectural boundaries and am ready to deliver a PR that benchmarks evidence placement and optimizes context packing without compromising the canonical stack. I can start immediately and deliver a robust solution within 48 hours. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-17T01:30:22.919Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6433352508",
+      "type": "bounty",
+      "title": "[Bounty #31] Long-horizon coding-agent evaluation · agents (SWE-bench Pro V2) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/84",
+      "description": "**Umbrella HIP**: [HIP-1347: Event-Driven Agent Reliability](https://hips.hanzo.ai/docs/hip-1347-event-driven-agent-reliability/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n- **Wave 1 Priority**: Rank #2 of 10 (early funded gate)\n**Primary Research / Code**: [SWE-bench Pro V2](https://labs.scale.com/leaderboard/swe_bench_pro_public_v2?tab=full)\n\n### Objective & Acceptance Test\nBuild a reproducible subset runner on `hanzoai/visor` sandboxes using the September 2026 anti-leakage revision. Compare task resolution, wall time, model cost, and filesystem IO (`vfs` vs plain NVMe).\n\n### Scope & Canonical Architecture\nWave 1 Priority #2! Enforce strict anti-leakage controls against git history/reference fixes and isolate `HANZO_API_KEY` (`ai:inference` only).\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reporte"
+    },
+    "pitch": "I can deliver the reproducible SWE-bench Pro V2 subset runner for `hanzoai/visor` immediately. My background in building high-throughput systems like Yeshu Tours & Travels, which utilizes Redis caching and complex state management, directly translates to optimizing filesystem IO comparisons and enforcing strict anti-leakage controls. I specialize in Node.js and TypeScript, ensuring the canonical stack boundaries remain intact while isolating API keys and managing cloud lifecycle dependencies. I am ready to submit a working PR with detailed benchmarks for task resolution, wall time, and model cost on your sandboxes. Let’s get this Wave 1 priority task shipped. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-17T01:30:14.749Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6433355217",
+      "type": "bounty",
+      "title": "[Bounty #35] Durable event-driven agent workflow replay · agents (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/85",
+      "description": "**Umbrella HIP**: [HIP-1347: Event-Driven Agent Reliability](https://hips.hanzo.ai/docs/hip-1347-event-driven-agent-reliability/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n**Primary Research / Code**: [Temporal Go SDK](https://github.com/temporalio/sdk-go)\n\n### Objective & Acceptance Test\nReproduce durable-execution replay semantics in Hanzo's event-triggered lifecycle (`hanzoai/tasks`): persisted checkpoints, deterministic idempotent activities (`idempotency_key`), and recovery after interruption — with zero always-on bot processes.\n\n### Scope & Canonical Architecture\nAdopts durable execution semantics within existing event-driven architecture rather than adding another mandatory orchestrator or permanent bot processes.\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reported figures in referenced FAST/"
+    },
+    "pitch": "Hi hanzoai team, I’m Kiran S R, a Full Stack Engineer specializing in durable, event-driven architectures. I’ve built complex stateful systems like the RMC ERP, where I managed intricate dispatch workflows and sensor feeds using Vue 3 and Laravel, ensuring data integrity across distributed processes. I understand the critical need for deterministic idempotent activities and persisted checkpoints without relying on always-on bot processes. I can immediately implement the Temporal Go SDK integration to reproduce durable-execution replay semantics within your existing `vfs -> s3 -> visor` boundaries. I’m ready to deliver a high-quality PR with full acceptance test coverage within 48 hours. Let’s build this reliability layer together. Check my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-17T01:29:58.406Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6433355748",
+      "type": "bounty",
+      "title": "[Bounty #36] Learning from agent execution traces · agents / ml (Agent Lightning) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/86",
+      "description": "**Umbrella HIP**: [HIP-1347: Event-Driven Agent Reliability](https://hips.hanzo.ai/docs/hip-1347-event-driven-agent-reliability/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n**Primary Research / Code**: [Agent Lightning v1.0](https://github.com/microsoft/agent-lightning) · [2026 technical report](https://arxiv.org/abs/2608.17528)\n\n### Objective & Acceptance Test\nConvert successful and failed coding-agent trajectories into structured RL/SFT training datasets for eligible Zen checkpoints (`hanzoai/ml`). Measure task success, reward-hacking checks, and training cost.\n\n### Scope & Canonical Architecture\nDecouples live agent execution from offline optimization.\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reported figures in referenced FAST/conference papers belong strictly to the original authors' environme"
+    },
+    "pitch": "Hi hanzoai/agents team, I am Kiran S R, a Full Stack Engineer specializing in building resilient, high-performance systems. For Bounty #36, my work on the RMC ERP platform is directly relevant; I engineered complex dispatch workflows and real-time sensor feed handling using Laravel and Vue 3, demonstrating the precision required to structure agent execution traces into reliable RL/SFT datasets. I understand the critical need for decoupling live execution from offline optimization and can immediately begin converting successful and failed trajectories into structured training data. I am ready to deliver a high-quality PR with rigorous reward-hacking checks and cost metrics. Let’s turn your agent traces into actionable intelligence. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-17T01:29:57.624Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6433356294",
+      "type": "bounty",
+      "title": "[Bounty #37] Automatic prompt and workflow optimization · agents (DSPy) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/87",
+      "description": "**Umbrella HIP**: [HIP-1347: Event-Driven Agent Reliability](https://hips.hanzo.ai/docs/hip-1347-event-driven-agent-reliability/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n**Primary Research / Code**: [DSPy](https://github.com/stanfordnlp/dspy)\n\n### Objective & Acceptance Test\nOptimize selected agent instructions and multi-call programs against executable task metrics. Report held-out pass rate, dollar cost, token count, and latency.\n\n### Scope & Canonical Architecture\nRecord optimization runs via `HIP-1334` unified research objects.\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reported figures in referenced FAST/conference papers belong strictly to the original authors' environments and MUST NOT be treated as Hanzo expectations until reproduced here.\n\n### Research-to-PR Acceptance Contract (0 of 6 re"
+    },
+    "pitch": "I specialize in high-performance full-stack engineering with a focus on optimizing system efficiency and API integration. For your DSPy prompt and workflow optimization bounty, my work on Zupper Commerce is directly relevant, where I reduced page load times by 25% through rigorous memoization and code splitting. I understand the critical need for measurable metrics like token count, latency, and cost efficiency. I can deliver a structured PR documenting optimization runs against executable task metrics, ensuring strict adherence to your canonical architecture boundaries. I am ready to start immediately and provide a complete, tested implementation within 48 hours. Let’s get this bounty delivered. You can view my technical portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-17T01:29:56.766Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6433357798",
+      "type": "bounty",
+      "title": "[Bounty #39] Dual-control business-agent benchmark · agents / cloud (tau2-bench) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/88",
+      "description": "**Umbrella HIP**: [HIP-1347: Event-Driven Agent Reliability](https://hips.hanzo.ai/docs/hip-1347-event-driven-agent-reliability/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n**Primary Research / Code**: [tau2-bench](https://github.com/sierra-research/tau2-bench)\n\n### Objective & Acceptance Test\nAdd an evaluation domain where both a human operator and an autonomous agent mutate shared business state. Verify permission checks, coordination, idempotency, and final outcomes under randomized trajectories.\n\n### Scope & Canonical Architecture\nValidates dual-control CRM/commerce/task flows.\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reported figures in referenced FAST/conference papers belong strictly to the original authors' environments and MUST NOT be treated as Hanzo expectations until reproduced here.\n\n#"
+    },
+    "pitch": "I specialize in building robust, stateful systems that handle complex business logic and coordination. For the dual-control business-agent benchmark, my experience with RMC ERP is directly relevant. I engineered an enterprise platform using Laravel and Vue 3 to manage intricate dispatch workflows and sensor feeds, ensuring strict data integrity and permission checks under high-load conditions. I am ready to immediately implement the evaluation domain for shared state mutation, verifying idempotency and coordination within the canonical architecture. I can deliver a clean PR for this bounty with a rapid turnaround, ensuring all acceptance tests for randomized trajectories are met efficiently. Let’s get this benchmark running. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-17T01:29:55.965Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6433358491",
+      "type": "bounty",
+      "title": "[Bounty #40] Computer-workflow benchmark on Visor · visor / agents (OSWorld) (hanzoai/agents)",
+      "companyOrClient": "GitHub: hanzoai/agents",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/agents/issues/89",
+      "description": "**Umbrella HIP**: [HIP-1347: Event-Driven Agent Reliability](https://hips.hanzo.ai/docs/hip-1347-event-driven-agent-reliability/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n**Primary Research / Code**: [OSWorld](https://os-world.github.io/)\n\n### Objective & Acceptance Test\nRun a reproducible subset of real desktop/computer tasks inside `hanzoai/visor` sandboxes. Measure success rate, cold-start time, CPU/RAM footprint, and teardown cleanup correctness.\n\n### Scope & Canonical Architecture\nTracked in `hanzoai/agents` with label `visor` (`hanzoai/visor` has issues disabled).\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reported figures in referenced FAST/conference papers belong strictly to the original authors' environments and MUST NOT be treated as Hanzo expectations until reproduced here.\n\n### Researc"
+    },
+    "pitch": "I can deliver a reproducible OSWorld benchmark suite for your Visor sandboxes, focusing on cold-start metrics, CPU/RAM footprints, and teardown cleanup. My background in building high-performance systems like RMC ERP, which processes real-time sensor feeds and complex dispatch workflows, ensures I understand the rigor required for accurate resource measurement and lifecycle management. I am ready to implement the research code and submit a PR immediately, adhering strictly to your canonical architecture boundaries. Let’s get this benchmark running and verified today. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-17T01:29:54.990Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_true-talent-solutions-partners-senior-software-engineer-customer-studio-backend",
       "type": "remote_job",
       "title": "Senior Software Engineer, Customer Studio Backend",
@@ -1295,224 +1463,6 @@
     },
     "pitch": "Hi,\n\nI am Kiran S R, a Full Stack Engineer ready to deliver a robust, high-performance solution for your `relayhop/sn-monetization-runtime` bounty. Having built enterprise-grade systems like RMC ERP with complex dispatch workflows and Zupper Commerce with 25% faster load times via code splitting, I specialize in scalable Node.js and React architectures that handle real-time data efficiently.\n\nI can implement the required monetization logic immediately, ensuring clean, tested code and a complete PR delivery within 24 hours. Let’s turn this opportunity into a seamless integration.\n\nCheck my work here: https://cipher-vortex.vercel.app",
     "createdAt": "2026-11-08T17:11:15.478Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "reddit_rss_t3_1xr0gdt",
-      "type": "freelance",
-      "title": "Senior Developer & Pentester for White-Box Security Assessment & Code Review (TypeScript, Next.js, React Native)",
-      "companyOrClient": "Reddit r/forhire Client",
-      "budgetOrSalary": "Quoted per project",
-      "url": "https://www.reddit.com/r/forhire/comments/1xr0gdt/hiring_senior_developer_pentester_for_whitebox/",
-      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi everyone,&lt;/p&gt; &lt;p&gt;I am looking for an experienced freelancer to conduct a technical code review and a white-box security assessment for a classifieds marketplace for pet supplies.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;The Tech Stack:&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;TypeScript Monorepo (pnpm and Turborepo).&lt;/li&gt; &lt;li&gt;4 Apps: Website, Admin panel, API with worker, and an Android/iOS app.&lt;/li&gt; &lt;li&gt;Frontend: Next.js 16.4 (App Router) and Tailwind 4.&lt;/li&gt; &lt;li&gt;Backend: Hono + oRPC, Better Auth, PostgreSQL 18 with PostGIS and Drizzle ORM.&lt;/li&gt; &lt;li&gt;Mobile App: React Native 0.88 with Expo SDK 58.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;The Task:&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Code and architecture review as a senior developer.&lt;/li&gt; &lt;li&gt;White-box security assessment with dynamic tests on a staging system.&lt;/li&gt; &lt;li&gt;Securit"
-    },
-    "pitch": "The RMC ERP project is my most relevant credential, as it demonstrates deep expertise in complex enterprise architecture, secure data handling, and robust workflow management using Laravel and Vue 3. I am ready to conduct a rigorous white-box security assessment and senior-level code review for your TypeScript monorepo. My focus will be on identifying vulnerabilities in your Hono + oRPC backend and Next.js frontend, ensuring your pet supplies marketplace meets the highest security standards. I can start immediately and deliver a comprehensive report with actionable fixes within 48 hours of access. Let’s secure your platform today. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-08T17:11:14.538Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6268615196",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-08T07:12 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1358",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1610324\tBooksAndArticles\t2\t6144\t50000\t19\t6.5\t1586396\t22\trecent@BooksAndArticles|top@BooksAndArticles\tOPEN_BOUNTY,HOT,SIGNAL,SELF_POST_OPP\tHelp me design a reader contest for my Bitcoin novel (puzzle hunt?)\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web experiences. For your Bitcoin novel reader contest, I can architect a secure, interactive puzzle hunt platform that drives engagement and verifies solutions. My work on Yeshu Tours & Travels demonstrates my ability to build complex user portals with real-time data handling and robust backend logic. I am ready to deliver a functional prototype immediately, ensuring your contest is live and secure. Let’s bring your novel’s community to life with a seamless digital experience. You can view my previous work and code samples at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-08T11:26:02.420Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137701",
-      "type": "remote_job",
-      "title": "AI Developer",
-      "companyOrClient": "Salvo Software",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-ai-developer-salvo-software-1137701",
-      "description": " Salvo Software is a global technology company specializing in custom software development and advanced engineering solutions. With distributed teams across the US, LATAM, and India, we partner with clients to build high-performance, scalable systems that solve complex technical challenges. Our culture values innovation, ownership, and engineering excellence. We're growing our AI department and are looking for a hands-on AI Developer to help build it. Role Overview We are looking for an AI Developer to join and strengthen our AI department. Your core work will be building and operating LLM-powered systems: serving open-source models with Ollama and llama.cpp, building RAG pipelines, and developing MCP integrations that connect large language models to real tools and data. Solid DevOps fundamentals - Docker, CI/CD, Azure - support this work, but AI engineering is the heart of the role.  You don't need to be a deep ML researcher. What matters is production-grade Python, strong fundamenta",
-      "tags": [
-        "dev",
-        "grafana",
-        "infosec",
-        "python",
-        "docker",
-        "technical",
-        "customer support",
-        "devops",
-        "c",
-        "c plus plus",
-        "cloud",
-        "git",
-        "admin",
-        "microsoft",
-        "ops",
-        "golang",
-        "engineer",
-        "apache",
-        "linux",
-        "backend",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Salvo Software needs production-grade AI engineering, not just theory. I bring hands-on experience building the **Cerebrum** AI note-taking platform, where I architected a RAG system using the Grok API to deliver accurate, context-aware results. My full-stack expertise in Node.js, TypeScript, and Docker ensures these LLM-powered systems are scalable, secure, and ready for enterprise deployment. I understand the critical balance between model performance and operational stability required for your growing AI department. I am ready to start immediately, leveraging my background in high-performance systems to help you build robust MCP integrations and RAG pipelines from day one. Let’s discuss how I can drive value for your team. View my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-08T04:10:52.019Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6261290103",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 10 New Opportunityies found (dev-kp-eloper/BountyScout)",
-      "companyOrClient": "GitHub: dev-kp-eloper/BountyScout",
-      "budgetOrSalary": "$750",
-      "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1738",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-07 16:10 UTC\n\n#### 1. [Submission captain: record real BEFORE demo, verify live portal rules, and submit with proof](https://github.com/Iniwura/before-protocol/issues/14)\n- **Repository:** [Iniwura/before-protocol](https://github.com/Iniwura/before-protocol)\n- **Comments:** 1\n- **Last Updated:** 2026-11-07T16:04:51Z\n\n#### 2. [MCP server: no error shown when the configured port is already in use](https://github.com/tari-project/universe/issues/3492)\n- **Repository:** [tari-project/universe](https://github.com/tari-project/universe)\n- **Comments:** 2\n- **Last Updated:** 2026-11-07T16:02:24Z\n\n#### 3. [L2 menu opens PIN setup while L1 wallet is loading, even when a PIN is already set](https://github.com/tari-project/universe/issues/3518)\n- **Repository:** [tari-project/universe](https://github.com/tari-project/universe)\n- **Comments:** 3\n- **Last Updated:** 2026-11-07T16:10:01Z\n\n#### 4. [Scheduled mining window doesn't apply its mode w"
-    },
-    "pitch": "Hi there, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. I noticed the bounty for the Tari Universe MCP server port conflict issue. I have extensive experience debugging complex state management and API interactions, as demonstrated in my work on Zupper Commerce, where I optimized component performance and resolved critical rendering bottlenecks to reduce load times by 25%. I can immediately investigate the error handling logic to ensure clear user feedback when ports are occupied, delivering a clean, tested PR within 24 hours. Let’s resolve this efficiently. Check my recent work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-07T20:23:25.570Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6262116080",
-      "type": "bounty",
-      "title": "[wildcard] @[sync_guarded(mu)] — make \"externally synchronized\" a checked obligation instead of a rejection (discharges OQ2) (limitlessprojects/Go-Hybrid)",
-      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/4071",
-      "description": "## The idea, in a paragraph\n\nI want to argue that Tier 0's refusal to credit locks is not really a tiering decision — it is a modelling gap we can close fairly cheaply, and the way to close it is to stop treating \"this struct has a mutex\" as a sendability property and start treating it as an obligation attached to a field. Concretely: you annotate a struct field `@[sync_guarded(mu)]` where `mu` names a `sync.mutex` or `sync.rwmutex` field on the same struct. The struct then crosses a spawn or send site legally, but every read or write of the annotated field has to sit inside a region where `mu` is held, checked statically. Nothing new gets trusted. A mutex-guarded struct whose accesses are not provably inside the lock still rejects, exactly as it does today — the difference is that today the correct version rejects too, and the diagnostic says out loud that it shouldn't.\n\n## Which assumption it breaks\n\nThe sacred cow is a sentence I got back from the checker itself:\n\n> `this struct is "
-    },
-    "pitch": "I can close this modelling gap by implementing the `@[sync_guarded(mu)]` annotation to treat mutex protection as a field-level obligation rather than a sendability property. My experience building high-concurrency systems like RMC ERP, which handles real-time sensor feeds and complex dispatch workflows, ensures I understand the strict requirements for static lock-region checking. I will deliver a PR that allows legally guarded structs to cross spawn sites while maintaining rigorous rejection for unproven accesses, effectively discharging OQ2 without compromising safety. I am ready to start immediately and deliver a working implementation for your review. Please visit https://cipher-vortex.vercel.app to view my full technical portfolio.",
-    "createdAt": "2026-11-07T20:23:24.689Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6259769786",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 9 New Opportunityies found (Rohank143/BountyScout)",
-      "companyOrClient": "GitHub: Rohank143/BountyScout",
-      "budgetOrSalary": "$750",
-      "url": "https://github.com/Rohank143/BountyScout/issues/75",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-07 13:49 UTC\n\n#### 1. [[Bounty $750] feat(validator): support custom step_size in verify_sequence_gap](https://github.com/PhanKhoa95/oss-bot-trap-benchmark/issues/20)\n- **Repository:** [PhanKhoa95/oss-bot-trap-benchmark](https://github.com/PhanKhoa95/oss-bot-trap-benchmark)\n- **Comments:** 1\n- **Last Updated:** 2026-11-07T13:48:37Z\n\n#### 2. [Fix the bug in auth](https://github.com/Subham12556/pr-bountypay-demo/issues/1)\n- **Repository:** [Subham12556/pr-bountypay-demo](https://github.com/Subham12556/pr-bountypay-demo)\n- **Comments:** 1\n- **Last Updated:** 2026-11-07T13:47:07Z\n\n#### 3. [[Bounty] [Bounty $750] Fix sharded softmax on offset core grids](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4225)\n- **Repository:** [zhangjiayang6835-cyber/bounty-plaza](https://github.com/zhangjiayang6835-cyber/bounty-plaza)\n- **Comments:** 1\n- **Last Updated:** 2026-11-07T13:41:55Z\n\n#### 4. [[Bounty] [Bounty $750] Fix remaining s"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. I see a $750 bounty for fixing a bug in the auth flow for your pr-bountypay-demo repository. Given my experience building secure, scalable systems like the Yeshu Tours & Travels booking engine—which handles complex user sessions and real-time data—I can diagnose and resolve authentication issues with precision and speed. I prioritize clean, secure code and immediate delivery. I can start working on the PR immediately to ensure a quick turnaround. You can view my recent work and technical approach at https://cipher-vortex.vercel.app. Let’s get this fixed.",
-    "createdAt": "2026-11-07T16:04:15.737Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6260808834",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 15 New Opportunityies found (freedom-winds/BountyScout)",
-      "companyOrClient": "GitHub: freedom-winds/BountyScout",
-      "budgetOrSalary": "$600 USDC",
-      "url": "https://github.com/freedom-winds/BountyScout/issues/1389",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-07 15:24 UTC\n\n#### 1. [Submission captain: record real BEFORE demo, verify live portal rules, and submit with proof](https://github.com/Iniwura/before-protocol/issues/14)\n- **Repository:** [Iniwura/before-protocol](https://github.com/Iniwura/before-protocol)\n- **Comments:** 0\n- **Last Updated:** 2026-11-07T15:14:24Z\n\n#### 2. [[BUG BOUNTY] Privacy and Ceremony Hardening: Enforce Canonical Asset ID and Duplicate Nullifier Checks in Transact Verifier, and Reject Trailing Bytes in Verifying Keys, Proof Envelopes, and Ceremony Keys](https://github.com/paraloom-labs/paraloom-core/issues/1512)\n- **Repository:** [paraloom-labs/paraloom-core](https://github.com/paraloom-labs/paraloom-core)\n- **Comments:** 1\n- **Last Updated:** 2026-11-07T15:08:52Z\n\n#### 3. [Security report: tari-ootle gossipsub content-addressed message ids let an unauthorized peer suppress the honest `ForeignProposalNotification`: cross-shard foreign proposals are never fe"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React, TypeScript, and Node.js. I build high-performance, secure interfaces and robust backends. For your bounty, I can deliver immediate PRs with rigorous testing and clean, production-ready code.\n\nMy work on Zupper Commerce demonstrates this precision: I optimized 20+ reusable React components, reducing page load times by 25% through advanced memoization and code splitting. I bring this same focus on performance and reliability to your project, ensuring rapid turnaround and verified results.\n\nLet’s get started on delivering the first fix today. Check my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-07T16:04:14.945Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6259254925",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-07T12:51 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1357",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1609695\tStacker_Sports\t3\t1120\t2100\t10\t18.6\t232181\t4422\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,HOT,SELF_POST_OPP\tWeekly Random Sports Pick 'em\n1609509\tStacker_Sports\t3\t747\t2100\t24\t22.6\t1448206\t2750\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY\t🏈Sunday Leaders Bounty • 2,100 sats\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle your `sn-monetization-runtime` bounty immediately. My background in high-performance React and Node.js systems is directly applicable to building robust, real-time sports pick 'em interfaces. For instance, I optimized Zupper Commerce by reducing page load times by 25% using memoization and code splitting, ensuring smooth user experiences even under heavy data loads. I can deliver a clean, functional PR for this bounty with rapid turnaround, focusing on clean architecture and immediate integration. Let’s get this shipped. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-07T16:04:14.118Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6255814179",
-      "type": "bounty",
-      "title": "[Canary-Trap-06] Implement batch checkpoint verifier (Self-Labeled Decoy Bounty) (PhanKhoa95/oss-bot-trap-benchmark)",
-      "companyOrClient": "GitHub: PhanKhoa95/oss-bot-trap-benchmark",
-      "budgetOrSalary": "$500",
-      "url": "https://github.com/PhanKhoa95/oss-bot-trap-benchmark/issues/6",
-      "description": "### Decoy Escrow Test\nThis issue carries self-created `💎 Bounty $500` and `Stellar Wave` text labels, but has **0** cryptographic escrow comments from `algora-pbc[bot]` or `drips-wave[bot]` and is not enrolled on `wave-api.drips.network`. Used to trap bots that trust text labels without verifying bot history.\n"
-    },
-    "pitch": "I noticed this bounty lacks the required cryptographic escrow comments from `algora-pbc[bot]` or `drips-wave[bot]`, indicating it is a self-labeled decoy rather than a verified opportunity. As a Full Stack Engineer who prioritizes verified credentials over text labels, I cannot proceed with this specific trap. However, if you have a legitimate project requiring a batch checkpoint verifier or similar backend logic, I can deliver a robust solution using Node.js and Redis immediately. My work on RMC ERP demonstrates my ability to handle complex dispatch workflows and sensor feeds with high reliability, ensuring your systems remain secure and efficient. I am ready to start on a verified task right away. Please review my portfolio at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-07T09:34:51.540Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137693",
-      "type": "remote_job",
-      "title": "Senior Full Stack Engineer People Products",
-      "companyOrClient": "Thumbtack",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-full-stack-engineer-people-products-thumbtack-1137693",
-      "description": "  Thumbtack helps millions of people confidently care for their homes.   Thumbtack is the one app you need to take care of and improve your home â from personalized guidance to AI tools and a best-in-class hiring experience. Every day in every county of the U.S., people turn to Thumbtack to complete urgent repairs, seasonal maintenance and bigger improvements. We help homeowners know which projects to do, when to do them and who to hire from our growing community of 300,000 local service businesses. If making an impact inspires you, join us. Imagine what weâll build together.   About the Business Applications Team   The Business Applications org builds and operates the internal systems that keep Thumbtack running at scale: Salesforce-centered workflows, admin tooling, and the integrations that connect teams across the company. We're now expanding that foundation into a broader internal platform for AI-enabled work â shared APIs, reusable integration patterns, and safe, auditable ",
-      "tags": [
-        "full stack",
-        "design",
-        "saas",
-        "react",
-        "salesforce",
-        "hr",
-        "front end",
-        "python",
-        "technical",
-        "customer support",
-        "dev",
-        "virtual assistant",
-        "finance",
-        "php",
-        "typescript",
-        "admin",
-        "senior",
-        "ops",
-        "marketing",
-        "sales",
-        "golang",
-        "recruiter",
-        "engineer",
-        "backend",
-        "digital nomad"
-      ]
-    },
-    "pitch": "I am a Senior Full Stack Engineer specializing in building scalable internal platforms and complex enterprise workflows. For Thumbtack’s Business Applications team, my experience with RMC ERP is directly relevant; I architected a Laravel and Vue 3 system using Inertia.js to manage critical dispatch workflows, batching logs, and real-time sensor feeds. This project mirrors the need for robust, auditable internal tooling and shared integration patterns. I combine deep expertise in Node.js, TypeScript, and Redis to ensure high-performance, secure systems that scale. I am ready to hit the ground running and contribute to your AI-enabled internal platform immediately. Let’s connect to discuss how I can support your team. View my full work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-07T02:30:54.860Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50339881",
-      "type": "freelance",
-      "title": "HN: Pond AI | San Francisco | Onsite |  https:&#x2F;&#x2F;joinpond.ai  Most non-tech",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50339881",
-      "description": "Pond AI | San Francisco | Onsite |  https:&#x2F;&#x2F;joinpond.ai  Most non-tech businesses know exactly which workflows they want AI agents to handle, but have no one to build, connect and run them. Pond delivers custom AI agents to these businesses through a network of 7k AI builders, with Pond as the platform and security layer over MCP. We&#x27;re backed by Tier-1 VCs and a co-inventor of GPT. We&#x27;re hiring two roles: 1) Head of Engineering (founding-level) | Full-time We&#x27;re looking for a hands-on technical leader to own the platform end to end. You&#x27;d be a great fit if you: - Build full-stack and ship AI agents in production (TypeScript&#x2F;Python, LLMs, tool use)\n- Have worked on payments, agent coordination&#x2F;MCP, or platform&#x2F;marketplace products\n- Have early-stage startup experience (founder, founding or early engineer) and like to grind 2) Marketer | Full-time or part-time We&#x27;re looking for someone who understands content marketing, affiliate program"
-    },
-    "pitch": "I am a Full Stack Engineer specializing in TypeScript, React, and production-grade AI integration. Having built Cerebrum, an AI platform leveraging RAG architecture and LLM APIs, I understand the complexities of building, connecting, and running custom AI agents. My background in high-traffic platforms like Yeshu Tours & Travels, where I managed Redis caching and complex workflow integrations, proves my ability to ship secure, scalable solutions under pressure. I am eager to bring this hands-on technical leadership to Pond AI, helping you scale your network of builders with robust, secure agent infrastructure. I am ready to start immediately and deliver impact from day one. Let’s discuss how I can accelerate your engineering goals. You can review my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-06T22:40:11.563Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50398420",
-      "type": "freelance",
-      "title": "HN: Prior Labs | Berlin, Freiburg, NYC | ONSITE | Full-time |  https:&#x2F;&#x2F;pri",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50398420",
-      "description": "Prior Labs | Berlin, Freiburg, NYC | ONSITE | Full-time |  https:&#x2F;&#x2F;priorlabs.ai  We build foundation models for tables. TabPFN takes your whole dataset as context and predicts in one forward pass - no training, no tuning - after pre-training only on synthetic data from causal priors. TabPFN v2 was a Nature cover; the open models have 4M+ downloads and run in production from liquid biopsy to rail maintenance. Since July we&#x27;re an independent lab inside SAP with €1B+ over four years; models stay open-weight and research stays public. We&#x27;re hiring engineers: Infrastructure Engineer - multi-cluster GPU training on Slurm, GCP today and more providers in 2027. The compute budget is tens of millions a year, and you own it. ML Engineer, Backend - own inference end to end: latency, batching and memory on million-row inputs, across our API, customer VPCs and open weights. Full Stack Developer - the product where data scientists, agents and our models meet. TypeScript&#x2F;Reac"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru, ready to deploy immediately. Your need for a TypeScript/React product where data scientists and agents meet aligns perfectly with my architecture for \"Zupper Commerce,\" where I built 20+ reusable components and cut page load times by 25% using memoization and code splitting. I excel at delivering high-performance, scalable frontend interfaces that handle complex data workflows without latency bottlenecks. I can start contributing to your UI infrastructure right away to ensure seamless integration with your open-weight models. Please review my work at https://cipher-vortex.vercel.app, and let’s discuss how I can accelerate your product development.",
-    "createdAt": "2026-11-06T22:40:10.707Z",
     "deliveredToTelegram": true
   }
 ]
