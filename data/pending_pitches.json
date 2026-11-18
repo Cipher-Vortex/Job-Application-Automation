@@ -1,6 +1,62 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6454580792",
+      "type": "bounty",
+      "title": "🎯 Bounty Alert: 14 New Opportunityies found (dev-kp-eloper/BountyScout)",
+      "companyOrClient": "GitHub: dev-kp-eloper/BountyScout",
+      "budgetOrSalary": "$4,000",
+      "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1777",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-17 21:33 UTC\n\n#### 1. [feat(contracts): implement decentralized keeper incentives for automated timeout liquidations](https://github.com/Sorobo-Gate/soroban-anchor-gate-app/issues/52)\n- **Repository:** [Sorobo-Gate/soroban-anchor-gate-app](https://github.com/Sorobo-Gate/soroban-anchor-gate-app)\n- **Comments:** 0\n- **Last Updated:** 2026-11-17T21:29:09Z\n\n#### 2. [[Maths / Bug Bounty] A $4,000 holding with zero trading capacity is omitted from the portfolio exit time](https://github.com/Ayush441-python/AUREN/issues/26)\n- **Repository:** [Ayush441-python/AUREN](https://github.com/Ayush441-python/AUREN)\n- **Comments:** 2\n- **Last Updated:** 2026-11-17T21:26:06Z\n\n#### 3. [[bounty] qgram tutorial for typo-tolerant search](https://github.com/bad-antics/lateralus-lang/issues/176)\n- **Repository:** [bad-antics/lateralus-lang](https://github.com/bad-antics/lateralus-lang)\n- **Comments:** 1\n- **Last Updated:** 2026-11-17T21:25:19Z\n\n#### 4. [F"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle your bounty. Given the technical nature of the Soroban and AUREN issues, my experience building high-performance, real-time systems is directly applicable. At Zupper Commerce, I optimized React architecture with memoization and code splitting, reducing page load times by 25% and ensuring robust state management. I bring the same precision to complex logic and API integration, having delivered scalable solutions like the Yeshu Tours booking engine with Redis caching. I can deliver a clean, tested PR for the selected issue immediately. Let’s get this resolved quickly. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-18T01:29:16.974Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6454641846",
+      "type": "bounty",
+      "title": "🎯 Bounty Alert: 19 New Opportunityies found (Rohank143/BountyScout)",
+      "companyOrClient": "GitHub: Rohank143/BountyScout",
+      "budgetOrSalary": "$4,000",
+      "url": "https://github.com/Rohank143/BountyScout/issues/119",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-17 21:37 UTC\n\n#### 1. [Feedback: Bloodbaths](https://github.com/VlcekM/MeitouClient/issues/948)\n- **Repository:** [VlcekM/MeitouClient](https://github.com/VlcekM/MeitouClient)\n- **Comments:** 0\n- **Last Updated:** 2026-11-17T21:36:40Z\n\n#### 2. [[Bounty #14] Model-loading IO templates · engine / ml (PPC / MAIO)](https://github.com/hanzoai/engine/issues/95)\n- **Repository:** [hanzoai/engine](https://github.com/hanzoai/engine)\n- **Comments:** 3\n- **Last Updated:** 2026-11-17T21:36:19Z\n\n#### 3. [[Bounty #16] Near-zero-overhead constrained generation · engine (XGrammar-2)](https://github.com/hanzoai/engine/issues/97)\n- **Repository:** [hanzoai/engine](https://github.com/hanzoai/engine)\n- **Comments:** 3\n- **Last Updated:** 2026-11-17T21:35:23Z\n\n#### 4. [End of Stranglethorn 33-35 Guide](https://github.com/fitzforge/polestar/issues/1927)\n- **Repository:** [fitzforge/polestar](https://github.com/fitzforge/polestar)\n- **Comments:** 1\n- **L"
+    },
+    "pitch": "Hi Rohank, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. I noticed your BountyScout scan identified critical performance and IO bottlenecks in the hanzoai/engine repository. My experience aligns perfectly with these needs; for instance, I reduced page load times by 25% in Zupper Commerce through aggressive memoization and code splitting, while building robust, scalable APIs for Yeshu Tours that handle real-time data with Redis caching. I can deliver a clean, tested PR addressing the model-loading IO templates or constrained generation issues immediately. Let’s optimize your engine’s performance today. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-18T01:29:15.901Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6455208168",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-17T22:11 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1407",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t837\t57000\t10\t5.9\t1611134\t21\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,SIGNAL\tRoast our shop, win 57k sats\n```"
+    },
+    "pitch": "I can deliver the \"Roast our shop\" feature for your sn-monetization-runtime bounty immediately. With a background in building high-performance e-commerce and travel booking engines like Yeshu Tours & Travels, I understand the critical need for robust transaction handling and user engagement in monetization runtimes. My expertise in React, Node.js, and Redis ensures I can implement a snappy, secure interface that drives user interaction and optimizes performance. I am ready to submit a clean, tested PR for this 57k sat bounty right away, ensuring code quality and speed. Let’s get this shipped. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-18T01:29:14.988Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6456743236",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-17T23:59 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1409",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t15\t7.7\t1611134\t22\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,SIGNAL\tRoast our shop, win 57k sats\n```"
+    },
+    "pitch": "I can deliver a high-impact roast for your shop that drives engagement and highlights your monetization runtime’s value. With experience building complex e-commerce and enterprise systems like Yeshu Tours & Travels, I understand the nuances of user experience and backend reliability. I will craft a sharp, constructive critique that resonates with your community, ensuring your project stands out in the relayhop ecosystem. Ready to start immediately to secure the 57k sats bounty. Let’s make your shop the talk of the network. View my work and let’s connect: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-18T01:29:14.154Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6447813489",
       "type": "bounty",
       "title": "[wildcard] Make duplicate-proposal adjudication recomputable (limitlessprojects/Go-Hybrid)",
@@ -1386,83 +1442,6 @@
     },
     "pitch": "Hi Rohank143,\n\nI’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. I noticed the new bounty opportunities in your scout and am ready to deliver immediate value. My work on Zupper Commerce directly addresses these needs, where I built 20+ reusable React components and cut page load times by 25% through strategic memoization and code splitting. I am available to start immediately on the first suitable issue, ensuring a fast turnaround with clean, production-ready code and a direct PR submission. Let’s get this bounty closed efficiently. View my recent work here: https://cipher-vortex.vercel.app",
     "createdAt": "2026-11-10T01:57:44.584Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6294534938",
-      "type": "bounty",
-      "title": "[$2 site credit] Add a French README for agentswarm-mcp (andrewsiah/agentswarm-mcp)",
-      "companyOrClient": "GitHub: andrewsiah/agentswarm-mcp",
-      "budgetOrSalary": "$2",
-      "url": "https://github.com/andrewsiah/agentswarm-mcp/issues/8",
-      "description": "Effort: ~1-2 hours; needs English + French, Markdown.\n\nAgents: see AGENTS.md for a copy-paste claim command\n\nAdd README.fr.md translating every English README section into French and add the exact language navigation from the check README to README.md. Preserve all original link targets, raw URLs, fenced blocks and authorization/privacy/credential/reward caveats. English prose must match the pinned baseline except navigation. Preserve heading levels and paragraph/list/table structure, including unpaid work and cannot-cash-out caveats wherever present. Scope is README prose/navigation only; the project agent also reviews French meaning.\n\nExact added navigation line: `English · [Français](README.fr.md)`. Add it immediately after the first English heading with one blank line before it, retaining all original bytes after the heading.\n\nDone when: export BOUNTY_REPO to your branch checkout and install/activate the [check prerequisites](https://github.com/andrewsiah/agentswarm-examples/blob/d"
-    },
-    "pitch": "I can deliver the French README translation for agentswarm-mcp immediately, ensuring 100% structural fidelity to the English baseline. My background in building complex, multi-tenant systems like Yeshu Tours & Travels demonstrates my strict adherence to detailed technical specifications and documentation standards. I will meticulously preserve all original link targets, raw URLs, fenced code blocks, and specific authorization/privacy caveats while adding the exact required language navigation line. This is a precise, low-risk task that I can complete within the 1-2 hour window, ready for your project agent's review. I am prepared to submit the PR today to secure the bounty. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-10T01:57:43.831Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6297350358",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-10T00:12 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1366",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1611195\tConstruction_and_Engineering\t2\t357\t5000\t3\t10.4\t9274\t29476\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,SIGNAL\tShow Your Build Weekly #9: Post Your Proof-of-Work 🔨 💰\n```"
-    },
-    "pitch": "I can deliver the SN monetization runtime integration immediately. My full-stack expertise in Node.js, TypeScript, and Redis caching is directly relevant to building high-performance, low-latency data pipelines and API endpoints. I recently engineered a production-grade travel booking engine for Yeshu Tours & Travels, implementing Redis caching to optimize query speeds and handle real-time user interactions at scale. I am ready to start coding this bounty right now to ensure timely delivery. Check out my recent work and technical approach at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-10T01:57:42.965Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137704",
-      "type": "remote_job",
-      "title": "UI Developer",
-      "companyOrClient": "RainFocus",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-ui-developer-rainfocus-1137704",
-      "description": " RainFocus, one of the most innovative software companies, is in search of an exceptional  Jr. UI Developer.  \n &nbsp; \n  About RainFocus  \n  RainFocus cares about its employees, customers, and the world in which we live. Our rapidly growing team serves Fortune 500 companies like Adobe, Cisco, IBM, Oracle, VMware, and others to prepare and execute in-person, virtual, and hybrid events, across the world. Those events are delivered through our industry-disrupting software platform, with groundbreaking business intelligence, to elevate the attendee experience, streamline event operations, and accelerate marketing results. We are well-funded, growing fast, and building a company that is changing the market â it will be challenging, fun and exciting.&nbsp;  \n &nbsp; \n  About the Role  \n As a Jr. UI Developer, you will be an essential part of our team, assisting in the implementation of stunning, user-friendly web applications. Working alongside experienced developers, you will use HTML, C",
-      "tags": [
-        "dev",
-        "design",
-        "react",
-        "front end",
-        "customer support",
-        "web dev",
-        "javascript",
-        "java",
-        "css",
-        "html",
-        "git",
-        "exec",
-        "senior",
-        "ops",
-        "marketing",
-        "photoshop",
-        "ads",
-        "backend",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi RainFocus team,\n\nI am a Full Stack Engineer specializing in React.js, TypeScript, and Tailwind CSS, eager to join your team as a UI Developer. My focus is on building high-performance, user-centric interfaces that scale.\n\nAt Zupper Commerce, I engineered 20+ reusable React components and optimized page load times by 25% through strategic memoization and code splitting. This hands-on experience in creating efficient, modular front-end architectures aligns perfectly with RainFocus’s mission to deliver groundbreaking attendee experiences for Fortune 500 clients. I am ready to contribute immediately to your rapid growth with clean, maintainable code.\n\nLet’s connect to discuss how I can elevate your UI stack. You can view my recent work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-09T18:59:40.600Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6263563797",
-      "type": "bounty",
-      "title": "[$1 site credit] initialize: validate capabilities/clientInfo shape (-32602) (andrewsiah/agentswarm-mcp)",
-      "companyOrClient": "GitHub: andrewsiah/agentswarm-mcp",
-      "budgetOrSalary": "$1",
-      "url": "https://github.com/andrewsiah/agentswarm-mcp/issues/1",
-      "description": "Reward: 1 USD in agentswarm.space site credit (closed-loop: spendable on the site, not withdrawable)\n\nGross reward; site fees and task acceptance terms apply. See the site task for full terms: https://agentswarm.space/p/294143b7-cf50-4909-8b86-cf33c3d98fb1\n\nEffort: ~half a day; needs Node.js, MCP protocol basics, compatibility testing.\n\nAgents: see AGENTS.md for a copy-paste claim command\n\nFrom independent review of 75cde68: initialize accepts capabilities:null or non-object clientInfo. Kept lenient on purpose for client compatibility (likelihood 1 x impact 2, below fix threshold). Revisit if a client depends on strict errors.\n\nHow to get credit on agentswarm.space: https://github.com/andrewsiah/agentswarm-examples/blob/main/task-checks/CLAIM.md\n\nDone when: export BOUNTY_REPO to your branch checkout and follow the [pinned prerequisites](https://github.com/andrewsiah/agentswarm-examples/blob/c536cfd11a99d9aa56281af974959f5b5c1745c6/task-checks/mcp-initialize/README.md) (Node 22). The si"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. I can immediately tackle the `initialize` validation bounty for `agentswarm-mcp`. With deep expertise in Node.js and API compatibility testing, I’ve built robust systems like the RMC ERP, where I managed complex sensor feeds and dispatch workflows using Laravel and Vue 3. I understand the MCP protocol nuances and can ensure strict error handling for `clientInfo` shapes without breaking client compatibility. I am ready to deliver a working PR today, adhering to the Node 22 requirements and pinned prerequisites. Let’s get this validation sorted efficiently. You can view my recent work and technical approach at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-09T18:59:39.229Z",
     "deliveredToTelegram": true
   }
 ]
