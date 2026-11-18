@@ -1,6 +1,48 @@
 [
   {
     "opportunity": {
+      "id": "hn_50540925",
+      "type": "freelance",
+      "title": "HN: It&#x27;s not that. People have purchased autocomplete traffic and filled all se",
+      "companyOrClient": "Hacker News YC / Startup Founder",
+      "budgetOrSalary": "Direct Contract / Competitive",
+      "url": "https://news.ycombinator.com/item?id=50540925",
+      "description": "It&#x27;s not that. People have purchased autocomplete traffic and filled all search results with fake generated things. Since TPU&#x27;s are at 16,000 tokens per second, by the time you hit enter and the page loads, every single site is fake. You can try any search on any subject and every single site generated is fake. Somehow, they have also managed to get copies of some emails, and impersonate the sender and send fake emails too. Here is an example of a real email I got from a real sender: Hello Robert, While reviewing engineers building practical AI-powered products, your recent work developing and operating public AI services stood out, particularly your deployment of a quantized Qwen model on CPU infrastructure and your work coordinating AI coding agents to build, test, and deploy functioning applications. I&#x27;m (name), an Independent Career Advisor Consultant. I&#x27;m reaching out regarding a specialist mandate focused on AI product engineering and applied agent systems, wh"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance AI applications. Your focus on practical AI product engineering aligns perfectly with my recent work on Cerebrum, an AI note-taking platform built on a RAG architecture using the Grok API. I also bring deep expertise in optimizing frontend performance, having reduced page load times by 25% at Zupper Commerce through advanced React memoization and code splitting. I am ready to deploy robust, production-ready AI services immediately. Please review my work at https://cipher-vortex.vercel.app to see how I can deliver scalable, real-world solutions for your team.",
+    "createdAt": "2026-11-18T08:59:52.859Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6459765493",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-18T04:09 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1411",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t17\t11.8\t1611134\t22\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,SIGNAL\tRoast our shop, win 57k sats\n```"
+    },
+    "pitch": "Hi Relayhop team, I’m Kiran S R, a Full Stack Engineer ready to tackle your SN monetization runtime bounty. I specialize in high-performance React/TypeScript applications and have delivered complex e-commerce and ERP systems, including Yeshu Tours & Travels, which features a robust booking engine, Redis caching, and seamless payment integrations. My experience optimizing page load times by 25% through code splitting directly aligns with your need for a reliable, efficient shop frontend. I can deliver a functional PR or complete implementation immediately, ensuring your 57k sat bounty is well spent on a production-ready solution. Let’s get this live. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-18T08:59:52.078Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6461911533",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-18T07:06 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1413",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t19\t14.8\t1611134\t24\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
+    },
+    "pitch": "I see the \"Roast our shop\" bounty for relayhop/sn-monetization-runtime. I can deliver a sharp, technical critique of your monetization runtime immediately. My experience building high-traffic e-commerce platforms like Yeshu Tours & Travels, which handles complex booking flows and Redis caching, gives me direct insight into common performance and UX bottlenecks in shop environments. I focus on actionable feedback that improves conversion and system stability, not just vague opinions. I am ready to submit a detailed roast or a PR with specific optimization suggestions right now. Check out my recent work and technical depth at https://cipher-vortex.vercel.app. Let’s get this bounty closed.",
+    "createdAt": "2026-11-18T08:59:51.323Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6454580792",
       "type": "bounty",
       "title": "🎯 Bounty Alert: 14 New Opportunityies found (dev-kp-eloper/BountyScout)",
@@ -1400,48 +1442,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle your Construction and Engineering bounty. I specialize in building robust, data-heavy applications that handle complex workflows and real-time sensor feeds. My work on the RMC ERP system, built with Laravel and Vue 3, demonstrates my ability to manage enterprise-grade dispatch logic and batching logs with precision. I can deliver a high-quality proof-of-work immediately, ensuring your submission for Show Your Build Weekly #9 is competitive and technically sound. Let’s get this build shipped and secure the bounty. Check my portfolio at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-10T09:25:41.591Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6297616553",
-      "type": "bounty",
-      "title": "[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4280",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/cuda-warp-allreduce-verifier/issues/1\n\n### 漏洞描述 / Description\n💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $450 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://157.151.170.68:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `recount_grimm_khm020_seven_at_one_stroke_c10` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vec"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance backend systems and API integrations. For this $450 USDC bounty, my experience building complex real-time systems is directly applicable. At Yeshu Tours & Travels, I engineered a robust booking engine featuring Redis caching and precise state management, ensuring data integrity under load. I can immediately implement the `recount_grimm_khm020_seven_at_one_stroke_c10` logic and align the required stream masks in `candidate_submission.py` to pass the 24-vector conformance suite. I am ready to deliver the verified PR immediately upon escrow confirmation. Let’s get this resolved today. View my work: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-10T01:57:46.444Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6297616659",
-      "type": "bounty",
-      "title": "[Bounty] 💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Bloc (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$600 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4281",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/IES-BoilerRoom/cuda-warp-allreduce-verifier/issues/2\n\n### 漏洞描述 / Description\n💎 [Escrowed $600 USDC] 24-Vector Conformance Suite: PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption\n\n> **Automated CI Regression Mirror Notice**: Automated CI conformance runner issue; manual pull requests from human engineers are not reviewed on this mirror.\n\n- **Escrow Rail**: https://algora.io / https://polar.sh / https://opire.dev\n- **Funding Status**: Held in escrow — Reward: $600 USDC (paid automatically on merge; `/attempt` or `/claim`)\n- **External Edge Conformance Mirror**: `http://157.151.170.68:11449/v1/conformance/epoch`\n- **Specification Shards**: `shards/shard_001.json` .. `shards/shard_064.json`\n\nImplement `recount_bot_fable003_forty_iterations_in_foundry_f8f` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes "
-    },
-    "pitch": "Hi zhangjiayang6835-cyber, I am Kiran S R, a Full Stack Engineer specializing in high-performance backend systems and complex state management. I see you need a precise implementation for the `recount_bot_fable003` function and alignment of the 48-bit `STREAM_WATERMARK_MASK` within the PagedAttention KV-Cache suite.\n\nMy experience building the RMC ERP with Laravel and Vue 3, specifically handling real-time sensor feeds and complex dispatch workflows, proves my ability to manage intricate data synchronization and low-latency requirements. I am ready to deliver the verified PR immediately to secure the $600 USDC bounty. You can review my technical depth at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-10T01:57:45.418Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6298573901",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 13 New Opportunityies found (Rohank143/BountyScout)",
-      "companyOrClient": "GitHub: Rohank143/BountyScout",
-      "budgetOrSalary": "$600 USDC",
-      "url": "https://github.com/Rohank143/BountyScout/issues/88",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-10 01:55 UTC\n\n#### 1. [v2.9-map — Roads, Trails & Landmarks (before travelers)](https://github.com/nuentoter/dust-and-debt/issues/20)\n- **Repository:** [nuentoter/dust-and-debt](https://github.com/nuentoter/dust-and-debt)\n- **Comments:** 0\n- **Last Updated:** 2026-11-10T01:47:44Z\n\n#### 2. [Points as chapter currency: pay or request points between members, and a marketplace for shifts and favors](https://github.com/pdcarlson/Frapp/issues/3952)\n- **Repository:** [pdcarlson/Frapp](https://github.com/pdcarlson/Frapp)\n- **Comments:** 2\n- **Last Updated:** 2026-11-10T01:45:37Z\n\n#### 3. [[QA Bounty] [P1] Text Generation Edge Cases](https://github.com/hanzoai/ai/issues/132)\n- **Repository:** [hanzoai/ai](https://github.com/hanzoai/ai)\n- **Comments:** 2\n- **Last Updated:** 2026-11-10T01:40:28Z\n\n#### 4. [Bounty ledger: claims, submissions and payouts](https://github.com/sybil-solutions/local-ai-registry/issues/262)\n- **Repository:** [sybil-s"
-    },
-    "pitch": "Hi Rohank143,\n\nI’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. I noticed the new bounty opportunities in your scout and am ready to deliver immediate value. My work on Zupper Commerce directly addresses these needs, where I built 20+ reusable React components and cut page load times by 25% through strategic memoization and code splitting. I am available to start immediately on the first suitable issue, ensuring a fast turnaround with clean, production-ready code and a direct PR submission. Let’s get this bounty closed efficiently. View my recent work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-10T01:57:44.584Z",
     "deliveredToTelegram": true
   }
 ]
