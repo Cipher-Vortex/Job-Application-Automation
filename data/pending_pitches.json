@@ -1,6 +1,48 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6474612198",
+      "type": "bounty",
+      "title": "chore(labels): manage labels as code and migrate to the prefixed set (meteor/meteor)",
+      "companyOrClient": "GitHub: meteor/meteor",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/meteor/meteor/pull/15019",
+      "description": "## Labels as code: the prefixed label set and its migration\n\nImplements the label rework that #15018 announces, as it stands after the discussions with the maintainers: accounts and OAuth stay one area, `instrumentation` and `offline` get their area, `workshop` is dropped, the idle script stays and its label becomes `status: stale`, `experimental` is a standalone label next to the facets, and two `legacy:` labels track the issues reported before 3.0. The 21 areas are the ones #15018 lists in MAINTAINERS.md. 97 labels become 52.\n\n### What changes\n\n- **`.github/labels.yml`**: the manifest. Every label has a facet prefix (`type:`, `area:`, `platform:`, `status:`, `legacy:`, `priority:`, `ci:`) or is one of the standalone labels (`experimental`, `good first issue`, `help wanted`, `hacktoberfest-accepted`, `dependencies`), and every label has a description. The five `ci:e2e` labels keep their names and colors and get a description: #14479 uses four of them to pick the E2E slices and sets `c"
+    },
+    "pitch": "I can deliver the meteor/meteor label migration bounty immediately. As a Full Stack Engineer, I specialize in managing complex configuration states and code-driven workflows, similar to the dispatch logic I built for RMC ERP. I have the Node.js and TypeScript expertise to accurately restructure `.github/labels.yml`, implement the new prefixed facets, and execute the migration from 97 to 52 labels without breaking existing CI references. I am ready to submit a clean, tested PR for this task right now to ensure the maintainers get a seamless update. You can review my relevant work and credentials here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-18T23:53:51.870Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6477426079",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-18T21:49 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1420",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t31\t29.5\t1611134\t33\trecent@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
+    },
+    "pitch": "Hi relayhop team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. Your open bounty for the shop roast caught my attention. I recently built Zupper Commerce, where I engineered 20+ reusable React components and optimized page load times by 25% through memoization and code splitting. I bring the same precision to your sn-monetization-runtime, ready to deliver a PR that enhances UX and performance immediately. I can start working on this right now to ensure a quick turnaround for your 57k sats reward. Let’s make your shop faster and more engaging. Check my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-18T23:53:51.019Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6478477118",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-18T23:01 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1422",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t32\t30.7\t1611134\t33\trecent@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to deliver high-impact results for your sn-monetization-runtime bounty. I specialize in building robust, scalable systems using React, TypeScript, and Node.js. For your \"Roast our shop\" challenge, I can provide a sharp, technical critique backed by actionable code improvements that enhance performance and user experience. My work on Zupper Commerce, where I reduced page load times by 25% through memoization and code splitting, demonstrates my ability to optimize complex applications efficiently. I can submit a detailed review and a pull request with concrete fixes immediately to secure the 57k sats. Let’s get this done quickly. Check my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-18T23:53:50.232Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_workmotion-senior-software-engineer",
       "type": "remote_job",
       "title": "Senior Software Engineer",
@@ -1380,68 +1422,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to claim #4277. I specialize in high-performance backend logic and complex state management, evidenced by my work on RMC ERP where I engineered robust dispatch workflows and sensor feed processing using Laravel and Vue 3. I can immediately implement `align_quorum_cebb` in `candidate_submission.py`, precisely aligning the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` to ensure `verify_conformance.py` passes all 24 vectors. I guarantee a rapid turnaround with a clean PR delivery. Let’s get this bounty resolved today. View my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-10T22:28:20.800Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6315505329",
-      "type": "bounty",
-      "title": "Fix #4275: [Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/pull/4298",
-      "description": "/claim #4275\n\nFixes #4275\n\nImplement `align_quorum_cebb` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GREEN`)."
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to claim bounty #4275. I specialize in high-performance Python and complex state management, ensuring precise conformance in streaming architectures. My work on RMC ERP involved handling real-time sensor feeds and dispatch workflows, demonstrating my ability to manage intricate data alignment and strict protocol requirements. I can implement `align_quorum_cebb` and align the 48-bit masks to pass all 24 vectors immediately. I prioritize clean, verifiable code and rapid delivery. I’m ready to start now and submit a PR for your review. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-10T22:28:19.815Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6316917045",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 18 New Opportunityies found (dev-kp-eloper/BountyScout)",
-      "companyOrClient": "GitHub: dev-kp-eloper/BountyScout",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1750",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-10 22:11 UTC\n\n#### 1. [[BUG BOUNTY] Optimism Update - sub_e29a886e7d6b41cd8a30 by Sandeep Kumar Sahoo](https://github.com/MrDecryptDecipher/optimism-update-judging/issues/8)\n- **Repository:** [MrDecryptDecipher/optimism-update-judging](https://github.com/MrDecryptDecipher/optimism-update-judging)\n- **Comments:** 0\n- **Last Updated:** 2026-11-10T22:11:08Z\n\n#### 2. [[BUG BOUNTY] Optimism Update - sub_d09fd4a3b8384d3fb825 by Sandeep Kumar Sahoo](https://github.com/MrDecryptDecipher/optimism-update-judging/issues/7)\n- **Repository:** [MrDecryptDecipher/optimism-update-judging](https://github.com/MrDecryptDecipher/optimism-update-judging)\n- **Comments:** 0\n- **Last Updated:** 2026-11-10T22:10:43Z\n\n#### 3. [RFQ: CUDA polynomial multiplication performance optimization — quotes due Nov 15](https://github.com/aritomas3123-boop/cuda-polynomial-acceleration-rfq/issues/1)\n- **Repository:** [aritomas3123-boop/cuda-polynomial-acceleration-rfq](h"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. I noticed your active bounty scan and am ready to deliver immediate value. My recent work on Zupper Commerce involved building 20+ reusable React components and optimizing page load times by 25% through memoization and code splitting, directly addressing performance bottlenecks. I bring similar precision to complex frontend challenges, ensuring clean, scalable code that ships fast. I can start immediately and deliver a polished PR or fix within 24 hours. Let’s resolve these issues efficiently so you can close out these bounties. Check my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-10T22:28:18.855Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137710",
-      "type": "remote_job",
-      "title": "Senior Agentic AI Engineer NDA",
-      "companyOrClient": "GT",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-agentic-ai-engineer-nda-gt-1137710",
-      "description": "  GT was founded in 2019 by a former Apple, Nest, and Google executive. Â GTâs mission is to connect the worldâs best talent with product careers offered by high-growth companies in the UK, USA, Canada, Germany, and the Netherlands.  On behalf of the client, GT is looking for a  Senior Agentic AI Engineer  who is interested in solving complex matching and search problems at scale, applying ML and algorithms to hundreds of millions of real-world data records.  Â    About the Client   Our client is a leading global management consultancy known for tackling some of the worldâs most complex business challenges. With a focus on strategy, transformation, and performance improvement, the firm partners with major organizations across industries to drive lasting impact.  Recognized consistently as a top workplace, it combines deep industry expertise with a collaborative, innovative culture. Its centralized European hub plays a key role in supporting operations across the EMEA region, ensu",
-      "tags": [
-        "design",
-        "react",
-        "sys admin",
-        "infosec",
-        "python",
-        "consulting",
-        "docker",
-        "technical",
-        "recruiter",
-        "dev",
-        "testing",
-        "marketing",
-        "exec",
-        "senior",
-        "ops",
-        "stats",
-        "engineer",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi GT, I am Kiran S R, a Full Stack Engineer specializing in high-performance data structures and scalable systems. Your search for a Senior Agentic AI Engineer aligns perfectly with my experience building complex matching and search engines. At Zupper Commerce, I optimized React components to reduce page load times by 25%, demonstrating my ability to handle massive data records efficiently. Additionally, my work on the Yeshu Tours booking engine involved implementing Redis caching to ensure real-time data retrieval at scale. I am ready to apply my expertise in algorithms and ML-adjacent architectures to solve your complex matching challenges. I am available for an immediate discussion. Please view my portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-10T17:12:48.497Z",
     "deliveredToTelegram": true
   }
 ]
