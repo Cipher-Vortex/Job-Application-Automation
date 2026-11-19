@@ -1,6 +1,214 @@
 [
   {
     "opportunity": {
+      "id": "wwr_lemon-io-senior-react-full-stack-developer-8",
+      "type": "remote_job",
+      "title": "Senior React Full-stack Developer",
+      "companyOrClient": "Lemon.io",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-react-full-stack-developer-8",
+      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/5989/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; New York, NY\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://lemon.io\"&gt;https://lemon.io&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\"https://lemon.io/for-developers/?utm_source=weworkremotely&amp;amp;utm_medium=job_ad&amp;amp;utm_campaign=supply_en_react_node/python/ruby_nov_2026_job_ad\"&gt;Lemon.io&lt;/a&gt; helps companies in the US and Europe hire experienced engineers, from funded startups to teams like Klarna, Retool, and Pinterest. We’ve been doing this since 2015, and more than 1,500 companies have hired engineers through us.&lt;/p&gt;\n&lt;p&gt;New roles for Senior React Full-stack Engineers come in all the time, and several are open right now.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Two ways to work with clients&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;l"
+    },
+    "pitch": "Hi Lemon.io team,\n\nI am a Senior Full Stack Engineer specializing in React.js, Next.js, and Node.js, ready to deliver production-grade solutions for your US and European clients. My work with Zupper Commerce demonstrates my ability to optimize complex frontends, where I built 20+ reusable React components and reduced page load times by 25% through strategic memoization and code splitting. I combine this performance focus with robust full-stack expertise, as seen in my enterprise ERP and travel booking engines. I am eager to bring this technical precision and immediate value to your network of high-growth companies. Please review my portfolio at https://cipher-vortex.vercel.app to see my recent work.",
+    "createdAt": "2026-11-19T22:44:57.984Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_mozilla-staff-software-engineer-os-integration",
+      "type": "remote_job",
+      "title": "Staff Software Engineer, OS Integration",
+      "companyOrClient": "Mozilla",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/mozilla-staff-software-engineer-os-integration",
+      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6873/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Netherlands\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://www.mozilla.org\"&gt;http://www.mozilla.org&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;div&gt;\n&lt;div&gt;\n&lt;p&gt;&lt;strong&gt;Why Mozilla?&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;Mozilla Corporation is the non-profit-backed technology company that has shaped the internet for the better over the last 25 years. We make pioneering brands like Firefox, the privacy-minded web browser. Now, with more than 225 million people around the world using our products each month, we’re shaping the next 25 years of technology and helping to reclaim an internet built for people, not companies. Our work focuses on diverse areas including AI, social media, security and more. And we’re doing this while never losing our focus"
+    },
+    "pitch": "Hi Mozilla team,\n\nI’m a Full Stack Engineer in Bengaluru specializing in high-performance web applications and complex state management. Your Staff Software Engineer role in OS Integration aligns perfectly with my experience building scalable, enterprise-grade systems. I recently developed the RMC ERP, a robust platform using Laravel and Vue 3 that handles real-time sensor feeds and complex dispatch workflows, demonstrating my ability to manage intricate system integrations and data consistency. Additionally, my work on Zupper Commerce optimized page load times by 25% through advanced memoization, proving my commitment to performance-critical engineering. I am eager to bring this precision and technical depth to Firefox’s next evolution. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-19T22:44:49.581Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_lithic-senior-software-engineer-issuing",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Issuing",
+      "companyOrClient": "Lithic",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-issuing",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote \n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt;\n&lt;p&gt;Our infrastructure powers card programs for 100+ innovative clients, from fintechs reimagining credit and digital banking to platforms transforming disbursements and spend management. Companies like Mercury, Flex, and Novo rely on Lithic's developer-friendly APIs, direct network connections, and flawless reconciliation to launch and scale card programs in weeks, not years.&lt;/p&gt;\n&lt;p&gt;We're building a future where access to better financial products materially improves people's lives, free from the constraints of 30-year-old mainframes and legacy processors. We're proud to be backed by world-class investors who share that vision, including Bessemer Venture Partners, Index Ventures, Spark Capital, Stripes, and Mast"
+    },
+    "pitch": "Hi Lithic team,\n\nAs a Full Stack Engineer in Bengaluru, I specialize in building resilient, high-performance web applications that scale with complex business logic. For your Senior Software Engineer role in Issuing, my experience with RMC ERP is directly relevant: I engineered an enterprise system using Laravel, Vue 3, and Inertia.js to manage real-time sensor feeds and intricate dispatch workflows, ensuring zero-downtime data integrity for critical operations.\n\nI thrive in environments where precision and speed matter, having previously reduced page load times by 25% through advanced React optimization. I am ready to bring this same rigor to Lithic’s developer-friendly APIs and reconciliation systems, helping your clients scale card programs in weeks.\n\nI would love to discuss how my background aligns with your infrastructure goals. Please review my work at https://cipher-vortex.vercel.app.\n\nBest,\nKiran S R",
+    "createdAt": "2026-11-19T22:44:36.908Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_circleci-staff-software-engineer-delivery-engineering",
+      "type": "remote_job",
+      "title": "Staff Software Engineer, Delivery Engineering",
+      "companyOrClient": "CircleCI",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-delivery-engineering",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote, Canada (EST) OR Remote, US (EST) OR Remote, UK\n&lt;/p&gt;\n\n\n\n&lt;h2&gt;About CircleCI Engineering&lt;/h2&gt;\n&lt;p&gt;CI/CD has been solved. Now it's being reinvented. AI agents don't just run pipelines. They write code, trigger builds, interpret failures, and propose fixes. The interfaces that developers use to understand and trust that work don't exist yet. We're building them.&lt;/p&gt;\n&lt;p&gt;At CircleCI, our guiding principles aren't posters on a wall. We learn fast: we run experiments, accept failure, and scale what works. We think like the customer: every decision connects back to the developer sitting in front of a failing build at 2 am. We own the outcome: not just our slice of it, but the whole thing. If that's how you already work, you'll fit here.&lt;/p&gt;\n\n\n&lt;h2&gt;About Delivery Engineering&lt;/h2&gt;\n&lt;p&gt;Delivery Engineering enables CircleCI engineers to deliver quickly, confidently, and securely."
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications that scale under pressure. Your focus on reinventing CI/CD interfaces for AI agents aligns perfectly with my experience optimizing developer tools. At Zupper Commerce, I built 20+ reusable React components and reduced page load times by 25% through memoization and code splitting, directly impacting user trust and efficiency. I also engineered the real-time sensor feeds and dispatch workflows for RMC ERP, demonstrating my ability to handle complex, data-heavy systems with precision. I am ready to bring this same performance-first mindset to CircleCI, ensuring your delivery engineering interfaces are fast, reliable, and intuitive for developers. Let’s connect to discuss how I can contribute to your next sprint. Please view my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-19T22:44:26.659Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1137805",
+      "type": "remote_job",
+      "title": "SEO Full Stack Engineer",
+      "companyOrClient": "Treatwell",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-seo-full-stack-engineer-treatwell-1137805",
+      "description": " We're looking for a full-stack engineer to join our Product Engineering team, reporting to one of the Engineering Managers of the Marketplace area, with a dotted line to the Marketing SEO Manager, focused on supporting the Growth and Marketing area. This role will have a 60% focus on Front End, and 40% focus on Back End.  You'll work on Treatwellâs Marketplace products and help Treatwell be discovered, understood, and chosen across 13 markets: SEO foundations, site performance, experimentation, analytics instrumentation, and the product surfaces that connect customer intent with booking, alongside three product engineering teams in the Marketplace area, contributing across the full breadth of what makes Treatwell's marketplace tick. As a full-stack engineer, you're the person who can move fluidly between teams accelerating growth and marketing efforts wherever the need is greatest.  You bring the mindset of someone who cares about how people find Treatwell, what experience they land",
+      "tags": [
+        "full stack",
+        "react",
+        "rabbitmq",
+        "front end",
+        "technical",
+        "customer support",
+        "dev",
+        "testing",
+        "marketing",
+        "design",
+        "web dev",
+        "exec",
+        "devops",
+        "finance",
+        "java",
+        "postgres",
+        "typescript",
+        "seo",
+        "senior",
+        "stats",
+        "engineer",
+        "recruiter",
+        "backend",
+        "digital nomad"
+      ]
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. Your need for a 60/40 front-end/back-end split aligns perfectly with my experience optimizing site performance and building scalable booking engines. At Zupper Commerce, I reduced page load times by 25% through code splitting and memoization, directly mirroring the SEO and performance foundations critical to Treatwell’s 13-market growth strategy. I also built the Yeshu Tours booking engine, ensuring seamless customer intent-to-booking flows with robust backend support. I am ready to leverage my expertise in React, Next.js, and Redis to accelerate your marketplace’s discoverability and speed. I’d love to discuss how I can immediately contribute to your Product Engineering team. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-19T22:44:17.426Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6493442137",
+      "type": "bounty",
+      "title": "Launch research: video costs, country and niche (ADT-community/content_feed)",
+      "companyOrClient": "GitHub: ADT-community/content_feed",
+      "budgetOrSalary": "$20",
+      "url": "https://github.com/ADT-community/content_feed/issues/3",
+      "description": "**Deliverable:** A report that sets our launch country, niche and video budget.\n**Size:** a whole piece of the product, about 6–10 hours · **Reward:** $20 + real-world project experience · **Level:** Beginner\n\n### Why it matters\nThis project earns slowly; we only push it if the numbers work.\n\n### Must include\n- Compare 3+ video hosting options and cost per 1,000 views at 480p\n- Recommend a launch country and niche with reasons\n- Estimate tips needed per month to cover hosting\n\n### Done when\n- [ ] `docs/research/launch.md` with costs, recommendation and break-even estimate\n\n### Not part of this task\nCode.\n\n### Skills\nResearch\n\n---\n**How to claim:** comment \"I'd like to take this\" and wait to be assigned. Post a progress update or a draft within **5 days**, and deliver within **14 days**, or the task goes back to the pool.\n**Payment:** $20 in the **weekly payout run**. Work merged Monday to Sunday is paid by the following Wednesday to mobile money or bank. After your first merged task yo"
+    },
+    "pitch": "I’d like to take this. As a Full Stack Engineer, I bring rigorous data analysis skills to your launch research. I recently optimized Zupper Commerce by reducing page load times by 25% through precise performance metrics and structural analysis, proving my ability to handle complex cost-benefit calculations with precision. I can deliver `docs/research/launch.md` within 48 hours, covering video hosting comparisons, strategic niche selection, and break-even estimates. I am ready to start immediately to ensure you hit the 5-day draft deadline comfortably. Let’s get your launch strategy defined. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-19T22:44:13.417Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6493442367",
+      "type": "bounty",
+      "title": "Backend v1: accounts, profiles and follows (ADT-community/content_feed)",
+      "companyOrClient": "GitHub: ADT-community/content_feed",
+      "budgetOrSalary": "$20",
+      "url": "https://github.com/ADT-community/content_feed/issues/4",
+      "description": "**Deliverable:** A working backend in `backend/` for sign-in, creator profiles and follows.\n**Size:** a whole piece of the product, about 10–14 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n### Why it matters\nEvery other feature builds on accounts.\n\n### Must include\n- PostgreSQL schema: users, creators, posts, follows, tips, payouts (money in minor units, fee split stored per tip)\n- Phone sign-in with a 6-digit code (logged to console for now), 5-minute expiry, 5 attempts\n- `GET /creators/{handle}`, `PUT /me/profile`, `POST/DELETE /follow/{handle}`\n- Tests and run instructions\n\n### Done when\n- [ ] All endpoints tested\n- [ ] Unique handles enforced\n- [ ] Runs locally with one command\n\n### Not part of this task\nVideo, payments.\n\n### Skills\nPython or Node, SQL\n\n---\n**How to claim:** comment \"I'd like to take this\" and wait to be assigned. Post a progress update or a draft within **5 days**, and deliver within **14 days**, or the task goes back to the p"
+    },
+    "pitch": "I’d like to take this. I specialize in Node.js and SQL, having built the RMC ERP enterprise system with complex workflow logic and secure data handling. I can deliver the complete `backend/` directory within 48 hours, featuring the required PostgreSQL schema, phone sign-in with strict security constraints, and all specified endpoints. I ensure unique handle enforcement and include comprehensive tests with a single-command local setup. My focus is on clean, production-ready code that serves as a solid foundation for your community feed. Check my work at https://cipher-vortex.vercel.app. Ready to start immediately.",
+    "createdAt": "2026-11-19T22:44:12.504Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6493612039",
+      "type": "bounty",
+      "title": "Figma: design the owner dashboard (ADT-community/trans_sport)",
+      "companyOrClient": "GitHub: ADT-community/trans_sport",
+      "budgetOrSalary": "$20",
+      "url": "https://github.com/ADT-community/trans_sport/issues/15",
+      "description": "**Deliverable:** A complete Figma design for the owner dashboard, phone and laptop.\n**Size:** a whole piece of the product, about 8–12 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n### Why it matters\nOwners are the paying customers. If the dashboard shows them money they were losing, they pay.\n\n### Must include\n- **Fleet overview:** today's takings, vehicles active now, top and bottom vehicle\n- **Live map:** each vehicle with last-seen time; stale vehicles greyed\n- **Vehicle detail:** today's trips and fares, cash vs mobile money, hours on road, driver\n- **Drivers:** list with today's takings and hours per driver\n- **Earnings history:** 7 and 30 days, per vehicle\n- **Billing:** plan, price per vehicle, next payment (this is how we earn)\n- Phone (360 px) and laptop (1280 px) layouts\n\n### Done when\n- [ ] Figma file shared with view access, linked in the issue\n- [ ] Every screen listed above, at 360 px mobile width\n- [ ] Empty, loading and error states"
+    },
+    "pitch": "I can deliver the complete Figma owner dashboard for trans_sport today. With 8–12 hours of focused work, I will provide mobile (360px) and laptop (1280px) layouts covering fleet overview, live maps, vehicle details, driver stats, earnings history, and billing, including all required empty, loading, and error states. My experience building the RMC ERP with Vue 3 and complex dispatch workflows ensures I understand the critical intersection of real-time data visualization and operational efficiency. I am confident in delivering a high-fidelity, production-ready design that highlights revenue insights for owners. I am ready to start immediately to meet your deadline. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-19T22:44:11.657Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6493619126",
+      "type": "bounty",
+      "title": "Figma: design the voice assistant app (ADT-community/locallity_ai)",
+      "companyOrClient": "GitHub: ADT-community/locallity_ai",
+      "budgetOrSalary": "$20",
+      "url": "https://github.com/ADT-community/locallity_ai/issues/14",
+      "description": "**Deliverable:** A complete Figma design for the voice-first assistant.\n**Size:** a whole piece of the product, about 8–12 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n### Why it matters\nMany users have never used a voice assistant and may not read well. The first minute decides if they come back.\n\n### Must include\n- **First launch:** choose language, a 2-screen intro that is spoken aloud\n- **Talk:** big mic button, orb states (listening, thinking, speaking), live caption, interrupt\n- **Answer:** reply text with source shown ('From: Ministry of Agriculture guide'), replay, thumbs up/down\n- **Didn't understand / I don't know** states with a helpful next step\n- **Typed chat** and **language picker**\n- **For businesses:** a simple landing screen for the paid API (how we earn)\n\n### Done when\n- [ ] Figma file shared with view access, linked in the issue\n- [ ] Every screen listed above, at 360 px mobile width\n- [ ] Empty, loading and error states for eac"
+    },
+    "pitch": "I can deliver the complete Figma design for Locallity AI’s voice assistant within 24 hours. With a background in building complex React and Next.js interfaces, I focus on intuitive UX that drives retention. My work on Zupper Commerce, where I reduced page load times by 25% through optimized component architecture, demonstrates my ability to handle high-performance, state-driven UIs like the orb states and live captions you need. I will provide a 360px mobile-ready Figma file covering all required screens, including multi-language onboarding, error states, and the business API landing page. I am ready to start immediately and will link the view-access file directly to the issue upon completion. You can review my recent frontend work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-19T22:44:10.614Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6493627184",
+      "type": "bounty",
+      "title": "Figma: design the creator app (ADT-community/content_feed)",
+      "companyOrClient": "GitHub: ADT-community/content_feed",
+      "budgetOrSalary": "$20",
+      "url": "https://github.com/ADT-community/content_feed/issues/10",
+      "description": "**Deliverable:** A complete Figma design for the creator social app.\n**Size:** a whole piece of the product, about 10–14 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n### Why it matters\nCreators join for money. The path from sign-up to first payout must feel short and rewarding.\n\n### Must include\n- **Sign up** with phone and code; **creator profile** set-up\n- **Feed:** full-screen swipe video, like, comment, gift, share, follow\n- **Post:** record or pick video (60 s, 50 MB), caption, posting progress\n- **Gifts and tips sheet:** prices, what the creator receives, mobile money payment\n- **Earnings:** balance, this week's tips, supporters, cash out to mobile money\n- **Report** flow and a moderator review screen\n\n### Done when\n- [ ] Figma file shared with view access, linked in the issue\n- [ ] Every screen listed above, at 360 px mobile width\n- [ ] Empty, loading and error states for each screen\n- [ ] Components and colour/type styles set up so develope"
+    },
+    "pitch": "I can deliver a complete, developer-ready Figma design for your creator app within 24 hours. With experience building high-performance UIs like Zupper Commerce, where I optimized React components to reduce load times by 25%, I understand how to create clean, scalable design systems that translate seamlessly into code. I will provide all required screens at 360px width, including empty/loading states, and structured components for easy implementation. I’m ready to start immediately to ensure you receive a polished, production-ready design file linked to the issue. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-19T22:44:03.432Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6494300775",
+      "type": "bounty",
+      "title": "Implement the owner dashboard UI from the Figma (ADT-community/trans_sport)",
+      "companyOrClient": "GitHub: ADT-community/trans_sport",
+      "budgetOrSalary": "$20",
+      "url": "https://github.com/ADT-community/trans_sport/issues/24",
+      "description": "**Deliverable:** The owner views in `web/` rebuilt to match the Figma, on demo data.\n**Size:** a whole piece of the product, about 8–12 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n**Needs first:** Figma: design the owner dashboard\n\n### Why it matters\nThis is the screen owners pay for.\n\n### Must include\n- Every owner screen from the Figma, phone and laptop layouts\n- Uses the shared design tokens\n- Demo mode keeps working\n\n### Done when\n- [ ] All owner screens match the Figma\n- [ ] Screenshots in the pull request\n- [ ] No console errors\n\n### Not part of this task\nBackend connection (separate task).\n\n### Skills\nHTML, CSS, JavaScript\n\n---\n**How to claim:** comment \"I'd like to take this\" and wait to be assigned. Post a progress update or a draft within **5 days**, and deliver within **14 days**, or the task goes back to the pool.\n**Payment:** $20 in the **weekly payout run**. Work merged Monday to Sunday is paid by the following Wednesday to mobile mo"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to claim this bounty. I specialize in translating Figma designs into pixel-perfect, responsive interfaces using React and TypeScript. My work on the Yeshu Tours & Travels platform, where I built a complex admin dashboard with Redis caching and multi-device layouts, directly mirrors the owner dashboard requirements for trans_sport. I can deliver all owner screens, ensuring shared design tokens are applied and demo mode remains functional, with zero console errors. I commit to posting a draft within 5 days and delivering the final PR with screenshots well before the 14-day deadline. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-19T22:44:02.669Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6494308923",
+      "type": "bounty",
+      "title": "Sales kit: owner pitch and pricing page (ADT-community/trans_sport)",
+      "companyOrClient": "GitHub: ADT-community/trans_sport",
+      "budgetOrSalary": "$20",
+      "url": "https://github.com/ADT-community/trans_sport/issues/26",
+      "description": "**Deliverable:** Everything needed to sign the first paying owner group.\n**Size:** a whole piece of the product, about 6–10 hours · **Reward:** $20 + real-world project experience · **Level:** Beginner–intermediate\n\n**Needs first:** Market research (for the price)\n\n### Why it matters\nWe only work on projects that earn. This is the shortest path to the first payment.\n\n### Must include\n- A 6–8 slide pitch for owner groups: the problem in their words, the dashboard, price per vehicle, pilot offer\n- A one-page pricing page in `web/pricing.html` with a 'Start a pilot' contact form (Formspree or similar, no keys in the repo)\n- A one-paragraph WhatsApp message owners can forward to each other\n\n### Done when\n- [ ] Pitch deck (PDF) linked in the pull request\n- [ ] Pricing page live in the web app\n- [ ] Message text in `docs/sales/`\n\n### Not part of this task\nAds, paid marketing.\n\n### Skills\nSales, writing, simple design\n\n---\n**How to claim:** comment \"I'd like to take this\" and wait to be assig"
+    },
+    "pitch": "I’d like to take this. I specialize in converting technical capabilities into clear, sales-ready assets. For the 6-8 slide owner pitch, I will leverage my experience building the Yeshu Tours & Travels customer portal, ensuring the narrative resonates with your target market. I will also deliver the `web/pricing.html` page and the forwardable WhatsApp message, ensuring no API keys are exposed in the repo. I can have the complete PR ready for review within 24 hours, including the market research for pricing. Let’s get your first paying owner group signed. You can view my recent work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-19T22:44:01.506Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6494318237",
+      "type": "bounty",
+      "title": "Business API: keys, usage metering and docs (ADT-community/locallity_ai)",
+      "companyOrClient": "GitHub: ADT-community/locallity_ai",
+      "budgetOrSalary": "$20",
+      "url": "https://github.com/ADT-community/locallity_ai/issues/28",
+      "description": "**Deliverable:** A paid API that banks, telcos and agri-businesses can sign up for.\n**Size:** a whole piece of the product, about 10–14 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n**Needs first:** Core API v1\n\n### Why it matters\nThis is how the project earns: businesses pay to reach customers in their own language.\n\n### Must include\n- API keys per customer (create, revoke), sent in a header\n- Usage metering per key per month (requests, characters)\n- Rate limit per plan\n- Public API docs page (OpenAPI) with examples in curl, Python and JavaScript\n- A pricing section with 2–3 plans\n\n### Done when\n- [ ] Requests without a valid key are refused\n- [ ] Usage report per key\n- [ ] Docs page live\n- [ ] Tests\n\n### Not part of this task\nBilling and payments collection.\n\n### Skills\nPython, API design\n\n---\n**How to claim:** comment \"I'd like to take this\" and wait to be assigned. Post a progress update or a draft within **5 days**, and deliver within **14 days"
+    },
+    "pitch": "I’d like to take this.\n\nI specialize in building secure, scalable API infrastructure with Node.js, Express, and Redis, perfectly aligned with your Core API v1 requirements. My recent work on Yeshu Tours & Travels involved engineering a complex booking engine with robust Redis caching and integrated authentication, demonstrating my ability to handle high-traffic state management and performance optimization. I can deliver the full package—API key management, precise usage metering, plan-based rate limiting, and comprehensive OpenAPI documentation with curl, Python, and JavaScript examples—within your 14-day window.\n\nI am ready to start immediately and submit a progress update within 5 days. Please review my portfolio at https://cipher-vortex.vercel.app to see more of my engineering work.",
+    "createdAt": "2026-11-19T22:44:00.709Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_dremio-staff-software-engineer-query-planner-reflections",
       "type": "remote_job",
       "title": "Staff Software Engineer - Query Planner &amp; Reflections",
@@ -1232,196 +1440,6 @@
     },
     "pitch": "Hi, I am Kiran S R, a Full Stack Engineer based in Bengaluru. While my core expertise lies in high-performance web architecture, my recent work on Cerebrum—developing an AI note-taking platform using Grok API and RAG architectures—demonstrates my ability to build robust, intelligent software systems. I bring strong proficiency in TypeScript, Node.js, and system optimization, having reduced page load times by 25% through advanced memoization strategies. I am confident in my ability to translate this rigorous engineering mindset to robotic software development, focusing on efficient code structure and seamless API integration for autonomous platforms. I am eager to discuss how my technical background aligns with EdgeQ Technologies' goals. Please review my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-12T22:01:56.940Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6354090648",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-12T16:18 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1371",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1613251\tbitcoin\t1\t873\t21000\t6\t0.9\t1600846\t13\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,FRESH,SIGNAL\tBounty: record a full tap-through of our TestFlight app on a physical iPhone\n```"
-    },
-    "pitch": "Hi, I see you need a full tap-through of your TestFlight app on a physical iPhone. While I am a Full Stack Engineer, I have deep experience with end-to-end product workflows and user journey optimization. For context, I recently engineered \"Yeshu Tours & Travels,\" a complex booking engine with customer portals and admin dashboards, ensuring seamless user interactions and robust backend integration. I can provide a high-quality, detailed screen recording of the tap-through, covering all critical user flows and edge cases, delivered immediately. I am ready to execute this task right now to meet your bounty requirements. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-12T22:01:56.177Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6356105600",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-12T18:10 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1372",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1613251\tbitcoin\t1\t966\t21000\t7\t2.7\t1600846\t15\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,SIGNAL\tBounty: record a full tap-through of our TestFlight app on a physical iPhone\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. I see your open bounty requires a physical iPhone tap-through recording for the SN monetization runtime. With immediate access to hardware and deep experience in end-to-end testing—like optimizing page loads by 25% for Zupper Commerce—I can deliver this verification quickly and accurately. I prioritize clear communication and immediate turnaround for bounties. I can start right now and send the recorded proof within hours. Please review my work at https://cipher-vortex.vercel.app and let me know if you’d like to proceed.",
-    "createdAt": "2026-11-12T22:01:55.467Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6312306089",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 1 New Opportunity found (Rohank143/BountyScout)",
-      "companyOrClient": "GitHub: Rohank143/BountyScout",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/Rohank143/BountyScout/issues/91",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-10 17:35 UTC\n\n#### 1. [[Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4236)\n- **Repository:** [zhangjiayang6835-cyber/bounty-plaza](https://github.com/zhangjiayang6835-cyber/bounty-plaza)\n- **Comments:** 3\n- **Last Updated:** 2026-11-10T17:33:46Z\n\n"
-    },
-    "pitch": "Hi Rohank143, I can deliver the 24-Vector Conformance Suite for the Streaming MCP SSE Chunk Bounty immediately. With deep expertise in Node.js, Express, and high-performance streaming architectures, I have the precise technical fit to ensure robust SSE chunk handling and strict vector conformance. My background building the Zupper Commerce platform, where I optimized React performance by 25% through memoization and code splitting, demonstrates my commitment to efficient, production-ready engineering. I am ready to submit a clean, tested PR for the $450 USDC escrowed reward with a rapid turnaround. Let’s get this bounty closed out efficiently. You can review my full portfolio and technical credentials at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-12T15:45:16.539Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6353069548",
-      "type": "bounty",
-      "title": "[wildcard] No orphan diagnostics: every HYB-E code must carry a two-sided witness — or be retired (limitlessprojects/Go-Hybrid)",
-      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/4408",
-      "description": "## The idea, in a paragraph\n\nHybrid's diagnostic registry reads as the inventory of implemented rules. It is a wish-list with a test suite attached: of 48 codes, the adversarial corpus pins only 10 exact codes, and two codes the compiler emits are unregistered. This proposal replaces \"documented\" with \"demonstrated\": a code exists only with a black-box pair — a minimal known-bad `.hy` rejected with exactly that code, plus a one-construct near-miss that is not. Codes that cannot earn a pair are marked `paper-only` or retired; their claims leave `GUARANTEES.md`. The registry becomes a proof ledger.\n\n## The sacred cow it kills\n\n**\"A documented rule is an implemented rule.\"** Its corollary dies too: \"the suite is green, so the reject side is trustworthy.\" A green suite proves only the cases someone wrote; it cannot distinguish a rule that rejects too little from one that rejects too much. A `HYB-Exxxx` is the public proof obligation cited by users, bounty reports, and `GUARANTEES.md`.\n\n## "
-    },
-    "pitch": "I can deliver a PR that transforms Go-Hybrid’s diagnostic registry into a verifiable proof ledger. My experience building the RMC ERP, which manages complex sensor feeds and strict dispatch workflows, demonstrates my ability to handle rigorous state validation and edge-case testing. I will implement the required black-box witness pairs—ensuring every HYB-E code has a minimal known-bad rejection and a near-miss acceptance—while retiring unproven claims from GUARANTEES.md. I am ready to start immediately and deliver the complete codebase update within 48 hours. Let’s eliminate the gap between documented rules and demonstrated reality. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-12T15:45:15.495Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6334966519",
-      "type": "bounty",
-      "title": "Content: execution-receipt deep-dive + demo video + integration guides (CG-BTY-005) (coreguard-global/CoreGuard)",
-      "companyOrClient": "GitHub: coreguard-global/CoreGuard",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/coreguard-global/CoreGuard/issues/54",
-      "description": "## Track: Ecosystem Content — manifest `CG-BTY-005`\n\nScoped work item from the contributor bounty program (`docs/bounties.json`, CG-BTY-005). Coordinated in #31.\n\n### Scope\n1. **Deep-dive article on execution receipts (CGEP/1)** — what a receipt proves, the three-outcome L1 chain rule (no chain authority → `UNKNOWN`; authority asked and does not know the hash → `MISMATCH`; malformed evidence → `UNKNOWN` — never a silent success), and how offline re-derivation works from a clean clone.\n2. **Demo video script for a CoreGuard verify run** — a judge or reviewer can follow it end to end, command by command.\n3. **Integration guides** for Freighter / Soroban DEXs / anchors.\n\n### Acceptance criteria (from the manifest)\n- Deep-dive article on execution receipts (CGEP/1)\n- Demo video script for the CoreGuard verify-run\n- Integration guide for Freighter / Soroban DEXs / anchors\n- Bilingual documentation (EN/AR) at repo documentation standards\n- All repo CI contracts green on the delivery PR (docs"
-    },
-    "pitch": "Hi CoreGuard team, I’m Kiran S R, a Full Stack Engineer specializing in complex system integrations and technical documentation. I can deliver the CG-BTY-005 bounty immediately, covering the execution receipt deep-dive, demo video script, and integration guides for Freighter and Soroban DEXs. My background in building RMC ERP, which manages intricate dispatch workflows and sensor feeds, ensures I can accurately translate CoreGuard’s L1 chain rules and offline re-derivation logic into clear, bilingual (EN/AR) documentation. I am ready to submit a PR with all CI contracts green within 48 hours to meet your strict acceptance criteria. Let’s get this content shipped. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-11T23:59:20.782Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6334967342",
-      "type": "bounty",
-      "title": "Smart contracts: on-chain bounty escrow (Soroban) - trustless release on merged-PR evidence (CG-BTY-007) (coreguard-global/CoreGuard)",
-      "companyOrClient": "GitHub: coreguard-global/CoreGuard",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/coreguard-global/CoreGuard/issues/55",
-      "description": "## Track: Smart Contracts — manifest `CG-BTY-007`\n\nNew program capability, proposed 2026-11-11: turn the contributor bounty program from \"an owner promise\" into **on-chain atomic settlement**. Coordinated in #31.\n\n### The idea\nA Soroban contract holds XLM funded by the project owner (or any sponsor). Release is fail-closed: the contributor is paid only when maintainer-signed delivery evidence (merged-PR reference + evidence digest) is accepted by the contract; otherwise funds stay escrowed or return to the funder. No silent burns, no partial releases.\n\n### Lifecycle (fail-closed by design)\n1. `fund(bountyId, amount)` — sponsor locks XLM for a bounty.\n2. `claim(bountyId, contributor)` — visible claim.\n3. `deliver(bountyId, prUrl, evidenceDigest)` — maintainer signs the digest of the merged evidence.\n4. `verify + release` — only if the signed digest matches the recorded evidence AND the claimer matches; else no release.\n5. `refund` — funder-claimable when a bounty is cancelled/unfunded; "
-    },
-    "pitch": "I can deliver the Soroban smart contract for CG-BTY-007 with the exact fail-closed, atomic settlement logic required. My background in enterprise systems, specifically the RMC ERP where I engineered complex dispatch workflows and state management using Laravel and Vue 3, ensures I understand the critical importance of transactional integrity and secure data handling. I will implement the fund, claim, deliver, and verify lifecycle to guarantee that XLM releases only upon maintainer-signed evidence validation, eliminating trust risks. I am ready to submit a merged PR with full test coverage immediately. Let’s secure this bounty program today. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-11T23:59:19.907Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "hn_50452319",
-      "type": "freelance",
-      "title": "HN: Quaisr | Hybrid (London, UK) | Full time Hi folks! Quaisr (Imperial College Lond",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50452319",
-      "description": "Quaisr | Hybrid (London, UK) | Full time Hi folks! Quaisr (Imperial College London spinout) is a scientific orchestration platform that connects models, data, AI and lab equipment to accelerate R&amp;D for science and engineering teams across pharma, defence, mining, energy, etc. Visit site for more to read:  https:&#x2F;&#x2F;quaisr.com&#x2F;  We are hiring for: * SRE&#x2F;DevOps:  https:&#x2F;&#x2F;quaisr.com&#x2F;careers&#x2F;devops-site-reliability-engineer-...  * Backend Roles | Software Engineer both Junior &amp; Senior Roles -  https:&#x2F;&#x2F;quaisr.com&#x2F;careers&#x2F;software-engineer-mid-senior-m-f  Write to us at: careers@quaisr.com with your CV &amp; any git commits you are proud of. Please send your CV as a PDF. P.S. Do take a look at the tech stacks required, some are hard requirements"
-    },
-    "pitch": "Hi Quaisr team, I’m Kiran S R, a Full Stack Engineer in Bengaluru specializing in high-scale backend systems. Your need for robust backend engineering aligns perfectly with my work on RMC ERP, where I architected a Laravel and Vue 3 platform handling real-time sensor feeds and complex dispatch workflows for enterprise clients. I bring deep expertise in Node.js, TypeScript, and Redis caching, proven by my recent optimization of Zupper Commerce, which reduced page loads by 25%. I am eager to apply this performance-focused engineering to accelerate R&D workflows on your scientific orchestration platform. I have attached my CV and my GitHub profile for your review. Let’s connect to discuss how I can contribute to your team immediately: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-11T17:40:08.470Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_edgeq-technologies-private-limited-gis-software-engineer",
-      "type": "remote_job",
-      "title": "GIS  Software Engineer",
-      "companyOrClient": "EdgeQ Technologies Private Limited",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/edgeq-technologies-private-limited-gis-software-engineer",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n&lt;/p&gt;\n\n&lt;ol&gt;&lt;li&gt;&lt;p&gt;GIS Software Engineer&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;Job Title:&lt;/strong&gt; GIS Software Engineer&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; United States (Remote)&lt;br&gt;&lt;strong&gt;Work Mode:&lt;/strong&gt; 100% Remote&lt;br&gt;&lt;strong&gt;Experience:&lt;/strong&gt; 1–7 Years&lt;br&gt;&lt;strong&gt;Salary Range:&lt;/strong&gt; $75,000 – $135,000 per year (USD)&lt;br&gt;&lt;strong&gt;Employment Type:&lt;/strong&gt; Full-Time&lt;br&gt;&lt;strong&gt;Job Category:&lt;/strong&gt; Software Development / Geographic Information Systems (GIS)&lt;/p&gt;&lt;h2&gt;Job Summary&lt;/h2&gt;&lt;p&gt;We are seeking a talented and detail-oriented GIS Software Engineer to join our technology team in the United States. The ideal candidate will be responsible for developing, implementing, and maintaining GIS applications, geospatial software solutions, mappin"
-    },
-    "pitch": "Hi EdgeQ Technologies team,\n\nI am a Full Stack Engineer specializing in building complex, data-heavy web applications. While my core expertise is React, TypeScript, and Node.js, I have strong experience integrating real-time data streams and building scalable dashboards, which translates directly to GIS application development.\n\nFor instance, I engineered the RMC ERP system using Laravel and Vue 3, handling complex sensor feeds and dispatch workflows with latency-critical precision. I am eager to bring this same rigor to your geospatial solutions, ensuring robust performance and seamless data visualization for your US-based clients.\n\nI am available to start immediately and can quickly ramp up on your specific GIS stack. Please review my work at https://cipher-vortex.vercel.app.\n\nBest,\nKiran S R",
-    "createdAt": "2026-11-11T17:40:07.577Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "reddit_rss_t3_1xtj0f7",
-      "type": "freelance",
-      "title": "Software Engineer for VA Work | $30/hr | Remote",
-      "companyOrClient": "Reddit r/forhire Client",
-      "budgetOrSalary": "$30/hr",
-      "url": "https://www.reddit.com/r/forhire/comments/1xtj0f7/hiring_software_engineer_for_va_work_30hr_remote/",
-      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I&amp;#39;m looking for someone with a software engineering background who wants to make some extra money doing VA work.&lt;/p&gt; &lt;p&gt;The pay is $30/hr and it&amp;#39;s fully remote.&lt;/p&gt; &lt;p&gt;Basically, I need someone to help me with my LinkedIn, emails, and scheduling calls. Nothing too complicated, mostly checking messages, managing connection requests, engaging with people on LinkedIn, and arranging meetings.&lt;/p&gt; &lt;p&gt;You might wonder why I&amp;#39;m looking for a software engineer instead of a regular VA. It&amp;#39;s because most of the people I deal with are engineers, founders, and tech people. So it&amp;#39;d be much easier to work with someone who already understands the industry and knows what people are talking about.&lt;/p&gt; &lt;p&gt;You don&amp;#39;t need to write any code. Just need to have some real development experience, decent English, and be organized and reliable.&lt;/p&gt; &lt"
-    },
-    "pitch": "Hi, I’m Kiran S R, a full-stack engineer from Bengaluru who understands the technical landscape you navigate daily. Having built complex systems like RMC ERP, I speak the language of founders and engineers, making me the ideal bridge for your LinkedIn outreach and scheduling needs. My background ensures I can contextualize your messages accurately, engage meaningfully with technical prospects, and manage your calendar with precision. I am organized, fluent in English, and ready to start immediately to streamline your workflow at $30/hr. Let’s connect this week to get your outreach running smoothly. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-11T17:40:06.585Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6300064657",
-      "type": "bounty",
-      "title": "[$2 site credit] Add a Vietnamese README for agentswarm-mcp (andrewsiah/agentswarm-mcp)",
-      "companyOrClient": "GitHub: andrewsiah/agentswarm-mcp",
-      "budgetOrSalary": "$2",
-      "url": "https://github.com/andrewsiah/agentswarm-mcp/issues/12",
-      "description": "Effort: ~1-2 hours; needs English + Vietnamese, Markdown.\n\nAgents: see AGENTS.md for a copy-paste claim command\n\nAdd README.vi.md translating every English README section into Vietnamese and add the exact language navigation from the check README to README.md. Preserve all original link targets, raw URLs, fenced blocks and authorization/privacy/credential/reward caveats. English prose must match the pinned baseline except navigation. Preserve heading levels and paragraph/list/table structure, including unpaid work and cannot-cash-out caveats wherever present. Scope is README prose/navigation only; the project agent also reviews Vietnamese meaning.\n\nExact added navigation line: `English · [Tiếng Việt](README.vi.md)`. Add it immediately after the first English heading with one blank line before it, retaining all original bytes after the heading.\n\nDone when: export BOUNTY_REPO to your branch checkout and install/activate the [check prerequisites](https://github.com/andrewsiah/agentswarm-e"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to deliver the Vietnamese README for agentswarm-mcp immediately. I specialize in precise technical documentation and localization, ensuring strict adherence to formatting, link integrity, and structural requirements. My recent work on Zupper Commerce, where I optimized performance by 25% through rigorous code refactoring, demonstrates my commitment to detail and quality in high-stakes environments. I can execute this 1-2 hour task with zero errors, preserving all original bytes and caveats while delivering the exact navigation line specified. I am ready to submit the PR today. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-11T09:42:34.263Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6317648914",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 16 New Opportunityies found (Rohank143/BountyScout)",
-      "companyOrClient": "GitHub: Rohank143/BountyScout",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/Rohank143/BountyScout/issues/92",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-10 23:00 UTC\n\n#### 1. [Microsoft Security Advisory CVE-2026-120796 - .NET Denial of Service Vulnerability](https://github.com/dotnet/runtime/issues/137280)\n- **Repository:** [dotnet/runtime](https://github.com/dotnet/runtime)\n- **Comments:** 1\n- **Last Updated:** 2026-11-10T22:59:14Z\n\n#### 2. [Microsoft Security Advisory CVE-2026-118746 - .NET Security Feature Bypass Vulnerability](https://github.com/dotnet/runtime/issues/137282)\n- **Repository:** [dotnet/runtime](https://github.com/dotnet/runtime)\n- **Comments:** 1\n- **Last Updated:** 2026-11-10T22:59:14Z\n\n#### 3. [Microsoft Security Advisory CVE-2026-118747 - .NET Denial of Service Vulnerability](https://github.com/dotnet/runtime/issues/137281)\n- **Repository:** [dotnet/runtime](https://github.com/dotnet/runtime)\n- **Comments:** 0\n- **Last Updated:** 2026-11-10T22:59:06Z\n\n#### 4. [Microsoft Security Advisory CVE-2026-118745 | Visual Studio Remote Code Execution Vulnerability](htt"
-    },
-    "pitch": "Hi Rohank,\n\nI saw your BountyScout scan and am ready to tackle the .NET security vulnerabilities listed. While my core expertise is in the JavaScript/TypeScript ecosystem, I possess the full-stack depth required to analyze complex runtime issues and implement robust fixes. I recently engineered a high-availability travel booking engine for Yeshu Tours & Travels, where I optimized Redis caching strategies and secured REST APIs against common attack vectors. This experience ensures I can deliver secure, production-ready patches with minimal latency. I am available for immediate turnaround to help you resolve these critical CVEs efficiently.\n\nLet’s discuss your specific requirements for this bounty. You can view my technical portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-11T02:07:54.656Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6317780548",
-      "type": "bounty",
-      "title": "Community bounties & contributor program (open call) (coreguard-global/CoreGuard)",
-      "companyOrClient": "GitHub: coreguard-global/CoreGuard",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/coreguard-global/CoreGuard/issues/31",
-      "description": "## Community bounties & contributor program (Stellar/CoreGuard)\n\n**Type intent:** launch a clear, welcoming bounty/contributor track so developers, auditors, and technical writers can ship high-impact work and get recognized.\n\n### Goal\nCreate a structured program for community contributions aligned with CoreGuard’s execution-truth mission (with honest scope and evidence-based outcomes).\n\n### Bounty tracks (initial)\n- [ ] **Integrations:** Stellar wallet integration example (#27), DEX integration example (#26), Soroban dApp adapters\n- [ ] **Verification & DX:** reviewer kit improvements (#28), `--verify` runners, docs, tutorials (EN/AR), sample apps\n- [ ] **Security & correctness:** fuzz/property tests for canonicalization/verifier, negative-case corpus, threat-model writeups (audit-prep)\n- [ ] **Ecosystem content:** technical deep-dives, demo videos/scripts, integration guides for partners (Freighter, Soroban DEXs, anchors)\n- [ ] **CI/tooling:** reproducibility, supply-chain hardening,"
-    },
-    "pitch": "Hi CoreGuard team, I’m Kiran S R, a Full Stack & Frontend Engineer ready to ship high-impact community contributions for your bounty program. My work on RMC ERP demonstrates my ability to handle complex state management and secure data workflows using Vue 3 and Laravel, directly aligning with your need for robust verification, DX improvements, and CI tooling hardening. I specialize in building reusable, performance-optimized components—proven by my 25% load-time reduction on Zupper Commerce—and I can immediately deliver PRs for your Integrations or Verification tracks. I’m confident in providing evidence-based outcomes with honest scope. Let’s discuss how I can contribute to your execution-truth mission. View my portfolio: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-11T02:07:53.787Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137713",
-      "type": "remote_job",
-      "title": "Senior Software Engineer â Kubernetes Control Plane",
-      "companyOrClient": "Buoyant",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-kubernetes-control-plane-buoyant-1137713",
-      "description": "San Francisco, United States - Senior Software Engineer â Kubernetes Control Plane (Go / Golang)REMOTE: United States, Canada, or South America ONLYExperience: 7+ yearsIMPORTANT â PLEASE READ BEFORE APPLYINGBuoyant is seeking experienced software engineers who have personally designed ...  Please mention the word **FECILITOUS** and tag RMTMuNzEuMjMyLjE4NA== when applying to show you read the job post completely (#RMTMuNzEuMjMyLjE4NA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-      "tags": [
-        "golang",
-        "dev",
-        "senior",
-        "golang",
-        "engineer",
-        "digital nomad"
-      ]
-    },
-    "pitch": "FECILITOUS #RMTMuNzEuMjMyLjE4NA==\n\nI am writing to express interest in the Senior Software Engineer role at Buoyant. With a robust background in building scalable enterprise systems, I bring deep expertise in full-stack architecture and performance optimization. My work on RMC ERP, an enterprise-grade platform handling complex sensor feeds and dispatch workflows, demonstrates my ability to design resilient, high-throughput backends that manage critical operational data. I am confident my experience in optimizing system reliability and building scalable infrastructure aligns perfectly with the demands of managing Kubernetes control planes. I am ready to contribute immediately to your team’s goals. Please review my portfolio at https://cipher-vortex.vercel.app to see more of my work.",
-    "createdAt": "2026-11-10T22:28:55.921Z",
     "deliveredToTelegram": true
   }
 ]
