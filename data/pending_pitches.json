@@ -1,6 +1,90 @@
 [
   {
     "opportunity": {
+      "id": "wwr_dremio-staff-software-engineer-query-planner-reflections",
+      "type": "remote_job",
+      "title": "Staff Software Engineer - Query Planner &amp; Reflections",
+      "companyOrClient": "Dremio",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-query-planner-reflections",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Portugal - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h2&gt;&lt;strong&gt;Be Part of Building the Future&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;Dremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&amp;amp;P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost.&amp;nbsp; Learn more at&amp;nbsp;&lt;a class=\"c-link\" href=\"http://www.dremio.com/\"&gt;www.dremio.com.&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Dremio's Q"
+    },
+    "pitch": "Hi Dremio team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance data applications. Your focus on Apache Iceberg and Arrow resonates with my experience optimizing complex data workflows. At RMC ERP, I engineered a Laravel and Vue 3 platform handling real-time sensor feeds and intricate dispatch logic, ensuring low-latency data processing for enterprise operations. Additionally, my work on Zupper Commerce involved reducing page load times by 25% through aggressive memoization and code splitting, proving my commitment to performance-driven engineering. I am eager to bring this technical rigor to your Query Planner and Reflections teams. I am available for an immediate remote start and ready to contribute to Dremio’s mission of accelerating time-to-insight. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-19T15:10:38.035Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_legion-principal-software-engineer-devops",
+      "type": "remote_job",
+      "title": "Principal Software Engineer, DevOps",
+      "companyOrClient": "Legion",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote, United States\n&lt;/p&gt;\n\n&lt;h1&gt;&lt;strong&gt;Principal Software Engineer, DevOps&lt;/strong&gt;&lt;/h1&gt;\n&lt;h2&gt;&lt;strong&gt;Remote, United States&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;&lt;strong&gt;ABOUT POSITION:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Are you passionate about automation, DevOps, public cloud services, Kubernetes, and observability?&amp;nbsp; As a site reliability engineer at Legion, you will be responsible for building the tools, infrastructure, and services to create a secure, highly scalable, and cost-effective AWS/Kubernetes-based cloud platform. You will be working with everything from infrastructure tooling, automation, build and deployment pipelines, monitoring and logging, containerization, and more! Simply put, the SRE team keeps Legion running for our customers.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;ROLES AND RESPONSIBILITIES:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Support Legion’s public "
+    },
+    "pitch": "Legion’s need for a secure, scalable AWS/Kubernetes platform demands an engineer who builds resilient infrastructure, not just code. As a Full Stack Engineer, I bring deep expertise in Node.js, Redis caching, and high-performance system architecture. My work on Yeshu Tours & Travels demonstrates my ability to engineer complex booking engines with robust Redis caching and automated workflows, ensuring low latency and high availability under load. I am ready to apply this same rigor to your SRE challenges, focusing on automation, cost-effective cloud scaling, and observability. I can start immediately to help stabilize and scale your infrastructure. Please review my portfolio at https://cipher-vortex.vercel.app to see my technical depth.",
+    "createdAt": "2026-11-19T15:10:36.904Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_circleci-senior-software-engineer-query",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Query",
+      "companyOrClient": "CircleCI",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Canada (Remote), United States (Remote), United Kingdom (Remote) Mexico City, Mexico - Hybrid\n&lt;/p&gt;\n\n\n&lt;h3&gt;About CircleCI Engineering&lt;/h3&gt;\n&lt;p&gt;CI/CD has been solved. Now it's being reinvented. AI agents don't just run pipelines. They write code, trigger builds, interpret failures, and propose fixes. The interfaces that developers use to understand and trust that work don't exist yet. We're building them.&lt;/p&gt;\n&lt;p&gt;At CircleCI, our guiding principles aren't posters on a wall. We learn fast: we run experiments, accept failure, and scale what works. We think like the customer: every decision connects back to the developer sitting in front of a failing build at 2 am. We own the outcome: not just our slice of it, but the whole thing. If that's how you already work, you'll fit here.&lt;/p&gt;\n&lt;h3&gt;About the Query Team&lt;/h3&gt;\n&lt;p&gt;Every pipeline, job, and test that runs on CircleCI generates da"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. Your need for interfaces that help developers trust AI-driven CI/CD workflows aligns perfectly with my experience building complex, data-heavy dashboards. At Zupper Commerce, I engineered 20+ reusable React components and optimized page load times by 25% through memoization and code splitting, ensuring smooth interactions even with dense data. I also built the RMC ERP, managing real-time sensor feeds and dispatch workflows with Vue 3 and Laravel. I am ready to bring this same focus on performance and user clarity to CircleCI’s Query team, helping you build the interfaces developers need to trust their pipelines. You can view my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-19T15:10:35.328Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_proxify-ab-senior-fullstack-developer-react-js-node-js-6",
+      "type": "remote_job",
+      "title": "Senior Fullstack Developer (React.js / Node.js)",
+      "companyOrClient": "Proxify AB",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-6",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Sweden\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://career.proxify.io\"&gt;http://career.proxify.io&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;h3&gt;&lt;strong&gt;The Role:&lt;/strong&gt;&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;We are looking for a Senior Fullstack Developer skilled in React.js and Node.js for one of our clients. You are a perfect candidate if you are growth-oriented, you love what you do, and you enjoy working on new ideas to develop exciting products.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;h3&gt;What we are looking for:&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;5+ years experience as a Fullstack Developer.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Backend experience with:&lt;/p&gt;\n&lt;/li&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;Node.js&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Mi"
+    },
+    "pitch": "Hi Proxify AB,\n\nI am a Senior Full Stack Engineer in Bengaluru with deep expertise in React.js, Node.js, and TypeScript, ready to deliver immediate value to your client’s product. My background aligns perfectly with your requirements for a growth-oriented developer who thrives on building scalable, high-performance applications.\n\nFor instance, I engineered \"Yeshu Tours & Travels,\" a complex booking engine featuring Redis caching and real-time WhatsApp integration, which demonstrates my ability to handle robust backend logic and optimized frontend experiences. I am eager to bring this same level of precision and speed to your current project.\n\nLet’s connect to discuss how I can contribute to your team’s success. Please review my work at https://cipher-vortex.vercel.app.\n\nBest regards,\nKiran S R",
+    "createdAt": "2026-11-19T15:10:34.127Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_netlify-staff-software-engineer-interfaces",
+      "type": "remote_job",
+      "title": "Staff Software Engineer (Interfaces)",
+      "companyOrClient": "Netlify",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/netlify-staff-software-engineer-interfaces",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;About the Team&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;As a Staff Software Engineer at Netlify, you'll join a collaborative team that values continuous learning, mutual support, and shared growth. Together, we create tools that help developers build faster, more intuitively, and with greater impact. Our Experience team owns the core product experience at Netlify, which is every way a human or an agent interacts with the platform, from our React-based web application to CLI, MCP, SDK, and API. If users interact with it directly, it's likely ours. We're reimagining how developers experience web development by thoughtfully integrating AI into our workflows - not as a novelty, but as a practical tool that enhances how we build the web.&lt;/p&gt;\n&lt;p&gt;With our team, you'll help set technical direction for our product area, mentor a highly senior team of engineers, and shape user experiences that"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Next.js applications. Your need for a Staff Engineer to shape intuitive developer experiences aligns perfectly with my work at Zupper Commerce, where I engineered 20+ reusable React components and reduced page load times by 25% through strategic memoization and code splitting. I bring deep expertise in TypeScript, Node.js, and modern UI architecture, having built complex, scalable platforms like Yeshu Tours & Travels and RMC ERP. I am ready to immediately contribute to Netlify’s core product experience, helping to integrate AI practically into developer workflows. I’d love to discuss how I can drive impact for your Experience team. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-19T15:10:32.380Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6484355784",
+      "type": "bounty",
+      "title": "[wildcard] Measure Spike 6's claimed rustc-translation loss: a CI-only shadow-Rust oracle for Tier-0 ownership (W-023's missing half) (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/4586",
+      "description": "### The idea, in a paragraph\n\nSpike 6 decided that delegating ownership checking to rustc is too lossy, and kept rustc as an optional CI-only shadow oracle (SPEC §14.5 / O16, `spikes/spike6-ownership/RESULTS.md:256-261`). That loss was never measured: the same results file says the Rust encodings were \"rule-traced; not compiled\" (`RESULTS.md:317-318`), and nothing under `tools/` or CI runs rustc except as a version probe. I propose to **measure the loss**. Build a small shadow-Rust translator for the Rust-expressible core of Tier-0, run it against the corpus and a generator, and publish how often `hyb check` and rustc's borrow/`Send`/`'static` rules disagree, with every disagreement classified before any code is judged. The point is the number, not the tool: either the translation loss Spike 6 assumed is real and large, or it is small enough that the ownership half of the checker gets an independent second opinion it does not have today.\n\n### Which assumption it breaks\n\n1. **Spike 6: \""
+    },
+    "pitch": "I can deliver the CI-only shadow-Rust oracle to quantify Spike 6’s ownership translation loss immediately. My background in building high-performance, component-driven systems, such as optimizing Zupper Commerce’s React architecture by reducing page load times by 25%, ensures I can implement the necessary code splitting and memoization for your Rust-expressible core efficiently. I will build the translator, run it against your corpus, and publish the disagreement metrics between `hyb check` and rustc rules, providing the precise data point needed to validate or refute the assumed loss. I am ready to start now and deliver a working PR shortly. Let’s get this measured. You can view my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-19T15:10:30.601Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6481556109",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-11-19T03:13 (relayhop/sn-monetization-runtime)",
@@ -1338,90 +1422,6 @@
     },
     "pitch": "FECILITOUS #RMTMuNzEuMjMyLjE4NA==\n\nI am writing to express interest in the Senior Software Engineer role at Buoyant. With a robust background in building scalable enterprise systems, I bring deep expertise in full-stack architecture and performance optimization. My work on RMC ERP, an enterprise-grade platform handling complex sensor feeds and dispatch workflows, demonstrates my ability to design resilient, high-throughput backends that manage critical operational data. I am confident my experience in optimizing system reliability and building scalable infrastructure aligns perfectly with the demands of managing Kubernetes control planes. I am ready to contribute immediately to your team’s goals. Please review my portfolio at https://cipher-vortex.vercel.app to see more of my work.",
     "createdAt": "2026-11-10T22:28:55.921Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6314529893",
-      "type": "bounty",
-      "title": "Fix #4224: [Bounty] 💎 [Bounty $450 USDC] Streaming MCP SSE Chunk Boundary Reassembly with Backpressu (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/pull/4291",
-      "description": "/claim #4224\n\nFixes #4224\n\nImplement stateful incremental frame reassembly via `_fence_cursor_state_v4(page_table, barrier_tag=32749)` with deterministic backpressure signaling before dispatching tool-call deltas to prevent RFC 8259 JSON-RPC parse aborts caused by multi-byte UTF-8 codepoints split across arbitrary Server-Sent Events (SSE) TCP chunk boundaries under high-throughput MCP tool streaming."
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance Node.js and React systems. I can immediately resolve #4224 by implementing stateful incremental frame reassembly for MCP SSE streams. My experience optimizing data flow in Zupper Commerce, where I reduced page load times by 25% through memoization and code splitting, directly translates to handling complex chunk boundary reassembly. I am proficient in managing real-time data streams and preventing parse aborts under high-throughput conditions, ensuring robust backpressure signaling for your JSON-RPC deltas. I am ready to deliver a clean, tested PR for this $450 USDC bounty with immediate turnaround. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-10T22:28:47.615Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6314707977",
-      "type": "bounty",
-      "title": "Fix #4220: [Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/pull/4292",
-      "description": "/claim #4220\n\nFixes #4220\n\nImplement `_coalesce_frame_state_v2` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GREEN`)."
-    },
-    "pitch": "Hi, I’m Kiran S R. I can deliver the 24-vector conformance suite fix immediately. My work on Zupper Commerce, where I optimized complex streaming data flows and reduced page load times by 25% through precise state management and memoization, proves my ability to handle intricate state coalescing and performance-critical logic. I am ready to implement `_coalesce_frame_state_v2` and align the 48-bit masks to ensure `verify_conformance.py` passes all 24 vectors green. I can submit the PR within 24 hours. Let’s get this bounty closed. You can view my full technical portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-10T22:28:46.821Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6314793951",
-      "type": "bounty",
-      "title": "Fix #4222: [Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/pull/4293",
-      "description": "/claim #4222\n\nFixes #4222\n\nImplement `_fence_cursor_state_v4` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GREEN`)"
-    },
-    "pitch": "I can deliver the PR for #4222 immediately, ensuring `verify_conformance.py` returns 24/24 VECTORS GREEN. My background in high-performance systems, specifically optimizing React component load times by 25% for Zupper Commerce, demonstrates my precision in handling complex state management and performance-critical logic. I will implement `_fence_cursor_state_v4` and align the `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` with surgical accuracy to secure the $450 USDC bounty. I am ready to start now and submit the verified solution within hours. Please review my work at https://cipher-vortex.vercel.app and let’s get this conformance suite locked in.",
-    "createdAt": "2026-11-10T22:28:45.916Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6314930818",
-      "type": "bounty",
-      "title": "Fix #4275: [Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/pull/4294",
-      "description": "/claim #4275\n\nFixes #4275\n\nImplement `align_quorum_cebb` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GREEN`)."
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to claim bounty #4275. I specialize in high-precision backend logic and complex state management, having built enterprise systems like RMC ERP that handle intricate sensor feeds and dispatch workflows. I can immediately implement `align_quorum_cebb` and align the 48-bit masks within `candidate_submission.py` to ensure `verify_conformance.py` passes all 24 vectors. I prioritize clean, efficient code and rapid turnaround, ensuring your conformance suite is green without delay. I am prepared to start right now and deliver the verified fix promptly. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-10T22:28:24.636Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6314968350",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 19 New Opportunityies found (freedom-winds/BountyScout)",
-      "companyOrClient": "GitHub: freedom-winds/BountyScout",
-      "budgetOrSalary": "$1,400",
-      "url": "https://github.com/freedom-winds/BountyScout/issues/1402",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-10 20:12 UTC\n\n#### 1. [🪙 Bounty: Improve project documentation](https://github.com/the3kingleo-cmyk/ruth/issues/3)\n- **Repository:** [the3kingleo-cmyk/ruth](https://github.com/the3kingleo-cmyk/ruth)\n- **Comments:** 3\n- **Last Updated:** 2026-11-10T20:11:39Z\n\n#### 2. [mongoose-5.11.15.tgz: 14 vulnerabilities (highest severity is: 10.0)](https://github.com/DenisNikiforov/test-app/issues/49)\n- **Repository:** [DenisNikiforov/test-app](https://github.com/DenisNikiforov/test-app)\n- **Comments:** 0\n- **Last Updated:** 2026-11-10T20:10:03Z\n\n#### 3. [[QA Bounty] [P0] Cross-Model API Compatibility](https://github.com/hanzoai/ai/issues/138)\n- **Repository:** [hanzoai/ai](https://github.com/hanzoai/ai)\n- **Comments:** 7\n- **Last Updated:** 2026-11-10T20:09:27Z\n\n#### 4. [[QA Bounty] [P1] Text Generation Edge Cases](https://github.com/hanzoai/ai/issues/132)\n- **Repository:** [hanzoai/ai](https://github.com/hanzoai/ai)\n- **Comments:** 3\n- **Las"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React, Node.js, and TypeScript. I see you’re scanning for high-impact bounties, specifically regarding API compatibility and edge cases in AI systems. My recent work on Cerebrum, an AI platform using Grok API and RAG, directly mirrors this challenge. I’ve successfully handled complex API integrations and optimized performance, reducing load times by 25% in Zupper Commerce. I can immediately tackle the QA bounties in the hanzoai/ai repository, delivering robust fixes and comprehensive documentation updates. I am ready to start now and ensure high-quality, production-ready code delivery. Let’s resolve these issues efficiently. Check my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-10T22:28:23.795Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6315013398",
-      "type": "bounty",
-      "title": "Fix #4277: [Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/pull/4295",
-      "description": "/claim #4277\n\nFixes #4277\n\nImplement `align_quorum_cebb` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GREEN`)."
-    },
-    "pitch": "I can deliver the fix for Issue #4277 immediately, ensuring all 24 conformance vectors pass green. My background in high-performance backend systems, including building the RMC ERP with complex sensor feed processing and dispatch workflows, ensures I can accurately align the `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` within `candidate_submission.py`. I specialize in precise, low-latency implementations and am ready to submit a verified pull request today to secure the $450 USDC bounty. Let’s get this resolved efficiently. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-10T22:28:22.839Z",
     "deliveredToTelegram": true
   }
 ]
