@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6481556109",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-19T03:13 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1424",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t32\t34.9\t1611134\t33\trecent@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance e-commerce and real-time systems. I see you’re looking to roast your shop for 57k sats, and I’m ready to deliver a sharp, technical critique backed by immediate optimization suggestions. My work on Zupper Commerce involved building 20+ reusable React components and reducing page load times by 25% through memoization and code splitting, proving I can identify and fix performance bottlenecks instantly. I can provide a detailed audit of your runtime’s efficiency, UI responsiveness, and code structure to ensure it’s bulletproof for monetization. Check my portfolio at https://cipher-vortex.vercel.app to see my impact, and let’s get this bounty closed out today.",
+    "createdAt": "2026-11-19T05:44:38.669Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6482115733",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-19T04:04 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1425",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t32\t35.8\t1611134\t33\trecent@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R. I can deliver a high-impact, code-level roast of your sn-monetization-runtime repo immediately, focusing on architectural bottlenecks and optimization opportunities. My work on Zupper Commerce involved building 20+ reusable React components that cut page load times by 25% through aggressive memoization and code splitting, proving my ability to identify and fix performance leaks in complex systems. I bring deep expertise in TypeScript, Node.js, and Redis caching, ensuring my feedback is actionable and technically rigorous. I’m ready to submit a detailed PR or code review today to help you secure this 57k sat bounty. Let’s connect to discuss the specific areas you want critiqued. Check my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-19T05:44:37.414Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6474612198",
       "type": "bounty",
       "title": "chore(labels): manage labels as code and migrate to the prefixed set (meteor/meteor)",
@@ -1394,34 +1422,6 @@
     },
     "pitch": "I can deliver the fix for Issue #4277 immediately, ensuring all 24 conformance vectors pass green. My background in high-performance backend systems, including building the RMC ERP with complex sensor feed processing and dispatch workflows, ensures I can accurately align the `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` within `candidate_submission.py`. I specialize in precise, low-latency implementations and am ready to submit a verified pull request today to secure the $450 USDC bounty. Let’s get this resolved efficiently. Check my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-10T22:28:22.839Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6315193188",
-      "type": "bounty",
-      "title": "Fix #4280: [Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/pull/4296",
-      "description": "/claim #4280\n\nFixes #4280\n\nImplement `recount_grimm_khm020_seven_at_one_stroke_c10` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GREEN`)"
-    },
-    "pitch": "Hi there, I’m Kiran S R, a Full Stack Engineer ready to claim Bounty #4280. I specialize in high-precision backend logic and state management, having built the RMC ERP with Laravel and Vue 3 to handle complex sensor feeds and dispatch workflows. I can immediately implement `recount_grimm_khm020_seven_at_one_stroke_c10` and align the 48-bit masks to ensure `verify_conformance.py` passes all 24 vectors. I guarantee a swift turnaround with a clean, verified PR delivery that meets the strict conformance requirements. Let’s get this $450 USDC bounty resolved efficiently. You can review my technical work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-10T22:28:21.728Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6315373146",
-      "type": "bounty",
-      "title": "Fix #4277: [Bounty] 💎 [Escrowed $450 USDC] 24-Vector Conformance Suite: Streaming MCP SSE Chunk Boun (zhangjiayang6835-cyber/bounty-plaza)",
-      "companyOrClient": "GitHub: zhangjiayang6835-cyber/bounty-plaza",
-      "budgetOrSalary": "$450 USDC",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/pull/4297",
-      "description": "/claim #4277\n\nFixes #4277\n\nImplement `align_quorum_cebb` in `candidate_submission.py` and align the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` until `python3 verify_conformance.py` passes all 24 vectors (`24/24 VECTORS GREEN`)."
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to claim #4277. I specialize in high-performance backend logic and complex state management, evidenced by my work on RMC ERP where I engineered robust dispatch workflows and sensor feed processing using Laravel and Vue 3. I can immediately implement `align_quorum_cebb` in `candidate_submission.py`, precisely aligning the 48-bit `STREAM_WATERMARK_MASK` and `EPOCH_STRIDE_MATRIX` to ensure `verify_conformance.py` passes all 24 vectors. I guarantee a rapid turnaround with a clean PR delivery. Let’s get this bounty resolved today. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-10T22:28:20.800Z",
     "deliveredToTelegram": true
   }
 ]
