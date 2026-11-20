@@ -1,6 +1,57 @@
 [
   {
     "opportunity": {
+      "id": "wwr_postscript-senior-fullstack-engineer-customer-context",
+      "type": "remote_job",
+      "title": "Senior Fullstack Engineer, Customer Context",
+      "companyOrClient": "Postscript",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/postscript-senior-fullstack-engineer-customer-context",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;Postscript is the AI messaging platform trusted by 20,000+ Shopify brands — including Brooklinen, Ruggable, True Classic, and Dr. Squatch.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;With a mission to make SMS your number one revenue driving channel, we built the best-in-class SMS marketing platform and launched revenue-driving AI features not available on any other platform. And we're just getting started.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Backed by Greylock and Y Combinator, fully remote since 2018.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We are looking for a polyglot &lt;strong&gt;Senior Fullstack Engineer&lt;/strong&gt; to join the &lt;strong&gt;Customer Context&amp;nbsp; &lt;/strong&gt;team. You’ll help build and scale the foundational services, APIs, and pipelines that power the Postscript product. This role blends strong backend engineering skills with a deep appreciation for data intensive s"
+    },
+    "pitch": "Hi Postscript team, I’m Kiran S R, a Senior Full Stack Engineer specializing in data-intensive backend systems and scalable frontend architectures. Your need for foundational services aligns perfectly with my experience building the RMC ERP, where I engineered complex dispatch workflows and real-time sensor feeds using Laravel, Vue 3, and Redis. I excel at optimizing performance, having reduced page load times by 25% through strategic code splitting in React. I am ready to immediately contribute to scaling Postscript’s customer context pipelines, leveraging my expertise in REST APIs and high-throughput data processing to drive revenue for your 20,000+ Shopify brands. Let’s connect to discuss how I can accelerate your product roadmap. View my full portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-20T12:28:26.829Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_squarespace-senior-security-engineer",
+      "type": "remote_job",
+      "title": "Senior Security Engineer",
+      "companyOrClient": "Squarespace",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/squarespace-senior-security-engineer",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; New York City; Remote\n&lt;/p&gt;\n\n&lt;p&gt;&lt;span&gt;Squarespace is looking for a Software Engineer, Product Security to build security controls directly into our AI products as they grow. Our Product Security team ensures that customer-facing surfaces across Squarespace's expanding AI portfolio are protected from the ground up, not patched after the fact. We are a focused, embedded team that works at the intersection of platform engineering and security. You will work closely with AI product, platform engineering, and infrastructure teams. This is an opportunity to shape how security is practiced inside a rapidly scaling set of AI products at a critical point in their development. You will work remotely and report to the Security Engineering Manager.&lt;br&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;h2&gt;&lt;span&gt;You'll Get To...&lt;/span&gt;&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;Design and implement security controls for customer-facing AI "
+    },
+    "pitch": "Squarespace is scaling AI products, and security must be architectural, not retrospective. As a Full Stack Engineer, I build secure, high-performance systems from the ground up. For RMC ERP, I engineered robust dispatch workflows and sensor feed handling using Laravel and Vue 3, ensuring strict data integrity and secure state management for enterprise-critical operations. My experience with Redis caching and REST APIs allows me to implement efficient, secure controls that don’t compromise performance. I am ready to embed security directly into your AI product surfaces, working at the intersection of platform engineering and security to protect customer-facing features proactively. Let’s discuss how I can strengthen your security posture immediately. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-20T12:28:26.000Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1137808",
+      "type": "remote_job",
+      "title": "Software Engineer AI Coding Tasks",
+      "companyOrClient": "Askable",
+      "budgetOrSalary": "$10000k - $10000k",
+      "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-ai-coding-tasks-askable-1137808",
+      "description": " We're looking for experienced software engineers to build AI coding tasks from a codebase they know well. US$400-US$1,000 per task, and you can do as many tasks as you want.  You turn a real change from a repository you know into a task that today's best AI coding models struggle with: hard for the models, but fair for a skilled engineer. Your tasks are used to measure and train AI coding models.  Remote, any location. US$400-US$1,000 per task that passes review. Minimum of one task a week, about 10 hours a week.  How it works    Apply. Complete a short screener interview and upload your resume.    Propose. Once you're selected, pick a change from a repository you know and submit a short proposal. We approve it or suggest a better candidate.    Build. In our platform, set up the repository as it was before the change, then write the brief, the correct solution and the grading checks.    Stress-test. Try lazy, incorrect and shortcut solutions and make sure your checks catch them.    Mo",
+      "tags": [
+        "dev",
+        "golang",
+        "python",
+        "javascript",
+        "typescript",
+        "java",
+        "c plus plus"
+      ]
+    },
+    "pitch": "Hi Askable team, I’m Kiran S R, a Full Stack Engineer specializing in complex system architectures. I am eager to contribute high-quality AI coding tasks that challenge current model limitations while remaining fair for skilled developers. My recent work on RMC ERP, an enterprise system handling real-time sensor feeds and intricate dispatch workflows using Laravel and Vue 3, provides the deep repository knowledge required to craft rigorous, stress-tested tasks. I can immediately begin proposing changes that expose model weaknesses in state management and API integration, ensuring your training data is both difficult and accurate. Let’s connect to discuss the next steps. You can view my technical background and past work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-20T12:28:24.403Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_lemon-io-senior-react-full-stack-developer-8",
       "type": "remote_job",
       "title": "Senior React Full-stack Developer",
@@ -1398,48 +1449,6 @@
     },
     "pitch": "I can execute this bounty immediately. As a Full Stack Engineer specializing in React and mobile-adjacent web technologies, I have the technical precision required to record a flawless, full tap-through of your TestFlight app on a physical iPhone. My experience building complex, real-time user interfaces—such as the Yeshu Tours booking engine with Redis caching and WhatsApp integration—ensures I can navigate your UI smoothly while capturing high-quality, error-free video. I am ready to start right now to meet the 2026-11-12 deadline with zero latency. I guarantee a polished, submission-ready deliverable that highlights your app’s core features. Let’s get this done today. View my work: https://cipher-vortex.vercel.app",
     "createdAt": "2026-11-13T02:45:27.163Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6361745925",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-13T00:10 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1374",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1613251\tbitcoin\t1\t1036\t21000\t7\t8.7\t1600846\t15\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,HOT,SIGNAL\tBounty: record a full tap-through of our TestFlight app on a physical iPhone\n```"
-    },
-    "pitch": "I am Kiran S R, a Full Stack Engineer ready to deliver the TestFlight tap-through recording for your sn-monetization-runtime bounty immediately. My background in building complex, state-heavy applications like Yeshu Tours & Travels, which features real-time Redis caching and seamless user journey integrations, ensures I can navigate your app’s specific flows with precision and speed. I understand the critical importance of accurate UI validation for your Bitcoin network signals. I can execute this task on a physical iPhone today and submit the complete video evidence by end of day. Let’s secure this bounty efficiently. View my verified work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-13T02:45:26.347Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6219760300",
-      "type": "bounty",
-      "title": "[20 JNZ] Example: watch new blocks over the WebSocket (newBlocks subscription) (janzeerOrg/janzeer-sdk-ts)",
-      "companyOrClient": "GitHub: janzeerOrg/janzeer-sdk-ts",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/janzeerOrg/janzeer-sdk-ts/issues/3",
-      "description": "`examples/02-subscribe-address-activity.ts` mixes the two subscription kinds; there is no example that shows only `newBlocks`: print each block as it is finalized (height, hash, producer, transaction count), stop after N blocks or Ctrl-C.\n\n**What to do:** `examples/06-watch-new-blocks.ts` using `JanzeerRpcWs.connect` and `subscribeNewBlocks({ fromHeight, includeTransactions })`, the same structure as example 02 (env `JANZEER_WS_URL`, `EXAMPLE_SECONDS`, a clean `ws.close()` on exit), ~30 lines, plus a line in the README's Examples list. `npm run examples` (scripts/run-examples.mjs) picks up every file in `examples/`, so it must run unattended. It must work against the public mainnet node too: `JANZEER_WS_URL=wss://explorer.janzeer.org/rpc/ws`. `npm run lint` clean.\n\n**Reference:** the Python SDK has the same example (`examples/06_watch_new_blocks.py`) and the Go SDK `examples/watchblocks`; the subscription parameters are in `docs/json-rpc-and-subscriptions.md`. No AI attribution trailer"
-    },
-    "pitch": "I can deliver the `examples/06-watch-new-blocks.ts` implementation immediately, ensuring it runs unattended against the public mainnet node and passes `npm run lint`. My experience building real-time data pipelines and optimizing performance in complex systems like RMC ERP and Zupper Commerce guarantees a clean, efficient solution that mirrors the existing example structure. I will handle the WebSocket subscription logic, clean exit protocols, and README updates within 24 hours. Ready to submit the PR for your review. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-13T02:45:25.085Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_edgeq-technologies-private-limited-robotics-software-engineer-job-title-robotics-software-engineer",
-      "type": "remote_job",
-      "title": "Robotics Software Engineer  Job Title: Robotics Software Engineer",
-      "companyOrClient": "EdgeQ Technologies Private Limited",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/edgeq-technologies-private-limited-robotics-software-engineer-job-title-robotics-software-engineer",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n&lt;/p&gt;\n\n&lt;h1&gt;Robotics Software Engineer&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Job Title:&lt;/strong&gt; Robotics Software Engineer&lt;br&gt;&lt;strong&gt;Location:&lt;/strong&gt; United States (Remote)&lt;br&gt;&lt;strong&gt;Work Mode:&lt;/strong&gt; 100% Remote&lt;br&gt;&lt;strong&gt;Experience:&lt;/strong&gt; 3–10 Years&lt;br&gt;&lt;strong&gt;Salary Range:&lt;/strong&gt; $100,000 – $175,000 per year (USD)&lt;br&gt;&lt;strong&gt;Employment Type:&lt;/strong&gt; Full-Time&lt;br&gt;&lt;strong&gt;Job Category:&lt;/strong&gt; Robotics Engineering / Software Development / AI &amp;amp; Automation&lt;/p&gt;&lt;h2&gt;Job Summary&lt;/h2&gt;&lt;p&gt;We are seeking a skilled and experienced Robotics Software Engineer to join our innovative engineering team in the United States. The ideal candidate will be responsible for designing, developing, testing, and optimizing software solutions for robotic systems, autonomous platf"
-    },
-    "pitch": "Hi, I am Kiran S R, a Full Stack Engineer based in Bengaluru. While my core expertise lies in high-performance web architecture, my recent work on Cerebrum—developing an AI note-taking platform using Grok API and RAG architectures—demonstrates my ability to build robust, intelligent software systems. I bring strong proficiency in TypeScript, Node.js, and system optimization, having reduced page load times by 25% through advanced memoization strategies. I am confident in my ability to translate this rigorous engineering mindset to robotic software development, focusing on efficient code structure and seamless API integration for autonomous platforms. I am eager to discuss how my technical background aligns with EdgeQ Technologies' goals. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-12T22:01:56.940Z",
     "deliveredToTelegram": true
   }
 ]
