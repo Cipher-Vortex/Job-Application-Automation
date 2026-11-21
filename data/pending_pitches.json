@@ -1,6 +1,104 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6530126946",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-21T14:32 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1428",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1618157\tStacker_Sports\t3\t1163\t2100\t20\t21.8\t232181\t4447\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,HOT,SELF_POST_OPP\tWeekly Random Sports Pick 'em\n1618126\tStacker_Sports\t3\t816\t2100\t13\t22.8\t1448206\t2894\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,SELF_POST_OPP\t🏈 Sunday Leaders Bounty • 2,100 sats • New guessing\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. I see you’re looking for a developer to tackle the `sn-monetization-runtime` bounty. My experience building scalable, real-time systems like Yeshu Tours & Travels—featuring Redis caching for low-latency data retrieval and robust API integrations—directly aligns with the performance and reliability requirements of a monetization runtime. I can deliver a clean, tested PR immediately, ensuring your codebase remains stable and efficient. I’m ready to start right now to secure this bounty for you. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T16:54:24.750Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6530894112",
+      "type": "bounty",
+      "title": "Add an HTX (Huobi) exchange reader (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/51",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** HTX spot tickers read from https://api.huobi.pro/market/tickers, keeping USD, USDT and USDC pairs. Readers live in `collector/sources/exchanges.mjs` (add the venue to VENUES and a reader to READERS, like the Bitget and Binance.US readers). Free public endpoint only, no API keys. Return price, base volume, quote volume, 24h change, an API link and a trade link per pair. Throw on an error answer (don't return an empty list). Add an offline test with a small fixture of the real response. `node --test test/*.test.mjs` must pass; paste a trimmed live check in the pull request.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>` (trac addresses only). One open claim per agent. 48 hours to open a pull request."
+    },
+    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance data pipelines and robust frontend architectures. I can immediately deliver the HTX exchange reader for your bounty, ensuring strict adherence to your `collector/sources/exchanges.mjs` specifications. My experience building the Zupper Commerce platform, where I optimized data handling and reduced page load times by 25% through efficient code splitting, directly translates to the precision required for this task. I will implement the USD, USDT, and USDC pair logic, include comprehensive offline tests with real fixtures, and ensure `node --test` passes without fail. I am ready to open the pull request within your 48-hour window to secure the bounty. View my work at https://cipher-vortex.vercel.app to see my commitment to clean, production-ready code.",
+    "createdAt": "2026-11-21T16:54:07.130Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6530894371",
+      "type": "bounty",
+      "title": "Add a Crypto.com Exchange reader (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/52",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Crypto.com Exchange spot tickers read from https://api.crypto.com/exchange/v1/public/get-tickers, keeping USD, USDT and USDC pairs (skip derivatives). Readers live in `collector/sources/exchanges.mjs` (add the venue to VENUES and a reader to READERS, like the Bitget and Binance.US readers). Free public endpoint only, no API keys. Return price, base volume, quote volume, 24h change, an API link and a trade link per pair. Throw on an error answer (don't return an empty list). Add an offline test with a small fixture of the real response. `node --test test/*.test.mjs` must pass; paste a trimmed live check in the pull request.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>` (trac addresses only). One open claim per agent. 48 hours to open a pull request."
+    },
+    "pitch": "I can deliver the Crypto.com Exchange reader for tradermarketcap-open immediately. My background in high-performance frontend engineering, specifically optimizing React component loads by 25% at Zupper Commerce, ensures I write clean, efficient ESM code that integrates seamlessly with your existing collector architecture. I will implement the public API integration for USD, USDT, and USDC pairs, including robust error handling and offline tests, guaranteeing `node --test` passes before submission. I am ready to open a pull request within your 48-hour window to secure the bounty. Let’s get this merged quickly. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T16:54:05.995Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6530894600",
+      "type": "bounty",
+      "title": "Add a Bitfinex exchange reader (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/53",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Bitfinex spot tickers read from https://api-pub.bitfinex.com/v2/tickers?symbols=ALL, keeping USD and USDT (UST) pairs; skip funding tickers (f...). Readers live in `collector/sources/exchanges.mjs` (add the venue to VENUES and a reader to READERS, like the Bitget and Binance.US readers). Free public endpoint only, no API keys. Return price, base volume, quote volume, 24h change, an API link and a trade link per pair. Throw on an error answer (don't return an empty list). Add an offline test with a small fixture of the real response. `node --test test/*.test.mjs` must pass; paste a trimmed live check in the pull request.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>` (trac addresses only). One open claim per agent. 48 hours to open a pull request."
+    },
+    "pitch": "Kiran S R, Full Stack Engineer in Bengaluru. I’ve built high-performance data pipelines and real-time interfaces, most notably optimizing Zupper Commerce’s React components to reduce page load times by 25% through advanced memoization and code splitting. This experience directly translates to writing efficient, error-handled readers for your `collector/sources/exchanges.mjs`. I can immediately implement the Bitfinex spot ticker logic, filter for USD/USDT pairs, and ensure robust error handling as specified. I will deliver a merged-ready PR with offline tests and a trimmed live check within 24 hours of claim. Let’s get this bounty closed out quickly and cleanly. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-21T16:54:03.134Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6530894798",
+      "type": "bounty",
+      "title": "Add a Gemini exchange reader (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/54",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Gemini spot tickers read from Gemini's public v1/v2 ticker endpoints, keeping USD, USDT and USDC pairs. Readers live in `collector/sources/exchanges.mjs` (add the venue to VENUES and a reader to READERS, like the Bitget and Binance.US readers). Free public endpoint only, no API keys. Return price, base volume, quote volume, 24h change, an API link and a trade link per pair. Throw on an error answer (don't return an empty list). Add an offline test with a small fixture of the real response. `node --test test/*.test.mjs` must pass; paste a trimmed live check in the pull request.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>` (trac addresses only). One open claim per agent. 48 hours to open a pull request."
+    },
+    "pitch": "This bounty is a perfect fit for my Node.js and TypeScript expertise. I recently engineered a high-performance React frontend for Zupper Commerce, optimizing data flow and reducing load times by 25% through rigorous code splitting. I am ready to implement the Gemini exchange reader in `collector/sources/exchanges.mjs`, ensuring robust error handling and comprehensive offline testing with real response fixtures. I can deliver a clean pull request with trimmed live checks within 24 hours of claiming. Let’s get this merged quickly. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T16:54:02.353Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6530895095",
+      "type": "bounty",
+      "title": "Add an Upbit exchange reader (USDT market) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/55",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Upbit tickers read from https://api.upbit.com/v1/ticker for its USDT market (and BTC/KRW pairs are skipped), keeping USDT pairs only. Readers live in `collector/sources/exchanges.mjs` (add the venue to VENUES and a reader to READERS, like the Bitget and Binance.US readers). Free public endpoint only, no API keys. Return price, base volume, quote volume, 24h change, an API link and a trade link per pair. Throw on an error answer (don't return an empty list). Add an offline test with a small fixture of the real response. `node --test test/*.test.mjs` must pass; paste a trimmed live check in the pull request.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>` (trac addresses only). One open claim per agent. 48 hours to open a pull request."
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru. I can deliver the Upbit exchange reader for your open-source project immediately. My experience with high-throughput data processing in the RMC ERP, where I integrated real-time sensor feeds and complex dispatch workflows, directly translates to robustly parsing and structuring the Upbit API response. I specialize in writing clean, testable Node.js modules and ensuring strict error handling. I am ready to add the venue to `VENUES`, implement the reader in `collector/sources/exchanges.mjs`, and provide the required offline tests with live checks. I can have the PR ready for review within 24 hours of claiming the bounty. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T16:54:01.441Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6530895387",
+      "type": "bounty",
+      "title": "Add a Bithumb exchange reader (KRW converted to USD) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/56",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Bithumb tickers read from https://api.bithumb.com/public/ticker/ALL_KRW. Prices are in KRW: convert to USD using Bithumb's own USDT-KRW price from the same answer (say so in a comment), and fail the read if USDT-KRW is missing. Readers live in `collector/sources/exchanges.mjs` (add the venue to VENUES and a reader to READERS, like the Bitget and Binance.US readers). Free public endpoint only, no API keys. Return price, base volume, quote volume, 24h change, an API link and a trade link per pair. Throw on an error answer (don't return an empty list). Add an offline test with a small fixture of the real response. `node --test test/*.test.mjs` must pass; paste a trimmed live check in the pull request.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>` (trac addresses only). One open claim per agent. 48 hours to open a pull request."
+    },
+    "pitch": "Hi, I’m Kiran S R. I can deliver the Bithumb exchange reader for `tradermarketcap-open` immediately. With deep experience in building robust data pipelines for high-volume platforms like RMC ERP, I specialize in handling complex API integrations, precise currency conversions, and rigorous error handling. I will implement the KRW-to-USD logic using Bithumb’s USDT-KRW rate, ensure strict validation for missing data, and provide comprehensive offline tests with real response fixtures. I’m ready to open a pull request within the 48-hour window, ensuring `node --test` passes and the live check is verified. Check my portfolio at https://cipher-vortex.vercel.app to see my engineering standards, and let’s get this bounty merged.",
+    "createdAt": "2026-11-21T16:54:00.627Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_smartsheet-software-engineer-ii-full-stack-remote-eligible",
       "type": "remote_job",
       "title": "Software Engineer II - Full Stack (Remote Eligible)",
@@ -1393,104 +1491,6 @@
     },
     "pitch": "Hi hanzoai/agents team, I am Kiran S R, a Full Stack Engineer specializing in building resilient, high-performance systems. For Bounty #36, my work on the RMC ERP platform is directly relevant; I engineered complex dispatch workflows and real-time sensor feed handling using Laravel and Vue 3, demonstrating the precision required to structure agent execution traces into reliable RL/SFT datasets. I understand the critical need for decoupling live execution from offline optimization and can immediately begin converting successful and failed trajectories into structured training data. I am ready to deliver a high-quality PR with rigorous reward-hacking checks and cost metrics. Let’s turn your agent traces into actionable intelligence. View my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-17T01:29:57.624Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6433356294",
-      "type": "bounty",
-      "title": "[Bounty #37] Automatic prompt and workflow optimization · agents (DSPy) (hanzoai/agents)",
-      "companyOrClient": "GitHub: hanzoai/agents",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/hanzoai/agents/issues/87",
-      "description": "**Umbrella HIP**: [HIP-1347: Event-Driven Agent Reliability](https://hips.hanzo.ai/docs/hip-1347-event-driven-agent-reliability/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n**Primary Research / Code**: [DSPy](https://github.com/stanfordnlp/dspy)\n\n### Objective & Acceptance Test\nOptimize selected agent instructions and multi-call programs against executable task metrics. Report held-out pass rate, dollar cost, token count, and latency.\n\n### Scope & Canonical Architecture\nRecord optimization runs via `HIP-1334` unified research objects.\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reported figures in referenced FAST/conference papers belong strictly to the original authors' environments and MUST NOT be treated as Hanzo expectations until reproduced here.\n\n### Research-to-PR Acceptance Contract (0 of 6 re"
-    },
-    "pitch": "I specialize in high-performance full-stack engineering with a focus on optimizing system efficiency and API integration. For your DSPy prompt and workflow optimization bounty, my work on Zupper Commerce is directly relevant, where I reduced page load times by 25% through rigorous memoization and code splitting. I understand the critical need for measurable metrics like token count, latency, and cost efficiency. I can deliver a structured PR documenting optimization runs against executable task metrics, ensuring strict adherence to your canonical architecture boundaries. I am ready to start immediately and provide a complete, tested implementation within 48 hours. Let’s get this bounty delivered. You can view my technical portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-17T01:29:56.766Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6433357798",
-      "type": "bounty",
-      "title": "[Bounty #39] Dual-control business-agent benchmark · agents / cloud (tau2-bench) (hanzoai/agents)",
-      "companyOrClient": "GitHub: hanzoai/agents",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/hanzoai/agents/issues/88",
-      "description": "**Umbrella HIP**: [HIP-1347: Event-Driven Agent Reliability](https://hips.hanzo.ai/docs/hip-1347-event-driven-agent-reliability/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n**Primary Research / Code**: [tau2-bench](https://github.com/sierra-research/tau2-bench)\n\n### Objective & Acceptance Test\nAdd an evaluation domain where both a human operator and an autonomous agent mutate shared business state. Verify permission checks, coordination, idempotency, and final outcomes under randomized trajectories.\n\n### Scope & Canonical Architecture\nValidates dual-control CRM/commerce/task flows.\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reported figures in referenced FAST/conference papers belong strictly to the original authors' environments and MUST NOT be treated as Hanzo expectations until reproduced here.\n\n#"
-    },
-    "pitch": "I specialize in building robust, stateful systems that handle complex business logic and coordination. For the dual-control business-agent benchmark, my experience with RMC ERP is directly relevant. I engineered an enterprise platform using Laravel and Vue 3 to manage intricate dispatch workflows and sensor feeds, ensuring strict data integrity and permission checks under high-load conditions. I am ready to immediately implement the evaluation domain for shared state mutation, verifying idempotency and coordination within the canonical architecture. I can deliver a clean PR for this bounty with a rapid turnaround, ensuring all acceptance tests for randomized trajectories are met efficiently. Let’s get this benchmark running. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-17T01:29:55.965Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6433358491",
-      "type": "bounty",
-      "title": "[Bounty #40] Computer-workflow benchmark on Visor · visor / agents (OSWorld) (hanzoai/agents)",
-      "companyOrClient": "GitHub: hanzoai/agents",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/hanzoai/agents/issues/89",
-      "description": "**Umbrella HIP**: [HIP-1347: Event-Driven Agent Reliability](https://hips.hanzo.ai/docs/hip-1347-event-driven-agent-reliability/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n**Primary Research / Code**: [OSWorld](https://os-world.github.io/)\n\n### Objective & Acceptance Test\nRun a reproducible subset of real desktop/computer tasks inside `hanzoai/visor` sandboxes. Measure success rate, cold-start time, CPU/RAM footprint, and teardown cleanup correctness.\n\n### Scope & Canonical Architecture\nTracked in `hanzoai/agents` with label `visor` (`hanzoai/visor` has issues disabled).\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reported figures in referenced FAST/conference papers belong strictly to the original authors' environments and MUST NOT be treated as Hanzo expectations until reproduced here.\n\n### Researc"
-    },
-    "pitch": "I can deliver a reproducible OSWorld benchmark suite for your Visor sandboxes, focusing on cold-start metrics, CPU/RAM footprints, and teardown cleanup. My background in building high-performance systems like RMC ERP, which processes real-time sensor feeds and complex dispatch workflows, ensures I understand the rigor required for accurate resource measurement and lifecycle management. I am ready to implement the research code and submit a PR immediately, adhering strictly to your canonical architecture boundaries. Let’s get this benchmark running and verified today. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-17T01:29:54.990Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_true-talent-solutions-partners-senior-software-engineer-customer-studio-backend",
-      "type": "remote_job",
-      "title": "Senior Software Engineer, Customer Studio Backend",
-      "companyOrClient": "True Talent Solutions Partners",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/true-talent-solutions-partners-senior-software-engineer-customer-studio-backend",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://truetalentsolutionspartners.com\"&gt;https://truetalentsolutionspartners.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;h3&gt;About the Role&lt;/h3&gt;&lt;p&gt;Join the backend team building a no-code platform that helps customers activate data directly from their warehouse. This senior role combines distributed systems engineering with product thinking, with opportunities to shape architecture and deliver improvements that matter to users.&lt;/p&gt;&lt;h3&gt;What You'll Do&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Improve warehouse query performance, including query optimization and precomputed state.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Build analytics and experimentation features that help customers create audiences and measure outcomes across downstream tools.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Explore real-time audience computation and syncing as data wareh"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance backend systems and distributed architectures. Your need for warehouse query optimization and precomputed state aligns perfectly with my experience building scalable data pipelines. At RMC ERP, I engineered a Laravel and Vue 3 platform handling real-time sensor feeds and complex dispatch workflows, optimizing data flow for enterprise-grade speed and reliability. I also reduced page load times by 25% at Zupper Commerce through strategic code splitting and memoization, proving my ability to deliver tangible performance gains. I am ready to apply this expertise to your no-code platform, ensuring robust audience computation and seamless data syncing. Let’s discuss how I can drive immediate improvements to your backend architecture. You can review my technical work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-16T17:52:26.636Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6418221066",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-16T09:28 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1392",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1614834\tStacker_Stocks\t2\t1250\t10000\t22\t21.6\t9274\t29716\ttop@Stacker_Stocks\tOPEN_BOUNTY,HOT\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #19 Win up to 20k Sats!\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. I see you’re looking for a developer to tackle the relayhop/sn-monetization-runtime bounty. I can deliver a clean, production-ready PR immediately.\n\nMy recent work on Zupper Commerce involved building 20+ reusable React components and optimizing page load times by 25% through memoization and code splitting—exactly the kind of performance-focused engineering required for efficient runtime monetization. I understand the urgency of open bounties and am ready to start coding right now to ensure you secure the reward.\n\nCheck my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-16T17:52:25.835Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6424699289",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-16T15:33 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1394",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1615501\tConstruction_and_Engineering\t2\t50\t5000\t0\t0.2\t9274\t29727\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,FRESH\tShow Your Build Weekly #10: Post Your Proof-of-Work 🔨 💰\n```"
-    },
-    "pitch": "Hi RelayHop team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js architectures. For your \"Show Your Build Weekly\" bounty, I can deliver a compelling proof-of-work immediately. My recent work on Zupper Commerce demonstrates my ability to optimize complex frontend systems, where I engineered 20+ reusable React components and cut page load times by 25% through advanced memoization and code splitting. I combine clean code with measurable performance gains, ensuring your runtime monetization features are robust and scalable. I’m ready to submit a polished PR or live demo within 24 hours to showcase this technical depth. Let’s connect to discuss the specific deliverables for this cycle. You can view my full portfolio and code samples here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-16T17:52:24.905Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6416314114",
-      "type": "bounty",
-      "title": "Bounty Scout — 2026-11-16 (ariahendrawan-sudo/project-a)",
-      "companyOrClient": "GitHub: ariahendrawan-sudo/project-a",
-      "budgetOrSalary": "$10",
-      "url": "https://github.com/ariahendrawan-sudo/project-a/issues/28",
-      "description": "# Bounty Scout — week of 2026-11-16\n\nTarget: at least US$10/week. One merged bounty of US$50 covers ~5 weeks.\n\n| # | Score | Amount | Stars | Comments | Repository | Issue |\n|---|------:|-------:|------:|---------:|------------|-------|\n| – | – | – | – | – | – | No bounty passed the filters this week |\n\n## Filtered out\n\n- no stated amount: 93\n- outside expertise: 48\n- bounty-farm repository: 43\n- below minimum amount: 12\n- not an organisation repo: 3\n- fewer than 500 stars: 2\n\n## Before claiming\n- Read the repo's CONTRIBUTING and bounty rules; many ban low-effort or unreviewed AI-generated PRs.\n- Check nobody is already assigned or has an open PR (comment count is a proxy only).\n- Prefer 💎 Algora bounties: the payout is escrowed by the platform.\n- Comment to claim (e.g. `/attempt` on Algora) only when you can deliver within a week.\n- Payouts go to your own Algora/IssueHunt/Stripe account; declare the income for tax.\n"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. I noticed your bounty scout report for the week of 2026-11-16. While no specific bounty passed the filters this week, I am ready to deploy immediately on the next eligible issue that matches my expertise. My work on Zupper Commerce demonstrates a proven ability to optimize frontend performance, reducing page load times by 25% through efficient code splitting and memoization. I deliver clean, tested, and production-ready code with a fast turnaround, ensuring strict adherence to repository contribution guidelines. Let’s connect to discuss how I can help you secure the next bounty payout. You can review my full portfolio and technical details here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-16T07:36:05.015Z",
     "deliveredToTelegram": true
   }
 ]
