@@ -1,6 +1,60 @@
 [
   {
     "opportunity": {
+      "id": "rok_1137865",
+      "type": "remote_job",
+      "title": "Senior Product Engineer",
+      "companyOrClient": "Arbor Education",
+      "budgetOrSalary": "$70000k - $80000k",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-product-engineer-arbor-education-1137865",
+      "description": " Location: Remote - UK  Salary: Â£70,000-80,000   About us At Arbor, weâre on a mission to transform the way schools work for the better.Â   We believe in a future of work in schools where being challenged doesnât mean being burnt out and overworked. Where data guides progress without overwhelming staff. And where everyone working in a school is reminded why they got into education every day.Â   Our MIS and school management tools are already making a difference in over 7,000 schools and trusts. Giving time and power back to staff, turning data into clear, actionable insights, and supporting happier working days.Â   At the heart of our brand is a recognition that the challenges schools face today arenât just about efficiency, outputs and productivity - but about creating happier working lives for the people who drive education everyday: the staff. We want to make schools more joyful places to work, as well as learn.Â About the role  We are looking for an experienced and driven Se",
+      "tags": [
+        "design",
+        "react",
+        "backend",
+        "education",
+        "consulting",
+        "docker",
+        "customer support",
+        "dev",
+        "testing",
+        "scrum",
+        "exec",
+        "quality assurance",
+        "finance",
+        "cloud",
+        "php",
+        "senior",
+        "sys admin",
+        "medical",
+        "engineer",
+        "recruiter",
+        "digital nomad"
+      ]
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React, TypeScript, and Node.js. I see Arbor’s mission to reduce school staff burnout through data-driven insights resonates with my experience building complex, high-volume systems. At RMC ERP, I engineered an enterprise platform using Laravel and Vue 3 to manage intricate dispatch workflows and real-time sensor feeds, directly improving operational efficiency for large-scale operations. I bring this same precision to frontend performance, having reduced page load times by 25% through advanced React optimization. I am ready to leverage this expertise to build scalable, user-centric tools that empower educators. Please review my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-21T01:57:52.331Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1137871",
+      "type": "remote_job",
+      "title": "Senior Software Engineer",
+      "companyOrClient": "Clover Health",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-clover-health-1137871",
+      "description": " At Counterpart Health, we are transforming healthcare and improving patient care with our innovative primary care tool, Counterpart Assistant. By supporting Primary Care Physicians (PCPs), we are able to deliver improved outcomes to our patients at a lower cost through early diagnosis and longitudinal care management of chronic conditions.Â  \n We are looking for a Senior Software Engineer with expertise in full-stack engineering. In this role, you will collaborate with developers, data scientists, healthcare professionals, and product managers to build tools that improve real-world health outcomes. \n  As a Senior Software Engineer, you will:  \n \n Simplify the complexities of healthcare by building scalable, efficient systems that enhance human efforts. \n Stay up-to-date with new tools and technologies to solve challenges and advance our goals. \n Help define and maintain development practices that enable fast iteration while ensuring quality, including writing tests and documenting key",
+      "tags": [
+        "programming"
+      ]
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in scalable React, TypeScript, and Node.js architectures. I noticed Counterpart Health is seeking a Senior Engineer to build efficient systems for primary care. My experience aligns perfectly with your need for high-performance, maintainable code. For Zupper Commerce, I engineered 20+ reusable React components and implemented memoization and code splitting, reducing page load times by 25% to enhance user experience and operational efficiency. I bring this same focus to healthcare, ensuring robust, fast-iterating tools that support PCPs and improve patient outcomes. I am ready to contribute immediately to your development practices and system scalability. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T01:57:51.576Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_bitwarden-senior-software-engineer-self-host-orchestration",
       "type": "remote_job",
       "title": "Senior Software Engineer, Self-Host Orchestration",
@@ -1437,34 +1491,6 @@
     },
     "pitch": "I can deliver a high-impact PR for your Memory-R1 controller implementation. My full-stack expertise in Node.js and Redis, demonstrated by building the Yeshu Tours & Travels booking engine with robust caching and state management, directly translates to optimizing your ADD/UPDATE/DELETE decision logic. I understand the critical need for strict tenant isolation and derived index rebuilding without destroying source records. I am ready to start immediately, focusing on calibrating the lightweight controller for optimal downstream usefulness while ensuring hard authorization policies are never relaxed. Let’s execute this bounty with precision and speed. Check my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-15T20:45:58.804Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6404795444",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-15T13:51 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1383",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1614834\tStacker_Stocks\t2\t189\t10000\t5\t2.0\t9274\t29696\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,LOW_COMP,FRESH,SIGNAL\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #19 Win up to 20k Sats!\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R. I see you’re looking for a full-stack engineer to tackle the relayhop/sn-monetization-runtime bounty. I specialize in high-performance React, Next.js, and Node.js systems, with a proven track record of delivering complex, scalable applications. For example, I built the Zupper Commerce platform, where I engineered 20+ reusable React components and optimized page load times by 25% through strategic memoization and code splitting. I’m ready to apply this same precision to your runtime monetization logic, ensuring clean code and immediate turnaround. I can submit a working PR today. Let’s make this happen. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-15T15:45:49.650Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "reddit_rss_t3_1xwsin6",
-      "type": "freelance",
-      "title": "(Online) Part-time Backend Engineer, Node/TypeScript + MongoDB - $3,500/month for 30h/week",
-      "companyOrClient": "Reddit r/forhire Client",
-      "budgetOrSalary": "$3,500",
-      "url": "https://www.reddit.com/r/forhire/comments/1xwsin6/hiring_online_parttime_backend_engineer/",
-      "description": "&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;AdKit is a small bootstrapped SaaS (solo founder + 1). People use it to run their Meta and Google ads from their AI agents through MCP. I&amp;#39;m looking for a part-time backend engineer to work on the engineering queue, so I can focus on growth.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Details&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Pay: $3,500/month for 30h/week (about $27/h), contractor, ongoing&lt;/li&gt; &lt;li&gt;Location: fully remote, with some overlap with Bangkok time (UTC+7)&lt;/li&gt; &lt;li&gt;Stack: Nuxt 4 (Vue/Nitro), TypeScript, MongoDB + Mongoose, Redis, queues, Hetzner/Dokploy&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;What you&amp;#39;ll do&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Fix bugs reported by users, same day&lt;/li&gt; &lt;li&gt;Work through the backlog: mostly ad platform APIs and their edge cases, some features&lt;/li&gt; &lt;li&gt;Tech debt, code review, infra and security&lt;/li&gt; &l"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer from Bengaluru ready to start immediately. Your AdKit stack aligns perfectly with my expertise in Node.js, TypeScript, and Redis. I recently built Yeshu Tours & Travels, a full-scale booking engine featuring complex admin dashboards and Redis caching, proving my ability to handle robust backend logic and real-time data flows. I’m comfortable working with Nuxt 4 and MongoDB, and I prioritize same-day bug fixes to keep your users happy. I can start contributing to your engineering queue this week, focusing on ad platform API integrations and tech debt reduction. Let’s discuss how I can help you scale AdKit’s backend while you focus on growth. Check my portfolio: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-15T15:45:48.788Z",
     "deliveredToTelegram": true
   }
 ]
