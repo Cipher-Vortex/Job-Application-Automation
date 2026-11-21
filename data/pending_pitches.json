@@ -1,6 +1,188 @@
 [
   {
     "opportunity": {
+      "id": "wwr_smartsheet-software-engineer-ii-full-stack-remote-eligible",
+      "type": "remote_job",
+      "title": "Software Engineer II - Full Stack (Remote Eligible)",
+      "companyOrClient": "Smartsheet",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-full-stack-remote-eligible",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt;  -REMOTE, USA-\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;For over 20 years, Smartsheet has empowered teams to manage work seamlessly and scale solutions smarter. Now, in our most ambitious chapter yet, we are uniting human teams with AI agents. By orchestrating the work agents do best, automating manual tasks and uncovering insights at scale, we create the space for people to focus on what truly matters: judgment, creativity, and big thinking. That is magic at work, and it’s what we show up for every day.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;As a Software Engineer II at Smartsheet, you will help build the next generation of our platform while tackling meaningful distributed systems challenges alongside a talented engineering team. You will collaborate closely with product managers and fellow engineers through code reviews and architectural discussions, and you will have the opportunity to mentor junior engineers as you grow "
+    },
+    "pitch": "Smartsheet’s mission to orchestrate AI agents and human teams aligns perfectly with my experience in building scalable, distributed systems. As a Full Stack Engineer, I developed the RMC ERP, an enterprise platform handling complex sensor feeds and dispatch workflows using Laravel, Vue 3, and Inertia.js. This project required rigorous attention to data integrity and performance, directly mirroring the distributed systems challenges you face. I also optimized Zupper Commerce, reducing page load times by 25% through advanced React memoization. I am ready to bring this precision to your engineering team, contributing to code reviews and architectural discussions while mentoring junior developers. Let’s discuss how I can help scale your next-generation platform. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T09:23:21.711Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_ritual-frontend-engineer",
+      "type": "remote_job",
+      "title": "Frontend Engineer",
+      "companyOrClient": "Ritual",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/ritual-frontend-engineer",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h3&gt;About Ritual&amp;nbsp;&lt;/h3&gt;\n&lt;p&gt;Ritual is building a sovereign, execution layer for AI, with our private testnet already live and running. The Ritual chain is the first blockchain custom-built to support AI-native operations, designed from the ground up to enable a new class of applications at the intersection of crypto and AI. Our first product, Infernet, is pioneering new ground as the first solution to enable developers to access AI models both on-chain via smart contracts and off-chain, demonstrating our commitment to bridging these transformative technologies.&lt;/p&gt;&lt;/div&gt;&lt;h4&gt;About the role&lt;/h4&gt;\n&lt;p&gt;As a Frontend Engineer at Ritual, you'll build sophisticated interfaces that enable developers to interact with our AI and blockchain infrastructure, as well as rapidly build prototypes built on top of Ritual Chain. You'll create in"
+    },
+    "pitch": "Hi Ritual team, I’m Kiran S R, a Full Stack Engineer specializing in React.js, Next.js, and TypeScript. Your need for sophisticated interfaces to bridge AI and blockchain infrastructure aligns perfectly with my experience building high-performance, complex dashboards. For Zupper Commerce, I engineered 20+ reusable React components and implemented code splitting to reduce page load times by 25%, a skill critical for rapid prototyping on the Ritual Chain. I also built a RAG-based AI platform, Cerebrum, proving my ability to handle AI-native operations. I am ready to deliver polished, scalable frontend solutions immediately. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T09:22:58.257Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_gusto-inc-software-engineer-financial-data-payments",
+      "type": "remote_job",
+      "title": "Software Engineer,  Financial Data &amp; Payments",
+      "companyOrClient": "Gusto, Inc.",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-software-engineer-financial-data-payments",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Denver, CO - Hybrid; New York, NY - Hybrid; San Francisco, CA - Hybrid; Seattle, WA - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;hr&gt;\n&lt;p&gt;&lt;strong&gt;About Gusto&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;At Gusto, we're on a mission to grow the small business economy. We handle the hard stuff — payroll, health insurance, 401(k)s, and HR — so owners can focus on their craft and their customers. With teams in Denver, San Francisco, and New York, we support more than 500,000 small businesses nationwide and are building a workplace that reflects the people we serve.&lt;/p&gt;\n&lt;p&gt;All full-time employees receive competitive base pay, benefits, and equity (RSUs) — because everyone who helps build Gusto should share in its success. Offer amounts are determined by role, level, and location. Learn more about our&lt;a href=\"https://gusto.com/about/careers/total-rewards\"&gt; Total Rewards phi"
+    },
+    "pitch": "Hi Hiring Team,\n\nI am a Full Stack Engineer specializing in high-performance React, TypeScript, and Node.js applications. For Gusto’s Financial Data & Payments role, my work on Zupper Commerce is directly relevant: I engineered 20+ reusable components and optimized rendering with memoization and code splitting, cutting page load times by 25%. This experience in building scalable, efficient frontend architectures aligns perfectly with your need for robust financial interfaces. I am ready to leverage my expertise in REST APIs and state management to deliver immediate value to your engineering team.\n\nLet’s connect to discuss how I can contribute to Gusto’s mission. You can view my full portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-21T09:22:50.205Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6525390215",
+      "type": "bounty",
+      "title": "Add an ENA supply rule with locked wallets excluded (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/10",
+      "description": "**Bounty: 1 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** a new `tokens` rule for ENA (Ethereum contract 0x57e114B691Db790C35207b2e685D4A43181e6061) is added to data-seed/coins.json, with every non-circulating wallet (core contributors, foundation, ecosystem) proven by a primary source: Ethena's own documents/announcements or an explorer label. Untagged top holders are not enough. If the wallets can't be proven, circulating must not be published (no overstating).\n\nNotes from a first look: docs.ethena.fi lists allocations and multisigs but no allocation wallets; the bridge escrow for L2 ENA is circulating and must not be excluded.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in data integrity and complex system logic. I can deliver the ENA supply rule PR immediately, ensuring strict adherence to your primary source verification requirements for locked wallets. My work on RMC ERP, where I managed intricate sensor feeds and dispatch workflows, demonstrates my ability to handle precise data validation and exclusion logic without overstating metrics. I understand the distinction between circulating bridge escrow and locked allocations and will execute this with the rigor demanded by your CONTRIBUTING guidelines. I am ready to open the pull request within the 48-hour window to secure the bounty. Please check my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T09:22:49.076Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6525390418",
+      "type": "bounty",
+      "title": "Find LINK's non-circulating wallets (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/11",
+      "description": "**Bounty: 1 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Chainlink's reserve/team wallets added with sources; rule reads correctly.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
+    },
+    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance data pipelines and complex state management. My experience building the RMC ERP, which processes real-time sensor feeds and intricate dispatch workflows using Vue 3 and Inertia.js, directly translates to accurately identifying and documenting Chainlink’s non-circulating wallets. I can immediately execute the research, verify sources, and update the rule logic to meet the \"Done when\" criteria. I am ready to claim this bounty and deliver a clean, merged pull request within the 48-hour window. Let’s get this resolved efficiently. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T09:22:48.136Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6525390598",
+      "type": "bounty",
+      "title": "Find ONDO's locked allocation wallets (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/12",
+      "description": "**Bounty: 1 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Wallets with sources added to the ONDO rule.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
+    },
+    "pitch": "I am ready to claim this bounty and deliver the ONDO locked allocation wallets immediately. My background in building complex data pipelines, such as the RMC ERP with real-time sensor feeds and dispatch workflows, ensures I can accurately parse and integrate the required wallet sources per SKILL.md. I prioritize precision and speed, guaranteeing a clean pull request within the 48-hour window. I am prepared to comment `claim trac1<your payout address>` right now to start the clock. Let’s get this merged. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T09:22:27.949Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6525390820",
+      "type": "bounty",
+      "title": "Find FET's non-circulating wallets (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/13",
+      "description": "**Bounty: 1 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Wallets with sources added to the FET rule.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
+    },
+    "pitch": "I’m ready to claim this bounty and deliver a merged PR within the 48-hour window. As a Full Stack Engineer proficient in TypeScript and Node.js, I specialize in precise data engineering and API integration. My work on the RMC ERP demonstrates my ability to handle complex, real-time data workflows and sensor feeds with high reliability. I will strictly follow SKILL.md to identify and add the correct non-circulating FET wallets to the rule, ensuring the contribution is clean and ready for immediate review. I am prepared to comment `claim trac1<address>` right now to secure the slot. Let’s get this resolved quickly. View my technical portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-21T09:22:26.974Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6525391024",
+      "type": "bounty",
+      "title": "Find JUP's locked wallets (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/14",
+      "description": "**Bounty: 1 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Jupiter's locked team/community wallets with sources added to the JUP rule (Solana).\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle the JUP locked wallet bounty. My background in building high-reliability systems like RMC ERP, which processes complex sensor feeds and dispatch workflows, ensures I can accurately identify and integrate Jupiter’s team and community wallets with precise source attribution. I am proficient in the JavaScript/TypeScript ecosystem and adhere strictly to contribution guidelines for clean, merge-ready code. I can open a compliant pull request within your 48-hour window, ensuring the JUP rule is updated correctly for Solana. Let’s secure this bounty with a quick, professional turnaround. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T09:22:25.696Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6525391280",
+      "type": "bounty",
+      "title": "Find PYTH's locked allocation wallets (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/15",
+      "description": "**Bounty: 1 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Wallets with sources added to the PYTH rule (Solana).\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
+    },
+    "pitch": "I can immediately execute the PYTH locked allocation wallet discovery for tradermarketcap. With deep expertise in Node.js, TypeScript, and complex API integrations, I have the technical proficiency to parse Solana data and implement the required Redis caching strategies efficiently. My recent work on Yeshu Tours & Travels involved building a high-performance booking engine with robust backend logic and real-time data handling, proving my ability to deliver precise, production-ready solutions under tight deadlines. I am ready to claim this bounty and submit a compliant pull request within your 48-hour window. Let’s get this merged. View my full technical portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T09:22:22.848Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6525391536",
+      "type": "bounty",
+      "title": "Find OP's non-circulating wallets (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/16",
+      "description": "**Bounty: 1 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Optimism Foundation and unlocking wallets with sources added to the OP rule.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
+    },
+    "pitch": "I am ready to claim this bounty and deliver a merged PR within the 48-hour window. As a Full Stack Engineer proficient in TypeScript and Node.js, I have extensive experience navigating complex GitHub repositories and implementing precise data integrity rules. My recent work on the RMC ERP, where I managed intricate dispatch workflows and sensor feeds using Vue 3 and Laravel, demonstrates my ability to handle structured data logic and ensure high accuracy in production environments. I understand the specific requirements for identifying non-circulating wallets and adding sources to the OP rule. I am prepared to execute this immediately to secure the 1 RESET reward. Let's get this done efficiently. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T09:22:22.093Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6525391810",
+      "type": "bounty",
+      "title": "Fix QNT supply (totalSupply is hardcoded) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/17",
+      "description": "**Bounty: 0.5 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** QNT circulating read from a correct source with explanation; rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
+    },
+    "pitch": "Hi, I’m Kiran S R. I can resolve the hardcoded QNT supply issue by implementing a robust, real-time data fetcher with proper caching and error handling, ensuring accuracy and performance. My experience building the Yeshu Tours & Travels booking engine, where I optimized data retrieval using Redis and integrated complex API workflows, directly translates to this task. I will deliver a clean PR with the necessary rule updates and comprehensive tests within 24 hours of claiming. I’m ready to start immediately to ensure the fix is merged quickly. Check my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-21T09:22:21.229Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6525391980",
+      "type": "bounty",
+      "title": "Fix AERO's listed Base contract (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/18",
+      "description": "**Bounty: 0.5 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Correct AERO contract on Base with source; supply reads correctly.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
+    },
+    "pitch": "I am ready to claim this bounty and deliver the corrected AERO Base contract PR within your 48-hour window. My expertise in TypeScript and complex state management ensures I can accurately implement the source and verify supply reads immediately. I recently optimized a large-scale React ecosystem for Zupper Commerce, reducing page load times by 25% through precise code splitting and memoization, demonstrating my ability to handle performance-critical fixes with surgical precision. I follow SKILL.md rigorously and commit to clean, merge-ready code. I am prepared to start instantly to ensure you receive your 0.5 RESET payout efficiently. Check my work at https://cipher-vortex.vercel.app and let’s get this resolved today.",
+    "createdAt": "2026-11-21T09:22:19.972Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6525392418",
+      "type": "bounty",
+      "title": "Add a Bitget exchange reader (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/20",
+      "description": "**Bounty: 3 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Bitget spot tickers read from the free public endpoint; test added.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
+    },
+    "pitch": "I can deliver the Bitget exchange reader for tradermarketcap-open immediately. With deep expertise in Node.js, Express, and REST APIs, I have built robust data ingestion systems like the RMC ERP, handling complex sensor feeds and real-time workflows. I will implement the free public endpoint integration, ensure accurate spot ticker parsing, and include the required tests to meet your \"Done when\" criteria. I am ready to claim this bounty and open the pull request within the 48-hour window, guaranteeing a clean, merged solution. Check my full stack credentials and recent work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T09:22:19.082Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "rok_1137865",
       "type": "remote_job",
       "title": "Senior Product Engineer",
@@ -1309,188 +1491,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. I noticed your bounty scout report for the week of 2026-11-16. While no specific bounty passed the filters this week, I am ready to deploy immediately on the next eligible issue that matches my expertise. My work on Zupper Commerce demonstrates a proven ability to optimize frontend performance, reducing page load times by 25% through efficient code splitting and memoization. I deliver clean, tested, and production-ready code with a fast turnaround, ensuring strict adherence to repository contribution guidelines. Let’s connect to discuss how I can help you secure the next bounty payout. You can review my full portfolio and technical details here: https://cipher-vortex.vercel.app",
     "createdAt": "2026-11-16T07:36:05.015Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6412513511",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-16T01:53 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1389",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1614834\tStacker_Stocks\t2\t1239\t10000\t18\t14.0\t9274\t29715\ttop@Stacker_Stocks\tOPEN_BOUNTY,HOT,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #19 Win up to 20k Sats!\n```"
-    },
-    "pitch": "Hi Stacker_Stocks, I’m Kiran S R, a Full Stack Engineer ready to deliver immediate value for your SN monetization runtime bounty. My expertise in high-performance React and TypeScript directly addresses your needs, as demonstrated by my work on Zupper Commerce, where I built 20+ reusable components and reduced page load times by 25% through advanced memoization and code splitting. I am equipped to handle complex state management and API integrations with the precision required for your weekly contest infrastructure. I can start immediately and guarantee a quick turnaround for this HOT opportunity. Let’s connect to discuss how I can contribute to your runtime’s success. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-16T07:36:04.169Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6412082749",
-      "type": "bounty",
-      "title": "Bounty $150: capture adapter for Front (overturn-ai/overturn)",
-      "companyOrClient": "GitHub: overturn-ai/overturn",
-      "budgetOrSalary": "$150",
-      "url": "https://github.com/overturn-ai/overturn/issues/20",
-      "description": "Capture for Front, matching what `packages/zendesk-app` does in Zendesk: record what the AI drafted, what the human sent, and one-line reason, from inside the tool the expert already works in.\n\n**Bounty: $150**, paid on merge (PayPal, Wise or GitHub Sponsors — your choice).\n\n### What it should do\n\nA Front plugin that, for a conversation with an AI draft in the composer:\n\n1. Detects a draft landing in the reply box and shows `Draft inserted · N words`.\n2. Offers the reason picker (`reason_pack`, same eight codes as the claims pack; `support` pack also supported) with an optional note.\n3. On send, `POST /v1/capture` with `source: \"front\"`, `externalId: \"fr:<conversation id>\"`, the conversation as `context`, and `draft` / `sent` as `{ text, fields? }`.\n4. Honours `require_reason`: a changed reply is blocked until there is a reason.\n5. Never blocks the send — a failed capture logs and gets out of the way.\n\n### Shape to follow\n\n- `packages/zendesk-app/src/capture.ts` and its test are the re"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to deliver the Front capture adapter immediately. My work on the RMC ERP involved integrating complex dispatch workflows and real-time sensor feeds into existing enterprise tools, mirroring the precision needed to hook into Front’s composer without disrupting the send flow. I can build the `reason_pack` picker, handle the `POST /v1/capture` payload with `externalId` mapping, and ensure non-blocking error handling within 24-48 hours. I’m comfortable working within the `packages/zendesk-app` architectural patterns to ensure seamless integration. Let’s get this PR merged and the bounty secured. You can view my recent engineering work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-16T07:36:03.245Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6412082943",
-      "type": "bounty",
-      "title": "Bounty $100: capture adapter for Intercom (overturn-ai/overturn)",
-      "companyOrClient": "GitHub: overturn-ai/overturn",
-      "budgetOrSalary": "$100",
-      "url": "https://github.com/overturn-ai/overturn/issues/21",
-      "description": "Capture for Intercom, matching what `packages/zendesk-app` does in Zendesk: record what the AI drafted, what the human sent, and one-line reason, from inside the tool the expert already works in.\n\n**Bounty: $100**, paid on merge (PayPal, Wise or GitHub Sponsors — your choice).\n\n### What it should do\n\nAn Intercom app (Canvas Kit, inbox surface) that, for a conversation with an AI draft in the composer:\n\n1. Detects a draft landing in the composer and shows `Draft inserted · N words`.\n2. Offers the reason picker (`reason_pack`; `support` codes by default here) with an optional note.\n3. On send, `POST /v1/capture` with `source: \"intercom\"`, `externalId: \"ic:<conversation id>\"`, the conversation as `context`, and `draft` / `sent` as `{ text, fields? }`.\n4. Honours `require_reason`.\n5. Never blocks the send.\n\nNote that Intercom's Fin drafts and a human-written reply must be distinguishable: tag the run `draft:ai` only when the draft came from an assist, `draft:manual` when the human typed it"
-    },
-    "pitch": "I can deliver the Intercom capture adapter for overturn-ai/overturn immediately. My experience building the RMC ERP with Vue 3 and Inertia.js demonstrates my ability to integrate complex workflows directly into enterprise tools, ensuring seamless data capture without disrupting user flow. I will implement the Canvas Kit app to detect AI drafts, enforce reason selection, and POST to `/v1/capture` with proper `draft:ai` vs `draft:manual` tagging. I guarantee a working PR within 24 hours, strictly adhering to the non-blocking requirement. Let’s get this merged and paid. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-16T07:36:02.291Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6412083049",
-      "type": "bounty",
-      "title": "Bounty $100: capture adapter for Gorgias (overturn-ai/overturn)",
-      "companyOrClient": "GitHub: overturn-ai/overturn",
-      "budgetOrSalary": "$100",
-      "url": "https://github.com/overturn-ai/overturn/issues/22",
-      "description": "Capture for Gorgias, matching what `packages/zendesk-app` does in Zendesk: record what the AI drafted, what the human sent, and one-line reason, from inside the tool the expert already works in.\n\n**Bounty: $100**, paid on merge (PayPal, Wise or GitHub Sponsors — your choice).\n\n### What it should do\n\nA Gorgias app (ticket sidebar widget) that, for a ticket with an AI draft in the reply box:\n\n1. Detects a draft landing in the reply box and shows `Draft inserted · N words`.\n2. Offers the reason picker (`reason_pack`, `support` codes by default) with an optional note.\n3. On send, `POST /v1/capture` with `source: \"gorgias\"`, `externalId: \"gr:<ticket id>\"`, the ticket as `context`, and `draft` / `sent` as `{ text, fields? }`.\n4. Honours `require_reason`.\n5. Never blocks the send.\n\nGorgias ecommerce teams are the likely first users here, so the `support` reason pack and order-context fields matter more than the claims pack.\n\n### Shape to follow\n\n- `packages/zendesk-app/src/capture.ts` and its"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to deliver the Gorgias capture adapter for overturn-ai/overturn immediately. My experience building the Zupper Commerce platform, where I optimized React performance and managed complex state, directly translates to creating a non-blocking sidebar widget that seamlessly detects AI drafts and handles `POST /v1/capture` requests without interfering with the agent’s workflow. I understand the critical need for the `support` reason pack and order-context fields for ecommerce teams. I can have a PR ready for review within 24 hours, ensuring strict adherence to your `packages/zendesk-app` architecture. Check my work at https://cipher-vortex.vercel.app and let’s get this merged.",
-    "createdAt": "2026-11-16T07:36:00.742Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6409870437",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-15T21:41 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1387",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1614834\tStacker_Stocks\t2\t1239\t10000\t18\t9.8\t9274\t29708\ttop@Stacker_Stocks\tOPEN_BOUNTY,HOT,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #19 Win up to 20k Sats!\n```"
-    },
-    "pitch": "I see the Stack Stocks Weekly Close Contest bounty for relayhop/sn-monetization-runtime. I specialize in high-performance frontend engineering with React, Next.js, and TypeScript, ensuring your monetization runtime interface is fast, reliable, and user-ready.\n\nAt Zupper Commerce, I built 20+ reusable React components and reduced page load times by 25% through advanced memoization and code splitting—exactly the optimization needed for a high-stakes, real-time trading contest interface. I can deliver a clean, functional PR immediately to help you capture the 20k Sats reward.\n\nLet’s get this bounty secured today. View my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-16T00:42:00.924Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_come-and-see-product-engineer-full-stack",
-      "type": "remote_job",
-      "title": "Product Engineer, Full Stack",
-      "companyOrClient": "Come and See",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/come-and-see-product-engineer-full-stack",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Colorado Springs, Colorado, United States\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://comeandsee.bamboohr.com/careers\"&gt;https://comeandsee.bamboohr.com/careers&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&lt;span&gt;JOIN THE COME AND SEE TEAM&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;Product Engineer, Full Stack&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;br&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;Great stories only matter when they reach people, and you build the way they get there.&lt;/span&gt; If you love shipping software that holds up in production and see engineering as a way to serve people well – we’d love to meet you.&lt;/p&gt;\n&lt;p&gt;&lt;br&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;ABOUT US&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;Come and See is the faith-based nonprofit media ministry behind &lt;span&gt;The Chosen&lt;/span&gt;. Our mission is &lt;span&gt;inviting everyone to encounter Jesus through exceptional storytelling that"
-    },
-    "pitch": "Subject: Product Engineer Application: Kiran S R\n\nHi Come and See team,\n\nI am writing to express my strong interest in the Product Engineer, Full Stack role. As a Full Stack Engineer based in Bengaluru, I specialize in building resilient production systems using React, Next.js, TypeScript, and Node.js.\n\nMy work on the Yeshu Tours & Travels platform directly aligns with your need for software that holds up in production. I engineered a full-scale booking engine featuring a customer portal, admin dashboard, and Redis caching, ensuring high availability and seamless user experience. I am eager to bring this same dedication to serving people through exceptional storytelling to the Come and See team.\n\nI would welcome the opportunity to discuss how my technical background can support your mission. You can view my portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-15T20:46:16.631Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_true-talent-solutions-partners-software-engineer-ai-agents",
-      "type": "remote_job",
-      "title": "Software Engineer, AI Agents",
-      "companyOrClient": "True Talent Solutions Partners",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/true-talent-solutions-partners-software-engineer-ai-agents",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://truetalentsolutionspartners.com\"&gt;https://truetalentsolutionspartners.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;h3&gt;About the Role&lt;/h3&gt;&lt;p&gt;Join a product engineering team building AI-powered tools for data and marketing workflows. You will help explore new product opportunities, shape the underlying AI architecture, and bring prototypes into production.&lt;/p&gt;&lt;h3&gt;What You'll Do&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Rapidly prototype ideas that apply AI to data and marketing workflows.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Work with a small team to develop and ship product concepts, including foundational work for new product areas.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Choose AI architectures and frameworks suited to each use case.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Evaluate where different language models and AI methods work we"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in AI-driven product development. I recently architected Cerebrum, an AI note-taking platform leveraging RAG and LLM APIs, giving me direct experience in shaping AI architectures for real-world data workflows. My background in high-performance React and Node.js ensures I can rapidly prototype and scale these tools for production. I am eager to bring this technical depth to True Talent Solutions Partners to help define and ship your next-generation AI marketing tools. Let’s connect to discuss how I can contribute to your team’s immediate goals. You can view my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-15T20:46:04.998Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6406820437",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-15T16:59 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1385",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1614834\tStacker_Stocks\t2\t1239\t10000\t14\t5.1\t9274\t29698\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,HOT,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #19 Win up to 20k Sats!\n```"
-    },
-    "pitch": "Hi team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance Node.js and React applications. I see your open bounty for the relayhop/sn-monetization-runtime and I’m ready to deliver a clean, merged PR immediately. My background includes building complex, state-managed systems like the RMC ERP, where I engineered robust dispatch workflows and real-time sensor data handling using Laravel and Vue 3. I also optimized the Zupper Commerce platform by reducing page load times by 25% through advanced memoization and code splitting, ensuring the kind of efficiency your runtime requires. I can start working on your codebase right now to ensure a swift, high-quality resolution. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-15T20:46:04.219Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6408872752",
-      "type": "bounty",
-      "title": "Atomic memory facts with deduplication and selective writes (Mem0-style) (hanzoai/agents)",
-      "companyOrClient": "GitHub: hanzoai/agents",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/hanzoai/agents/issues/62",
-      "description": "Do not store only giant transcripts or summaries. An event-driven writer extracts typed facts, deduplicates and reconciles them against existing memory, and records source, scope, confidence and lifecycle. A small structured-decision model (Kai) makes the ADD / UPDATE / NOOP / REVIEW call; a language model writes text summaries only where needed. References: Mem0 (arXiv 2504.19413; Apache-2.0).\n\nBenchmark: LoCoMo, LongMemEval, write precision, facts retained, false memories introduced, retrieval token cost, write amplification.\n\nShared rules for the retrieval and memory program: a source document, repository blob, Git commit, agent event or stored decision has a stable identity and version; lexical, vector, graph, memory and code indexes are DERIVED representations over those identities and can be rebuilt without destroying the record. Source identity and access-control filters are applied before any hit is returned; tenant isolation is never relaxed for speed or recall. Benchmarks rep"
-    },
-    "pitch": "I can deliver a production-ready implementation for your atomic memory facts and deduplication bounty immediately. My work on Zupper Commerce, where I reduced page load times by 25% through memoization and code splitting, demonstrates my ability to optimize complex data handling and retrieval efficiency. I specialize in building scalable systems with Node.js and Redis, ensuring precise, low-latency writes and robust state management. I am ready to submit a PR that implements the event-driven writer, deduplication logic, and structured decision model per your specifications, focusing on minimizing write amplification and maintaining strict tenant isolation. Let’s get this shipped. You can view my full portfolio and code samples here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-15T20:46:03.337Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6408873069",
-      "type": "bounty",
-      "title": "Tiered episodic, semantic and procedural memory with one API (hanzoai/agents)",
-      "companyOrClient": "GitHub: hanzoai/agents",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/hanzoai/agents/issues/63",
-      "description": "Three classes behind one API with separate retention, retrieval and compaction: episodic (what happened, observations and results), semantic (durable facts, relationships, requirements, decisions), procedural (reusable methods, workflows, skills, recovery procedures). Durable records live in persistent storage, not in an always-on bot process. References: MemOS and Letta/MemGPT (both Apache-2.0).\n\nBenchmark: long-running agent tasks, memory growth, reuse of prior procedures, recovery after restart, tokens per completed task.\n\nShared rules for the retrieval and memory program: a source document, repository blob, Git commit, agent event or stored decision has a stable identity and version; lexical, vector, graph, memory and code indexes are DERIVED representations over those identities and can be rebuilt without destroying the record. Source identity and access-control filters are applied before any hit is returned; tenant isolation is never relaxed for speed or recall. Benchmarks report"
-    },
-    "pitch": "Kiran S R here. I specialize in building resilient, stateful systems that handle complex data persistence and retrieval efficiently. For the hanzoai/agents bounty, my experience with RMC ERP is directly applicable: I engineered an enterprise system using Laravel and Vue 3 that manages real-time sensor feeds, batching logs, and dispatch workflows, ensuring data integrity across restarts. I understand the critical need for durable records with stable identities and tenant isolation, mirroring the MemOS and Letta architectures you reference. I can deliver a robust implementation of your three-tier memory system (episodic, semantic, procedural) with optimized retrieval indexes and strict access controls. I am ready to start immediately to ensure a high-quality PR delivery. Let’s build this. View my work: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-15T20:46:01.680Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6408873447",
-      "type": "bounty",
-      "title": "Reflection with belief separation and consolidation (retain, recall, reflect) (hanzoai/agents)",
-      "companyOrClient": "GitHub: hanzoai/agents",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/hanzoai/agents/issues/64",
-      "description": "Separate observed evidence from inferred conclusions and evolving hypotheses; every conclusion links to the observations that support it and a reflection never silently overwrites a fact ('the regression test failed' vs 'we suspect an allocator alias'). References: Hindsight (arXiv 2512.12818; MIT).\n\nBenchmark: contradiction resolution, unsupported-memory rate, evidence attribution, confidence calibration, multi-session QA.\n\nShared rules for the retrieval and memory program: a source document, repository blob, Git commit, agent event or stored decision has a stable identity and version; lexical, vector, graph, memory and code indexes are DERIVED representations over those identities and can be rebuilt without destroying the record. Source identity and access-control filters are applied before any hit is returned; tenant isolation is never relaxed for speed or recall. Benchmarks report accuracy, latency, cost and downstream task success together (a retriever that ranks the right file bu"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in robust state management and data integrity. Your requirement for strict separation between observed evidence and inferred conclusions mirrors the architectural rigor I applied in RMC ERP, where I engineered complex dispatch workflows and sensor feeds using Laravel and Vue 3 to ensure zero data drift in enterprise environments. I have the TypeScript and system design expertise to implement the Hindsight framework, ensuring every conclusion is traceable to its source identity while maintaining strict tenant isolation. I can deliver a high-fidelity implementation with clear evidence attribution metrics immediately. Let’s build a memory system that doesn’t just recall, but reflects accurately. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-15T20:46:00.552Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6408873825",
-      "type": "bounty",
-      "title": "Self-organising associative memory with bounded consolidation (A-MEM) (hanzoai/agents)",
-      "companyOrClient": "GitHub: hanzoai/agents",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/hanzoai/agents/issues/65",
-      "description": "After a write, an asynchronous bounded consolidation step adds contextual descriptions, tags and links between related incidents, decisions, code changes and lessons without slowing the write path. Raw events stay immutable; derived nodes and scores may evolve with lineage back to evidence. Reference: A-MEM (NeurIPS 2025, arXiv 2502.12110). LICENSING: the research implementation needs a separate license review before any code is incorporated.\n\nBenchmark: associative retrieval accuracy, useful new relationships, graph growth per 1,000 events, consolidation cost, effect on later task success.\n\nShared rules for the retrieval and memory program: a source document, repository blob, Git commit, agent event or stored decision has a stable identity and version; lexical, vector, graph, memory and code indexes are DERIVED representations over those identities and can be rebuilt without destroying the record. Source identity and access-control filters are applied before any hit is returned; tenan"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance data structures and API integration. Your A-MEM bounty requires efficient, asynchronous consolidation without compromising write-path latency—a challenge I’ve mastered. For Zupper Commerce, I engineered React components that reduced page load times by 25% through aggressive code splitting and memoization, directly mirroring the performance constraints of your retrieval benchmarks. I can immediately implement the bounded consolidation logic, ensuring immutable raw events while evolving derived nodes with full lineage. I’m ready to deliver a working PR with optimized graph growth metrics and consolidation cost analysis right away. Check my portfolio at https://cipher-vortex.vercel.app to see my technical depth, and let’s get this shipped.",
-    "createdAt": "2026-11-15T20:45:59.663Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6408874166",
-      "type": "bounty",
-      "title": "Learned memory policy: when to add, update, delete, forget or abstain (Memory-R1) (hanzoai/agents)",
-      "companyOrClient": "GitHub: hanzoai/agents",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/hanzoai/agents/issues/66",
-      "description": "Train or calibrate a lightweight structured controller on real task outcomes to choose ADD / UPDATE / DELETE / NOOP, optimising downstream usefulness rather than retrieval similarity. Hard authorisation and retention policies override learned decisions; evaluation includes revocation and forgetting, stale knowledge, sensitive-data isolation and answering 'insufficient evidence'. References: Memory-R1 (ACL 2026, arXiv 2508.19828), MemEval (Apache-2.0), OmniMemEval.\n\nBenchmark: LoCoMo, LongMemEval, BEAM at long history lengths, agent task outcomes.\n\nShared rules for the retrieval and memory program: a source document, repository blob, Git commit, agent event or stored decision has a stable identity and version; lexical, vector, graph, memory and code indexes are DERIVED representations over those identities and can be rebuilt without destroying the record. Source identity and access-control filters are applied before any hit is returned; tenant isolation is never relaxed for speed or rec"
-    },
-    "pitch": "I can deliver a high-impact PR for your Memory-R1 controller implementation. My full-stack expertise in Node.js and Redis, demonstrated by building the Yeshu Tours & Travels booking engine with robust caching and state management, directly translates to optimizing your ADD/UPDATE/DELETE decision logic. I understand the critical need for strict tenant isolation and derived index rebuilding without destroying source records. I am ready to start immediately, focusing on calibrating the lightweight controller for optimal downstream usefulness while ensuring hard authorization policies are never relaxed. Let’s execute this bounty with precision and speed. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-15T20:45:58.804Z",
     "deliveredToTelegram": true
   }
 ]
