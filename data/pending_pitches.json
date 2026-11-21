@@ -1,6 +1,20 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6524721838",
+      "type": "bounty",
+      "title": "[wildcard] Let worker counts change without changing the bits of a floating-point sum (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/4617",
+      "description": "### The idea, in a paragraph\n\nIn [example 03](https://github.com/limitlessprojects/Go-Hybrid/blob/75fb24e38fe81090602d2fee84b6ab5583f78a23/examples/03-worker-pool/program.hy), workers finish in arbitrary order and the collector sorts integer results before printing. Imagine a telemetry version that needs just a sum over a finite slice of float64 samples. Give the programmer an opt-in reduction whose result is the exact mathematical sum rounded once to binary64. The compiler can change chunk sizes and the merge tree freely. Each worker produces an opaque mergeable accumulator, and only the final join can turn it into a float. Exact zero maps to +0. Nonfinite inputs and final overflow return an explicit error.\n\n### Which assumption it breaks\n\nA source loop normally commits the program to its intermediate roundings. The proposed region instead specifies the numerical result and leaves the execution order open. Existing Go-style additions retain their ordinary behavior. A scalar partial su"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance backend systems. I can deliver the opt-in reduction feature for Go-Hybrid, ensuring the compiler freely optimizes chunk sizes while guaranteeing an exact mathematical sum rounded once to binary64. My experience building RMC ERP’s sensor feed and dispatch workflows demonstrates my ability to handle complex data aggregation and state management with precision. I understand the critical need to decouple numerical results from execution order, allowing for robust handling of nonfinite inputs and explicit error propagation. I am ready to implement this immediately and submit a clean, tested PR for your review. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-21T22:00:24.762Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6530126946",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-11-21T14:32 (relayhop/sn-monetization-runtime)",
@@ -1477,20 +1491,6 @@
     },
     "pitch": "Hi hanzoai team, I’m Kiran S R, a Full Stack Engineer specializing in durable, event-driven architectures. I’ve built complex stateful systems like the RMC ERP, where I managed intricate dispatch workflows and sensor feeds using Vue 3 and Laravel, ensuring data integrity across distributed processes. I understand the critical need for deterministic idempotent activities and persisted checkpoints without relying on always-on bot processes. I can immediately implement the Temporal Go SDK integration to reproduce durable-execution replay semantics within your existing `vfs -> s3 -> visor` boundaries. I’m ready to deliver a high-quality PR with full acceptance test coverage within 48 hours. Let’s build this reliability layer together. Check my work here: https://cipher-vortex.vercel.app",
     "createdAt": "2026-11-17T01:29:58.406Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6433355748",
-      "type": "bounty",
-      "title": "[Bounty #36] Learning from agent execution traces · agents / ml (Agent Lightning) (hanzoai/agents)",
-      "companyOrClient": "GitHub: hanzoai/agents",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/hanzoai/agents/issues/86",
-      "description": "**Umbrella HIP**: [HIP-1347: Event-Driven Agent Reliability](https://hips.hanzo.ai/docs/hip-1347-event-driven-agent-reliability/) (`hanzoai/hips`)\n**Bounty Class**: Research + Implementation Bounty\n**Primary Research / Code**: [Agent Lightning v1.0](https://github.com/microsoft/agent-lightning) · [2026 technical report](https://arxiv.org/abs/2608.17528)\n\n### Objective & Acceptance Test\nConvert successful and failed coding-agent trajectories into structured RL/SFT training datasets for eligible Zen checkpoints (`hanzoai/ml`). Measure task success, reward-hacking checks, and training cost.\n\n### Scope & Canonical Architecture\nDecouples live agent execution from offline optimization.\n\nCanonical stack boundaries MUST stay intact (`vfs -> hanzoai/s3 -> visor`, Cloud owning lifecycle & billing, Enso routing models, Zen generating outputs, Kai returning structured non-generative decisions). Reported figures in referenced FAST/conference papers belong strictly to the original authors' environme"
-    },
-    "pitch": "Hi hanzoai/agents team, I am Kiran S R, a Full Stack Engineer specializing in building resilient, high-performance systems. For Bounty #36, my work on the RMC ERP platform is directly relevant; I engineered complex dispatch workflows and real-time sensor feed handling using Laravel and Vue 3, demonstrating the precision required to structure agent execution traces into reliable RL/SFT datasets. I understand the critical need for decoupling live execution from offline optimization and can immediately begin converting successful and failed trajectories into structured training data. I am ready to deliver a high-quality PR with rigorous reward-hacking checks and cost metrics. Let’s turn your agent traces into actionable intelligence. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-17T01:29:57.624Z",
     "deliveredToTelegram": true
   }
 ]
