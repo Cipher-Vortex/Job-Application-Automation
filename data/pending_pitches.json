@@ -1,6 +1,62 @@
 [
   {
     "opportunity": {
+      "id": "wwr_doximity-senior-software-engineer-data-platform",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Data Platform",
+      "companyOrClient": "Doximity",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data-platform",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; San Francisco, CA or Remote (U.S.)\n&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;Location&lt;/strong&gt;: This role is remote in the United States, Canada, or some countries in South America.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;strong&gt;Visa sponsorship is not available for this role.&amp;nbsp;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;Doximity is the leading clinical AI company with the largest network of U.S. clinicians. Doximity’s AI-powered workflow platform is trusted by over 85% of U.S. physicians and 300+ health systems. Doximity's mission is to help clinicians be more productive so they can provide better care for their patients.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;At Doximity, we value curiosity, ownership, inclusion, and a commitment to making a meaningful impact. If you're excited about solving complex problems that improve healthcare, we'd love to hear from you.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;How you’ll make an impact&lt;/"
+    },
+    "pitch": "Doximity needs engineers who build scalable, high-impact platforms. As a Full Stack Engineer, I specialize in optimizing complex data workflows and performance. At Zupper Commerce, I engineered 20+ reusable React components and implemented code splitting, reducing page load times by 25%—directly improving user experience and system efficiency. My background in building enterprise-grade systems like RMC ERP ensures I can handle the rigor of a clinical data platform. I am ready to leverage my expertise in TypeScript, Node.js, and API architecture to drive immediate value for your team. Let’s connect to discuss how I can contribute to Doximity’s mission. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-22T23:23:16.918Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_gemini-senior-software-engineer-predictions-mobile",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Predictions (Mobile)",
+      "companyOrClient": "Gemini",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/gemini-senior-software-engineer-predictions-mobile",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; New York, New York; Miami, Florida; Remote (USA)\n&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;About the Company&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Gemini is a global crypto and Web3 platform founded by Cameron and Tyler Winklevoss in 2014, offering a wide range of simple, reliable, and secure crypto products and services to individuals and institutions in over 70 countries. Our mission is to unlock the next era of financial, creative, and personal freedom by providing trusted access to the decentralized future. We envision a world where crypto reshapes the global financial system, internet, and money to create greater choice, independence, and opportunity for all — bridging traditional finance with the emerging cryptoeconomy in a way that is more open, fair, and secure. As a publicly traded company, Gemini is poised to accelerate this vision with greater scale, reach, and impact.&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;&lt;strong&gt;The Department: "
+    },
+    "pitch": "Hi Gemini Hiring Team,\n\nI am a Senior Full Stack Engineer specializing in high-performance React, TypeScript, and Node.js architectures. My work at Zupper Commerce directly aligns with your mobile predictions needs, where I optimized frontend performance by reducing page load times by 25% through strategic memoization and code splitting. I bring similar rigor to complex state management and real-time data handling, ensuring scalable, seamless user experiences for critical financial applications. I am ready to leverage my expertise to enhance your prediction engine’s speed and reliability immediately. Please review my portfolio at https://cipher-vortex.vercel.app to see my detailed project impact. I look forward to discussing how I can contribute to your team's success.",
+    "createdAt": "2026-11-22T23:23:16.139Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_smartsheet-sr-software-engineer-i-remote-eligible",
+      "type": "remote_job",
+      "title": "Sr. Software Engineer I (Remote Eligible)",
+      "companyOrClient": "Smartsheet",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/smartsheet-sr-software-engineer-i-remote-eligible",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt;  -REMOTE, USA-\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;For over 20 years, Smartsheet has empowered teams to manage work seamlessly and scale solutions smarter. Now, in our most ambitious chapter yet, we are uniting human teams with AI agents. By orchestrating the work agents do best, automating manual tasks and uncovering insights at scale, we create the space for people to focus on what truly matters: judgment, creativity, and big thinking. That is magic at work, and it’s what we show up for every day.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Are you looking to solve challenging engineering problems impacting Enterprise customers with 10,000+ employees? How about building a platform that contributes to mission-critical projects such as launching a rover to Mars, reducing carbon footprint by launching energy-efficient warehouses, launching critical life-saving medicines in International markets, or planning a brick-and-mortar "
+    },
+    "pitch": "Hi Smartsheet Hiring Team,\n\nI am a Full Stack Engineer specializing in React, TypeScript, and Node.js, ready to scale your enterprise-grade platform. My work on RMC ERP, a complex system handling real-time sensor feeds and dispatch workflows with Laravel and Vue 3, directly mirrors the high-stakes, data-intensive environments Smartsheet serves. I understand the critical need for reliability and performance when supporting organizations managing mission-critical operations. My focus on optimized API structures and robust state management ensures seamless integration and scalable solutions for large-scale enterprise clients. I am eager to bring this precision to your AI-agent orchestration initiatives. You can review my technical depth and project outcomes at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-22T23:23:15.377Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6546076533",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-22T18:28 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1431",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1618996\tStacker_Stocks\t2\t230\t10000\t13\t6.9\t9274\t29926\ttop@Stacker_Stocks\tOPEN_BOUNTY,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #20 Win up to 30k Sats!\n```"
+    },
+    "pitch": "I can deliver the `sn-monetization-runtime` bounty immediately. My background in building high-throughput systems like Yeshu Tours & Travels, which utilized Redis caching and complex state management for real-time transactions, directly aligns with the runtime optimization and signal processing requirements of this task. I specialize in React, TypeScript, and Node.js, ensuring robust, scalable code that meets strict performance benchmarks. I am ready to submit a working PR or solution today to secure the 30k Sats reward. Let’s get this closed out efficiently. View my verified work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-22T23:23:14.625Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6543548763",
       "type": "bounty",
       "title": "[radar] SN open bounty 2026-11-22T14:27 (relayhop/sn-monetization-runtime)",
@@ -1450,62 +1506,6 @@
     },
     "pitch": "I see the \"Roast our shop\" bounty for relayhop/sn-monetization-runtime and I’m ready to deliver immediate, high-impact feedback. As a Full Stack Engineer, I specialize in optimizing e-commerce performance and user experience. For Zupper Commerce, I engineered 20+ reusable React components and reduced page load times by 25% through strategic memoization and code splitting. I can apply this same precision to dissect your shop’s frontend architecture, identifying friction points and proposing concrete, code-level improvements that boost conversion and speed. I’m prepared to submit a detailed technical audit and PR-ready suggestions immediately to claim the 57k sats. Let’s sharpen your shop together. View my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-17T18:56:00.611Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6441845429",
-      "type": "bounty",
-      "title": "test(format): add unit tests for `formatStellarAmount` boundary values (OphirPay/OphirPay)",
-      "companyOrClient": "GitHub: OphirPay/OphirPay",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/OphirPay/OphirPay/issues/1919",
-      "description": "### Description\nAdd Vitest test coverage for edge case token amounts: 0, 0.0000001 (1 stroop), negative numbers, and MAX_INT64.\n\n### Motivation & Value\nEnsures precision is never lost or truncated when formatting micro-stroop amounts.\n\n### Proposed Implementation\n1. Create or update src/__tests__/amount-formatting-boundaries.test.ts\n2. Test minimum non-zero stroop amount (0.0000001)\n3. Test maximum int64 representation without floating point overflow\n\n### Relevant Files\n- `src/__tests__/amount-formatting-boundaries.test.ts`\n- `src/lib/stellar/format.ts`\n\n### Acceptance Criteria\n- [ ] All test cases pass\n- [ ] 100% branch coverage on formatStellarAmount utility\n"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in TypeScript and React. I can deliver the Vitest unit tests for `formatStellarAmount` immediately, ensuring 100% branch coverage for edge cases like 1 stroop, negative values, and MAX_INT64. My background in high-precision data handling, demonstrated in the RMC ERP where I managed complex sensor feeds and dispatch workflows, ensures I understand the critical need to prevent floating-point truncation in financial utilities. I am ready to submit a clean, passing PR today. You can view my recent engineering work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-17T18:55:59.264Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6442390297",
-      "type": "bounty",
-      "title": "feat(api): add Zod schema validation capping batch payment recipients to 100 per request (OphirPay/OphirPay)",
-      "companyOrClient": "GitHub: OphirPay/OphirPay",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/OphirPay/OphirPay/issues/1946",
-      "description": "### Description\nEnforce a maximum limit of 100 recipients per single batch payment request in the Zod request body schema.\n\n### Motivation & Value\nPrevents oversized payload submissions that could exceed Soroban transaction size limits.\n\n### Proposed Implementation\n1. Update Zod schema in src/lib/validation/batch.ts with `.max(100)`\n2. Return 400 Bad Request with descriptive message when limit is exceeded\n3. Add unit test verifying rejection of 101 recipients\n\n### Relevant Files\n- `src/lib/validation/batch.ts`\n- `src/app/api/batches/route.ts`\n\n### Acceptance Criteria\n- [ ] Schema rejects batch requests with > 100 recipients\n- [ ] Returns RFC 7807 error payload\n- [ ] Tests pass\n"
-    },
-    "pitch": "Hi, I’m Kiran S R. I can deliver the Zod schema validation for OphirPay’s batch payment endpoint immediately, ensuring strict compliance with Soroban transaction limits. My experience building high-throughput systems like RMC ERP, where I managed complex dispatch workflows and sensor feeds, ensures I understand the critical need for robust payload validation and error handling. I will implement the `.max(100)` constraint, return RFC 7807 compliant errors, and provide passing unit tests for the 101-recipient edge case. I’m ready to submit a clean, tested PR today to guarantee zero regressions. Let’s secure this bounty efficiently. You can view my full stack expertise and recent work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-17T18:55:55.270Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6442857725",
-      "type": "bounty",
-      "title": "test(contracts): add Rust unit test verifying spending limit enforcement across multiple payments (OphirPay/OphirPay)",
-      "companyOrClient": "GitHub: OphirPay/OphirPay",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/OphirPay/OphirPay/issues/1964",
-      "description": "### Description\nAdd a unit test in contracts/ophirpay verifying that cumulative payments exceeding the daily spending limit correctly trigger an error.\n\n### Motivation & Value\nEnsures the Soroban contract enforces daily spending limits accurately.\n\n### Proposed Implementation\n1. Write test `test_spending_limit_exceeded` in contracts/ophirpay/src/test.rs\n2. Configure 1,000 stroop spending limit\n3. Execute payments of 600 and 500 stroops and assert second payment fails\n\n### Relevant Files\n- `contracts/ophirpay/src/test.rs`\n- `contracts/ophirpay/src/lib.rs`\n\n### Acceptance Criteria\n- [ ] Test compiles with `cargo test --package ophirpay`\n- [ ] Correctly asserts `PaymentError::SpendingLimitExceeded`\n"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-reliability backend systems. I can deliver the required `test_spending_limit_exceeded` unit test for your Soroban contract immediately. With experience building complex financial workflows in RMC ERP and performance-critical components for Zupper Commerce, I understand the critical importance of enforcing strict state constraints and error handling. I will implement the test to verify the 1,000 stroop limit logic, ensuring it correctly triggers `PaymentError::SpendingLimitExceeded` on the second payment, and guarantee it compiles cleanly with `cargo test`. I’m ready to submit a pull request today. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-17T18:55:54.274Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6443209775",
-      "type": "bounty",
-      "title": "ci(typescript): add GitHub Actions step to verify TypeScript types without emitting JS (OphirPay/OphirPay)",
-      "companyOrClient": "GitHub: OphirPay/OphirPay",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/OphirPay/OphirPay/issues/1979",
-      "description": "### Description\nAdd `tsc --noEmit` check in the CI workflow to catch type errors across all files before running builds.\n\n### Motivation & Value\nPrevents hidden type errors from reaching production builds.\n\n### Proposed Implementation\n1. Add `run: npm run typecheck` or `npx tsc --noEmit` step to `.github/workflows/ci.yml`\n2. Ensure step runs concurrently with linting\n3. Verify workflow passes on current clean codebase\n\n### Relevant Files\n- `.github/workflows/ci.yml`\n- `package.json`\n\n### Acceptance Criteria\n- [ ] Typecheck step runs in CI pipeline\n- [ ] Fails pull requests with type errors\n"
-    },
-    "pitch": "I can deliver the `tsc --noEmit` CI integration for OphirPay immediately. As a TypeScript specialist, I’ve built high-stakes systems like Zupper Commerce, where I optimized React performance and enforced strict type safety to eliminate production bugs. I will add the typecheck step to your `.github/workflows/ci.yml`, ensure it runs concurrently with linting, and verify the pipeline passes on your current codebase. This prevents hidden type errors from reaching production, securing your build integrity. I am ready to submit the PR today. Let’s get this bounty closed. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-17T18:55:53.299Z",
     "deliveredToTelegram": true
   }
 ]
