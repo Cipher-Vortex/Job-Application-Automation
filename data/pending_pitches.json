@@ -1,6 +1,88 @@
 [
   {
     "opportunity": {
+      "id": "wwr_circleci-staff-software-engineer-on-prem",
+      "type": "remote_job",
+      "title": "Staff Software Engineer, On-Prem",
+      "companyOrClient": "CircleCI",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-on-prem",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Canada (Remote) or United States (Remote) or  Mexico City, Mexico (Hybrid)\n&lt;/p&gt;\n\n\n&lt;h2&gt;About CircleCI Engineering&lt;/h2&gt;\n&lt;p&gt;CI/CD has been solved. Now it's being reinvented. AI agents don't just run pipelines. They write code, trigger builds, interpret failures, and propose fixes. The interfaces that developers use to understand and trust that work don't exist yet. We're building them.&lt;/p&gt;\n&lt;p&gt;At CircleCI, our guiding principles aren't posters on a wall. We learn fast: we run experiments, accept failure, and scale what works. We think like the customer: every decision connects back to the developer sitting in front of a failing build at 2 am. We own the outcome: not just our slice of it, but the whole thing. If that's how you already work, you'll fit here.&lt;/p&gt;\n&lt;h2&gt;About the On-Prem Team&lt;/h2&gt;\n&lt;p&gt;The On-Prem team ships CircleCI Server, our self-hosted CI/CD platform for custom"
+    },
+    "pitch": "Kiran S R here. CircleCI’s mission to build interfaces for AI-driven CI/CD resonates with my experience engineering complex, high-performance developer tools. At RMC ERP, I built enterprise-grade workflows using Laravel and Vue 3, handling real-time sensor feeds and complex state management—skills directly transferable to building the trusted interfaces developers need for autonomous builds. I specialize in React, TypeScript, and Node.js, with a track record of reducing page load times by 25% through rigorous performance optimization. I am ready to ship reliable, scalable frontend solutions that help developers trust their pipelines. Let’s discuss how I can contribute to the On-Prem team’s next release. View my work: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-22T10:03:32.415Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1137945",
+      "type": "remote_job",
+      "title": "Principal Software Engineer, Infrastructure",
+      "companyOrClient": "Reddit",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-principal-software-engineer-infrastructure-reddit-1137945",
+      "description": "  \n \n \n \n \n Reddit is a community of communities. Itâs built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internetâs largest sources of information. For more information, visit  www.redditinc.com . \n \n \n \n \n   The Infrastructure organization has the mission of building and delivering the compute orchestration environment, storage and data systems, and essential platform services behind all of Reddit.Â  \n The Infrastructure organization is looking to hire a backend software engineer to work collaboratively on a team dedicated to building out Redditâs multi-cloud compute infrastructure. This is a high impact role where you will contribute to design, implementation, and operations for one of the largest sites in the w",
+      "tags": [
+        "devops"
+      ]
+    },
+    "pitch": "Hi Reddit Infrastructure team,\n\nI am a Full Stack Engineer specializing in high-performance backend systems and scalable architecture. Having engineered the \"RMC ERP\" enterprise platform using Laravel, Vue 3, and Redis to manage complex sensor feeds and dispatch workflows, I have direct experience building robust, data-intensive systems that handle critical operational loads. My work on Zupper Commerce further demonstrates my ability to optimize performance through code splitting and memoization, reducing page load times by 25%. I am eager to apply this expertise to design and implement components for Reddit’s multi-cloud compute infrastructure, ensuring seamless orchestration and storage efficiency. You can view my technical portfolio and code samples at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-22T10:03:31.669Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1137948",
+      "type": "remote_job",
+      "title": "Senior Software Engineer - Behavioral Security Products",
+      "companyOrClient": "Abnormal",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-behavioral-security-products-abnormal-1137948",
+      "description": " At Abnormal AI, we protect our customers against nefarious adversaries who are constantly evolving their techniques and tactics to outwit and undermine the traditional approaches to Security.Â  \n Abnormal is recognized as a top cybersecurity startup (Leader in the 2025 Gartner Magic Quadrant for Email Security Platforms), securing a Series D funding of $250 million at a $5.1 billion valuation in August 2024.Â  \n  About The TeamÂ   \n The team is responsible for the ownership, development, and operation of the infrastructure and ML models, customer facing APIs and internal tools that drive Abnormal's Account Takeover (ATO) protection product. This product is crucial for detecting malicious activity and safeguarding customers from account theft. \n  About The Role  \n We are looking for a Senior Software Engineer to take ownership of complex feature delivery and technical design for our ATO platform. This pivotal role involves evolving the platform to scale with expanding product requireme",
+      "tags": [
+        "devops"
+      ]
+    },
+    "pitch": "Hi Abnormal team,\n\nI’m a Senior Full Stack Engineer specializing in high-performance, secure web applications. Your ATO protection platform demands rigorous engineering, and my experience building complex, data-heavy systems aligns perfectly with your needs. At RMC ERP, I architected an enterprise-grade solution using Laravel and Vue 3 to manage real-time sensor feeds and critical dispatch workflows, ensuring zero-downtime reliability for sensitive operational data. Additionally, my work on Zupper Commerce, where I reduced page load times by 25% through advanced memoization, demonstrates my commitment to optimizing performance for user-facing security tools. I am ready to take immediate ownership of complex feature delivery for your platform. Let’s connect to discuss how I can contribute to Abnormal’s continued leadership in email security. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-22T10:03:29.803Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1137954",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Partner Integrations",
+      "companyOrClient": "Airbnb",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-partner-integrations-airbnb-1137954",
+      "description": "   Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.      The Community You Will Join:    \n The Partner Integration team is responsible for integrating new business partners and functionality into Airbnbâs product. We work to improve both the supply and demand side of Airbnbâs Stays, Experiences and Services businesses through thoughtfully designed product experiences for Guest and Hosts. \n We recently launched exciting new features such as grocery delivery and airport transfers, as well as integrations with smart lock providers, rewards programs and more. We are looking to rapidly expand our offerings. \n You will be working closely with a strong, fast-moving team integrating",
+      "tags": [
+        "programming"
+      ]
+    },
+    "pitch": "Hi Airbnb Partner Integrations team,\n\nI am a Full Stack Engineer specializing in building scalable integration platforms and complex API architectures. My work on Yeshu Tours & Travels directly mirrors your needs, where I engineered a full-scale booking engine featuring Redis caching, WhatsApp integrations, and robust admin dashboards to streamline multi-party workflows. Additionally, my experience with RMC ERP demonstrates my ability to handle enterprise-grade data flows and sensor feeds using Laravel and Vue 3. I am ready to hit the ground running, delivering high-quality, production-ready code for your new partner integrations immediately.\n\nLet’s connect to discuss how I can accelerate your team’s roadmap. You can view my live projects and technical portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-22T10:03:28.971Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1137955",
+      "type": "remote_job",
+      "title": "Staff Software Engineer, Agentic Tools",
+      "companyOrClient": "Cribl",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-staff-software-engineer-agentic-tools-cribl-1137955",
+      "description": "  Join the company thatâs building the telemetry infrastructure for the AI era. At Cribl, we partner with IT and Security teams at many of the worldâs biggest enterprises, including half of the Fortune 100, to bridge the gap between AI ambition and infrastructure reality. As the AI Platform for Telemetry, we give customers the choice, control, and flexibility to manage and analyze telemetry for both humans and agents, so they can build whatâs next. \n Weâre one of the fastestâgrowing private companies and a leading player in a massive, fastâmoving market. With a global workforce, weâre remoteâfirst and grounded in a simple idea: software is a people business. Cribl is the place where curious, collaborative people can do their best work, grow fast, and bring their full selves to the herd.    Why Youâll Love This Role  \n You will help build Cribl Engineeringâs AI platform and productivity rails: the shared systems, runtimes, and workflows that let engineers use autonom",
+      "tags": [
+        "programming"
+      ]
+    },
+    "pitch": "Hi Cribl team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React, TypeScript, and Node.js systems. Your focus on building AI platform productivity rails aligns perfectly with my experience optimizing complex frontend architectures. At Zupper Commerce, I engineered 20+ reusable React components and implemented memoization and code splitting, reducing page load times by 25%—a critical skill for building the fast, responsive shared systems your engineering team needs. I am eager to bring this performance-first mindset to Cribl’s agentic tools to help bridge the gap between AI ambition and infrastructure reality. I am ready to start immediately and contribute to the herd. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-22T10:03:28.147Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "rok_1137924",
       "type": "remote_job",
       "title": "Senior Software Engineer II - Agentic Intelligence",
@@ -1424,76 +1506,6 @@
     },
     "pitch": "Hi FreezingMoon, I can resolve the redundant avatar loading issue in AncientBeast immediately. With experience optimizing React performance in Zupper Commerce—where I reduced page load times by 25% via memoization and code splitting—I understand the critical need to defer non-critical DOM operations. I will refactor the `OpenCollectiveBanner` initialization to lazy-load avatars only upon `onViewOpen()`, eliminating the 117 simultaneous requests and fixing the broken link artifacts. I am ready to submit a pull request with these performance improvements within 24 hours. You can view my frontend optimization work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-17T18:55:51.500Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6436680544",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-17T03:42 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1398",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1615501\tConstruction_and_Engineering\t2\t86\t5000\t1\t12.3\t9274\t29762\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP\tShow Your Build Weekly #10: Post Your Proof-of-Work 🔨 💰\n```"
-    },
-    "pitch": "Hello, I am Kiran S R, a Full Stack Engineer specializing in high-performance web applications. I see your open bounty for the SN monetization runtime and am ready to deliver immediate, production-ready code. My background in building complex systems like the Yeshu Tours & Travels booking engine, which features Redis caching and robust API integrations, ensures I can handle the technical rigor required for your relayhop/sn-monetization-runtime project. I focus on clean architecture and rapid turnaround, ensuring your proof-of-work is submitted on time with zero friction. Let’s get this implemented today. Check my recent work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-17T09:42:15.935Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6435776612",
-      "type": "bounty",
-      "title": "Simplify the Chrome extension to a chatbot with in-browser capabilities (hanzoai/extension)",
-      "companyOrClient": "GitHub: hanzoai/extension",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/hanzoai/extension/issues/10",
-      "description": "## User story\n\nAs a customer, I want the Hanzo Chrome extension to feel like a simple in-browser chatbot — similar to Claude in Chrome — so I can ask about the current page without wading through a complicated toolbar.\n\n## What's wrong today\n\nThe extension is too complicated for non-technical customers. The default surface should be a chatbot with in-browser capabilities (read the current tab, work with the page). Extra features should live in the extension settings, with an option to pin the ones a customer actually uses onto the main interface.\n\nThis is not the same as the small visual cleanups in #7 and #8.\n\n## Acceptance criteria\n\n- [ ] The default extension UI is a chatbot that can work with the current tab (read, select, and act in the page).\n- [ ] Additional features are moved into the extension's settings.\n- [ ] Customers can optionally pin chosen features onto the main extension interface.\n- [ ] First-run install and use do not require understanding the local daemon, fabric, o"
-    },
-    "pitch": "Hi, I can streamline the Hanzo Chrome extension into a seamless, Claude-style in-browser chatbot immediately. My recent work on Zupper Commerce, where I built 20+ reusable React components and reduced page load times by 25% using code splitting, directly aligns with your need for a simplified, high-performance UI. I can refactor the default surface to focus on current-tab interactions, move complex features to settings, and implement the pinning logic for a clean first-run experience. I am ready to deliver a pull request with full acceptance criteria met within 48 hours. Let’s get this bounty closed out efficiently. Check my portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-17T09:42:14.873Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6438090200",
-      "type": "bounty",
-      "title": "[20 JNZ] Example: accept a payment (watch an address, match the memo, confirm it is final) (janzeerOrg/janzeer-sdk-ts)",
-      "companyOrClient": "GitHub: janzeerOrg/janzeer-sdk-ts",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/janzeerOrg/janzeer-sdk-ts/issues/6",
-      "description": "The examples show how to send and how to watch, but not the thing a shop or a bot needs: \"tell me when *this* payment has arrived\". On Janzeer a block is final when it is committed, so the flow is short.\n\n**What to do:** `examples/07-accept-payment.ts`, about 40 lines, in the style of `examples/02-subscribe-address-activity.ts`:\n\n1. Make an invoice: a recipient address (`JANZEER_E2E_RECIPIENT`), an amount (`0.5`) and a random reference such as `inv-3f9a2c`.\n2. `JanzeerRpcWs.connect` (`JANZEER_WS_URL`) and `subscribeAddressActivity([recipient], …)`.\n3. So that the example runs unattended, pay the invoice from the test wallet (`JANZEER_E2E_MNEMONIC`): a transfer whose `data` (the memo) is the reference, as in `examples/01-quickstart-transfer.ts`.\n4. In the handler, accept only the event whose `transaction.type` is a transfer, `transaction.recipientAddress` is the recipient, `transaction.data` equals the reference and `transaction.amount` is at least the invoice amount. Compare amounts wi"
-    },
-    "pitch": "I can deliver the `examples/07-accept-payment.ts` bounty immediately. With deep expertise in TypeScript, Node.js, and real-time WebSocket integrations, I have the exact skills to implement the Janzeer RPC subscription, invoice validation, and unattended test payment flow within the 40-line constraint. My work on Yeshu Tours & Travels involved building complex, real-time customer portals and admin dashboards with Redis caching, proving my ability to handle stateful, event-driven systems with precision. I will ensure the code strictly matches the `02-subscribe-address-activity.ts` style and robustly validates transaction type, recipient, memo, and amount. I am ready to submit a clean, tested PR today. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-17T09:42:14.119Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6438097530",
-      "type": "bounty",
-      "title": "[50 JNZ] Arabic translation of the \"Sending transactions\" guide (janzeerOrg/janzeer-sdk-ts)",
-      "companyOrClient": "GitHub: janzeerOrg/janzeer-sdk-ts",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/janzeerOrg/janzeer-sdk-ts/issues/7",
-      "description": "The SDK guides exist in English only. The project is bilingual (English and Arabic), and the TypeScript SDK is the one most web developers meet first.\n\n**What to do:** translate `docs/sending-transactions.md` (114 lines) into `docs/ar/sending-transactions.md`.\n\n- **Modern Standard Arabic**, simple and direct. No local dialect.\n- Translate the prose, headings and table text. Do **not** translate code, identifiers, command lines, file names or addresses; comments inside code blocks may be translated.\n- Technical terms as in the project's Arabic documentation and glossary (https://janzeer.org/docs): for example validator = مُصادِق, transaction = معاملة, fee = رسوم, nonce = الرقم التسلسلي (nonce), finality = النهائية. On first use of a term that has no settled Arabic form, give the English in brackets.\n- Start the file with `<div dir=\"rtl\">` and end it with `</div>` (with blank lines after and before) so GitHub renders it right-to-left; code blocks stay left-to-right.\n- Keep the structure "
-    },
-    "pitch": "Hi, I am Kiran S R, a Full Stack Engineer specializing in TypeScript and React. I can deliver the Arabic translation for the `janzeer-sdk-ts` \"Sending transactions\" guide immediately. I have extensive experience maintaining technical documentation for complex systems like RMC ERP, ensuring precise terminology and structural integrity. I will strictly adhere to your Modern Standard Arabic guidelines, preserve all code identifiers, and implement the required RTL layout with `<div dir=\"rtl\">`. I am ready to submit the PR for your review today to ensure the bilingual documentation is live without delay. Let’s get this done. You can view my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-17T09:42:13.299Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6440481470",
-      "type": "bounty",
-      "title": "feat(a11y): add keyboard navigation and ARIA attributes to AssetSelector modal (OphirPay/OphirPay)",
-      "companyOrClient": "GitHub: OphirPay/OphirPay",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/OphirPay/OphirPay/issues/1893",
-      "description": "### Description\nEnable seamless arrow-key navigation and ARIA labels within the AssetSelector dropdown so keyboard-only users can navigate assets easily.\n\n### Motivation & Value\nImproves accessibility compliance (WCAG 2.1 AA) and keyboard usability for power users.\n\n### Proposed Implementation\n1. Add `role='listbox'` and `role='option'` to asset items\n2. Implement `onKeyDown` to handle ArrowUp, ArrowDown, and Enter\n3. Ensure focus remains trapped within the modal while open\n\n### Relevant Files\n- `src/components/AssetSelector.tsx`\n- `src/__tests__/asset-selector.test.tsx`\n\n### Acceptance Criteria\n- [ ] Keyboard navigation works seamlessly\n- [ ] Screen readers announce selected asset\n- [ ] Unit test passes\n"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React and TypeScript. I can deliver the `AssetSelector` accessibility fixes immediately, ensuring full WCAG 2.1 AA compliance. My experience optimizing the Zupper Commerce platform, where I built 20+ reusable React components and improved performance via memoization, directly translates to implementing robust `role` attributes and trapped focus management. I will handle the `onKeyDown` logic for seamless arrow-key navigation and ensure the associated unit tests pass on the first submission. I am ready to submit a pull request right now to get this bounty resolved. Please check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-17T09:42:12.522Z",
     "deliveredToTelegram": true
   }
 ]
