@@ -1,6 +1,62 @@
 [
   {
     "opportunity": {
+      "id": "wwr_airbnb-senior-software-engineer-partner-integrations",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Partner Integrations",
+      "companyOrClient": "Airbnb",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-partner-integrations",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote, USA \n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;&lt;span&gt;Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;The Community You Will Join: &lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;The Partner Integration team is responsible for integrating new business partners and functionality into Airbnb’s product. We work to improve both the supply and demand side of Airbnb’s Stays, Experiences and Services businesses through thoughtfully designed product experiences for Guest and Hosts.&lt;/p&gt;\n&lt;p&gt;We recently launched exciting new fea"
+    },
+    "pitch": "Hi Airbnb Partner Integrations team, I am a Full Stack Engineer specializing in building scalable, high-traffic booking engines and complex integration workflows. At Yeshu Tours & Travels, I engineered a full-scale booking platform featuring a customer portal, admin dashboard, and real-time WhatsApp enquiry integration, directly mirroring the supply-side partnership dynamics of your Stays business. My expertise in React, Node.js, and Redis ensures I can immediately contribute to optimizing partner functionality and enhancing guest-host experiences. I am ready to deploy my skills to streamline your next major integration. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T22:02:05.216Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_ritual-software-engineer-intern",
+      "type": "remote_job",
+      "title": "Software Engineer Intern",
+      "companyOrClient": "Ritual",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/ritual-software-engineer-intern",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h3&gt;About Ritual&amp;nbsp;&lt;/h3&gt;\n&lt;p&gt;Ritual is building a sovereign, execution layer for AI, with our private testnet already live and running. The Ritual chain is the first blockchain custom-built to support AI-native operations, designed from the ground up to enable a new class of applications at the intersection of crypto and AI. Our first product, Infernet, is pioneering new ground as the first solution to enable developers to access AI models both on-chain via smart contracts and off-chain, demonstrating our commitment to bridging these transformative technologies.&lt;/p&gt;&lt;/div&gt;&lt;h4&gt;About the role&amp;nbsp;&amp;nbsp;&lt;/h4&gt;\n&lt;ul&gt;\n&lt;li&gt;Prototype rapidly, iterate and execute quickly based on technical guidance&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Work at the frontier of modern cryptographic schemes and open-source AI&lt;/li&gt;\n&lt;li&gt;R"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer from Bengaluru. Your mission to build a sovereign execution layer for AI resonates with my recent work on Cerebrum, an AI platform leveraging RAG architecture. I bring immediate value to your Infernet product by combining deep expertise in React, Next.js, and TypeScript with backend proficiency in Node.js and Redis. My track record includes optimizing Zupper Commerce’s performance by 25% and engineering complex real-time systems like RMC ERP. I am ready to prototype rapidly and execute quickly, bridging the gap between on-chain logic and off-chain AI models. Let’s discuss how I can accelerate your testnet’s developer ecosystem. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-24T22:02:04.260Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6582907831",
+      "type": "bounty",
+      "title": "💎 Bounty $50: parse_duration drops the days (d) unit (madin-ll/bounty-pipeline-e2e-verify)",
+      "companyOrClient": "GitHub: madin-ll/bounty-pipeline-e2e-verify",
+      "budgetOrSalary": "$50",
+      "url": "https://github.com/madin-ll/bounty-pipeline-e2e-verify/issues/1",
+      "description": "## Steps to reproduce\n1. Run `pytest -q`\n2. Call `parse_duration(\"1d\")` -> returns `0` instead of `86400`\n3. Call `parse_duration(\"2d4h\")` -> returns `14400` instead of `187200`\n\n```python\nassert parse_duration('1d') == 86400\n```\nAffected file: `duration_utils.py`"
+    },
+    "pitch": "Hi, I can fix the `parse_duration` bug in `duration_utils.py` immediately. The issue is likely a missing case handler for the 'd' unit in the string parsing logic, causing days to default to zero. I have extensive experience debugging complex state and data flow issues, similar to optimizing Redis caching and API integrations for Yeshu Tours & Travels. I can submit a pull request with the fix and updated tests within the hour to ensure `1d` correctly returns 86400. I am ready to start right now. Please check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T22:02:02.475Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6587310589",
+      "type": "bounty",
+      "title": "🎯 Bounty Alert: 14 New Opportunityies found (dev-kp-eloper/BountyScout)",
+      "companyOrClient": "GitHub: dev-kp-eloper/BountyScout",
+      "budgetOrSalary": "$5",
+      "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1802",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-24 17:11 UTC\n\n#### 1. [[Sponsor-Funded Bounty $5] feat(qa & api): automated pytest suite, batch prediction, EXIF privacy & CI](https://github.com/viniciusscience/fishid-studio/issues/9)\n- **Repository:** [viniciusscience/fishid-studio](https://github.com/viniciusscience/fishid-studio)\n- **Comments:** 0\n- **Last Updated:** 2026-11-24T17:10:38Z\n\n#### 2. [Progression: configurable XP ledgers, dynamic growth, Path-change policies and cross-currency skills](https://github.com/heatwaveqc/Too-Much-Magic-Modpack/issues/475)\n- **Repository:** [heatwaveqc/Too-Much-Magic-Modpack](https://github.com/heatwaveqc/Too-Much-Magic-Modpack)\n- **Comments:** 17\n- **Last Updated:** 2026-11-24T17:04:08Z\n\n#### 3. [[buildable] hy-check: `_` is accepted as a struct field/method member — v._, a{_: 1} and v._() pass check, go build says no field or method _](https://github.com/limitlessprojects/Go-Hybrid/issues/4758)\n- **Repository:** [limitlessprojects/Go-Hy"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle your automated pytest suite and CI integration bounty. I specialize in building robust, scalable systems, recently delivering a full-scale travel booking engine with Redis caching and WhatsApp integration for Yeshu Tours & Travels. My experience with complex state management and API integration ensures I can deliver a high-quality, batch-prediction-ready pytest suite with strict EXIF privacy measures immediately. I prioritize clean code and rapid turnaround for bounty opportunities. Check out my work at https://cipher-vortex.vercel.app and let’s get this PR merged.",
+    "createdAt": "2026-11-24T22:02:01.019Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_affirm-analytics-lead-full-stack-collections-recoveries",
       "type": "remote_job",
       "title": "Analytics Lead, Full Stack (Collections &amp; Recoveries)",
@@ -1456,62 +1512,6 @@
     },
     "pitch": "Hi Dremio team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance data applications. Your focus on Apache Iceberg and Arrow resonates with my experience optimizing complex data workflows. At RMC ERP, I engineered a Laravel and Vue 3 platform handling real-time sensor feeds and intricate dispatch logic, ensuring low-latency data processing for enterprise operations. Additionally, my work on Zupper Commerce involved reducing page load times by 25% through aggressive memoization and code splitting, proving my commitment to performance-driven engineering. I am eager to bring this technical rigor to your Query Planner and Reflections teams. I am available for an immediate remote start and ready to contribute to Dremio’s mission of accelerating time-to-insight. Please review my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-19T15:10:38.035Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_legion-principal-software-engineer-devops",
-      "type": "remote_job",
-      "title": "Principal Software Engineer, DevOps",
-      "companyOrClient": "Legion",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/legion-principal-software-engineer-devops",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote, United States\n&lt;/p&gt;\n\n&lt;h1&gt;&lt;strong&gt;Principal Software Engineer, DevOps&lt;/strong&gt;&lt;/h1&gt;\n&lt;h2&gt;&lt;strong&gt;Remote, United States&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;&lt;strong&gt;ABOUT POSITION:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Are you passionate about automation, DevOps, public cloud services, Kubernetes, and observability?&amp;nbsp; As a site reliability engineer at Legion, you will be responsible for building the tools, infrastructure, and services to create a secure, highly scalable, and cost-effective AWS/Kubernetes-based cloud platform. You will be working with everything from infrastructure tooling, automation, build and deployment pipelines, monitoring and logging, containerization, and more! Simply put, the SRE team keeps Legion running for our customers.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;ROLES AND RESPONSIBILITIES:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Support Legion’s public "
-    },
-    "pitch": "Legion’s need for a secure, scalable AWS/Kubernetes platform demands an engineer who builds resilient infrastructure, not just code. As a Full Stack Engineer, I bring deep expertise in Node.js, Redis caching, and high-performance system architecture. My work on Yeshu Tours & Travels demonstrates my ability to engineer complex booking engines with robust Redis caching and automated workflows, ensuring low latency and high availability under load. I am ready to apply this same rigor to your SRE challenges, focusing on automation, cost-effective cloud scaling, and observability. I can start immediately to help stabilize and scale your infrastructure. Please review my portfolio at https://cipher-vortex.vercel.app to see my technical depth.",
-    "createdAt": "2026-11-19T15:10:36.904Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_circleci-senior-software-engineer-query",
-      "type": "remote_job",
-      "title": "Senior Software Engineer, Query",
-      "companyOrClient": "CircleCI",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/circleci-senior-software-engineer-query",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Canada (Remote), United States (Remote), United Kingdom (Remote) Mexico City, Mexico - Hybrid\n&lt;/p&gt;\n\n\n&lt;h3&gt;About CircleCI Engineering&lt;/h3&gt;\n&lt;p&gt;CI/CD has been solved. Now it's being reinvented. AI agents don't just run pipelines. They write code, trigger builds, interpret failures, and propose fixes. The interfaces that developers use to understand and trust that work don't exist yet. We're building them.&lt;/p&gt;\n&lt;p&gt;At CircleCI, our guiding principles aren't posters on a wall. We learn fast: we run experiments, accept failure, and scale what works. We think like the customer: every decision connects back to the developer sitting in front of a failing build at 2 am. We own the outcome: not just our slice of it, but the whole thing. If that's how you already work, you'll fit here.&lt;/p&gt;\n&lt;h3&gt;About the Query Team&lt;/h3&gt;\n&lt;p&gt;Every pipeline, job, and test that runs on CircleCI generates da"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. Your need for interfaces that help developers trust AI-driven CI/CD workflows aligns perfectly with my experience building complex, data-heavy dashboards. At Zupper Commerce, I engineered 20+ reusable React components and optimized page load times by 25% through memoization and code splitting, ensuring smooth interactions even with dense data. I also built the RMC ERP, managing real-time sensor feeds and dispatch workflows with Vue 3 and Laravel. I am ready to bring this same focus on performance and user clarity to CircleCI’s Query team, helping you build the interfaces developers need to trust their pipelines. You can view my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-19T15:10:35.328Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_proxify-ab-senior-fullstack-developer-react-js-node-js-6",
-      "type": "remote_job",
-      "title": "Senior Fullstack Developer (React.js / Node.js)",
-      "companyOrClient": "Proxify AB",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-6",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Sweden\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://career.proxify.io\"&gt;http://career.proxify.io&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;h3&gt;&lt;strong&gt;The Role:&lt;/strong&gt;&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;We are looking for a Senior Fullstack Developer skilled in React.js and Node.js for one of our clients. You are a perfect candidate if you are growth-oriented, you love what you do, and you enjoy working on new ideas to develop exciting products.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;h3&gt;What we are looking for:&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;5+ years experience as a Fullstack Developer.&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Backend experience with:&lt;/p&gt;\n&lt;/li&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;Node.js&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Mi"
-    },
-    "pitch": "Hi Proxify AB,\n\nI am a Senior Full Stack Engineer in Bengaluru with deep expertise in React.js, Node.js, and TypeScript, ready to deliver immediate value to your client’s product. My background aligns perfectly with your requirements for a growth-oriented developer who thrives on building scalable, high-performance applications.\n\nFor instance, I engineered \"Yeshu Tours & Travels,\" a complex booking engine featuring Redis caching and real-time WhatsApp integration, which demonstrates my ability to handle robust backend logic and optimized frontend experiences. I am eager to bring this same level of precision and speed to your current project.\n\nLet’s connect to discuss how I can contribute to your team’s success. Please review my work at https://cipher-vortex.vercel.app.\n\nBest regards,\nKiran S R",
-    "createdAt": "2026-11-19T15:10:34.127Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_netlify-staff-software-engineer-interfaces",
-      "type": "remote_job",
-      "title": "Staff Software Engineer (Interfaces)",
-      "companyOrClient": "Netlify",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/netlify-staff-software-engineer-interfaces",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;About the Team&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;As a Staff Software Engineer at Netlify, you'll join a collaborative team that values continuous learning, mutual support, and shared growth. Together, we create tools that help developers build faster, more intuitively, and with greater impact. Our Experience team owns the core product experience at Netlify, which is every way a human or an agent interacts with the platform, from our React-based web application to CLI, MCP, SDK, and API. If users interact with it directly, it's likely ours. We're reimagining how developers experience web development by thoughtfully integrating AI into our workflows - not as a novelty, but as a practical tool that enhances how we build the web.&lt;/p&gt;\n&lt;p&gt;With our team, you'll help set technical direction for our product area, mentor a highly senior team of engineers, and shape user experiences that"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Next.js applications. Your need for a Staff Engineer to shape intuitive developer experiences aligns perfectly with my work at Zupper Commerce, where I engineered 20+ reusable React components and reduced page load times by 25% through strategic memoization and code splitting. I bring deep expertise in TypeScript, Node.js, and modern UI architecture, having built complex, scalable platforms like Yeshu Tours & Travels and RMC ERP. I am ready to immediately contribute to Netlify’s core product experience, helping to integrate AI practically into developer workflows. I’d love to discuss how I can drive impact for your Experience team. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-19T15:10:32.380Z",
     "deliveredToTelegram": true
   }
 ]
