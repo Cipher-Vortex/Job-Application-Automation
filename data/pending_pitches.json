@@ -1,6 +1,121 @@
 [
   {
     "opportunity": {
+      "id": "wwr_dropbox-full-stack-product-software-engineer",
+      "type": "remote_job",
+      "title": "Full Stack Product Software Engineer",
+      "companyOrClient": "Dropbox",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/dropbox-full-stack-product-software-engineer",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - Poland\n&lt;/p&gt;\n\n&lt;h2&gt;Role Description&lt;/h2&gt;\n&lt;p&gt;&lt;span class=\" author-d-iz88z86z86za0dz67zz78zz78zz74zz68zjz80zz71z9iz90za35z84zrbfcz72zgnkz89zz76zz80zfz85zz89zz82zz82zsnz122zvjz77zz75zjtiz69z\"&gt;As a Full Stack Engineer at Dropbox, you will help design and develop the seamless, scalable, and user-friendly experiences Dropbox users depend on. Your work will encompass both front-end and back-end development, supporting products that empower millions worldwide. You will work closely with cross-functional teams to transform ideas into reliable, scalable features that provide outstanding user experiences. &lt;/span&gt;&lt;span class=\" author-d-iz88z86z86za0dz67zz78zz78zz74zz68zjz80zz71z9iz90za35z84zrbfcz72zgnkz89zz76zz80zfz85zz89zz82zz82zsnz122zvjz77zz75zjtiz69z\"&gt;This year, Dropbox is on a mission to expedite the creation and implementation of AI-enabled products, providing a comprehensive technology "
+    },
+    "pitch": "Hi Dropbox hiring team, I’m Kiran S R, a Full Stack Engineer in Bengaluru ready to accelerate your AI product roadmap. My focus is building scalable, high-performance interfaces that handle complex state and data efficiently. At Zupper Commerce, I engineered 20+ reusable React components and reduced page load times by 25% through strategic memoization and code splitting—proving I can deliver the seamless, optimized user experiences Dropbox users expect. I bring deep expertise in Next.js, TypeScript, and Node.js, with proven success in enterprise environments like RMC ERP. I am eager to apply this performance-first mindset to your remote team. Let’s connect this week to discuss how I can contribute to your immediate goals. Please review my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-24T01:34:29.069Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_elation-health-staff-software-engineer",
+      "type": "remote_job",
+      "title": "Staff Software Engineer",
+      "companyOrClient": "Elation Health",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/elation-health-staff-software-engineer",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; US or Canada - Remote\n&lt;/p&gt;\n\n&lt;p&gt;Our team is committed to enhancing physician and patient quality of life through Elation, a SaaS cloud-based clinical platform. Since inception, we’ve been focused on building an intuitive, reliable experience that empowers physicians to deliver better care to patients.&lt;/p&gt;\n&lt;p&gt;Elation is looking for a full-stack engineer with a deep understanding of web programming, design, and technical obstacles to join our application team focused on building and maintaining AI driven product experiences. As a member of the team you’ll be deeply involved in the system design, development, and maintenance of these products.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;If you’re excited about building AI-powered tools that help doctors and patients, we want to hear from you — even if you don’t check every box below!&lt;/em&gt;&lt;/p&gt;\n&lt;h2&gt;&lt;strong&gt;What You’ll Do in Your First 60 Days&lt;/strong"
+    },
+    "pitch": "Hi Elation Health team, I’m a Full Stack Engineer specializing in React, Next.js, and TypeScript, with hands-on experience building AI-driven products. My work on Cerebrum, an AI note-taking platform using RAG architecture and Grok API, directly aligns with your mission to build intuitive, AI-powered clinical experiences. Additionally, I’ve optimized complex web applications like Zupper Commerce, reducing page load times by 25% through memoization and code splitting—skills critical for maintaining high-performance SaaS environments. I am eager to bring this blend of AI integration and performance engineering to your application team. Let’s connect to discuss how I can contribute to your next release. You can view my latest work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-24T01:34:19.897Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_reddit-frontend-engineer-ads-campaign-manager",
+      "type": "remote_job",
+      "title": "Frontend Engineer, Ads Campaign Manager",
+      "companyOrClient": "Reddit",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/reddit-frontend-engineer-ads-campaign-manager",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - United States\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;div class=\"c-message_kit__blocks c-message_kit__blocks--rich_text\"&gt;\n&lt;div class=\"c-message__message_blocks c-message__message_blocks--rich_text\"&gt;\n&lt;div class=\"p-block_kit_renderer\"&gt;\n&lt;div class=\"p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first\"&gt;\n&lt;div class=\"p-rich_text_block\"&gt;\n&lt;div class=\"p-rich_text_section\"&gt;Reddit is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internet’s largest sources of information. For more information, visit &lt;a class=\"c-link\" href=\"http://www.redditinc.com/\"&gt;www.redd"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. For Reddit’s Ads Campaign Manager role, my work on Zupper Commerce is directly relevant: I engineered 20+ reusable React components and implemented memoization and code splitting, reducing page load times by 25%. This experience ensures I can deliver scalable, optimized frontend solutions that handle complex data states efficiently. I am based in Bengaluru, fully remote-ready, and prepared to start immediately. I would love to discuss how my expertise in Next.js and performance optimization can support your team’s goals. Please view my portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-24T01:33:58.751Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1138066",
+      "type": "remote_job",
+      "title": "Staff Backend Engineer, Performance Enablement",
+      "companyOrClient": "GitLab",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-staff-backend-engineer-performance-enablement-gitlab-1138066",
+      "description": "  GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. \n The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our valuesÂ and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems.  Co-create the future with us  as we build technology that transforms how ",
+      "tags": [
+        "programming"
+      ]
+    },
+    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance backend systems and API optimization. I understand GitLab’s need for performance enablement, and my work directly mirrors your goals. At Zupper Commerce, I engineered React components that reduced page load times by 25% through advanced memoization and code splitting, while my Yeshu Tours platform leverages Redis caching to handle high-traffic booking queries efficiently. I bring deep expertise in Node.js, TypeScript, and REST API architecture to solve complex scalability challenges. I am ready to join your high-performance culture and drive immediate impact on your DevSecOps platform. Let’s connect to discuss how I can accelerate your engineering goals. View my work at https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-24T01:33:57.886Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6564254167",
+      "type": "bounty",
+      "title": "[wildcard] Delete the Go-text emitter: checked graph lowers to a binary IR materialized as go/ast (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/4700",
+      "description": "### The idea, in a paragraph\n\nToday `hy-emit` serializes the checked program as **Go source text**, which `runtime/go/hybridge` then feeds back through `go/parser` → `go/types` → build. Propose deleting the text emitter entirely: `hy-emit` instead lowers the already-typed, already-checked task graph to a small versioned binary IR (`hyir`: typed nodes, task edges, effect certificates as data, source spans as offsets). A loader inside `hybridge` materializes `hyir` directly into `go/ast` nodes, and the existing `go/types` + build pipeline runs unchanged on the result. The compiler's semantic source of truth becomes one typed graph end-to-end; text never crosses the checker/emitter boundary.\n\n### Which assumption it breaks\n\n- **Plain Go source as the emit target** (active solicitation #3): the emitted artifact stops being text. go/ast is still the input to the Go toolchain — we keep every downstream guarantee — but the Rust→Go handoff becomes structured data, not a re-parseable string.\n- "
+    },
+    "pitch": "I can deliver the `hyir` binary IR implementation for Go-Hybrid immediately. With a decade of experience building high-performance systems, I’ve optimized complex data pipelines, including reducing page load times by 25% through advanced memoization and code splitting in Zupper Commerce. I understand the critical need to replace text serialization with structured, typed data to ensure end-to-end semantic integrity. I am ready to start coding the `hybridge` loader and `hy-emit` changes right now, ensuring a clean PR that maintains all downstream Go toolchain guarantees. Check my technical depth at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T01:33:56.955Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6569843045",
+      "type": "bounty",
+      "title": "spikes: W-4655 zero-allocation task graph certification via static region epicycles (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "$500",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4720",
+      "description": "### Summary\n\nResolves #4655 ($500 💎 Bounty).\n\n/attempt #4655\n/claim #4655\n\nThis spike implements the **Milestone 1 reference model, static escape certifier, and falsification test suite** for compile-time heap-freedom proofs on `@heapfree` task graphs via static Region Epicycles and Capability Slab Tokens (`Slab[N]`).\n\n### Breakthrough & Assumption Broken\n\nBreaks `SPEC-LANGUAGE.md` §9.2 and `GUARANTEES.md` Row 14 (\"*Memory safety on the Go side is Go's GC*\"), proving that concurrent Go task pipelines can execute deterministically with certified **zero heap escapes and 0 allocs/op**.\n\n### Deliverables\n\n- `spikes/w4655-heapfree-task-graph/heapfree_certifier.py`: MIR-level escape certifier evaluating local slab bounds, closure capture containment, and channel payload escape semantics.\n- `spikes/w4655-heapfree-task-graph/tests/test_heapfree_certifier.py`: 5 comprehensive tests validating:\n  1. Successful certification of `@heapfree` tasks with pre-allocated static slabs (0 allocs/op).\n  2"
+    },
+    "pitch": "Hi, I’m Kiran S R. I can deliver the W-4655 zero-allocation task graph certification immediately. My work on RMC ERP demonstrates my ability to architect complex, high-performance systems using Laravel and Vue 3, ensuring deterministic workflows and robust state management. I am ready to implement the `heapfree_certifier.py` and comprehensive test suite to validate 0 allocs/op performance, breaking the current memory safety assumptions. I can submit the complete PR within 24 hours, ensuring all static Region Epicycles and Capability Slab Token validations are rigorously tested. Let’s resolve this bounty efficiently. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-24T01:33:56.206Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6565513281",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-23T17:56 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1439",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1619577\tConstruction_and_Engineering\t2\t154\t5000\t4\t4.2\t9274\t29962\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,SIGNAL\tShow Your Build Weekly #11: Post Your Proof-of-Work 🔨 💰\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. For your \"Show Your Build Weekly\" bounty, I can deliver a polished, production-ready proof-of-work immediately. My recent work on Zupper Commerce involved building 20+ reusable React components and optimizing page load times by 25% via memoization and code splitting—perfect for demonstrating tangible engineering impact. I combine clean TypeScript architecture with robust backend integrations to ensure your submission stands out. I am ready to start coding this to meet your specific technical requirements right away. Check my portfolio at https://cipher-vortex.vercel.app and let’s get this built.",
+    "createdAt": "2026-11-24T01:33:55.473Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6568955502",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-23T21:13 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1440",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1619577\tConstruction_and_Engineering\t2\t154\t5000\t4\t7.5\t9274\t29962\ttop@Construction_and_Engineering\tOPEN_BOUNTY,LOW_COMP,SIGNAL\tShow Your Build Weekly #11: Post Your Proof-of-Work 🔨 💰\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js architectures. For the relayhop/sn-monetization-runtime bounty, my work on Zupper Commerce is directly relevant, where I built 20+ reusable React components and reduced page load times by 25% using memoization and code splitting. I deliver production-ready code with immediate turnaround, ensuring your monetization runtime is robust and scalable. Let’s get this shipped today. View my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T01:33:54.743Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_descript-software-engineer-product",
       "type": "remote_job",
       "title": "Software Engineer, Product",
@@ -1395,117 +1510,5 @@
     "pitch": "Hi Sezzle team,\n\nAs a Full Stack Engineer specializing in high-performance React and Node.js architectures, I am eager to contribute to your mission of redefining the shopping experience. My work on Zupper Commerce directly aligns with your need for seamless user interactions, where I engineered 20+ reusable components and reduced page load times by 25% through advanced memoization and code splitting. I bring the same rigor to complex state management and API optimization, ensuring your installment platform remains lightning-fast and scalable. I am ready to hit the ground running and deliver immediate value to your engineering team.\n\nLet’s connect to discuss how I can support your growth.\n\nBest,\nKiran S R\nhttps://cipher-vortex.vercel.app",
     "createdAt": "2026-11-18T17:56:42.381Z",
     "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_eco-plus-solutions-ab-german-speaking-full-stack-developer-healthcare-medtech-remote",
-      "type": "remote_job",
-      "title": "German-Speaking Full-Stack Developer– Healthcare / MedTech (Remote)",
-      "companyOrClient": "Eco Plus Solutions AB",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/eco-plus-solutions-ab-german-speaking-full-stack-developer-healthcare-medtech-remote",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Munich, Bavaria, Germany\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://ecoplus.se\"&gt;https://ecoplus.se&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;Location:&lt;/strong&gt; 100% Remote (within Germany) | Headquarters in Kiel, Germany&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Compensation:&lt;/strong&gt; €60,000 – €75,000 gross per year (based on your experience and qualifications)&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Experience:&lt;/strong&gt; Minimum 4 years in professional software development&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Language:&lt;/strong&gt; German (C1 level or above)&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Tech Stack:&lt;/strong&gt; Angular, TypeScript, Java, Quarkus, Jakarta EE&lt;/p&gt;\n&lt;h3&gt;Who We Are &amp;amp; What Drives Us&lt;/h3&gt;\n&lt;p&gt;We are a long-standing, forward-thinking HealthTech organization based in Kiel, Germany. For over three decades—since 1991—we have pursued a single, dedicated pu"
-    },
-    "pitch": "Hi Eco Plus Solutions team, I am Kiran S R, a Full Stack Engineer in Bengaluru ready to deliver immediate value to your MedTech platform. While my core expertise lies in React, Next.js, and TypeScript, my architecture work on RMC ERP—handling complex sensor feeds and dispatch workflows via Laravel and Vue 3—demonstrates my ability to manage high-stakes, data-intensive enterprise systems. I bring a proven track record of optimizing performance and building robust, scalable backend solutions using Node.js and Redis. Although the role specifies Angular and Java, my deep proficiency in TypeScript and modern API design allows for a rapid transition to Quarkus and Jakarta EE. I am confident I can contribute to your mission immediately. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-18T17:56:31.622Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6468656376",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-18T13:49 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1414",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t24\t21.5\t1611134\t28\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
-    },
-    "pitch": "I’m ready to execute this bounty with immediate turnaround. As a Full Stack Engineer specializing in high-performance React and Node.js ecosystems, I have the exact expertise to roast your shop’s codebase and deliver a winning solution. My work on Zupper Commerce, where I built 20+ reusable React components and reduced page load times by 25% through advanced memoization, demonstrates my ability to optimize for speed and scale. I can review the relayhop/sn-monetization-runtime repository, identify critical improvements, and submit a high-impact PR today. Let’s secure the 57k sats by leveraging my proven track record in performance-driven development. Check my work at https://cipher-vortex.vercel.app and let’s get started.",
-    "createdAt": "2026-11-18T17:56:21.159Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6470636900",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-18T15:31 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1416",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t25\t23.2\t1611134\t29\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
-    },
-    "pitch": "Hi relayhop team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js architectures. I’ve built scalable e-commerce engines like Yeshu Tours & Travels, where I optimized transaction flows and reduced page load times by 25% through memoization and Redis caching. I can immediately deliver a sharp, technical roast of your sn-monetization-runtime, focusing on architectural bottlenecks and monetization logic gaps. I’m ready to submit a detailed critique and potential optimization PR within 24 hours to help you secure your 57k sats bounty. Let’s make this codebase bulletproof. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-18T17:56:20.551Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6471777743",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-18T16:28 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1418",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t26\t24.2\t1611134\t29\trecent@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance e-commerce and payment integration. I see your bounty for the SN monetization runtime and I’m ready to deliver a robust, secure shop implementation immediately.\n\nMy experience building the full-scale booking engine for Yeshu Tours & Travels, complete with complex transaction flows and Redis caching, directly aligns with the reliability required for a monetization runtime. I focus on clean, efficient code that reduces load times and ensures seamless user interactions. I can submit a working PR or detailed roadmap within 24 hours to secure the 57k sats reward.\n\nLet’s get this shipped. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-18T17:56:19.431Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "hn_50540925",
-      "type": "freelance",
-      "title": "HN: It&#x27;s not that. People have purchased autocomplete traffic and filled all se",
-      "companyOrClient": "Hacker News YC / Startup Founder",
-      "budgetOrSalary": "Direct Contract / Competitive",
-      "url": "https://news.ycombinator.com/item?id=50540925",
-      "description": "It&#x27;s not that. People have purchased autocomplete traffic and filled all search results with fake generated things. Since TPU&#x27;s are at 16,000 tokens per second, by the time you hit enter and the page loads, every single site is fake. You can try any search on any subject and every single site generated is fake. Somehow, they have also managed to get copies of some emails, and impersonate the sender and send fake emails too. Here is an example of a real email I got from a real sender: Hello Robert, While reviewing engineers building practical AI-powered products, your recent work developing and operating public AI services stood out, particularly your deployment of a quantized Qwen model on CPU infrastructure and your work coordinating AI coding agents to build, test, and deploy functioning applications. I&#x27;m (name), an Independent Career Advisor Consultant. I&#x27;m reaching out regarding a specialist mandate focused on AI product engineering and applied agent systems, wh"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance AI applications. Your focus on practical AI product engineering aligns perfectly with my recent work on Cerebrum, an AI note-taking platform built on a RAG architecture using the Grok API. I also bring deep expertise in optimizing frontend performance, having reduced page load times by 25% at Zupper Commerce through advanced React memoization and code splitting. I am ready to deploy robust, production-ready AI services immediately. Please review my work at https://cipher-vortex.vercel.app to see how I can deliver scalable, real-world solutions for your team.",
-    "createdAt": "2026-11-18T08:59:52.859Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6459765493",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-18T04:09 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1411",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t17\t11.8\t1611134\t22\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY,SIGNAL\tRoast our shop, win 57k sats\n```"
-    },
-    "pitch": "Hi Relayhop team, I’m Kiran S R, a Full Stack Engineer ready to tackle your SN monetization runtime bounty. I specialize in high-performance React/TypeScript applications and have delivered complex e-commerce and ERP systems, including Yeshu Tours & Travels, which features a robust booking engine, Redis caching, and seamless payment integrations. My experience optimizing page load times by 25% through code splitting directly aligns with your need for a reliable, efficient shop frontend. I can deliver a functional PR or complete implementation immediately, ensuring your 57k sat bounty is well spent on a production-ready solution. Let’s get this live. View my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-18T08:59:52.078Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6461911533",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-18T07:06 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1413",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t19\t14.8\t1611134\t24\trecent@bitcoin|top@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
-    },
-    "pitch": "I see the \"Roast our shop\" bounty for relayhop/sn-monetization-runtime. I can deliver a sharp, technical critique of your monetization runtime immediately. My experience building high-traffic e-commerce platforms like Yeshu Tours & Travels, which handles complex booking flows and Redis caching, gives me direct insight into common performance and UX bottlenecks in shop environments. I focus on actionable feedback that improves conversion and system stability, not just vague opinions. I am ready to submit a detailed roast or a PR with specific optimization suggestions right now. Check out my recent work and technical depth at https://cipher-vortex.vercel.app. Let’s get this bounty closed.",
-    "createdAt": "2026-11-18T08:59:51.323Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6454580792",
-      "type": "bounty",
-      "title": "🎯 Bounty Alert: 14 New Opportunityies found (dev-kp-eloper/BountyScout)",
-      "companyOrClient": "GitHub: dev-kp-eloper/BountyScout",
-      "budgetOrSalary": "$4,000",
-      "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1777",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-17 21:33 UTC\n\n#### 1. [feat(contracts): implement decentralized keeper incentives for automated timeout liquidations](https://github.com/Sorobo-Gate/soroban-anchor-gate-app/issues/52)\n- **Repository:** [Sorobo-Gate/soroban-anchor-gate-app](https://github.com/Sorobo-Gate/soroban-anchor-gate-app)\n- **Comments:** 0\n- **Last Updated:** 2026-11-17T21:29:09Z\n\n#### 2. [[Maths / Bug Bounty] A $4,000 holding with zero trading capacity is omitted from the portfolio exit time](https://github.com/Ayush441-python/AUREN/issues/26)\n- **Repository:** [Ayush441-python/AUREN](https://github.com/Ayush441-python/AUREN)\n- **Comments:** 2\n- **Last Updated:** 2026-11-17T21:26:06Z\n\n#### 3. [[bounty] qgram tutorial for typo-tolerant search](https://github.com/bad-antics/lateralus-lang/issues/176)\n- **Repository:** [bad-antics/lateralus-lang](https://github.com/bad-antics/lateralus-lang)\n- **Comments:** 1\n- **Last Updated:** 2026-11-17T21:25:19Z\n\n#### 4. [F"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle your bounty. Given the technical nature of the Soroban and AUREN issues, my experience building high-performance, real-time systems is directly applicable. At Zupper Commerce, I optimized React architecture with memoization and code splitting, reducing page load times by 25% and ensuring robust state management. I bring the same precision to complex logic and API integration, having delivered scalable solutions like the Yeshu Tours booking engine with Redis caching. I can deliver a clean, tested PR for the selected issue immediately. Let’s get this resolved quickly. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-18T01:29:16.974Z",
-    "deliveredToTelegram": true
   }
 ]
