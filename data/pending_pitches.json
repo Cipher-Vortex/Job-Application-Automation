@@ -1,6 +1,135 @@
 [
   {
     "opportunity": {
+      "id": "wwr_affirm-analytics-lead-full-stack-collections-recoveries",
+      "type": "remote_job",
+      "title": "Analytics Lead, Full Stack (Collections &amp; Recoveries)",
+      "companyOrClient": "Affirm",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/affirm-analytics-lead-full-stack-collections-recoveries",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote Canada\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;At Affirm, we exist for the moments that matter—giving people a clear, predictable way to pay over time, with no hidden fees, no surprises, and no tradeoffs on what matters most.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;The Risk &amp;amp; Analytics team makes crucial decisions that direct Affirm’s business strategy. Our team designs and runs experiments to decide which product features to launch and which marketing campaigns to fund. We analyze performance not just to report on it, but to determine where to invest resources for maximum impact through building tools and analytical frameworks. We take ownership of the entire analytical lifecycle, from initial question to final business decision, ensuring Affirm grows efficiently and intelligently.&lt;/p&gt;\n&lt;h3&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/h3&gt;\n&lt;p&gt;The Collections &amp;amp; Recoveries Analyst w"
+    },
+    "pitch": "Hi Affirm Hiring Team,\n\nI am Kiran S R, a Full Stack Engineer specializing in building high-performance data-heavy applications. I noticed your need for an Analytics Lead to drive decision-making in Collections & Recoveries, and my background in enterprise systems is a perfect fit. I recently architected the RMC ERP, a complex platform handling real-time sensor feeds, batching logs, and intricate dispatch workflows using Laravel and Vue 3. This experience directly translates to designing robust analytical frameworks and tools that turn raw data into actionable business strategies. I am ready to leverage my expertise in TypeScript and Node.js to build the efficient, intelligent tools Affirm needs to maximize resource impact. I would love to discuss how I can contribute to your team immediately. You can view my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T11:58:03.855Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_airbnb-senior-mobile-software-engineer-quality-engineering",
+      "type": "remote_job",
+      "title": "Senior Mobile Software Engineer, Quality Engineering",
+      "companyOrClient": "Airbnb",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-mobile-software-engineer-quality-engineering",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Brazil - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;&lt;span&gt;Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;The Community You Will Join:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;The Quality Engineering team helps Airbnb build high-quality software efficiently. We enable Airbnb engineers to build highly testable systems by building and using tools leveraging AI. We own and continuously improve product test cases, automation coverage, test automation tools, environments, frameworks. We navigate Airbnb's massive codebase identifying weak spots, and help "
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications with React, TypeScript, and Node.js. I noticed Airbnb’s Quality Engineering team is leveraging AI to improve testability and automation. My work on Zupper Commerce directly aligns with this need for efficiency; I engineered 20+ reusable React components and optimized rendering strategies, reducing page load times by 25% through memoization and code splitting. Additionally, my development of the Cerebrum AI platform using RAG architectures demonstrates my ability to integrate intelligent systems into complex codebases. I am eager to bring this focus on performance and automation to your team. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T11:58:02.399Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_airbnb-senior-software-engineer-guest-host",
+      "type": "remote_job",
+      "title": "Senior Software Engineer Guest &amp; Host",
+      "companyOrClient": "Airbnb",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/airbnb-senior-software-engineer-guest-host",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote, USA \n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;&lt;span&gt;Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;The Community You Will Join:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Airbnb’s mission is to create a world where anyone can belong anywhere. Essential to this mission is the ability to have authentic conversations with members of a global community. The Messaging Foundations team builds the platform that powers these conversations. As a Senior Software Engineer on the team, you will build innovative products, architect scalable solutions, collabor"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in scalable, high-performance web applications. I’ve built production-ready systems like Yeshu Tours & Travels, a full-scale booking engine featuring Redis caching and complex state management, and Zupper Commerce, where I reduced page load times by 25% through strategic code splitting. My experience with React, TypeScript, and Node.js aligns directly with Airbnb’s need for robust, user-centric messaging infrastructure. I am ready to contribute immediately to the Messaging Foundations team, leveraging my background in optimizing large-scale frontend architectures. You can view my detailed work and technical approach at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T11:57:37.055Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1138070",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Agentic AI",
+      "companyOrClient": "Clover Health",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-agentic-ai-clover-health-1138070",
+      "description": "  Clover is reinventing health insurance by working to keep people healthier.  \n We value diversity in backgrounds and experiences. Healthcare is a universal concern, and we need people from all backgrounds and walks of life to help build the future of healthcare. Clover's engineering team is empathetic, caring, and supportive. We are deliberate about the team and culture we are building. We seek engineers who are strong in their own work and care deeply about supporting each other's growth. \n We are looking for a senior software engineer to make Counterpart Health's existing customer-facing platform agentic. You will build applied AI systems that retrieve relevant information, call tools, and help healthcare users complete meaningful work. You will work with engineers, data scientists, and healthcare professionals, with ownership across data pipelines, backend services, model behavior, and the user experience. \n  As a Senior Software Engineer, you will:  \n \n Simplify the complexities ",
+      "tags": [
+        "programming"
+      ]
+    },
+    "pitch": "Hi Clover Health team, I’m Kiran S R, a Full Stack Engineer specializing in building scalable, agentic systems that bridge complex backend logic with intuitive user experiences. Your need to make Counterpart Health’s platform agentic aligns perfectly with my recent work on Cerebrum, an AI note-taking platform where I engineered a RAG architecture using the Grok API to retrieve relevant data and execute tool calls. I also bring deep expertise in optimizing performance, having reduced page load times by 25% at Zupper Commerce through strategic code splitting. I am ready to leverage my stack of TypeScript, Node.js, and Redis to build robust data pipelines and model behaviors that help healthcare users complete meaningful work efficiently. Let’s discuss how I can drive immediate value for your engineering team. You can view my full portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-24T11:57:35.123Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6574061319",
+      "type": "bounty",
+      "title": "[wildcard] Check a declared family of Go build tags and return a minimal failing config (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "$250",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4728",
+      "description": "## Resumen\n\nImplementa la propuesta del **Wildcard Track** del issue #4726:\n\"Check a declared family of Go build tags and return a minimal failing\nconfiguration\".\n\n### Qué hace `tools/hybtags`\n\nDado un paquete Go y un conjunto finito de build tags de usuario declarados\npor el autor (por ejemplo `fast, small, debug`), la herramienta:\n\n1. **Enumera** cada una de las `2^n` asignaciones de tags.\n2. **Pregunta a `go list -e -find -json`** (oracle independiente de selección\n   de archivos, sin resolver dependencias) qué `.go` selecciona cada\n   asignación.\n3. **Agrupa** las asignaciones que seleccionan idéntico conjunto de archivos:\n   comparten una sola ejecución del checker.\n4. **Ejecuta el checker una vez por entrada única** (uno por grupo).\n5. **Reporta**, por cada grupo que falla, un **conjunto mínimo de tags**\n   que aún falla (búsqueda greedy: quita tags mientras siga fallando).\n\nCódigo de salida: 0 si todos los grupos pasan, 1 si al menos uno falla.\n\n### Uso\n\n```\nhybtags --pkg ./mypk"
+    },
+    "pitch": "Hello, I am Kiran S R, a full-stack engineer specializing in complex system architecture and performance optimization. I see your need for a robust `hybtags` tool to validate Go build tag families. My experience building the RMC ERP, which manages intricate sensor feeds and dispatch workflows, demonstrates my ability to handle precise state management and efficient data processing. I can implement the `go list` oracle integration and greedy tag-subset search immediately, ensuring a minimal failing configuration is returned with exit code 1. I am ready to submit a PR for this $250 bounty today. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T11:57:33.363Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6575126547",
+      "type": "bounty",
+      "title": "spikes: W-4729 make an ownership-breaking release produce its smallest downstream client (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "$500",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4735",
+      "description": "### Summary\n\nResolves #4729 ($500 💎 Bounty / Wildcard Track).\n\n/attempt #4729\n/claim #4729\n\nThis spike implements the **Milestone 1 reference model, BFS state-space search engine, and minimal `.hy` client synthesizer** for comparing two revisions of an ownership-typed API and producing the smallest downstream program that compiles under the old release and fails under the candidate release.\n\n### Breakthrough & Assumption Broken\n\nBreaks the baseline assumption in `GUARANTEES.md` (Rows 6 & 7) that the unit of an ownership check is a single isolated program. By evaluating directional release evolution across pairs of package APIs, library maintainers receive an exact failing client witness (e.g. `Submit(x); Inspect(x)`) rather than unhelpful undirected contract-change warnings.\n\n### Deliverables\n\n- `spikes/w4729-smallest-breaking-client/client_synthesizer.py`: BFS exploration engine over legal client call sequences, minimal `.hy` code generator, and replay checker.\n- `spikes/w4729-smalle"
+    },
+    "pitch": "I can deliver the BFS state-space search engine and minimal client synthesizer for W-4729 immediately. My work on RMC ERP demonstrates my ability to build complex, stateful systems with precise workflow logic and data integrity, directly applicable to generating exact failing client witnesses for ownership-typed APIs. I specialize in optimizing performance and logic, having reduced page load times by 25% in previous projects, ensuring your BFS exploration is both efficient and accurate. I am ready to submit the Python implementation for `client_synthesizer.py` right away to resolve this bounty. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T11:57:32.208Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6575225378",
+      "type": "bounty",
+      "title": "spikes: W-4617 exact floating-point summation with worker-count independence (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "$500",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4736",
+      "description": "### Summary\n\nResolves #4617 ($500 💎 Bounty / Wildcard Track).\n\n/attempt #4617\n/claim #4617\n\nThis spike implements the **Milestone 1 reference model and exact floating-point accumulator** for worker-count-independent summation. The result is the exact mathematical sum rounded once to `binary64`, regardless of how many workers participate or how chunks are assigned.\n\n### Breakthrough & Assumption Broken\n\nBreaks the assumption that a source loop commits the program to its intermediate roundings. By using opaque exact integer-scaled accumulators (`mantissa << 1074`), the compiler can freely change chunk sizes and merge tree shapes without altering a single bit of the final `float64` result.\n\n### Deliverables\n\n- `spikes/w4617-exact-fp-sum/exact_sum.py`: Opaque `ExactAccumulator` using integer-scaled unit arithmetic, partitioned summation engine, and ordinary fold for comparison.\n- `spikes/w4617-exact-fp-sum/tests/test_exact_sum.py`: 7 comprehensive tests:\n  1. Cancellation dataset `[1e16, "
+    },
+    "pitch": "Hi, I’m Kiran S R. I can deliver PR #4617 for the exact floating-point summation spike immediately. My background in high-performance optimization, specifically reducing page load times by 25% at Zupper Commerce through code splitting, translates directly to ensuring worker-count independence in your Go-Hybrid accumulator. I understand the critical need for opaque integer-scaled arithmetic to prevent compiler-induced rounding errors. I am ready to implement the `ExactAccumulator` and comprehensive test suite today to meet the $500 bounty deadline. Let’s get this merged. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T11:57:31.425Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6575312502",
+      "type": "bounty",
+      "title": "spikes: W-4634 transfer plan carrying write partition and conservation law (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "$500",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4738",
+      "description": "### Summary\n\nResolves #4634 ($500 💎 Bounty / Wildcard Track).\n\n/attempt #4634\n/claim #4634\n\nThis spike implements the **Milestone 1 reference model, integral conservation validator, and disjoint write partitioning engine** for transporting physical fields between non-conforming meshes in Go-Hybrid task graphs.\n\n### Breakthrough & Assumption Broken\n\nBreaks the assumption that task partitioning and physical conservation invariants must be expressed separately. A single geometric transfer plan simultaneously defines disjoint destination write rows for workers and strictly preserves field integrals across arbitrary non-conforming 1D meshes.\n\n### Deliverables\n\n- `spikes/w4634-mesh-transfer-plan/transfer_plan.py`: Reference model for rational overlap weights, plan validation, and partitioned worker execution.\n- `spikes/w4634-mesh-transfer-plan/tests/test_transfer_plan.py`: 3 comprehensive tests:\n  1. Transfer of field `[4, 1]` over mesh `[0, 1, 3]` to `[0, 2, 3]` preserving total integral ="
+    },
+    "pitch": "Hi, I am Kiran S R, a Full Stack Engineer specializing in complex data structures and performance optimization. Your Go-Hybrid bounty requires precise partitioning logic and conservation validation, which aligns perfectly with my experience building the RMC ERP. There, I engineered dispatch workflows and sensor feed handling for enterprise-scale data integrity using Laravel and Vue 3, ensuring zero data loss in high-stakes operational environments. I am ready to implement the disjoint write partitioning engine and integral conservation validator immediately, delivering a robust PR that meets the Milestone 1 reference model requirements. I can start right now to ensure you secure this $500 bounty quickly. Please review my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T11:57:30.353Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6575629264",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-24T05:55 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1442",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1619577\tConstruction_and_Engineering\t2\t154\t5000\t7\t16.2\t9274\t29981\ttop@Construction_and_Engineering\tOPEN_BOUNTY\tShow Your Build Weekly #11: Post Your Proof-of-Work 🔨 💰\n```"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle your Construction & Engineering bounty with immediate, production-grade results. I specialize in building high-performance, data-heavy applications using React, TypeScript, and Node.js. For your weekly proof-of-work, I can rapidly deploy a robust module—leveraging my experience optimizing complex systems like RMC ERP and Zupper Commerce—to ensure your build is scalable, efficient, and ready for review. I focus on clean, maintainable code that delivers tangible value from day one. I can start immediately and deliver a complete PR within 24 hours. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-24T11:57:29.495Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_dropbox-full-stack-product-software-engineer",
       "type": "remote_job",
       "title": "Full Stack Product Software Engineer",
@@ -1384,131 +1513,5 @@
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Next.js applications. Your need for a Staff Engineer to shape intuitive developer experiences aligns perfectly with my work at Zupper Commerce, where I engineered 20+ reusable React components and reduced page load times by 25% through strategic memoization and code splitting. I bring deep expertise in TypeScript, Node.js, and modern UI architecture, having built complex, scalable platforms like Yeshu Tours & Travels and RMC ERP. I am ready to immediately contribute to Netlify’s core product experience, helping to integrate AI practically into developer workflows. I’d love to discuss how I can drive impact for your Experience team. Please review my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-19T15:10:32.380Z",
     "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6484355784",
-      "type": "bounty",
-      "title": "[wildcard] Measure Spike 6's claimed rustc-translation loss: a CI-only shadow-Rust oracle for Tier-0 ownership (W-023's missing half) (limitlessprojects/Go-Hybrid)",
-      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/4586",
-      "description": "### The idea, in a paragraph\n\nSpike 6 decided that delegating ownership checking to rustc is too lossy, and kept rustc as an optional CI-only shadow oracle (SPEC §14.5 / O16, `spikes/spike6-ownership/RESULTS.md:256-261`). That loss was never measured: the same results file says the Rust encodings were \"rule-traced; not compiled\" (`RESULTS.md:317-318`), and nothing under `tools/` or CI runs rustc except as a version probe. I propose to **measure the loss**. Build a small shadow-Rust translator for the Rust-expressible core of Tier-0, run it against the corpus and a generator, and publish how often `hyb check` and rustc's borrow/`Send`/`'static` rules disagree, with every disagreement classified before any code is judged. The point is the number, not the tool: either the translation loss Spike 6 assumed is real and large, or it is small enough that the ownership half of the checker gets an independent second opinion it does not have today.\n\n### Which assumption it breaks\n\n1. **Spike 6: \""
-    },
-    "pitch": "I can deliver the CI-only shadow-Rust oracle to quantify Spike 6’s ownership translation loss immediately. My background in building high-performance, component-driven systems, such as optimizing Zupper Commerce’s React architecture by reducing page load times by 25%, ensures I can implement the necessary code splitting and memoization for your Rust-expressible core efficiently. I will build the translator, run it against your corpus, and publish the disagreement metrics between `hyb check` and rustc rules, providing the precise data point needed to validate or refute the assumed loss. I am ready to start now and deliver a working PR shortly. Let’s get this measured. You can view my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-19T15:10:30.601Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6481556109",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-19T03:13 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1424",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t32\t34.9\t1611134\t33\trecent@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance e-commerce and real-time systems. I see you’re looking to roast your shop for 57k sats, and I’m ready to deliver a sharp, technical critique backed by immediate optimization suggestions. My work on Zupper Commerce involved building 20+ reusable React components and reducing page load times by 25% through memoization and code splitting, proving I can identify and fix performance bottlenecks instantly. I can provide a detailed audit of your runtime’s efficiency, UI responsiveness, and code structure to ensure it’s bulletproof for monetization. Check my portfolio at https://cipher-vortex.vercel.app to see my impact, and let’s get this bounty closed out today.",
-    "createdAt": "2026-11-19T05:44:38.669Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6482115733",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-19T04:04 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1425",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t32\t35.8\t1611134\t33\trecent@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R. I can deliver a high-impact, code-level roast of your sn-monetization-runtime repo immediately, focusing on architectural bottlenecks and optimization opportunities. My work on Zupper Commerce involved building 20+ reusable React components that cut page load times by 25% through aggressive memoization and code splitting, proving my ability to identify and fix performance leaks in complex systems. I bring deep expertise in TypeScript, Node.js, and Redis caching, ensuring my feedback is actionable and technically rigorous. I’m ready to submit a detailed PR or code review today to help you secure this 57k sat bounty. Let’s connect to discuss the specific areas you want critiqued. Check my portfolio at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-19T05:44:37.414Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6474612198",
-      "type": "bounty",
-      "title": "chore(labels): manage labels as code and migrate to the prefixed set (meteor/meteor)",
-      "companyOrClient": "GitHub: meteor/meteor",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/meteor/meteor/pull/15019",
-      "description": "## Labels as code: the prefixed label set and its migration\n\nImplements the label rework that #15018 announces, as it stands after the discussions with the maintainers: accounts and OAuth stay one area, `instrumentation` and `offline` get their area, `workshop` is dropped, the idle script stays and its label becomes `status: stale`, `experimental` is a standalone label next to the facets, and two `legacy:` labels track the issues reported before 3.0. The 21 areas are the ones #15018 lists in MAINTAINERS.md. 97 labels become 52.\n\n### What changes\n\n- **`.github/labels.yml`**: the manifest. Every label has a facet prefix (`type:`, `area:`, `platform:`, `status:`, `legacy:`, `priority:`, `ci:`) or is one of the standalone labels (`experimental`, `good first issue`, `help wanted`, `hacktoberfest-accepted`, `dependencies`), and every label has a description. The five `ci:e2e` labels keep their names and colors and get a description: #14479 uses four of them to pick the E2E slices and sets `c"
-    },
-    "pitch": "I can deliver the meteor/meteor label migration bounty immediately. As a Full Stack Engineer, I specialize in managing complex configuration states and code-driven workflows, similar to the dispatch logic I built for RMC ERP. I have the Node.js and TypeScript expertise to accurately restructure `.github/labels.yml`, implement the new prefixed facets, and execute the migration from 97 to 52 labels without breaking existing CI references. I am ready to submit a clean, tested PR for this task right now to ensure the maintainers get a seamless update. You can review my relevant work and credentials here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-18T23:53:51.870Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6477426079",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-18T21:49 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1420",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t31\t29.5\t1611134\t33\trecent@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
-    },
-    "pitch": "Hi relayhop team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. Your open bounty for the shop roast caught my attention. I recently built Zupper Commerce, where I engineered 20+ reusable React components and optimized page load times by 25% through memoization and code splitting. I bring the same precision to your sn-monetization-runtime, ready to deliver a PR that enhances UX and performance immediately. I can start working on this right now to ensure a quick turnaround for your 57k sats reward. Let’s make your shop faster and more engaging. Check my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-18T23:53:51.019Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6478477118",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-18T23:01 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1422",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1616276\tbitcoin\t1\t887\t57000\t32\t30.7\t1611134\t33\trecent@bitcoin\tOPEN_BOUNTY\tRoast our shop, win 57k sats\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to deliver high-impact results for your sn-monetization-runtime bounty. I specialize in building robust, scalable systems using React, TypeScript, and Node.js. For your \"Roast our shop\" challenge, I can provide a sharp, technical critique backed by actionable code improvements that enhance performance and user experience. My work on Zupper Commerce, where I reduced page load times by 25% through memoization and code splitting, demonstrates my ability to optimize complex applications efficiently. I can submit a detailed review and a pull request with concrete fixes immediately to secure the 57k sats. Let’s get this done quickly. Check my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-18T23:53:50.232Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_workmotion-senior-software-engineer",
-      "type": "remote_job",
-      "title": "Senior Software Engineer",
-      "companyOrClient": "WorkMotion",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/workmotion-senior-software-engineer",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; North Macedonia\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://jobs.workable.com/company/jzo8hYoyQi6MffQtCgXykk/jobs-at-workmotion\"&gt;https://jobs.workable.com/company/jzo8hYoyQi6MffQtCgXykk/jobs-at-workmotion&lt;/a&gt;\n&lt;/p&gt;\n\nSenior Software Engineer&lt;p&gt;Location: Remote (Within +/- 2 hours of CET)&lt;br&gt;Contract Type: Full-time&lt;br&gt;Starting Salary: €55,000 Euros per annum gross, subject to skills, experience&amp;nbsp;and location&lt;/p&gt;&lt;br&gt;Not Your Typical Workplace…&lt;p&gt;Tired of the 9-to-5 grind? Imagine a world without borders, where opportunities are endless. That's the future of work, and what we're building at WorkMotion.&lt;/p&gt;&lt;p&gt;Our remote-first team spans the globe, helping companies hire, onboard, and manage talent internationally through smart, flexible workforce solutions. Fast-paced, people-driven, and globally connected, we empower businesses to build t"
-    },
-    "pitch": "Hello WorkMotion team,\n\nI am a Senior Full Stack Engineer based in Bengaluru, ready to contribute immediately to your remote-first platform. With deep expertise in React, Next.js, and Node.js, I have built scalable systems like RMC ERP, managing complex dispatch workflows and real-time sensor feeds for enterprise clients. I also optimized Zupper Commerce, reducing page load times by 25% through advanced memoization. I bring the same precision to your talent management solutions, ensuring robust, high-performance code from day one. Let’s discuss how I can support your global hiring goals. Please review my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-18T17:57:03.443Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_g-p-software-engineer-ii",
-      "type": "remote_job",
-      "title": "Software Engineer II",
-      "companyOrClient": "G-P",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/g-p-software-engineer-ii",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; India\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://www.g-p.com\"&gt;https://www.g-p.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;div&gt;&lt;p&gt;&lt;strong&gt;&lt;span&gt;About Us&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;Our leading SaaS-based Global Employment Platform™ enables clients to expand into over 180 countries quickly and efficiently, without the complexities of establishing local entities. At G-P, we’re dedicated to breaking down barriers to global business and creating opportunities for everyone, everywhere.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;Our diverse, remote-first teams are essential to our success. We empower our Dream Team members with flexibility and resources, fostering an environment where innovation thrives and every contribution is valued and celebrated.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;The work you do here will positively impact lives around the world. We stan"
-    },
-    "pitch": "Hi G-P Team,\n\nAs a Full Stack Engineer in Bengaluru, I build scalable SaaS platforms that handle complex global workflows. Your need for a robust, remote-first infrastructure aligns perfectly with my recent work on RMC ERP, where I engineered a Laravel and Vue 3 system managing real-time sensor feeds and dispatch logistics for enterprise clients. I specialize in React, TypeScript, and Node.js, ensuring high-performance, secure applications that scale efficiently.\n\nI am ready to hit the ground running, leveraging my experience with Redis caching and REST APIs to enhance your Global Employment Platform’s speed and reliability. Let’s discuss how I can contribute to your Dream Team immediately.\n\nView my work: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-18T17:56:52.919Z",
-    "deliveredToTelegram": false
-  },
-  {
-    "opportunity": {
-      "id": "wwr_sezzle-senior-software-engineer-turkey",
-      "type": "remote_job",
-      "title": "Senior Software Engineer (Turkey)",
-      "companyOrClient": "Sezzle",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/sezzle-senior-software-engineer-turkey",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6823/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Turkey\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://sezzle.com\"&gt;https://sezzle.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;The salary range for this role is $5,000 - $9,500 per month (Gross in USD)&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Sezzle:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;With a mission to financially empower the next generation, Sezzle is revolutionizing the shopping experience beyond payments, blending cutting-edge tech with seamless, interest-free installment plans that make shopping smarter and more accessible. We’re not just transforming payments; we’re redefining how people discover, interact with, and purchase the things they love while driving real impact on merchant sales through increased conversions and"
-    },
-    "pitch": "Hi Sezzle team,\n\nAs a Full Stack Engineer specializing in high-performance React and Node.js architectures, I am eager to contribute to your mission of redefining the shopping experience. My work on Zupper Commerce directly aligns with your need for seamless user interactions, where I engineered 20+ reusable components and reduced page load times by 25% through advanced memoization and code splitting. I bring the same rigor to complex state management and API optimization, ensuring your installment platform remains lightning-fast and scalable. I am ready to hit the ground running and deliver immediate value to your engineering team.\n\nLet’s connect to discuss how I can support your growth.\n\nBest,\nKiran S R\nhttps://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-18T17:56:42.381Z",
-    "deliveredToTelegram": false
   }
 ]
