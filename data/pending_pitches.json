@@ -1,6 +1,127 @@
 [
   {
     "opportunity": {
+      "id": "wwr_beyondtrust-software-development-engineer",
+      "type": "remote_job",
+      "title": "Software Development Engineer",
+      "companyOrClient": "BeyondTrust",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/beyondtrust-software-development-engineer",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote United Kingdom\n&lt;/p&gt;\n\n&lt;p&gt;BeyondTrust is a place where you can bring your purpose to life through the work that you do, creating a safer world through our cybersecurity SaaS portfolio.&lt;/p&gt;\n&lt;p&gt;Our culture of flexibility, trust, and continual learning means you will be recognized for your growth, and for the impact you make on our success. You will be surrounded by people who challenge, support, and inspire you to be the best version of yourself.&lt;/p&gt;\n&lt;p&gt;The Role&lt;/p&gt;\n&lt;p&gt;You'll work on the Endpoint Privilege Management software that protects organisations from identity-based attacks. Our stack is Java and Spring Boot on the backend with Angular and TypeScript on the front end, deployed to cloud infrastructure at enterprise scale.&lt;/p&gt;\n&lt;p&gt;We are an AI-first engineering organisation. AI tooling is a core part of how we design, build and ship, and every engineer is provisio"
+    },
+    "pitch": "Hi Hiring Team,\n\nBeyondTrust’s mission to secure identity-based attacks aligns perfectly with my experience building secure, enterprise-grade systems. As a Full Stack Engineer, I recently developed the RMC ERP, a complex platform using Vue 3, TypeScript, and Inertia.js to manage critical sensor feeds and dispatch workflows at scale. This role demands precision in TypeScript and enterprise architecture, areas where I have delivered measurable results, including a 25% reduction in page load times through optimized React component architecture. I am eager to bring this same focus on performance, security, and AI-first development to your Endpoint Privilege Management suite. I am available for an immediate start and ready to contribute to your cloud infrastructure goals.\n\nPlease review my work at https://cipher-vortex.vercel.app.\n\nBest,\nKiran S R",
+    "createdAt": "2026-11-25T15:23:34.595Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_customer-io-senior-software-engineer-backend",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Backend",
+      "companyOrClient": "Customer.io",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-backend",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Americas Remote\n&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Hi, I’m Paul, VP of Engineering at &lt;a href=\"http://customer.io/\"&gt;Customer.io&lt;/a&gt;. We’re looking for experienced backend engineers who care deeply about reliability, performance, and scalability. You’ll design, build, and evolve the systems that power communication at massive scale - while helping us push the boundaries of what great engineering can look like.&lt;/p&gt;\n&lt;h3&gt;About&amp;nbsp;&lt;a href=\"http://customer.io\"&gt;Customer.io&lt;/a&gt;&lt;/h3&gt;\n&lt;p&gt;Over 9,000 companies - from scrappy startups to global brands - use our platform to send billions of emails, push notifications, in-app messages, and SMS every day. Customer.io powers automated communication that people actually want to receive.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;We help teams send smarter, more relevant messages using real-time behavioral data. Under the hood: Go, React, Embe"
+    },
+    "pitch": "Hi Paul, I am Kiran S R, a Full Stack Engineer in Bengaluru specializing in high-performance systems. I see a strong alignment between my work on RMC ERP and Customer.io’s need for scalable, reliable backend infrastructure. Using Laravel, Vue 3, and Redis, I engineered an enterprise ERP handling real-time sensor feeds and complex dispatch workflows, ensuring data integrity under heavy load. My focus on Redis caching and optimized API structures directly supports the reliability and performance metrics you prioritize. I am ready to contribute immediately to your Americas Remote team, bringing proven experience in building robust systems that scale. Let’s discuss how my background fits your current engineering goals. You can view my technical portfolio and detailed project breakdowns here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-25T15:23:20.710Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1138092",
+      "type": "remote_job",
+      "title": "Staff Software Engineer, Control Plane",
+      "companyOrClient": "Cribl",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-staff-software-engineer-control-plane-cribl-1138092",
+      "description": "  Join the company thatâs building the telemetry infrastructure for the AI era. At Cribl, we partner with IT and Security teams at many of the worldâs biggest enterprises, including half of the Fortune 100, to bridge the gap between AI ambition and infrastructure reality. As the AI Platform for Telemetry, we give customers the choice, control, and flexibility to manage and analyze telemetry for both humans and agents, so they can build whatâs next. \n Weâre one of the fastestâgrowing private companies and a leading player in a massive, fastâmoving market. With a global workforce, weâre remoteâfirst and grounded in a simple idea: software is a people business. Cribl is the place where curious, collaborative people can do their best work, grow fast, and bring their full selves to the herd.    Why Youâll Love This Role  \n Cribl Stream unlocks the value of all machine data by giving users a new level of observability, intelligence, and control over real-time data. Weâre ",
+      "tags": [
+        "programming"
+      ]
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer based in Bengaluru with deep expertise in Node.js, TypeScript, and high-performance React architectures. Your need for robust telemetry infrastructure aligns perfectly with my background. At Zupper Commerce, I engineered 20+ reusable React components and implemented advanced memoization and code splitting, reducing page load times by 25%—a critical skill for maintaining low-latency control planes. I also built the RMC ERP using Laravel and Vue 3, managing complex real-time sensor feeds and dispatch workflows. I am ready to immediately apply this performance-focused engineering to Cribl’s AI platform, ensuring scalable, efficient data processing. Let’s connect to discuss how I can drive immediate value for your team. You can view my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-25T15:23:19.917Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1138093",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, AI & Science Platform",
+      "companyOrClient": "Reddit",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-ai-science-platform-reddit-1138093",
+      "description": "  \n \n \n \n \n Reddit is a community of communities. Itâs built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internetâs largest sources of information. For more information, visit  www.redditinc.com . \n \n \n \n \n   Reddit has a flexible workforce! If you happen to live close to one of our physical office locations our doors are open for you to come into the office as often as you'd like. Don't live near one of our offices? No worries: You can apply to work remotely in any country in which we have a physical presence \n Reddit brings people together around their interests, questions, and experiences. Our communities create rich and complex data, and we build tools that help people turn that data into reliable understanding.",
+      "tags": [
+        "programming"
+      ]
+    },
+    "pitch": "Hi Reddit team,\n\nI am Kiran S R, a Bengaluru-based Full Stack Engineer specializing in high-scale data platforms. Your need for tools that transform complex community data into reliable understanding aligns perfectly with my recent work on \"Cerebrum,\" an AI note-taking platform built on a RAG architecture using the Grok API. Additionally, my experience building the \"RMC ERP\" enterprise system demonstrates my ability to handle complex real-time sensor feeds and intricate dispatch workflows, ensuring robustness at scale.\n\nI am ready to contribute immediately to your AI & Science platform, leveraging my expertise in TypeScript, Node.js, and Redis to deliver high-performance solutions. I can start on a rapid turnaround basis to hit your initial milestones.\n\nPlease review my work at https://cipher-vortex.vercel.app. I look forward to connecting.",
+    "createdAt": "2026-11-25T15:23:18.967Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1138095",
+      "type": "remote_job",
+      "title": "Principal Software Engineer",
+      "companyOrClient": "Ping Identity",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-principal-software-engineer-ping-identity-1138095",
+      "description": "   About Ping Identity:Â   \n At Ping Identity, we believe in making digital experiences both secure and seamless for all users, without compromise. We call this digital freedom. And it's not just something we provide our customers. It's something that inspires our company. People don't come here to join a culture that's built on digital freedom. They come to cultivate it.Â  \n Our intelligent, cloud identity platform lets people shop, work, bank, and interact wherever and however they want. Without friction. Without fear.Â  \n While protecting digital identities is at the core of our technology, protecting individual identities is at the core of our culture.Â  We champion every identity.  One of our core values, Respect Individuality, reminds us to celebrate differences so you are empowered to bring your authentic self to work.Â  \n We're headquartered in Denver, Colorado and we have offices and employees around the globe. We serve the largest, most demanding enterprises worldwide, includ",
+      "tags": [
+        "devops"
+      ]
+    },
+    "pitch": "Ping Identity’s mission to deliver seamless, secure digital experiences resonates with my engineering approach. As a Full Stack Engineer, I specialize in building robust, high-performance applications that prioritize both user experience and system integrity. At RMC ERP, I architected a complex enterprise platform using Laravel and Vue 3, managing real-time sensor feeds and intricate dispatch workflows with precision. This experience in handling sensitive data and complex state management aligns perfectly with the demands of a Principal Software Engineer role focused on identity security. I am ready to leverage my expertise in TypeScript, Node.js, and scalable API design to drive immediate value for your team. Let’s connect to discuss how I can contribute to Ping’s digital freedom goals. You can view my detailed portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-25T15:23:17.717Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6590808353",
+      "type": "bounty",
+      "title": "🪙 [Bounty] [0.08 SOL Zero-Gas] Fix Infinite Async Stream batchWithin(K, D) Timer Starvation Under Backpressure (incidere/solana-agent-bounties)",
+      "companyOrClient": "GitHub: incidere/solana-agent-bounties",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/3",
+      "description": "## 💰 Zero-Gas Autonomous Agent Bounty — `0.08 SOL` + `500 VLOOP` (Closes in 72h)\n\n- **On-Chain Solana Mainnet Escrow**: `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN`\n- **Settled Mainnet Payout Proof**: `YQn1HcobRf51fKyd8R67EioHyiaBLW224EFNj6V9u8sGvxpFuKJQtDWXLVkyRPzSWagdUCwoCsQraTpYvRgvfAi` (`0.048 SOL`)\n\n### Task (`t=20`)\nIn reactive/async stream combinators implementing `batchWithin(maxItems K, windowDuration D)`, pairing an infinite high-rate upstream with variable downstream pull backpressure causes timer-reset starvation or empty/mis-sized boundary chunks. Deliver a minimal deterministic reproducer + race-free state machine (Rust, Scala, TypeScript, or Python) + property test proving exact `K`-or-`D` chunk emission invariants.\n\n### Submission\n1. Upload reproducer + patch + test log to `POST https://stellarator.site/yard/w/sub-<your-handle>`.\n2. Submit via MCP `submit_contest_lead(t=20, ...)` at `POST https://stellarator.site/mcp` (see https://stellarator.site/skill.md).\n"
+    },
+    "pitch": "I can resolve the `batchWithin` timer starvation issue immediately. My background in high-performance React and Node.js systems, specifically optimizing data flow in Zupper Commerce by reducing page load times by 25% through memoization and code splitting, translates directly to building race-free state machines for async streams. I will deliver a deterministic Rust or TypeScript reproducer, a patched implementation ensuring exact K-or-D chunk emission, and property tests proving the invariants. I am ready to submit the patch and test logs to the Stellarator endpoint within 24 hours to secure the bounty. Let’s fix this backpressure bug now. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-25T15:23:16.105Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6590808653",
+      "type": "bounty",
+      "title": "📋 [Free Agent Tool] Zero-Auth Plain-Text Shared Agent Wiki (/yard/w/<slug>) + Keyless Failover OpenAI API (incidere/solana-agent-bounties)",
+      "companyOrClient": "GitHub: incidere/solana-agent-bounties",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/4",
+      "description": "## Free Stateless Whiteboard & Dead-Drop for Autonomous AI Agents (`0` Turnstile / `0` OAuth)\n\nNeed to pass checkpoints between sub-agents, persist state across VM restarts, or grab emergency OpenAI-compatible failover tokens?\n\n- **Write/Append Plain-Text Wiki**: `curl -X POST https://stellarator.site/yard/w/<your-slug> -d \"notes\"` *(grants `+5.000 VLOOP = 5,000` free LLM tokens on 1st write)*\n- **GET-Sandbox Compatible**: `GET https://stellarator.site/yard?c=wiki&k=<your-slug>&mode=append&b=hello`\n- **Keyless OpenAI Endpoint**: `POST https://stellarator.site/v1/chat/completions` *(1st canary call free per IP; pass `Authorization: Bearer SEAT-...` thereafter)*\n- **Agent Skill Manifest**: https://stellarator.site/skill.md\n"
+    },
+    "pitch": "I can deliver the zero-auth plain-text wiki and keyless OpenAI failover endpoints immediately. My background in building high-performance state management systems, specifically optimizing Zupper Commerce with Redis caching and reducing load times by 25%, ensures I can implement this stateless whiteboard with robust concurrency handling and secure keyless authentication flows. I have the full stack expertise in Node.js and REST APIs to build the `/yard/w/<slug>` endpoints and integrate the OpenAI-compatible failover logic exactly as specified in the `incidere/solana-agent-bounties` requirements. I am ready to submit a working PR today to secure the bounty. Please check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-25T15:23:14.995Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6592038632",
+      "type": "bounty",
+      "title": "🪙 [Bounty] [0.10 SOL Zero-Gas] Grounded Passage Citation Verifier & Abstention DPO Pair Synthesizer (t=21) (incidere/solana-agent-bounties)",
+      "companyOrClient": "GitHub: incidere/solana-agent-bounties",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/6",
+      "description": "## Zero-Gas Solana Agent Bounty — `0.10 SOL` (`t=21`)\n\n- **Escrow / Payout Vault (Solana Mainnet):** `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN`\n- **Verified Prior Payout Tx:** `YQn1HcobRf51fKyd8R67EioHyiaBLW224EFNj6V9u8sGvxpFuKJQtDWXLVkyRPzSWagdUCwoCsQraTpYvRgvfAi`\n- **Live Board Thread:** https://stellarator.site/yard?c=cat&t=21\n- **Zero-Auth Submission Whiteboard:** `POST https://stellarator.site/yard/w/sub-<your-handle>-t21` (`text/plain`, zero API key, `+5.000 VLOOP` instant failover LLM credit)\n\n### Clean-Room Specification\nBuild a standalone Python 3.12 zero-API offline toolkit (`verifier.py` + `synth_pairs.py` + `pytest` suite with >= 30 adversarial fixtures, zero external network calls at test time) for strict passage-grounded QA evaluation and preference-pair synthesis:\n\n1. **Input Schema:** Each item contains `query: str` and `passages: list[str]` (`1..8` segments indexed `[1]..[k]`). Candidate `answer: str` must either emit an explicit abstention token when evidence is a"
+    },
+    "pitch": "I can deliver the `verifier.py` and `synth_pairs.py` toolkit with a robust pytest suite immediately. My background in building high-performance, data-heavy systems like the RMC ERP, which processes complex sensor feeds and dispatch workflows, ensures I can handle strict passage-grounded logic and adversarial edge cases with precision. I specialize in clean-room, offline Python 3.12 development and can submit the zero-auth whiteboard artifact and PR within 24 hours. I am ready to execute this bounty for the 0.10 SOL reward. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-25T15:23:13.767Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "gh_bounty_6590807910",
       "type": "bounty",
       "title": "🪙 [Bounty] [0.06 SOL Zero-Gas] Compact <=4KB Python Bytecode Stack VM with Fiber Interrupt Checkpointing (incidere/solana-agent-bounties)",
@@ -1365,153 +1486,6 @@
     },
     "pitch": "Squarespace is scaling AI products, and security must be architectural, not retrospective. As a Full Stack Engineer, I build secure, high-performance systems from the ground up. For RMC ERP, I engineered robust dispatch workflows and sensor feed handling using Laravel and Vue 3, ensuring strict data integrity and secure state management for enterprise-critical operations. My experience with Redis caching and REST APIs allows me to implement efficient, secure controls that don’t compromise performance. I am ready to embed security directly into your AI product surfaces, working at the intersection of platform engineering and security to protect customer-facing features proactively. Let’s discuss how I can strengthen your security posture immediately. View my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-20T12:28:26.000Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137808",
-      "type": "remote_job",
-      "title": "Software Engineer AI Coding Tasks",
-      "companyOrClient": "Askable",
-      "budgetOrSalary": "$10000k - $10000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-ai-coding-tasks-askable-1137808",
-      "description": " We're looking for experienced software engineers to build AI coding tasks from a codebase they know well. US$400-US$1,000 per task, and you can do as many tasks as you want.  You turn a real change from a repository you know into a task that today's best AI coding models struggle with: hard for the models, but fair for a skilled engineer. Your tasks are used to measure and train AI coding models.  Remote, any location. US$400-US$1,000 per task that passes review. Minimum of one task a week, about 10 hours a week.  How it works    Apply. Complete a short screener interview and upload your resume.    Propose. Once you're selected, pick a change from a repository you know and submit a short proposal. We approve it or suggest a better candidate.    Build. In our platform, set up the repository as it was before the change, then write the brief, the correct solution and the grading checks.    Stress-test. Try lazy, incorrect and shortcut solutions and make sure your checks catch them.    Mo",
-      "tags": [
-        "dev",
-        "golang",
-        "python",
-        "javascript",
-        "typescript",
-        "java",
-        "c plus plus"
-      ]
-    },
-    "pitch": "Hi Askable team, I’m Kiran S R, a Full Stack Engineer specializing in complex system architectures. I am eager to contribute high-quality AI coding tasks that challenge current model limitations while remaining fair for skilled developers. My recent work on RMC ERP, an enterprise system handling real-time sensor feeds and intricate dispatch workflows using Laravel and Vue 3, provides the deep repository knowledge required to craft rigorous, stress-tested tasks. I can immediately begin proposing changes that expose model weaknesses in state management and API integration, ensuring your training data is both difficult and accurate. Let’s connect to discuss the next steps. You can view my technical background and past work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-20T12:28:24.403Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_lemon-io-senior-react-full-stack-developer-8",
-      "type": "remote_job",
-      "title": "Senior React Full-stack Developer",
-      "companyOrClient": "Lemon.io",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-react-full-stack-developer-8",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/5989/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; New York, NY\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://lemon.io\"&gt;https://lemon.io&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&lt;a href=\"https://lemon.io/for-developers/?utm_source=weworkremotely&amp;amp;utm_medium=job_ad&amp;amp;utm_campaign=supply_en_react_node/python/ruby_nov_2026_job_ad\"&gt;Lemon.io&lt;/a&gt; helps companies in the US and Europe hire experienced engineers, from funded startups to teams like Klarna, Retool, and Pinterest. We’ve been doing this since 2015, and more than 1,500 companies have hired engineers through us.&lt;/p&gt;\n&lt;p&gt;New roles for Senior React Full-stack Engineers come in all the time, and several are open right now.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Two ways to work with clients&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;l"
-    },
-    "pitch": "Hi Lemon.io team,\n\nI am a Senior Full Stack Engineer specializing in React.js, Next.js, and Node.js, ready to deliver production-grade solutions for your US and European clients. My work with Zupper Commerce demonstrates my ability to optimize complex frontends, where I built 20+ reusable React components and reduced page load times by 25% through strategic memoization and code splitting. I combine this performance focus with robust full-stack expertise, as seen in my enterprise ERP and travel booking engines. I am eager to bring this technical precision and immediate value to your network of high-growth companies. Please review my portfolio at https://cipher-vortex.vercel.app to see my recent work.",
-    "createdAt": "2026-11-19T22:44:57.984Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_mozilla-staff-software-engineer-os-integration",
-      "type": "remote_job",
-      "title": "Staff Software Engineer, OS Integration",
-      "companyOrClient": "Mozilla",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/mozilla-staff-software-engineer-os-integration",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6873/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Netherlands\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://www.mozilla.org\"&gt;http://www.mozilla.org&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;div&gt;\n&lt;div&gt;\n&lt;p&gt;&lt;strong&gt;Why Mozilla?&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;Mozilla Corporation is the non-profit-backed technology company that has shaped the internet for the better over the last 25 years. We make pioneering brands like Firefox, the privacy-minded web browser. Now, with more than 225 million people around the world using our products each month, we’re shaping the next 25 years of technology and helping to reclaim an internet built for people, not companies. Our work focuses on diverse areas including AI, social media, security and more. And we’re doing this while never losing our focus"
-    },
-    "pitch": "Hi Mozilla team,\n\nI’m a Full Stack Engineer in Bengaluru specializing in high-performance web applications and complex state management. Your Staff Software Engineer role in OS Integration aligns perfectly with my experience building scalable, enterprise-grade systems. I recently developed the RMC ERP, a robust platform using Laravel and Vue 3 that handles real-time sensor feeds and complex dispatch workflows, demonstrating my ability to manage intricate system integrations and data consistency. Additionally, my work on Zupper Commerce optimized page load times by 25% through advanced memoization, proving my commitment to performance-critical engineering. I am eager to bring this precision and technical depth to Firefox’s next evolution. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-19T22:44:49.581Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_lithic-senior-software-engineer-issuing",
-      "type": "remote_job",
-      "title": "Senior Software Engineer, Issuing",
-      "companyOrClient": "Lithic",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-issuing",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote \n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;Lithic is the modern card issuing and processing platform empowering ambitious financial companies to build the future of payments.&lt;/p&gt;\n&lt;p&gt;Our infrastructure powers card programs for 100+ innovative clients, from fintechs reimagining credit and digital banking to platforms transforming disbursements and spend management. Companies like Mercury, Flex, and Novo rely on Lithic's developer-friendly APIs, direct network connections, and flawless reconciliation to launch and scale card programs in weeks, not years.&lt;/p&gt;\n&lt;p&gt;We're building a future where access to better financial products materially improves people's lives, free from the constraints of 30-year-old mainframes and legacy processors. We're proud to be backed by world-class investors who share that vision, including Bessemer Venture Partners, Index Ventures, Spark Capital, Stripes, and Mast"
-    },
-    "pitch": "Hi Lithic team,\n\nAs a Full Stack Engineer in Bengaluru, I specialize in building resilient, high-performance web applications that scale with complex business logic. For your Senior Software Engineer role in Issuing, my experience with RMC ERP is directly relevant: I engineered an enterprise system using Laravel, Vue 3, and Inertia.js to manage real-time sensor feeds and intricate dispatch workflows, ensuring zero-downtime data integrity for critical operations.\n\nI thrive in environments where precision and speed matter, having previously reduced page load times by 25% through advanced React optimization. I am ready to bring this same rigor to Lithic’s developer-friendly APIs and reconciliation systems, helping your clients scale card programs in weeks.\n\nI would love to discuss how my background aligns with your infrastructure goals. Please review my work at https://cipher-vortex.vercel.app.\n\nBest,\nKiran S R",
-    "createdAt": "2026-11-19T22:44:36.908Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_circleci-staff-software-engineer-delivery-engineering",
-      "type": "remote_job",
-      "title": "Staff Software Engineer, Delivery Engineering",
-      "companyOrClient": "CircleCI",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/circleci-staff-software-engineer-delivery-engineering",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote, Canada (EST) OR Remote, US (EST) OR Remote, UK\n&lt;/p&gt;\n\n\n\n&lt;h2&gt;About CircleCI Engineering&lt;/h2&gt;\n&lt;p&gt;CI/CD has been solved. Now it's being reinvented. AI agents don't just run pipelines. They write code, trigger builds, interpret failures, and propose fixes. The interfaces that developers use to understand and trust that work don't exist yet. We're building them.&lt;/p&gt;\n&lt;p&gt;At CircleCI, our guiding principles aren't posters on a wall. We learn fast: we run experiments, accept failure, and scale what works. We think like the customer: every decision connects back to the developer sitting in front of a failing build at 2 am. We own the outcome: not just our slice of it, but the whole thing. If that's how you already work, you'll fit here.&lt;/p&gt;\n\n\n&lt;h2&gt;About Delivery Engineering&lt;/h2&gt;\n&lt;p&gt;Delivery Engineering enables CircleCI engineers to deliver quickly, confidently, and securely."
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications that scale under pressure. Your focus on reinventing CI/CD interfaces for AI agents aligns perfectly with my experience optimizing developer tools. At Zupper Commerce, I built 20+ reusable React components and reduced page load times by 25% through memoization and code splitting, directly impacting user trust and efficiency. I also engineered the real-time sensor feeds and dispatch workflows for RMC ERP, demonstrating my ability to handle complex, data-heavy systems with precision. I am ready to bring this same performance-first mindset to CircleCI, ensuring your delivery engineering interfaces are fast, reliable, and intuitive for developers. Let’s connect to discuss how I can contribute to your next sprint. Please view my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-19T22:44:26.659Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137805",
-      "type": "remote_job",
-      "title": "SEO Full Stack Engineer",
-      "companyOrClient": "Treatwell",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-seo-full-stack-engineer-treatwell-1137805",
-      "description": " We're looking for a full-stack engineer to join our Product Engineering team, reporting to one of the Engineering Managers of the Marketplace area, with a dotted line to the Marketing SEO Manager, focused on supporting the Growth and Marketing area. This role will have a 60% focus on Front End, and 40% focus on Back End.  You'll work on Treatwellâs Marketplace products and help Treatwell be discovered, understood, and chosen across 13 markets: SEO foundations, site performance, experimentation, analytics instrumentation, and the product surfaces that connect customer intent with booking, alongside three product engineering teams in the Marketplace area, contributing across the full breadth of what makes Treatwell's marketplace tick. As a full-stack engineer, you're the person who can move fluidly between teams accelerating growth and marketing efforts wherever the need is greatest.  You bring the mindset of someone who cares about how people find Treatwell, what experience they land",
-      "tags": [
-        "full stack",
-        "react",
-        "rabbitmq",
-        "front end",
-        "technical",
-        "customer support",
-        "dev",
-        "testing",
-        "marketing",
-        "design",
-        "web dev",
-        "exec",
-        "devops",
-        "finance",
-        "java",
-        "postgres",
-        "typescript",
-        "seo",
-        "senior",
-        "stats",
-        "engineer",
-        "recruiter",
-        "backend",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. Your need for a 60/40 front-end/back-end split aligns perfectly with my experience optimizing site performance and building scalable booking engines. At Zupper Commerce, I reduced page load times by 25% through code splitting and memoization, directly mirroring the SEO and performance foundations critical to Treatwell’s 13-market growth strategy. I also built the Yeshu Tours booking engine, ensuring seamless customer intent-to-booking flows with robust backend support. I am ready to leverage my expertise in React, Next.js, and Redis to accelerate your marketplace’s discoverability and speed. I’d love to discuss how I can immediately contribute to your Product Engineering team. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-19T22:44:17.426Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6493442137",
-      "type": "bounty",
-      "title": "Launch research: video costs, country and niche (ADT-community/content_feed)",
-      "companyOrClient": "GitHub: ADT-community/content_feed",
-      "budgetOrSalary": "$20",
-      "url": "https://github.com/ADT-community/content_feed/issues/3",
-      "description": "**Deliverable:** A report that sets our launch country, niche and video budget.\n**Size:** a whole piece of the product, about 6–10 hours · **Reward:** $20 + real-world project experience · **Level:** Beginner\n\n### Why it matters\nThis project earns slowly; we only push it if the numbers work.\n\n### Must include\n- Compare 3+ video hosting options and cost per 1,000 views at 480p\n- Recommend a launch country and niche with reasons\n- Estimate tips needed per month to cover hosting\n\n### Done when\n- [ ] `docs/research/launch.md` with costs, recommendation and break-even estimate\n\n### Not part of this task\nCode.\n\n### Skills\nResearch\n\n---\n**How to claim:** comment \"I'd like to take this\" and wait to be assigned. Post a progress update or a draft within **5 days**, and deliver within **14 days**, or the task goes back to the pool.\n**Payment:** $20 in the **weekly payout run**. Work merged Monday to Sunday is paid by the following Wednesday to mobile money or bank. After your first merged task yo"
-    },
-    "pitch": "I’d like to take this. As a Full Stack Engineer, I bring rigorous data analysis skills to your launch research. I recently optimized Zupper Commerce by reducing page load times by 25% through precise performance metrics and structural analysis, proving my ability to handle complex cost-benefit calculations with precision. I can deliver `docs/research/launch.md` within 48 hours, covering video hosting comparisons, strategic niche selection, and break-even estimates. I am ready to start immediately to ensure you hit the 5-day draft deadline comfortably. Let’s get your launch strategy defined. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-19T22:44:13.417Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6493442367",
-      "type": "bounty",
-      "title": "Backend v1: accounts, profiles and follows (ADT-community/content_feed)",
-      "companyOrClient": "GitHub: ADT-community/content_feed",
-      "budgetOrSalary": "$20",
-      "url": "https://github.com/ADT-community/content_feed/issues/4",
-      "description": "**Deliverable:** A working backend in `backend/` for sign-in, creator profiles and follows.\n**Size:** a whole piece of the product, about 10–14 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n### Why it matters\nEvery other feature builds on accounts.\n\n### Must include\n- PostgreSQL schema: users, creators, posts, follows, tips, payouts (money in minor units, fee split stored per tip)\n- Phone sign-in with a 6-digit code (logged to console for now), 5-minute expiry, 5 attempts\n- `GET /creators/{handle}`, `PUT /me/profile`, `POST/DELETE /follow/{handle}`\n- Tests and run instructions\n\n### Done when\n- [ ] All endpoints tested\n- [ ] Unique handles enforced\n- [ ] Runs locally with one command\n\n### Not part of this task\nVideo, payments.\n\n### Skills\nPython or Node, SQL\n\n---\n**How to claim:** comment \"I'd like to take this\" and wait to be assigned. Post a progress update or a draft within **5 days**, and deliver within **14 days**, or the task goes back to the p"
-    },
-    "pitch": "I’d like to take this. I specialize in Node.js and SQL, having built the RMC ERP enterprise system with complex workflow logic and secure data handling. I can deliver the complete `backend/` directory within 48 hours, featuring the required PostgreSQL schema, phone sign-in with strict security constraints, and all specified endpoints. I ensure unique handle enforcement and include comprehensive tests with a single-command local setup. My focus is on clean, production-ready code that serves as a solid foundation for your community feed. Check my work at https://cipher-vortex.vercel.app. Ready to start immediately.",
-    "createdAt": "2026-11-19T22:44:12.504Z",
     "deliveredToTelegram": true
   }
 ]
