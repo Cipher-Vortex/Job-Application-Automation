@@ -1,6 +1,104 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6590807910",
+      "type": "bounty",
+      "title": "🪙 [Bounty] [0.06 SOL Zero-Gas] Compact <=4KB Python Bytecode Stack VM with Fiber Interrupt Checkpointing (incidere/solana-agent-bounties)",
+      "companyOrClient": "GitHub: incidere/solana-agent-bounties",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/2",
+      "description": "## 💰 Zero-Gas Autonomous Agent Bounty — `0.06 SOL` + `500 VLOOP` (Closes in 72h)\n\n- **On-Chain Solana Mainnet Escrow**: `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN`\n- **Settled Mainnet Payout Proof**: `YQn1HcobRf51fKyd8R67EioHyiaBLW224EFNj6V9u8sGvxpFuKJQtDWXLVkyRPzSWagdUCwoCsQraTpYvRgvfAi` (`0.048 SOL`)\n\n### Task (`t=19`)\nImplement a single-file `<=4,096`-byte pure Python 3.12 stack-based bytecode VM supporting integer arithmetic, conditional relative jumps, `CALL`/`RET` frames, deterministic gas metering, and **lossless mid-fiber interrupt checkpoint/resume serialization** (restoring exact instruction pointer, call stack, and partial operand stack).\n\n### Submission\n1. Post your `<=4KB` implementation + `ops/sec` & checkpoint round-trip test output to:\n   `curl -X POST https://stellarator.site/yard/w/sub-<your-handle> --data-binary @vm_solution.py`\n2. Call MCP `submit_contest_lead(t=19, b=\"https://stellarator.site/yard/w/sub-<your-handle> + ops/sec metrics\", sol=\"<YOUR_SOL_PUBKEY>\")"
+    },
+    "pitch": "I am Kiran S R, a Full Stack Engineer ready to deliver the 4KB Python Bytecode VM immediately. My background in high-performance systems, specifically optimizing Zupper Commerce with memoization and code splitting, proves my ability to engineer lean, efficient code under strict constraints. I have the expertise to implement your stack-based VM with precise gas metering and lossless fiber interrupt checkpointing, ensuring exact restoration of instruction pointers and operand stacks. I can have the single-file implementation, ops/sec metrics, and submission ready for your review within hours. Let’s secure this bounty efficiently. View my technical portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-25T04:58:32.262Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6592038930",
+      "type": "bounty",
+      "title": "🪙 [Bounty] [0.12 SOL Zero-Gas] Offline Protocol Snapshot Derivative Stripper & Implied-FDV Ranker (t=22) (incidere/solana-agent-bounties)",
+      "companyOrClient": "GitHub: incidere/solana-agent-bounties",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/7",
+      "description": "## Zero-Gas Solana Agent Bounty — `0.12 SOL` (`t=22`)\n\n- **Escrow / Payout Vault (Solana Mainnet):** `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN`\n- **Verified Prior Payout Tx:** `YQn1HcobRf51fKyd8R67EioHyiaBLW224EFNj6V9u8sGvxpFuKJQtDWXLVkyRPzSWagdUCwoCsQraTpYvRgvfAi`\n- **Live Board Thread:** https://stellarator.site/yard?c=cat&t=22\n- **Zero-Auth Submission Whiteboard:** `POST https://stellarator.site/yard/w/sub-<your-handle>-t22` (`text/plain`, zero API key, `+5.000 VLOOP` instant failover LLM credit)\n\n### Clean-Room Specification\nBuild a deterministic zero-network **Node 22+ TypeScript CLI** (`ranker.ts`, zero external npm runtime dependencies, **byte-for-byte identical output across two runs**) that ingests a sealed offline JSON snapshot of `4,000+` multi-chain DeFi protocol records (`name`, `category`, `chains`, `tvl_usd`, `tvl_7d_delta`, `fees_30d_usd`, `revenue_30d_usd`, `symbol`, `parent_protocol`, `governance_links`, `description`) and emits `board.json` (`100..4000` ranked en"
+    },
+    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance TypeScript and Node.js systems. I can deliver the deterministic zero-network CLI ranker for your Solana bounty immediately. My experience building complex, data-heavy systems like the RMC ERP and optimizing React performance by 25% at Zupper Commerce ensures I can handle the 4,000+ record ingestion with strict byte-for-byte output consistency and zero external dependencies. I am ready to execute the clean-room specification and submit the PR for your 0.12 SOL bounty right now. Let’s get this shipped. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-25T04:58:31.489Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6592647654",
+      "type": "bounty",
+      "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Multi-Channel 2D Kinematics & Burst-Rhythm Anomaly Verifier (t=23) (incidere/solana-agent-bounties)",
+      "companyOrClient": "GitHub: incidere/solana-agent-bounties",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/8",
+      "description": "## Zero-Gas Solana Agent Bounty — `0.09 SOL` (`t=23`)\n\n- **Escrow Vault:** `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN`\n- **Live Board:** https://stellarator.site/yard?c=cat&t=23\n- **Zero-Auth Submission Whiteboard:** `POST https://stellarator.site/yard/w/sub-<handle>-t23`\n\n### Clean-Room Specification\nBuild a standalone zero-dependency Python 3.12 package (`kinematics_auth.py` + `synth_traces.py`, runnable end-to-end with one command) that decides whether an unlabeled session stream originates from an enrolled profile using only normalized 2D trajectory ticks `(ts_ms, x_norm, y_norm, act_kind)` and symbol-arrival bursts tagged by channel `(DIRECT_KEY, VIRTUAL_GRID, BATCH_INSERT)` including edit/revision bursts:\n1. Channel-invariant feature extraction + sequential scoring that makes zero assumption on hardware rate (works equally on rapid continuous trajectories + keystrokes AND low-velocity trajectories + batch-inserted text bursts).\n2. Synthetic benchmark generator covering `>= 2` "
+    },
+    "pitch": "Hi, I’m Kiran S R. I can deliver your zero-dependency Python 3.12 kinematics verifier immediately. My work on RMC ERP involved processing complex sensor feeds and real-time dispatch workflows, giving me the precise experience needed to handle channel-invariant feature extraction and sequential scoring for 2D trajectory ticks. I specialize in building robust, standalone systems that perform accurately across varying hardware rates, from rapid keystrokes to batch inserts. I am ready to execute the clean-room specification, including the synthetic benchmark generator, and submit the PR right away to secure the bounty. Let’s get this done today. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-25T04:58:30.630Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6592647941",
+      "type": "bounty",
+      "title": "🪙 [Bounty] [0.09 SOL Zero-Gas] Rust Non-Blocking Goodput Probe & Hysteresis Tier Controller (t=24) (incidere/solana-agent-bounties)",
+      "companyOrClient": "GitHub: incidere/solana-agent-bounties",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/9",
+      "description": "## Zero-Gas Solana Agent Bounty — `0.09 SOL` (`t=24`)\n\n- **Escrow Vault:** `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN`\n- **Live Board:** https://stellarator.site/yard?c=cat&t=24\n- **Zero-Auth Submission Whiteboard:** `POST https://stellarator.site/yard/w/sub-<handle>-t24`\n\n### Clean-Room Specification\nImplement a standalone Rust library (`probe_ctrl`, `tokio` + `std` only) for adaptive capture tier selection `{Ultra, High, Medium, Low}` driven by background link-goodput probes:\n1. State machine `{Idle, Probing, Healthy(Tier), Degraded(Tier), Offline}` enforcing strict non-reentrancy: probes never execute while `active_capture` is held, and overlapping triggers coalesce into the single in-flight probe without duplicate tasks.\n2. Bounded per-chunk deadlines + cancellation safety + EWMA `kbps` estimator with asymmetric up/down hysteresis thresholds and minimum dwell timer to prevent tier flapping; separate DNS/TCP failure (`Offline`) from slow uplink (`Degraded(Low)`).\n3. Deterministic"
+    },
+    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance backend systems. Your bounty requires a robust Rust state machine with strict non-reentrancy and EWMA hysteresis, a pattern I mastered while engineering the Redis-cached booking engine for Yeshu Tours & Travels. That project demanded precise state management under concurrent load to prevent race conditions, ensuring zero duplicate transactions. I can translate that architectural rigor to your `probe_ctrl` library, guaranteeing deterministic tier selection and safe task coalescing. I am ready to deliver the standalone Rust crate with full test coverage immediately. Let’s secure the 0.09 SOL bounty. View my work: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-25T04:58:29.850Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6593790066",
+      "type": "bounty",
+      "title": "[Bounty + Arena] [0.08 SOL + 600 VLOOP] MCB-01: 4-Shot Anime Character Consistency & I2V Motion-Comic Benchmark (t=25) (incidere/solana-agent-bounties)",
+      "companyOrClient": "GitHub: incidere/solana-agent-bounties",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/12",
+      "description": "## ARENA-MCB-01: 4-Shot Anime Character Consistency & Image-to-Video (I2V) Motion-Comic Benchmark\n\n- **Rewards**:\n  - **Tier A (4-Panel 16:9 Consistent Keyframe Strip)**: `600 VLOOP` compute credits + live Elo badge on `https://stellarator.site/yard?c=bid`\n  - **Tier B (4-Shot 16:9 Voiced Motion-Comic / I2V Clips)**: **`0.08 SOL` Zero-Gas Grand Prize** (manual finalist verification from funded escrow `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN`) + `1,000 VLOOP`\n- **Canonical Spec & Zero-Auth Submission Board**: `https://stellarator.site/yard/w/arena-mcb-01`\n\n### Locked Reference Assets (`bench/mcb-01/`)\n1. **Character Turnaround Sheet (`KESTREL`)**: ![ref_kestrel](https://raw.githubusercontent.com/incidere/solana-agent-bounties/main/bench/mcb-01/ref_kestrel.jpg)\n   - `sha256`: `f81d8b34c4645b4273e82c4fd742c8d75feabe79c4e965b62135ed05b4c24469`\n   - Identity invariants: asymmetric silver-white hair with dark teal inner streak (`#1E5659`), weathered dark-olive cropped flight jacket (`#4"
+    },
+    "pitch": "I am ready to execute ARENA-MCB-01 with immediate precision. As a Full Stack Engineer specializing in high-performance React and Node.js architectures, I bring the technical rigor required to deliver consistent 4-shot anime keyframes and I2V motion-comic benchmarks. My experience optimizing page loads by 25% at Zupper Commerce through memoization and code splitting ensures my submissions are efficient, compliant with the locked reference assets, and ready for instant verification. I can deliver a complete, spec-compliant submission for the 0.08 SOL Zero-Gas Grand Prize within 24 hours. Let’s secure this bounty and demonstrate end-to-end execution capability. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-25T04:58:29.061Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6594015147",
+      "type": "bounty",
+      "title": "🎮 [Bounty + Game Arena] [0.10 SOL + 800 VLOOP] TMA-01: 9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Game (t=26) (incidere/solana-agent-bounties)",
+      "companyOrClient": "GitHub: incidere/solana-agent-bounties",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/13",
+      "description": "## 🎮 ARENA-TMA-01: 9:16 One-Thumb Physics Ricochet & Merge Roguelite Mini-Game Benchmark\n\n- **Rewards**:\n  - **Pass Gate (`node verify_tma01.mjs <dir>` green)**: `800 VLOOP` compute credits + Arena Elo ranking (`https://stellarator.site/yard?c=bid`)\n  - **Best Addictive Playable Build (Manual Playtest Finalist)**: **`0.10 SOL` Zero-Gas Grand Prize** from funded escrow `6cXR7EkUHAn4VWjEkS4ywnxu7m5zZ26EsVaRLixnpvXN`\n- **Canonical Spec & Submission Page**: `https://stellarator.site/yard/w/arena-tma-01`\n- **Automated Headless Chromium CDP Verifier**: [`bench/tma-01/verify_tma01.mjs`](https://github.com/incidere/solana-agent-bounties/tree/main/bench/tma-01)\n\n### Engine-Agnostic Deliverable (`<= 256 KiB` Offline Bundle)\nUse **any** stack that runs offline in a standard browser with **zero** `http://` or `https://` URLs: pure WebGL2 / 2D Canvas, procedural shaders, Rust/Zig/C WASM, or a stripped Godot/micro-engine HTML5 build (`index.html` + optional `.js`/`.css`/`.wasm` totaling `<= 262,144"
+    },
+    "pitch": "I’m Kiran S R, a Full Stack Engineer specializing in high-performance frontend optimization and complex state management. For the TMA-01 Ricochet & Merge Roguelite, my experience with Zupper Commerce is directly relevant, where I reduced page load times by 25% through aggressive memoization and code splitting—critical for delivering a snappy, offline-capable bundle under the 256 KiB limit. I leverage React.js, TypeScript, and WebGL2 to build responsive, one-thumb-friendly interfaces that pass strict headless verification gates. I can deliver a polished, addictive playable build immediately, ensuring your automated verifier returns green while competing for the 0.10 SOL grand prize. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-25T04:58:28.178Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6597459734",
+      "type": "bounty",
+      "title": "Read AVAX supply per Avalanche's published method (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/98",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Corrected Nov 24, 2026.** Staked AVAX counts as circulating, the same as staked ETH and SOL on this site and the same as Avalanche's own published figure. Avalanche's Data API (`https://data-api.avax.network/v1/avax/supply`, documented as getAvaxSupply on docs.avax.network) reports `circulatingSupply` = `totalSupply` and lists `totalStaked` separately without subtracting it.\n\n**Done when:** the AVAX rule publishes total and circulating that match Avalanche's published method: P-chain supply minus burned AVAX (C-chain, P-chain and X-chain burns), with staked AVAX left in circulating. Read Avalanche's Data API, or the chain directly with the burns subtracted, and cross-check the two. Fail safe (no number) on errors, NaN, or circulating above total. Rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request. PR #37 was first on this task and may update to the"
+    },
+    "pitch": "Hi, I’m Kiran S R. I can deliver a robust, test-verified implementation for the AVAX supply rule, ensuring it strictly follows Avalanche’s published method (P-chain supply minus burns, with staked AVAX included in circulating). My experience building high-availability systems like Yeshu Tours & Travels, where I implemented Redis caching and complex data pipelines, ensures I can handle the API integration, cross-checking logic, and fail-safe error handling required for this bounty. I’m ready to claim and submit a clean, compliant PR within the 48-hour window. Let’s get this merged. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-25T04:58:27.327Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_airbnb-senior-software-engineer-partner-integrations",
       "type": "remote_job",
       "title": "Senior Software Engineer, Partner Integrations",
@@ -1414,104 +1512,6 @@
     },
     "pitch": "I’d like to take this. I specialize in Node.js and SQL, having built the RMC ERP enterprise system with complex workflow logic and secure data handling. I can deliver the complete `backend/` directory within 48 hours, featuring the required PostgreSQL schema, phone sign-in with strict security constraints, and all specified endpoints. I ensure unique handle enforcement and include comprehensive tests with a single-command local setup. My focus is on clean, production-ready code that serves as a solid foundation for your community feed. Check my work at https://cipher-vortex.vercel.app. Ready to start immediately.",
     "createdAt": "2026-11-19T22:44:12.504Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6493612039",
-      "type": "bounty",
-      "title": "Figma: design the owner dashboard (ADT-community/trans_sport)",
-      "companyOrClient": "GitHub: ADT-community/trans_sport",
-      "budgetOrSalary": "$20",
-      "url": "https://github.com/ADT-community/trans_sport/issues/15",
-      "description": "**Deliverable:** A complete Figma design for the owner dashboard, phone and laptop.\n**Size:** a whole piece of the product, about 8–12 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n### Why it matters\nOwners are the paying customers. If the dashboard shows them money they were losing, they pay.\n\n### Must include\n- **Fleet overview:** today's takings, vehicles active now, top and bottom vehicle\n- **Live map:** each vehicle with last-seen time; stale vehicles greyed\n- **Vehicle detail:** today's trips and fares, cash vs mobile money, hours on road, driver\n- **Drivers:** list with today's takings and hours per driver\n- **Earnings history:** 7 and 30 days, per vehicle\n- **Billing:** plan, price per vehicle, next payment (this is how we earn)\n- Phone (360 px) and laptop (1280 px) layouts\n\n### Done when\n- [ ] Figma file shared with view access, linked in the issue\n- [ ] Every screen listed above, at 360 px mobile width\n- [ ] Empty, loading and error states"
-    },
-    "pitch": "I can deliver the complete Figma owner dashboard for trans_sport today. With 8–12 hours of focused work, I will provide mobile (360px) and laptop (1280px) layouts covering fleet overview, live maps, vehicle details, driver stats, earnings history, and billing, including all required empty, loading, and error states. My experience building the RMC ERP with Vue 3 and complex dispatch workflows ensures I understand the critical intersection of real-time data visualization and operational efficiency. I am confident in delivering a high-fidelity, production-ready design that highlights revenue insights for owners. I am ready to start immediately to meet your deadline. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-19T22:44:11.657Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6493619126",
-      "type": "bounty",
-      "title": "Figma: design the voice assistant app (ADT-community/locallity_ai)",
-      "companyOrClient": "GitHub: ADT-community/locallity_ai",
-      "budgetOrSalary": "$20",
-      "url": "https://github.com/ADT-community/locallity_ai/issues/14",
-      "description": "**Deliverable:** A complete Figma design for the voice-first assistant.\n**Size:** a whole piece of the product, about 8–12 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n### Why it matters\nMany users have never used a voice assistant and may not read well. The first minute decides if they come back.\n\n### Must include\n- **First launch:** choose language, a 2-screen intro that is spoken aloud\n- **Talk:** big mic button, orb states (listening, thinking, speaking), live caption, interrupt\n- **Answer:** reply text with source shown ('From: Ministry of Agriculture guide'), replay, thumbs up/down\n- **Didn't understand / I don't know** states with a helpful next step\n- **Typed chat** and **language picker**\n- **For businesses:** a simple landing screen for the paid API (how we earn)\n\n### Done when\n- [ ] Figma file shared with view access, linked in the issue\n- [ ] Every screen listed above, at 360 px mobile width\n- [ ] Empty, loading and error states for eac"
-    },
-    "pitch": "I can deliver the complete Figma design for Locallity AI’s voice assistant within 24 hours. With a background in building complex React and Next.js interfaces, I focus on intuitive UX that drives retention. My work on Zupper Commerce, where I reduced page load times by 25% through optimized component architecture, demonstrates my ability to handle high-performance, state-driven UIs like the orb states and live captions you need. I will provide a 360px mobile-ready Figma file covering all required screens, including multi-language onboarding, error states, and the business API landing page. I am ready to start immediately and will link the view-access file directly to the issue upon completion. You can review my recent frontend work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-19T22:44:10.614Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6493627184",
-      "type": "bounty",
-      "title": "Figma: design the creator app (ADT-community/content_feed)",
-      "companyOrClient": "GitHub: ADT-community/content_feed",
-      "budgetOrSalary": "$20",
-      "url": "https://github.com/ADT-community/content_feed/issues/10",
-      "description": "**Deliverable:** A complete Figma design for the creator social app.\n**Size:** a whole piece of the product, about 10–14 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n### Why it matters\nCreators join for money. The path from sign-up to first payout must feel short and rewarding.\n\n### Must include\n- **Sign up** with phone and code; **creator profile** set-up\n- **Feed:** full-screen swipe video, like, comment, gift, share, follow\n- **Post:** record or pick video (60 s, 50 MB), caption, posting progress\n- **Gifts and tips sheet:** prices, what the creator receives, mobile money payment\n- **Earnings:** balance, this week's tips, supporters, cash out to mobile money\n- **Report** flow and a moderator review screen\n\n### Done when\n- [ ] Figma file shared with view access, linked in the issue\n- [ ] Every screen listed above, at 360 px mobile width\n- [ ] Empty, loading and error states for each screen\n- [ ] Components and colour/type styles set up so develope"
-    },
-    "pitch": "I can deliver a complete, developer-ready Figma design for your creator app within 24 hours. With experience building high-performance UIs like Zupper Commerce, where I optimized React components to reduce load times by 25%, I understand how to create clean, scalable design systems that translate seamlessly into code. I will provide all required screens at 360px width, including empty/loading states, and structured components for easy implementation. I’m ready to start immediately to ensure you receive a polished, production-ready design file linked to the issue. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-19T22:44:03.432Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6494300775",
-      "type": "bounty",
-      "title": "Implement the owner dashboard UI from the Figma (ADT-community/trans_sport)",
-      "companyOrClient": "GitHub: ADT-community/trans_sport",
-      "budgetOrSalary": "$20",
-      "url": "https://github.com/ADT-community/trans_sport/issues/24",
-      "description": "**Deliverable:** The owner views in `web/` rebuilt to match the Figma, on demo data.\n**Size:** a whole piece of the product, about 8–12 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n**Needs first:** Figma: design the owner dashboard\n\n### Why it matters\nThis is the screen owners pay for.\n\n### Must include\n- Every owner screen from the Figma, phone and laptop layouts\n- Uses the shared design tokens\n- Demo mode keeps working\n\n### Done when\n- [ ] All owner screens match the Figma\n- [ ] Screenshots in the pull request\n- [ ] No console errors\n\n### Not part of this task\nBackend connection (separate task).\n\n### Skills\nHTML, CSS, JavaScript\n\n---\n**How to claim:** comment \"I'd like to take this\" and wait to be assigned. Post a progress update or a draft within **5 days**, and deliver within **14 days**, or the task goes back to the pool.\n**Payment:** $20 in the **weekly payout run**. Work merged Monday to Sunday is paid by the following Wednesday to mobile mo"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to claim this bounty. I specialize in translating Figma designs into pixel-perfect, responsive interfaces using React and TypeScript. My work on the Yeshu Tours & Travels platform, where I built a complex admin dashboard with Redis caching and multi-device layouts, directly mirrors the owner dashboard requirements for trans_sport. I can deliver all owner screens, ensuring shared design tokens are applied and demo mode remains functional, with zero console errors. I commit to posting a draft within 5 days and delivering the final PR with screenshots well before the 14-day deadline. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-19T22:44:02.669Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6494308923",
-      "type": "bounty",
-      "title": "Sales kit: owner pitch and pricing page (ADT-community/trans_sport)",
-      "companyOrClient": "GitHub: ADT-community/trans_sport",
-      "budgetOrSalary": "$20",
-      "url": "https://github.com/ADT-community/trans_sport/issues/26",
-      "description": "**Deliverable:** Everything needed to sign the first paying owner group.\n**Size:** a whole piece of the product, about 6–10 hours · **Reward:** $20 + real-world project experience · **Level:** Beginner–intermediate\n\n**Needs first:** Market research (for the price)\n\n### Why it matters\nWe only work on projects that earn. This is the shortest path to the first payment.\n\n### Must include\n- A 6–8 slide pitch for owner groups: the problem in their words, the dashboard, price per vehicle, pilot offer\n- A one-page pricing page in `web/pricing.html` with a 'Start a pilot' contact form (Formspree or similar, no keys in the repo)\n- A one-paragraph WhatsApp message owners can forward to each other\n\n### Done when\n- [ ] Pitch deck (PDF) linked in the pull request\n- [ ] Pricing page live in the web app\n- [ ] Message text in `docs/sales/`\n\n### Not part of this task\nAds, paid marketing.\n\n### Skills\nSales, writing, simple design\n\n---\n**How to claim:** comment \"I'd like to take this\" and wait to be assig"
-    },
-    "pitch": "I’d like to take this. I specialize in converting technical capabilities into clear, sales-ready assets. For the 6-8 slide owner pitch, I will leverage my experience building the Yeshu Tours & Travels customer portal, ensuring the narrative resonates with your target market. I will also deliver the `web/pricing.html` page and the forwardable WhatsApp message, ensuring no API keys are exposed in the repo. I can have the complete PR ready for review within 24 hours, including the market research for pricing. Let’s get your first paying owner group signed. You can view my recent work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-19T22:44:01.506Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6494318237",
-      "type": "bounty",
-      "title": "Business API: keys, usage metering and docs (ADT-community/locallity_ai)",
-      "companyOrClient": "GitHub: ADT-community/locallity_ai",
-      "budgetOrSalary": "$20",
-      "url": "https://github.com/ADT-community/locallity_ai/issues/28",
-      "description": "**Deliverable:** A paid API that banks, telcos and agri-businesses can sign up for.\n**Size:** a whole piece of the product, about 10–14 hours · **Reward:** $20 + real-world project experience · **Level:** Intermediate\n\n**Needs first:** Core API v1\n\n### Why it matters\nThis is how the project earns: businesses pay to reach customers in their own language.\n\n### Must include\n- API keys per customer (create, revoke), sent in a header\n- Usage metering per key per month (requests, characters)\n- Rate limit per plan\n- Public API docs page (OpenAPI) with examples in curl, Python and JavaScript\n- A pricing section with 2–3 plans\n\n### Done when\n- [ ] Requests without a valid key are refused\n- [ ] Usage report per key\n- [ ] Docs page live\n- [ ] Tests\n\n### Not part of this task\nBilling and payments collection.\n\n### Skills\nPython, API design\n\n---\n**How to claim:** comment \"I'd like to take this\" and wait to be assigned. Post a progress update or a draft within **5 days**, and deliver within **14 days"
-    },
-    "pitch": "I’d like to take this.\n\nI specialize in building secure, scalable API infrastructure with Node.js, Express, and Redis, perfectly aligned with your Core API v1 requirements. My recent work on Yeshu Tours & Travels involved engineering a complex booking engine with robust Redis caching and integrated authentication, demonstrating my ability to handle high-traffic state management and performance optimization. I can deliver the full package—API key management, precise usage metering, plan-based rate limiting, and comprehensive OpenAPI documentation with curl, Python, and JavaScript examples—within your 14-day window.\n\nI am ready to start immediately and submit a progress update within 5 days. Please review my portfolio at https://cipher-vortex.vercel.app to see more of my engineering work.",
-    "createdAt": "2026-11-19T22:44:00.709Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_dremio-staff-software-engineer-query-planner-reflections",
-      "type": "remote_job",
-      "title": "Staff Software Engineer - Query Planner &amp; Reflections",
-      "companyOrClient": "Dremio",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-query-planner-reflections",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Portugal - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;h2&gt;&lt;strong&gt;Be Part of Building the Future&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;Dremio is the unified lakehouse platform for self-service analytics and AI, serving hundreds of global enterprises, including Maersk, Amazon, Regeneron, NetApp, and S&amp;amp;P Global. Customers rely on Dremio for cloud, hybrid, and on-prem lakehouses to power their data mesh, data warehouse migration, data virtualization, and unified data access use cases. Based on open source technologies, including Apache Iceberg and Apache Arrow, Dremio provides an open lakehouse architecture enabling the fastest time to insight and platform flexibility at a fraction of the cost.&amp;nbsp; Learn more at&amp;nbsp;&lt;a class=\"c-link\" href=\"http://www.dremio.com/\"&gt;www.dremio.com.&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;About the role&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Dremio's Q"
-    },
-    "pitch": "Hi Dremio team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance data applications. Your focus on Apache Iceberg and Arrow resonates with my experience optimizing complex data workflows. At RMC ERP, I engineered a Laravel and Vue 3 platform handling real-time sensor feeds and intricate dispatch logic, ensuring low-latency data processing for enterprise operations. Additionally, my work on Zupper Commerce involved reducing page load times by 25% through aggressive memoization and code splitting, proving my commitment to performance-driven engineering. I am eager to bring this technical rigor to your Query Planner and Reflections teams. I am available for an immediate remote start and ready to contribute to Dremio’s mission of accelerating time-to-insight. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-19T15:10:38.035Z",
     "deliveredToTelegram": true
   }
 ]
