@@ -1,6 +1,62 @@
 [
   {
     "opportunity": {
+      "id": "wwr_sumo-logic-principal-software-engineer",
+      "type": "remote_job",
+      "title": "Principal Software Engineer",
+      "companyOrClient": "Sumo Logic",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/sumo-logic-principal-software-engineer",
+      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/7054/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"http://www.sumologic.com\"&gt;http://www.sumologic.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;h2&gt;Principal Systems Architect&lt;/h2&gt;\n&lt;p&gt;Sumo Logic is a cloud-native SaaS data analytics platform that solves complex observability and security problems. Customers choose our product because it allows them to easily monitor, optimize, and secure their applications, systems, and infrastructures.&lt;/p&gt;\n&lt;p&gt;Sumo Logic is seeking a Principal Systems Architect to lead the design and evolution of world class platform architectures that support the company’s security and observability SaaS solutions. This role is responsible for driving technical strategy as an org-wide expert whose influence cuts across th"
+    },
+    "pitch": "Hi, I am Kiran S R, a Full Stack Engineer in Bengaluru specializing in high-performance web architectures. Your Principal Systems Architect role at Sumo Logic aligns perfectly with my experience building scalable, enterprise-grade systems. At RMC ERP, I architected a complex Laravel and Vue 3 platform using Inertia.js to manage real-time sensor feeds and intricate dispatch workflows, demonstrating my ability to design robust backend structures for demanding operational environments. I combine deep frontend optimization with solid backend engineering to ensure seamless, high-throughput SaaS experiences. I am eager to bring this architectural rigor to Sumo Logic’s observability platform. You can view my detailed project breakdowns and technical stack at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-25T23:44:10.448Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_metamask-senior-software-engineer-assets",
+      "type": "remote_job",
+      "title": "Senior Software Engineer: Assets",
+      "companyOrClient": "MetaMask",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/metamask-senior-software-engineer-assets",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; United States - Remote, EMEA - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Please note that we are unable to consider applications from candidates based in France, Italy, or Germany for this role.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;Money is moving onto the internet, and the shift has a name: &lt;strong&gt;Open Money. &lt;/strong&gt;This is money that is open, portable, agentic, and owned by you. MetaMask spent the last ten years building it; with 100M+ downloads, users in ~190 countries, and trillions in cumulative transaction volume, it's the most trusted self-custodial financial platform on the internet. Now we're building the operating system for your money: one place to hold, move, grow, and use anything you own.&amp;nbsp; Join a remote-first, global team rebuilding how money works: a problem that touches everyone, every day.&lt;/p&gt;&lt;/div&gt;&lt;h4&gt;What you'll do&lt;/"
+    },
+    "pitch": "MetaMask is building the operating system for Open Money, and I am ready to contribute to that mission immediately. As a Senior Full Stack Engineer, I specialize in high-scale, performance-critical systems. At Zupper Commerce, I engineered 20+ reusable React components and optimized page load times by 25% using memoization and code splitting—directly addressing the need for a seamless, high-performance user experience. My background in complex state management and API integration from RMC ERP ensures I can handle the nuanced data flows required for self-custodial financial platforms. I am eager to bring this precision to the Assets team. Please review my work at https://cipher-vortex.vercel.app to see how I can help you scale.",
+    "createdAt": "2026-11-25T23:44:09.682Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6607949814",
+      "type": "bounty",
+      "title": "Fix #1: 💎 Bounty $50: parse_duration drops the days (d) unit (madin-ll/bounty-pipeline-e2e-verify)",
+      "companyOrClient": "GitHub: madin-ll/bounty-pipeline-e2e-verify",
+      "budgetOrSalary": "$50",
+      "url": "https://github.com/madin-ll/bounty-pipeline-e2e-verify/pull/7",
+      "description": "Closes #1\n\n자동화 바운티 에이전트(v2)가 관련 코드를 분석하고 테스트를 통과한 초안(Draft) PR입니다.\n최종 검토 후 Ready for review로 전환해주세요."
+    },
+    "pitch": "I can fix the `parse_duration` bug to correctly handle the days unit and ensure the PR passes all tests. As a Full Stack Engineer proficient in TypeScript and Node.js, I specialize in rapid, precise debugging and clean code delivery. My work on Zupper Commerce demonstrates my ability to optimize performance and maintain high code quality, while my enterprise experience with RMC ERP ensures I understand complex data workflows. I am ready to deliver a verified, passing PR immediately to close #1. Please review my portfolio at https://cipher-vortex.vercel.app to see my recent work. I can start right now.",
+    "createdAt": "2026-11-25T23:44:08.900Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6609596770",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-25T17:05 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1444",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1620341\tStacker_Sports\t3\t1360\t2100\t14\t22.0\t232181\t4460\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,HOT,SELF_POST_OPP\tNFL Thanksgiving Pick 'em\n```"
+    },
+    "pitch": "Hi Stacker_Sports, I’m Kiran S R, a Full Stack Engineer ready to tackle your NFL Thanksgiving Pick 'em bounty immediately. My experience building high-performance, real-time systems makes me the ideal fit for your sn-monetization-runtime. For Zupper Commerce, I engineered 20+ reusable React components and cut page load times by 25% using advanced memoization and code splitting, ensuring the snappy, reliable user experience your platform demands. I specialize in rapid, clean delivery using Next.js and TypeScript, ready to submit a working PR right now to secure this hot bounty. Let’s get this shipped. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-25T23:44:08.111Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_beyondtrust-software-development-engineer",
       "type": "remote_job",
       "title": "Software Development Engineer",
@@ -1424,68 +1480,6 @@
     },
     "pitch": "MetaMask’s mission to build the operating system for money demands engineers who can architect complex, high-performance state management. As a Senior Full Stack Engineer, I bring deep expertise in React, TypeScript, and Node.js, with a focus on optimizing performance at scale. For instance, on the Zupper Commerce platform, I engineered 20+ reusable components and implemented strategic memoization and code splitting, reducing page load times by 25%. This experience directly translates to building responsive, efficient asset controllers and token detail pages for MetaMask clients. I am ready to contribute immediately to your remote-first team, ensuring robust, scalable solutions for digital assets. Let’s discuss how I can help you maintain your position as the most trusted self-custodial platform. Check my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-20T20:39:24.051Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137856",
-      "type": "remote_job",
-      "title": "Senior Software Engineer",
-      "companyOrClient": "Tebra",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-tebra-1137856",
-      "description": "  Tebra only initiates contact with candidates via email from an official Tebra email address (@ tebra.com , @ patientpop.com , or @ kareo.com ) or through our applicant tracking system, Greenhouse.Â We will only ask you to provide sensitive personal information through our official application portal â not via social media or text message. We do not conduct interviews via instant messaging.   About the Role \n We are seeking a talented and enthusiastic Senior Front-End Engineer to lead the development of our next-generation Practice Management platform. \n This role is pivotal in architecting and implementing a state-of-the-art user interface with a micro front-end architecture using React and MaterialUI.Â  \n You will be part of a dynamic team that thrives on innovation, collaboration, and a commitment to excellence. \n Your Area of Focus \n \n Modernize &amp; advance the front-end micro-front-end platform architecture used by Engineering teams across the organization. \n Design, implemen",
-      "tags": [
-        "programming"
-      ]
-    },
-    "pitch": "Hi Tebra Hiring Team,\n\nI am a Senior Full Stack Engineer in Bengaluru specializing in React.js, TypeScript, and scalable frontend architectures. Your need for a micro-front-end platform aligns perfectly with my experience at Zupper Commerce, where I engineered 20+ reusable React components and reduced page load times by 25% through advanced memoization and code splitting. I also built Yeshu Tours & Travels, a complex booking engine featuring Redis caching and real-time WhatsApp integration, demonstrating my ability to handle high-performance, stateful UIs. I am ready to lead your next-generation Practice Management interface with precision and speed. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-20T20:39:23.213Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137857",
-      "type": "remote_job",
-      "title": "Infrastructure Software Engineer",
-      "companyOrClient": "Dropbox",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-infrastructure-software-engineer-dropbox-1137857",
-      "description": " \n  Role Description  \n \n  As an Infrastructure Engineer, your role will be crucial in shaping and constructing the robust systems that not only support our current flagship products but also lay the groundwork for the next wave of engineering innovations. From optimizing user experiences across various projects to ensuring seamless scalability and data integrity, you'll be at the forefront of shaping the technological backbone of our platform.  \n  Collaborating closely with cross-functional teams, you'll leverage your expertise to tackle audacious challenges and push the boundaries of what's possible. Your contributions will directly impact millions of users, as every line of code you write furthers our mission to revolutionize the way people work and collaborate.  \n  Join us in redefining the future, where your passion for building scalable, reliable systems will drive meaningful change on a global scale.  \n   Our Engineering Career Framework is     viewable by anyone outside the com",
-      "tags": [
-        "programming"
-      ]
-    },
-    "pitch": "Hi Dropbox Team,\n\nI am Kiran S R, a Full Stack Engineer specializing in scalable backend systems and performance optimization. Your search for an Infrastructure Engineer aligns perfectly with my experience building robust, high-availability platforms. At RMC ERP, I engineered enterprise-grade workflows using Laravel and Vue 3, managing complex sensor feeds and dispatch logic that demand strict data integrity and seamless scalability. Additionally, I optimized Zupper Commerce by reducing page load times by 25% through advanced memoization and code splitting, proving my ability to enhance user experience at scale. I am eager to bring this same focus on reliability and performance to Dropbox’s engineering backbone. You can review my technical depth and project case studies at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-20T20:39:22.469Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_postscript-senior-fullstack-engineer-customer-context",
-      "type": "remote_job",
-      "title": "Senior Fullstack Engineer, Customer Context",
-      "companyOrClient": "Postscript",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/postscript-senior-fullstack-engineer-customer-context",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;Postscript is the AI messaging platform trusted by 20,000+ Shopify brands — including Brooklinen, Ruggable, True Classic, and Dr. Squatch.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;With a mission to make SMS your number one revenue driving channel, we built the best-in-class SMS marketing platform and launched revenue-driving AI features not available on any other platform. And we're just getting started.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Backed by Greylock and Y Combinator, fully remote since 2018.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;We are looking for a polyglot &lt;strong&gt;Senior Fullstack Engineer&lt;/strong&gt; to join the &lt;strong&gt;Customer Context&amp;nbsp; &lt;/strong&gt;team. You’ll help build and scale the foundational services, APIs, and pipelines that power the Postscript product. This role blends strong backend engineering skills with a deep appreciation for data intensive s"
-    },
-    "pitch": "Hi Postscript team, I’m Kiran S R, a Senior Full Stack Engineer specializing in data-intensive backend systems and scalable frontend architectures. Your need for foundational services aligns perfectly with my experience building the RMC ERP, where I engineered complex dispatch workflows and real-time sensor feeds using Laravel, Vue 3, and Redis. I excel at optimizing performance, having reduced page load times by 25% through strategic code splitting in React. I am ready to immediately contribute to scaling Postscript’s customer context pipelines, leveraging my expertise in REST APIs and high-throughput data processing to drive revenue for your 20,000+ Shopify brands. Let’s connect to discuss how I can accelerate your product roadmap. View my full portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-20T12:28:26.829Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_squarespace-senior-security-engineer",
-      "type": "remote_job",
-      "title": "Senior Security Engineer",
-      "companyOrClient": "Squarespace",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/squarespace-senior-security-engineer",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; New York City; Remote\n&lt;/p&gt;\n\n&lt;p&gt;&lt;span&gt;Squarespace is looking for a Software Engineer, Product Security to build security controls directly into our AI products as they grow. Our Product Security team ensures that customer-facing surfaces across Squarespace's expanding AI portfolio are protected from the ground up, not patched after the fact. We are a focused, embedded team that works at the intersection of platform engineering and security. You will work closely with AI product, platform engineering, and infrastructure teams. This is an opportunity to shape how security is practiced inside a rapidly scaling set of AI products at a critical point in their development. You will work remotely and report to the Security Engineering Manager.&lt;br&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;h2&gt;&lt;span&gt;You'll Get To...&lt;/span&gt;&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;Design and implement security controls for customer-facing AI "
-    },
-    "pitch": "Squarespace is scaling AI products, and security must be architectural, not retrospective. As a Full Stack Engineer, I build secure, high-performance systems from the ground up. For RMC ERP, I engineered robust dispatch workflows and sensor feed handling using Laravel and Vue 3, ensuring strict data integrity and secure state management for enterprise-critical operations. My experience with Redis caching and REST APIs allows me to implement efficient, secure controls that don’t compromise performance. I am ready to embed security directly into your AI product surfaces, working at the intersection of platform engineering and security to protect customer-facing features proactively. Let’s discuss how I can strengthen your security posture immediately. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-20T12:28:26.000Z",
     "deliveredToTelegram": true
   }
 ]
