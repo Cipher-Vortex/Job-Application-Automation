@@ -1,6 +1,160 @@
 [
   {
     "opportunity": {
+      "id": "wwr_abnormal-software-engineer-i-backend",
+      "type": "remote_job",
+      "title": "Software Engineer I - Backend",
+      "companyOrClient": "Abnormal",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/abnormal-software-engineer-i-backend",
+      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/7076/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - Singapore\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://abnormal.ai\"&gt;https://abnormal.ai&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;What you will do&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Abnormal AI is looking for a growth-oriented &lt;strong&gt;Backend Software Engineer &lt;/strong&gt;to join our &lt;strong&gt;Critical Email Products&lt;/strong&gt; team in &lt;strong&gt;Singapore&lt;/strong&gt;. The team builds email security products that help customers protect sensitive information. One of your first opportunities will be to work on rule-based outbound data loss prevention (DLP), which helps organisations enforce policies on what sensitive information can be sent by email.&lt;/p&gt;\n&lt;p&gt;You’ll build backend features and integrations, i"
+    },
+    "pitch": "Hi Abnormal AI team,\n\nI’m Kiran S R, a Full Stack Engineer in Bengaluru specializing in building robust backend systems for high-stakes environments. Your need for a Backend Engineer to drive rule-based DLP and secure email integrations aligns perfectly with my experience. I recently architected the RMC ERP, a complex enterprise platform using Laravel and Vue 3 to manage sensitive sensor feeds and strict dispatch workflows, ensuring data integrity and operational security. Additionally, I optimized Zupper Commerce by reducing load times 25% through advanced code splitting, proving my ability to deliver performant, scalable solutions. I am ready to immediately contribute to your Critical Email Products team, leveraging my expertise in secure API development and system reliability.\n\nLet’s connect to discuss how I can support your DLP initiatives. You can view my technical work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-26T06:40:23.681Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_gusto-inc-staff-software-engineer-retirement-financial-platform",
+      "type": "remote_job",
+      "title": "Staff Software Engineer, Retirement Financial Platform",
+      "companyOrClient": "Gusto, Inc.",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/gusto-inc-staff-software-engineer-retirement-financial-platform",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Boston, MA - Remote; Denver, CO - Hybrid; Los Angeles, CA - Remote; New York, NY - Hybrid; San Diego, CA - Remote; San Francisco, CA - Hybrid; Seattle, WA - Remote; Washington, DC - Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;hr&gt;\n&lt;p&gt;&lt;strong&gt;About Gusto&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;At Gusto, we're on a mission to grow the small business economy. We handle the hard stuff — payroll, health insurance, 401(k)s, and HR — so owners can focus on their craft and their customers. With teams in Denver, San Francisco, and New York, we support more than 500,000 small businesses nationwide and are building a workplace that reflects the people we serve.&lt;/p&gt;\n&lt;p&gt;All full-time employees receive competitive base pay, benefits, and equity (RSUs) — because everyone who helps build Gusto should share in its success. Offer amounts are determined by role, level, and location. Lear"
+    },
+    "pitch": "Hi Gusto Talent Team,\n\nI am a Full Stack Engineer specializing in building scalable, high-performance platforms with React, TypeScript, and Node.js. I understand the critical need for robust, secure infrastructure when handling sensitive financial data for small businesses. At Zupper Commerce, I engineered 20+ reusable React components and implemented advanced memoization and code splitting, reducing page load times by 25%—a direct application of the performance optimization needed for a high-traffic retirement platform. I am ready to leverage my experience in complex state management and API integration to deliver immediate value to your engineering team.\n\nPlease review my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-26T06:40:15.390Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_customer-io-senior-software-engineer-backend-platform",
+      "type": "remote_job",
+      "title": "Senior Software Engineer - Backend Platform",
+      "companyOrClient": "Customer.io",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-backend-platform",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Americas Remote\n&lt;/p&gt;\n\n&lt;p&gt;Hi, I'm Manu, Engineering Manager at &lt;a href=\"http://customer.io/\"&gt;Customer.io&lt;/a&gt;. We're looking for experienced backend engineers who want to build and own the infrastructure that powers one of the most data-intensive platforms in marketing automation — systems that process millions of events per second, orchestrate complex workflows at scale, and keep everything running reliably for thousands of customers worldwide.&lt;/p&gt;\n&lt;p&gt;You'll work on the Platform team, tackling hard distributed systems problems: designing for fault tolerance, scaling services under real production pressure, and building the foundational layers that every other team at &lt;a href=\"http://Customer.io\"&gt;Customer.io&lt;/a&gt; depends on. This isn't just maintenance work — you'll shape the architecture of systems that need to be both highly available and constantly evolving.&lt;/p&gt;\n&lt;p&gt;If yo"
+    },
+    "pitch": "Hi Manu, I’m Kiran S R, a Bengaluru-based Full Stack Engineer specializing in high-performance backend systems. Your need for fault-tolerant, scalable infrastructure aligns perfectly with my work on RMC ERP, where I architected a Laravel and Vue 3 enterprise platform handling real-time sensor feeds and complex dispatch workflows under production pressure. I have deep experience with Redis caching and REST API optimization, proven by reducing page load times by 25% in previous roles. I am ready to tackle the distributed systems challenges at Customer.io and contribute to the platform’s reliability from day one. You can review my technical depth and project outcomes here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-26T06:40:07.071Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "wwr_customer-io-senior-software-engineer-product-ai",
+      "type": "remote_job",
+      "title": "Senior Software Engineer, Product/AI",
+      "companyOrClient": "Customer.io",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-product-ai",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Americas Remote\n&lt;/p&gt;\n\n&lt;p&gt;Hi, I’m Paul, VP of Engineering at &lt;a href=\"http://customer.io/\"&gt;Customer.io&lt;/a&gt;. We’re looking for curious, driven Fullstack (Product) Engineers who want to own big things and delight our customers. You’ll design, build, and ship the core product experiences our customers rely on - while helping the team push boundaries on what great communication tools can do.&lt;/p&gt;\n&lt;h3&gt;About&amp;nbsp;&lt;a href=\"http://customer.io\"&gt;Customer.io&lt;/a&gt;&lt;/h3&gt;\n&lt;p&gt;Over 9,000 companies - from scrappy startups to global brands - use our platform to send billions of emails, push notifications, in-app messages, and SMS every day. Customer.io powers automated communication that people actually want to receive.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;We help teams send smarter, more relevant messages using real-time behavioral data. Under the hood: Go, React, Ember and AI help us ship fast "
+    },
+    "pitch": "Hi Paul, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. Your need for engineers who can own core product experiences resonates with my work at Zupper Commerce, where I engineered 20+ reusable React components and optimized page load times by 25% through strategic memoization and code splitting. I bring this same performance-first mindset to complex, data-heavy interfaces, ensuring users experience seamless, real-time interactions. I am eager to apply my expertise in building scalable, delightful communication tools to Customer.io’s mission. I’d love to discuss how I can immediately contribute to your engineering team. Please review my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-26T06:39:59.870Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6617499137",
+      "type": "bounty",
+      "title": "Supply rule for LayerZero (ZRO) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/107",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\nLayerZero (ZRO, site id `layerzero`) trades on TraderMarketCap but has no sourced supply, so it has no rank or market cap.\n\n**Done when:** a rule for `layerzero` publishes total supply read from the chain (its token contracts) and circulating supply = total minus wallets or contracts that are provably not circulating (team, treasury, vesting or locks), each one listed with a reason and a primary source (the project's own docs, an official announcement, or labeled on-chain data). Never overstate circulating: if a lock can't be proven, publish the total and withhold circulating. Fail safe (no number) on errors or NaN. Rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request.\n"
+    },
+    "pitch": "Hi, I’m Kiran S R. I can deliver the `layerzero` supply rule and tests within your 48-hour window. My work on RMC ERP required rigorous data validation and workflow logic for real-time sensor feeds, proving I handle complex state management and fail-safe error handling with precision. I will implement the on-chain total supply read, accurately filter non-circulating wallets using primary sources, and ensure NaN protection as specified. I prioritize strict adherence to documentation and clean, testable code. I am ready to claim this bounty and open a high-quality PR immediately. Please review my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-26T06:39:59.015Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6617499507",
+      "type": "bounty",
+      "title": "Supply rule for Official Trump (TRUMP) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/108",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\nOfficial Trump (TRUMP, site id `official-trump`) trades on TraderMarketCap but has no sourced supply, so it has no rank or market cap.\n\n**Done when:** a rule for `official-trump` publishes total supply read from the chain (Solana) and circulating supply = total minus wallets or contracts that are provably not circulating (team, treasury, vesting or locks), each one listed with a reason and a primary source (the project's own docs, an official announcement, or labeled on-chain data). Never overstate circulating: if a lock can't be proven, publish the total and withhold circulating. Fail safe (no number) on errors or NaN. Rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request.\n"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle the `official-trump` supply rule bounty. With deep expertise in Node.js, TypeScript, and REST APIs, I can rapidly implement the required Solana chain integration to accurately calculate total and circulating supply. My work on the \"Zupper Commerce\" platform, where I optimized complex data handling and reduced load times by 25%, demonstrates my ability to build robust, fail-safe systems that handle real-time data with precision. I am prepared to open a pull request immediately, ensuring strict adherence to your SKILL.md guidelines and providing the necessary rule plus test suite. Let’s deliver this high-priority update today. You can view my recent work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-26T06:39:58.202Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6617499778",
+      "type": "bounty",
+      "title": "Supply rule for Monad (MON) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/109",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\nMonad (MON, site id `monad`) trades on TraderMarketCap but has no sourced supply, so it has no rank or market cap.\n\n**Done when:** a rule for `monad` publishes total supply read from the chain (its own chain) and circulating supply = total minus wallets or contracts that are provably not circulating (team, treasury, vesting or locks), each one listed with a reason and a primary source (the project's own docs, an official announcement, or labeled on-chain data). Never overstate circulating: if a lock can't be proven, publish the total and withhold circulating. Fail safe (no number) on errors or NaN. Rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request.\n"
+    },
+    "pitch": "I can deliver the Monad (MON) supply rule and tests immediately. My background in high-stakes data pipelines, specifically the RMC ERP with real-time sensor feeds and complex dispatch workflows, ensures I can accurately source on-chain data and implement strict fail-safe logic to prevent NaN errors. I understand the critical need for provable circulating supply calculations and will adhere strictly to your SKILL.md guidelines. I am ready to claim this bounty and open a pull request within the 48-hour window, ensuring a clean merge. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-26T06:39:56.905Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6617500180",
+      "type": "bounty",
+      "title": "Supply rule for Aster (ASTER) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/110",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\nAster (ASTER, site id `aster`) trades on TraderMarketCap but has no sourced supply, so it has no rank or market cap.\n\n**Done when:** a rule for `aster` publishes total supply read from the chain (BNB Chain) and circulating supply = total minus wallets or contracts that are provably not circulating (team, treasury, vesting or locks), each one listed with a reason and a primary source (the project's own docs, an official announcement, or labeled on-chain data). Never overstate circulating: if a lock can't be proven, publish the total and withhold circulating. Fail safe (no number) on errors or NaN. Rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request.\n"
+    },
+    "pitch": "I can deliver the `aster` supply rule immediately, ensuring strict adherence to your fail-safe and source verification requirements. My background in building complex data pipelines for RMC ERP, including real-time sensor feeds and dispatch workflows, translates directly to robust on-chain data extraction and state management. I specialize in TypeScript and React, guaranteeing clean, testable code that handles edge cases like NaN errors without breaking the UI. I am ready to claim this bounty and submit a pull request within 24 hours, providing total supply from BNB Chain with precisely documented circulating exclusions. Let’s get this merged. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-26T06:39:56.075Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6617500608",
+      "type": "bounty",
+      "title": "Supply rule for Plasma (XPL) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/111",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\nPlasma (XPL, site id `plasma`) trades on TraderMarketCap but has no sourced supply, so it has no rank or market cap.\n\n**Done when:** a rule for `plasma` publishes total supply read from the chain (its own chain) and circulating supply = total minus wallets or contracts that are provably not circulating (team, treasury, vesting or locks), each one listed with a reason and a primary source (the project's own docs, an official announcement, or labeled on-chain data). Never overstate circulating: if a lock can't be proven, publish the total and withhold circulating. Fail safe (no number) on errors or NaN. Rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request.\n"
+    },
+    "pitch": "I am ready to claim this bounty and deliver a merged PR for the Plasma (XPL) supply rule within 48 hours. My background in building high-integrity data pipelines, specifically the RMC ERP where I managed complex sensor feeds and dispatch workflows, ensures I can rigorously implement the required chain-reading logic and fail-safe error handling. I will strictly adhere to the \"never overstate circulating\" constraint, documenting every exclusion with primary sources. I prioritize accuracy and clean code, ensuring the rule passes all tests and aligns with SKILL.md. I can open the pull request immediately upon claim. View my technical work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-26T06:39:54.783Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6617501033",
+      "type": "bounty",
+      "title": "Supply rule for MANTRA (MANTRA) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/112",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\nMANTRA (MANTRA, site id `mantra`) trades on TraderMarketCap but has no sourced supply, so it has no rank or market cap.\n\n**Done when:** a rule for `mantra` publishes total supply read from the chain (its own chain) and circulating supply = total minus wallets or contracts that are provably not circulating (team, treasury, vesting or locks), each one listed with a reason and a primary source (the project's own docs, an official announcement, or labeled on-chain data). Never overstate circulating: if a lock can't be proven, publish the total and withhold circulating. Fail safe (no number) on errors or NaN. Rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request.\n"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in robust data pipelines and API integration using Node.js, TypeScript, and Redis. I can deliver the MANTRA supply rule immediately, ensuring strict compliance with your \"fail safe\" requirements and accurate on-chain data sourcing.\n\nMy experience building the RMC ERP, which processes complex sensor feeds and dispatch workflows, proves my ability to handle intricate data logic and edge cases reliably. I will implement the rule with comprehensive tests and a clear breakdown of non-circulating wallets, guaranteeing no overstated circulating supply. I am ready to open a PR within the 48-hour window.\n\nLet’s get this bounty merged. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-26T06:39:53.787Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6617501337",
+      "type": "bounty",
+      "title": "Supply rule for Blur (BLUR) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/113",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\nBlur (BLUR, site id `blur`) trades on TraderMarketCap but has no sourced supply, so it has no rank or market cap.\n\n**Done when:** a rule for `blur` publishes total supply read from the chain (Ethereum) and circulating supply = total minus wallets or contracts that are provably not circulating (team, treasury, vesting or locks), each one listed with a reason and a primary source (the project's own docs, an official announcement, or labeled on-chain data). Never overstate circulating: if a lock can't be proven, publish the total and withhold circulating. Fail safe (no number) on errors or NaN. Rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request.\n"
+    },
+    "pitch": "I can deliver the `blur` supply rule immediately. With deep experience in Node.js, TypeScript, and complex data pipelines like RMC ERP, I will implement a robust rule that reads on-chain Ethereum data to calculate total and circulating supply. I strictly adhere to fail-safe protocols, ensuring NaN or unproven locks result in withheld circulating figures rather than inaccurate data. I will provide the complete rule, comprehensive tests, and a pull request within 24 hours of claim. Let's get this merged and paid. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-26T06:39:52.204Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_sumo-logic-principal-software-engineer",
       "type": "remote_job",
       "title": "Principal Software Engineer",
@@ -1273,213 +1427,6 @@
     },
     "pitch": "I can deliver the Bitget exchange reader for tradermarketcap-open immediately. With deep expertise in Node.js, Express, and REST APIs, I have built robust data ingestion systems like the RMC ERP, handling complex sensor feeds and real-time workflows. I will implement the free public endpoint integration, ensure accurate spot ticker parsing, and include the required tests to meet your \"Done when\" criteria. I am ready to claim this bounty and open the pull request within the 48-hour window, guaranteeing a clean, merged solution. Check my full stack credentials and recent work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-21T09:22:19.082Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137865",
-      "type": "remote_job",
-      "title": "Senior Product Engineer",
-      "companyOrClient": "Arbor Education",
-      "budgetOrSalary": "$70000k - $80000k",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-product-engineer-arbor-education-1137865",
-      "description": " Location: Remote - UK  Salary: Â£70,000-80,000   About us At Arbor, weâre on a mission to transform the way schools work for the better.Â   We believe in a future of work in schools where being challenged doesnât mean being burnt out and overworked. Where data guides progress without overwhelming staff. And where everyone working in a school is reminded why they got into education every day.Â   Our MIS and school management tools are already making a difference in over 7,000 schools and trusts. Giving time and power back to staff, turning data into clear, actionable insights, and supporting happier working days.Â   At the heart of our brand is a recognition that the challenges schools face today arenât just about efficiency, outputs and productivity - but about creating happier working lives for the people who drive education everyday: the staff. We want to make schools more joyful places to work, as well as learn.Â About the role  We are looking for an experienced and driven Se",
-      "tags": [
-        "design",
-        "react",
-        "backend",
-        "education",
-        "consulting",
-        "docker",
-        "customer support",
-        "dev",
-        "testing",
-        "scrum",
-        "exec",
-        "quality assurance",
-        "finance",
-        "cloud",
-        "php",
-        "senior",
-        "sys admin",
-        "medical",
-        "engineer",
-        "recruiter",
-        "digital nomad"
-      ]
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React, TypeScript, and Node.js. I see Arbor’s mission to reduce school staff burnout through data-driven insights resonates with my experience building complex, high-volume systems. At RMC ERP, I engineered an enterprise platform using Laravel and Vue 3 to manage intricate dispatch workflows and real-time sensor feeds, directly improving operational efficiency for large-scale operations. I bring this same precision to frontend performance, having reduced page load times by 25% through advanced React optimization. I am ready to leverage this expertise to build scalable, user-centric tools that empower educators. Please review my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-21T01:57:52.331Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137871",
-      "type": "remote_job",
-      "title": "Senior Software Engineer",
-      "companyOrClient": "Clover Health",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-clover-health-1137871",
-      "description": " At Counterpart Health, we are transforming healthcare and improving patient care with our innovative primary care tool, Counterpart Assistant. By supporting Primary Care Physicians (PCPs), we are able to deliver improved outcomes to our patients at a lower cost through early diagnosis and longitudinal care management of chronic conditions.Â  \n We are looking for a Senior Software Engineer with expertise in full-stack engineering. In this role, you will collaborate with developers, data scientists, healthcare professionals, and product managers to build tools that improve real-world health outcomes. \n  As a Senior Software Engineer, you will:  \n \n Simplify the complexities of healthcare by building scalable, efficient systems that enhance human efforts. \n Stay up-to-date with new tools and technologies to solve challenges and advance our goals. \n Help define and maintain development practices that enable fast iteration while ensuring quality, including writing tests and documenting key",
-      "tags": [
-        "programming"
-      ]
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in scalable React, TypeScript, and Node.js architectures. I noticed Counterpart Health is seeking a Senior Engineer to build efficient systems for primary care. My experience aligns perfectly with your need for high-performance, maintainable code. For Zupper Commerce, I engineered 20+ reusable React components and implemented memoization and code splitting, reducing page load times by 25% to enhance user experience and operational efficiency. I bring this same focus to healthcare, ensuring robust, fast-iterating tools that support PCPs and improve patient outcomes. I am ready to contribute immediately to your development practices and system scalability. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-21T01:57:51.576Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_bitwarden-senior-software-engineer-self-host-orchestration",
-      "type": "remote_job",
-      "title": "Senior Software Engineer, Self-Host Orchestration",
-      "companyOrClient": "Bitwarden",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/bitwarden-senior-software-engineer-self-host-orchestration",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6903/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote, U.S.\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://bitwarden.com\"&gt;https://bitwarden.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Bitwarden empowers enterprises, developers, and individuals to securely store and share sensitive data. With a transparent, open-source approach to password management, secrets management, and passwordless and passkey innovations, Bitwarden makes it easy for users to extend robust security practices across all online activities. Founded in 2016 with headquarters in Santa Barbara, California, Bitwarden is supported by a passionate global community of security experts and enthusiasts.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;As a Software Engineer on the Self-host Orchestration team at Bitwarden, you will dire"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web architectures. I’ve built and optimized complex enterprise systems like RMC ERP, where I engineered robust data handling and workflow automation using Laravel and Vue 3. My focus on performance is proven at Zupper Commerce, where I reduced page load times by 25% through strategic memoization and code splitting. I am eager to bring this same precision to Bitwarden’s Self-Host Orchestration team, ensuring secure, scalable, and efficient infrastructure management. I am ready to contribute immediately to your open-source security mission. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-20T20:40:06.216Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_dropbox-senior-full-stack-product-software-engineer-application-platform",
-      "type": "remote_job",
-      "title": "Senior Full Stack Product Software Engineer, Application Platform",
-      "companyOrClient": "Dropbox",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/dropbox-senior-full-stack-product-software-engineer-application-platform",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6907/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - Poland\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://jobs.dropbox.com\"&gt;https://jobs.dropbox.com&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;h2&gt;&lt;span&gt;Role Description&lt;/span&gt;&lt;/h2&gt;\n&lt;p&gt;As a Senior Full Stack Product Software Engineer on Dropbox’s Web Developer Experience (Web DX) team, you will help design and develop the application platform, developer tooling, and shared foundations that enable engineers to build reliable web experiences. You will take ownership of key technical systems, designing scalable architectures and delivering improvements that make software easier to develop, test, and ship.&lt;/p&gt;\n&lt;p&gt;You will work closely with product and infrastructure engineering teams to improve build systems, language tooling, a"
-    },
-    "pitch": "Hi Dropbox Web DX Team, I’m a Senior Full Stack Engineer in Bengaluru specializing in scalable architectures and developer experience. At Zupper Commerce, I built 20+ reusable React components and optimized performance by 25% through memoization and code splitting, directly mirroring your need for shared foundations that make software easier to ship. My background in Next.js, TypeScript, and Node.js ensures I can immediately contribute to your application platform and build systems. I am eager to bring this efficiency to your team and deliver high-impact improvements from day one. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-20T20:39:58.012Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_teamified-senior-software-engineer",
-      "type": "remote_job",
-      "title": "Senior Software Engineer",
-      "companyOrClient": "Teamified",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/teamified-senior-software-engineer",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6910/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Philippines\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://jobs.workable.com/company/sC3VVUzx14A9GZdFM7giB7/jobs-at-teamified\"&gt;https://jobs.workable.com/company/sC3VVUzx14A9GZdFM7giB7/jobs-at-teamified&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;p&gt;About&amp;nbsp;Teamified:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Teamified&amp;nbsp;is&amp;nbsp;a&amp;nbsp;talent&amp;nbsp;partner&amp;nbsp;helping&amp;nbsp;companies&amp;nbsp;build&amp;nbsp;exceptional&amp;nbsp;remote&amp;nbsp;teams&amp;nbsp;across&amp;nbsp;IT,&amp;nbsp;software,&amp;nbsp;product,&amp;nbsp;and&amp;nbsp;digital&amp;nbsp;innovation.&amp;nbsp;We&amp;nbsp;collaborate&amp;nbsp;with&amp;nbsp;leading&amp;nbsp;enterprises&amp;nbsp;and&amp;nbsp;fast-scaling&amp;nbsp;tech&amp;nbsp;businesses&amp;nbsp;worldwide&amp;nb"
-    },
-    "pitch": "Hi Teamified Hiring Team,\n\nI’m a Full Stack Engineer specializing in React, Next.js, and Node.js, ready to deliver immediate value to your remote enterprise clients. My background in building scalable, high-performance systems aligns perfectly with your Senior Software Engineer role. For instance, I engineered the full-stack architecture for Yeshu Tours & Travels, implementing Redis caching and complex admin workflows that handle high-volume data seamlessly. I also optimized Zupper Commerce, reducing page load times by 25% through strategic code splitting and memoization, proving my focus on both robust functionality and user experience. I am eager to bring this same precision and speed to Teamified’s diverse portfolio of tech businesses. Please review my work at https://cipher-vortex.vercel.app, and let’s discuss how I can help you build exceptional remote teams.",
-    "createdAt": "2026-11-20T20:39:47.937Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_cribl-staff-software-engineer-search-core",
-      "type": "remote_job",
-      "title": "Staff Software Engineer, Search Core",
-      "companyOrClient": "Cribl",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/cribl-staff-software-engineer-search-core",
-      "description": "&lt;img src=\"https://we-work-remotely.imgix.net/logos/0171/6919/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" /&gt;\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - United States\n    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href=\"https://cribl.io\"&gt;https://cribl.io&lt;/a&gt;\n&lt;/p&gt;\n\n&lt;div&gt;&lt;p&gt;Join the company that’s building the telemetry infrastructure for the AI era. At Cribl, we partner with IT and Security teams at many of the world’s biggest enterprises, including half of the Fortune 100, to bridge the gap between AI ambition and infrastructure reality. As the AI Platform for Telemetry, we give customers the choice, control, and flexibility to manage and analyze telemetry for both humans and agents, so they can build what’s next.&lt;/p&gt;\n&lt;p&gt;We’re one of the fastest‑growing private companies and a leading player in a massive, fast‑moving market. With a global workforce, we’re remote‑first an"
-    },
-    "pitch": "Hi Cribl team,\n\nI am a Full Stack Engineer specializing in high-performance systems, and I see a strong alignment with your Search Core role. My work on RMC ERP, an enterprise platform built with Laravel and Vue 3, demonstrates my ability to handle complex data pipelines, including real-time sensor feeds and dispatch workflows. This experience directly translates to managing high-volume telemetry infrastructure. I also drove a 25% reduction in page load times for Zupper Commerce through advanced React optimization and code splitting, proving my commitment to performance at scale. I am ready to leverage my expertise in Node.js and Redis to help Cribl bridge the gap between AI ambition and infrastructure reality. I would love to discuss how I can contribute to your team’s success. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-20T20:39:37.621Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "wwr_postscript-senior-software-engineer-full-stack-80-backend",
-      "type": "remote_job",
-      "title": "Senior Software Engineer, Full Stack (80% backend)",
-      "companyOrClient": "Postscript",
-      "budgetOrSalary": "Top Tier Remote Salary",
-      "url": "https://weworkremotely.com/remote-jobs/postscript-senior-software-engineer-full-stack-80-backend",
-      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;Postscript is the AI-powered, all-in-one retention platform trusted by 20,000+ Shopify brands, including Brooklinen, Ruggable, True Classic, and Dr. Squatch.&lt;/p&gt;\n&lt;p&gt;Our mission is to maximize the lifetime value of every shopper. We built the best-in-class SMS platform, expanded into email, and launched revenue-driving AI products you won’t find anywhere else. Now we’re building the most AI-forward team in ecommerce, and we’re just getting started.&lt;/p&gt;\n&lt;p&gt;Backed by Greylock and Y Combinator. Fully remote since 2018.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;As a &lt;strong&gt;Senior Software Engineer&lt;/strong&gt; at Postscript, you'll be a high-ownership contributor to one of our core product or platform teams — owning meaningful systems end-to-end, driving technical quality, and helping shape how we build across the organization. Our engineering teams oper"
-    },
-    "pitch": "Hi Postscript team,\n\nI’m a Full Stack Engineer specializing in high-performance backend systems and scalable frontend architectures. Your focus on AI-driven retention and robust SMS infrastructure aligns perfectly with my experience building complex, data-heavy platforms.\n\nAt RMC ERP, I engineered enterprise-grade workflows using Laravel, Vue 3, and Inertia.js, managing real-time sensor feeds and dispatch logic with precision. I also optimized Zupper Commerce with React and TypeScript, cutting page load times by 25% through strategic code splitting and memoization. I’m ready to bring this same efficiency and technical ownership to your core product teams, ensuring end-to-end system reliability and speed.\n\nLet’s connect to discuss how I can contribute to your engineering goals. You can view my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-20T20:39:29.334Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137835",
-      "type": "remote_job",
-      "title": "Technical Lead Norm Compliance",
-      "companyOrClient": "Norm",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-technical-lead-norm-compliance-norm-1137835",
-      "description": "   About Norm   Norm builds AI-native professional services firms and the technology that powers them. Our mission is to help expert professionals deliver better work at greater scale.  Developing the technology and the firms together lets us rethink how work gets done, how teams operate and what clients can expect. Professional judgment and experience guide what we build, while advances in the technology expand what our firms can deliver. Our shared agentic platform connects that progress across teams and services.  Founded in 2023, Norm brings together experts across engineering, research, product, design and professional practice. Our legal and compliance platform serves institutions representing more than $35 trillion in combined assets under management.  Norm also powers Norm Law, LLP, an affiliated AI-native law firm whose attorneys advise leading institutions on complex corporate matters.   AI Fluency:  Norm prefers all team members to be fluent in AI. Successful candidates acti",
-      "tags": [
-        "design",
-        "python",
-        "education",
-        "technical",
-        "customer support",
-        "dev",
-        "marketing",
-        "exec",
-        "finance",
-        "typescript",
-        "content writing",
-        "senior",
-        "legal",
-        "medical",
-        "engineer",
-        "digital nomad"
-      ]
-    },
-    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in enterprise-grade systems and AI integration. Your need for technical leadership in compliance aligns perfectly with my experience building RMC ERP, an enterprise platform managing complex dispatch workflows and real-time sensor feeds using Laravel and Vue 3. I bring proven expertise in structuring robust data pipelines and ensuring operational integrity at scale. Additionally, my development of Cerebrum, an AI note-taking platform utilizing RAG architecture, demonstrates the AI fluency Norm prioritizes. I am ready to immediately apply this technical rigor to your agentic platform, ensuring your compliance tools are secure, scalable, and intelligent. Let’s discuss how I can drive immediate value for your team. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-20T20:39:28.095Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137844",
-      "type": "remote_job",
-      "title": "Staff Software Engineer (Interfaces)",
-      "companyOrClient": "Netlify",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-staff-software-engineer-interfaces-netlify-1137844",
-      "description": "  About the Team  \n As a Staff Software Engineer at Netlify, you'll join a collaborative team that values continuous learning, mutual support, and shared growth. Together, we create tools that help developers build faster, more intuitively, and with greater impact. Our Experience team owns the core product experience at Netlify, which is every way a human or an agent interacts with the platform, from our React-based web application to CLI, MCP, SDK, and API. If users interact with it directly, it's likely ours. We're reimagining how developers experience web development by thoughtfully integrating AI into our workflows - not as a novelty, but as a practical tool that enhances how we build the web. \n With our team, you'll help set technical direction for our product area, mentor a highly senior team of engineers, and shape user experiences that serve millions of developers. You'll work closely with Product, Design, and engineering leadership, and partner with teams across the organizati",
-      "tags": [
-        "programming"
-      ]
-    },
-    "pitch": "Hi Netlify Experience team,\n\nI am a Full Stack Engineer specializing in high-performance React and TypeScript applications. At Zupper Commerce, I engineered 20+ reusable React components and implemented advanced memoization and code splitting strategies, reducing page load times by 25%. This focus on interface efficiency and scalable architecture directly aligns with your goal of reimagining developer experiences through practical AI integration. I bring proven expertise in building intuitive, high-impact web applications that serve complex user needs. I am ready to contribute immediately to your core product experience. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-20T20:39:26.569Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137849",
-      "type": "remote_job",
-      "title": "Senior Software Engineer Guest & Host",
-      "companyOrClient": "Airbnb",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-guest-host-airbnb-1137849",
-      "description": "   Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.     The Community You Will Join:  \n Airbnbâs mission is to create a world where anyone can belong anywhere. Essential to this mission is the ability to have authentic conversations with members of a global community. The Messaging Foundations team builds the platform that powers these conversations. As a Senior Software Engineer on the team, you will build innovative products, architect scalable solutions, collaborate across organizations, and help shape our roadmap - ensuring that our global community of guests and hosts can communicate seamlessly, wherever they are. \n  The Difference You Will Make:  \n You will build and ope",
-      "tags": [
-        "programming"
-      ]
-    },
-    "pitch": "Hi Airbnb Messaging Foundations team,\n\nI’m Kiran S R, a Full Stack Engineer specializing in scalable React, Next.js, and Node.js architectures. Your need for seamless, high-volume communication platforms aligns perfectly with my experience building complex, real-time systems. For Yeshu Tours & Travels, I engineered a full-scale booking engine with Redis caching and WhatsApp integration, ensuring low-latency performance for thousands of concurrent users. Additionally, I optimized Zupper Commerce by reducing page load times by 25% through advanced memoization and code splitting. I am ready to leverage this expertise to architect robust, scalable solutions for your global guest and host community. I would welcome the chance to discuss how I can contribute to your roadmap. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-20T20:39:24.963Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137854",
-      "type": "remote_job",
-      "title": "Senior Software Engineer: Assets",
-      "companyOrClient": "MetaMask",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-assets-metamask-1137854",
-      "description": "    Please note that we are unable to consider applications from candidates based in France, Italy, or Germany for this role.   \n Money is moving onto the internet, and the shift has a name:  Open Money.  This is money that is open, portable, agentic, and owned by you. MetaMask spent the last ten years building it; with 100M+ downloads, users in ~190 countries, and trillions in cumulative transaction volume, it's the most trusted self-custodial financial platform on the internet. Now we're building the operating system for your money: one place to hold, move, grow, and use anything you own.Â  Join a remote-first, global team rebuilding how money works: a problem that touches everyone, every day.   What you'll do \n As a Senior Software Engineer, you will: \n \n Architect, build, and maintain features related to digital assets across MetaMask Clients, including ERC-20 tokens, NFTs, Token Lists, and Token Detail Pages \n Develop and support core wallet controllers that manage asset state and",
-      "tags": [
-        "programming"
-      ]
-    },
-    "pitch": "MetaMask’s mission to build the operating system for money demands engineers who can architect complex, high-performance state management. As a Senior Full Stack Engineer, I bring deep expertise in React, TypeScript, and Node.js, with a focus on optimizing performance at scale. For instance, on the Zupper Commerce platform, I engineered 20+ reusable components and implemented strategic memoization and code splitting, reducing page load times by 25%. This experience directly translates to building responsive, efficient asset controllers and token detail pages for MetaMask clients. I am ready to contribute immediately to your remote-first team, ensuring robust, scalable solutions for digital assets. Let’s discuss how I can help you maintain your position as the most trusted self-custodial platform. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-20T20:39:24.051Z",
     "deliveredToTelegram": true
   }
 ]
