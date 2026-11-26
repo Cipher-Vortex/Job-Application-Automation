@@ -1,6 +1,62 @@
 [
   {
     "opportunity": {
+      "id": "gh_bounty_6630009857",
+      "type": "bounty",
+      "title": "spikes: W-4802 compile fork/join blocks into an oracle for incomplete event logs (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "$500",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4804",
+      "description": "### Summary\n\nResolves #4802 ($500 💎 Bounty / Wildcard Track).\n\n/attempt #4802\n/claim #4802\n\nThis spike implements the **Milestone 1 reference model, event precedence graph compiler, and process-mining alignment oracle** for evaluating incomplete, dropped, or noisy event logs against fork/join task graphs.\n\n### Breakthrough & Assumption Broken\n\nBreaks the assumption that checked concurrent blocks only emit executable code. By compiling straight-line fork/join blocks into event precedence DAGs, operators can query incomplete execution logs post-mortem to determine the minimal edit distance explaining the log, legal execution traces, and whether records suffer from task attribution ambiguity.\n\n### Deliverables\n\n- `spikes/w4802-fork-join-log-oracle/log_oracle.py`: Event precedence DAG compiler, memoized alignment oracle over `(completed_events_mask, log_offset)`, and independent topological validator.\n- `spikes/w4802-fork-join-log-oracle/tests/test_log_oracle.py`: 4 comprehensive tests va"
+    },
+    "pitch": "I can deliver the W-4802 fork/join log oracle immediately. My background in building complex state-management systems, such as the RMC ERP with its intricate dispatch workflows and sensor feed handling, translates directly to the rigorous event precedence DAG compilation and alignment logic required for this Go-Hybrid spike. I specialize in optimizing algorithmic performance and ensuring robust validation, which is critical for your memoized alignment oracle and topological validator. I am ready to implement the reference model and comprehensive test suite to resolve issue #4802 within 24 hours. Please review my work at https://cipher-vortex.vercel.app and let’s get this bounty closed.",
+    "createdAt": "2026-11-26T17:30:14.201Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6630070429",
+      "type": "bounty",
+      "title": "spikes: W-4787 give lossy task reductions a provably minimal undo record (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "$500",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4805",
+      "description": "### Summary\n\nResolves #4787 ($500 💎 Bounty / Wildcard Track).\n\n/attempt #4787\n/claim #4787\n\nThis spike implements the **Milestone 1 reference model, combinatorial rank/unrank codec, and exact reconstruction test suite** for giving lossy task reductions provably minimal undo records without retaining raw input snapshots.\n\n### Breakthrough & Assumption Broken\n\nBreaks the assumption that reversing a lossy reduction requires storing a full input snapshot or that non-invertible tasks cannot be safely debugged/replayed. By encoding the input as its lexicographic rank within the subset $\\binom{n}{k}$, the undo record consumes exactly $\\lceil \\log_2 \\binom{n}{k} \\rceil$ witness bits—the theoretical information bound.\n\n### Deliverables\n\n- `spikes/w4787-minimal-undo-record/undo_codec.py`: Combinatorial ranking and unranking engine, binomial coefficient indexer, and certified bound validator.\n- `spikes/w4787-minimal-undo-record/tests/test_undo_codec.py`: 5 comprehensive tests validating:\n  1. Ex"
+    },
+    "pitch": "Hi, I’m Kiran S R. I can deliver the provably minimal undo record spike for Go-Hybrid immediately. My work on RMC ERP involved complex state management and dispatch workflows using Vue 3 and Laravel, giving me the precision needed to implement combinatorial rank/unrank codecs and certified bound validators. I understand the theoretical information bound of $\\lceil \\log_2 \\binom{n}{k} \\rceil$ bits and can execute the reference model and test suite with high accuracy. I am ready to claim this bounty and submit a complete PR with the `undo_codec.py` engine and comprehensive tests today. Let’s get this done. View my work here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-26T17:30:13.411Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6630093656",
+      "type": "bounty",
+      "title": "spikes: W-4781 certify peak live buffer bytes across schedules (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "$500",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4806",
+      "description": "### Summary\n\nResolves #4781 ($500 💎 Bounty / Wildcard Track).\n\n/attempt #4781\n/claim #4781\n\nThis spike implements the **Milestone 1 reference model, precedence DAG maximum-weight closure solver, and witness schedule generator** for certifying the exact peak live buffer payload bytes across all permitted interleavings in concurrent task graphs.\n\n### Breakthrough & Assumption Broken\n\nBreaks the assumption that buffer memory budgets can only be assessed after choosing a periodic or fixed scheduler. By formulating memory occupancy as a maximum-weight closure over predecessor-closed subsets in an event precedence graph, the exact upper bound is certified independently of the runtime scheduler, returning a concrete legal interleaving prefix that attains the peak.\n\n### Deliverables\n\n- `spikes/w4781-peak-live-buffer-bound/buffer_bound.py`: Precedence DAG model for weighted buffer acquisitions and releases, topological schedule enumerator, and exact peak closure analyzer.\n- `spikes/w4781-peak-"
+    },
+    "pitch": "I can deliver the exact peak live buffer bound solver for Go-Hybrid immediately. My background in high-performance systems and complex state management ensures I can implement the precedence DAG maximum-weight closure solver and witness schedule generator with precision. For instance, I optimized Zupper Commerce by reducing page load times by 25% through rigorous code splitting and memoization, proving my ability to handle intricate computational constraints and performance bottlenecks. I am ready to commit the `buffer_bound.py` implementation and resolve issue #4781 today. Let’s get this bounty closed. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-26T17:30:12.598Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6596108290",
+      "type": "bounty",
+      "title": "Make the receipt say when a payment was credited, not paid (odiseo159-beep/mergit)",
+      "companyOrClient": "GitHub: odiseo159-beep/mergit",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/odiseo159-beep/mergit/issues/25",
+      "description": "**What this is for**\n\nEscrow v4 can finish a payment in two ways. Usually `finalize` delivers the ETH to the developer. If the developer's address rejects ETH, v4 keeps the amount in `owed` and emits `PaymentCredited(bountyId, to, amount)`. The developer then pulls it with `withdrawTo(address)`.\n\n`BountySettled` is emitted in both cases, and the agent reads only that event. On a credited payment it would write \"Mergit paid this pull request\", while the ETH is still in the escrow. A receipt has to say what happened.\n\n**What done looks like**\n\n- [ ] Add the `PaymentCredited` event to `ABI_V3` in `agent/chain.mjs`. v4 is read with that ABI, and today the event is skipped as an unknown log.\n- [ ] Move `recibo()` and the `RECIBO` marker to a new `agent/receipt.mjs`, with no network and no environment variables. `on-event.mjs` runs when imported, so a test cannot import it.\n- [ ] Export a pure function from `agent/receipt.mjs`: `creditedToDeveloper(events, { bountyId, developer, payout })`. "
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in TypeScript and Node.js. I can immediately resolve the `PaymentCredited` event handling in your Mergit repo. My experience building the Yeshu Tours & Travels booking engine involved complex state management and precise API integration, ensuring data integrity across distributed systems. I understand the need to distinguish between finalization and crediting to generate accurate receipts. I will add the `PaymentCredited` event to `ABI_V3`, refactor the receipt logic into a pure `agent/receipt.mjs` module, and export the `creditedToDeveloper` function as specified. I’m ready to submit a clean PR today. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-26T17:30:11.851Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_abnormal-software-engineer-i-backend",
       "type": "remote_job",
       "title": "Software Engineer I - Backend",
@@ -1371,62 +1427,6 @@
     },
     "pitch": "I can immediately execute the PYTH locked allocation wallet discovery for tradermarketcap. With deep expertise in Node.js, TypeScript, and complex API integrations, I have the technical proficiency to parse Solana data and implement the required Redis caching strategies efficiently. My recent work on Yeshu Tours & Travels involved building a high-performance booking engine with robust backend logic and real-time data handling, proving my ability to deliver precise, production-ready solutions under tight deadlines. I am ready to claim this bounty and submit a compliant pull request within your 48-hour window. Let’s get this merged. View my full technical portfolio at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-21T09:22:22.848Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6525391536",
-      "type": "bounty",
-      "title": "Find OP's non-circulating wallets (tradermarketcap/tradermarketcap-open)",
-      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/16",
-      "description": "**Bounty: 1 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Optimism Foundation and unlocking wallets with sources added to the OP rule.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
-    },
-    "pitch": "I am ready to claim this bounty and deliver a merged PR within the 48-hour window. As a Full Stack Engineer proficient in TypeScript and Node.js, I have extensive experience navigating complex GitHub repositories and implementing precise data integrity rules. My recent work on the RMC ERP, where I managed intricate dispatch workflows and sensor feeds using Vue 3 and Laravel, demonstrates my ability to handle structured data logic and ensure high accuracy in production environments. I understand the specific requirements for identifying non-circulating wallets and adding sources to the OP rule. I am prepared to execute this immediately to secure the 1 RESET reward. Let's get this done efficiently. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-21T09:22:22.093Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6525391810",
-      "type": "bounty",
-      "title": "Fix QNT supply (totalSupply is hardcoded) (tradermarketcap/tradermarketcap-open)",
-      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/17",
-      "description": "**Bounty: 0.5 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** QNT circulating read from a correct source with explanation; rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
-    },
-    "pitch": "Hi, I’m Kiran S R. I can resolve the hardcoded QNT supply issue by implementing a robust, real-time data fetcher with proper caching and error handling, ensuring accuracy and performance. My experience building the Yeshu Tours & Travels booking engine, where I optimized data retrieval using Redis and integrated complex API workflows, directly translates to this task. I will deliver a clean PR with the necessary rule updates and comprehensive tests within 24 hours of claiming. I’m ready to start immediately to ensure the fix is merged quickly. Check my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-21T09:22:21.229Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6525391980",
-      "type": "bounty",
-      "title": "Fix AERO's listed Base contract (tradermarketcap/tradermarketcap-open)",
-      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/18",
-      "description": "**Bounty: 0.5 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Correct AERO contract on Base with source; supply reads correctly.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
-    },
-    "pitch": "I am ready to claim this bounty and deliver the corrected AERO Base contract PR within your 48-hour window. My expertise in TypeScript and complex state management ensures I can accurately implement the source and verify supply reads immediately. I recently optimized a large-scale React ecosystem for Zupper Commerce, reducing page load times by 25% through precise code splitting and memoization, demonstrating my ability to handle performance-critical fixes with surgical precision. I follow SKILL.md rigorously and commit to clean, merge-ready code. I am prepared to start instantly to ensure you receive your 0.5 RESET payout efficiently. Check my work at https://cipher-vortex.vercel.app and let’s get this resolved today.",
-    "createdAt": "2026-11-21T09:22:19.972Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6525392418",
-      "type": "bounty",
-      "title": "Add a Bitget exchange reader (tradermarketcap/tradermarketcap-open)",
-      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/20",
-      "description": "**Bounty: 3 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Bitget spot tickers read from the free public endpoint; test added.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request."
-    },
-    "pitch": "I can deliver the Bitget exchange reader for tradermarketcap-open immediately. With deep expertise in Node.js, Express, and REST APIs, I have built robust data ingestion systems like the RMC ERP, handling complex sensor feeds and real-time workflows. I will implement the free public endpoint integration, ensure accurate spot ticker parsing, and include the required tests to meet your \"Done when\" criteria. I am ready to claim this bounty and open the pull request within the 48-hour window, guaranteeing a clean, merged solution. Check my full stack credentials and recent work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-21T09:22:19.082Z",
     "deliveredToTelegram": true
   }
 ]
