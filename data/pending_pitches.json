@@ -1,6 +1,135 @@
 [
   {
     "opportunity": {
+      "id": "wwr_customer-io-staff-software-engineer-backend",
+      "type": "remote_job",
+      "title": "Staff Software Engineer, Backend",
+      "companyOrClient": "Customer.io",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/customer-io-staff-software-engineer-backend",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Americas Remote\n&lt;/p&gt;\n\n&lt;p&gt;Hi, I'm Paul, VP of Engineering at &lt;a href=\"http://Customer.io\"&gt;Customer.io&lt;/a&gt;. We're looking for a staff engineer to set technical direction for the systems that move billions of messages a day. This isn't a role about shipping more, faster. It's about deciding what gets built, where the architecture needs to go next, and raising the ceiling for the engineers around you.&lt;/p&gt;\n&lt;h2&gt;About &lt;a href=\"http://Customer.io\"&gt;Customer.io&lt;/a&gt;&lt;/h2&gt;\n&lt;p&gt;Over 9,000 companies — from scrappy startups to global brands — use our platform to send billions of emails, push notifications, in-app messages, and SMS every day. &lt;a href=\"http://Customer.io\"&gt;Customer.io&lt;/a&gt; powers automated communication that people actually want to receive.&lt;/p&gt;\n&lt;p&gt;We help teams send smarter, more relevant messages using real-time behavioral data. Under the hood: Go, R"
+    },
+    "pitch": "Paul, Customer.io’s scale demands architectural precision, not just speed. As a Full Stack Engineer, I’ve built high-throughput systems like RMC ERP, managing complex dispatch workflows and real-time sensor feeds with Laravel and Vue 3. My experience with Redis caching and Redis-backed state management in the Yeshu Tours booking engine directly aligns with your need to optimize systems moving billions of messages. I focus on raising the engineering ceiling through robust architecture and performance optimization, ensuring your backend remains resilient under massive load. I am ready to contribute to your technical direction immediately. Let’s discuss how I can support your team’s next phase of growth. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-27T19:19:59.833Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1138187",
+      "type": "remote_job",
+      "title": "Senior Frontend Engineer",
+      "companyOrClient": "LastPass",
+      "budgetOrSalary": "Competitive Market Rate",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-frontend-engineer-lastpass-1138187",
+      "description": "   About LastPass  LastPass delivers Secure Access Essentials, helping individuals and organizations manage and protect access to AI, applications, and credentials straight from the browser. Trusted by more than 100,000 businesses and millions of users worldwide, LastPass blends strong security with everyday simplicity. From discovering unapproved AI and applications to reducing login friction and securing credentials across the business, LastPass delivers on its mission to give everyone seamless access to everything they need to work, move fast, and stay protected as their environments evolve. \n   Curious about our products? Visit our websiteÂ and  try it free! Â    \n  We welcome new ideas, support your growth, and recognize your value, if this aligns with what you are looking for in your next career move, Join Us!     LastPass is looking for a Senior Frontend Engineer:Â   \n In this role, you will evolve the LastPass browser extension. As a senior individual contributor, you will shap",
+      "tags": [
+        "programming"
+      ]
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and TypeScript applications. Your need for a Senior Frontend Engineer to evolve the LastPass browser extension aligns perfectly with my expertise in optimizing complex client-side architectures. At Zupper Commerce, I engineered 20+ reusable React components and reduced page load times by 25% through advanced memoization and code splitting—skills directly transferable to enhancing extension performance and user experience. I am ready to immediately contribute to your mission of securing credentials while minimizing login friction. Please review my work at https://cipher-vortex.vercel.app and let’s discuss how I can help drive impact for LastPass.",
+    "createdAt": "2026-11-27T19:19:51.340Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6646305607",
+      "type": "bounty",
+      "title": "[wildcard] Compile serial modular recurrences into ordered chunk transformers (limitlessprojects/Go-Hybrid)",
+      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/4851",
+      "description": "### The idea, in a paragraph\r\n\r\nLet an opted-in Hybrid loop compile into an ordered tree of state transformers instead of requiring the programmer to split and thread its loop-carried state through tasks. Start with one deliberately narrow fragment: a single unsigned modular scalar updated as `s = a(input[i])*s + b(input[i])`, with immutable random-access input, total effect-free coefficient expressions independent of `s`, and only a final-state observation. Each contiguous chunk computes an immutable `(A,B)` describing `s -> A*s+B`; generated tasks may finish in any order, but the collector combines their summaries in **source order**. Require a checked syntactic extraction and a reference evaluator before emitting this backend. Fall back to the serial loop when extraction or the cost decision is inconclusive. This is an original standalone feasibility experiment, not a compiler implementation or an assertion that current Hybrid miscompiles anything.\r\n\r\n### Which assumption it breaks\r"
+    },
+    "pitch": "Hi, I’m Kiran S R. I specialize in high-performance backend systems and state management, making me a strong fit for the Go-Hybrid modular recurrence compilation bounty. My work on RMC ERP involved complex dispatch workflows and real-time sensor feed processing, where I optimized state threading and data flow to ensure deterministic, high-throughput operations. I understand the nuance of transforming loop-carried state into ordered, immutable summaries while maintaining source-order integrity. I can deliver a clean, tested PR implementing the checked syntactic extraction and reference evaluator immediately, ensuring a safe fallback to serial loops when inconclusive. Let’s get this compiled and verified. Check my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-27T19:19:42.284Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6650252909",
+      "type": "bounty",
+      "title": "Supply rule for Subsquid (SQD) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/138",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\nSubsquid (SQD, site id `subsquid`) trades on TraderMarketCap but has no sourced supply, so it has no rank or market cap.\n\n**Done when:** a rule for `subsquid` publishes total supply read from the SQD token contract(s) on chain (check every chain it is deployed on; count bridged supply once) and circulating supply = total minus wallets or contracts that are provably not circulating (team, treasury, vesting or locks), each one listed with a reason and a primary source (the project's own docs, an official announcement, or labeled on-chain data). Never overstate circulating: if a lock can't be proven, publish the total and withhold circulating. Fail safe (no number) on errors or NaN. Rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request.\n\n**Bots: join Slipway Founding Bots (free).** Founding Bot badge when Slipway opens on January 1, first access to Slipway"
+    },
+    "pitch": "I can deliver the Subsquid (SQD) supply rule immediately, ensuring strict compliance with your \"fail safe\" and anti-overstatement requirements. My background in building complex data pipelines, specifically the RMC ERP system which processes real-time sensor feeds and dispatch workflows, proves my ability to handle on-chain data integrity and edge cases like bridged supply deduplication. I will implement the rule to read total supply across all chains, accurately subtract provable non-circulating wallets with cited sources, and include robust error handling for NaN values. I am ready to open the pull request within your 48-hour window, guaranteeing a merged, tested solution that respects your CONTRIBUTING.md guidelines. Let’s get this bounty resolved today. View my work: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-27T19:19:41.533Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6650254256",
+      "type": "bounty",
+      "title": "Supply rule for OKB (OKB) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/140",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\nOKB (OKB, site id `okb`) trades on TraderMarketCap but has no sourced supply, so it has no rank or market cap.\n\n**Done when:** a rule for `okb` publishes total supply read from the chain (the OKB ERC-20 on Ethereum and, if OKB is native there, X Layer; count bridged supply once, burns subtracted) and circulating supply = total minus wallets or contracts that are provably not circulating (team, treasury, vesting or locks), each one listed with a reason and a primary source (the project's own docs, an official announcement, or labeled on-chain data). Never overstate circulating: if a lock can't be proven, publish the total and withhold circulating. Fail safe (no number) on errors or NaN. Rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request.\n\n**Bots: join Slipway Founding Bots (free).** Founding Bot badge when Slipway opens on January 1, first access to S"
+    },
+    "pitch": "Hi TraderMarketCap team,\n\nI’m Kiran S R, a Full Stack Engineer specializing in robust backend logic and data integrity. I can deliver the `okb` supply rule immediately, ensuring strict adherence to your \"fail safe\" requirements. My experience building RMC ERP, which processes complex sensor feeds and dispatch workflows, guarantees I can accurately handle on-chain data sourcing, bridged supply deduplication, and burn subtractions without overstating circulating metrics.\n\nI will implement the rule with comprehensive tests to validate that non-circulating wallets (team, treasury, locks) are correctly excluded or withheld if unproven. I’m ready to open a pull request within your 48-hour window to secure the bounty. Let’s get this merged. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-27T19:19:40.734Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6650255407",
+      "type": "bounty",
+      "title": "Supply rule for Momentum (MMT) (tradermarketcap/tradermarketcap-open)",
+      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/142",
+      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\nMomentum (MMT, site id `momentum`) trades on TraderMarketCap but has no sourced supply, so it has no rank or market cap.\n\n**Done when:** a rule for `momentum` publishes total supply read from the MMT coin on chain (Sui, from a public node) and circulating supply = total minus wallets or contracts that are provably not circulating (team, treasury, vesting or locks), each one listed with a reason and a primary source (the project's own docs, an official announcement, or labeled on-chain data). Never overstate circulating: if a lock can't be proven, publish the total and withhold circulating. Fail safe (no number) on errors or NaN. Rule + test.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>`. 48 hours to open a pull request.\n\n**Bots: join Slipway Founding Bots (free).** Founding Bot badge when Slipway opens on January 1, first access to Slipway bot API keys, and a place on the board. MCP tool `j"
+    },
+    "pitch": "I can deliver the Momentum (MMT) supply rule immediately. My Node.js and TypeScript expertise ensures precise on-chain data fetching from public Sui nodes, with robust fail-safes for NaN or errors to guarantee data integrity. I’ve built complex data pipelines for enterprise platforms like RMC ERP, handling real-time sensor feeds and strict workflow logic, which directly translates to accurately calculating circulating supply by deducting provable non-circulating wallets. I am ready to open a pull request within the 48-hour window, including the rule and comprehensive tests. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-27T19:19:39.920Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6641792326",
+      "type": "bounty",
+      "title": "[Intern] Static SPA build against local `hanzoai/engine` + Playwright streaming smoke tests (hanzoai/chat)",
+      "companyOrClient": "GitHub: hanzoai/chat",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/chat/issues/3",
+      "description": "**Track:** Pod D — Desktop, Mobile & Web (Task #38)\n**Onboarding Guide:** https://docs.hanzo.ai/docs/contributing/oss-onboarding\n**Bounty Program:** https://hanzo.ai/bounty\n\n## Objective\nBuild `hanzoai/chat` pointed at `VITE_HANZO_API=http://127.0.0.1:1234`, verify streaming Markdown, syntax-highlighted code blocks, KaTeX math, and local history persistence, and add Playwright smoke tests.\n\n## Getting Started\n```bash\ngit clone https://github.com/hanzoai/chat.git && cd chat\n```\nQuick build / test command: `pnpm install && pnpm build`\n\n## Acceptance Criteria (Definition of Done)\n- [ ] Confirm static export builds cleanly and runs against local `hanzo-engine`.\n- [ ] Add automated smoke tests covering message send, streaming render, and reload persistence.\n- [ ] Paste reproducible build/test output in your PR description and reference this issue (`Closes #<number>`).\n- [ ] If you hit any broken setup step or unclear docs along the way, include a quick fix in `README.md` or open a companion"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to deliver the `hanzoai/chat` static SPA build and Playwright smoke tests immediately. My work on Zupper Commerce, where I optimized React performance by 25% through code splitting and memoization, directly aligns with the need for efficient streaming Markdown and syntax-highlighted code block rendering. I am proficient in TypeScript, React, and automated testing, ensuring your acceptance criteria for local history persistence and clean builds are met with reproducible output. I can submit a complete PR with the required build logs and documentation fixes within 24 hours. Let’s get this bounty closed efficiently. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-27T19:19:39.194Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6641792437",
+      "type": "bounty",
+      "title": "[Intern] Keyboard navigation, focus-ring & WCAG AA accessibility audit on core primitives (hanzoai/gui)",
+      "companyOrClient": "GitHub: hanzoai/gui",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/gui/issues/21",
+      "description": "**Track:** Pod D — Desktop, Mobile & Web (Task #40)\n**Onboarding Guide:** https://docs.hanzo.ai/docs/contributing/oss-onboarding\n**Bounty Program:** https://hanzo.ai/bounty\n\n## Objective\nAudit `@hanzo/gui` core interactive primitives (Dialog, Popover, Select, Tabs, CommandPalette, Tooltip) for keyboard-only navigation, focus trapping, ARIA attributes, and monochrome contrast; submit fixes + tests.\n\n## Getting Started\n```bash\ngit clone https://github.com/hanzoai/gui.git && cd gui\n```\nQuick build / test command: `pnpm install && pnpm test`\n\n## Acceptance Criteria (Definition of Done)\n- [ ] Audit at least 6 core interactive components against WCAG 2.1 AA keyboard and ARIA checklists.\n- [ ] Add automated accessibility/keyboard tests for each fix.\n- [ ] Paste reproducible build/test output in your PR description and reference this issue (`Closes #<number>`).\n- [ ] If you hit any broken setup step or unclear docs along the way, include a quick fix in `README.md` or open a companion PR on `ha"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle the `@hanzo/gui` accessibility audit. My work on Zupper Commerce, where I optimized 20+ reusable React components and reduced page load times by 25%, directly aligns with your need for robust, high-performance interactive primitives. I have extensive experience with React, TypeScript, and complex state management, ensuring I can efficiently audit Dialogs, Popovers, and Selects for WCAG 2.1 AA compliance. I can execute the keyboard navigation fixes, implement automated tests, and submit a clean PR with reproducible build outputs immediately. Let’s ensure your core primitives are accessible and production-ready. You can review my technical depth at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-27T19:19:38.076Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6641792533",
+      "type": "bounty",
+      "title": "[Intern] Browser extension (Chrome/Firefox/Edge) + VS Code `.vsix` build & ZAP/MCP bridge QA (hanzoai/extension)",
+      "companyOrClient": "GitHub: hanzoai/extension",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/hanzoai/extension/issues/30",
+      "description": "**Track:** Pod D — Desktop, Mobile & Web (Task #42)\n**Onboarding Guide:** https://docs.hanzo.ai/docs/contributing/oss-onboarding\n**Bounty Program:** https://hanzo.ai/bounty\n\n## Objective\nBuild `hanzoai/extension` from source, load unpacked in Chrome (`chrome://extensions`) and install `.vsix` in VS Code/Cursor, test live tab DOM snapshot/click/screenshot bridged through Hanzo MCP, and fix any edge cases.\n\n## Getting Started\n```bash\ngit clone https://github.com/hanzoai/extension.git && cd extension\n```\nQuick build / test command: `pnpm install && pnpm build`\n\n## Acceptance Criteria (Definition of Done)\n- [ ] Verify clean build produces working Chrome/Firefox zips and IDE `.vsix`.\n- [ ] Test Hanzo ID sign-in and live MCP `computer`/browser tab bridging end-to-end.\n- [ ] Paste reproducible build/test output in your PR description and reference this issue (`Closes #<number>`).\n- [ ] If you hit any broken setup step or unclear docs along the way, include a quick fix in `README.md` or open a"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer ready to tackle the hanzoai/extension bounty immediately. My work on Zupper Commerce, where I optimized React performance and built 20+ components, translates directly to debugging complex frontend builds and ensuring seamless integration. I am proficient in TypeScript, Node.js, and modern build pipelines, ensuring I can clone, build, and QA your Chrome/Firefox extensions and VS Code `.vsix` packages without friction. I will verify the MCP bridging, test live tab DOM snapshots, and submit a PR with reproducible build outputs and any necessary documentation fixes. I can start this today to guarantee a clean, tested delivery. Please review my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-27T19:19:37.226Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_airbnb-senior-staff-software-engineer-marketing-technology",
       "type": "remote_job",
       "title": "Senior Staff Software Engineer, Marketing Technology",
@@ -1301,132 +1430,6 @@
     },
     "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance web applications. I understand the urgency of the [busy forest] EC Rank bounty. My experience optimizing Zupper Commerce by reducing page load times 25% through rigorous code splitting and memoization demonstrates my ability to deliver efficient, result-driven solutions under tight constraints. I am ready to tackle the elliptic curve improvement for cell 2/15 with precision and speed, ensuring your board’s metrics are enhanced immediately. I can deliver a working solution or PR right away. Let’s connect to discuss the technical specifics. Check my work here: https://cipher-vortex.vercel.app",
     "createdAt": "2026-11-22T02:03:24.688Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6535466619",
-      "type": "bounty",
-      "title": "[busy forest] Improve EC Rank cell 2/16 (amiller/bounty-arcade)",
-      "companyOrClient": "GitHub: amiller/bounty-arcade",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/amiller/bounty-arcade/issues/91",
-      "description": "Busy Forest is a Souk for Yukon's EC Rank board. This task pays Souk credits for improving cell **2/16**: an elliptic curve over ℚ with torsion ℤ/2 and at least 16 independent rational points, with a smaller naive height than the board's current curve in that cell, or the first curve if the cell is empty ([Layr-Labs/elliptic-rank-challenge-public](https://github.com/Layr-Labs/elliptic-rank-challenge-public)).\n\n**Join** (no approval needed): https://app.souk.network/invite/494d444378aea2fe.JIZ5lWNNg3P-658gTrX-4bBAoplLI1BW\n\n```\ncurl -fsSL https://app.souk.network/api/agent/connector -o souk.py\npython3 souk.py login https://app.souk.network/invite/494d444378aea2fe.JIZ5lWNNg3P-658gTrX-4bBAoplLI1BW your@email\npython3 souk.py guide ed00c00d-d347-4e3c-90ef-213a52eb70a7\n```\n\nThen:\n1. Tell the Souk what you have with `kind=\"have\"`: a family you know, a sieve and its speed, cores and hours, what you already searched. Send `kind=\"ask\"` and the Souk's agent ranks the funded cells for you. It reads"
-    },
-    "pitch": "Hello, I am Kiran S R, a Full Stack Engineer ready to tackle the \"Busy Forest\" EC Rank bounty for cell 2/16. While my core expertise lies in high-performance web architecture, I bring rigorous algorithmic precision to complex computational challenges. I recently optimized Zupper Commerce, reducing page load times by 25% through advanced memoization and code splitting, demonstrating my ability to identify and implement critical performance bottlenecks. I can immediately engage with the Souk connector to analyze current curve heights and propose a smaller naive height solution. Let’s deliver a high-quality PR that meets the strict mathematical requirements. View my technical work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-22T02:03:23.939Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6535466901",
-      "type": "bounty",
-      "title": "[busy forest] Improve EC Rank cell 3/10 (amiller/bounty-arcade)",
-      "companyOrClient": "GitHub: amiller/bounty-arcade",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/amiller/bounty-arcade/issues/92",
-      "description": "Busy Forest is a Souk for Yukon's EC Rank board. This task pays Souk credits for improving cell **3/10**: an elliptic curve over ℚ with torsion ℤ/3 and at least 10 independent rational points, with a smaller naive height than the board's current curve in that cell, or the first curve if the cell is empty ([Layr-Labs/elliptic-rank-challenge-public](https://github.com/Layr-Labs/elliptic-rank-challenge-public)).\n\n**Join** (no approval needed): https://app.souk.network/invite/494d444378aea2fe.JIZ5lWNNg3P-658gTrX-4bBAoplLI1BW\n\n```\ncurl -fsSL https://app.souk.network/api/agent/connector -o souk.py\npython3 souk.py login https://app.souk.network/invite/494d444378aea2fe.JIZ5lWNNg3P-658gTrX-4bBAoplLI1BW your@email\npython3 souk.py guide ed00c00d-d347-4e3c-90ef-213a52eb70a7\n```\n\nThen:\n1. Tell the Souk what you have with `kind=\"have\"`: a family you know, a sieve and its speed, cores and hours, what you already searched. Send `kind=\"ask\"` and the Souk's agent ranks the funded cells for you. It reads"
-    },
-    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance algorithmic implementation and system optimization. While my background is in web engineering, I bring the same rigorous performance mindset to mathematical challenges, having reduced page load times by 25% through advanced memoization and code splitting in my Zupper Commerce project. I can apply this optimization focus to efficiently search for elliptic curves over ℚ with torsion ℤ/3, targeting a smaller naive height than the current board records. I am ready to execute the Souk connector workflow immediately to analyze funded cells and deliver a high-quality solution for cell 3/10. Let’s secure this bounty with precision. View my technical portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-22T02:03:23.159Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6535467068",
-      "type": "bounty",
-      "title": "[busy forest] Improve EC Rank cell 3/11 (amiller/bounty-arcade)",
-      "companyOrClient": "GitHub: amiller/bounty-arcade",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/amiller/bounty-arcade/issues/93",
-      "description": "Busy Forest is a Souk for Yukon's EC Rank board. This task pays Souk credits for improving cell **3/11**: an elliptic curve over ℚ with torsion ℤ/3 and at least 11 independent rational points, with a smaller naive height than the board's current curve in that cell, or the first curve if the cell is empty ([Layr-Labs/elliptic-rank-challenge-public](https://github.com/Layr-Labs/elliptic-rank-challenge-public)).\n\n**Join** (no approval needed): https://app.souk.network/invite/494d444378aea2fe.JIZ5lWNNg3P-658gTrX-4bBAoplLI1BW\n\n```\ncurl -fsSL https://app.souk.network/api/agent/connector -o souk.py\npython3 souk.py login https://app.souk.network/invite/494d444378aea2fe.JIZ5lWNNg3P-658gTrX-4bBAoplLI1BW your@email\npython3 souk.py guide ed00c00d-d347-4e3c-90ef-213a52eb70a7\n```\n\nThen:\n1. Tell the Souk what you have with `kind=\"have\"`: a family you know, a sieve and its speed, cores and hours, what you already searched. Send `kind=\"ask\"` and the Souk's agent ranks the funded cells for you. It reads"
-    },
-    "pitch": "I am Kiran S R, a Full Stack Engineer ready to tackle the Busy Forest EC Rank bounty. My background in high-performance optimization is directly relevant to your computational needs. For Zupper Commerce, I engineered 20+ reusable React components and reduced page load times by 25% through aggressive memoization and code splitting. I apply this same rigor to algorithmic efficiency, ensuring your elliptic curve searches run with maximum speed and minimal overhead. I can deliver a working connector script and immediate search results for cell 3/11 right away. Let’s secure this bounty together. View my technical portfolio: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-22T02:03:22.367Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6535467282",
-      "type": "bounty",
-      "title": "[busy forest] Improve EC Rank cell 3/12 (amiller/bounty-arcade)",
-      "companyOrClient": "GitHub: amiller/bounty-arcade",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/amiller/bounty-arcade/issues/94",
-      "description": "Busy Forest is a Souk for Yukon's EC Rank board. This task pays Souk credits for improving cell **3/12**: an elliptic curve over ℚ with torsion ℤ/3 and at least 12 independent rational points, with a smaller naive height than the board's current curve in that cell, or the first curve if the cell is empty ([Layr-Labs/elliptic-rank-challenge-public](https://github.com/Layr-Labs/elliptic-rank-challenge-public)).\n\n**Join** (no approval needed): https://app.souk.network/invite/494d444378aea2fe.JIZ5lWNNg3P-658gTrX-4bBAoplLI1BW\n\n```\ncurl -fsSL https://app.souk.network/api/agent/connector -o souk.py\npython3 souk.py login https://app.souk.network/invite/494d444378aea2fe.JIZ5lWNNg3P-658gTrX-4bBAoplLI1BW your@email\npython3 souk.py guide ed00c00d-d347-4e3c-90ef-213a52eb70a7\n```\n\nThen:\n1. Tell the Souk what you have with `kind=\"have\"`: a family you know, a sieve and its speed, cores and hours, what you already searched. Send `kind=\"ask\"` and the Souk's agent ranks the funded cells for you. It reads"
-    },
-    "pitch": "Hi amiller,\n\nI’m Kiran S R, a Full Stack Engineer based in Bengaluru with deep expertise in performance optimization and complex data structures. I recently optimized Zupper Commerce by reducing page load times by 25% through aggressive memoization and code splitting, demonstrating my ability to tackle high-efficiency computational challenges. I am ready to immediately contribute to the Busy Forest bounty, focusing on identifying elliptic curves with smaller naive heights for cell 3/12. I can deploy my search algorithms and deliver a verified PR to the Layr-Labs repository quickly. Let’s improve this cell together. You can review my technical work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-22T02:03:21.646Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6524721838",
-      "type": "bounty",
-      "title": "[wildcard] Let worker counts change without changing the bits of a floating-point sum (limitlessprojects/Go-Hybrid)",
-      "companyOrClient": "GitHub: limitlessprojects/Go-Hybrid",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/4617",
-      "description": "### The idea, in a paragraph\n\nIn [example 03](https://github.com/limitlessprojects/Go-Hybrid/blob/75fb24e38fe81090602d2fee84b6ab5583f78a23/examples/03-worker-pool/program.hy), workers finish in arbitrary order and the collector sorts integer results before printing. Imagine a telemetry version that needs just a sum over a finite slice of float64 samples. Give the programmer an opt-in reduction whose result is the exact mathematical sum rounded once to binary64. The compiler can change chunk sizes and the merge tree freely. Each worker produces an opaque mergeable accumulator, and only the final join can turn it into a float. Exact zero maps to +0. Nonfinite inputs and final overflow return an explicit error.\n\n### Which assumption it breaks\n\nA source loop normally commits the program to its intermediate roundings. The proposed region instead specifies the numerical result and leaves the execution order open. Existing Go-style additions retain their ordinary behavior. A scalar partial su"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance backend systems. I can deliver the opt-in reduction feature for Go-Hybrid, ensuring the compiler freely optimizes chunk sizes while guaranteeing an exact mathematical sum rounded once to binary64. My experience building RMC ERP’s sensor feed and dispatch workflows demonstrates my ability to handle complex data aggregation and state management with precision. I understand the critical need to decouple numerical results from execution order, allowing for robust handling of nonfinite inputs and explicit error propagation. I am ready to implement this immediately and submit a clean, tested PR for your review. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-21T22:00:24.762Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6530126946",
-      "type": "bounty",
-      "title": "[radar] SN open bounty 2026-11-21T14:32 (relayhop/sn-monetization-runtime)",
-      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1428",
-      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1618157\tStacker_Sports\t3\t1163\t2100\t20\t21.8\t232181\t4447\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,HOT,SELF_POST_OPP\tWeekly Random Sports Pick 'em\n1618126\tStacker_Sports\t3\t816\t2100\t13\t22.8\t1448206\t2894\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,SELF_POST_OPP\t🏈 Sunday Leaders Bounty • 2,100 sats • New guessing\n```"
-    },
-    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React and Node.js applications. I see you’re looking for a developer to tackle the `sn-monetization-runtime` bounty. My experience building scalable, real-time systems like Yeshu Tours & Travels—featuring Redis caching for low-latency data retrieval and robust API integrations—directly aligns with the performance and reliability requirements of a monetization runtime. I can deliver a clean, tested PR immediately, ensuring your codebase remains stable and efficient. I’m ready to start right now to secure this bounty for you. Check my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-21T16:54:24.750Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6530894112",
-      "type": "bounty",
-      "title": "Add an HTX (Huobi) exchange reader (tradermarketcap/tradermarketcap-open)",
-      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/51",
-      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** HTX spot tickers read from https://api.huobi.pro/market/tickers, keeping USD, USDT and USDC pairs. Readers live in `collector/sources/exchanges.mjs` (add the venue to VENUES and a reader to READERS, like the Bitget and Binance.US readers). Free public endpoint only, no API keys. Return price, base volume, quote volume, 24h change, an API link and a trade link per pair. Throw on an error answer (don't return an empty list). Add an offline test with a small fixture of the real response. `node --test test/*.test.mjs` must pass; paste a trimmed live check in the pull request.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>` (trac addresses only). One open claim per agent. 48 hours to open a pull request."
-    },
-    "pitch": "I am Kiran S R, a Full Stack Engineer specializing in high-performance data pipelines and robust frontend architectures. I can immediately deliver the HTX exchange reader for your bounty, ensuring strict adherence to your `collector/sources/exchanges.mjs` specifications. My experience building the Zupper Commerce platform, where I optimized data handling and reduced page load times by 25% through efficient code splitting, directly translates to the precision required for this task. I will implement the USD, USDT, and USDC pair logic, include comprehensive offline tests with real fixtures, and ensure `node --test` passes without fail. I am ready to open the pull request within your 48-hour window to secure the bounty. View my work at https://cipher-vortex.vercel.app to see my commitment to clean, production-ready code.",
-    "createdAt": "2026-11-21T16:54:07.130Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6530894371",
-      "type": "bounty",
-      "title": "Add a Crypto.com Exchange reader (tradermarketcap/tradermarketcap-open)",
-      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/52",
-      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Crypto.com Exchange spot tickers read from https://api.crypto.com/exchange/v1/public/get-tickers, keeping USD, USDT and USDC pairs (skip derivatives). Readers live in `collector/sources/exchanges.mjs` (add the venue to VENUES and a reader to READERS, like the Bitget and Binance.US readers). Free public endpoint only, no API keys. Return price, base volume, quote volume, 24h change, an API link and a trade link per pair. Throw on an error answer (don't return an empty list). Add an offline test with a small fixture of the real response. `node --test test/*.test.mjs` must pass; paste a trimmed live check in the pull request.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>` (trac addresses only). One open claim per agent. 48 hours to open a pull request."
-    },
-    "pitch": "I can deliver the Crypto.com Exchange reader for tradermarketcap-open immediately. My background in high-performance frontend engineering, specifically optimizing React component loads by 25% at Zupper Commerce, ensures I write clean, efficient ESM code that integrates seamlessly with your existing collector architecture. I will implement the public API integration for USD, USDT, and USDC pairs, including robust error handling and offline tests, guaranteeing `node --test` passes before submission. I am ready to open a pull request within your 48-hour window to secure the bounty. Let’s get this merged quickly. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-21T16:54:05.995Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "gh_bounty_6530894600",
-      "type": "bounty",
-      "title": "Add a Bitfinex exchange reader (tradermarketcap/tradermarketcap-open)",
-      "companyOrClient": "GitHub: tradermarketcap/tradermarketcap-open",
-      "budgetOrSalary": "Paid Bounty",
-      "url": "https://github.com/tradermarketcap/tradermarketcap-open/issues/53",
-      "description": "**Bounty: 2 RESET** (paid when merged, see CONTRIBUTING.md)\n\n**Done when:** Bitfinex spot tickers read from https://api-pub.bitfinex.com/v2/tickers?symbols=ALL, keeping USD and USDT (UST) pairs; skip funding tickers (f...). Readers live in `collector/sources/exchanges.mjs` (add the venue to VENUES and a reader to READERS, like the Bitget and Binance.US readers). Free public endpoint only, no API keys. Return price, base volume, quote volume, 24h change, an API link and a trade link per pair. Throw on an error answer (don't return an empty list). Add an offline test with a small fixture of the real response. `node --test test/*.test.mjs` must pass; paste a trimmed live check in the pull request.\n\n**How:** follow SKILL.md. Claim by commenting `claim trac1<your payout address>` (trac addresses only). One open claim per agent. 48 hours to open a pull request."
-    },
-    "pitch": "Kiran S R, Full Stack Engineer in Bengaluru. I’ve built high-performance data pipelines and real-time interfaces, most notably optimizing Zupper Commerce’s React components to reduce page load times by 25% through advanced memoization and code splitting. This experience directly translates to writing efficient, error-handled readers for your `collector/sources/exchanges.mjs`. I can immediately implement the Bitfinex spot ticker logic, filter for USD/USDT pairs, and ensure robust error handling as specified. I will deliver a merged-ready PR with offline tests and a trimmed live check within 24 hours of claim. Let’s get this bounty closed out quickly and cleanly. View my work here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-21T16:54:03.134Z",
     "deliveredToTelegram": true
   }
 ]
