@@ -1,6 +1,54 @@
 [
   {
     "opportunity": {
+      "id": "wwr_smartsheet-software-engineer-ii-ai-experience-remote-eligible",
+      "type": "remote_job",
+      "title": "Software Engineer II, AI Experience (Remote Eligible)",
+      "companyOrClient": "Smartsheet",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-ii-ai-experience-remote-eligible",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt;  -REMOTE, USA-\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;For over 20 years, Smartsheet has empowered teams to manage work seamlessly and scale solutions smarter. Now, in our most ambitious chapter yet, we are uniting human teams with AI agents. By orchestrating the work agents do best, automating manual tasks and uncovering insights at scale, we create the space for people to focus on what truly matters: judgment, creativity, and big thinking. That is magic at work, and it’s what we show up for every day.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Smart Assist is Smartsheet's AI agent for work management, used by enterprise customers to analyze, create, and act on their work. AI Experiences builds the orchestration for Smart Assist and the user-facing implementations that expose Smartsheet's Intelligent Work capabilities to any AI surface, so users can reach the right intelligence at the right time through a coherent, reliable exp"
+    },
+    "pitch": "Hi, I’m Kiran S R, a Full Stack Engineer specializing in React, TypeScript, and AI integration. I saw your opening for Software Engineer II, AI Experience, and my work on Cerebrum—where I built an AI note-taking platform using RAG architecture and the Grok API—directly aligns with Smartsheet’s mission to orchestrate AI agents for work management. Additionally, my performance optimization work at Zupper Commerce, which cut page load times by 25% through memoization, ensures the responsive, coherent user experiences your enterprise customers expect. I am ready to leverage my expertise in building scalable, intelligent frontends to help Smartsheet deliver \"magic at work.\" Let’s connect to discuss how I can contribute to the AI Experiences team. You can view my full portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-28T10:43:05.085Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1138211",
+      "type": "remote_job",
+      "title": "Software Engineer - Backend",
+      "companyOrClient": "Sardine",
+      "budgetOrSalary": "$3000000k - $5000000k",
+      "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-backend-sardine-1138211",
+      "description": "  Who we are:   Sardine is the leading agentic risk platform for fighting financial crime. Our integrated solution unifies data across risk teams to help organizations stop fraud in real time, prevent AI-driven attacks, and automate fraud and AML operations. Sardineâs platform is strengthened by one of the fastest-growing fraud consortiums in the market, spanning more than 6 billion profiled devices, 800 million consumers, and 3 million businesses worldwide. Leading companies including FIS, GoDaddy, Intuit, Edward Jones, ZoomInfo, and Checkout.com rely on Sardine to secure and grow trust in their products.     Our culture:     We hire talented, self-motivated individuals with extreme ownership and high growth orientation.     We value performance and not hours worked. We believe you shouldn't have to miss your family dinner, your kid's school play, friends get-together, or doctor's appointments for the sake of adhering to an arbitrary work schedule.    We're a remote-first team sprea",
+      "tags": [
+        "programming"
+      ]
+    },
+    "pitch": "Hi Sardine team, I’m Kiran S R, a Full Stack Engineer specializing in high-throughput backend systems. Your need for real-time fraud detection and AML automation aligns perfectly with my work on RMC ERP, where I engineered a robust Laravel and Vue 3 platform processing complex sensor feeds and dispatch workflows with zero downtime. I leverage Redis caching and optimized REST APIs to handle large-scale data streams efficiently, ensuring the speed and reliability critical for securing 6 billion profiled devices. I bring extreme ownership and a focus on performance over hours, ready to integrate immediately into your remote-first culture. Let’s discuss how I can strengthen your backend infrastructure. View my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-28T10:43:04.263Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "rok_1138212",
+      "type": "remote_job",
+      "title": "Senior Software Engineer",
+      "companyOrClient": "3Y Health",
+      "budgetOrSalary": "$150000k - $200000k",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-3y-health-1138212",
+      "description": " About 3Y Health  3Y Health is building the operating system for healthcare practices, an AI-native platform that helps clinicians start, run and grow their practice. We work as a managed services organization (MSO): along with the software, our operations team runs the back office for the clinics we partner with, including billing, insurance and compliance. We currently serve applied behavior analysis (ABA) therapy practices and are expanding into speech, occupational and physical therapy, and psychiatry.    About the role  Members of Technical Staff own features end to end. You'll work with the clinicians and operators who use what we build, scope the problem, design and build the solution across the stack, deploy it and follow how it performs in production. Our engineering team is flat, with no sub-teams, so you'll work across the whole platform. We build with AI coding agents every day and expect you to do the same.    What you'll do    Design and build AI agents and automated work",
+      "tags": [
+        "programming"
+      ]
+    },
+    "pitch": "Hi 3Y Health team,\n\nI’m a Full Stack Engineer specializing in building resilient, end-to-end platforms. Your need for a senior engineer who owns features across the stack aligns perfectly with my experience. I built RMC ERP, a complex enterprise system using Laravel and Vue 3 that managed real-time sensor feeds and intricate dispatch workflows, demonstrating my ability to handle high-stakes operational logic. Additionally, I optimized Zupper Commerce by reducing page loads by 25% through advanced React patterns, ensuring the performance your clinicians expect. I am comfortable working with AI coding agents to accelerate delivery. I’d love to discuss how I can immediately contribute to your AI-native healthcare platform. Please visit my portfolio at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-28T10:43:03.238Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "rok_1138202",
       "type": "remote_job",
       "title": "Senior Software Developer",
@@ -1417,57 +1465,6 @@
     },
     "pitch": "Hi Abnormal team,\n\nI’m a Senior Full Stack Engineer specializing in high-performance, secure web applications. Your ATO protection platform demands rigorous engineering, and my experience building complex, data-heavy systems aligns perfectly with your needs. At RMC ERP, I architected an enterprise-grade solution using Laravel and Vue 3 to manage real-time sensor feeds and critical dispatch workflows, ensuring zero-downtime reliability for sensitive operational data. Additionally, my work on Zupper Commerce, where I reduced page load times by 25% through advanced memoization, demonstrates my commitment to optimizing performance for user-facing security tools. I am ready to take immediate ownership of complex feature delivery for your platform. Let’s connect to discuss how I can contribute to Abnormal’s continued leadership in email security. View my work at https://cipher-vortex.vercel.app.",
     "createdAt": "2026-11-22T10:03:29.803Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137954",
-      "type": "remote_job",
-      "title": "Senior Software Engineer, Partner Integrations",
-      "companyOrClient": "Airbnb",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-partner-integrations-airbnb-1137954",
-      "description": "   Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.      The Community You Will Join:    \n The Partner Integration team is responsible for integrating new business partners and functionality into Airbnbâs product. We work to improve both the supply and demand side of Airbnbâs Stays, Experiences and Services businesses through thoughtfully designed product experiences for Guest and Hosts. \n We recently launched exciting new features such as grocery delivery and airport transfers, as well as integrations with smart lock providers, rewards programs and more. We are looking to rapidly expand our offerings. \n You will be working closely with a strong, fast-moving team integrating",
-      "tags": [
-        "programming"
-      ]
-    },
-    "pitch": "Hi Airbnb Partner Integrations team,\n\nI am a Full Stack Engineer specializing in building scalable integration platforms and complex API architectures. My work on Yeshu Tours & Travels directly mirrors your needs, where I engineered a full-scale booking engine featuring Redis caching, WhatsApp integrations, and robust admin dashboards to streamline multi-party workflows. Additionally, my experience with RMC ERP demonstrates my ability to handle enterprise-grade data flows and sensor feeds using Laravel and Vue 3. I am ready to hit the ground running, delivering high-quality, production-ready code for your new partner integrations immediately.\n\nLet’s connect to discuss how I can accelerate your team’s roadmap. You can view my live projects and technical portfolio here: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-22T10:03:28.971Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137955",
-      "type": "remote_job",
-      "title": "Staff Software Engineer, Agentic Tools",
-      "companyOrClient": "Cribl",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-staff-software-engineer-agentic-tools-cribl-1137955",
-      "description": "  Join the company thatâs building the telemetry infrastructure for the AI era. At Cribl, we partner with IT and Security teams at many of the worldâs biggest enterprises, including half of the Fortune 100, to bridge the gap between AI ambition and infrastructure reality. As the AI Platform for Telemetry, we give customers the choice, control, and flexibility to manage and analyze telemetry for both humans and agents, so they can build whatâs next. \n Weâre one of the fastestâgrowing private companies and a leading player in a massive, fastâmoving market. With a global workforce, weâre remoteâfirst and grounded in a simple idea: software is a people business. Cribl is the place where curious, collaborative people can do their best work, grow fast, and bring their full selves to the herd.    Why Youâll Love This Role  \n You will help build Cribl Engineeringâs AI platform and productivity rails: the shared systems, runtimes, and workflows that let engineers use autonom",
-      "tags": [
-        "programming"
-      ]
-    },
-    "pitch": "Hi Cribl team, I’m Kiran S R, a Full Stack Engineer specializing in high-performance React, TypeScript, and Node.js systems. Your focus on building AI platform productivity rails aligns perfectly with my experience optimizing complex frontend architectures. At Zupper Commerce, I engineered 20+ reusable React components and implemented memoization and code splitting, reducing page load times by 25%—a critical skill for building the fast, responsive shared systems your engineering team needs. I am eager to bring this performance-first mindset to Cribl’s agentic tools to help bridge the gap between AI ambition and infrastructure reality. I am ready to start immediately and contribute to the herd. Please review my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-22T10:03:28.147Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137924",
-      "type": "remote_job",
-      "title": "Senior Software Engineer II - Agentic Intelligence",
-      "companyOrClient": "Honeycomb.io",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-ii-agentic-intelligence-honeycomb-io-1137924",
-      "description": "   What Weâre Building  \n Honeycomb is a service for the near and present future, defining observability and raising expectations of what developer tools can do! Weâre working with well known companies like HelloFresh, Slack, LaunchDarkly, and Vanguard and more across a range of industries. This is an exciting time in our trajectory, weâve closed Series D funding, scaled past the 200-person mark, and were named to Forbesâ Americaâs Best Startups of 2022 and 2023!Â  \n Â  \n If you want to see what weâve been up to, please check out these  blog posts  and Honeycomb.io  press releases .Â  \n Â  \n  Who We Are  \n We come for the impact, and stay for the culture! Weâre a talented, opinionated, passionate, fiercely inclusive, and responsible group of bees. We have conviction and we strive to liveÂ   our values  Â every day. We want our people to do what they truly love amongst a team of highly talented (but humble) peers. \n Â  \n  How We Work  \n We are a fully distributed company, ",
-      "tags": [
-        "programming"
-      ]
-    },
-    "pitch": "Honeycomb’s mission to redefine observability resonates with my background in building high-performance, data-heavy platforms. As a Full Stack Engineer, I recently optimized Zupper Commerce by reducing page load times by 25% through advanced memoization and code splitting, ensuring smooth user experiences even under heavy data loads. My enterprise work on RMC ERP, managing complex sensor feeds and real-time dispatch workflows with Laravel and Vue 3, demonstrates my ability to handle intricate data pipelines and scalable architectures. I am eager to bring this precision to Honeycomb’s Agentic Intelligence team, leveraging my expertise in TypeScript, Node.js, and React to build robust, observable systems. I am available to start immediately and ready to contribute to your next milestone. Let’s connect to discuss how I can support your engineering goals: https://cipher-vortex.vercel.app",
-    "createdAt": "2026-11-22T02:03:47.497Z",
     "deliveredToTelegram": true
   }
 ]
