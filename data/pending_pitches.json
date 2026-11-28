@@ -1,6 +1,34 @@
 [
   {
     "opportunity": {
+      "id": "wwr_airbnb-software-engineer-payments",
+      "type": "remote_job",
+      "title": "Software Engineer, Payments",
+      "companyOrClient": "Airbnb",
+      "budgetOrSalary": "Top Tier Remote Salary",
+      "url": "https://weworkremotely.com/remote-jobs/airbnb-software-engineer-payments",
+      "description": "\n\n&lt;p&gt;\n  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote, USA\n&lt;/p&gt;\n\n&lt;div class=\"content-intro\"&gt;&lt;p&gt;&lt;span&gt;Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;The Community You Will Join: &lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span&gt;The AirCover Insurance Platform team builds the systems behind AirCover, which includes Host liability insurance, Experiences liability insurance and Host damage protection. We are expanding insurance products across global markets and building the experimentation capabilities that help us understand and increase the share of Hosts and guests "
+    },
+    "pitch": "I build high-stakes financial and transactional systems that demand zero downtime. For Airbnb’s AirCover Insurance Platform, my work on Yeshu Tours & Travels is directly relevant; I engineered a full-scale booking engine handling complex payment flows, Redis caching for speed, and real-time WhatsApp integrations. This experience mirrors the precision required for global insurance products and liability processing. I also optimized Zupper Commerce’s frontend by 25% through memoization, ensuring snappy user experiences even under heavy load. I am ready to deploy my expertise in React, Node.js, and secure API architecture to help your team scale insurance capabilities efficiently. Let’s connect to discuss how I can contribute to your next sprint. You can view my technical portfolio here: https://cipher-vortex.vercel.app",
+    "createdAt": "2026-11-28T18:39:37.328Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
+      "id": "gh_bounty_6667270981",
+      "type": "bounty",
+      "title": "[radar] SN open bounty 2026-11-28T15:24 (relayhop/sn-monetization-runtime)",
+      "companyOrClient": "GitHub: relayhop/sn-monetization-runtime",
+      "budgetOrSalary": "Paid Bounty",
+      "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1445",
+      "description": "New SN OPEN_BOUNTY detected:\n\n```\n1622115\tStacker_Sports\t3\t1100\t2100\t6\t3.3\t1448206\t3035\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,HOT,SIGNAL,SELF_POST_OPP\t🏈 Sunday Leaders Bounty • 2,100 sats\n1621872\tStacker_Sports\t3\t1151\t2100\t8\t22.3\t232181\t4473\trecent@Stacker_Sports|top@Stacker_Sports\tOPEN_BOUNTY,HOT,SELF_POST_OPP\tWeekly Random Sports Pick 'em\n```"
+    },
+    "pitch": "Hi Stacker_Sports team, I can deliver the SN monetization runtime integration for your open bounty immediately. As a Full Stack Engineer specializing in Node.js, TypeScript, and high-performance APIs, I have the precise technical stack required to build robust, scalable runtime components. My recent work on Zupper Commerce, where I optimized React performance by 25% through advanced memoization and code splitting, demonstrates my ability to deliver efficient, production-ready code under tight deadlines. I am ready to start working on the relayhop/sn-monetization-runtime repository right now to ensure a quick, high-quality PR delivery. Let’s get this bounty closed out efficiently. Check my work at https://cipher-vortex.vercel.app.",
+    "createdAt": "2026-11-28T18:39:36.325Z",
+    "deliveredToTelegram": true
+  },
+  {
+    "opportunity": {
       "id": "wwr_smartsheet-software-engineer-ii-ai-experience-remote-eligible",
       "type": "remote_job",
       "title": "Software Engineer II, AI Experience (Remote Eligible)",
@@ -1431,40 +1459,6 @@
     },
     "pitch": "Kiran S R here. CircleCI’s mission to build interfaces for AI-driven CI/CD resonates with my experience engineering complex, high-performance developer tools. At RMC ERP, I built enterprise-grade workflows using Laravel and Vue 3, handling real-time sensor feeds and complex state management—skills directly transferable to building the trusted interfaces developers need for autonomous builds. I specialize in React, TypeScript, and Node.js, with a track record of reducing page load times by 25% through rigorous performance optimization. I am ready to ship reliable, scalable frontend solutions that help developers trust their pipelines. Let’s discuss how I can contribute to the On-Prem team’s next release. View my work: https://cipher-vortex.vercel.app",
     "createdAt": "2026-11-22T10:03:32.415Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137945",
-      "type": "remote_job",
-      "title": "Principal Software Engineer, Infrastructure",
-      "companyOrClient": "Reddit",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-principal-software-engineer-infrastructure-reddit-1137945",
-      "description": "  \n \n \n \n \n Reddit is a community of communities. Itâs built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internetâs largest sources of information. For more information, visit  www.redditinc.com . \n \n \n \n \n   The Infrastructure organization has the mission of building and delivering the compute orchestration environment, storage and data systems, and essential platform services behind all of Reddit.Â  \n The Infrastructure organization is looking to hire a backend software engineer to work collaboratively on a team dedicated to building out Redditâs multi-cloud compute infrastructure. This is a high impact role where you will contribute to design, implementation, and operations for one of the largest sites in the w",
-      "tags": [
-        "devops"
-      ]
-    },
-    "pitch": "Hi Reddit Infrastructure team,\n\nI am a Full Stack Engineer specializing in high-performance backend systems and scalable architecture. Having engineered the \"RMC ERP\" enterprise platform using Laravel, Vue 3, and Redis to manage complex sensor feeds and dispatch workflows, I have direct experience building robust, data-intensive systems that handle critical operational loads. My work on Zupper Commerce further demonstrates my ability to optimize performance through code splitting and memoization, reducing page load times by 25%. I am eager to apply this expertise to design and implement components for Reddit’s multi-cloud compute infrastructure, ensuring seamless orchestration and storage efficiency. You can view my technical portfolio and code samples at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-22T10:03:31.669Z",
-    "deliveredToTelegram": true
-  },
-  {
-    "opportunity": {
-      "id": "rok_1137948",
-      "type": "remote_job",
-      "title": "Senior Software Engineer - Behavioral Security Products",
-      "companyOrClient": "Abnormal",
-      "budgetOrSalary": "Competitive Market Rate",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-behavioral-security-products-abnormal-1137948",
-      "description": " At Abnormal AI, we protect our customers against nefarious adversaries who are constantly evolving their techniques and tactics to outwit and undermine the traditional approaches to Security.Â  \n Abnormal is recognized as a top cybersecurity startup (Leader in the 2025 Gartner Magic Quadrant for Email Security Platforms), securing a Series D funding of $250 million at a $5.1 billion valuation in August 2024.Â  \n  About The TeamÂ   \n The team is responsible for the ownership, development, and operation of the infrastructure and ML models, customer facing APIs and internal tools that drive Abnormal's Account Takeover (ATO) protection product. This product is crucial for detecting malicious activity and safeguarding customers from account theft. \n  About The Role  \n We are looking for a Senior Software Engineer to take ownership of complex feature delivery and technical design for our ATO platform. This pivotal role involves evolving the platform to scale with expanding product requireme",
-      "tags": [
-        "devops"
-      ]
-    },
-    "pitch": "Hi Abnormal team,\n\nI’m a Senior Full Stack Engineer specializing in high-performance, secure web applications. Your ATO protection platform demands rigorous engineering, and my experience building complex, data-heavy systems aligns perfectly with your needs. At RMC ERP, I architected an enterprise-grade solution using Laravel and Vue 3 to manage real-time sensor feeds and critical dispatch workflows, ensuring zero-downtime reliability for sensitive operational data. Additionally, my work on Zupper Commerce, where I reduced page load times by 25% through advanced memoization, demonstrates my commitment to optimizing performance for user-facing security tools. I am ready to take immediate ownership of complex feature delivery for your platform. Let’s connect to discuss how I can contribute to Abnormal’s continued leadership in email security. View my work at https://cipher-vortex.vercel.app.",
-    "createdAt": "2026-11-22T10:03:29.803Z",
     "deliveredToTelegram": true
   }
 ]
